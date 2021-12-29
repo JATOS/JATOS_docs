@@ -31,13 +31,18 @@ const config = {
           showLastUpdateTime: true,
           versions: {
             current: {
-              label: '3.7.1-alpha',
-              path: '3.7.1',
+              label: 'next',
+              path: 'next',
               banner: 'unreleased',
+            },
+            '3.7.1': {
+              label: '3.7.1-alpha',
+              path: '',
+              banner: 'none',
             },
             '3.6.1': {
               label: '3.6.1 and earlier',
-              path: '',
+              path: '3.6.1',
               banner: 'none',
             },
           },
