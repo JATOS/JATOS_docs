@@ -3,6 +3,7 @@ title: Create a new study
 slug: /Create-a-new-study.html
 sidebar_position: 1
 ---
+import Hl from '@site/src/components/Highlight';
 
 There are different ways to create a new study for JATOS: use a builder, with jsPsych, from scratch or by modifying an existing study. Then afterwards continue with [Write your own Study - Basics and Beyond](Write-your-own-Study-Basics-and-Beyond.html) or [Adapt Pre written Code to run it in JATOS](Adapt-pre-written-code-to-run-it-in-JATOS.html).
 
@@ -23,11 +24,11 @@ Experiment builders like [OpenSesame/OSWeb](OSWeb-and-JATOS.html) and [lab.js](l
 
 Writing your own study gives your the most freedom since it allows you to do whatever is possible in a modern browser. But you will have to program your own code in JavaScript, HTML and CSS.
 
-Press the **New Study** button in the header of your local JATOS. Then edit the study properties and add new components manually. All source code for your study has to got into the study assets folder you defined in the the study properties. The study assets folder is usually located in your JATOS installation folder.
+Press the <Hl>New Study</Hl> button in the header of your local JATOS. Then edit the study properties and add new components manually. All source code for your study has to got into the study assets folder you defined in the the study properties. The study assets folder is usually located in your JATOS installation folder.
 
 
 ### Modify an existing study
 
-Take an existing study (e.g. from [Example Studies](/Example-Studies)) as a prototype and modify it bit by bit. Press on the **Import** button in the header and select the file of the study. Then see the source code in your study assets folder, which is usually in your JATOS installation folder.
+Take an existing study (e.g. from [Example Studies](/Example-Studies)) as a prototype and modify it bit by bit. Press on the <Hl>Import</Hl> button in the header and select the file of the study. Then see the source code in your study assets folder, which is usually in your JATOS installation folder.
 
 

@@ -3,6 +3,7 @@ title: Updating a JATOS server installation
 slug: /Updating-a-JATOS-server-installation.html
 sidebar_position: 11
 ---
+import Hl from '@site/src/components/Highlight';
 
 Updating the server instance is equivalent to doing it [locally](Update-JATOS.html), but make sure that you know what you're doing; especially if you have paired JATOS with a MySQL database.
 
@@ -12,7 +13,7 @@ The easiest way to backup is to do a snapshot of the whole server. If you use an
 
 As with [updating of a local JATOS installation](Update-JATOS.html) you can do it automatically or manually.
 
-After updating you can check the new JATOS installation with the test page: go to _Administration_ ⇒ _Tests_ and check that all tests are 'OK'.
+After updating you can check the new JATOS installation with the test page: go to <Hl>Administration</Hl> ⇒ <Hl>Tests</Hl> and check that all tests are <Hl>OK</Hl>.
 
 
 ## Automatic Update (recommended)
@@ -45,5 +46,5 @@ This means that we have to configure the MySQL database or copy the embedded H2 
    * MySQL - For MySQL you don't have to change anything on the database side.
 1. [Configure the new JATOS like the old one](Configure-JATOS-on-a-Server.html) - usually it's enough to copy the `production.conf` from the old `conf` folder into the new one
 1. Start the new JATOS using `./loader.sh start`
-1. Open JATOS' test page (_Administration_ ⇒ _Tests_) and check that everything is 'OK'
+1. Open JATOS' test page (<Hl>Administration</Hl> ⇒ <Hl>Tests</Hl>) and check that everything is <Hl>OK</Hl>
  

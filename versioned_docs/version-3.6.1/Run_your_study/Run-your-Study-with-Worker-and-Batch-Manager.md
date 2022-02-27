@@ -20,7 +20,7 @@ During development of your study you would usually run it with the "Run" button 
 
 JATOS has different worker types (each with different properties). That's well explained in a dedicated page: [Worker Types](Worker-Types.html).
 
-Click on the "<span class="glyphicon glyphicon-chevron-right"></span>" button in the left in each batch row to expand the Worker Setup.
+Click on the "<span className="glyphicon glyphicon-chevron-right"></span>" button in the left in each batch row to expand the Worker Setup.
 
 ### Worker Setup
 
@@ -32,17 +32,17 @@ The Worker Setup is the place where you generate or view (for Jatos and MTurk wo
 
 #### Get Links
 
-For **Personal Single Workers** and **Personal Multiple Workers** click "**Get Links <span class="glyphicon glyphicon-link"></span>**" ("Add" in older versions). You can enter a description or identification for the worker in the 'Comments' box. You can also create several at once.
+For **Personal Single Workers** and **Personal Multiple Workers** click "**Get Links <span className="glyphicon glyphicon-link"></span>**" ("Add" in older versions). You can enter a description or identification for the worker in the 'Comments' box. You can also create several at once.
 
-**General Single Workers** only have one link. Each time somebody clicks on the link, JATOS will create a new separate worker. Get this link by clicking on "**Get Link <span class="glyphicon glyphicon-link"></span>**" in its row.
+**General Single Workers** only have one link. Each time somebody clicks on the link, JATOS will create a new separate worker. Get this link by clicking on "**Get Link <span className="glyphicon glyphicon-link"></span>**" in its row.
 
 How to connect to MTurk and create links to run with **MTurk Workers** is described in its own page: [Connect to Mechanical Turk](Connect-to-Mechanical-Turk.html).
 
-Alternatively there is a "**Get Worker Links <span class="glyphicon glyphicon-link"></span>**" button in the top of the Worker & Batch Manger page that is a shortcut to create those links.
+Alternatively there is a "**Get Worker Links <span className="glyphicon glyphicon-link"></span>**" button in the top of the Worker & Batch Manger page that is a shortcut to create those links.
 
 #### See Workers
 
-Click on the "<span class="glyphicon glyphicon-chevron-right"></span>" button in the left in each worker type row to expand it and see all generated workers. The column "Study State" indicates in which [state](Manage-Results.html#state) this study run currently is.
+Click on the "<span className="glyphicon glyphicon-chevron-right"></span>" button in the left in each worker type row to expand it and see all generated workers. The column "Study State" indicates in which [state](Manage-Results.html#state) this study run currently is.
 
 ![Worker Table](/img/worker_and_batch_manager4.png)
 

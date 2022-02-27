@@ -14,8 +14,8 @@ As an example of this, let's go through the Snake Game group study in detail:
 
 1. Download and import the [Snake game](Example-Studies.html#snake)
 1. Open the [Worker & Batch Manager](Run-your-Study-with-Worker-and-Batch-Manager.html)
-1. Expand the "Default Batch" ("<span class="glyphicon glyphicon-chevron-right"></span>" button in the left) to see the worker setup
-1. Now get your first worker: Expand (again with "<span class="glyphicon glyphicon-chevron-right"></span>") the Jatos Worker and click the **Run** button - and the study will start in a new browser tab
+1. Expand the "Default Batch" ("<span className="glyphicon glyphicon-chevron-right"></span>" button in the left) to see the worker setup
+1. Now get your first worker: Expand (again with "<span className="glyphicon glyphicon-chevron-right"></span>") the Jatos Worker and click the **Run** button - and the study will start in a new browser tab
 1. Repeat for the second worker
 1. In both tabs: click through the introduction until you arrive in the waiting room. Click **Join** and then **Ready**.
 1. Voilà! You'll see two snakes moving around: each tab represents one worker who is running the Snake Game - but they are in the same group

@@ -3,6 +3,7 @@ title: Install JATOS on a server
 slug: /JATOS-on-a-server.html
 sidebar_position: 5
 ---
+import Hl from '@site/src/components/Highlight';
 
 There are [several ways to bring JATOS to the internet](Bring-your-JATOS-online.html). If you don't know much about server administration the [DigitalOcean](JATOS-on-DigitalOcean.html) page might be best for you.
 
@@ -75,8 +76,8 @@ Every JATOS installation comes with an Admin user that has the default password 
 
 1. Start JATOS and in a browser go to JATOS login page `http://my-jatos-domain/jatos` 
 1. Login as 'admin' with password 'admin'
-1. Click on 'Admin (admin)' in top-right header
-1. Click 'Change Password'
+1. Click on <Hl>Admin (admin)</Hl> in top-right header
+1. Click <Hl>Change Password</Hl>
 
 
 ### 6. Check JATOS' test page
@@ -166,15 +167,15 @@ If you want to keep it simple and you didn't change any of the folder paths then
 
 What has to be backed up in detail:
 
-1. **Database**
+1. **<Hl>Database</Hl>**
     * **MySQL** - If you use a MySQL database you might want to look into the `mysqldump` shell command. E.g., with `mysqldump -u myusername -p mydbname > mysql_bkp.out` you can backup the whole data into a single file. Restore the database with `mysql -u myusername -p mydbname < mysql_bkp.out`.
     * **H2** - There are at least two ways: one easy (but unofficial) and one official:
       1. Copy & paste the db file - **It's important to stop JATOS before doing a backup or restoring a H2 database** this way. If you do not stop JATOS your [data might be corrupted](Troubleshooting.html#database-is-corrupted). You can just backup the folder `my-jatos-path/database`.
       1. Via [H2's upgrade, backup, and restore tool](http://www.h2database.com/html/tutorial.html#upgrade_backup_restore)
 
-1. **study_assets_root folder** - This is the folder where all the study's assets (e.g. HTML, JS, CSS, images) are stored.
+1. **<Hl>study_assets_root</Hl> folder** - This is the folder where all the study's assets (e.g. HTML, JS, CSS, images) are stored.
 
-1. **result_uploads folder** - This folder contains the files, that were uploaded during study runs.
+1. **<Hl>result_uploads</Hl> folder** - This folder contains the files, that were uploaded during study runs.
 
-1. **study_logs folder** - Contains the [study logs](Study-Log.html).
+1. **<Hl>study_logs</Hl> folder** - Contains the [study logs](Study-Log.html).
 

@@ -3,10 +3,11 @@ title: Tips & Tricks
 slug: /Tips-and-Tricks.html
 sidebar_position: 11
 ---
+import Hl from '@site/src/components/Highlight';
 
 ### Batch and Group Session do not work on Windows without HTTPS
 
-The Batch and Group Session rely on WebSockets. Sometimes (rarely) a virus scanner prohibits unencryped WebSockets. This is only a problem on Windows, but not on Mac OS or Linux and only with certain virus scanner programs. If this happens you will see an error message in your brower's console: _Batch channel closed unexpectedly_. To solve this you can either turn on HTTPS on your JATOS server (recommended) or turn off the virus scranner on (all) your participants computers.
+The <Hl>Batch</Hl> and <Hl>Group</Hl> Session rely on WebSockets. Sometimes (rarely) a virus scanner prohibits unencryped WebSockets. This is only a problem on Windows, but not on Mac OS or Linux and only with certain virus scanner programs. If this happens you will see an error message in your brower's console: <Hl>Batch channel closed unexpectedly</Hl>. To solve this you can either turn on HTTPS on your JATOS server (recommended) or turn off the virus scranner on (all) your participants computers.
 
 ### Run up to 10 studies in the same browser at the same time
 
@@ -21,7 +22,7 @@ If you think about it, MTurk simply calls a JATOS [study link](Run-your-Study-wi
 
 #### Examples
 
-* To run the study with ID 4 and batch with ID 2 with an **MTurk** worker on a local JATOS use
+* To run the study with ID 4 and batch with ID 2 with an <Hl>MTurk</Hl> worker on a local JATOS use
 
   ```
   http://localhost:9000/publix/myStudyCode?workerId=123456&assignmentId=abcdef
@@ -38,19 +39,19 @@ If you think about it, MTurk simply calls a JATOS [study link](Run-your-Study-wi
 
 ### Lock your studies before running them
 
-Each Study bar has a button that toggles between the  'Unlocked' and 'Locked' states. Locking a study prevents changes to its (or any of its components') properties, change the order of components, etc. 
+Each Study bar has a button that toggles between the  <Hl>Unlocked</Hl> and <Hl>Locked</Hl> states. Locking a study prevents changes to its (or any of its components') properties, change the order of components, etc. 
 
 ![](/img/study_locked.png)
 
 
 ### Do a General Single Run more than once in the same browser 
 
-The problem here is that a General Single Run is intended to work only once in the same browser. Although this is a feature to limit participants doing the same study twice, it can be a hassle for you as a study developer who just want to try out the General Single Run a second time. Luckily there is an easy way around: Since for a General Single Run all studies that the worker already participated in are stored in a browser cookie, it can be easily removed. Just **remove the cookie with the name JATOS_GENERALSINGLE_UUIDS** in your browser. You can find this cookie in every webpage hosted by a JATOS server. If it doesn't exist you probably never did a General Single run yet.
+The problem here is that a <Hl>General Single Run</Hl> is intended to work only once in the same browser. Although this is a feature to limit participants doing the same study twice, it can be a hassle for you as a study developer who just want to try out the <Hl>General Single Run</Hl> a second time. Luckily there is an easy way around: Since for a <Hl>General Single Run</Hl> all studies that the worker already participated in are stored in a browser cookie, it can be easily removed. Just **remove the cookie with the name JATOS_GENERALSINGLE_UUIDS** in your browser. You can find this cookie in every webpage hosted by a JATOS server. If it doesn't exist you probably never did a General Single run yet.
 
 
 ### Abort study and keep some data
 
-If the `jatos.abortStudy` function is called (usually after the worker clicks a "Cancel" button) all result data that had been sent to JATOS during this study run will be deleted. This includes result data from prior components of the study run. But sometimes you'll want to save a bit of information that should not be deleted: you might need the worker's email address to pay them. 
+If the `jatos.abortStudy` function is called (usually after the worker clicks a <Hl>Cancel</Hl> button) all result data that had been sent to JATOS during this study run will be deleted. This includes result data from prior components of the study run. But sometimes you'll want to save a bit of information that should not be deleted: you might need the worker's email address to pay them. 
 
 1. By using the build-in abort button with [`jatos.addAbortButton`](jatos.js-Reference.html#jatosaddabortbutton) and set the `msg` parameter. This message won't be deleted together with the other result data. This message can then be seen in every Study Result page in the 'Message' column.
 
@@ -62,7 +63,7 @@ If the `jatos.abortStudy` function is called (usually after the worker clicks a 
    });
    ```
 
-1. By using [`jatos.abortStudy`](jatos.js-Reference.html#jatosabortstudy) and its message parameter. This message won't be deleted together with the other result data. This message can then be seen in every Study Result page in the 'Message' column.
+1. By using [`jatos.abortStudy`](jatos.js-Reference.html#jatosabortstudy) and its message parameter. This message won't be deleted together with the other result data. This message can then be seen in every Study Result page in the <Hl>Message</Hl> column.
 
    E.g.
 
@@ -73,7 +74,7 @@ If the `jatos.abortStudy` function is called (usually after the worker clicks a 
 
 ### How to let a Personal Single Worker redo his study?
 
-A Personal Single Worker is only allowed to run their study once. But sometimes you want to allow them to do it a second time (maybe they accidentally clicked the 'Cancel' button). One way would be to just create another Personal Single Link and hand it to the worker. But there is another way without creating a second Link: you can simply delete the worker's result from one of the result pages. This will allow this Personal Single worker to redo this study.
+A <Hl>Personal Single Worker</Hl> is only allowed to run their study once. But sometimes you want to allow them to do it a second time (maybe they accidentally clicked the <Hl>Cancel</Hl> button). One way would be to just create another <Hl>Personal Single Link</Hl> and hand it to the worker. But there is another way without creating a second Link: you can simply delete the worker's result from one of the result pages. This will allow this Personal Single worker to redo this study.
 
 ### Simulate slow network
 
@@ -81,10 +82,10 @@ Usually one develops a study on a local JATOS or a remote JATOS with a good inte
 
 ### Personal/General Single links seem not to work when distributed via social networks
 
-Problem: The study runs fine, but as soon as one distributes links for Personal Single or General Single runs via social networks like Twitter, Facebook and Reddit or chat tools like Slack and Google Hangout it stops working. The participants only get the message 'A problem occurred: Study can be done only once.' and in the results the study run appears as started but never finished (State DATA_RETRIEVED).
+Problem: The study runs fine, but as soon as one distributes links for Personal Single or General Single runs via social networks like Twitter, Facebook and Reddit or chat tools like Slack and Google Hangout it stops working. The participants only get the message <Hl>A problem occurred: Study can be done only once.</Hl> and in the results the study run appears as started but never finished (State <Hl>DATA_RETRIEVED</Hl>).
 
-The reason for this behaviour is that some of those tools open links that are posted in them before your participant can click on them. They do this to provide more information about the link, like a title and an image. Usually this is fine but Personal/General Single links work exactly once (if preview is not allowed) and a second request with the same link just responses with the forementioned error message.
+The reason for this behaviour is that some of those tools open links that are posted in them before your participant can click on them. They do this to provide more information about the link, like a title and an image. Usually this is fine but <Hl>Personal/General Single</Hl> links work exactly once (if preview is not allowed) and a second request with the same link just responses with the forementioned error message.
 
-1. Use [study links with confirmation](Run-your-Study-with-Study-Links.html#study-links---how-to-let-participants-run-your-study) - Choose the study link version with the button 'Confirm First'. This link shows a 'study entry' page before the actual study starts. This page can be opened many times.
+1. Use [study links with confirmation](Run-your-Study-with-Study-Links.html#study-links---how-to-let-participants-run-your-study) - Choose the study link version with the button <Hl>Confirm First</Hl>. This link shows a <Hl>study entry</Hl> page before the actual study starts. This page can be opened many times.
 
-1. [Allow preview](Restricting-study-flow.html#allow-preview) - You can keep using Personal/General Single links and use a [preview link](Restricting-study-flow.html#preview-links) to allow opening the first component of your study as many times as one wishes. All following components can be opened only once again.
+1. [Allow preview](Restricting-study-flow.html#allow-preview) - You can keep using <Hl>Personal/General Single</Hl> links and use a [preview link](Restricting-study-flow.html#preview-links) to allow opening the first component of your study as many times as one wishes. All following components can be opened only once again.

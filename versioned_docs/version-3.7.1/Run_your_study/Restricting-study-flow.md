@@ -3,6 +3,7 @@ title: Restricting study flow - reloading, linear studies, single-use workers an
 slug: /Restricting-study-flow.html
 sidebar_position: 4
 ---
+import Hl from '@site/src/components/Highlight';
 
 ## Intro: Restricting study flow
 
@@ -21,20 +22,20 @@ Let's first say what we understand under the _study flow_:
 
 ## Allow reload or prevent a reload of the same component
 
-A worker can press their browser's reload button and by default JATOS will respond with the same component again: by default, the worker can do a component multiple times. To prevent this each **component properties** has a checkbox _Allow reload_.
+A worker can press their browser's reload button and by default JATOS will respond with the same component again: by default, the worker can do a component multiple times. To prevent this each **component properties** has a checkbox <Hl>Allow reload</Hl>.
 
 ![GUI Screenshot](/img/component-properties-reload.png)
 
-If you want to prevent this behaviour uncheck the box. If a participant reloads the page, they will see an error message. Then the study run will be finished and put to state FAIL. Since each component properties has their own _Allow reload_ checkbox it can be defined differently for each component, e.g. reloading is allowed in the introduction but is prohibited in the actual experiment.
+If you want to prevent this behaviour uncheck the box. If a participant reloads the page, they will see an error message. Then the study run will be finished and put to state **FAIL**. Since each component properties has their own <Hl>Allow reload</Hl> checkbox it can be defined differently for each component, e.g. reloading is allowed in the introduction but is prohibited in the actual experiment.
 
 **Hint**: You should tell your workers in your study description if you disable reloads, in order to prevent them from accidentally pressing the reload button and failing your study. Consider also adding a warning (e.g. a pop-up) informing participants that they will not be able to continue with the study.  
 
-**Another hint**: The (unchecked) _Allow reload_ and the (checked) _Linear study flow_ properties can be combined to achieve a strictly increasing study flow.
+**Another hint**: The (unchecked) <Hl>Allow reload</Hl> and the (checked) <Hl>Linear study flow</Hl>  properties can be combined to achieve a strictly increasing study flow.
 
 
 ## Ensure a linear study flow
 
-A worker can press their browsers back button and by default JATOS will response with the previous component, the one that was done before by the worker. This might allow a worker to divert from the intended study flow. To prevent this each **study properties** has a checkbox _Linear study flow_.
+A worker can press their browsers back button and by default JATOS will response with the previous component, the one that was done before by the worker. This might allow a worker to divert from the intended study flow. To prevent this each **study properties** has a checkbox <Hl>Linear study flow</Hl>.
 
 ![Study Properties Screenshot](/img/study-properties-linear-flow_371.png)
 
@@ -44,19 +45,19 @@ If you want to enforce a linear study flow check the box. Then, if a participant
 
 **Another hint**: If you want to loop over components, un-check this box. 
 
-**Yet another hint**: The (unchecked) _Allow reload_ and the (checked) _Linear study flow_ properties can be combined to achieve a strictly increasing study flow.
+**Yet another hint**: The (unchecked) <Hl>Allow reload</Hl> and the (checked) <Hl>Linear study flow</Hl> properties can be combined to achieve a strictly increasing study flow.
 
 
 ## Single-use study links - prevent workers running the study twice
 
-Often you want to prevent a participant from running the same study twice. To achieve this use the _single-use_ study link types: _Personal Single_ and _General Single_.
+Often you want to prevent a participant from running the same study twice. To achieve this use the <Hl>single-use</Hl> study link types: <Hl>Personal Single</Hl> and <Hl>General Single</Hl>.
 
 Read more on the [different worker types available in JATOS](Worker-Types.html) and [about study links](Run-your-Study-with-Study-Links.html).
 
 
 ## Allow preview
 
-Sometimes, when you hand out study links, your participants mindlessly click on the link right away and are not aware that they have already started the study. If they do not intend to run the study right away this is a problem with _single-use_ study links (**General Single** or **Personal Single**).
+Sometimes, when you hand out study links, your participants mindlessly click on the link right away and are not aware that they have already started the study. If they do not intend to run the study right away this is a problem with <Hl>single-use</Hl> study links (<Hl>General Single</Hl> or <Hl>Personal Single</Hl>).
 
 ![GUI Screenshot](/img/study-properties-allow-preview-371.png)
 

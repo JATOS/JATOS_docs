@@ -3,6 +3,7 @@ title: JATOS on DigitalOcean
 slug: /JATOS-on-DigitalOcean.html
 sidebar_position: 3
 ---
+import Hl from '@site/src/components/Highlight';
 
 On this page we want to explain how to install JATOS on a server running on DigitalOcean. We tried to keep this tutorial as easy as possible: if everything runs smoothly you don't have to use the terminal at all.
 
@@ -51,8 +52,8 @@ First we want to set up a simple JATOS server without encryption (HTTPS) or a do
 1. Log into JATOS with ‘admin’ and password ‘admin’
 
 1. The first thing you should do is change your admin password:
-   1. Click on ‘Admin (admin) in top-right header
-   1. Click ‘Change Password’
+   1. Click on <Hl>Admin (admin)</Hl> in top-right header
+   1. Click <Hl>Change Password</Hl>
 
 **Voila, you have your own JATOS server.**
 
