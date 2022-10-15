@@ -12,6 +12,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 
 ### 2022 
 
+Mueckstein, M., Heinzel, S., Granacher, U., Brahms, M., Rapp, MA., Stelzel, C. (2022) Modality-specific effects of mental fatigue in multitasking, *Acta Psychologica* [DOI](https://doi.org/10.1016/j.actpsy.2022.103766)
+
 Béna, J., Corneille, O., Mierop, A., & Unkelbach, C. (2022). Robustness Tests Replicate Corneille et al.’s (2020) Fake News by Repetition Effect. *International Review of Social Psychology* [DOI](http://doi.org/10.5334/irsp.683)
 
 Hsieh, JYJ., Boyce, P., Goddard, E. et al. (2022) Colour information biases facial age estimation and reduces inter-observer variability. *PREPRINT available at Research Square*, [DOI](https://doi.org/10.21203/rs.3.rs-2062498/v1)
