@@ -12,6 +12,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 
 ### 2022 
 
+Muhmenthaler, MC, Meier, B. (2022) Attentional attenuation (rather than attentional boost) through task switching leads to a selective long-term memory decline. *Frontiers in Psychology* [DOI](https://doi.org/10.3389/fpsyg.2022.1027871)
+
 Mueckstein, M., Heinzel, S., Granacher, U., Brahms, M., Rapp, MA., Stelzel, C. (2022) Modality-specific effects of mental fatigue in multitasking, *Acta Psychologica* [DOI](https://doi.org/10.1016/j.actpsy.2022.103766)
 
 Béna, J., Corneille, O., Mierop, A., & Unkelbach, C. (2022). Robustness Tests Replicate Corneille et al.’s (2020) Fake News by Repetition Effect. *International Review of Social Psychology* [DOI](http://doi.org/10.5334/irsp.683)
