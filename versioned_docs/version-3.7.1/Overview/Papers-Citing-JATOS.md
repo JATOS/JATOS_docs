@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2022 
+Constant, M., Pereira, M., Faivre, N., Filevich, E. (2022) Prior information differentially affects discrimination decisions and subjective confidence reports *bioRxiv* [DOI](https://doi.org/10.1101/2022.10.26.513829)
+
 Wittmann BC, Şatırer Y. (2022) Decreased associative processing and memory confidence in aphantasia. *Learn Mem.* [DOI](https://doi.org/10.1101/lm.053610.122)
 
 Vogt, A., Kaup, B., Abdel Rahman, R., & Ganter, I. (2022). Embodied language production: sensorimotor activations and interoceptive sensibility influence which words we choose when speaking. *PsyArXiv* [DOI](https://doi.org/10.31234/osf.io/3zgrc)
