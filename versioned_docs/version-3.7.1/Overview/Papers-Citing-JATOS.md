@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2022 
+da Fonseca, M., Maffei, G., Moreno-Bote, R. et al. (2022) Mood and implicit confidence independently fluctuate at different time scales. *Cogn Affect Behav Neurosci*. [DOI](https://doi.org/10.3758/s13415-022-01038-4)
+
 Constant, M., Pereira, M., Faivre, N., Filevich, E. (2022) Prior information differentially affects discrimination decisions and subjective confidence reports *bioRxiv* [DOI](https://doi.org/10.1101/2022.10.26.513829)
 
 Wittmann BC, Şatırer Y. (2022) Decreased associative processing and memory confidence in aphantasia. *Learn Mem.* [DOI](https://doi.org/10.1101/lm.053610.122)
