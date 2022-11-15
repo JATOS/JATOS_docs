@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2022 
+Béna, J., Mauclet, A., & Corneille, O. (2022). Does co-occurrence information influence evaluations beyond relational meaning? An investigation using self-reported and mouse-tracking measures of attitudinal ambivalence. *Journal of Experimental Psychology: General.* [DOI](https://doi.org/10.1037/xge0001308)
+
 Zoefel, B., Gilbert, R. A., & Davis, M. H. (2022). Intelligibility improves perception of timing changes in speech. *BioRxiv* [DOI](https://doi.org/10.1101/2022.05.18.492430)
 
 Johnson, S.T., Most, S.B.(2022) Taking the path of least resistance now, but not later: Pushing cognitive effort into the future reduces effort discounting. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-022-02198-7)
