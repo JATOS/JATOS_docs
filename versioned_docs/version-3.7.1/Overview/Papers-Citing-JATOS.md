@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2022 
+Roesler*, E., Rieger*, T., & Manzey, D. (2022). Trust towards Human vs. Automated Agents: Using a Multidimensional Trust Questionnaire to Assess The Role of Performance, Utility, Purpose, and Transparency. *Proceedings of the Human Factors and Ergonomics Society Annual Meeting* [DOI](https://doi.org/10.1177/107118132266106)
+
 Schroter, FA., Siebertz, M., Hofmann, P., (2022) Jansen, P. Psychological and socio-demographic factors in the pre-decision stage for the purchase of e-cars. *Current Research in Ecological and Social Psychology* [DOI](https://doi.org/10.1016/j.cresp.2022.100072)
 
 Béna, J., Mauclet, A., & Corneille, O. (2022). Does co-occurrence information influence evaluations beyond relational meaning? An investigation using self-reported and mouse-tracking measures of attitudinal ambivalence. *Journal of Experimental Psychology: General.* [DOI](https://doi.org/10.1037/xge0001308)
