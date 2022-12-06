@@ -550,7 +550,7 @@ There are two versions: with or without message
 
 ### `jatos.startComponentByTitle`
 
-Finishes the currently running component and starts the component with the given title. If there is more than one component with this title it starts the first. One can additionally send result data back to the JATOS server.
+(Needs JATOS version >= 3.7.5) - Finishes the currently running component and starts the component with the given title. If there is more than one component with this title it starts the first. One can additionally send result data back to the JATOS server.
 
 There are two versions: with or without message
 
@@ -586,7 +586,7 @@ There are two versions: with or without message
 
    ```javascript
    var resultData = "my important result data";
-   jatos.startComponentByTitle(3, resultData, "everything okay");
+   jatos.startComponentByTitle("Some title", resultData, "everything okay");
    ```
 
 
