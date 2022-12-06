@@ -548,6 +548,49 @@ There are two versions: with or without message
    ```
 
 
+### `jatos.startComponentByTitle`
+
+Finishes the currently running component and starts the component with the given title. If there is more than one component with this title it starts the first. One can additionally send result data back to the JATOS server.
+
+There are two versions: with or without message
+
+1. Without message
+
+   * _@param {string} title - Title of the component to start
+   * _@param {optional object} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify). 
+   * _@param {optional function} onError_ - Callback function if fail
+
+1. With message
+
+   * _@param {string} title - Title of the component to start
+   * _@param {optional object or string} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify). 
+   * _@param {optional string} message_ - Message that should be logged (max 255 chars)
+   * _@param {optional function} onError_ - Callback function if fail
+
+**Examples**
+
+1. Jump to component with title "Some title"
+
+   ```javascript
+   jatos.startComponentByTitle("Some title");
+   ```
+
+1. Send result data and jump to component with title "Some title"
+
+   ```javascript
+   var resultData = "my important result data";
+   jatos.startComponentByTitle("Some title", resultData);
+   ```
+
+1. Send result data, jump to component with title "Some title" and send a message back that will be visible in JATOS result pages and log 
+
+   ```javascript
+   var resultData = "my important result data";
+   jatos.startComponentByTitle(3, resultData, "everything okay");
+   ```
+
+
+
 ### `jatos.startNextComponent`
 
 Finishes the currently running component and starts the next component of this study. The next component is the one with position + 1. The component position is the count of the component within the study like shown in the study overview page (1st component has position 1, 2nd component position 2, ...). One can additionally send result data back to the JATOS server.
