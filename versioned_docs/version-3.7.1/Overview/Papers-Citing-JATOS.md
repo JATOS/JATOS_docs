@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2022 
+Jensen, A., Thériault, L., Yilmaz, E., Pon, E., Davidson, PSR. (2023) Mental rotation, episodic memory, and executive control: Possible effects of biological sex and oral contraceptive use. *Neurobiology of Learning and Memory* [DOI](https://doi.org/10.1016/j.nlm.2023.107720)
+
 Gemignani, M., Giannotti, M., Schmalz, X., Rigo, P., & De Falco, S. (2022). Attentional Prioritization of Infant Faces in Parents: The Influence of Parents’ Experiences of Care. *International Journal of Environmental Research and Public Health*. [DOI](http://dx.doi.org/10.3390/ijerph20010527)
 
 Barnes, S., Prescott, J. and Adams, J. (2022), Initial evaluation of a mobile therapeutic game for adolescent anxiety disorders. *Mental Health and Social Inclusion* [DOI](https://doi.org/10.1108/MHSI-11-2022-0076)
