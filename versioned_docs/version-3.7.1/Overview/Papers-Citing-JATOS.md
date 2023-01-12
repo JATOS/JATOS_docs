@@ -11,6 +11,7 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Labaronne, M., Jarjat, G., & Plancher, G. (2023). Attentional Refreshing in the Absence of Long-Term Memory Content: Role of Short-Term and Long-Term Consolidation. *Journal of Cognition*. [DOI](http://doi.org/10.5334/joc.246)
 
 Jensen, A., Thériault, L., Yilmaz, E., Pon, E., Davidson, PSR. (2023) Mental rotation, episodic memory, and executive control: Possible effects of biological sex and oral contraceptive use. *Neurobiology of Learning and Memory* [DOI](https://doi.org/10.1016/j.nlm.2023.107720)
 
