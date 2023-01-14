@@ -11,6 +11,12 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Archer-Boyd, A.W., Harland, A., Goehring, T., Carlyon, RP. (2023) An online implementation of a measure of spectro-temporal processing by cochlear-implant listeners. *JASA Express Letters* [DOI](https://doi.org/10.1121/10.0016838)
+
+Zoefel B, Gilbert RA, Davis MH (2023) Intelligibility improves perception of timing changes in speech. *PLoS ONE* [DOI](https://doi.org/10.1371/journal.pone.0279024)
+
+Wainio-Theberge, S., Armony, J.L. (2023) Antisocial and impulsive personality traits are linked to individual differences in somatosensory maps of emotion. *Sci Rep* [DOI](https://doi.org/10.1038/s41598-023-27880-1)
+
 Labaronne, M., Jarjat, G., & Plancher, G. (2023). Attentional Refreshing in the Absence of Long-Term Memory Content: Role of Short-Term and Long-Term Consolidation. *Journal of Cognition*. [DOI](http://doi.org/10.5334/joc.246)
 
 Jensen, A., Thériault, L., Yilmaz, E., Pon, E., Davidson, PSR. (2023) Mental rotation, episodic memory, and executive control: Possible effects of biological sex and oral contraceptive use. *Neurobiology of Learning and Memory* [DOI](https://doi.org/10.1016/j.nlm.2023.107720)
@@ -27,7 +33,8 @@ Schroter, FA., Siebertz, M., Hofmann, P., (2022) Jansen, P. Psychological and so
 
 Béna, J., Mauclet, A., & Corneille, O. (2022). Does co-occurrence information influence evaluations beyond relational meaning? An investigation using self-reported and mouse-tracking measures of attitudinal ambivalence. *Journal of Experimental Psychology: General.* [DOI](https://doi.org/10.1037/xge0001308)
 
-Zoefel, B., Gilbert, R. A., & Davis, M. H. (2022). Intelligibility improves perception of timing changes in speech. *BioRxiv* [DOI](https://doi.org/10.1101/2022.05.18.492430)
+
+, B., Gilbert, R. A., & Davis, M. H. (2022). Intelligibility improves perception of timing changes in speech. *BioRxiv* [DOI](https://doi.org/10.1101/2022.05.18.492430)
 
 Johnson, S.T., Most, S.B.(2022) Taking the path of least resistance now, but not later: Pushing cognitive effort into the future reduces effort discounting. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-022-02198-7)
 
