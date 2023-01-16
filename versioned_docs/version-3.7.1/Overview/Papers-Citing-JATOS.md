@@ -36,7 +36,7 @@ Schroter, FA., Siebertz, M., Hofmann, P., (2022) Jansen, P. Psychological and so
 Béna, J., Mauclet, A., & Corneille, O. (2022). Does co-occurrence information influence evaluations beyond relational meaning? An investigation using self-reported and mouse-tracking measures of attitudinal ambivalence. *Journal of Experimental Psychology: General.* [DOI](https://doi.org/10.1037/xge0001308)
 
 
-, B., Gilbert, R. A., & Davis, M. H. (2022). Intelligibility improves perception of timing changes in speech. *BioRxiv* [DOI](https://doi.org/10.1101/2022.05.18.492430)
+Zoefel, B., Gilbert, R. A., & Davis, M. H. (2022). Intelligibility improves perception of timing changes in speech. *BioRxiv* [DOI](https://doi.org/10.1101/2022.05.18.492430)
 
 Johnson, S.T., Most, S.B.(2022) Taking the path of least resistance now, but not later: Pushing cognitive effort into the future reduces effort discounting. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-022-02198-7)
 
@@ -123,9 +123,6 @@ Ciston, A.B., Forster, C. Brick, TR.,Kühn, S., Verrel, J., Filevich, E. (2022) 
 
 Sauter, M., Stefani, M. & Mack, W. "Equal Quality for Online and Lab Data: A Direct Comparison from Two Dual-Task Paradigms" *Open Psychology* [DOI](https://doi.org/10.1515/psych-2022-0003)
 
-
-Diana, F., Kawahara, M., Saccardi, I., Hortensius, R., Tanaka, A., & Kret, M. (2022). Implicit and explicit attitudes towards artificial agents: a cross-cultural comparison. *PsyArXiv* [DOI](https://doi.org/10.31234/osf.io/zu3pe)
-
 Lauren A. Homann, Brady R. T. Roberts, Sara Ahmed & Myra A. Fernandes (2022) Are emojis processed visuo-spatially or verbally? Evidence for dual codes *Visual Cognition* [DOI](https://doi.org/10.1080/13506285.2022.2050871)
 
 
@@ -201,8 +198,6 @@ Tejada, J., Freitag, R.M.K., Pinheiro, B.F.M. et al (2021). Building and validat
 
 Singer-Landau, E., & Meiran, N. (2021). Cognitive appraisal contributes to feeling generation through emotional evidence accumulation rate: Evidence from instructed fictional reappraisal. *Emotion*. Advance online publication. [DOI](https://doi.org/10.1037/emo0001006)
 
-da Fonseca, M., Maffei, G., Matic, A., Bote, R. M., & Hyafil, A. (2021, August 6). Emotional states and self-confidence independently fluctuate at different time scales. *PsyArXiv* [DOI](https://doi.org/10.31234/osf.io/swpcf)
-
 de Waard, J., Bogaerts, L., Van Moorselaar, D., Theeuwes, J. (2021). Surprisingly inflexible: statistically learned suppression of distractors generalizes across contexts Attention, Perception, and Psychophysics (in press). *Attention Perception & Psychophysics*. 
 
 Jost, L., & Jansen, P. (2021). Are implicit affective evaluations related to mental rotation performance? *Consciousness and Cognition*, 94, 103178. [DOI](https://doi.org/10.1016/j.concog.2021.103178)
@@ -210,8 +205,6 @@ Jost, L., & Jansen, P. (2021). Are implicit affective evaluations related to men
 Stark, C., Clemenson, G., Aluru, U., Hatamian, N., Stark, S. (2021). Playing Minecraft Improves Hippocampal-Associated Memory for Details in Middle Aged Adults. *Frontiers in Sports and Active Living*. 3. 685286. [DOI](https://doi.org/10.3389/fspor.2021.685286). 
 
 Crivelli, D., Peviani, V., Salvato, G., Bottini, G. (2021). Exploring the Interaction Between Handedness and Body Parts Ownership by Means of the Implicit Association Test. *Frontiers in Human Neuroscience* 15. 681904. [DOI](https://doi.org/10.3389/fnhum.2021.681904). 
-
-Lacassagne, D., Béna, J., Corneille, O. (2021). Is Earth a Perfect Square? Repetition Increases the Perceived Truth of Highly Implausible Statements. *PsyArxiv*. [DOI](https://doi.org/10.31234/osf.io/fce8z). 
 
 Mazor, M. & Moran, R. & Fleming, S. (2021). Metacognitive asymmetries in visual perception. *Neuroscience of Consciousness*. [DOI](https://doi.org/10.1093/nc/niab005). 
 
@@ -230,8 +223,6 @@ Krüger, A., Tünnermann, J., Stratmann, L., Dressler, F., Scharlau, I. (2021). 
 Steinke, A., Kopp, B. Lange, F. (2021). The Wisconsin Card Sorting Test: Split-Half Reliability Estimates for a Self-Administered Computerized Variant. *Brain Sciences*. 11. 529. [DOI](https://doi.org/10.3390/brainsci11050529) 
 
 Zhang, C., Bernolet, S., Hartsuiker, RJ. (2021) Are there segmental and tonal effects on syntactic encoding? Evidence from structural priming in Mandarin. *Journal of Memory and Language* 119 [DOI](https://doi.org/10.1016/j.jml.2021.104220)
-
-Román-Caballero, R., Marotta, A., Lupiáñez, J. (2021) Spatial Interference Triggered by Gaze and Arrows. Spatial interference from arrows disappears when they are surrounded by an irrelevant context. *PsyArXiv*; [DOI](https://doi.org/10.31234/osf.io/bz8e9)
 
 Los, S.A., Nieuwenstein, J., Bouharab, A., Stephens, D.J., Meeter, M., Kruijne, W. (2021) The warning stimulus as retrieval cue: The role of associative memory in temporal preparation. *Cognitive Psychology* 125(2):101378 [DOI](https://doi.org/10.1016/j.cogpsych.2021.101378)
 
@@ -253,8 +244,6 @@ Kumbhar, O., Sizikova, E., Majaj, N., & Pelli, D. G. (2020). Anytime Prediction 
 Vari, J. & Tamburelli, M. (2020) Standardisation: bolstering positive attitudes towards endangered language varieties? Evidence from implicit attitudes. *Journal of Multilingual and Multicultural Development*. [DOI](https://doi.org/10.1080/01434632.2020.1829632)
 
 Verkhodanova V., Trčková D., Coler M., Lowie W. (2020) More than Words: Cross-Linguistic Exploration of Parkinson’s Disease Identification from Speech. In: Karpov A., Potapova R. (eds) Speech and Computer. SPECOM 2020. Lecture Notes in Computer Science, vol 12335. Springer, Cham. [DOI](https://doi.org/10.1007/978-3-030-60276-5_59)
-
-Gorin, S. (2020) Temporal grouping effects in tone sequence reconstruction: testing domain-general positional theories of serial order. *PsyArXiv* [DOI](https://doi.org/10.31234/osf.io/mfynu)
 
 Scarpina, F. (2020) Detection and Recognition of Fearful Facial Expressions During the Coronavirus Disease (COVID-19) Pandemic in an Italian Sample: An Online Experiment. *Front. Psychol.* [DOI](https://doi.org/10.3389/fpsyg.2020.02252)
 
