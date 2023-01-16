@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Jevtović, M., Antzaka, A., & Martin, C. D. (2023). Déjà-lu: When Orthographic Representations are Generated in the Absence of Orthography. *Journal of Cognition* [DOI](http://doi.org/10.5334/joc.250)
+
 Archer-Boyd, A.W., Harland, A., Goehring, T., Carlyon, RP. (2023) An online implementation of a measure of spectro-temporal processing by cochlear-implant listeners. *JASA Express Letters* [DOI](https://doi.org/10.1121/10.0016838)
 
 Zoefel B, Gilbert RA, Davis MH (2023) Intelligibility improves perception of timing changes in speech. *PLoS ONE* [DOI](https://doi.org/10.1371/journal.pone.0279024)
