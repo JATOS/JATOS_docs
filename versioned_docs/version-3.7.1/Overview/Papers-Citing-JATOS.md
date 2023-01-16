@@ -58,8 +58,6 @@ Béna, J., Corneille, O., Mierop, A., & Unkelbach, C. (2022). Robustness Tests R
 
 Hsieh, JYJ., Boyce, P., Goddard, E. et al. (2022) Colour information biases facial age estimation and reduces inter-observer variability. *PREPRINT available at Research Square*, [DOI](https://doi.org/10.21203/rs.3.rs-2062498/v1)
 
-Kessler, Y., & Rozanis, M. (2022). Task cues are quickly updated into working memory as part of their processing: The multiple-cue task switching paradigm. *PsyArXiv* [DOI](https://doi.org/10.31234/osf.io/9kw3b)
-
 Belo, J., Clerc, M., Schön, D. (2022) Attentional inhibition ability predicts neural representation during challenging auditory streaming. *bioRxiv* [DOI](https://doi.org/10.1101/2022.09.29.510226)
 
 Diana, F., Kawahara, M., Saccardi, I. et al. (2022) A Cross-Cultural Comparison on Implicit and Explicit Attitudes Towards Artificial Agents. *Int J of Soc Robotics*. [DOI](https://doi.org/10.1007/s12369-022-00917-7)
