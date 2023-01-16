@@ -235,8 +235,6 @@ Zhang, C., Bernolet, S., Hartsuiker, RJ. (2021) Are there segmental and tonal ef
 
 Román-Caballero, R., Marotta, A., Lupiáñez, J. (2021) Spatial Interference Triggered by Gaze and Arrows. Spatial interference from arrows disappears when they are surrounded by an irrelevant context. *PsyArXiv*; [DOI](https://doi.org/10.31234/osf.io/bz8e9)
 
-Ciston, AB., Forster, C., Brick, TR., Kühn, S., Verrel, J., Filevich, E. (2021) Limited metacognitive access to one's own facial expressions. *bioRxiv* 2021.03.08.434069; [DOI](https://doi.org/10.1101/2021.03.08.434069)
-
 Los, S.A., Nieuwenstein, J., Bouharab, A., Stephens, D.J., Meeter, M., Kruijne, W. (2021) The warning stimulus as retrieval cue: The role of associative memory in temporal preparation. *Cognitive Psychology* 125(2):101378 [DOI](https://doi.org/10.1016/j.cogpsych.2021.101378)
 
 Vogt, A., Hauber, R., Kuhlen, A.K. et al. (2021) Internet-based language production research with overt articulation: Proof of concept, challenges, and practical advice. *Behav Res* (2021). [DOI](https://doi.org/10.3758/s13428-021-01686-3)
