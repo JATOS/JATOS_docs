@@ -136,6 +136,10 @@ const config = {
                 label: 'GitHub',
                 to: 'https://github.com/JATOS/JATOS',
               },
+              {
+                label: 'Source Code Docs',
+                to: 'https://docs.jatos.org',
+              },
             ],
           },
         ],
