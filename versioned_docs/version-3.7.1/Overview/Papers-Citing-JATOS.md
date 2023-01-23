@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Lee, M.D., Stark, C.E.L. (2023) Bayesian modeling of the Mnemonic Similarity Task using multinomial processing trees. *Behaviormetrika* [DOI](https://doi.org/10.1007/s41237-023-00193-3)
+
+
+
 Kessler, Y., Zilberman, N., & Kvitelashvili, S. (2023). Updating, Fast and Slow: Items, but Not Item-Context Bindings, are Quickly Updated Into Working Memory as Part of Response Selection. *Journal of Cognition* [DOI](http://doi.org/10.5334/joc.257)
 
 Jevtović, M., Antzaka, A., & Martin, C. D. (2023). Déjà-lu: When Orthographic Representations are Generated in the Absence of Orthography. *Journal of Cognition* [DOI](http://doi.org/10.5334/joc.250)
