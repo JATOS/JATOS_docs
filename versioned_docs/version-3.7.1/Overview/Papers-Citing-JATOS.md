@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Guediche, S., Navarra-Barindelli, E., Martin, C.D. (2023). Noise Modulates Crosslinguistic Effects on Second-Language Auditory Word Recognition. *Journal of speech, language, and hearing research* [DOI](https://doi.org/10.1044/2022_JSLHR-22-00368)
+
 Goldenhaus-Manning, D.T., Cooper, N.R. & Loaiza, V.M. (2023) Examining the role of attention during feature binding in visuospatial working memory. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-023-02655-y)
 
 Stark C.E.L., Noche J.A., Ebersberger J.R., Mayer L., Stark S.M. (2023) Optimizing the mnemonic similarity task for efficient, widespread use. *Frontiers in Behavioral Neuroscience* [DOI](https://doi.org/10.3389/fnbeh.2023.1080366)
