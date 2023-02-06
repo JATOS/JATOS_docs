@@ -79,7 +79,7 @@ All the properties (except the JSON input data) you entered for this study
 
 ### `jatos.studyJsonInput`
 
-The JSON input you entered in the study's properties.
+The JSON input you entered in the study's properties. This is `{}` if the field was left empty.
 
 ### `jatos.studyLength`
 
@@ -99,7 +99,7 @@ All the properties (except the JSON input data) you entered for this component
 
 ### `jatos.componentJsonInput`
 
-The JSON input you entered in the component's properties.
+The JSON input you entered in the component's properties. This is `{}` if the field was left empty.
 
 ### `jatos.componentList`
 
@@ -118,7 +118,7 @@ Current version of the _jatos.js_ library
 
 ### `jatos.urlQueryParameters`
 
-Original query string parameters of the URL that starts the study. It is provided as a JavaScript object. This might be useful to pass on information from outside of JATOS into a study run, e.g. if you want to pass on information like gender and age. However if you know the information beforehand it's easier to put them in the Study's or Component's JSON input. Another example is MTurk which passes on it's worker's ID via a URL query parameter.
+Original query string parameters of the URL that starts the study. It is provided as a JavaScript object; the value is `{}` if no query string parameters are present. This might be useful to pass on information from outside of JATOS into a study run, e.g. if you want to pass on information like gender and age. However if you know the information beforehand it's easier to put them in the Study's or Component's JSON input. Another example is MTurk which passes on it's worker's ID via a URL query parameter.
 
 **Examples**
 
@@ -1046,7 +1046,7 @@ All the properties you entered for this batch.
 
 ### `jatos.batchJsonInput`
 
-The JSON input you entered in the batch's properties.
+The JSON input you entered in the batch's properties. This is `{}` if the field was left empty.
 
 
 
@@ -1092,7 +1092,7 @@ The callback function has two parameter:
 
 ### `jatos.batchSession.get`
 
-Convenience function: like `jatos.batchSession.find` but works with a key instead of a JSON Pointer. Therefore it works only on the first level of the session's object tree. It takes a name of an field within the Batch Session and returns the matching value.  For all other levels of the object tree use jatos.batchSession.find. Gets the object from the locally stored copy of the session and does not call the server.
+Convenience function: like `jatos.batchSession.find` but works with a key instead of a JSON Pointer. Therefore it works only on the first level of the session's object tree. It takes a name of a field within the Batch Session and returns the matching value, or `undefined` if the key does not exist. For all other levels of the object tree use `jatos.batchSession.find`. Gets the object from the locally stored copy of the session and does not call the server.
 
 * _@param {string} name_ - name of the field
 * _@return {object}_ - the value that is stored under name
@@ -1232,7 +1232,7 @@ Clears the whole Batch Session data and sets it to an empty object `{}`.
 
 ### `jatos.batchSession.find`
 
-Gets a field in the Batch Session data. Takes a JSON Pointer and returns the matching value. Gets the object from the locally stored copy of the session and does not call the server. Contrary to `jatos.batchSession.get` it allows to get values from all levels of the Batch Session's object tree.
+Gets a field in the Batch Session data. Takes a JSON Pointer and returns the matching value, or `undefined` if the pointer does not correspond to an existing field. Gets the object from the locally stored copy of the session and does not call the server. Contrary to `jatos.batchSession.get` it allows to get values from all levels of the Batch Session's object tree.
 
 * _@param {string} path_ - JSON pointer path
 * _@return {object}_ - the value that is stored in path
@@ -1246,6 +1246,7 @@ Gets a field in the Batch Session data. Takes a JSON Pointer and returns the mat
    ```javascript
    jatos.batchSession.find("/a/a1"); // returns "foo"
    jatos.batchSession.find("/b"); // returns 999
+   jatos.batchSession.find("/c/d"); // returns undefined
    ```
 
 
@@ -1283,7 +1284,7 @@ JSON Patch test operation: Tests that the specified value is set in the document
    jatos.batchSession.test("/b/b1", "flowers"); // returns true
    ```
 
-1. If you want to know the existence of a path in the Batch Session you can test against `undefined`:
+1. If you want to know the existence of a path in the Batch Session you can test against `undefined`. The function `jatos.batchSession.defined` provides a shortcut for this use case.
 
    ```javascript
    if (!jatos.batchSession.test("/c", undefined)) {
@@ -1296,7 +1297,7 @@ JSON Patch test operation: Tests that the specified value is set in the document
 
 ### `jatos.batchSession.add`
 
-JSON Patch add operation: Adds a value to an object or inserts it into an array. In the case of an array, the value is inserted before the given index. The `-` character can be used instead of an index to insert at the end of an array (see [jsonpatch.com](http://jsonpatch.com/)). If the path already exists in the Batch Session the value will be overwritten.
+JSON Patch add operation: Adds a value to an object or inserts it into an array. In the case of an array, the value is inserted before the given index. The `-` character can be used instead of an index to insert at the end of an array (see [jsonpatch.com](http://jsonpatch.com/)). If the path already exists in the Batch Session the value will be overwritten. The patch will fail if a key other than the innermost one does not already exist.
 
 * _@param {string} path_ - JSON pointer path
 * _@param {object} value_ - value to be stored
@@ -1343,6 +1344,7 @@ JSON Patch add operation: Adds a value to an object or inserts it into an array.
    ```
 
    Afterwards the Batch Session contains `{"obj": {"foo": "bar"}}`.
+   Note that `jatos.batchSession.add("/obj/foo", "bar")` will fail if `"/obj"` does not already point to an object.
 
 1. Add an array:
 
@@ -1793,7 +1795,7 @@ Accessing the Group Session is done via [JSON Patches (RFC 6902)](https://tools.
 
 ### `jatos.groupSession.get`
 
-Convenience function: like `jatos.groupSession.find` but works with a key instead of a JSON Pointer (without the slash in front of the key name). Therefore it works only on the first level of the session's object tree. It takes a name of an field within the Group Session and returns the matching value.  For all other levels of the object tree use jatos.groupSession.find. Gets the object from the locally stored copy of the session and does not call the server.
+Convenience function: like `jatos.groupSession.find` but works with a key instead of a JSON Pointer (without the slash in front of the key name). Therefore it works only on the first level of the session's object tree. It takes a name of an field within the Group Session and returns the matching value, or `undefined` if the key does not exist. For all other levels of the object tree use jatos.groupSession.find. Gets the object from the locally stored copy of the session and does not call the server.
 
 * _@param {string} name_ - name of the field
 * _@return {object}_ - the value that is stored under name
@@ -1936,7 +1938,7 @@ Clears the whole Group Session data and sets it to an empty object `{}`.
 
 ### `jatos.groupSession.find`
 
-Gets a field in the Group Session data. Takes a JSON Pointer and returns the matching value. Gets the object from the locally stored copy of the session and does not call the server. Contrary to `jatos.groupSession.get` it allows to get values from all levels of the Group Session's object tree.
+Gets a field in the Group Session data. Takes a JSON Pointer and returns the matching value, or `undefined` if the pointer does not correspond to an existing field. Gets the object from the locally stored copy of the session and does not call the server. Contrary to `jatos.groupSession.get` it allows to get values from all levels of the Group Session's object tree.
 
 * _@param {string} path_ - JSON pointer path
 * _@return {object}_ - the value that is stored in path
@@ -1948,6 +1950,7 @@ Given the Group Session is `{"a": {"a1": "foo", "a2": "bar"}, "b": 999}`
 ```javascript
 jatos.groupSession.find("/a/a1"); // returns "foo"
 jatos.groupSession.find("/b"); // returns 999
+jatos.groupSession.find("/c/d"); // returns undefined
 ```
 
 the first line returns "foo" and the second 999.
@@ -1990,7 +1993,7 @@ the first line returns true, second false and third true.
 
 ### `jatos.groupSession.add`
 
-JSON Patch add operation: Adds a value to an object or inserts it into an array. In the case of an array, the value is inserted before the given index. The `-` character can be used instead of an index to insert at the end of an array (see [jsonpatch.com](http://jsonpatch.com/)). If the path already exists in the Group Session the value will be overwritten.
+JSON Patch add operation: Adds a value to an object or inserts it into an array. In the case of an array, the value is inserted before the given index. The `-` character can be used instead of an index to insert at the end of an array (see [jsonpatch.com](http://jsonpatch.com/)). If the path already exists in the Group Session the value will be overwritten. The patch will fail if a key other than the innermost one does not already exist.
 
 * _@param {string} path_ - JSON pointer path
 * _@param {object} value_ - value to be stored
