@@ -1297,7 +1297,7 @@ JSON Patch test operation: Tests that the specified value is set in the document
 
 ### `jatos.batchSession.add`
 
-JSON Patch add operation: Adds a value to an object or inserts it into an array. In the case of an array, the value is inserted before the given index. The `-` character can be used instead of an index to insert at the end of an array (see [jsonpatch.com](http://jsonpatch.com/)). If the path already exists in the Batch Session the value will be overwritten. The patch will fail if a key other than the innermost one does not already exist.
+JSON Patch add operation: Adds a value to an object or inserts it into an array. In the case of an array, the value is inserted before the given index. The `-` character can be used instead of an index to insert at the end of an array (see [jsonpatch.com](http://jsonpatch.com/)). If the path already exists in the Batch Session the value will be overwritten. The patch will fail if a key other than the last path element is missing, e.g., when the path is `"/a/b/c"`, if `"a"` and `"b"` do not already exist as keys, the patch will fail.
 
 * _@param {string} path_ - JSON pointer path
 * _@param {object} value_ - value to be stored
@@ -1993,7 +1993,7 @@ the first line returns true, second false and third true.
 
 ### `jatos.groupSession.add`
 
-JSON Patch add operation: Adds a value to an object or inserts it into an array. In the case of an array, the value is inserted before the given index. The `-` character can be used instead of an index to insert at the end of an array (see [jsonpatch.com](http://jsonpatch.com/)). If the path already exists in the Group Session the value will be overwritten. The patch will fail if a key other than the innermost one does not already exist.
+JSON Patch add operation: Adds a value to an object or inserts it into an array. In the case of an array, the value is inserted before the given index. The `-` character can be used instead of an index to insert at the end of an array (see [jsonpatch.com](http://jsonpatch.com/)). If the path already exists in the Group Session the value will be overwritten. The patch will fail if a key other than the last path element is missing, e.g., when the path is `"/a/b/c"`, if `"a"` and `"b"` do not already exist as keys, the patch will fail.
 
 * _@param {string} path_ - JSON pointer path
 * _@param {object} value_ - value to be stored
