@@ -79,7 +79,7 @@ All the properties (except the JSON input data) you entered for this study
 
 ### `jatos.studyJsonInput`
 
-The JSON input you entered in the study's properties.
+The JSON input you entered in the study's properties. This is `{}` if the field was left empty.
 
 ### `jatos.studyLength`
 
@@ -99,7 +99,7 @@ All the properties (except the JSON input data) you entered for this component
 
 ### `jatos.componentJsonInput`
 
-The JSON input you entered in the component's properties.
+The JSON input you entered in the component's properties. This is `{}` if the field was left empty.
 
 ### `jatos.componentList`
 
@@ -118,7 +118,7 @@ Current version of the _jatos.js_ library
 
 ### `jatos.urlQueryParameters`
 
-Original query string parameters of the URL that starts the study. It is provided as a JavaScript object. This might be useful to pass on information from outside of JATOS into a study run, e.g. if you want to pass on information like gender and age. However if you know the information beforehand it's easier to put them in the Study's or Component's JSON input. Another example is MTurk which passes on it's worker's ID via a URL query parameter.
+Original query string parameters of the URL that starts the study. It is provided as a JavaScript object; the value is `{}` if no query string parameters are present. This might be useful to pass on information from outside of JATOS into a study run, e.g. if you want to pass on information like gender and age. However if you know the information beforehand it's easier to put them in the Study's or Component's JSON input. Another example is MTurk which passes on it's worker's ID via a URL query parameter.
 
 **Examples**
 
@@ -148,7 +148,7 @@ Time in ms to wait for an answer after sending a message via a channel (batch or
 ```javascript
 jatos.channelSendingTimeoutTime = 20000; // Sets channel timeout to 20 seconds
 ```
-  
+
 ### `jatos.channelHeartbeatInterval`
 
 Waiting time in ms between channel (group or batch) heartbeats (default is 25 s)
@@ -158,7 +158,7 @@ Waiting time in ms between channel (group or batch) heartbeats (default is 25 s)
 ```javascript
 jatos.channelHeartbeatInterval = 10000; // Sets interval to 10 seconds
 ```
-  
+
 ### `jatos.channelHeartbeatTimeoutTime`
 
 Waiting time in ms for JATOS server's answer to a channel heartbeat (default is 10 s)
@@ -168,7 +168,7 @@ Waiting time in ms for JATOS server's answer to a channel heartbeat (default is 
 ```javascript
 jatos.channelHeartbeatTimeoutTime = 20000; // Sets interval to 20 seconds
 ```
-  
+
 ### `jatos.channelClosedCheckInterval`
 
 Waiting time in ms between checking if channels (group or batch) are closed unexpectedly (default is 2 s)
@@ -178,8 +178,8 @@ Waiting time in ms between checking if channels (group or batch) are closed unex
 ```javascript
 jatos.channelClosedCheckInterval = 4000; // Sets interval to 4 seconds
 ```
-  
-### `jatos.channelOpeningBackoffTimeMin` 
+
+### `jatos.channelOpeningBackoffTimeMin`
 
 Min waiting time (in ms) between channel reopening attempts (default is 1s for min and 2 min for max). _jatos.js_ uses an _exponential back-off_ retry pattern for the channels.
 
@@ -208,17 +208,17 @@ Time in ms to wait for an answer of an HTTP request by _jatos.js_. Set this vari
 ```javascript
 jatos.httpTimeout = 30000; // Sets HTTP timeout to 30 seconds
 ```
-  
+
 ### `jatos.httpRetry`
 
-Some jatos functions (e.g. `jatos.sendResultData`) send an Ajax request to the JATOS server. If this request was not successful (e.g. network problems) _jatos.js_ retries it. With this variable one can change the number of retries. The default is 5. 
+Some jatos functions (e.g. `jatos.sendResultData`) send an Ajax request to the JATOS server. If this request was not successful (e.g. network problems) _jatos.js_ retries it. With this variable one can change the number of retries. The default is 5.
 
 **Example**
 
 ```javascript
 jatos.httpRetry = 2; // Attempts 2 retries of failed Ajax requests
 ```
-  
+
 ### `jatos.httpRetryWait`
 
 Same as `jatos.httpRetry` but this variable defines the waiting time between the retries. The default is 1000 ms.
@@ -358,12 +358,12 @@ Convenience function that shows a text and an image in the center of the screen.
      imgUrl: "http://url-to-my-coffee-picture",
      style: "color:brown"
    });
-   ```   
+   ```
 
-### `jatos.removeOverlay` 
+### `jatos.removeOverlay`
 
 Removes an overlay that was added by jatos.showOverlay.
- 
+
 **Example**
 
 ```javascript
@@ -371,11 +371,11 @@ jatos.removeOverlay()
 ```
 
 
-### `jatos.onError` 
+### `jatos.onError`
 
 DEPRECATED - use the specific function's error callback or Promise function instead
 
-Defines a callback function that is to be called in case _jatos.js_ produces an error. 
+Defines a callback function that is to be called in case _jatos.js_ produces an error.
 
 * _@param {function} callback_ - Function to be called in case of an error
 
@@ -392,7 +392,7 @@ jatos.onError(alert);
 
 Sends a message to be logged back to the JATOS server where it will be logged in JATOS' log file.
 
-* _@param {string} logMsg_ - The messages to be logged  
+* _@param {string} logMsg_ - The messages to be logged
 
 **Example**
 
@@ -403,8 +403,8 @@ jatos.log("Log this message in JATOS' log file");
 
 ### `jatos.catchAndLogErrors`
 
-Convenience function that sends all 'error' and 'unhandledrejection' events and 'console.error' and 'console.warn' calls to [JATOS' server log](Troubleshooting.html#read-log-file-in-the-browser). This is useful in debugging. 
-	 
+Convenience function that sends all 'error' and 'unhandledrejection' events and 'console.error' and 'console.warn' calls to [JATOS' server log](Troubleshooting.html#read-log-file-in-the-browser). This is useful in debugging.
+
 **Example**
 
 ```javascript
@@ -468,12 +468,12 @@ There are two versions: with or without message
 
 1. Without message:
 	* _@param {number} componentIdOrUuid_ - ID or UUID of the component to start
-   * _@param {optional object} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify). 
+   * _@param {optional object} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify).
    * _@param {optional function} onError_ - Callback function if fail
 
 1. With message:
 	 * _@param {number} componentIdOrUuid_ - ID or UUID of the component to start
-	 * _@param {optional object} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify). 
+	 * _@param {optional object} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify).
 	 * _@param {optional string} message_ - Message that should be logged (max 255 chars)
 	 * _@param {optional function} onError_ - Callback function if fail
 
@@ -498,7 +498,7 @@ There are two versions: with or without message
    jatos.startComponent(23, resultData);
    ```
 
-1. Send result data, jump to another component and send a message back that will be visible in JATOS result pages and log 
+1. Send result data, jump to another component and send a message back that will be visible in JATOS result pages and log
 
    ```javascript
    var resultData = "my important result data";
@@ -515,13 +515,13 @@ There are two versions: with or without message
 1. Without message
 
    * _@param {number} componentPos_ - Position of the component to start
-   * _@param {optional object} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify). 
+   * _@param {optional object} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify).
    * _@param {optional function} onError_ - Callback function if fail
 
 1. With message
 
    * _@param {number} componentPos_ - Position of the component to start
-	 * _@param {optional object or string} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify). 
+	 * _@param {optional object or string} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify).
 	 * _@param {optional string} message_ - Message that should be logged (max 255 chars)
 	 * _@param {optional function} onError_ - Callback function if fail
 
@@ -540,7 +540,7 @@ There are two versions: with or without message
    jatos.startComponentByPos(3, resultData);
    ```
 
-1. Send result data, jump to component in position 3 and send a message back that will be visible in JATOS result pages and log 
+1. Send result data, jump to component in position 3 and send a message back that will be visible in JATOS result pages and log
 
    ```javascript
    var resultData = "my important result data";
@@ -590,7 +590,6 @@ There are two versions: with or without message
    ```
 
 
-
 ### `jatos.startNextComponent`
 
 Finishes the currently running component and starts the next component of this study. The next component is the one with position + 1. The component position is the count of the component within the study like shown in the study overview page (1st component has position 1, 2nd component position 2, ...). One can additionally send result data back to the JATOS server.
@@ -599,12 +598,12 @@ There are two versions: with or without message
 
 1. Without message
 
-   * _@param {optional object} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify). 
+   * _@param {optional object} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify).
    * _@param {optional function} onError_ - Callback function if fail
 
 1. With message
 
-	 * _@param {optional object or string} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify). 
+	 * _@param {optional object or string} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify).
 	 * _@param {optional string} message_ - Message that should be logged (max 255 chars)
 	 * _@param {optional function} onError_ - Callback function if fail
 
@@ -623,7 +622,7 @@ There are two versions: with or without message
    jatos.startNextComponent(resultData);
    ```
 
-1. Send result data, jump to the next component and send a message back that will be visible in JATOS result pages and log 
+1. Send result data, jump to the next component and send a message back that will be visible in JATOS result pages and log
 
    ```javascript
    var resultData = "my important result data";
@@ -639,12 +638,12 @@ There are two versions: with or without message
 
 1. Without message
 
-	 * _@param {optional object} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify). 
+	 * _@param {optional object} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify).
    * _@param {optional function} onError_ - Callback function if fail
 
 1. With message
 
-	 * _@param {optional object or string} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify). 
+	 * _@param {optional object or string} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify).
 	 * _@param {optional string} message_ - Message that should be logged (max 255 chars)
 	 * _@param {optional function} onError_ - Callback function if fail
 
@@ -675,7 +674,7 @@ There are two versions: with or without message
 
 **Hint**: There is a convenience function `jatos.addAbortButton` that already adds a button to your document including showing an confirmation box and options to change it to your needs.
 
-Aborts study. All previously submitted result data will be deleted. Afterwards the worker is redirected to the study end page. Data stored in the Batch Session or Group Session are uneffected by this.
+Aborts study. All previously submitted result data will be deleted. Afterwards the worker is redirected to the study end page. Data stored in the Batch Session or Group Session are unaffected by this.
 
 * _@param {optional string} message_ - Message that will be stored together with the study results and is accessible via JATOS' GUI result pages. The message can be max 255 characters long.
 * _@param {optional boolean} showEndPage_ - If 'true' an end page is shown - if 'false' it	behaves like `jatos.endStudyAjax`, which means no showing of JATOS' end page
@@ -699,7 +698,7 @@ Aborts study. All previously submitted result data will be deleted. Afterwards t
 
 **Hint**: There is a convenience function `jatos.addAbortButton` that already adds a button to your document including showing an confirmation box and options to change it to your needs.
 
-Aborts study with an Ajax call. All previously submitted result data will be deleted. Data stored in the Batch Session or Group Session are uneffected by this. It offers callbacks, either as parameter or via a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), to signal success or failure in the ending.
+Aborts study with an Ajax call. All previously submitted result data will be deleted. Data stored in the Batch Session or Group Session are unaffected by this. It offers callbacks, either as parameter or via a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), to signal success or failure in the ending.
 
 * _@param {optional string} message_ - Message that should be logged
 * _@param {optional function} onSuccess_ - Function to be called in case of successful submit
@@ -746,7 +745,7 @@ There are two versions: with and without result data
    jatos.endStudy();
    ```
 
-1. End study and send a message back that will be visible in JATOS result pages and log 
+1. End study and send a message back that will be visible in JATOS result pages and log
 
    ```javascript
    jatos.endStudy(true, "everything worked fine");
@@ -799,7 +798,7 @@ Ends study and redirects the given URL. This is useful if you want to let the wo
    ```javascript
    var resultData = {id: 123, data: "my important result data"};
    jatos.endStudyAndRedirect("https://app.prolific.co/submissions/complete?cc=1234ABCD", resultData);
-   ```    
+   ```
 
 1. End study and redirect afterwards. A message will be sent back to JATOS and shown in the result page and put in the log.
 
@@ -843,14 +842,14 @@ Ends study with an Ajax call - afterwards the study is not redirected to the JAT
    ```javascript
    jatos.endStudyAjax(false, "some error description");
    ```
-   
+
 1. End study and show the confirmation code to the MTurk worker
 
    ```javascript
    jatos.endStudyAjax().then((confirmationCode) => {
      // Show the confirmation code to the worker
    });
-   ```   
+   ```
 
 1. Use Promise to submit result data and afterwards, end the study and move to another URL ([see also](jatos.js-Reference.html#jatosendstudyandredirect))
 
@@ -860,7 +859,7 @@ Ends study with an Ajax call - afterwards the study is not redirected to the JAT
      .then(jatos.endStudyAjax)
      .then(() => { window.location.href = 'http://example.com/index.html' })
      .catch(() => console.log("Something went wrong"));
-   ``` 
+   ```
 
 1. Send result data and end study
 
@@ -1089,7 +1088,7 @@ All the properties you entered for this batch.
 
 ### `jatos.batchJsonInput`
 
-The JSON input you entered in the batch's properties.
+The JSON input you entered in the batch's properties. This is `{}` if the field was left empty.
 
 
 
@@ -1099,9 +1098,9 @@ The Batch Session is stored in JATOS' database on the server side (see also [Ses
 
 On the other side for all reading functions (`get`, `find`, `getAll`, `test`) there is no need to sync data between client and server, because _jatos.js_ keeps a copy of the Batch Session locally. Therefore all reading functions do not offer callbacks, because there is no risk of failure of synchronization.
 
-Additionally to the reading and writing functions the calback function `jatos.onBatchSession(callback)` offers a way to get notified whenever the Batch Session changes in the JATOS' database regardless of the origin of the change. This way, you can have the client of each worker react to changes in the batch that were done by another worker in the batch. 
+Additionally to the reading and writing functions the calback function `jatos.onBatchSession(callback)` offers a way to get notified whenever the Batch Session changes in the JATOS' database regardless of the origin of the change. This way, you can have the client of each worker react to changes in the batch that were done by another worker in the batch.
 
-Accessing the Batch Session is done via [JSON Patches (RFC 6902)](https://tools.ietf.org/html/rfc6902) and 
+Accessing the Batch Session is done via [JSON Patches (RFC 6902)](https://tools.ietf.org/html/rfc6902) and
 [JSON Pointer (RFC 6901)](https://tools.ietf.org/html/rfc6901). An introduction can be found under [jsonpatch.com](http://jsonpatch.com/). For JSON Patches _jatos.js_ uses the [JSON-Patch](https://github.com/Starcounter-Jack/JSON-Patch) library from Joachim Wester and for JSON Pointers the [jsonpointer.js](https://github.com/alexeykuzmin/jsonpointer.js) library from Alexey Kuzmin.
 
 
@@ -1135,9 +1134,9 @@ The callback function has two parameter:
 
 ### `jatos.batchSession.get`
 
-Convenience function: like `jatos.batchSession.find` but works with a key instead of a JSON Pointer. Therefore it works only on the first level of the session's object tree. It takes a name of an field within the Batch Session and returns the matching value.  For all other levels of the object tree use jatos.batchSession.find. Gets the object from the locally stored copy of the session and does not call the server.
+Convenience function: like `jatos.batchSession.find` but works with a key instead of a JSON Pointer. Therefore it works only on the first level of the session's object tree. It takes a name of a field within the Batch Session and returns the matching value, or `undefined` if the key does not exist. For all other levels of the object tree use `jatos.batchSession.find`. Gets the object from the locally stored copy of the session and does not call the server.
 
-* _@param {string} name_ - name of the field 
+* _@param {string} name_ - name of the field
 * _@return {object}_ - the value that is stored under name
 
 **Examples**
@@ -1164,7 +1163,7 @@ Convenience function: like `jatos.batchSession.find` but works with a key instea
 
 A convenience function for `jatos.batchSession.add`. Instead of a JSON Pointer path it accepts a name of the field to be stored (without a slash in front). Therefore it works only on the first level of the Batch Session's object tree. If the name already exists in the Batch Session the value will be overwritten.
 
-* _@param {string} name_ - name of the field 
+* _@param {string} name_ - name of the field
 * _@param {object} value_ - value to be stored
 * _@param {optional callback} onSuccess_ - Function to be called if this patch was successfully applied on the server and the client side
 * _@param {optional callback} onError_ - Function to be called if this patch failed
@@ -1275,9 +1274,9 @@ Clears the whole Batch Session data and sets it to an empty object `{}`.
 
 ### `jatos.batchSession.find`
 
-Gets a field in the Batch Session data. Takes a JSON Pointer and returns the matching value. Gets the object from the locally stored copy of the session and does not call the server. Contrary to `jatos.batchSession.get` it allows to get values from all levels of the Batch Session's object tree.
+Gets a field in the Batch Session data. Takes a JSON Pointer and returns the matching value, or `undefined` if the pointer does not correspond to an existing field. Gets the object from the locally stored copy of the session and does not call the server. Contrary to `jatos.batchSession.get` it allows to get values from all levels of the Batch Session's object tree.
 
-* _@param {string} path_ - JSON pointer path 
+* _@param {string} path_ - JSON pointer path
 * _@return {object}_ - the value that is stored in path
 
 **Example**
@@ -1289,6 +1288,7 @@ Gets a field in the Batch Session data. Takes a JSON Pointer and returns the mat
    ```javascript
    jatos.batchSession.find("/a/a1"); // returns "foo"
    jatos.batchSession.find("/b"); // returns 999
+   jatos.batchSession.find("/c/d"); // returns undefined
    ```
 
 
@@ -1326,7 +1326,7 @@ JSON Patch test operation: Tests that the specified value is set in the document
    jatos.batchSession.test("/b/b1", "flowers"); // returns true
    ```
 
-1. If you want to know the existence of a path in the Batch Session you can test against `undefined`:
+1. If you want to know the existence of a path in the Batch Session you can test against `undefined`. The function `jatos.batchSession.defined` provides a shortcut for this use case.
 
    ```javascript
    if (!jatos.batchSession.test("/c", undefined)) {
@@ -1339,9 +1339,9 @@ JSON Patch test operation: Tests that the specified value is set in the document
 
 ### `jatos.batchSession.add`
 
-JSON Patch add operation: Adds a value to an object or inserts it into an array. In the case of an array, the value is inserted before the given index. The `-` character can be used instead of an index to insert at the end of an array (see [jsonpatch.com](http://jsonpatch.com/)). If the path already exists in the Batch Session the value will be overwritten.
+JSON Patch add operation: Adds a value to an object or inserts it into an array. In the case of an array, the value is inserted before the given index. The `-` character can be used instead of an index to insert at the end of an array (see [jsonpatch.com](http://jsonpatch.com/)). If the path already exists in the Batch Session the value will be overwritten. The patch will fail if a key other than the last path element is missing, e.g., when the path is `"/a/b/c"`, if `"a"` and `"b"` do not already exist as keys, the patch will fail.
 
-* _@param {string} path_ - JSON pointer path 
+* _@param {string} path_ - JSON pointer path
 * _@param {object} value_ - value to be stored
 * _@param {optional callback} onSuccess_ - Function to be called if this patch was successfully applied on the server and the client side
 * _@param {optional callback} onError_ - Function to be called if this patch failed
@@ -1376,7 +1376,7 @@ JSON Patch add operation: Adds a value to an object or inserts it into an array.
       .then(() => console.log("Batch Session was successfully updated"))
       .catch(() => console.log("Batch Session synchronization failed"));
    ```
-   
+
 1. Add an object:
 
    ```javascript
@@ -1384,9 +1384,10 @@ JSON Patch add operation: Adds a value to an object or inserts it into an array.
       .then(() => console.log("Batch Session was successfully updated"))
       .catch(() => console.log("Batch Session synchronization failed"));
    ```
-   
+
    Afterwards the Batch Session contains `{"obj": {"foo": "bar"}}`.
-   
+   Note that `jatos.batchSession.add("/obj/foo", "bar")` will fail if `"/obj"` does not already point to an object.
+
 1. Add an array:
 
    ```javascript
@@ -1405,7 +1406,7 @@ JSON Patch add operation: Adds a value to an object or inserts it into an array.
       .then(() => console.log("Batch Session was successfully updated"))
       .catch(() => console.log("Batch Session synchronization failed"));
    ```
-   
+
    then afterwards the Batch Session contains `{"array": [1, 2, "new", 3]}`.
 
 1. Append to the end of an array using `/-`:
@@ -1417,7 +1418,7 @@ JSON Patch add operation: Adds a value to an object or inserts it into an array.
       .then(() => console.log("Batch Session was successfully updated"))
       .catch(() => console.log("Batch Session synchronization failed"));
    ```
-   
+
    then afterwards the Batch Session contains `{"array": [1, 2, 3, "new"]}`.
 
 1. Have a series of Batch Session updates
@@ -1466,7 +1467,7 @@ JSON Patch remove operation: Removes a value from an object or array (see [jsonp
 
 JSON Patch replace operation: Replaces a value. Equivalent to a 'remove' followed by an 'add' (see [jsonpatch.com](http://jsonpatch.com/)).
 
-* _@param {string} path_ - JSON pointer path 
+* _@param {string} path_ - JSON pointer path
 * _@param {object} value_ - value to be replaced with
 * _@param {optional callback} onSuccess_ - Function to be called if this patch was successfully applied on the server and the client side
 * _@param {optional callback} onError_ - Function to be called if this patch failed
@@ -1499,7 +1500,7 @@ JSON Patch replace operation: Replaces a value. Equivalent to a 'remove' followe
 
 JSON Patch copy operation: Copies a value from one location to another within the JSON document. Both from and path are JSON Pointers (see [jsonpatch.com](http://jsonpatch.com/)).
 
-* _@param {string} from_ - JSON pointer path to the origin 
+* _@param {string} from_ - JSON pointer path to the origin
 * _@param {string} path_ - JSON pointer path to the target
 * _@param {optional callback} onSuccess_ - Function to be called if this patch was successfully applied on the server and the client side
 * _@param {optional callback} onError_ - Function to be called if this patch failed
@@ -1532,7 +1533,7 @@ JSON Patch copy operation: Copies a value from one location to another within th
 
 JSON Patch move operation: Moves a value from one location to the other. Both from and path are JSON Pointers. (see [jsonpatch.com](http://jsonpatch.com/)).
 
-* _@param {string} from_ - JSON pointer path to the origin 
+* _@param {string} from_ - JSON pointer path to the origin
 * _@param {string} path_ - JSON pointer path to the target
 * _@param {optional callback} onSuccess_ - Function to be called if this patch was successfully applied on the server and the client side
 * _@param {optional callback} onError_ - Function to be called if this patch failed
@@ -1830,15 +1831,15 @@ The Group Session is stored in JATOS' database on the server side. That means th
 
 On the other side for all reading functions (`get`, `find`, `getAll`, `test`) there is no need to sync data between client and server, because _jatos.js_ keeps a copy of the Group Session locally. Therefore all reading functions do not offer callbacks, because there is no risk of failure of synchronization.
 
-Accessing the Group Session is done via [JSON Patches (RFC 6902)](https://tools.ietf.org/html/rfc6902) and 
+Accessing the Group Session is done via [JSON Patches (RFC 6902)](https://tools.ietf.org/html/rfc6902) and
 [JSON Pointer (RFC 6901)](https://tools.ietf.org/html/rfc6901). An introduction can be found under [jsonpatch.com](http://jsonpatch.com/). For JSON Patches _jatos.js_ uses the [JSON-Patch](https://github.com/Starcounter-Jack/JSON-Patch) library from Joachim Wester and for JSON Pointers the [jsonpointer.js](https://github.com/alexeykuzmin/jsonpointer.js) library from Alexey Kuzmin.
 
 
 ### `jatos.groupSession.get`
 
-Convenience function: like `jatos.groupSession.find` but works with a key instead of a JSON Pointer (without the slash in front of the key name). Therefore it works only on the first level of the session's object tree. It takes a name of an field within the Group Session and returns the matching value.  For all other levels of the object tree use jatos.groupSession.find. Gets the object from the locally stored copy of the session and does not call the server.
+Convenience function: like `jatos.groupSession.find` but works with a key instead of a JSON Pointer (without the slash in front of the key name). Therefore it works only on the first level of the session's object tree. It takes a name of an field within the Group Session and returns the matching value, or `undefined` if the key does not exist. For all other levels of the object tree use jatos.groupSession.find. Gets the object from the locally stored copy of the session and does not call the server.
 
-* _@param {string} name_ - name of the field 
+* _@param {string} name_ - name of the field
 * _@return {object}_ - the value that is stored under name
 
 **Examples**
@@ -1869,7 +1870,7 @@ Convenience function: like `jatos.groupSession.find` but works with a key instea
 
 A convenience function for `jatos.groupSession.add`. Instead of a JSON Pointer path it accepts a name of the field to be stored (without the slash in front). Therefore it works only on the first level of the Group Session's object tree. If the name already exists in the Group Session the value will be overwritten.
 
-* _@param {string} name_ - name of the field 
+* _@param {string} name_ - name of the field
 * _@param {object} value_ - value to be stored
 * _@param {optional callback} onSuccess_ - Function to be called if this patch was successfully applied on the server and the client side
 * _@param {optional callback} onError_ - Function to be called if this patch failed
@@ -1979,9 +1980,9 @@ Clears the whole Group Session data and sets it to an empty object `{}`.
 
 ### `jatos.groupSession.find`
 
-Gets a field in the Group Session data. Takes a JSON Pointer and returns the matching value. Gets the object from the locally stored copy of the session and does not call the server. Contrary to `jatos.groupSession.get` it allows to get values from all levels of the Group Session's object tree.
+Gets a field in the Group Session data. Takes a JSON Pointer and returns the matching value, or `undefined` if the pointer does not correspond to an existing field. Gets the object from the locally stored copy of the session and does not call the server. Contrary to `jatos.groupSession.get` it allows to get values from all levels of the Group Session's object tree.
 
-* _@param {string} path_ - JSON pointer path 
+* _@param {string} path_ - JSON pointer path
 * _@return {object}_ - the value that is stored in path
 
 **Example**
@@ -1991,6 +1992,7 @@ Given the Group Session is `{"a": {"a1": "foo", "a2": "bar"}, "b": 999}`
 ```javascript
 jatos.groupSession.find("/a/a1"); // returns "foo"
 jatos.groupSession.find("/b"); // returns 999
+jatos.groupSession.find("/c/d"); // returns undefined
 ```
 
 the first line returns "foo" and the second 999.
@@ -2018,24 +2020,36 @@ JSON Patch test operation: Tests that the specified value is set in the document
 * _@param {object} value_ - value to be tested
 * _@return {boolean}_
 
-**Example**
+**Examples**
 
-Given the Group Session is `{"a": 123, "b": {"b1": "flowers", "b2": "animals"}}`
+1. Test if a certain field in the Group Session has a value
 
-```javascript
-jatos.groupSession.test("/a", 123); // returns true
-jatos.groupSession.test("/a", 10); // returns false
-jatos.groupSession.test("/b/b1", "flowers"); // returns true
-```
+   Given the Group Session is `{"a": 123, "b": {"b1": "flowers", "b2": "animals"}}`
+
+   ```javascript
+   jatos.groupSession.test("/a", 123); // returns true
+   jatos.groupSession.test("/a", 10); // returns false
+   jatos.groupSession.test("/b/b1", "flowers"); // returns true
+   ```
 
 the first line returns true, second false and third true.
+
+1. If you want to know the existence of a path in the Group Session you can test against `undefined`. The function `jatos.groupSession.defined` provides a shortcut for this use case.
+
+   ```javascript
+   if (!jatos.groupSession.test("/c", undefined)) {
+     // Path "/c" exists
+   } else {
+     // Path "/c" doesn't exist
+   }
+   ```
 
 
 ### `jatos.groupSession.add`
 
-JSON Patch add operation: Adds a value to an object or inserts it into an array. In the case of an array, the value is inserted before the given index. The `-` character can be used instead of an index to insert at the end of an array (see [jsonpatch.com](http://jsonpatch.com/)). If the path already exists in the Group Session the value will be overwritten.
+JSON Patch add operation: Adds a value to an object or inserts it into an array. In the case of an array, the value is inserted before the given index. The `-` character can be used instead of an index to insert at the end of an array (see [jsonpatch.com](http://jsonpatch.com/)). If the path already exists in the Group Session the value will be overwritten. The patch will fail if a key other than the last path element is missing, e.g., when the path is `"/a/b/c"`, if `"a"` and `"b"` do not already exist as keys, the patch will fail.
 
-* _@param {string} path_ - JSON pointer path 
+* _@param {string} path_ - JSON pointer path
 * _@param {object} value_ - value to be stored
 * _@param {optional callback} onSuccess_ - Function to be called if this patch was successfully applied on the server and the client side
 * _@param {optional callback} onError_ - Function to be called if this patch failed
@@ -2043,7 +2057,15 @@ JSON Patch add operation: Adds a value to an object or inserts it into an array.
 
 **Examples**
 
-1. Add an a field to the Group Session 
+1. Add an a field to the empty Group Session
+
+   ```javascript
+   jatos.groupSession.add("/a", 100);
+   ```
+
+   After the Group Session is successfully updated the new object is `{"a": 100}`.
+
+1. Add an a field to the Group Session
 
    If the Group Session is `{"a": 100}` and one calls
 
@@ -2062,30 +2084,72 @@ JSON Patch add operation: Adds a value to an object or inserts it into an array.
       .then(() => console.log("Group Session was successfully updated"))
       .catch(() => console.log("Group Session synchronization failed"));
    ```
-
-1. Example with an array: Put the object `{id: 123, name: "Max"}` after the second position of the array with the path `/subjects`:
+   
+1. Add an object:
 
    ```javascript
-   jatos.groupSession.add("/subjects/2", {id: 123, name: "Max"})
+   jatos.groupSession.add("/obj", { foo: "bar" })
+      .then(() => console.log("Group Session was successfully updated"))
+      .catch(() => console.log("Group Session synchronization failed"));
+   ```
+   
+   Afterwards the Group Session contains `{"obj": {"foo": "bar"}}`.
+
+1. Add to a nested object:
+
+   If the Group Session is `{"a": {"b": {}}}` and one calls
+
+   ```javascript
+   jatos.groupSession.add("/a/b/c", 123)
       .then(() => console.log("Group Session was successfully updated"))
       .catch(() => console.log("Group Session synchronization failed"));
    ```
 
-1. Example of how to append to the end of an array: use `/-` after the arrays name:
+   then afterwards the Group Session contains `{"a": {"b": {"c": 123}}}`.
+
+   Note that `jatos.groupSession.add("/a/b/c", 123)` will fail if `"a"` and `"b"` do not exists and `"b"` is not an object.
+   
+1. Add an array:
 
    ```javascript
-   jatos.groupSession.add("/subjects/-", {id: 124, name: "Adam"})
+   jatos.groupSession.add("/array", [1, 2, 3])
       .then(() => console.log("Group Session was successfully updated"))
       .catch(() => console.log("Group Session synchronization failed"));
    ```
+   Afterwards the Group Session contains `{"array": [1, 2, 3]}`.
 
-1. Have a series of Group Session changes
+1. Add an element to an array:
+
+   If the Group Session is `{"array": [1, 2, 3]}` and one calls
+
+   ```javascript
+   jatos.groupSession.add("/array/2", "new")
+      .then(() => console.log("Group Session was successfully updated"))
+      .catch(() => console.log("Group Session synchronization failed"));
+   ```
+   
+   then afterwards the Group Session contains `{"array": [1, 2, "new", 3]}`.
+
+1. Append to the end of an array using `/-`:
+
+   If the Group Session is `{"array": [1, 2, 3]}` and one calls
+
+   ```javascript
+   jatos.groupSession.add("/array/-", "new")
+      .then(() => console.log("Group Session was successfully updated"))
+      .catch(() => console.log("Group Session synchronization failed"));
+   ```
+   
+   then afterwards the Group Session contains `{"array": [1, 2, 3, "new"]}`.
+
+1. Have a series of Group Session updates
 
    ```javascript
    jatos.groupSession.add("/a", 1)
       .then(() => jatos.groupSession.add("/b", 2))
       .then(() => jatos.groupSession.add("/c", 3))
       .catch(() => console.log("Group Session synchronization failed"));
+   ```
 
 
 ### `jatos.groupSession.remove`
@@ -2124,7 +2188,7 @@ JSON Patch remove operation: Removes a value from an object or array (see [jsonp
 
 JSON Patch replace operation: Replaces a value. Equivalent to a “remove” followed by an “add” (see [jsonpatch.com](http://jsonpatch.com/)).
 
-* _@param {string} path_ - JSON pointer path 
+* _@param {string} path_ - JSON pointer path
 * _@param {object} value_ - value to be replaced with
 * _@param {optional callback} onSuccess_ - Function to be called if this patch was successfully applied on the server and the client side
 * _@param {optional callback} onError_ - Function to be called if this patch failed
@@ -2157,7 +2221,7 @@ JSON Patch replace operation: Replaces a value. Equivalent to a “remove” fol
 
 JSON Patch copy operation: Copies a value from one location to another within the JSON document. Both from and path are JSON Pointers (see [jsonpatch.com](http://jsonpatch.com/)).
 
-* _@param {string} from_ - JSON pointer path to the origin 
+* _@param {string} from_ - JSON pointer path to the origin
 * _@param {string} path_ - JSON pointer path to the target
 * _@param {optional callback} onSuccess_ - Function to be called if this patch was successfully applied on the server and the client side
 * _@param {optional callback} onError_ - Function to be called if this patch failed
@@ -2190,7 +2254,7 @@ JSON Patch copy operation: Copies a value from one location to another within th
 
 JSON Patch move operation: Moves a value from one location to the other. Both from and path are JSON Pointers. (see [jsonpatch.com](http://jsonpatch.com/)).
 
-* _@param {string} from_ - JSON pointer path to the origin 
+* _@param {string} from_ - JSON pointer path to the origin
 * _@param {string} path_ - JSON pointer path to the target
 * _@param {optional callback} onSuccess_ - Function to be called if this patch was successfully applied on the server and the client side
 * _@param {optional callback} onError_ - Function to be called if this patch failed
