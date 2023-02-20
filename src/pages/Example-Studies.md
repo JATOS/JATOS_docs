@@ -4,13 +4,16 @@ keywords: example studies, jspsych, lab.js, labjs, osweb, opensesame, javascript
 slug: /Example-Studies.html
 hide_table_of_contents: true
 ---
+
 # Example Studies
+
 **summary:** These study examples will (hopefully) be a helpful starting point for you to write your own studies. They also show how different client-side frameworks integrate with JATOS, and illustrate (e.g.) how to easily import/export studies, how to store and show results, and how to do messaging in group studies.
 
 ### Overview
+
 JATOS gives you complete freedom on the client side. You can do whatever you like! You can use in your study code whatever technologies work in browsers (e.g. HTML5 canvas, CSS3 or 3D graphics with WebGL). Additionally browser-side JavaScript libraries or frameworks like [Bootstrap](http://getbootstrap.com/), [Highcharts](http://www.highcharts.com/), [p5](https://p5js.org/), or [jsPsych](http://www.jspsych.org/) are possible and will smooth out your path to quick and easy development. Of course the same is true for CSS modules (e.g. [Pure.css](http://purecss.io/), [Material Design](http://www.google.com/design/spec/material-design/introduction.html)). These are some examples of how to use these client-side frameworks in combination with JATOS. 
 
-Click on the study name to download the .jzip file and [import it into JATOS](Get-started.html).  
+Click on the study name to download the _.jzip file_ and [import it into JATOS](Get-started.html).
 
 **If you have trouble downloading a study (common in Safari browsers) check [this troubleshooting tip](Troubleshooting.html#downloading-a-study--exporting-a-study-fails-eg-in-safari-browsers).**
 

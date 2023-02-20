@@ -1,6 +1,7 @@
 ---
 title: jatos.js Reference
 slug: /jatos.js-Reference.html
+sidebar_position: 1
 ---
 
 ## Introduction
@@ -548,6 +549,48 @@ There are two versions: with or without message
    ```
 
 
+### `jatos.startComponentByTitle`
+
+(Needs JATOS version >= 3.7.5) - Finishes the currently running component and starts the component with the given title. If there is more than one component with this title it starts the first. One can additionally send result data back to the JATOS server.
+
+There are two versions: with or without message
+
+1. Without message
+
+   * _@param {string} title - Title of the component to start
+   * _@param {optional object} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify). 
+   * _@param {optional function} onError_ - Callback function if fail
+
+1. With message
+
+   * _@param {string} title - Title of the component to start
+   * _@param {optional object or string} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify). 
+   * _@param {optional string} message_ - Message that should be logged (max 255 chars)
+   * _@param {optional function} onError_ - Callback function if fail
+
+**Examples**
+
+1. Jump to component with title "Some title"
+
+   ```javascript
+   jatos.startComponentByTitle("Some title");
+   ```
+
+1. Send result data and jump to component with title "Some title"
+
+   ```javascript
+   var resultData = "my important result data";
+   jatos.startComponentByTitle("Some title", resultData);
+   ```
+
+1. Send result data, jump to component with title "Some title" and send a message back that will be visible in JATOS result pages and log 
+
+   ```javascript
+   var resultData = "my important result data";
+   jatos.startComponentByTitle("Some title", resultData, "everything okay");
+   ```
+
+
 ### `jatos.startNextComponent`
 
 Finishes the currently running component and starts the next component of this study. The next component is the one with position + 1. The component position is the count of the component within the study like shown in the study overview page (1st component has position 1, 2nd component position 2, ...). One can additionally send result data back to the JATOS server.
@@ -632,7 +675,7 @@ There are two versions: with or without message
 
 **Hint**: There is a convenience function `jatos.addAbortButton` that already adds a button to your document including showing an confirmation box and options to change it to your needs.
 
-Aborts study. All previously submitted result data will be deleted. Afterwards the worker is redirected to the study end page. Data stored in the Batch Session or Group Session are uneffected by this.
+Aborts study. All previously submitted result data will be deleted. Afterwards the worker is redirected to the study end page. Data stored in the Batch Session or Group Session are unaffected by this.
 
 * _@param {optional string} message_ - Message that will be stored together with the study results and is accessible via JATOS' GUI result pages. The message can be max 255 characters long.
 * _@param {optional boolean} showEndPage_ - If 'true' an end page is shown - if 'false' it	behaves like `jatos.endStudyAjax`, which means no showing of JATOS' end page
@@ -656,7 +699,7 @@ Aborts study. All previously submitted result data will be deleted. Afterwards t
 
 **Hint**: There is a convenience function `jatos.addAbortButton` that already adds a button to your document including showing an confirmation box and options to change it to your needs.
 
-Aborts study with an Ajax call. All previously submitted result data will be deleted. Data stored in the Batch Session or Group Session are uneffected by this. It offers callbacks, either as parameter or via a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), to signal success or failure in the ending.
+Aborts study with an Ajax call. All previously submitted result data will be deleted. Data stored in the Batch Session or Group Session are unaffected by this. It offers callbacks, either as parameter or via a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), to signal success or failure in the ending.
 
 * _@param {optional string} message_ - Message that should be logged
 * _@param {optional function} onSuccess_ - Function to be called in case of successful submit
@@ -1978,17 +2021,29 @@ JSON Patch test operation: Tests that the specified value is set in the document
 * _@param {object} value_ - value to be tested
 * _@return {boolean}_
 
-**Example**
+**Examples**
 
-Given the Group Session is `{"a": 123, "b": {"b1": "flowers", "b2": "animals"}}`
+1. Test if a certain field in the Group Session has a value
 
-```javascript
-jatos.groupSession.test("/a", 123); // returns true
-jatos.groupSession.test("/a", 10); // returns false
-jatos.groupSession.test("/b/b1", "flowers"); // returns true
-```
+   Given the Group Session is `{"a": 123, "b": {"b1": "flowers", "b2": "animals"}}`
+
+   ```javascript
+   jatos.groupSession.test("/a", 123); // returns true
+   jatos.groupSession.test("/a", 10); // returns false
+   jatos.groupSession.test("/b/b1", "flowers"); // returns true
+   ```
 
 the first line returns true, second false and third true.
+
+1. If you want to know the existence of a path in the Group Session you can test against `undefined`. The function `jatos.groupSession.defined` provides a shortcut for this use case.
+
+   ```javascript
+   if (!jatos.groupSession.test("/c", undefined)) {
+     // Path "/c" exists
+   } else {
+     // Path "/c" doesn't exist
+   }
+   ```
 
 
 ### `jatos.groupSession.add`
@@ -2002,6 +2057,14 @@ JSON Patch add operation: Adds a value to an object or inserts it into an array.
 * _@return {Promise}_
 
 **Examples**
+
+1. Add an a field to the empty Group Session
+
+   ```javascript
+   jatos.groupSession.add("/a", 100);
+   ```
+
+   After the Group Session is successfully updated the new object is `{"a": 100}`.
 
 1. Add an a field to the Group Session
 
@@ -2022,30 +2085,72 @@ JSON Patch add operation: Adds a value to an object or inserts it into an array.
       .then(() => console.log("Group Session was successfully updated"))
       .catch(() => console.log("Group Session synchronization failed"));
    ```
-
-1. Example with an array: Put the object `{id: 123, name: "Max"}` after the second position of the array with the path `/subjects`:
+   
+1. Add an object:
 
    ```javascript
-   jatos.groupSession.add("/subjects/2", {id: 123, name: "Max"})
+   jatos.groupSession.add("/obj", { foo: "bar" })
+      .then(() => console.log("Group Session was successfully updated"))
+      .catch(() => console.log("Group Session synchronization failed"));
+   ```
+   
+   Afterwards the Group Session contains `{"obj": {"foo": "bar"}}`.
+
+1. Add to a nested object:
+
+   If the Group Session is `{"a": {"b": {}}}` and one calls
+
+   ```javascript
+   jatos.groupSession.add("/a/b/c", 123)
       .then(() => console.log("Group Session was successfully updated"))
       .catch(() => console.log("Group Session synchronization failed"));
    ```
 
-1. Example of how to append to the end of an array: use `/-` after the arrays name:
+   then afterwards the Group Session contains `{"a": {"b": {"c": 123}}}`.
+
+   Note that `jatos.groupSession.add("/a/b/c", 123)` will fail if `"a"` and `"b"` do not exists and `"b"` is not an object.
+   
+1. Add an array:
 
    ```javascript
-   jatos.groupSession.add("/subjects/-", {id: 124, name: "Adam"})
+   jatos.groupSession.add("/array", [1, 2, 3])
       .then(() => console.log("Group Session was successfully updated"))
       .catch(() => console.log("Group Session synchronization failed"));
    ```
+   Afterwards the Group Session contains `{"array": [1, 2, 3]}`.
 
-1. Have a series of Group Session changes
+1. Add an element to an array:
+
+   If the Group Session is `{"array": [1, 2, 3]}` and one calls
+
+   ```javascript
+   jatos.groupSession.add("/array/2", "new")
+      .then(() => console.log("Group Session was successfully updated"))
+      .catch(() => console.log("Group Session synchronization failed"));
+   ```
+   
+   then afterwards the Group Session contains `{"array": [1, 2, "new", 3]}`.
+
+1. Append to the end of an array using `/-`:
+
+   If the Group Session is `{"array": [1, 2, 3]}` and one calls
+
+   ```javascript
+   jatos.groupSession.add("/array/-", "new")
+      .then(() => console.log("Group Session was successfully updated"))
+      .catch(() => console.log("Group Session synchronization failed"));
+   ```
+   
+   then afterwards the Group Session contains `{"array": [1, 2, 3, "new"]}`.
+
+1. Have a series of Group Session updates
 
    ```javascript
    jatos.groupSession.add("/a", 1)
       .then(() => jatos.groupSession.add("/b", 2))
       .then(() => jatos.groupSession.add("/c", 3))
       .catch(() => console.log("Group Session synchronization failed"));
+   ```
 
 
 ### `jatos.groupSession.remove`

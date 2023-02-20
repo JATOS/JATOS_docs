@@ -4,9 +4,11 @@ slug: /Install-JATOS-via-Docker.html
 sidebar_position: 8
 ---
 
-JATOS has a Docker image: [hub.docker.com/r/jatos/jatos/](https://hub.docker.com/r/jatos/jatos/)
+JATOS' Docker images are hosted at [hub.docker.com/r/jatos/jatos/](https://hub.docker.com/r/jatos/jatos/).
 
 Docker is a great technology, but if you never heard of it you can safely ignore this page (it's not necessary to use it if you want to install JATOS, either locally or on a server). 
+
+Since 3.7.4 Docker images for JATOS exist for _arm64_ and _amd64_ CPU architectures.
 
 
 ### Install JATOS locally with a Docker container

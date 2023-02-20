@@ -47,6 +47,12 @@ JATOS can be configured to use an base path. E.g we have the host "www.example.o
    ~~~shell
    play.http.context = "/mybasepath/"
    ~~~
+   
+1. Via the environment variable `JATOS_URL_BASE_PATH`, e.g.
+
+   ~~~shell
+   export JATOS_URL_BASE_PATH="/mybasepath/"
+   ~~~
 
 **The path always has to start and end with a "/".** And keep in mind that if you add a base path to JATOS' URL you have to adjust all absolute paths to the study assets (in HTML and JavaScript files) too - [or use relative paths](Adapt-pre-written-code-to-run-it-in-JATOS.html#create-the-study-in-jatos) (which is recommended anyway).
 
@@ -172,7 +178,9 @@ There are three ways to change the configuration of the study logs:
 By default JATOS uses only locally stored users and no LDAP. LDAP configuration is only possible in `conf/production.conf`. At the moment LDAP users still have to be created manually in JATOS' _User manager_ (with the checkbox LDAP turned on).- only authentication is done via LDAP.
 
 * `jatos.user.authentication.ldap.url` - Specifies URL of the LDAP server. Not set or an empty string means no authentication via LDAP.
-* `jatos.user.authentication.ldap.basedn` - LDAP base domain name (e.g. "dc=example,dc=com"). Not set or an empty string means no authentication via LDAP.
+* `jatos.user.authentication.ldap.basedn` - LDAP base DN(s) (distinguished name). Can be one DN with a single string (e.g. `"ou=students,dc=example,dc=com"`) or a list of DNs in squared brackets (e.g. `["ou=students,dc=example,dc=com", "ou=scientists,dc=example,dc=com"]`). Not set or an empty string means no authentication via LDAP.
+* `jatos.user.authentication.ldap.admin.dn` - DN (distinguished name) of an (optional) admin user that has the right to search for other users. Some LDAP servers need this if it is impossible to bind directly to an 'uid'. Not set or an empty string means no admin user needed.
+* `jatos.user.authentication.ldap.admin.password` - Password of the admin user
 * `jatos.user.authentication.ldap.timeout` -  Time in milliseconds JATOS waits for a response from your LDAP server. Default is 5000 ms.
 
 If your LDAP uses encryption, you have to add your certificate to JATOS' trusted certificates defined with `play.ws.ssl.trustManager.stores`. E.g. if your certificate's location is in `/jatos/conf/certs/ca.pem`, then use the following to add it:
@@ -214,6 +222,11 @@ Some other properties can be configured in the `conf/production.conf`.
 * `jatos.studyMembers.allowAddAllUsers` - Allow to add all users that exist on a JATOS to be added at once as members of a study. Default is false. 
 * `jatos.resultData.export.useTmpFile` - If true, result data that are fetched from the database are first stored in a temporary file and only when they are all gathered the file is sent to the browser. If false the result data are streamed directly from the database to the browser. Default is false.
 * `jatos.maxResultsDbQuerySize` - Maximal number of results to be fetched from the DB at once (default is 10)
+* `jatos.user.authentication.oauth.googleClientId` - Activate Google Sign-In by putting your Google Client ID here (looks similar to this one "1234567890-abc123abc123.apps.googleusercontent.com")
+* `jatos.user.role.allowSuperuser` - Activate [Superuser role](User-Manager.html#superusers) by putting 'true' (default is 'false')
+* `jatos.studyAdmin.showStudyAssetsSize` - If set to 'false' it the 'Study Assets Size' column will be shown in the Study Admin page. Since calculating the study assets size can take some time on larger JATOS installations with slow disks, it can make sense to turn it off. Default is 'true'.
+* `jatos.studyAdmin.showResultDataSize` - If set to 'false' it the 'Result Data Size' column will be shown in the Study Admin page. Since calculating the result data can take some time on larger JATOS installations with a slow database, it can make sense to turn it off. Default is 'true'.
+* `jatos.studyAdmin.showResultFileSize` - If set to 'false' it the 'Result File Size' column will be shown in the Study Admin page. Since calculating the result file size can take some time on larger JATOS installations with slow disks, it can make sense to turn it off. Default is 'true'.
 
 
 Apart from those all [configuration properties possible in the Play Framework](https://www.playframework.com/documentation/latest/Configuration) are possible in JATOS' _production.conf_ too, e.g. 

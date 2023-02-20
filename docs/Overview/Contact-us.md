@@ -38,4 +38,3 @@ If for some reason you don't want to use the public group or CogSci forum you ca
 elisa.filevich@gmail.com 
 
 lange.kristian@gmail.com
-

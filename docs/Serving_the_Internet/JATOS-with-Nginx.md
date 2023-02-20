@@ -10,7 +10,8 @@ The following two configs are the content of `/etc/nginx/nginx.conf`. Change the
 
 As an additional security measurement you can uncomment the `location /jatos` and config your local network. This will restrict the access to JATOS' GUI (every URL starting with `/jatos`) to the local network.
 
-A JATOS server that handles sensitive or private data should always use encryption (HTTPS).
+A JATOS server that handles sensitive or private data should always use encryption (HTTPS). A nice free certificate issuer is [certbot.eff.org](https://certbot.eff.org/) from the Electronic Frontier Foundation.
+
 
 ## With HTTPS
 
@@ -72,7 +73,7 @@ http {
                 ssl_prefer_server_ciphers on;
 
                 # websocket location (JATOS' group and batch channel and the test page)
-                location ~ "/(jatos/testWebSocket|publix/[\d]+/(group/join|batch/open))" {
+                location ~ "/(jatos/testWebSocket|publix/[a-z0-9-]+/(group/join|batch/open))" {
                         proxy_pass              http://jatos-backend;
                         proxy_http_version      1.1;
                         proxy_set_header        Upgrade $http_upgrade;
@@ -82,18 +83,6 @@ http {
                         proxy_read_timeout      7d;
                 }
 
-                # restrict access to JATOS' GUI to local network
-                #location /jatos {
-                #       allow           192.168.1.0/24;
-                #       deny            all;
-                #       proxy_pass      http://jatos-backend;
-                #}
-
-                # all other traffic
-                location / {
-                        proxy_pass              http://jatos-backend;
-                }
-                
                 # restrict access to JATOS' GUI to local network 192.168.1.*
                 #location /jatos {
                 #       allow                   192.168.1.0/24;
@@ -172,7 +161,7 @@ http {
                 server_name          www.example.com;
 
                 # websocket location (JATOS' group and batch channel and the test page)
-                location ~ "^/(jatos/testWebSocket|publix/[\d]+/(group/join|batch/open))" {
+                location ~ "^/(jatos/testWebSocket|publix/[a-z0-9-]+/(group/join|batch/open))" {
                         proxy_pass              http://jatos-backend;
                         proxy_http_version      1.1;
                         proxy_set_header        Upgrade $http_upgrade;

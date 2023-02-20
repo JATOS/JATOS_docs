@@ -21,9 +21,9 @@ The process is pretty self-explanatory, but anyway, we'll explain it here in det
 
    ![Update notification Schreenshot](/img/autoupdate-notification.png)
 
-1. We expect no problems, but sh&t happens. We recommend that you **back up your result data, result files, study assets folder and study logs** before continuing.
-1. Click on _Update_, confirm that you want to continue and the latest JATOS version will be downloaded from GitHub and saved in your system's temporary folder. Usually the variant downloaded will be the one without bundled Java. Only in cases where JATOS switches to a newer version of Java a bundled version is required [(see below)](#Versions-with-newer-Java-required). The download might take a while depending on your internet connection.
-1. After download is complete, you will be asked again for confirmation. By default, JATOS will **back up**: it will copy the content of its own installation folder into a folder with the name _backup_x.x.x_ (x.x.x is the version before the update). This will usually include your embedded H2 database, your study assets and logs - **but not your MySQL database** (should you have one). If anything goes wrong in the auto-update, you have everything in this backup folder to start the old JATOS again. This backup will use up disk space (therefore you can opt out).
+1. We expect no problems, but we recommend that you **back up your result data, result files, study assets folder and study logs** before continuing.
+1. Click on _Update_, confirm that you want to continue and the latest JATOS version will be downloaded from GitHub and saved in your system's temporary folder. The download might take a while depending on your internet connection.
+1. After download is complete, you will be asked again for confirmation. Optionally you can do a **backup**: JATOS will copy the content of its own installation folder into a folder with the name _backup_x.x.x_ (x.x.x is the version before the update). This will usually include your embedded H2 database, your study assets and logs - **but not your MySQL database** (should you have one). If anything goes wrong in the auto-update, you have everything in this backup folder to start the old JATOS again. This backup will use up disk space (that is why it is not selected by default).
 
    ![Update notification Schreenshot](/img/autoupdate-update-and-restart.png)
 
@@ -31,20 +31,20 @@ The process is pretty self-explanatory, but anyway, we'll explain it here in det
 1. Refresh your JATOS home page every now and then until you see your updated JATOS' login screen again.
 1. Check the new JATOS with the build-in tests: go to _Administration_ ⇒ _Tests_ and check that all tests are 'OK'.
 
+---
 
-### Special cases
-
-#### Pre-releases (experimental)
-Pre-releases will not be available as auto-updates by default. If you want to force this to be the case (and you know what you're doing), append the parameter _allowPreReleases_ to your JATOS home page URL (e.g. _localhost/jatos?allowPreReleases_).
-
-#### Enforce an update to a specified version (experimental)
-The parameter _version_ can be added to your JATOS home page URL (e.g. _localhost/jatos?version=v3.6.1_) and takes the version tag as specified in GitHub and enforces an update to this version. This should never be used on a JATOS server that stores any valuable data.
-
-#### Major updates
-Auto-updating might not always be possible. JATOS versions will be flagged so that they are not available for auto-update. You'll have to do a [manual update](#Manual-Updates).
-
-#### Versions with newer Java required
 JATOS uses Java 11 - older versions use Java 8. Future versions will likely require newer Java versions. If you're updating from a JATOS version using Java 8 to (say) another version using Java 11, the auto-update process will automatically download JATOS bundled with the new Java, regardless of wich variant you are currently using. If you do not like the bundled Java and use your own version you can always remove the folder _jre_ later on after the update.
+
+---
+
+
+### Specify a version
+
+Sometimes, for whatever reasons, JATOS doesn't autmatically detect new versions then you can still start the update by specifying the version.
+
+**It is usually destructive to update JATOS to a lower version than is currently installed. It's highly recommended to use a higher version (or the same). Use at your own risk.**
+
+The parameter `version` can be added to the JATOS administration page's URL. It takes the version tag as specified in [GitHub](https://github.com/JATOS/JATOS/releases) and enforces an update to this version. E.g. if your domain is `my.jatos.org` and the version you want to update to is `v3.7.4` (don't forget the 'v'), than the URL for your browser is `https://my.jatos.org/jatos/admin?version=v3.7.4`. The rest of the update procedure is like the [Normal Process](#normal-process): you will be ask for conirmation twice.
 
 
 ## Manual Update

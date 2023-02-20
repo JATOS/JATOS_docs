@@ -10,10 +10,128 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
+### 2023 
+Guediche, S., Navarra-Barindelli, E., Martin, C.D. (2023). Noise Modulates Crosslinguistic Effects on Second-Language Auditory Word Recognition. *Journal of speech, language, and hearing research* [DOI](https://doi.org/10.1044/2022_JSLHR-22-00368)
 
-### 2022
+Goldenhaus-Manning, D.T., Cooper, N.R. & Loaiza, V.M. (2023) Examining the role of attention during feature binding in visuospatial working memory. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-023-02655-y)
 
-Diana, F., Kawahara, M., Saccardi, I., Hortensius, R., Tanaka, A., & Kret, M. (2022). Implicit and explicit attitudes towards artificial agents: a cross-cultural comparison. *PsyArXiv* [DOI](https://doi.org/10.31234/osf.io/zu3pe)
+Stark C.E.L., Noche J.A., Ebersberger J.R., Mayer L., Stark S.M. (2023) Optimizing the mnemonic similarity task for efficient, widespread use. *Frontiers in Behavioral Neuroscience* [DOI](https://doi.org/10.3389/fnbeh.2023.1080366)
+
+Lee, M.D., Stark, C.E.L. (2023) Bayesian modeling of the Mnemonic Similarity Task using multinomial processing trees. *Behaviormetrika* [DOI](https://doi.org/10.1007/s41237-023-00193-3)
+
+Kessler, Y., Zilberman, N., & Kvitelashvili, S. (2023). Updating, Fast and Slow: Items, but Not Item-Context Bindings, are Quickly Updated Into Working Memory as Part of Response Selection. *Journal of Cognition* [DOI](http://doi.org/10.5334/joc.257)
+
+Jevtović, M., Antzaka, A., & Martin, C. D. (2023). Déjà-lu: When Orthographic Representations are Generated in the Absence of Orthography. *Journal of Cognition* [DOI](http://doi.org/10.5334/joc.250)
+
+Archer-Boyd, A.W., Harland, A., Goehring, T., Carlyon, RP. (2023) An online implementation of a measure of spectro-temporal processing by cochlear-implant listeners. *JASA Express Letters* [DOI](https://doi.org/10.1121/10.0016838)
+
+Zoefel B, Gilbert RA, Davis MH (2023) Intelligibility improves perception of timing changes in speech. *PLoS ONE* [DOI](https://doi.org/10.1371/journal.pone.0279024)
+
+Wainio-Theberge, S., Armony, J.L. (2023) Antisocial and impulsive personality traits are linked to individual differences in somatosensory maps of emotion. *Sci Rep* [DOI](https://doi.org/10.1038/s41598-023-27880-1)
+
+Labaronne, M., Jarjat, G., & Plancher, G. (2023). Attentional Refreshing in the Absence of Long-Term Memory Content: Role of Short-Term and Long-Term Consolidation. *Journal of Cognition*. [DOI](http://doi.org/10.5334/joc.246)
+
+Jensen, A., Thériault, L., Yilmaz, E., Pon, E., Davidson, PSR. (2023) Mental rotation, episodic memory, and executive control: Possible effects of biological sex and oral contraceptive use. *Neurobiology of Learning and Memory* [DOI](https://doi.org/10.1016/j.nlm.2023.107720)
+
+### 2022 
+
+Gemignani, M., Giannotti, M., Schmalz, X., Rigo, P., & De Falco, S. (2022). Attentional Prioritization of Infant Faces in Parents: The Influence of Parents’ Experiences of Care. *International Journal of Environmental Research and Public Health*. [DOI](http://dx.doi.org/10.3390/ijerph20010527)
+
+Barnes, S., Prescott, J. and Adams, J. (2022), Initial evaluation of a mobile therapeutic game for adolescent anxiety disorders. *Mental Health and Social Inclusion* [DOI](https://doi.org/10.1108/MHSI-11-2022-0076)
+
+Roesler*, E., Rieger*, T., & Manzey, D. (2022). Trust towards Human vs. Automated Agents: Using a Multidimensional Trust Questionnaire to Assess The Role of Performance, Utility, Purpose, and Transparency. *Proceedings of the Human Factors and Ergonomics Society Annual Meeting* [DOI](https://doi.org/10.1177/107118132266106)
+
+Schroter, FA., Siebertz, M., Hofmann, P., (2022) Jansen, P. Psychological and socio-demographic factors in the pre-decision stage for the purchase of e-cars. *Current Research in Ecological and Social Psychology* [DOI](https://doi.org/10.1016/j.cresp.2022.100072)
+
+Béna, J., Mauclet, A., & Corneille, O. (2022). Does co-occurrence information influence evaluations beyond relational meaning? An investigation using self-reported and mouse-tracking measures of attitudinal ambivalence. *Journal of Experimental Psychology: General.* [DOI](https://doi.org/10.1037/xge0001308)
+
+
+Zoefel, B., Gilbert, R. A., & Davis, M. H. (2022). Intelligibility improves perception of timing changes in speech. *BioRxiv* [DOI](https://doi.org/10.1101/2022.05.18.492430)
+
+Johnson, S.T., Most, S.B.(2022) Taking the path of least resistance now, but not later: Pushing cognitive effort into the future reduces effort discounting. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-022-02198-7)
+
+Dahm, S.F.; Muraki, E.J.; Pexman, P.M. (2022) Hand and Foot Selection in Mental Body Rotations Involves Motor-Cognitive Interactions. *Brain Sci.* [DOI](https://doi.org/10.3390/brainsci12111500)
+
+da Fonseca, M., Maffei, G., Moreno-Bote, R. et al. (2022) Mood and implicit confidence independently fluctuate at different time scales. *Cogn Affect Behav Neurosci*. [DOI](https://doi.org/10.3758/s13415-022-01038-4)
+
+Constant, M., Pereira, M., Faivre, N., Filevich, E. (2022) Prior information differentially affects discrimination decisions and subjective confidence reports *bioRxiv* [DOI](https://doi.org/10.1101/2022.10.26.513829)
+
+Wittmann BC, Şatırer Y. (2022) Decreased associative processing and memory confidence in aphantasia. *Learn Mem.* [DOI](https://doi.org/10.1101/lm.053610.122)
+
+Vogt, A., Kaup, B., Abdel Rahman, R., & Ganter, I. (2022). Embodied language production: sensorimotor activations and interoceptive sensibility influence which words we choose when speaking. *PsyArXiv* [DOI](https://doi.org/10.31234/osf.io/3zgrc)
+
+Muhmenthaler, MC, Meier, B. (2022) Attentional attenuation (rather than attentional boost) through task switching leads to a selective long-term memory decline. *Frontiers in Psychology* [DOI](https://doi.org/10.3389/fpsyg.2022.1027871)
+
+Mueckstein, M., Heinzel, S., Granacher, U., Brahms, M., Rapp, MA., Stelzel, C. (2022) Modality-specific effects of mental fatigue in multitasking, *Acta Psychologica* [DOI](https://doi.org/10.1016/j.actpsy.2022.103766)
+
+Béna, J., Corneille, O., Mierop, A., & Unkelbach, C. (2022). Robustness Tests Replicate Corneille et al.’s (2020) Fake News by Repetition Effect. *International Review of Social Psychology* [DOI](http://doi.org/10.5334/irsp.683)
+
+Hsieh, JYJ., Boyce, P., Goddard, E. et al. (2022) Colour information biases facial age estimation and reduces inter-observer variability. *PREPRINT available at Research Square*, [DOI](https://doi.org/10.21203/rs.3.rs-2062498/v1)
+
+Belo, J., Clerc, M., Schön, D. (2022) Attentional inhibition ability predicts neural representation during challenging auditory streaming. *bioRxiv* [DOI](https://doi.org/10.1101/2022.09.29.510226)
+
+Diana, F., Kawahara, M., Saccardi, I. et al. (2022) A Cross-Cultural Comparison on Implicit and Explicit Attitudes Towards Artificial Agents. *Int J of Soc Robotics*. [DOI](https://doi.org/10.1007/s12369-022-00917-7)
+
+Kessler, Y., Rozanis, M. (2022) Task cues are quickly updated into working memory as part of their processing: The multiple-cue task-switching paradigm. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-022-02186-x)
+
+Radović T, Rieger T and Manzey D (2022) A global and local perspective of interruption frequency in a visual search task. *Front. Psychol.* [DOI](https://doi.org/10.3389/fpsyg.2022.951048)
+
+Vos, M., Minor, S., & Ramchand, G. C. (2022). Comparing infrared and webcam eye tracking in the Visual World Paradigm. *Glossa Psycholinguistics* [DOI](http://dx.doi.org/10.5070/G6011131)
+
+Tsang, K. Y., & Mannion, D. J. (2022). Relating Sound and Sight in Simulated Environments. M*ultisensory Research* [DOI](https://doi.org/10.1163/22134808-bja10082)
+
+Kahan TA, Slowiaczek LM, Harrison AC, Bogue CM. (2022) Temporal and sequential negative priming generalise across visual and auditory modalities and are dependent on relative rather than absolute speed. *Quarterly Journal of Experimental Psychology* [DOI](https://doi.org/10.1177/17470218221100248)
+
+Coy N., Bendixen, A., Grimm, S., Roeber, U., & Schröger, E. (2022) Is the Oddball Just an Odd-One-Out? The Predictive Value of Rule-Violating Events *Auditory Perception & Cognition* [DOI](https://doi.org/10.1080/25742442.2022.2094657)
+
+Yildirim, B., Kurdoglu-Ersoy P., Kapucu A., & Tekozel, M. (2022) Is there an infidelity-based reproductive processing advantage in adaptive memory? Effects of survival processing and jealousy processing on recall performance. *Journal of Cognitive Psychology* [DOI](https://doi.org/10.1080/20445911.2022.2090948)
+
+Del Popolo Cristaldi, F., Granziol, U., Bariletti, I., Mento, G. (2022) Doing Experimental Psychological Research from Remote: How Alerting Differently Impacts Online vs. Lab Setting. *Brain Sci.* [DOI](https://doi.org/10.3390/brainsci12081061)
+
+Contemori, G., Saccani, MS., Bonato, M. (2022) Multitasking Effects on Perceptionand Memory in Older Adults. *Vision* [DOI](https://doi.org/10.3390/vision6030048)
+
+Daoultzis, KC., & Kordoutis, P. (2022) A Pilot Study Testing A New Visual Stimuli Database for Probing Men’s Gender Role Conflict: GRASP (Gender Role Affective Stimuli Pool) *Journal of Homosexuality* [DOI](https://doi.org/10.1080/00918369.2022.2104147)
+
+Chen, X., Hartsuiker, RJ., Muylle, M., Slim, MS., Zhang, C. (2022) The effect of animacy on structural Priming: A replication of Bock, Loebell and Morey (1992) *Journal of Memory and Language* [DOI](https://doi.org/10.1016/j.jml.2022.104354)
+
+Witek, M., Kwiecień, S. Włodarczyk, M., Wrzosek, M., Bondek, J. (2022) Prosody in recognizing dialogue-specific functions of speech acts. Evidence from Polish.
+*Language Sciences* [DOI](https://doi.org/10.1016/j.langsci.2022.101499)
+
+Kobzeva A, Sant C, Robbins PT, Vos M, Lohndal T, Kush D. (2022) Comparing Island Effects for Different Dependency Types in Norwegian. *Languages* [DOI](https://doi.org/10.3390/languages7030197)
+
+Norden M, Hofmann A, Meier M, Balzer F, Wolf O, Böttinger E, Drimalla H. (2022) Inducing and Recording Acute Stress Responses on a Large Scale With the Digital Stress Test (DST): Development and Evaluation Study. *J Med Internet Res* [DOI](https://www.jmir.org/2022/7/e32280)
+
+Henke, L., Guseva, M., Wagemans, K. et al. (2022) Surgical face masks do not impair the decoding of facial expressions of negative affect more severely in older than in younger adults. *Cogn. Research*. [DOI](https://doi.org/10.1186/s41235-022-00403-8)
+  
+Rieger T, Manzey D. (2022) Understanding the Impact of Time Pressure and Automation Support in a Visual Search Task. *Human Factors*. [DOI](https://doi.org/10.1177/00187208221111236)
+  
+Schreiner MR, Meiser T, Bröder A. (2022) The binding structure of event elements in episodic memory and the role of animacy. *Quarterly Journal of Experimental Psychology* [DOI](https://doi.org/10.1177/17470218221096148) 
+
+Salava, A. and Salmela, V. (2022) Perceptual learning modules in undergraduate dermatology teaching. *Clin Exp Dermatol.* [DOI](https://doi.org/10.1111/ced.15201)
+
+Reichardt, R., Polner, B. & Simor, P. (2022) The graded novelty encoding task: Novelty gradually improves recognition of visual stimuli under incidental learning conditions. *Behav Res* [DOI](https://doi.org/10.3758/s13428-022-01891-8)
+
+Lovibond, P. F., Chow, J. Y. L., Tobler, C., & Lee, J. C. (2022). Reversal of inhibition by no-modulation training but not by extinction in human causal learning. *Journal of Experimental Psychology: Animal Learning and Cognition* Advance online publication. [DOI](https://doi.org/10.1037/xan0000328)
+
+Donato R, Pavan A, Cavallin G, Ballan L, Betteto L, Nucci M, Campana G. (2022) Mechanisms Underlying Directional Motion Processing and Form-Motion Integration Assessed with Visual Perceptual Learning. *Vision* [DOI](https://doi.org/10.3390/vision6020029)
+
+Appelganc K, Rieger T, Roesler E, Manzey D. (2022) How Much Reliability Is Enough? A Context-Specific View on Human Interaction With (Artificial) Agents From Different Perspectives. *Journal of Cognitive Engineering and Decision Making* [DOI](https://doi.org/doi:10.1177/15553434221104615)
+
+Ringer, H., Schröger, E., Grimm, S. (2022) Perceptual Learning and Recognition of Random Acoustic Patterns *Auditory Perception & Cognition* [DOI](http://doi.org/10.1080/25742442.2022.2082827)
+
+Rosi, V., Houix, O. Misdariis, N., Susini, P. (2022) Investigating the Shared Meaning of Metaphorical Sound Attributes: Bright, Warm, Round, and Rough. *Music Perception* [DOI](https://doi.org/10.1525/mp.2022.39.5.468)
+
+Rahe, M., Weigelt, M., Jansen, P. Mental rotation with colored cube figures. *Consciousness and Cognition* [DOI](https://doi.org/10.1016/j.concog.2022.103350)
+
+Everhardt, M., Sarampalis, A., Coler, M., Baskent, D., Lowie, W. (2022) Interpretation of prosodically marked focus in cochlear implant-simulated speech by non-native listeners. *Proc. Speech Prosody*. [DOI](https://doi.org/10.21437/SpeechProsody.2022-15)
+
+Palmer, C.J., Goddard, E., Clifford, C.W.G. (2022) Face detection from patterns of shading and shadows: The role of overhead illumination in generating the familiar appearance of the human face. *Cognition* [DOI](https://doi.org/10.1016/j.cognition.2022.105172)
+
+Frances, C., Navarra-Barindelli E., Martin C.D. (2022) Speaker Accent Modulates the Effects of Orthographic and Phonological Similarity on Auditory Processing by Learners of English. *Frontiers in Psychology* [DOI](https://doi.org/10.3389/fpsyg.2022.892822)  
+
+Ciston, A.B., Forster, C. Brick, TR.,Kühn, S., Verrel, J., Filevich, E. (2022) Do I look like I'm sure?: Partial metacognitive access to the low-level aspects of one's own facial expressions. *Cognition* [DOI](https://doi.org/10.1016/j.cognition.2022.105155)
+
+Sauter, M., Stefani, M. & Mack, W. "Equal Quality for Online and Lab Data: A Direct Comparison from Two Dual-Task Paradigms" *Open Psychology* [DOI](https://doi.org/10.1515/psych-2022-0003)
 
 Lauren A. Homann, Brady R. T. Roberts, Sara Ahmed & Myra A. Fernandes (2022) Are emojis processed visuo-spatially or verbally? Evidence for dual codes *Visual Cognition* [DOI](https://doi.org/10.1080/13506285.2022.2050871)
 
@@ -64,7 +182,9 @@ Zhang J, Wu Y. (2022) Epistemic reasoning in pragmatic inferencing by non-native
 Vandendaele, A., Grainger, J. (2022). Now you see it, now you don't: Flanker presence induces the word concreteness effect. *Cognition* [DOI](10.1016/j.cognition.2021.104945).
 
 
+
 ### 2021
+Shyr, MC, and Joshi, SS. (2021) Validation of the Bayesian sensory uncertainty model of motor adaptation with a remote experimental paradigm *IEEE 2nd International Conference on Human-Machine Systems (ICHMS)* [DOI](https://doi.org/10.1109/ICHMS53169.2021.9582639)
 
 Del Popolo Cristaldi, F., Buodo, G., Gambarota, F., Oosterwijk, S., & Mento, G. (2021, December 16). The role of implicit learning and cue ambiguity on the subjective experience of affective predictions: a follow-up behavioral investigation. *PsyArXiv* [DOI](https://doi.org/10.31234/osf.io/y7bxn)
 
@@ -80,13 +200,13 @@ van Moorselaar, D., Theeuwes, J. (2021) Spatial suppression due to statistical r
 
 Del Popolo Cristaldi, F., Gambarota, F., & Oosterwijk, S. (2021). The role of previous visual experience in subjective reactions to new affective pictures and sounds. *PsyArXiv* [DOI](https://doi.org/10.31234/osf.io/z4mgh)
 
+Lallement, C. & Lemaire, P. (2021) Age-related differences in how negative emotions influence arithmetic performance, *Cognition and Emotion* [DOI](10.1080/02699931.2021.1967884)
+
 Mazor, M., Moran, R., Fleming, SM. (2021) Metacognitive asymmetries in visual perception, *Neuroscience of Consciousness*, Volume 2021, Issue 1, 2021, niab005, [DOI](https://doi.org/10.1093/nc/niab005)
 
 Tejada, J., Freitag, R.M.K., Pinheiro, B.F.M. et al (2021). Building and validation of a set of facial expression images to detect emotions: a transcultural study. *Psychological Research* . [DOI](https://doi.org/10.1007/s00426-021-01605-3)
 
 Singer-Landau, E., & Meiran, N. (2021). Cognitive appraisal contributes to feeling generation through emotional evidence accumulation rate: Evidence from instructed fictional reappraisal. *Emotion*. Advance online publication. [DOI](https://doi.org/10.1037/emo0001006)
-
-da Fonseca, M., Maffei, G., Matic, A., Bote, R. M., & Hyafil, A. (2021, August 6). Emotional states and self-confidence independently fluctuate at different time scales. *PsyArXiv* [DOI](https://doi.org/10.31234/osf.io/swpcf)
 
 de Waard, J., Bogaerts, L., Van Moorselaar, D., Theeuwes, J. (2021). Surprisingly inflexible: statistically learned suppression of distractors generalizes across contexts Attention, Perception, and Psychophysics (in press). *Attention Perception & Psychophysics*. 
 
@@ -95,8 +215,6 @@ Jost, L., & Jansen, P. (2021). Are implicit affective evaluations related to men
 Stark, C., Clemenson, G., Aluru, U., Hatamian, N., Stark, S. (2021). Playing Minecraft Improves Hippocampal-Associated Memory for Details in Middle Aged Adults. *Frontiers in Sports and Active Living*. 3. 685286. [DOI](https://doi.org/10.3389/fspor.2021.685286). 
 
 Crivelli, D., Peviani, V., Salvato, G., Bottini, G. (2021). Exploring the Interaction Between Handedness and Body Parts Ownership by Means of the Implicit Association Test. *Frontiers in Human Neuroscience* 15. 681904. [DOI](https://doi.org/10.3389/fnhum.2021.681904). 
-
-Lacassagne, D., Béna, J., Corneille, O. (2021). Is Earth a Perfect Square? Repetition Increases the Perceived Truth of Highly Implausible Statements. *PsyArxiv*. [DOI](https://doi.org/10.31234/osf.io/fce8z). 
 
 Mazor, M. & Moran, R. & Fleming, S. (2021). Metacognitive asymmetries in visual perception. *Neuroscience of Consciousness*. [DOI](https://doi.org/10.1093/nc/niab005). 
 
@@ -115,10 +233,6 @@ Krüger, A., Tünnermann, J., Stratmann, L., Dressler, F., Scharlau, I. (2021). 
 Steinke, A., Kopp, B. Lange, F. (2021). The Wisconsin Card Sorting Test: Split-Half Reliability Estimates for a Self-Administered Computerized Variant. *Brain Sciences*. 11. 529. [DOI](https://doi.org/10.3390/brainsci11050529) 
 
 Zhang, C., Bernolet, S., Hartsuiker, RJ. (2021) Are there segmental and tonal effects on syntactic encoding? Evidence from structural priming in Mandarin. *Journal of Memory and Language* 119 [DOI](https://doi.org/10.1016/j.jml.2021.104220)
-
-Román-Caballero, R., Marotta, A., Lupiáñez, J. (2021) Spatial Interference Triggered by Gaze and Arrows. Spatial interference from arrows disappears when they are surrounded by an irrelevant context. *PsyArXiv*; [DOI](https://doi.org/10.31234/osf.io/bz8e9)
-
-Ciston, AB., Forster, C., Brick, TR., Kühn, S., Verrel, J., Filevich, E. (2021) Limited metacognitive access to one's own facial expressions. *bioRxiv* 2021.03.08.434069; [DOI](https://doi.org/10.1101/2021.03.08.434069)
 
 Los, S.A., Nieuwenstein, J., Bouharab, A., Stephens, D.J., Meeter, M., Kruijne, W. (2021) The warning stimulus as retrieval cue: The role of associative memory in temporal preparation. *Cognitive Psychology* 125(2):101378 [DOI](https://doi.org/10.1016/j.cogpsych.2021.101378)
 
@@ -140,8 +254,6 @@ Kumbhar, O., Sizikova, E., Majaj, N., & Pelli, D. G. (2020). Anytime Prediction 
 Vari, J. & Tamburelli, M. (2020) Standardisation: bolstering positive attitudes towards endangered language varieties? Evidence from implicit attitudes. *Journal of Multilingual and Multicultural Development*. [DOI](https://doi.org/10.1080/01434632.2020.1829632)
 
 Verkhodanova V., Trčková D., Coler M., Lowie W. (2020) More than Words: Cross-Linguistic Exploration of Parkinson’s Disease Identification from Speech. In: Karpov A., Potapova R. (eds) Speech and Computer. SPECOM 2020. Lecture Notes in Computer Science, vol 12335. Springer, Cham. [DOI](https://doi.org/10.1007/978-3-030-60276-5_59)
-
-Gorin, S. (2020) Temporal grouping effects in tone sequence reconstruction: testing domain-general positional theories of serial order. *PsyArXiv* [DOI](https://doi.org/10.31234/osf.io/mfynu)
 
 Scarpina, F. (2020) Detection and Recognition of Fearful Facial Expressions During the Coronavirus Disease (COVID-19) Pandemic in an Italian Sample: An Online Experiment. *Front. Psychol.* [DOI](https://doi.org/10.3389/fpsyg.2020.02252)
 
