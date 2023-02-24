@@ -24,15 +24,20 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl: 'https://github.com/JATOS/JATOS_docs/tree/master',
           routeBasePath: '/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
+          lastVersion: '3.7.1',
           versions: {
             current: {
               label: 'next',
               path: 'next',
+              banner: 'unreleased',
+            },
+            '3.8.1': {
+              label: '3.8.x',
+              path: '3.8.x',
               banner: 'unreleased',
             },
             '3.7.1': {
@@ -41,15 +46,14 @@ const config = {
               banner: 'none',
             },
             '3.6.1': {
-              label: '3.6.1 and earlier',
+              label: '3.6.x and earlier',
               path: '3.6.1',
-              banner: 'none',
+              banner: 'unmaintained',
             },
           },
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
             'https://github.com/JATOS/JATOS_docs/tree/master/blog',
         },
