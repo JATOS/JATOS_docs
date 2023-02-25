@@ -15,7 +15,7 @@ Del Popolo Cristaldi F, Toffoli L, Duma GM, Mento G (2023) Little fast, little s
 
 Li, AS., Bogaerts, L. & Theeuwes, J. (2023) No evidence for spatial suppression due to across-trial distractor learning in visual search. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-023-02667-8)
 
-Reichardt, R., Polner, B., & Simor, P. (2023). Influencing prior knowledge through a short reading impacts curiosity and learning. *Applied Cognitive Psychology*[DOI](https://doi.org/10.1002/acp.4047)
+Reichardt, R., Polner, B., & Simor, P. (2023). Influencing prior knowledge through a short reading impacts curiosity and learning. *Applied Cognitive Psychology* [DOI](https://doi.org/10.1002/acp.4047)
 
 Guediche, S., Navarra-Barindelli, E., Martin, C.D. (2023). Noise Modulates Crosslinguistic Effects on Second-Language Auditory Word Recognition. *Journal of speech, language, and hearing research* [DOI](https://doi.org/10.1044/2022_JSLHR-22-00368)
 
