@@ -31,7 +31,7 @@ Things that are possible with the API:
 
 ## OpenAPI specification
 
-The JATOS API uses [OpenAPI 3 for specification](https://raw.githubusercontent.com/JATOS/JATOS/api_token/jatos-api.yaml). You can use [petstore.swagger.io](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/JATOS/JATOS/api_token/jatos-api.yaml) to have an easy navigatable page.
+The JATOS API uses [OpenAPI 3 for specification](https://github.com/JATOS/JATOS/blob/master/jatos-api.yaml). You can use [petstore.swagger.io](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/JATOS/JATOS/api_token/jatos-api.yaml) to have an easy navigatable page.
 
 This is the first version of the API. If you are missing endpoints please write an [GitHub issue](https://github.com/JATOS/JATOS/issues).
 
