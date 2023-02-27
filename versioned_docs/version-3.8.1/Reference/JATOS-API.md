@@ -4,9 +4,13 @@ slug: /JATOS-API.html
 sidebar_position: 2
 ---
 
+:::info
+Using the JATOS API requires some **advanced knowledge** about HTTP and how to call APIs from e.g. a programming language or a terminal. If you just want to run a study with JATOS this is probably not what you need. You can do everything with JATOS' GUI what you can do with the API.
+:::
+
 ## Introduction
 
-Since version 3.8.1 JATOS offers an (HTTP) API to make integrating JATOS into other tools easier. One usecase is to call JATOS directly from Python, R, Matlab (or any other programming language). Using the API requires some advanced skills and if you just want to run a study with JATOS this is probably not what you need. You can do everything with JATOS' GUI what you can do with the API - just not in an automated, programmatic fashion.
+Since version 3.8.1 JATOS offers an (HTTP) API to make integrating JATOS into other tools easier. One common usage of the API is to call JATOS directly from Python, R, Matlab (or any other programming language) in an automated and programatic fashion. 
 
 Things that are possible with the API:
 

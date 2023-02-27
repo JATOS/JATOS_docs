@@ -24,6 +24,11 @@ Then in the following form you define the component's properties: enter the comp
 Click on 'Create' and you are done. If you add more than one component you can change the order in which they run by drag-and-drop on the position button.
 
 
+## Study assets
+
+All your files (e.g. HTML, CSS, JavaScript and media files) go into your study assets directory. That includes all component's HTML files. You can find the study assets directory in a directory called `study_assets_root` in your JATOS installation directory. The study assets directory's name is defined in your study properties.
+
+
 ## Mandatory lines in your components' HTML
 
 A study can have one or multiple components and each component has an HTML file associated that is defined in the component's properties.

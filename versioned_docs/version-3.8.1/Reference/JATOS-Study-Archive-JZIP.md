@@ -1,19 +1,39 @@
 ---
-title: JATOS Study Archive (.jzip)
-slug: /JATOS-Study-Archive.html
+title: JATOS Study Archive (JZIP)
+slug: /JATOS-Study-Archive-JZIP.html
 sidebar_position: 3
 ---
 
+:::info
+This is **advanced knowledge** about JATOS. If you just want to use JATOS to run a study it is not necessary to read this.
+:::
+
+
 ## Introduction
 
-JATOS exports studies as a JATOS study archive file with a _.jzip_ suffix. It is a ZIP archive that follows a certain format. If you just export and import studies you don't have to care for this format. But if you want to create a _.jzip_ file programmatically or manually you probably find this information helpful.
+A JZIP ("JATOS study archive") is a file package format used to exchange JATOS studies between different JATOS instances. A JZIP aggregates the study assets and associated metadata (study properties) into one file for distribution. They are built on the ZIP format and have a _.jzip_ file extension.
 
-File system format
-* study assets directoy
-* _.jas_ file containing the study properties in JSON format
+### JZIP File system structure
 
+```
+/
+├── study assets directory (actual name is defined in the study properties)
+│   ├── some asset file
+│   ├── some asset file
+│   └── ...
+└── JAS file (containing the study properties in JSON format with a .jas file extension)
+```
 
-Example of a _.jas file:
+### Study assets directory
+
+This is a copy of your study assets directory.
+
+### JAS file schema
+
+The JAS file contains the study properties in JSON format.
+
+#### Example of a _.jas file
+
 
 ```json
 {
@@ -27,7 +47,7 @@ Example of a _.jas file:
         "allowPreview": false,
         "dirName": "simple_rt_task",
         "comments": "",
-        "jsonData": null,
+        "jsonData": "{\"a\":\"test\",\"b\":5}",
         "endRedirectUrl": "",
         "studyEntryMsg": null,
         "componentList": [
@@ -71,7 +91,7 @@ Example of a _.jas file:
 }
 ``` 
 
-## JSON Schema of a _.jas_ file:
+#### JSON Schema of a _.jas_ file:
 
 ```json
 {
