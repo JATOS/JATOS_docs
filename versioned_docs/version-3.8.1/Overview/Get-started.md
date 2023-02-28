@@ -30,7 +30,7 @@ sidebar_position: 5
    For example, you can see each result's details by clicking on the little arrow to the left of its row ([more information on how to mangage results](Manage-results.html)).
 
    _Here's a screenshot of a study's results view:_
-   ![Results View screenshot](/img/ResultsView-Screenshot3.png)
+   ![Results View screenshot](/img/ResultsView-Screenshot11.png)
 
 ### Explore
 

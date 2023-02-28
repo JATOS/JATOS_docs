@@ -42,7 +42,6 @@ A JRZIP file is organized by study results. Each study result folder (named _stu
     "type": "object",
     "title": "Root",
     "required": [
-        "apiVersion",
         "data"
     ],
     "properties": {
