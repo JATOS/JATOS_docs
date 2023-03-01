@@ -26,7 +26,7 @@ A JZIP ("JATOS study archive") is a file package format used to exchange JATOS s
 
 ### Study assets directory
 
-This is a copy of your study assets directory.
+This is a copy of the study assets directory.
 
 ### JAS file schema
 
