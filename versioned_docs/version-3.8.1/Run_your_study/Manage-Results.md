@@ -52,7 +52,7 @@ Sometimes the simple filter is not precise enough or you want to combine multipl
 
 ![Results View screenshot](/img/ResultsView-Screenshot16.png)
 
-Once you selected the results you're interested in, click *Export Results*. You can choose what you want to export: everything in a JATOS Results Archive, only the result metadata, only the result data, or only the files. 
+Once you selected the results you're interested in, click *Export Results*. You can choose what you want to export: everything in a JATOS Results Archive, only the result metadata, only the result data, or only the files. If in doubt which one to choose, get the JATOS Result Archive - it contains everything.
 
 
 ### Export a JATOS Results Archive (JRZIP)
@@ -66,14 +66,14 @@ Since version 3.8.1 this is the standard export format. It **aggregates result d
 
 ![Results View screenshot](/img/ResultsView-Screenshot18.png)
 
-The metadata are mostly the data that you see in the result table but that do not belong the actual result data or files, e.g. worker ID or start time. You can choose between ***JSON*** and ***CSV*** format. 
+The metadata are mostly the data that you see in the result table but that do not belong to the actual result data or files, e.g. worker ID or start time. You can choose between ***JSON*** and ***CSV*** format. 
 
 
 ### Export Result Data
 
 ![Results View screenshot](/img/ResultsView-Screenshot19.png)
 
-The result data are the genuine data that got submitted during study runs without any metadata or result files. You can choose between ***ZIP*** or ***Plain Text*** format. In the _ZIP_ format the result data are stored in a file system structure with folders for study results and component results, similar to the _JRZIP_ format. The _Plain Text_ format is familiar from previous JATOS version: all result data are put in one text file with one result per line.
+The result data are the genuine data that got submitted during study runs without any metadata or result files. You can choose between ***ZIP*** or ***Plain Text*** format. In the _ZIP_ format the result data are stored in a file system structure with folders for study results and component results, similar to the _JRZIP_ format. The _Plain Text_ format is familiar from previous JATOS version: all result data are put together in one text file with one result per line.
 
 
 ### Export Result Files
@@ -90,7 +90,7 @@ The result files are the files that were uploaded during study runs. They are ex
 You can click *Delete* to remove the selected results. That includes result data, result files and metadata. Keep in mind **there's no undo function for this**. 
 
 
-## Table Columns
+## Table Columns and Customization
 
 You can show and hide the columns displayed in the table with the drop-down menu under the *Customize* button.
 
