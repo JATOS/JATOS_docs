@@ -5,7 +5,7 @@ sidebar_position: 2
 ---
 
 :::info
-Using the JATOS API requires some **advanced knowledge** of HTTP and how to call APIs from e.g. a programming language or a terminal. If you just want to run a study with JATOS this is probably not what you need. Anything that you can do (programmatially) with the API can also be done (by hand) from the JATOS' GUI.
+Using the JATOS API requires some **advanced knowledge** of HTTP and how to call APIs from e.g. a programming language or a terminal. If you just want to run a study with JATOS this is probably not what you need. Anything that you can do (programmatially) with the API can also be done (by hand) with JATOS' GUI.
 :::
 
 ## Introduction
