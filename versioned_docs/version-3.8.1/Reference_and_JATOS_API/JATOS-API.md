@@ -18,7 +18,7 @@ Things that are possible with the API:
 * Update your study by uploading/downloading/deleting single **study assets files**
 * **Export results**
 * Export **study/componnent properties**
-* Get **study codes** (to build links distribute to participants)
+* Get **study codes** (to build study links that can be distributed to participants)
 
 
 ## Have a look and try it out
