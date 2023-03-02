@@ -34,7 +34,7 @@ You can even try out the API with your local JATOS. Here's how:
 
 The JATOS API uses [OpenAPI 3 for specification](https://github.com/JATOS/JATOS/blob/master/jatos-api.yaml). You can use [petstore.swagger.io](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/JATOS/JATOS/api_token/jatos-api.yaml) to have an easy navigatable page.
 
-This is the first version of the API. To request any additional endpoints, please write a [GitHub issue](https://github.com/JATOS/JATOS/issues).
+The API is work in progress (this is the first version). To request any additional endpoints, please write a [GitHub issue](https://github.com/JATOS/JATOS/issues).
 
 
 ## Authentication
