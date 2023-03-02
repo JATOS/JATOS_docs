@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Lu, Z., van Zoest, W. (2023) Combining social cues in attention: Looking at gaze, head, and pointing cues. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-023-02669-6)
+
 Del Popolo Cristaldi F, Toffoli L, Duma GM, Mento G (2023) Little fast, little slow, should I stay or should I go? Adapting cognitive control to local-global temporal prediction across typical development. *PLoS ONE* [DOI](https://doi.org/10.1371/journal.pone.0281417)
 
 Li, AS., Bogaerts, L. & Theeuwes, J. (2023) No evidence for spatial suppression due to across-trial distractor learning in visual search. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-023-02667-8)
