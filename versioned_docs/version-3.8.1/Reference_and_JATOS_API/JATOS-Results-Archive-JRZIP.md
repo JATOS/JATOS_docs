@@ -10,7 +10,7 @@ This is **advanced knowledge** about JATOS. If you just want to use JATOS to run
 
 ## Introduction
 
-A JRZIP ("JATOS study results archive") is a file package format used to export results from JATOS instances. A JRZIP aggregates the results data, result files and associated metadata into one file for distribution. They are built on the ZIP format and have a _.jrzip_ file extension.
+A JRZIP ("JATOS study results archive") is a file package format used to export results from JATOS instances. A JRZIP aggregates the results data, result files and associated metadata into one file for distribution. They are built on the ZIP format and have a _.jrzip_ file extension. Hence every ZIP unpacker can be used to get to the files.
 
 
 ## JRZIP File system structure
