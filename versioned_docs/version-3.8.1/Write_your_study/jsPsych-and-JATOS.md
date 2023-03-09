@@ -27,19 +27,19 @@ Every jsPsych version works slightly different. Here we explain the steps for js
    <script src="jatos.js"></script>
    ~~~ 
 
-1. Tell jsPsych to send your result data to JATOS
+1. Tell jsPsych to send your result data to JATOS.  If you want add a 'Cancel' button with `jatos.addAbortButton`, add the line included below (omit if you don't want the automatic abort button).
 
    ~~~ javascript
    var jsPsych = initJsPsych({
+     on_trial_start: jatos.addAbortButton,
      on_finish: () => jatos.endStudy(jsPsych.data.get().json())
    });
    ~~~
 
-1. Wrap jsPsych's run in `jatos.onLoad` and if you want add a 'Cancel' button with `jatos.addAbortButton`.
+1. Wrap jsPsych's run in `jatos.onLoad`.
 
    ~~~ javascript
    jatos.onLoad(() => {
-     jatos.addAbortButton();
      jsPsych.run(timeline);
    });
    ~~~
