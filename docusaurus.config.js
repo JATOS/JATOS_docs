@@ -60,8 +60,12 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        googleAnalytics: {
+          trackingID: 'UA-57013276-1',
+          anonymizeIP: true, // Should IPs be anonymized?
+        },
         gtag: {
-          trackingID: ['G-ZRKSKWW41X', 'UA-57013276-1'],
+          trackingID: 'G-ZRKSKWW41X',
           anonymizeIP: true, // Should IPs be anonymized?
         },
       }),
