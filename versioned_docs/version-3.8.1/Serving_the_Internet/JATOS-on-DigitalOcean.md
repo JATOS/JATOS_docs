@@ -17,17 +17,18 @@ First we want to set up a simple JATOS server without encryption (HTTPS) or a do
 
 1. Set up an account with [DigitalOcean](https://www.digitalocean.com/) - you'll have to provide billing information.
 
-1. Use this [link](https://cloud.digitalocean.com/droplets/new?appId=87786318&image=docker-20-04&type=applications) to create a Droplet with _Docker_ on _Ubuntu_ pre-installed. Do not press _Create_ yet - we need to set up things first.
+1. Use this [link](https://cloud.digitalocean.com/droplets/new) to get to the _Create Droplet_ page. Do not press _Create_ yet - we need to set up things first.
 
-   ![Selected Marketplace with Docker on Ubuntu](/img/Screenshot-DigitalOcean-createDroplet-marketplace_371.png)
+1. _Choose Region_: You can actually use any you want, but best is to choose one that is near to your participants to reduce loading time.   
+
+1. _Choose Image_: Select _Marketplace_ and _Docker x on Ubuntu y_. Your sreen should look similar to this one:
+
+
+   ![Selected Marketplace with Docker on Ubuntu](/img/Screenshot-DigitalOcean-createDroplet-chooseAnImage.png)
    
-   Your sreen should look similar to this one: Selected _Marketplace_ with _Docker x.x.x_ on _Ubuntu x.x_
-   
-1. Scroll down to _Choose a plan_: Droplet size depends on your experiments. Shared CPU that come with the _Basic_ plan are usually enough (and cheaper). For the _CPU options_: Memory is often the scarce resource: Common numbers are 1GB, 2GB, 4GB for a single researcher or group - or 8GB for an institutional server. If you are not sure get the smaller one - you can always scale up later. If you just want to try it out: Regular Intel with 1GB for (currently) $5/month will do it.
+1. _Choose Size_: Droplet size depends on your experiments. Shared CPU that come with the _Basic_ plan are usually enough (and cheaper). For the _CPU options_: Memory is often the scarce resource: Common numbers are 1GB, 2GB, 4GB for a single researcher or group - or 8GB for an institutional server. If you are not sure get the smaller one - you can always scale up later. If you just want to try it out: _Regular_ with 1GB for (currently) $6/month will do it.
 
-1. Scroll down to _Choose a datacenter region_: You can actually use any you want, but best is to choose one that is near to your participants to reduce loading time.
-
-1. _Select additional options_: Here activate **User Data** and _copy+paste_ the following script in the text field:
+1. Open _Advanced Options_ and activate _Add Initialization scripts_. Then _copy+paste_ the following script in the text field:
 
    ```shell
    #!/bin/bash
@@ -36,15 +37,15 @@ First we want to set up a simple JATOS server without encryption (HTTPS) or a do
    docker run -d --restart=always -p 80:9000 jatos/jatos:latest
    ```
    
-   ![Droplet's User Data](/img/Screenshot-DigitalOcean-createDroplet-userData.png)
-   
-   The _User Data_ should look similar to this screenshot here
+   The _User Data_ should look similar to this screenshot here:
+
+   ![Droplet's User Data](/img/Screenshot-DigitalOcean-createDroplet-initScript.png)
 
 1. You could also add an SSH key under _Authentication_ / _SSH keys_. If you don't know what this is, set a _Password_. Keep the password somewhere safe. You will need it if you ever want to log into your server's terminal.
 
-1. [Optional] Add backups
+1. [Optional] Add backups (you can do this later too)
 
-1. Finally click the _Create_ button
+1. Finally click the _Create Droplet_ button
 
 1. Try out your JATOS: Now the server is being created which can take a couple seconds (or minutes). Copy the server's (aka Droplet) IP address into your browser's address bar and if everything went well, you will see a JATOS login screen.
 
@@ -56,7 +57,7 @@ First we want to set up a simple JATOS server without encryption (HTTPS) or a do
 
 **Voila, you have your own JATOS server.**
 
-DigitalOcean charges you by second. So if you want to create a new JATOS server because something went wrong, just _Destroy_ the old one and start over. 
+DigitalOcean charges you by the second. So if you want to create a new JATOS server because something went wrong, just _Destroy_ the old one and start over. 
 
 Although usually not necessary, you can also access your server via _SSH_: `ssh root@xx.xx.xx.xx` (exchange _xx.xx.xx.xx_ with your IP). Use the password you entered during creation of the Droplet. The first time you will be asked to change your password.
 
@@ -96,7 +97,7 @@ sed -i "s/<EMAIL>/${EMAIL}/g" /root/traefik.toml
 touch /root/acme.json
 chmod 600 /root/acme.json
 docker network create proxy
-docker-compose -f /root/docker-compose.yaml up -d
+docker compose -f /root/docker-compose.yaml up -d
 ```
 
 Exchange `my.domain.name` and `my.email@foo.com` with your own domain name and email address. Your email we need for encryption with [Let's Encrypt](https://letsencrypt.org/).
