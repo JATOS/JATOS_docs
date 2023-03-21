@@ -296,7 +296,15 @@ Adds a button to the document that if pressed calls _jatos.abortStudy_ (which ca
 
    ```javascript
    jatos.addAbortButton({
-     style: "left:1em"
+     style: "left:1em; right:unset"
+   });
+   ```
+   
+1. Adds a cancel button and changes the position to the top-right
+
+   ```javascript
+   jatos.addAbortButton({
+     style: "top:1em; bottom:unset"
    });
    ```
 
