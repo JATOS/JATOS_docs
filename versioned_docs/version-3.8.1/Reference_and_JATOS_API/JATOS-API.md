@@ -155,9 +155,9 @@ In the token overview windows you can temporarily deactivate a token or delete i
 
 ## How to import a study
 
-The endpoint to import a study, `/jatos/api/v1/study`, can be a bit tricky. It uses POST request with the header `Content-Type: multipart/form-data` to upload the a JZIP file in binary format.
+The endpoint to import a study, `/jatos/api/v1/study`, can be a bit tricky. It uses POST request with the header `Content-Type: multipart/form-data` to upload the a study archive file (JZIP) in binary format.
 
-Here are a couple examples:
+Here are some examples in different tools/languages. They all upload a JZIP file named `test.jzip`:
 
 <Tabs>
 <TabItem value="curl" label="curl">
