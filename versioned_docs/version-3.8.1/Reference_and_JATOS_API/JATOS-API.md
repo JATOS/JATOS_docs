@@ -51,11 +51,78 @@ Every HTTP request to the API needs this header (replace `<token>` with your tok
 Authorization: Bearer <token>
 ```
 
-So a command-line request with `curl` could look like:
+And an example in different tools/languages with the endpoint `/jatos/api/v1/admin/token` that just returns some info about the used token:
 
-```bash
-curl -i -H "Authorization: Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f" https://www.example.com/jatos/api/v1/admin/token
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="curl" label="curl">
+
+```shell
+curl -i -H "Authorization: Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f" https://example.com/jatos/api/v1/admin/token
 ```
+
+</TabItem>
+<TabItem value="py" label="Python">
+
+```py
+import requests
+
+headers = {
+    'Authorization': 'Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f',
+}
+response = requests.post('https://example.com/jatos/api/v1/admin/token', headers=headers)
+```
+
+</TabItem>
+<TabItem value="r" label="R">
+
+```r
+require(httr)
+
+headers = c(
+  `Authorization` = "Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f"
+)
+res <- httr::GET(url = "https://example.com/jatos/api/v1/admin/token", httr::add_headers(.headers=headers))
+```
+
+</TabItem>
+<TabItem value="js" label="JavaScript">
+
+```js
+fetch('https://example.com/jatos/api/v1/admin/token', {
+  headers: {
+    'Authorization': 'Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f'
+  }
+});
+```
+
+</TabItem>
+<TabItem value="matlab" label="MATLAB">
+
+```matlab
+%% HTTP Interface
+import matlab.net.*
+import matlab.net.http.*
+
+header = HeaderField('Authorization', 'Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f');
+uri = URI('https://example.com/jatos/api/v1/admin/token');
+response = RequestMessage('get', header).send(uri.EncodedURI);
+```
+
+</TabItem>
+<TabItem value="powershell" label="PowerShell">
+
+```powershell
+$headers=@{}
+$headers.Add("Authorization", "Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f")
+$response = Invoke-WebRequest -Uri 'https://www.example.com/jatos/api/v1/admin/token' -Method GET -Headers $headers
+```
+
+</TabItem>
+</Tabs>
+
 
 ## Personal access tokens
 
@@ -84,6 +151,104 @@ Now your token will be shown. **Copy it to a safe place**. **It will never be sh
 In the token overview windows you can temporarily deactivate a token or delete it altogether.
 
 ![API token 1](/img/api_tokens_4.png)
+
+
+## How to import a study
+
+The endpoint to import a study, `/jatos/api/v1/study`, can be a bit tricky. It uses POST request with the header `Content-Type: multipart/form-data` to upload the a JZIP file in binary format.
+
+Here are a couple examples:
+
+<Tabs>
+<TabItem value="curl" label="curl">
+
+```shell
+curl -X 'POST'   'https://example.com/jatos/api/v1/study'   -H 'accept: application/json' -H 'Authorization: Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f'   -H 'Content-Type: multipart/form-data'   -F 'study=@test.jzip'
+```
+
+</TabItem>
+<TabItem value="py" label="Python">
+
+```py
+import requests
+
+headers = {
+    'accept': 'application/json',
+    'Authorization': 'Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f',
+    # requests won't add a boundary if this header is set when you pass files=
+    # 'Content-Type': 'multipart/form-data',
+}
+
+files = {
+    'study': open('test.jzip', 'rb'),
+}
+
+response = requests.post('https://example.com/jatos/api/v1/study', headers=headers, files=files)
+```
+
+</TabItem>
+<TabItem value="r" label="R">
+
+```r
+require(httr)
+
+headers = c(
+  `Authorization` = "Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f"
+)
+res <- httr::GET(url = "https://example.com/jatos/api/v1/admin/token", httr::add_headers(.headers=headers))
+```
+
+</TabItem>
+<TabItem value="js" label="JavaScript">
+
+```js
+const form = new FormData();
+form.append('study', File(['<data goes here>'], 'test.jzip'));
+
+fetch('https://example.com/jatos/api/v1/study', {
+  method: 'POST',
+  headers: {
+    'accept': 'application/json',
+    'Authorization': 'Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f',
+    'Content-Type': 'multipart/form-data'
+  },
+  body: form
+});
+```
+
+</TabItem>
+<TabItem value="matlab" label="MATLAB">
+
+```matlab
+%% HTTP Interface
+import matlab.net.*
+import matlab.net.http.*
+import matlab.net.http.io.*
+
+header = [
+    field.AcceptField(MediaType('application/json'))
+    HeaderField('Authorization', 'Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f')
+    HeaderField('Content-Type', 'multipart/form-data')
+]';
+uri = URI('https://example.com/jatos/api/v1/study');
+body = MultipartFormProvider('study', FileProvider('test.jzip'));
+response = RequestMessage('post', header, body).send(uri.EncodedURI);
+```
+
+</TabItem>
+<TabItem value="powershell" label="PowerShell">
+
+```powershell
+$headers=@{}
+$headers.Add("accept", "application/json")
+$headers.Add("Authorization", "Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f")
+$headers.Add("Content-Type", "multipart/form-data")
+$response = Invoke-WebRequest -Uri 'https://example.com/jatos/api/v1/study' -Method POST -Headers $headers
+
+```
+
+</TabItem>
+</Tabs>
 
 
 ## Deactivate the JATOS API
