@@ -32,7 +32,7 @@ These steps sound complicated, but it's all really simple clicking around and cu
 Imagine you have half-study-1.jzip (a survey) and half-study-2.jzip (a perceptual task).  
 
 1. Import the half-study-1.jzip into JATOS. You should get one study with a single component. 
-2. Identify the folder in your local computer where these study assets are.
+2. Identify the folder in your local computer where these study assets are. (Ingredient 2, described above.)
 3. Import the half-study-2.jzip into JATOS. You should get one study with a single component.
 4. Look into the folder you found in Step 2. Navigate to the subfolder that corresponds to half-study-2. You should find a single .html file (this is what actually displays your study) and probably a lot of other assets, including libraries and css stylesheets. 
 5. In your local JATOS: Go the component properties of each of your study halves. Find the field with the path to the html file that runs your study. If the name of the html files is the same for both halves (it often is index.html), change the names. Now they are called index-half-1.html and index-half-2.html. You can change the names in the component properties. JATOS will change the actual file name on your filesystem for you. (Confirm that you want this when propmpted).   
