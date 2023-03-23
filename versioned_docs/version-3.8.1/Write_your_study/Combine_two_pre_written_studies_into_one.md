@@ -33,31 +33,22 @@ Imagine you have half-study-1.jzip (a survey) and half-study-2.jzip (a perceptua
 2. Identify the folder in your local computer where these study assets are.
 3. Import the half-study-2.jzip into JATOS. You should get one study with a single component.
 4. Look into the folder you found in Step 2. Navigate to the subfolder that corresponds to half-study-2. You should find a single .html file (this is what actually displays your study) and probably a lot of other assets, including libraries and css stylesheets. 
-5. In your local JATOS: Go the component properties of each of your study halves. Find the field with the path to the html file that runs your study. If the name of the html files is the same for both halves (it often is index.html), change the names. Now they are called index-half-1.html and index-half-2.html. You can change the names in the component properties. JATOS will change the actual file name on your filesystem for you. (Confirm that you want this)   
-6. Copy all of the contents of this subfolder into the subfolder that corresponds to half-study-1. Basically, you combined 
-7. Figure out 
-8. Import the  into JATOS. Again, you should get one study with a single component.
-9. Now you have to merge these two into 
-10. In your local JATOS: On the component bar of half-study-2, click on More > Export Properties. Save the exported component properties file on your (e.g.) Desktop.
-11. In your local JATOS: In the first study, go to Components > Import Properties. This will create a new component in your half-study-1, with the correct properties, including the path to the HTML/JS file that actually runs your study.
-12. Go to the folder you found on Step 2. Find the HTML file that corresponds to half-study-2 (it has the name , created in OSWeb. Move this file to the study assets of the labjs one. If you have css files and other assets, move that too-.
-
-5-Now you have one study with two components. Note that you will likely need to modify the JavaScript code itself in the first component. It will probably have a line that reads jatos.endStudy. You'll have to replace it with jatos.startNextComponent (see here for more details http://www.jatos.org/jatos.js-Reference.html#jatosstartnextcomponentresultdata-onerror)
-
-6-Export your study (with two components) as a single .zip file by clicking on Export on the study bar
-
-This sounds complicated but is actually rather simple. If you have problems, let us know
+5. In your local JATOS: Go the component properties of each of your study halves. Find the field with the path to the html file that runs your study. If the name of the html files is the same for both halves (it often is index.html), change the names. Now they are called index-half-1.html and index-half-2.html. You can change the names in the component properties. JATOS will change the actual file name on your filesystem for you. (Confirm that you want this when propmpted).   
+6. In your local filesystem: Copy all of the contents of this subfolder into the subfolder that corresponds to half-study-1. You now combined the information from both studies into a single folder and made sure that the html files are uniquely named.  
+7. In your local JATOS: Go to the your half-study-1. Click on "New component". In the properties of this new component, indicate the path to the HTML file from half-study-2. Copy any other properties that might exist (e.g. json) from the single component in half-study-2 to this new component in half-study-1. 
+8. Now you have a complete, combined study. 
+9. Export this study from your local instance.
+10. Import the .jzip you created in step 9 into your server.  
 
 
+### Troubleshooting
+Make sure that the study doesn't finish after the first component. In the javascript of the first component you should see something like:
 
+   ~~~javascript
+   jatos.startNextComponent(myResultDataObject);
+   ~~~
 
-
-* Think about dividing your study into **several components**. You could have separate components e.g. for introduction, training, experiment and feedback. You could even consider splitting the experiment into several parts. One advantage is that if your participant stops in the middle of your study you still have the result data of the first components. Also, you can re-use components in different studies.
-* Use the study's and component's '**JSON input data**'. With them you can change variables of your code directly through JATOS' GUI, which might come handy if someone isn't good in JavaScript.
-* You can add a **quit button** to your study to allow the participant to [abort at any time](Data-Privacy-and-Ethics.html#things-you-should-consider-in-your-studies). 
-
-
-
+and not 
 
    ~~~javascript
    jatos.endStudy(myResultDataObject);
