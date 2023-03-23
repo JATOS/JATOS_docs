@@ -27,6 +27,8 @@ The idea will be to, first, import one of these halves of a study into your loca
 
 ### Steps
 
+These steps sound complicated, but it's all really simple clicking around and cutting-pasting. Basically a JATOS-study-collage. 
+
 Imagine you have half-study-1.jzip (a survey) and half-study-2.jzip (a perceptual task).  
 
 1. Import the half-study-1.jzip into JATOS. You should get one study with a single component. 
