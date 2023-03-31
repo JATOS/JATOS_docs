@@ -6,9 +6,9 @@ sidebar_position: 6
 
 It is very easy to use JATOS together with [Prolific](https://www.prolific.co/) to recruit participants. 
 
-First, find your _Project_ page in Prolific. 
-
 It's pretty simple: To connect JATOS with Prolific, you have to (1) tell Prolific where to send participants to run the JATOS study and (2) tell JATOS  where to send people back to Prolific, so they get paid when they finish the study. 
+
+First, find your _Project_ page in Prolific. 
 
 ### 1. In Prolific: Enter your JATOS study link
 
@@ -44,7 +44,7 @@ You will then be able to access those URL parameters in your study's JavaScript 
 
 Step 2 above, where you use the JATOS GUI to tell JATOS about the redirect link to Prolific, is the easiest and recommended. In some cases you might want to do with within your JS. 
 
-1. With _jatos.js_: Include [`jatos.endStudyAndRedirect`](jatos.js-Reference.html#jatosendstudyandredirect) in the JavaScript of your **last** component
+With _jatos.js_: Include [`jatos.endStudyAndRedirect`](jatos.js-Reference.html#jatosendstudyandredirect) in the JavaScript of your **last** component
 
    E.g. but change this URL to the one you see in Prolific
 
