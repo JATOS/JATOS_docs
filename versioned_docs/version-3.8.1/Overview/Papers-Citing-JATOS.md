@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Yan, N., Grindell, J., & Anderson, B. A. (2023). Encoding history enhances working memory encoding: Evidence from attribute amnesia. *Journal of Experimental Psychology: Human Perception and Performance* [DOI](https://doi.org/10.1037/xhp0001096)
+
 Dijkstra, N., Fleming, S.M. (2023) Subjective signal strength distinguishes reality from imagination. *Nat Commun* [DOI](https://doi.org/10.1038/s41467-023-37322-1)
 
 Guseva,  M., Bogler, C., Allefeld C., Haynes JD. (2023) Instruction effects on randomness in sequence generation. *Frontiers in Psychology*. [DOI](https://doi.org/10.3389/fpsyg.2023.1113654)	
