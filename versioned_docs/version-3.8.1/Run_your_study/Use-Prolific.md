@@ -12,6 +12,8 @@ First, find your _Project_ page in Prolific.
 
 ### 1. In Prolific: Enter your JATOS study link
 
+Here is a screenshot of how it looks in Prolific:
+
 ![Prolific screenshot](/img/prolific_1_studyurl.png)
 
 In the field under _What is the URL of your study?_ (first red box in the screenshot), enter a link to your JATOS study. You probably want a study link of either _General Single_ or a _General Multiple_ type (see [Run your Study with Study Links](Run-your-Study-with-Study-Links.html)).
