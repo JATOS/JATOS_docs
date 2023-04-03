@@ -16,9 +16,9 @@ Here is a screenshot of how it looks in Prolific:
 
 ![Prolific screenshot](/img/prolific_1_studyurl.png)
 
-In the field under _What is the URL of your study?_ (first red box in the screenshot), enter a link to your JATOS study. You probably want a study link of either _General Single_ or a _General Multiple_ type (see [Run your Study with Study Links](Run-your-Study-with-Study-Links.html)).
+In the field under _What is the URL of your study?_ (in the screenshot above), enter a link to your JATOS study. You probably want a study link of either _General Single_ or a _General Multiple_ type (see [Run your Study with Study Links](Run-your-Study-with-Study-Links.html)).
 
-Also, we recommend you click the option that you'll use URL parameters. This will modify the JATOS study link you entered -- that'S fine. 
+Also, we recommend you click the option that you'll use URL parameters. This will modify the JATOS study link you entered -- that's fine. 
 
 ### 2. In JATOS: Redirect to Prolific's end page after the study is done
 
@@ -38,7 +38,7 @@ You can connect JATOS and Prolific programmatically through query parameters and
 
 ### 1. Consider passing Prolific URL parameters to your study
 
-Prolific allows you to pass the parameters PROLIFIC PID, STUDY ID, and SESSION ID as URL parameters. You just need to make sure you cliked the radio button "I'll use URL parameters on Prolific" (see thi screenshot from point 1). 
+Prolific allows you to pass the parameters PROLIFIC PID, STUDY ID, and SESSION ID as URL parameters. You just need to make sure you cliked the radio button "I'll use URL parameters on Prolific" (see the screenshot from point 1). 
 
 You will then be able to access those URL parameters in your study's JavaScript via [`jatos.urlQueryParameters`](jatos.js-Reference.html#jatosurlqueryparameters).
 
