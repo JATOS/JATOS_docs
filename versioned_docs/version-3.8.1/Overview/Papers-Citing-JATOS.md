@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Huang, C., Donk, M. & Theeuwes, J. (2023) Attentional suppression is in place before display onset. Atten Percept Psychophys. [DOI](https://doi.org/10.3758/s13414-023-02704-6)
+
+Salava, A, Salmela, V. (2023) Perceptual learning in dermatology—A Finnish cohort study of undergraduate medical students. *J Eur Acad Dermatol Venereol.* [DOI](https://doi.org/10.1111/jdv.19058)
+
 Béna, J., Mierop, A., Bancu, D. Unkelbach, C., Corneille, O. The Role of Valence Matching in the Truth-by-Repetition Effect. *Social Cognition* [DOI](http://dx.doi.org/10.1521/soco.2023.41.2.193)
 
 Embon, I., Cukier, S., Iorio, A., Barttfeld, P., Solovey, G. Is visual metacognition associated with autistic traits? A regression analysis shows no link between visual metacognition and Autism-Spectrum Quotient scores. *Consciousness and Cognition* [DOI](https://doi.org/10.1016/j.concog.2023.103502)
