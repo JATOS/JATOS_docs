@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Bognar, M., Gyurkovics, M., van Steenbergen, H. & Aczel, B. (2023) Phasic affective signals by themselves do not regulate cognitive control. *Cognition and Emotion* [DOI](https://doi.org/10.1080/02699931.2023.2191172)
+
 Huang, C., Donk, M. & Theeuwes, J. (2023) Attentional suppression is in place before display onset. Atten Percept Psychophys. [DOI](https://doi.org/10.3758/s13414-023-02704-6)
 
 Salava, A, Salmela, V. (2023) Perceptual learning in dermatology—A Finnish cohort study of undergraduate medical students. *J Eur Acad Dermatol Venereol.* [DOI](https://doi.org/10.1111/jdv.19058)
