@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Comay, N.A., Della Bella, G., Lamberti, P., Sigman, M. Solovey, G., Barttfeld, P. (2023) The presence of irrelevant alternatives paradoxically increases confidence in perceptual decisions. *Cognition* [DOI](https://doi.org/10.1016/j.cognition.2023.105377)
+
 Tian, J., Ren,  K., Gunderson, EA. (2023) Verbal labels influence children's processing of decimal magnitudes. *Journal of Applied Developmental Psychology* [DOI](https://doi.org/10.1016/j.appdev.2023.101537)
 
 Bognar, M., Gyurkovics, M., van Steenbergen, H. & Aczel, B. (2023) Phasic affective signals by themselves do not regulate cognitive control. *Cognition and Emotion* [DOI](https://doi.org/10.1080/02699931.2023.2191172)
