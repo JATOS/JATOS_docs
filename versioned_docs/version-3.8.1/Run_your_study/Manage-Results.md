@@ -99,8 +99,8 @@ You can show and hide the columns displayed in the table with the drop-down menu
 * **Result ID** - An identifier assigned by JATOS to each study result. A study result is actually a set of component results, each of them with their own (different) *Component Result ID*. 
 * **UUID** - universally unique identifier - similar to Result ID but this ID is unique over different JATOS installations
 * **Study Code** - The study code that was used to start this study run
-* **Start Time** - Time (set at the server's time zone) at which the first component of the study was started. 
-* **End Time** - Time (set at the server's time zone) at which the last component of the study was finished. 
+* **Start Time** - Time at which the first component of the study was started. 
+* **End Time** - Time at which the last component of the study was finished. 
 * **Last Seen** - Each component running in a worker's browser sends a "heartbeat" regularly back to JATOS. Last Seen is the time of the last heartbeat received. The heartbeat stops either when the study is finished or when the browser tab is closed. The default period of the heartbeat is 2 minutes but you can change it through a [_jatos.js_ function](jatos.js-Reference.html#jatossetheartbeatperiod).
 * **Duration** - Simply the time difference between the start and end time.
 * **Batch** - Name of the batch the worker belongs to.
