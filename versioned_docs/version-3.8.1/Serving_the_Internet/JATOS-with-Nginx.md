@@ -6,7 +6,9 @@ sidebar_position: 9
 
 These are examples for configurations of [Nginx](https://www.nginx.com/) as a proxy in front of JATOS. It is not necessary to run JATOS with a proxy but it's common. They support WebSockets for JATOS' group studies. 
 
-The following two configs are the content of `/etc/nginx/nginx.conf`. Change them to your needs. You probably want to change your servers address (`www.example.com` in the example) and the path to the SSL certificate and its key. This `proxy_set_header X-Forwarded-*` is necessary to tell JATOS the original requester's IP address - please leave it unchanged.
+The following two configs are the content of `/etc/nginx/nginx.conf`. Change them to your needs. You probably want to change your servers address (`www.example.com` in the example) and the path to the SSL certificate and its key.
+
+For JATOS versions 3.8.1 and older it is necessary to set the `X-Forwarded-*` headers with `proxy_set_header` to tell JATOS the original requester's IP address. This is not necessary from 3.8.2 and newer.
 
 As an additional security measurement you can uncomment the `location /jatos` and config your local network. This will restrict the access to JATOS' GUI (every URL starting with `/jatos`) to the local network.
 
@@ -30,16 +32,19 @@ http {
         sendfile             on;
         tcp_nopush           on;
         tcp_nodelay          on;
-        keepalive_timeout    65;
+        keepalive_timeout    70;
         client_max_body_size 500M;
 
         include      /etc/nginx/mime.types;
         default_type application/octet-stream;
 
         proxy_buffering    off;
+
+        # For version 3.8.1 and older it is necessary to set the X-Forwarded-* headers
         proxy_set_header   X-Forwarded-Proto https;
         proxy_set_header   X-Forwarded-Ssl on;
         proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        
         proxy_set_header   Host $http_host;
         proxy_http_version 1.1;
 
@@ -63,8 +68,6 @@ http {
         server {
                 listen        443 ssl;
                 server_name   www.example.com;
-
-                keepalive_timeout    70;
 
                 ssl_certificate      /etc/ssl/certs/localhost.crt;
                 ssl_certificate_key  /etc/ssl/private/localhost.key;
@@ -132,16 +135,19 @@ events {
 
 http {
         sendfile on;
-        keepalive_timeout 65;
+        keepalive_timeout 70;
         client_max_body_size 500M;
 
         include /etc/nginx/mime.types;
         default_type application/octet-stream;
 
         proxy_buffering    off;
+
+        # For version 3.8.1 and older it is necessary to set the X-Forwarded-* headers
         proxy_set_header   X-Forwarded-Proto http;
         proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header   Host $http_host;
+
         proxy_http_version 1.1;
 
         upstream jatos-backend {
@@ -156,8 +162,6 @@ http {
 
         server {
                 listen               80;
-
-                keepalive_timeout    70;
                 server_name          www.example.com;
 
                 # websocket location (JATOS' group and batch channel and the test page)

@@ -11,18 +11,35 @@ sidebar_position: 6
 
 By default JATOS binds to all locally available IP addresses including 127.0.0.1 on port 9000. If you don't want to use a proxy in front of JATOS, you have several ways to configure the host name or IP address and the port:
 
-1. It is possible to set up IP and port via `conf/production.conf`: Edit `play.server.http.address` and `play.server.http.port` and restart JATOS. E.g. to run on IP 192.168.0.100 and port 80:
+1. It is possible to set up IP and port via `conf/production.conf`:
 
-   ~~~shell
-   play.server.http.address = "192.168.0.100"
-   play.server.http.port = 80
-   ~~~
+   * **For v3.8.1 and lower)** Edit `play.server.http.address` and `play.server.http.port`. E.g. to run on IP 192.168.0.100 and port 80:
+
+     ~~~shell
+     play.server.http.address = "192.168.0.100"
+     play.server.http.port = 80
+     ~~~
+
+   * **For v3.8.2 and higher)** Edit `jatos.http.address` and `jatos.http.port`. E.g. to run on IP 192.168.0.100 and port 80:
+
+     ~~~shell
+     jatos.http.address = "192.168.0.100"
+     jatos.http.port = 80
+     ~~~
   
-1. Via command-line arguments `-Dhttp.address` and `-Dhttp.port`, e.g. with the following command you'd start JATOS with IP 10.0.0.1 and port 80
+1. Via command-line arguments:
 
-   ~~~shell
-   ./loader.sh start -Dhttp.address=10.0.0.1 -Dhttp.port=80
-   ~~~
+   * **For v3.8.1 and lower)** `-Dhttp.address` and `-Dhttp.port`, e.g. with the following command you'd start JATOS with IP 10.0.0.1 and port 80
+
+     ~~~shell
+     ./loader.sh start -Dhttp.address=10.0.0.1 -Dhttp.port=80
+     ~~~
+
+   * **For v3.8.2 and higher)** `-Djatos.http.address` and `-Djatos.http.port`, e.g. with the following command you'd start JATOS with IP 10.0.0.1 and port 80
+
+     ~~~shell
+     ./loader.sh start -Djatos.http.address=10.0.0.1 -jatos.Dhttp.port=80
+     ~~~
    
 1. (DEPRECATED) In `loader.sh` change the values of 'address' and 'port' according to your IP address or domain name and port. Restart JATOS after editing.
 
@@ -34,7 +51,7 @@ By default JATOS binds to all locally available IP addresses including 127.0.0.1
 
 ### URL base path
 
-JATOS can be configured to use an base path. E.g we have the host "www.example.org" and let JATOS run under "mybasepath" so that JATOS' URL all start with "www.example.org/mybasepath/". This can be achieved in two ways:
+JATOS can be configured to use an base path. E.g we have the host "www.example.org" and let JATOS run under "mybasepath" so that JATOS' URL all start with "www.example.org/mybasepath/". This can be achieved in three ways:
 
 1. Via the command-line argument `-DJATOS_URL_BASE_PATH`, e.g.
 
@@ -42,10 +59,18 @@ JATOS can be configured to use an base path. E.g we have the host "www.example.o
    ./loader.sh start -DJATOS_URL_BASE_PATH="/mybasepath/"
    ~~~
 
-1. Via `conf/production.conf`: change `play.http.context`
+1. Via `conf/production.conf`:
+
+   * **For v3.8.1 and lower)** change `play.http.context`, e.g.
 
    ~~~shell
    play.http.context = "/mybasepath/"
+   ~~~
+
+   * **For v3.8.2 and higher)** change `jatos.urlBasePath`, e.g.
+
+   ~~~shell
+   jatos.urlBasePath = "/mybasepath/"
    ~~~
    
 1. Via the environment variable `JATOS_URL_BASE_PATH`, e.g.
@@ -197,11 +222,7 @@ The first line adds your certificate ('type' can be PKCS12, JKS or PEM). The sec
 
 ### User session configuration
 
-The user session is part of JATOS secuity measurments ([more about security](http://blog.jatos.org/Hardening-JATOS-Security/)) and can be configured in `conf/production.conf`. 
-
-* `jatos.userSession.validation` - toggles user session validation. If turned on (true) only the IP which was used at login time is allowed to be used for subsequent requests by this user. This helps preventing session hijacking and adds an addional layer of security. But on the downside it also prevents using the same user in JATOS from different browsers at the same time. By default it is set to false to allow an easy use of a local JATOS. On a server installation it should be set to true, although sometimes this not possible, e.g. if your users have an often changing, dynamic IP address. WARNING: Turning off the user session validation reduces JATOS security!
-
-Other configs are:
+The user session is part of JATOS secuity measurments and can be configured in `conf/production.conf`. 
 
 * `jatos.userSession.timeout` - time in minutes a user stays logged in (default is 1440 = 1 day)
 * `jatos.userSession.inactivity` - defines the time in minutes a user is automatically logged out after inactivity (default is 60)
@@ -212,7 +233,32 @@ Other configs are:
 [More here](Customize-JATOS-Home-Page.html).
 
 
-### Other configuration in _production.conf_
+### Application logs
+
+Don't confuse the application logs with the [study logs](#study-logs). The application log records messages from the JATOS application.
+
+The application logs is by default is in JATOS installation folder under './logs' and uses daily log rotation with a history of maximal 30 days.
+
+* Change the path (default is `./logs`)
+
+  1. Via `conf/production.conf`: Change `jatos.logs.path`
+  1. Via environment variable: Use `JATOS_LOGS_PATH`
+  1. Via command-line arguments: Use `-DJATOS_LOGS_PATH`
+
+* Change the filename (default is `application`):
+
+  1. Via `conf/production.conf`: Change `jatos.logs.filename`
+  1. Via environment variable: Use `JATOS_LOGS_FILENAME`
+  1. Via command-line arguments: Use `-DJATOS_LOGS_FILENAME`
+
+* Change the appender: If you don't want to log to a file but to `stdout` change the value to `ASYNCSTDOUT`.
+
+  1. Via `conf/production.conf`: Change `jatos.logs.appender`
+  1. Via environment variable: Use `JATOS_LOGS_APPENDER`
+  1. Via command-line arguments: Use `-DJATOS_LOGS_APPENDER`
+
+
+### More in _production.conf_
 
 Some other properties can be configured in the `conf/production.conf`.
 

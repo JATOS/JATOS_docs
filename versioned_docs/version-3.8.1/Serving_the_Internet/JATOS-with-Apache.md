@@ -49,8 +49,9 @@ The following is an example of a proxy config with Apache. I stored it in `/etc/
   #  Allow from 192.168
   #</Location>
 
-  # Needed for JATOS to get the correct host and protocol
   ProxyPreserveHost On
+
+  # For JATOS version 3.8.1 and older it is necessary to set the X-Forwarded-* headers
   RequestHeader set X-Forwarded-Proto "https"
   RequestHeader set X-Forwarded-Ssl "on"
   
