@@ -11,6 +11,9 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+
+Arslan, B., Ng, F., Göksun, T., & Nozari, N. (2023). Trust my gesture or my word: How do listeners choose the information channel during communication? *Journal of Experimental Psychology: Learning, Memory, and Cognition* [DOI](https://doi.org/10.1037/xlm0001253)
+
 Fromm, S.P., Wieland, L., Klettke, A., Nassar, M.R., Katthagen, T., Markett, S., Heinz, A., Schlagenhauf, F. (2023) Computational mechanisms of belief updating in relation to psychotic-like experiences. *Front. Psychiatry* [DOI](https://doi.org/10.3389/fpsyt.2023.1170168)
 
 Comay, N.A., Della Bella, G., Lamberti, P., Sigman, M. Solovey, G., Barttfeld, P. (2023) The presence of irrelevant alternatives paradoxically increases confidence in perceptual decisions. *Cognition* [DOI](https://doi.org/10.1016/j.cognition.2023.105377)
