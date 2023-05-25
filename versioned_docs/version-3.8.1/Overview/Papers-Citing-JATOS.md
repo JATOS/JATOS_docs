@@ -11,6 +11,7 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Ng, D. W., Lee, J. C., & Lovibond, P. F. (2023). Unidirectional rating scales overestimate the illusory causation phenomenon. *Quarterly Journal of Experimental Psychology* [DOI](https://doi.org/10.1177/17470218231175003)
 
 Arslan, B., Ng, F., Göksun, T., & Nozari, N. (2023). Trust my gesture or my word: How do listeners choose the information channel during communication? *Journal of Experimental Psychology: Learning, Memory, and Cognition* [DOI](https://doi.org/10.1037/xlm0001253)
 
