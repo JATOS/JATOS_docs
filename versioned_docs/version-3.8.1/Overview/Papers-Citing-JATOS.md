@@ -12,6 +12,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 
 ### 2023 
 
+Gao, Y., de Waard, J. & Theeuwes, J. (2023) Learning to suppress a location is configuration-dependent. *Atten Percept Psychophys* [DOI](https://doi.org/10.3758/s13414-023-02732-2)
+
 Homann, L.A., Drody, A.C. & Smilek, D. (2023) The effects of self-selected background music and task difficulty on task engagement and performance in a visual vigilance task. *Psychological Research* [DOI](https://doi.org/10.1007/s00426-023-01836-6)
 
 Ng, D. W., Lee, J. C., & Lovibond, P. F. (2023). Unidirectional rating scales overestimate the illusory causation phenomenon. *Quarterly Journal of Experimental Psychology* [DOI](https://doi.org/10.1177/17470218231175003)
