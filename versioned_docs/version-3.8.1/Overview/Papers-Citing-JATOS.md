@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Hasenäcker, J., & Domahs, F. (2023). Prosody affects visual perception in polysyllabic words: Evidence from a letter search task. *Quarterly Journal of Experimental Psychology*. [DOI](https://doi.org/10.1177/17470218231176691)
+
 Fenn J., Helm J.F., Höfele P., Kulbe L., Ernst A., Kiesel A. (2023) Identifying key-psychological factors influencing the acceptance of yet emerging technologies–A multi-method-approach to inform climate policy. *PLOS Clim* [DOI](https://doi.org/10.1371/journal.pclm.0000207)
 
 Gao, Y., de Waard, J. & Theeuwes, J. (2023) Learning to suppress a location is configuration-dependent. *Atten Percept Psychophys* [DOI](https://doi.org/10.3758/s13414-023-02732-2)
