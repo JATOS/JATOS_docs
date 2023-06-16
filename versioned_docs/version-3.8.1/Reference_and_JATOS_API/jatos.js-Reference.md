@@ -129,7 +129,7 @@ Original query string parameters of the URL that starts the study. It is provide
 
    Now one could add parameters to the URL's query string to pass on external information into the study run. E.g. the following URL would add the parameters 'foo' with the value 'bar' and 'a' with the value '123':
 
-   `http://localhost:9000/publix/uXU9eYJpWdg&foo=bar&a=123`
+   `http://localhost:9000/publix/uXU9eYJpWdg?foo=bar&a=123`
 
    Then those parameter will be accessible during the study run as `jatos.urlQueryParameters.a` and `jatos.urlQueryParameters.foo`.
 
