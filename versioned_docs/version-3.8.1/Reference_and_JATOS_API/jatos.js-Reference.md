@@ -123,13 +123,13 @@ Original query string parameters of the URL that starts the study. It is provide
 
 **Examples**
 
-1. One has this link to start a Personal Single Run:
+1. One has this study link:
 
-   `http://localhost:9000/publix/50/start?batchId=47&personalSingleWorkerId=506`
+   `http://localhost:9000/publix/uXU9eYJpWdg`
 
    Now one could add parameters to the URL's query string to pass on external information into the study run. E.g. the following URL would add the parameters 'foo' with the value 'bar' and 'a' with the value '123':
 
-   `http://localhost:9000/publix/50/start?batchId=47&personalSingleWorkerId=506&foo=bar&a=123`
+   `http://localhost:9000/publix/uXU9eYJpWdg&foo=bar&a=123`
 
    Then those parameter will be accessible during the study run as `jatos.urlQueryParameters.a` and `jatos.urlQueryParameters.foo`.
 
