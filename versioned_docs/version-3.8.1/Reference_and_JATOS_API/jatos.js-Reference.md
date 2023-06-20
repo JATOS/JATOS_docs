@@ -212,12 +212,12 @@ jatos.httpTimeout = 30000; // Sets HTTP timeout to 30 seconds
 
 ### `jatos.httpRetry`
 
-Some jatos functions (e.g. `jatos.sendResultData`) send an Ajax request to the JATOS server. If this request was not successful (e.g. network problems) _jatos.js_ retries it. With this variable one can change the number of retries. The default is 5.
+Some jatos functions (e.g. `jatos.sendResultData`) send a request to the JATOS server. If this request was not successful (e.g. network problems) _jatos.js_ retries it. With this variable one can change the number of retries. The default is 5.
 
 **Example**
 
 ```javascript
-jatos.httpRetry = 2; // Attempts 2 retries of failed Ajax requests
+jatos.httpRetry = 2; // Attempts 2 retries of failed requests
 ```
 
 ### `jatos.httpRetryWait`
@@ -227,7 +227,7 @@ Same as `jatos.httpRetry` but this variable defines the waiting time between the
 **Example**
 
 ```javascript
-jatos.httpRetryWait = 5000; // Sets Ajax retry waiting time to 5 seconds
+jatos.httpRetryWait = 5000; // Sets retry waiting time to 5 seconds
 ```
 
 ### `jatos.waitSendDataOverlayConfig`
