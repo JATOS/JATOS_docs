@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Liao, MR., Grindell, J.D. & Anderson, B.A. (2023) A comparison of mental imagery and perceptual cueing across domains of attention. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-023-02747-9)
+
+Winkelmair, A., Siebertz, M., Jost, L. et al. (203) Explicit and Implicit Affective Attitudes toward Sustainability: The Role of Mindfulness, Heartfulness, Connectedness to Nature and Prosocialness. *Int J Appl Posit Psychol* [DOI](https://doi.org/10.1007/s41042-023-00107-4)
+
 Mazor, M., Maimon-Mor, R.O., Charles, L. et al.  (2023) Paradoxical evidence weighting in confidence judgments for detection and discrimination. *Atten Percept Psychophys.* [DOI](https://doi.org/10.3758/s13414-023-02710-8)
 
 Thoma, D., Becker, K., & Kißler, A. (2023). Presuppositions are more persuasive than assertions if addressees accommodate them: Experimental evidence for philosophical reasoning. *Applied Psycholinguistics*. [DOI](https://doi.org/10.1017/S0142716423000292)
