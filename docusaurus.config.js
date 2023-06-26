@@ -24,7 +24,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/JATOS/JATOS_docs/tree/master',
+          editUrl: 'https://github.com/JATOS/JATOS_docs/tree/main',
           routeBasePath: '/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
@@ -55,7 +55,7 @@ const config = {
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/JATOS/JATOS_docs/tree/master/blog',
+            'https://github.com/JATOS/JATOS_docs/tree/main/blog',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

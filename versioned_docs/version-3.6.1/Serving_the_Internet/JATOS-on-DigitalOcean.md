@@ -82,8 +82,8 @@ To create a JATOS server with Traefik follow the instructions of the first parag
 DOMAIN_NAME="my.domain.name"
 EMAIL="my.email@foo.com"
 
-curl https://raw.githubusercontent.com/JATOS/JATOS/master/deploy/docker-compose.yaml > /root/docker-compose.yaml
-curl https://raw.githubusercontent.com/JATOS/JATOS/master/deploy/traefik.toml > /root/traefik.toml
+curl https://raw.githubusercontent.com/JATOS/JATOS/main/deploy/docker-compose.yaml > /root/docker-compose.yaml
+curl https://raw.githubusercontent.com/JATOS/JATOS/main/deploy/traefik.toml > /root/traefik.toml
 
 sed -i "s/<DOMAIN_NAME>/${DOMAIN_NAME}/g" /root/docker-compose.yaml
 sed -i "s/<DOMAIN_NAME>/${DOMAIN_NAME}/g" /root/traefik.toml
@@ -97,7 +97,7 @@ docker-compose -f /root/docker-compose.yaml up -d
 
 Exchange `my.domain.name` and `my.email@foo.com` with your own domain name and email address. Your email we need for encryption with [Let's Encrypt](https://letsencrypt.org/).
 
-This script downloads two config files, one for Traefik and one for Docker Compose. If you are interested you can examine them under [https://github.com/JATOS/JATOS/blob/master/deploy/docker-compose.yaml](https://github.com/JATOS/JATOS/blob/master/deploy/docker-compose.yaml) and [https://github.com/JATOS/JATOS/blob/master/deploy/traefik.toml](https://github.com/JATOS/JATOS/blob/master/deploy/traefik.toml). Docker Compose will start JATOS' and Traefik's container for us.
+This script downloads two config files, one for Traefik and one for Docker Compose. If you are interested you can examine them under [https://github.com/JATOS/JATOS/blob/main/deploy/docker-compose.yaml](https://github.com/JATOS/JATOS/blob/main/deploy/docker-compose.yaml) and [https://github.com/JATOS/JATOS/blob/main/deploy/traefik.toml](https://github.com/JATOS/JATOS/blob/main/deploy/traefik.toml). Docker Compose will start JATOS' and Traefik's container for us.
 
 After you've created your Droplet you still have to point your domain name to your server's IP address. This involves dealing with things like _A records_ or _AAAA records_ or _DNS_ servers and simply can be quite annoying. You can [manage your DNS settings with Digital Ocean](https://www.digitalocean.com/docs/networking/dns/how-to/manage-records/) or the registar where you got your domain name (they will have some online help). The important thing is to put the _IPv4_ address of your server into the _A record_ of your DNS settings (or if you have an _IPv6_ address the _AAAA record_). And remember, DNS changes can take from some minutes to a day to propagate throughout the Internet - So your domain name might take some time to work (you can use [nslookup](http://www.kloth.net/services/nslookup.php) to check).
 

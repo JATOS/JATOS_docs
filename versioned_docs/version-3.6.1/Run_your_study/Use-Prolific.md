@@ -53,7 +53,7 @@ The second red box contains a link that will (re)direct the participant to a Pro
    });
    ```
 
-   We provide a [Prolific example study](https://github.com/JATOS/JATOS_examples/raw/master/examples/prolific_example.zip) that you can use as a template.
+   We provide a [Prolific example study](https://github.com/JATOS/JATOS_examples/raw/main/examples/prolific_example.zip) that you can use as a template.
 
 1. Setup **End Redirect URL** in the Study Properties (easiest - but only **since JATOS v3.5.1**)
 
