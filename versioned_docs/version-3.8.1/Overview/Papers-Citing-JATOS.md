@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Büsel, C., Seiz, C. M., Hoffmann, A., Sachse, P., & Ansorge, U. (2023). EXPRESS: Swift Attenuation of Irrelevant Features Through Feature Consistency – Evidence From a Capture-Probe Version of the Contingent-Capture Protocol. *Quarterly Journal of Experimental Psychology*,[DOI](https://doi.org/10.1177/17470218231186045)
+
 Xie, T., Fu, S. & Mento, G. (2023) Faces do not guide attention in an object-based facilitation manner. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-023-02742-0)
 
 Ziereis, A., Schacht, A. (2023) Motivated attention and task relevance in the processing of cross-modally associated faces: Behavioral and electrophysiological evidence. *Cogn Affect Behav Neurosci*. [DOI](https://doi.org/10.3758/s13415-023-01112-5)
