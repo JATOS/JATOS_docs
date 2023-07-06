@@ -11,7 +11,7 @@ sidebar_position: 6
 
 By default JATOS binds to all locally available IP addresses including 127.0.0.1 on port 9000. If you don't want to use a proxy in front of JATOS, you have several ways to configure the host name or IP address and the port:
 
-1. It is possible to set up IP and port via `conf/production.conf`:
+1. It is possible to set up IP and port via `conf/jatos.conf` (or `conf/production.conf` in version < 3.8.3):
 
    * **For v3.8.1 and lower)** Edit `play.server.http.address` and `play.server.http.port`. E.g. to run on IP 192.168.0.100 and port 80:
 
@@ -59,7 +59,7 @@ JATOS can be configured to use an base path. E.g we have the host "www.example.o
    ./loader.sh start -DJATOS_URL_BASE_PATH="/mybasepath/"
    ~~~
 
-1. Via `conf/production.conf`:
+1. Via `conf/jatos.conf` (or `conf/production.conf` in version < 3.8.3):
 
    * **For v3.8.1 and lower)** change `play.http.context`, e.g.
 
@@ -92,7 +92,7 @@ By default the study assets root folder (where all your study's HTML, JavaScript
    ./loader.sh start -DJATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
    ~~~
    
-1. Via `conf/production.conf`: change `jatos.studyAssetsRootPath`
+1. Via `conf/jatos.conf` (or `conf/production.conf` in version < 3.8.3): change `jatos.studyAssetsRootPath`
 
    ~~~shell
    jatos.studyAssetsRootPath="/path/to/my/jatos_study_assets_root"
@@ -121,7 +121,7 @@ All JVM arguments can be used with `loader.sh` but all arguments starting with `
 
 ### Password restrictions
 
-By default JATOS' keeps it simple and relies on the users to choose save passwords: it just enforces a length of at least 7 characters. But this can be changed in the `conf/production.conf` with the following two properties.
+By default JATOS' keeps it simple and relies on the users to choose save passwords: it just enforces a length of at least 7 characters. But this can be changed in the `conf/jatos.conf` (or `conf/production.conf` in version < 3.8.3) with the following two properties.
 
 * `jatos.user.password.length` - Set with an positive integer (default is 7)
 * `jatos.user.password.strength` - Set to 0, 1, 2, or 3 (default is 0)
@@ -133,7 +133,7 @@ By default JATOS' keeps it simple and relies on the users to choose save passwor
 
 ### Study result data
 
-You can change the allowed size of a component's result data. This can be used to reduce the load on the server, especially network and database. Sometimes its necessary to increase the value if certain studies have larger result data needs. The property for this in `conf/production.conf` is `jatos.resultData.maxSize`. By default it's set to 5 MB per component run.
+You can change the allowed size of a component's result data. This can be used to reduce the load on the server, especially network and database. Sometimes its necessary to increase the value if certain studies have larger result data needs. The property for this in `conf/jatos.conf` (or `conf/production.conf` in version < 3.8.3) is `jatos.resultData.maxSize`. By default it's set to 5 MB per component run.
 
 E.g. to reduce the allowed size per component to 1 MB:
 
@@ -146,7 +146,7 @@ jatos.resultData.maxSize = 1MB
 
 There are three ways to configure the uploads:
 
-1. Via `conf/production.conf`
+1. Via `conf/jatos.conf` (or `conf/production.conf` in version < 3.8.3)
 
    * `jatos.resultUploads.enabled` - Enables study result files uploads (default is true)
    * `jatos.resultUploads.path` - Path in the file system where the uploaded result files will be stored (default is './result_uploads')
@@ -176,7 +176,7 @@ There are three ways to configure the uploads:
 
 There are three ways to change the configuration of the study logs:
 
-1. Via `conf/production.conf`
+1. Via `conf/jatos.conf` (or `conf/production.conf` in version < 3.8.3)
 
    * `jatos.studyLogs.enabled` - Enables [Study Logs](Study-Log.html) (default is true)
    * `jatos.studyLogs.path` - Path in the file system where the [Study Logs](Study-Log.html) will be stored (default is './study_logs')
@@ -200,7 +200,7 @@ There are three ways to change the configuration of the study logs:
 
 ### LDAP authentication
 
-By default JATOS uses only locally stored users and no LDAP. LDAP configuration is only possible in `conf/production.conf`. At the moment LDAP users still have to be created manually in JATOS' _User manager_ (with the checkbox LDAP turned on).- only authentication is done via LDAP.
+By default JATOS uses only locally stored users and no LDAP. LDAP configuration is only possible in `conf/jatos.conf` (or `conf/production.conf` in version < 3.8.3). At the moment LDAP users still have to be created manually in JATOS' _User manager_ (with the checkbox LDAP turned on).- only authentication is done via LDAP.
 
 * `jatos.user.authentication.ldap.url` - Specifies URL of the LDAP server. Not set or an empty string means no authentication via LDAP.
 * `jatos.user.authentication.ldap.basedn` - LDAP base DN(s) (distinguished name). Can be one DN with a single string (e.g. `"ou=students,dc=example,dc=com"`) or a list of DNs in squared brackets (e.g. `["ou=students,dc=example,dc=com", "ou=scientists,dc=example,dc=com"]`). Not set or an empty string means no authentication via LDAP.
@@ -222,7 +222,7 @@ The first line adds your certificate ('type' can be PKCS12, JKS or PEM). The sec
 
 ### User session configuration
 
-The user session is part of JATOS secuity measurments and can be configured in `conf/production.conf`. 
+The user session is part of JATOS secuity measurments and can be configured in `conf/jatos.conf` (or `conf/production.conf` in version < 3.8.3). 
 
 * `jatos.userSession.timeout` - time in minutes a user stays logged in (default is 1440 = 1 day)
 * `jatos.userSession.inactivity` - defines the time in minutes a user is automatically logged out after inactivity (default is 60)
@@ -241,26 +241,26 @@ The application logs is by default is in JATOS installation folder under './logs
 
 * Change the path (default is `./logs`)
 
-  1. Via `conf/production.conf`: Change `jatos.logs.path`
+  1. Via `conf/jatos.conf` / `conf/production.conf`: Change `jatos.logs.path`
   1. Via environment variable: Use `JATOS_LOGS_PATH`
   1. Via command-line arguments: Use `-DJATOS_LOGS_PATH`
 
 * Change the filename (default is `application`):
 
-  1. Via `conf/production.conf`: Change `jatos.logs.filename`
+  1. Via `conf/jatos.conf` / `conf/production.conf`: Change `jatos.logs.filename`
   1. Via environment variable: Use `JATOS_LOGS_FILENAME`
   1. Via command-line arguments: Use `-DJATOS_LOGS_FILENAME`
 
 * Change the appender: If you don't want to log to a file but to `stdout` change the value to `ASYNCSTDOUT`.
 
-  1. Via `conf/production.conf`: Change `jatos.logs.appender`
+  1. Via `conf/jatos.conf` / `conf/production.conf`: Change `jatos.logs.appender`
   1. Via environment variable: Use `JATOS_LOGS_APPENDER`
   1. Via command-line arguments: Use `-DJATOS_LOGS_APPENDER`
 
 
-### More in _production.conf_
+### More in _jatos.conf_ / _production.conf_
 
-Some other properties can be configured in the `conf/production.conf`.
+Some other properties can be configured in the `conf/jatos.conf` (or `conf/production.conf` in version < 3.8.3).
 
 * `play.http.session.secure` - secure session cookie: set true to restrict user access to HTTPS (default is false)
 * `jatos.idCookies.secure` - secure ID cookies: set true to restrict worker access to HTTPS (default is false)
@@ -275,6 +275,6 @@ Some other properties can be configured in the `conf/production.conf`.
 * `jatos.studyAdmin.showResultFileSize` - If set to 'false' it the 'Result File Size' column will be shown in the Study Admin page. Since calculating the result file size can take some time on larger JATOS installations with slow disks, it can make sense to turn it off. Default is 'true'.
 
 
-Apart from those all [configuration properties possible in the Play Framework](https://www.playframework.com/documentation/latest/Configuration) are possible in JATOS' _production.conf_ too, e.g. 
+Apart from those all [configuration properties possible in the Play Framework](https://www.playframework.com/documentation/latest/Configuration) are possible in JATOS' `jatos.conf` / `production.conf` too, e.g. 
 * `play.pidfile.path` - Path to the file that contains the process id of the started JATOS application (default is `./RUNNING_PID`) 
 

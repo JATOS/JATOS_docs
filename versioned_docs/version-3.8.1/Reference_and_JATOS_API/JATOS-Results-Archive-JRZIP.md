@@ -21,8 +21,8 @@ A JRZIP file is organized by study results. Each study result folder (named _stu
 /
 ├── study_result_1
 │   ├── comp_result_1
-│       ├── files
-│       └── data.txt
+│   │   ├── files
+│   │   └── data.txt
 │   ├── comp_result_2
 │   ├── comp_result_2
 │   └── ...

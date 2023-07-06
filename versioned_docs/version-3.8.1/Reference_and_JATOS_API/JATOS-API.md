@@ -253,7 +253,7 @@ $response = Invoke-WebRequest -Uri 'https://example.com/jatos/api/v1/study' -Met
 
 ## Deactivate the JATOS API
 
-By default the API is activated and ready to use. If, for whatever reasons, you want to turn it off, edit the _conf/production.conf_ file in the JATOS installation folder. Search for `jatos.api.allowed` and remove the `#`:
+By default the API is activated and ready to use. If, for whatever reasons, you want to turn it off, edit the `conf/jatos.conf` (or `conf/production.conf` in version < 3.8.3) in the JATOS installation folder. Search for `jatos.api.allowed` and remove the `#`:
 
 ```
 jatos.api.allowed = false

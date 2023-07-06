@@ -68,9 +68,9 @@ Now you have to configure JATOS to use your MySQL.
 
 ## Configure JATOS
 
-There are three ways to set up JATOS to work with a MySQL database. If you are in doubt use 'production.conf'.
+There are three ways to set up JATOS to work with a MySQL database. If you are in doubt use `jatos.conf` / `production.conf`.
 
-1. Via JATOS config file which is in your JATOS folder in the `conf` folder: `conf/production.conf`
+1. Via JATOS config file which is in your JATOS folder in the _conf_ folder: `jatos.conf` (or `production.conf` in version < 3.8.3)
 
    Change IP, port, username and password to your needs.
 

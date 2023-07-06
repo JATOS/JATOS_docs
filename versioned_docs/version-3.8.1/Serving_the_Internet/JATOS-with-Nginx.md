@@ -4,203 +4,107 @@ slug: /JATOS-with-Nginx.html
 sidebar_position: 9
 ---
 
-These are examples for configurations of [Nginx](https://www.nginx.com/) as a proxy in front of JATOS. It is not necessary to run JATOS with a proxy but it's common. They support WebSockets for JATOS' group studies. 
+Here is an example for a configuration of [Nginx](https://www.nginx.com/) as a reverse proxy in front of JATOS. It is not necessary to run JATOS with a proxy but it's common.
 
-The following two configs are the content of `/etc/nginx/nginx.conf`. Change them to your needs. You probably want to change your servers address (`www.example.com` in the example) and the path to the SSL certificate and its key.
+A JATOS server that handles sensitive or private data should always use encryption (HTTPS). A nice free certificate issuer is [certbot.eff.org](https://certbot.eff.org/) from the Electronic Frontier Foundation.
+
+The following config is the content of `/etc/nginx/nginx.conf`. Change it to your needs. You probably want to change your servers address (`www.example.com` in the example) and the path to the SSL certificate and its key.
 
 For JATOS versions 3.8.1 and older it is necessary to set the `X-Forwarded-*` headers with `proxy_set_header` to tell JATOS the original requester's IP address. This is not necessary from 3.8.2 and newer.
 
 As an additional security measurement you can uncomment the `location /jatos` and config your local network. This will restrict the access to JATOS' GUI (every URL starting with `/jatos`) to the local network.
 
-A JATOS server that handles sensitive or private data should always use encryption (HTTPS). A nice free certificate issuer is [certbot.eff.org](https://certbot.eff.org/) from the Electronic Frontier Foundation.
-
-
-## With HTTPS
-
 ~~~ shell
-user www-data;
-worker_processes auto;
-pid /run/nginx.pid;
-include /etc/nginx/modules-enabled/*.conf;
+user                    www-data;
+pid                     /run/nginx.pid;
+worker_processes        auto;
+worker_rlimit_nofile    65535;
+
+# Load modules
+include                 /etc/nginx/modules-enabled/*.conf;
 
 events {
-        worker_connections 768;
-        # multi_accept on;
+    multi_accept       on;
+    worker_connections 65535;
 }
 
 http {
-        sendfile             on;
-        tcp_nopush           on;
-        tcp_nodelay          on;
+    sendfile                on;
+    tcp_nopush              on;
+    client_max_body_size    500M;
+
+    # MIME
+    include                 mime.types;
+    default_type            application/octet-stream;
+
+    # Logging
+    access_log              off;
+    error_log               /var/log/nginx/error.log warn;
+
+    proxy_buffering         off;
+    proxy_set_header        Host $http_host;
+    proxy_http_version      1.1;
+
+    # Needed for websockets
+    map $http_upgrade $connection_upgrade {
+        default upgrade;
+        ''      close;
+    }
+
+    # Load configs
+    include /etc/nginx/conf.d/*.conf;
+
+    upstream jatos-backend {
+        server 127.0.0.1:9000;
+    }
+
+    # Redirect http to https
+    server {
+        listen              80;
+        server_name         www.example.com;
+        rewrite             ^ https://www.example.com$request_uri? permanent;
+    }
+
+    server {
+        listen               443 ssl http2;
+        server_name          www.example.com;
         keepalive_timeout    70;
-        client_max_body_size 500M;
 
-        include      /etc/nginx/mime.types;
-        default_type application/octet-stream;
+        # Encryption
+        ssl_certificate      /etc/ssl/certs/localhost.crt;
+        ssl_certificate_key  /etc/ssl/private/localhost.key;
+        ssl_protocols        TLSv1.2 TLSv1.3;
 
-        proxy_buffering    off;
-
-        # For version 3.8.1 and older it is necessary to set the X-Forwarded-* headers
-        proxy_set_header   X-Forwarded-Proto https;
-        proxy_set_header   X-Forwarded-Ssl on;
-        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
-        
-        proxy_set_header   Host $http_host;
-        proxy_http_version 1.1;
-
-        upstream jatos-backend {
-                server 127.0.0.1:9000;
+        # WebSocket location (JATOS' group and batch channel and the test page)
+        location ~ "/(jatos/testWebSocket|publix/[a-z0-9-]+/(group/join|batch/open))" {
+            proxy_pass              http://jatos-backend;
+            proxy_http_version      1.1;
+            proxy_set_header        Upgrade $http_upgrade;
+            proxy_set_header        Connection $connection_upgrade;
+            proxy_connect_timeout   7d; # Keep open for 7 days even without any transmission
+            proxy_send_timeout      7d;
+            proxy_read_timeout      7d;
         }
 
-        # needed for websockets
-        map $http_upgrade $connection_upgrade {
-                default upgrade;
-                ''      close;
+        # Restrict access to JATOS' GUI to local network 192.168.1.*
+        # location /jatos {
+        #     allow                   192.168.1.0/24;
+        #     deny                    all;
+        #     proxy_pass              http://jatos-backend;
+        #     proxy_connect_timeout   300;
+        #     proxy_send_timeout      300;
+        #     proxy_read_timeout      300;
+        #     send_timeout            300;
+        # }
+
+        # All other traffic
+        location / {
+            proxy_pass              http://jatos-backend;
+            proxy_connect_timeout   300;
+            proxy_send_timeout      300;
+            proxy_read_timeout      300;
+            send_timeout            300;
         }
-
-        # redirect http to https
-        server {
-                listen      80;
-                server_name www.example.com;
-                rewrite     ^ https://www.example.com$request_uri? permanent;
-        }
-
-        server {
-                listen        443 ssl;
-                server_name   www.example.com;
-
-                ssl_certificate      /etc/ssl/certs/localhost.crt;
-                ssl_certificate_key  /etc/ssl/private/localhost.key;
-
-                ssl_protocols             TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
-                ssl_prefer_server_ciphers on;
-
-                # websocket location (JATOS' group and batch channel and the test page)
-                location ~ "/(jatos/testWebSocket|publix/[a-z0-9-]+/(group/join|batch/open))" {
-                        proxy_pass              http://jatos-backend;
-                        proxy_http_version      1.1;
-                        proxy_set_header        Upgrade $http_upgrade;
-                        proxy_set_header        Connection $connection_upgrade;
-                        proxy_connect_timeout   7d; # keep open for 7 days even without any transmission
-                        proxy_send_timeout      7d;
-                        proxy_read_timeout      7d;
-                }
-
-                # restrict access to JATOS' GUI to local network 192.168.1.*
-                #location /jatos {
-                #       allow                   192.168.1.0/24;
-                #       deny                    all;
-                #       proxy_pass              http://jatos-backend;
-                #       proxy_connect_timeout   300;
-                #       proxy_send_timeout      300;
-                #       proxy_read_timeout      300;
-                #       send_timeout            300;
-                #}
-
-                # all other traffic
-                location / {
-                        proxy_pass              http://jatos-backend;
-                        proxy_connect_timeout   300;
-                        proxy_send_timeout      300;
-                        proxy_read_timeout      300;
-                        send_timeout            300;
-                }
-        }
-
-        access_log /var/log/nginx/access.log;
-        error_log /var/log/nginx/error.log;
-
-        include /etc/nginx/conf.d/*.conf;
-        #include /etc/nginx/sites-enabled/*;
-}
-~~~
-
-
-## With HTTPS and Docker
-
-Have a look at [github.com/robinsonkwame/jatos-https-docker-compose](https://github.com/robinsonkwame/jatos-https-docker-compose) for a good example in how to do this (Thanks to Kwame Porter Robinson)
-
-
-## Simple without encryption
-
-~~~ shell
-user www-data;
-worker_processes auto;
-pid /run/nginx.pid;
-
-events {
-        worker_connections 768;
-        # multi_accept on;
-}
-
-http {
-        sendfile on;
-        keepalive_timeout 70;
-        client_max_body_size 500M;
-
-        include /etc/nginx/mime.types;
-        default_type application/octet-stream;
-
-        proxy_buffering    off;
-
-        # For version 3.8.1 and older it is necessary to set the X-Forwarded-* headers
-        proxy_set_header   X-Forwarded-Proto http;
-        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header   Host $http_host;
-
-        proxy_http_version 1.1;
-
-        upstream jatos-backend {
-                server 127.0.0.1:9000;
-        }
-
-        # needed for websockets
-        map $http_upgrade $connection_upgrade {
-                default upgrade;
-                ''      close;
-        }
-
-        server {
-                listen               80;
-                server_name          www.example.com;
-
-                # websocket location (JATOS' group and batch channel and the test page)
-                location ~ "^/(jatos/testWebSocket|publix/[a-z0-9-]+/(group/join|batch/open))" {
-                        proxy_pass              http://jatos-backend;
-                        proxy_http_version      1.1;
-                        proxy_set_header        Upgrade $http_upgrade;
-                        proxy_set_header        Connection $connection_upgrade;
-                        proxy_connect_timeout   7d; # keep open for 7 days even without any transmission
-                        proxy_send_timeout      7d;
-                        proxy_read_timeout      7d;
-                }
-
-                # restrict access to JATOS' GUI to local network
-                #location /jatos {
-                #       allow           192.168.1.0/24;
-                #       deny            all;
-                #       proxy_pass      http://jatos-backend;
-                #       proxy_connect_timeout   300;
-                #       proxy_send_timeout      300;
-                #       proxy_read_timeout      300;
-                #       send_timeout            300;
-                #}
-
-                # all other traffic
-                location / {
-                        proxy_pass              http://jatos-backend;
-                        proxy_connect_timeout   300;
-                        proxy_send_timeout      300;
-                        proxy_read_timeout      300;
-                        send_timeout            300;
-
-                }
-        }
-
-        access_log /var/log/nginx/access.log;
-        error_log /var/log/nginx/error.log;
-
-        include /etc/nginx/conf.d/*.conf;
-        #include /etc/nginx/sites-enabled/*;
+    }
 }
 ~~~

@@ -27,7 +27,7 @@ Clicking on the _Export_ button on the top of the page, you can export user data
 
 ## Superusers
 
-Superusers exist in JATOS only since version 3.7.4. By default the ability to turn a user into a Superuser is deactivated and has to be activated in the _production.conf_ by adding:
+By default the ability to turn a user into a Superuser is deactivated and has to be activated in `conf/jatos.conf` (or `conf/production.conf` in version < 3.8.3) by adding:
 
 ```
 jatos.user.role.allowSuperuser = true
@@ -47,7 +47,7 @@ At the moment it is not possible to let JATOS create LDAP users automatically - 
 
 ## Authentication via Google Sign-In
 
-Google Sign-In is deactivated by default and can be activated by adding your Google Client-ID in the _production.conf_, similar to this:
+Google Sign-In is deactivated by default and can be activated by adding your Google Client-ID in the `conf/jatos.conf` (or `conf/production.conf` in version < 3.8.3), similar to this:
 
 ```
 jatos.user.authentication.oauth.googleClientId = "1234567890-abc123abc123.apps.googleusercontent.com"
