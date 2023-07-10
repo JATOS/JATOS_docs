@@ -11,6 +11,18 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Jansen, P., Rahe, M., Hoja, S. et al. (2023) Are Character Strengths and Attitudes towards Vegetarian Food Related?. *Int J Appl Posit Psychol*. [DOI](https://doi.org/10.1007/s41042-023-00104-7)
+
+Kahan, T.A., Smith, Z.P. (2023) Effects of alerting signals on the spatial Stroop effect: evidence for modality differences. *Psychological Research*. [DOI](https://doi.org/10.1007/s00426-023-01846-4)
+
+Liao, MR., Grindell, J.D. & Anderson, B.A. (2023) A comparison of mental imagery and perceptual cueing across domains of attention. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-023-02747-9)
+
+Büsel, C., Seiz, C. M., Hoffmann, A., Sachse, P., & Ansorge, U. (2023). EXPRESS: Swift Attenuation of Irrelevant Features Through Feature Consistency – Evidence From a Capture-Probe Version of the Contingent-Capture Protocol. *Quarterly Journal of Experimental Psychology* [DOI](https://doi.org/10.1177/17470218231186045)
+
+Xie, T., Fu, S. & Mento, G. (2023) Faces do not guide attention in an object-based facilitation manner. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-023-02742-0)
+
+Ziereis, A., Schacht, A. (2023) Motivated attention and task relevance in the processing of cross-modally associated faces: Behavioral and electrophysiological evidence. *Cogn Affect Behav Neurosci*. [DOI](https://doi.org/10.3758/s13415-023-01112-5)
+
 Liao, MR., Grindell, J.D. & Anderson, B.A. (2023) A comparison of mental imagery and perceptual cueing across domains of attention. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-023-02747-9)
 
 Winkelmair, A., Siebertz, M., Jost, L. et al. (203) Explicit and Implicit Affective Attitudes toward Sustainability: The Role of Mindfulness, Heartfulness, Connectedness to Nature and Prosocialness. *Int J Appl Posit Psychol* [DOI](https://doi.org/10.1007/s41042-023-00107-4)
