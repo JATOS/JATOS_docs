@@ -6,7 +6,7 @@ sidebar_position: 5
 
 There are [several ways to bring JATOS to the internet](Bring-your-JATOS-online.html). If you don't know much about server administration the [DigitalOcean](JATOS-on-DigitalOcean.html) page might be best for you.
 
-You can also [install JATOS via Docker](Install-JATOS-via-Docker.html).
+And there are dedicated pages for [installation with Docker](/Install-JATOS-via-Docker.html) and [Docker Compose](/JATOS-with-Docker-Compose.html).
 
 ## Installation on a server
 
@@ -15,15 +15,10 @@ The actual JATOS instance on a server isn't too different from a local one. It b
 
 ### 1. Install Java
 
-We've produced multiple versions of JATOS. The simplest version is JATOS alone, but other versions are bundled with Java JRE. On a server, it's best (though not necessary) to install JATOS without a bundled Java. This will make it easier to upgrade to new Java releases. Both Java 8 and 11 are fine. 
+We've assembled multiple versions of JATOS. The simplest version is JATOS alone, but other versions are bundled with Java JRE. You can choose. Both Java 8 and 11 are fine (17 is not yet supported). 
 
 
-### 2. [Optional] Install MySQL
-
-See [JATOS with MySQL](JATOS-with-MySQL.html)
-
-
-### 3. Install JATOS
+### 2. Install JATOS
 
 1. [Download JATOS](https://github.com/JATOS/JATOS/releases)
 
@@ -64,6 +59,11 @@ See [JATOS with MySQL](JATOS-with-MySQL.html)
    ```
 
 
+### 3. [Optional] Install MySQL
+
+See [JATOS with MySQL](JATOS-with-MySQL.html)
+
+
 ### 4. Configuration
 
 If JATOS runs locally it's usually not necessary to change the defaults but on a server you probably want to set up the IP and port or maybe use a different database and change the path of the study assets root folder. These docs have an extra page on how to [Configure JATOS on a Server](Configure-JATOS-on-a-Server.html).
@@ -92,12 +92,7 @@ Most admins tend to use an additional reverse proxy in front of JATOS, mostly fo
 * [JATOS with Apache](JATOS-with-Apache.html)
 
 
-### 8. [Optional] Turn on user session validation
-
-[More here](Configure-JATOS-on-a-Server.html#user-session-configuration).
-
-
-### 9. [Optional] Auto-start JATOS via systemd
+### 8. [Optional] Auto-start JATOS via systemd
 
 It's nice to have JATOS start automatically after a start or a reboot of your machine.
 
@@ -152,7 +147,7 @@ Additionally you can manually start/stop JATOS now with:
 You can disable the service with `systemctl disable jatos.service`. If you change the service file you need to do `systemctl daemon-reload jatos.service` again to let the system know.
 
 
-### 10. [Optional] Backup
+### 9. [Optional] Backup
 
 The easiest way to backup is to let JATOS users care themselves for their own data. JATOS has an easy to use [export function for result data](Manage-results.html). So you could just tell everyone to export their data regularily.
 
