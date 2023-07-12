@@ -1,7 +1,7 @@
 ---
 title: Updating a JATOS server installation
 slug: /Updating-a-JATOS-server-installation.html
-sidebar_position: 11
+sidebar_position: 13
 ---
 
 Updating the server instance is equivalent to doing it [locally](Update-JATOS.html), but make sure that you know what you're doing; especially if you have paired JATOS with a MySQL database.

@@ -1,7 +1,7 @@
 ---
 title: Install JATOS on a server
 slug: /JATOS-on-a-server.html
-sidebar_position: 5
+sidebar_position: 3
 ---
 
 There are [several ways to bring JATOS to the internet](Bring-your-JATOS-online.html). If you don't know much about server administration the [DigitalOcean](JATOS-on-DigitalOcean.html) page might be best for you.

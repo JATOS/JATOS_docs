@@ -1,7 +1,7 @@
 ---
 title: JATOS on DigitalOcean
 slug: /JATOS-on-DigitalOcean.html
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 On this page we want to explain how to install JATOS on a server running on DigitalOcean. We tried to keep this tutorial as easy as possible: if everything runs smoothly you don't have to use the terminal at all.

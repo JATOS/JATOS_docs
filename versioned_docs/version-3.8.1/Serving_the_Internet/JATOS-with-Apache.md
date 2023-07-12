@@ -1,7 +1,7 @@
 ---
 title: JATOS with Apache
 slug: /JATOS-with-Apache.html
-sidebar_position: 10
+sidebar_position: 12
 ---
 
 This is an example of a configuration of [Apache](https://httpd.apache.org/) as a proxy in front of JATOS. While it's not necessary to run JATOS with a proxy, it's common to do so in order to allow encryption.

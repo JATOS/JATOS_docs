@@ -8,65 +8,104 @@ JATOS' Docker images are hosted at [hub.docker.com/r/jatos/jatos/](https://hub.d
 
 Docker is a great technology, but if you never heard of it you can safely ignore this page (it's not necessary to use it if you want to install JATOS, either locally or on a server). 
 
-Since 3.7.4 Docker images for JATOS exist for _arm64_ and _amd64_ CPU architectures.
+Also have a look at [JATOS with Docker Compose](/JATOS-with-Docker-Compose.html) for some advanced Docker setup.
 
 
-### Install JATOS locally with a Docker container
+## Installation with Docker
 
-1. Install Docker locally on your computer (not covered here)
+1. In your terminal:
 
-1. Go to your shell or command line interface
+   * Get the latest release:
 
-1. Pull JATOS image
-
-   * either latest:
-
-   ```
+   ```shell
    docker pull jatos/jatos:latest
    ```
    
-   * or a specific one (exchange _x.x.x_ with the version):
+   * or a specific [release](https://github.com/JATOS/JATOS/releases) (exchange _x.x.x_ with the version):
 
-   ``` shell
+   ```shell
    docker pull jatos/jatos:x.x.x
    ```
 
-1. Run JATOS (use your image version)
+1. Run JATOS (change _latest_ to your version)
 
-   ``` shell
+   ```shell
    docker run -d -p 9000:9000 jatos/jatos:latest
    ```
    
-   The `-d` argument specifies to run this container in detached mode (in the backgroud) and the `-p` is responsible for the port mapping.
+   The `-d` argument specifies to run this container in detached mode (in the background) and the `-p` is responsible for the port mapping.
 
-1. You can check that the new container is running: In your browser go to [localhost:9000](http://localhost:9000) - it should show the JATOS login screen. Or use `docker ps` - in the line with `jatos/jatos` the status should say `up`.
+1. You can check that the new container is running correctly:
+   
+   * Use `docker ps` in the terminal: in the line with `jatos/jatos` the status should say `up`
+   * Use curl: `curl http://localhost:9000/ping` should give you `pong` back
+   * In a browser go to [localhost:9000](http://localhost:9000) - it should show the JATOS login screen
+   * Check JATOS' admin page: [localhost:9000/jatos/admin](http://localhost:9000/jatos/admin)
+     * Run the _Tests_: all should show an 'OK'
+     * Check the _System Info_ that it is all like you configured it
 
-**Troubleshooting**: By removing the `-d` argument (e.g. `docker run -p 9000:9000 jatos/jatos:latest`) you get JATOS' logs printed in your shell - although you don't run it in detached mode in the background anymore.
 
-**Troubleshooting 2nd**: Although usually not necessary maybe you want to have a look into the running container and start a Bash terminal:
+## Debugging and Troubleshooting
 
-``` shell
-docker exec -it running-jatos-container-id /bin/bash
+To get the logs add the argument `-Djatos.logs.appender=ASYNCSTDOUT` and run the container not detached:
+
+```shell
+docker run -p 9000:9000 jatos/jatos:latest -Djatos.logs.appender=ASYNCSTDOUT
 ```
 
 
-### Change port
+## Change port
 
-With Docker you can easily change JATOS' port (actually we change the port mapping of JATOS' docker container). Just use Docker `-p` argument and specify your port. E.g. to run JATOS on standard HTTP port 80 use:
+With Docker you can easily change JATOS' port (actually we change the port mapping of JATOS' Docker container). Just use _docker_'s `-p` argument and specify your port. E.g. to run JATOS on standard HTTP port 80 use:
 
 ``` shell
 docker run -d -p 80:9000 jatos/jatos:latest
 ```
 
 
-### Configure with environment variables
+## Configuration with Docker
 
-All environment variables that can be used to [configure a normal JATOS server installation](Configure-JATOS-on-a-Server.html) can be used in a docker installation. Just use Docker's `-e` argument to set them.
+JATOS running in a Docker container can be configured the same way as running it the normal way: via a configuration file, via environment variables, or command line arguments. Have a look at [Configure JATOS on a Server](http://localhost:3000/Configure-JATOS-on-a-Server.html) for the possibilities.
 
-E.g. to run JATOS with a MySQL database running on a host with the IP `172.17.0.2` and with the default port 3306 use the following command (change username and password of your MySQL account):
+
+### Via arguments
+
+Add as many arguments to the end of the _docker_ command as you wish.
+
+E.g. to run JATOS with a MySQL database running on localhost (not in a container), with the default port 3306, use the following command (change username and password to your MySQL user):
+
+```shell
+docker run -d --network="host" jatos/jatos:latest \
+    -Djatos.db.url='jdbc:mysql://localhost/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC' \
+    -Djatos.db.username='jatosuser' \
+    -Djatos.db.password='my-password' \
+    -Djatos.db.driver='com.mysql.cj.jdbc.Driver'    
+```
+
+
+### Via environment variables
+
+All environment variables that can be used to [configure a normal JATOS server installation](Configure-JATOS-on-a-Server.html) can be used in a Docker installation. Just use _docker_'s `-e` argument to set them.
+
+E.g. to run JATOS with a MySQL database running on localhost (not in a container), with the default port 3306, use the following command (change username and password to your MySQL user):
 
 ~~~ shell
-docker run -e JATOS_DB_URL='jdbc:mysql://172.17.0.2/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC' -e JATOS_DB_USERNAME='root' -e JATOS_DB_PASSWORD='password' -e JATOS_DB_DRIVER=com.mysql.cj.jdbc.Driver -e JATOS_JPA=mysqlPersistenceUnit -p 9000:9000 jatos/jatos:latest
+docker run -d --network="host" \
+    -e JATOS_DB_URL='jdbc:mysql://localhost/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC' \
+    -e JATOS_DB_USERNAME='jatosuser' \
+    -e JATOS_DB_PASSWORD='my-password' \
+    -e JATOS_DB_DRIVER='com.mysql.cj.jdbc.Driver' \
+    jatos/jatos:latest
 ~~~
 
+
+### Via configuration file
+
+You can mount a configuration file (_jatos.conf_) as a Docker volume in the container. This way you can comfortably edit the _jatos.conf_ in your local file system.
+
+E.g. with a _jatos.conf_ in the current working directory:
+
+```shell
+docker run -d -p 9000:9000 --volume ./jatos.conf:/opt/jatos/conf/jatos.conf jatos/jatos:latest
+```
 

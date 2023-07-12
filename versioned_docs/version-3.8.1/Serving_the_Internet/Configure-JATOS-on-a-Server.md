@@ -1,7 +1,7 @@
 ---
 title: Configure JATOS on a Server
 slug: /Configure-JATOS-on-a-Server.html
-sidebar_position: 6
+sidebar_position: 4
 ---
 
 **Remember to always restart JATOS after making any changes to the configuration (`./loader.sh restart`)**

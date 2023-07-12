@@ -1,7 +1,7 @@
 ---
 title: JATOS with Nginx
 slug: /JATOS-with-Nginx.html
-sidebar_position: 9
+sidebar_position: 11
 ---
 
 Here is an example for a configuration of [Nginx](https://www.nginx.com/) as a reverse proxy in front of JATOS. It is not necessary to run JATOS with a proxy but it's common.

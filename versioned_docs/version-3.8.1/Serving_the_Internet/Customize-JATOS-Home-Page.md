@@ -1,7 +1,7 @@
 ---
 title: Customize JATOS' Home Page
 slug: /Customize-JATOS-Home-Page.html
-sidebar_position: 12
+sidebar_position: 14
 ---
 
 ## Link to Terms of Use
