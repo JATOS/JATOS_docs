@@ -106,6 +106,23 @@ You can mount a configuration file (_jatos.conf_) as a Docker volume in the cont
 E.g. with a _jatos.conf_ in the current working directory:
 
 ```shell
-docker run -d -p 9000:9000 --volume ./jatos.conf:/opt/jatos/conf/jatos.conf jatos/jatos:latest
+docker run -d -p 9000:9000 --volume ./jatos.conf:/opt/jatos/conf/jatos.conf:ro jatos/jatos:latest
 ```
 
+
+## Persist data with _volumes_
+
+_Volumes_ are the preferred way to persist data with Docker containers. This can be useful if one wants to exchange data between containers or do backups.
+
+Before using a _volume_ one has to create it:
+
+
+```shell
+docker volume create --name jatos_data
+```
+
+In JATOS' Docker container all data are stored, by default, in the folder `/opt/jatos_data` (although this can be configured). Now you can mount the newly created _volume_ _jatos_data_ at this location:
+
+```shell
+docker run -d -p 9000:9000 --volume jatos_data:/opt/jatos_data jatos/jatos:latest
+```
