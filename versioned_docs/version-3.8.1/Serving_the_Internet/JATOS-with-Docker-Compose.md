@@ -27,9 +27,9 @@ JATOS_with_docker_compose
 
 The _docker compose_ file [_compose.yaml_](https://github.com/JATOS/JATOS_with_docker_compose/blob/main/compose.yaml) starts three services:
 
-1. Nginx as an reverse proxy that does encryption (HTTPS)
+1. Nginx as a reverse proxy that does encryption (HTTPS)
 1. JATOS
-1. a MySQL database
+1. A MySQL database
 
 Additionally it creates three shared _volumes_:
 
