@@ -11,9 +11,11 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+de Waard, J., van Moorselaar, D., Bogaerts, L. et al. (2023) Statistical learning of distractor locations is dependent on task context. *Sci Rep* [DOI](https://doi.org/10.1038/s41598-023-38261-z)
+
 Prasetio, C.E., Putri, V.M. and Sianipar, A. (2023), The Moderating Role of Inhibition on Irrelevant Emotional Information in the Relation of Cognitive Reappraisal and Affect Balance: Evidence from a Negative Affective Priming Task. *Jpn Psychol Res.* [DOI](https://doi.org/10.1111/jpr.12465) 
 
-Jansen, P., Rahe, M., Hoja, S. et al. (2023) Are Character Strengths and Attitudes towards Vegetarian Food Related?. *Int J Appl Posit Psychol*. [DOI](https://doi.org/10.1007/s41042-023-00104-7)
+Jansen, P., Rahe, M., Hoja, S. et al. (2023) Are Character Strengths and Attitudes towards Vegetarian Food Related? *Int J Appl Posit Psychol*. [DOI](https://doi.org/10.1007/s41042-023-00104-7)
 
 Kahan, T.A., Smith, Z.P. (2023) Effects of alerting signals on the spatial Stroop effect: evidence for modality differences. *Psychological Research*. [DOI](https://doi.org/10.1007/s00426-023-01846-4)
 
