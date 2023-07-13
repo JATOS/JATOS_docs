@@ -9,7 +9,8 @@ sidebar_position: 9
 
 ## Get started
 
-### Background information
+### Example repository
+
 We assembled all necessary files in a [git repository](https://github.com/JATOS/JATOS_with_docker_compose) that you can clone and then change them to your needs to get a JATOS installation running with _docker compose_. 
 
 ```shell
@@ -38,7 +39,8 @@ Additionally it creates three shared _volumes_:
 1. _jatos-logs_ - for JATOS logs (not necessary if you log to _stdout_)
 1. _jatos-db_ - where MySQL stores its data
 
-### Steps to follow
+
+### Up
 
 Go into the cloned folder and start the services with:
 
@@ -53,11 +55,11 @@ With `Ctrl+C` you can stop the services. Removing the stopped containers can be 
 
 ### Check that it runs
 
-First visit the JATOS admin page: [https://localhost/jatos/admin](https://localhost/jatos/admin). There, check that all _Tests_ are OK. Also check that the _System Info_ and contains the configuration you intended.
+First visit the JATOS admin page: [https://localhost/jatos/admin](https://localhost/jatos/admin). There, check that all _Tests_ are OK. Also check that the _System Info_ contains the configuration you intended.
 
 Next, you can import a study (e.g. one from the [Example Studies](/Example-Studies)) and check if it runs well. Check, for example, that the result data appear in the results page.
 
-Last but not least: Check that all data are persistent: First, stop and remove the containers (but not the _volumes_!) with `docker compose -f compose.yaml down`. Then, restart the services with `docker compose -f compose.yaml up`. Now check that all studies and their result data are still there.
+Last but not least: Check that all data are persisted: First, stop and remove the containers (but not the _volumes_!) with `docker compose -f compose.yaml down`. Then, restart the services with `docker compose -f compose.yaml up`. Now check that all studies and their result data are still there.
 
 
 ## Nginx configuration
@@ -101,7 +103,7 @@ You can redirect JATOS logs to _stdout_ with `-Djatos.logs.appender=ASYNCSTDOUT`
 
 ### Using _jatos.conf_
 
-JATOS can be configured either by _command_ parameters (the ones with the `-D` prefix) in our _compose.yaml_ or with the [_jatos.conf_](https://github.com/JATOS/JATOS_with_docker_compose/blob/main/jatos.conf) configuration file. You can also set up some environment variables (like the `JATOS_DB_PASSWORD`). In the end it's up to you which way you prefer.
+JATOS can be configured either by _command_ parameters (the ones with the `-D` prefix) in the _compose.yaml_ or with the [_jatos.conf_](https://github.com/JATOS/JATOS_with_docker_compose/blob/main/jatos.conf) configuration file. You can also set up some environment variables (like the `JATOS_DB_PASSWORD`). In the end it's up to you which way you prefer.
 
 The _jatos.conf_ file is mounted as a _volume_ in the JATOS container. This way you can comfortably edit your _jatos.conf_ outside of the container.
 
