@@ -9,6 +9,7 @@ sidebar_position: 9
 
 ## Get started
 
+### Background information
 We assembled all necessary files in a [git repository](https://github.com/JATOS/JATOS_with_docker_compose) that you can clone and then change them to your needs to get a JATOS installation running with _docker compose_. 
 
 ```shell
@@ -37,24 +38,26 @@ Additionally it creates three shared _volumes_:
 1. _jatos-logs_ - for JATOS logs (not necessary if you log to _stdout_)
 1. _jatos-db_ - where MySQL stores its data
 
-Go in the cloned folder and start the services with:
+### Steps to follow
+
+Go into the cloned folder and start the services with:
 
 ```shell
 docker compose -f compose.yaml up
 ```
 
-If everything went smoothly you can now see JATOS' login page under: [https://localhost/](https://localhost/)
+If everything went smoothly, you will now see the JATOS login page under: [https://localhost/](https://localhost/)
 
 With `Ctrl+C` you can stop the services. Removing the stopped containers can be achieved with `docker compose -f compose.yaml down` and additionally removing all the _volumes_ by adding the `-v` flag: `docker compose -f compose.yaml down -v`.
 
 
-### Check it runs
+### Check that it runs
 
-First visit JATOS' admin page: [https://localhost/jatos/admin](https://localhost/jatos/admin). There check that all _Tests_ are OK. Then have a look at the _System Info_ and that they contain the configuration you intended.
+First visit the JATOS admin page: [https://localhost/jatos/admin](https://localhost/jatos/admin). There, check that all _Tests_ are OK. Also check that the _System Info_ and contains the configuration you intended.
 
-Next you can import a study (e.g. one from the [Example Studies](/Example-Studies)) and check if it is running.  Do the result data appear in the results page.
+Next, you can import a study (e.g. one from the [Example Studies](/Example-Studies)) and check if it runs well. Check, for example, that the result data appear in the results page.
 
-Last but not least you can check that all data is persisted by stopping and removing the containers (but not the _volumes_) with `docker compose -f compose.yaml down`. And then restart the services with `docker compose -f compose.yaml up`. Now check that all studies and their result data are still there.
+Last but not least: Check that all data are persistent: First, stop and remove the containers (but not the _volumes_!) with `docker compose -f compose.yaml down`. Then, restart the services with `docker compose -f compose.yaml up`. Now check that all studies and their result data are still there.
 
 
 ## Nginx configuration
@@ -75,7 +78,7 @@ volumes:
 
 ## MySQL configuration
 
-The following changes should be done in our _compose.yaml_:
+The following changes should be done in the _compose.yaml_:
 
 Search and set `JATOS_DB_PASSWORD` and `MYSQL_PASSWORD` to the **same** password of your choice.
 
@@ -90,7 +93,7 @@ Check [_JATOS with MySQL_](/JATOS-with-MySQL.html) for more information.
 
 Have a look at [_Configure JATOS on a server_](http://localhost:3000/Configure-JATOS-on-a-Server.html).
 
-Change the image version in our _compose.yaml_ to the one you need (e.g. the latest one).
+Change the image version in the _compose.yaml_ to the one you need (e.g. the latest one).
 
 ### Debugging and logging
 
@@ -98,11 +101,11 @@ You can redirect JATOS logs to _stdout_ with `-Djatos.logs.appender=ASYNCSTDOUT`
 
 ### Using _jatos.conf_
 
-JATOS can be configured either by _command_ parameters (the ones with the  `-D` prefix) in our _compose.yaml_ or with the [_jatos.conf_](https://github.com/JATOS/JATOS_with_docker_compose/blob/main/jatos.conf) configuration file. Additionally some setup can be done via environment variables (like the `JATOS_DB_PASSWORD`). In the end it's up to you which way you prefer.
+JATOS can be configured either by _command_ parameters (the ones with the `-D` prefix) in our _compose.yaml_ or with the [_jatos.conf_](https://github.com/JATOS/JATOS_with_docker_compose/blob/main/jatos.conf) configuration file. You can also set up some environment variables (like the `JATOS_DB_PASSWORD`). In the end it's up to you which way you prefer.
 
 The _jatos.conf_ file is mounted as a _volume_ in the JATOS container. This way you can comfortably edit your _jatos.conf_ outside of the container.
 
 
 ### Updating JATOS with Docker Compose
 
-The easiest way to update JATOS running in this setup with external volumes is to **just change the JATOS' Docker image tag to a higher version and restart the services**. No need to use JATOS auto-updater. JATOS is only allowed to update to higher version numbers - downgrading will likely break your installation. And please do backups before updating.
+The easiest way to update a JATOS instance running with this setup with external volumes is to **just change the JATOS' Docker image tag to a higher version and restart the services**. No need to use JATOS auto-updater. JATOS is only allowed to update to higher version numbers - downgrading will likely break your installation. And please do backups before updating.
