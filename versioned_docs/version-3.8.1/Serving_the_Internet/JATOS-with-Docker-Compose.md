@@ -86,7 +86,7 @@ Search and set `JATOS_DB_PASSWORD` and `MYSQL_PASSWORD` to the **same** password
 
 Search and set `MYSQL_ROOT_PASSWORD`, MySQL's root password to one chosen by you.
 
-Consider to [turn off MySQL's binary log](/JATOS-with-MySQL.html#optional-deactivate-mysqls-binary-log) with `--skip-log-bin` in _db_'s _command_ section.
+Consider to [turn off MySQL's binary log](/JATOS-with-MySQL.html#optional---deactivate-the-binary-log-of-your-mysqlmariadb) with `--skip-log-bin` in _db_'s _command_ section.
 
 Check [_JATOS with MySQL_](/JATOS-with-MySQL.html) for more information.
 
