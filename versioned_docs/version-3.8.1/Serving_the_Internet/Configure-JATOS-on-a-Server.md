@@ -41,22 +41,15 @@ By default JATOS binds to all locally available IP addresses including 127.0.0.1
      ./loader.sh start -Djatos.http.address=10.0.0.1 -jatos.Dhttp.port=80
      ~~~
    
-1. (DEPRECATED) In `loader.sh` change the values of 'address' and 'port' according to your IP address or domain name and port. Restart JATOS after editing.
-
-   ~~~shell
-   address="172.16.0.1"
-   port="8080"
-   ~~~   
-
 
 ### URL base path
 
 JATOS can be configured to use an base path. E.g we have the host "www.example.org" and let JATOS run under "mybasepath" so that JATOS' URL all start with "www.example.org/mybasepath/". This can be achieved in three ways:
 
-1. Via the command-line argument `-DJATOS_URL_BASE_PATH`, e.g.
+1. Via the command-line argument, e.g.
 
    ~~~shell
-   ./loader.sh start -DJATOS_URL_BASE_PATH="/mybasepath/"
+   ./loader.sh start -Djatos.urlBasePath="/mybasepath/"
    ~~~
 
 1. Via `conf/jatos.conf` (or `conf/production.conf` in version < 3.8.3):
@@ -86,19 +79,19 @@ JATOS can be configured to use an base path. E.g we have the host "www.example.o
 
 By default the study assets root folder (where all your study's HTML, JavaScript files etc. are stored) is located within JATOS installation's folder in `study_assets_root`. There are three ways to change this path:
 
-1. Via the command-line argument `-DJATOS_STUDY_ASSETS_ROOT_PATH`, e.g.
+1. Via the command-line argument, e.g.
 
    ~~~shell
-   ./loader.sh start -DJATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
+   ./loader.sh start -Djatos.studyAssetsRootPath="/path/to/my/assets/root/folder"
    ~~~
    
-1. Via `conf/jatos.conf` (or `conf/production.conf` in version < 3.8.3): change `jatos.studyAssetsRootPath`
+1. Via `conf/jatos.conf` (or `conf/production.conf` in version < 3.8.3), e.g.
 
    ~~~shell
    jatos.studyAssetsRootPath="/path/to/my/jatos_study_assets_root"
    ~~~
    
-1. Via the environment variable `JATOS_STUDY_ASSETS_ROOT_PATH`, e.g. the following export adds it to the env variables:
+1. Via the environment variable, e.g.
 
    ~~~shell
    export JATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
@@ -153,7 +146,7 @@ There are three ways to configure the uploads:
    * `jatos.resultUploads.maxFileSize` - Max file size for one single uploaded result file (default is 30 MB)
    * `jatos.resultUploads.limitPerStudyRun` - Limit of all uploaded result files of one single study run (default is 50MB)
 
-1. Via environment variables (JATOS_RESULT_UPLOADS_LIMIT_PER_STUDY_RUN and JATOS_RESULT_UPLOADS_MAX_FILE_SIZE)
+1. Via environment variables
 
    E.g.
 
@@ -163,12 +156,15 @@ There are three ways to configure the uploads:
    export JATOS_RESULT_UPLOADS_MAX_FILE_SIZE=50MB
    ~~~
 
-1. Via command-line arguments (JATOS_RESULT_UPLOADS_LIMIT_PER_STUDY_RUN and JATOS_RESULT_UPLOADS_MAX_FILE_SIZE)
+1. Via command-line arguments
 
    E.g.
 
    ~~~bash
-   ./loader.sh start -DJATOS_RESULT_UPLOADS_PATH="/path/to/my/result/upload/folder" -DJATOS_RESULT_UPLOADS_LIMIT_PER_STUDY_RUN=100MB -DJATOS_RESULT_UPLOADS_MAX_FILE_SIZE=50MB
+   ./loader.sh start \
+     -Djatos.resultUploads.path="/path/to/my/result/upload/folder" \
+     -Djatos.resultUploads.limitPerStudyRun=100MB \
+     -Djatos.resultUploads.maxFileSize=50MB
    ~~~
 
 
@@ -194,8 +190,29 @@ There are three ways to change the configuration of the study logs:
    E.g.
 
    ~~~bash
-   ./loader.sh start -DJATOS_STUDY_LOGS_PATH="/path/to/my/study/logs/folder"
+   ./loader.sh start -Djatos.studyLogs.path="/path/to/my/study/logs/folder"
    ~~~
+
+
+### JATOS' tmp directory (version >= 3.8.3)
+
+1. Via `conf/jatos.conf` and `jatos.tmpPath`
+
+1. The path can be configured via the environment variable `JATOS_TMP_PATH`
+
+   E.g.
+
+   ~~~bash
+   export JATOS_TMP_PATH="/path/to/JATOS/tmp/folder"
+   ~~~
+
+1. The path can be configured via command-line arguments
+
+   E.g.
+
+   ~~~bash
+   ./loader.sh start -Djatos.tmpPath="/path/to/my/JATOS/tmp/folder"
+   ~~~ 
 
 
 ### LDAP authentication
@@ -243,19 +260,19 @@ The application logs is by default is in JATOS installation folder under './logs
 
   1. Via `conf/jatos.conf` / `conf/production.conf`: Change `jatos.logs.path`
   1. Via environment variable: Use `JATOS_LOGS_PATH`
-  1. Via command-line arguments: Use `-DJATOS_LOGS_PATH`
+  1. Via command-line arguments: Use `-Djatos.logs.path`
 
 * Change the filename (default is `application`):
 
   1. Via `conf/jatos.conf` / `conf/production.conf`: Change `jatos.logs.filename`
   1. Via environment variable: Use `JATOS_LOGS_FILENAME`
-  1. Via command-line arguments: Use `-DJATOS_LOGS_FILENAME`
+  1. Via command-line arguments: Use `-Djatos.logs.filename`
 
 * Change the appender: If you don't want to log to a file but to `stdout` change the value to `ASYNCSTDOUT`.
 
   1. Via `conf/jatos.conf` / `conf/production.conf`: Change `jatos.logs.appender`
   1. Via environment variable: Use `JATOS_LOGS_APPENDER`
-  1. Via command-line arguments: Use `-DJATOS_LOGS_APPENDER`
+  1. Via command-line arguments: Use `-Djatos.logs.appender`
 
 
 ### More in _jatos.conf_ / _production.conf_
