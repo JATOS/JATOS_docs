@@ -61,16 +61,19 @@ http {
     # Redirect http to https
     server {
         listen              80;
+        # --> Change to your domain <--
         server_name         www.example.com;
         rewrite             ^ https://www.example.com$request_uri? permanent;
     }
 
     server {
         listen               443 ssl http2;
+        # --> Change to your domain <--
         server_name          www.example.com;
         keepalive_timeout    70;
 
         # Encryption
+        # --> Change to your certificate <--
         ssl_certificate      /etc/ssl/certs/localhost.crt;
         ssl_certificate_key  /etc/ssl/private/localhost.key;
         ssl_protocols        TLSv1.2 TLSv1.3;
@@ -86,7 +89,7 @@ http {
             proxy_read_timeout      7d;
         }
 
-        # Restrict access to JATOS' GUI to local network 192.168.1.*
+        # Restrict access to JATOS' GUI to local network, e.g. 192.168.1.*
         # location /jatos {
         #     allow                   192.168.1.0/24;
         #     deny                    all;
