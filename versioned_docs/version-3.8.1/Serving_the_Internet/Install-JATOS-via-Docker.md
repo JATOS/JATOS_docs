@@ -44,6 +44,8 @@ Also have a look at [JATOS with Docker Compose](/JATOS-with-Docker-Compose.html)
      * Run the _Tests_: all should show an 'OK'
      * Check the _System Info_ that it is all like you configured it
 
+1. Always change the admin's password after first installation: Go to [http://localhost:9000/jatos/user/admin](http://localhost:9000/jatos/user/admin) and and press button _Change Password_.
+
 
 ## Debugging and Troubleshooting
 
@@ -65,7 +67,7 @@ docker run -d -p 80:9000 jatos/jatos:latest
 
 ## Configuration with Docker
 
-JATOS running in a Docker container can be configured the same way as running it the normal way: via a configuration file, via environment variables, or command line arguments. Have a look at [Configure JATOS on a Server](http://localhost:3000/Configure-JATOS-on-a-Server.html) for the possibilities.
+JATOS running in a Docker container can be configured the same way as running it the normal way: via a configuration file, via environment variables, or command line arguments. Have a look at [Configure JATOS on a Server](/Configure-JATOS-on-a-Server.html) for the possibilities.
 
 
 ### Via arguments

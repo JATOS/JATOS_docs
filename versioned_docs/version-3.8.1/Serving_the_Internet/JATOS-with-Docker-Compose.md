@@ -93,9 +93,12 @@ Check [_JATOS with MySQL_](/JATOS-with-MySQL.html) for more information.
 
 ## JATOS configuration
 
-Have a look at [_Configure JATOS on a server_](http://localhost:3000/Configure-JATOS-on-a-Server.html).
+Have a look at [_Configure JATOS on a server_](/Configure-JATOS-on-a-Server.html).
 
 Change the image version in the _compose.yaml_ to the one you need (e.g. the latest one).
+
+Always change the admin's password after first installation: Go to [https://localhost/jatos/user/admin](https://localhost/jatos/user/admin) and and press button _Change Password_.
+
 
 ### Debugging and logging
 
