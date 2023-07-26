@@ -11,8 +11,9 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
-Putra, K.A., Prasetio C.E., & Sianipar, A. (2023) Inhibition on irrelevant negative information alleviates the mediating role of psychological distress in the association between trait rumination and symptoms of depression and anxiety. *Cogent Psychology* [DOI](http://doi.org/10.1080/23311908.2023.2228556)
+Wang-Ly, Nathan and Newell, Ben R. (2023) Uncertain goals and savings adequacy: Contrasting economic and psychological perspectives. *SSRN* [DOI](http://dx.doi.org/10.2139/ssrn.4511291)
 
+Putra, K.A., Prasetio C.E., & Sianipar, A. (2023) Inhibition on irrelevant negative information alleviates the mediating role of psychological distress in the association between trait rumination and symptoms of depression and anxiety. *Cogent Psychology* [DOI](http://doi.org/10.1080/23311908.2023.2228556)
 
 de Waard, J., van Moorselaar, D., Bogaerts, L. et al. (2023) Statistical learning of distractor locations is dependent on task context. *Sci Rep* [DOI](https://doi.org/10.1038/s41598-023-38261-z)
 
