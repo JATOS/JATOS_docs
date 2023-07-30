@@ -4,7 +4,7 @@ slug: /Papers-Citing-JATOS.html
 sidebar_position: 2
 ---
 
-JATOS has been used sucessfully to collect data all over the world. Here is a curated list of peer-reviewed publications or preprints (that we are aware of) that used JATOS to collect data. (You can also see the [full list of citations](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5951401270744316355,1084162777884423960).) 
+JATOS has been used sucessfully to collect data all over the world. Here is a curated list of peer-reviewed publications (that we are aware of) that used JATOS to collect data. (You can also see the [full list of citations](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5951401270744316355,1084162777884423960).) 
 
 Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130834) if you use JATOS for your research. It helps us with funding and it's great to see how we've contributed to science. 
 
@@ -142,8 +142,6 @@ Muhmenthaler, MC, Meier, B. (2022) Attentional attenuation (rather than attentio
 Mueckstein, M., Heinzel, S., Granacher, U., Brahms, M., Rapp, MA., Stelzel, C. (2022) Modality-specific effects of mental fatigue in multitasking, *Acta Psychologica* [DOI](https://doi.org/10.1016/j.actpsy.2022.103766)
 
 Béna, J., Corneille, O., Mierop, A., & Unkelbach, C. (2022). Robustness Tests Replicate Corneille et al.’s (2020) Fake News by Repetition Effect. *International Review of Social Psychology* [DOI](http://doi.org/10.5334/irsp.683)
-
-Hsieh, JYJ., Boyce, P., Goddard, E. et al. (2022) Colour information biases facial age estimation and reduces inter-observer variability. *PREPRINT available at Research Square*, [DOI](https://doi.org/10.21203/rs.3.rs-2062498/v1)
 
 Belo, J., Clerc, M., Schön, D. (2022) Attentional inhibition ability predicts neural representation during challenging auditory streaming. *bioRxiv* [DOI](https://doi.org/10.1101/2022.09.29.510226)
 
