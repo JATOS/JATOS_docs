@@ -122,28 +122,19 @@ Schroter, FA., Siebertz, M., Hofmann, P., (2022) Jansen, P. Psychological and so
 
 Béna, J., Mauclet, A., & Corneille, O. (2022). Does co-occurrence information influence evaluations beyond relational meaning? An investigation using self-reported and mouse-tracking measures of attitudinal ambivalence. *Journal of Experimental Psychology: General.* [DOI](https://doi.org/10.1037/xge0001308)
 
-
-Zoefel, B., Gilbert, R. A., & Davis, M. H. (2022). Intelligibility improves perception of timing changes in speech. *BioRxiv* [DOI](https://doi.org/10.1101/2022.05.18.492430)
-
 Johnson, S.T., Most, S.B.(2022) Taking the path of least resistance now, but not later: Pushing cognitive effort into the future reduces effort discounting. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-022-02198-7)
 
 Dahm, S.F.; Muraki, E.J.; Pexman, P.M. (2022) Hand and Foot Selection in Mental Body Rotations Involves Motor-Cognitive Interactions. *Brain Sci.* [DOI](https://doi.org/10.3390/brainsci12111500)
 
 da Fonseca, M., Maffei, G., Moreno-Bote, R. et al. (2022) Mood and implicit confidence independently fluctuate at different time scales. *Cogn Affect Behav Neurosci*. [DOI](https://doi.org/10.3758/s13415-022-01038-4)
 
-Constant, M., Pereira, M., Faivre, N., Filevich, E. (2022) Prior information differentially affects discrimination decisions and subjective confidence reports *bioRxiv* [DOI](https://doi.org/10.1101/2022.10.26.513829)
-
 Wittmann BC, Şatırer Y. (2022) Decreased associative processing and memory confidence in aphantasia. *Learn Mem.* [DOI](https://doi.org/10.1101/lm.053610.122)
-
-Vogt, A., Kaup, B., Abdel Rahman, R., & Ganter, I. (2022). Embodied language production: sensorimotor activations and interoceptive sensibility influence which words we choose when speaking. *PsyArXiv* [DOI](https://doi.org/10.31234/osf.io/3zgrc)
 
 Muhmenthaler, MC, Meier, B. (2022) Attentional attenuation (rather than attentional boost) through task switching leads to a selective long-term memory decline. *Frontiers in Psychology* [DOI](https://doi.org/10.3389/fpsyg.2022.1027871)
 
 Mueckstein, M., Heinzel, S., Granacher, U., Brahms, M., Rapp, MA., Stelzel, C. (2022) Modality-specific effects of mental fatigue in multitasking, *Acta Psychologica* [DOI](https://doi.org/10.1016/j.actpsy.2022.103766)
 
 Béna, J., Corneille, O., Mierop, A., & Unkelbach, C. (2022). Robustness Tests Replicate Corneille et al.’s (2020) Fake News by Repetition Effect. *International Review of Social Psychology* [DOI](http://doi.org/10.5334/irsp.683)
-
-Belo, J., Clerc, M., Schön, D. (2022) Attentional inhibition ability predicts neural representation during challenging auditory streaming. *bioRxiv* [DOI](https://doi.org/10.1101/2022.09.29.510226)
 
 Diana, F., Kawahara, M., Saccardi, I. et al. (2022) A Cross-Cultural Comparison on Implicit and Explicit Attitudes Towards Artificial Agents. *Int J of Soc Robotics*. [DOI](https://doi.org/10.1007/s12369-022-00917-7)
 
@@ -261,8 +252,6 @@ Vandendaele, A., Grainger, J. (2022). Now you see it, now you don't: Flanker pre
 ### 2021
 Shyr, MC, and Joshi, SS. (2021) Validation of the Bayesian sensory uncertainty model of motor adaptation with a remote experimental paradigm *IEEE 2nd International Conference on Human-Machine Systems (ICHMS)* [DOI](https://doi.org/10.1109/ICHMS53169.2021.9582639)
 
-Del Popolo Cristaldi, F., Buodo, G., Gambarota, F., Oosterwijk, S., & Mento, G. (2021, December 16). The role of implicit learning and cue ambiguity on the subjective experience of affective predictions: a follow-up behavioral investigation. *PsyArXiv* [DOI](https://doi.org/10.31234/osf.io/y7bxn)
-
 Román-Caballero, R., Marotta, A., & Lupiáñez, J. (2021). Target–background segregation in a spatial interference paradigm reveals shared and specific attentional mechanisms triggered by gaze and arrows. Journal of Experimental Psychology: Human Perception and Performance, 47(11), 1561–1573. [DOI](https://doi.org/10.1037/xhp0000953)
 
 van Moorselaar, D., & Theeuwes, J. (2021). Statistical distractor learning modulates perceptual sensitivity. Journal of Vision, 21(12), 3. [DOI](https://doi.org/10.1167/jov.21.12.3)
@@ -272,8 +261,6 @@ Verkhodanova, V., Coler, M., Jonkers, R., & Lowie, W. (2021) How expertise and l
 Gorin, S. (2021). EXPRESS: Temporal grouping effects in verbal and musical short-term memory: Is serial order representation domain-general? *Quarterly Journal of Experimental Psychology*. [DOI](https://doi.org/10.1177/17470218211057466)
 
 van Moorselaar, D., Theeuwes, J. (2021) Spatial suppression due to statistical regularities in a visual detection task. *Atten Percept Psychophys.* [DOI](https://doi.org/10.3758/s13414-021-02330-0)
-
-Del Popolo Cristaldi, F., Gambarota, F., & Oosterwijk, S. (2021). The role of previous visual experience in subjective reactions to new affective pictures and sounds. *PsyArXiv* [DOI](https://doi.org/10.31234/osf.io/z4mgh)
 
 Lallement, C. & Lemaire, P. (2021) Age-related differences in how negative emotions influence arithmetic performance, *Cognition and Emotion* [DOI](10.1080/02699931.2021.1967884)
 
@@ -323,8 +310,6 @@ Ren, K., & Gunderson, E. A. (2021). The dynamic nature of children’s strategy 
 ### 2020
 
 Krüger, A., Tünnermann, J. Stratmann, L., Briese, L., Dressler, F. and Scharlau, I. (2020) TVA in the wild: Applying the theory of visual attention to game-like and less controlled experiments, *Open Psychology*, 2020.
-
-Kumbhar, O., Sizikova, E., Majaj, N., & Pelli, D. G. (2020). Anytime Prediction as a Model of Human Reaction Time. *ArXiv*2011.12859(Cs, q-Bio). [DOI](http://arxiv.org/abs/2011.12859)
 
 Vari, J. & Tamburelli, M. (2020) Standardisation: bolstering positive attitudes towards endangered language varieties? Evidence from implicit attitudes. *Journal of Multilingual and Multicultural Development*. [DOI](https://doi.org/10.1080/01434632.2020.1829632)
 
