@@ -66,7 +66,7 @@ See [JATOS with MySQL](JATOS-with-MySQL.html)
 
 ### 4. Configuration
 
-If JATOS runs locally it's usually not necessary to change the defaults but on a server you probably want to set up the IP and port or maybe use a different database and change the path of the study assets root folder. These docs have an extra page on how to [Configure JATOS on a Server](Configure-JATOS-on-a-Server.html).
+These docs have an extra page on [JATOS Configuration](JATOS_Configuration.html).
 
 
 ### 5. Change Admin's password

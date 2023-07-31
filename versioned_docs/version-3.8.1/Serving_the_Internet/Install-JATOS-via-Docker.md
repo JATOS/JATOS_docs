@@ -67,7 +67,7 @@ docker run -d -p 80:9000 jatos/jatos:latest
 
 ## Configuration with Docker
 
-JATOS running in a Docker container can be configured the same way as running it the normal way: via a configuration file, via environment variables, or command line arguments. Have a look at [Configure JATOS on a Server](/Configure-JATOS-on-a-Server.html) for the possibilities.
+JATOS running in a Docker container can be configured the same way as running it the normal way: via a configuration file, via environment variables, or command line arguments. Have a look at [JATOS Configuration](/JATOS_Configuration.html) for the possibilities.
 
 
 ### Via arguments
@@ -87,7 +87,7 @@ docker run -d --network="host" jatos/jatos:latest \
 
 ### Via environment variables
 
-All environment variables that can be used to [configure a normal JATOS server installation](Configure-JATOS-on-a-Server.html) can be used in a Docker installation. Just use _docker_'s `-e` argument to set them.
+All environment variables that can be used to [configure a normal JATOS server installation](JATOS_Configuration.html) can be used in a Docker installation. Just use _docker_'s `-e` argument to set them.
 
 E.g. to run JATOS with a MySQL database running on localhost (not in a container), with the default port 3306, use the following command (change username and password to your MySQL user):
 

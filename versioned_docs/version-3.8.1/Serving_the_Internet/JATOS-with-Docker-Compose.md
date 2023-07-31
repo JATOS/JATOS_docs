@@ -93,7 +93,7 @@ Check [_JATOS with MySQL_](/JATOS-with-MySQL.html) for more information.
 
 ## JATOS configuration
 
-Have a look at [_Configure JATOS on a server_](/Configure-JATOS-on-a-Server.html).
+Have a look at [_JATOS Configuration_](/JATOS_Configuration.html).
 
 Change the image version in the _compose.yaml_ to the one you need (e.g. the latest one).
 
