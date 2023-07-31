@@ -8,9 +8,9 @@ JATOS' properties can be configured in three different ways:
 
 1. via a **config file** (named _jatos.conf_ or _production.conf_)
 1. via **command-line** arguments 
-1. via **environment** variables (only a few properties)
+1. via **environment** variables (possible for only a few of the properties)
 
-The config file is location in the JATOS folder under _./conf_ and is named _jatos.conf_ for versions >= 3.8.3 and _production.conf_ for versions < 3.8.3. It uses the [HOCON format](https://github.com/lightbend/config/blob/main/HOCON.md). **Remember to always restart JATOS after making any changes to a config file.**
+The config file is located in the JATOS folder under _./conf_ and is named _jatos.conf_ for versions >= 3.8.3 and _production.conf_ for versions < 3.8.3. It uses the [HOCON format](https://github.com/lightbend/config/blob/main/HOCON.md). **Remember to always restart JATOS after making any changes to a config file.**
 
 Command-line argument names are usually the same as the names in the config file except that they are prefixed with `-D` (except JVM arguments that have a `-J`), e.g. `jatos.urlBasePath` and `-Djatos.urlBasePath`.
 
@@ -170,7 +170,7 @@ The study assets root folder is the location where all study's HTML, JavaScript 
 
 (Only in version >= 3.8.3)
 
-JATOS uses a directory to temporarily store files, e.g. during study import. By default the system's temporary directory is used (on Linux/Unix _/tmp_ or on Windows _c:\temp_), except when JATOS runs in a Docker container, where it is under _/opt/jatos_data/tmp_.
+JATOS uses a directory to temporarily store files, e.g. during study import. By default the system's temporary directory is used (on Linux/Unix _/tmp_ or on Windows _c:\temp_), except when JATOS runs in a Docker container, when it is under _/opt/jatos_data/tmp_.
 
 1. Via **config file** property `jatos.tmpPath`
 
@@ -243,7 +243,7 @@ By default the logs filename is _application_ (without suffix).
 
 ### Application logs appender
 
-The logs appender can be either `ASYNCSTDOUT` or `ASYNCFILE`. Default is `ASYNCFILE`. If you don't want to record the logs to a file but to _stdout_ change the value to `ASYNCSTDOUT`.
+The logs appender can be either `ASYNCSTDOUT` or `ASYNCFILE`. Default is `ASYNCFILE`. If you don't want to record the logs to a file but to _stdout_, change the value to `ASYNCSTDOUT`.
 
 1. Via **config file** property `jatos.logs.appender`
 
@@ -266,7 +266,7 @@ The logs appender can be either `ASYNCSTDOUT` or `ASYNCFILE`. Default is `ASYNCF
 
 ## Study logs
 
-Every study stored in JATOS has it's own study log ([more info](/Study-Log.html)). Among other things it calculates hashes of result data, which can be CPU-intensive, and on smaller machines it can be better to disable it.
+Every study stored in JATOS has its own study log ([more info](/Study-Log.html)). Among other things, it calculates hashes of result data, which can be CPU-intensive, and on smaller machines it can be better to disable it.
 
 Don't confuse the study logs with the [application logs](#application-logs). .
 
@@ -311,7 +311,7 @@ By default the study logs are stored in the JATOS folder under _./study_logs_.
 
 ## Study members
 
-Allow to add all users that exist on a JATOS to be added at once as members of a study. Can be useful in small setups, e.g. for a lab installation. Default is `false`.
+Allow all users that exist on a JATOS to be added at once as members of a study. Can be useful in small setups, e.g. for a lab installation. Default is `false`.
 
 1. Via **config file** property `jatos.studyMembers.allowAddAllUsers`
 
@@ -382,7 +382,7 @@ Default is `true` (enabled).
 
 ### Path to result files
 
-The path where JATOS stores the uploaded result files from study runs. By default it is stored in the JATOS folder under _./result_uploads_.
+The path where JATOS stores the uploaded result files from study runs. By default they are stored in the JATOS folder under _./result_uploads_.
 
 1. Via **config file** property `jatos.resultUploads.path`
 
