@@ -73,13 +73,21 @@ Now you have to configure JATOS to use your MySQL/MariaDB.
 
 ## Configure JATOS
 
-There are three ways to set up JATOS to work with a MySQL/MariaDB database. If you are in doubt use `jatos.conf` / `production.conf`.
+There are three ways to set up JATOS to work with a MySQL/MariaDB database.
 
-1. Via JATOS config file which is in your JATOS folder in the _conf_ folder:
+The properties starting with `db.default` are **deprecated** and shouldn't be used anymore. Use `jatos.db.*` instead.
 
-   Change IP, port, username and password to your needs.
+**Change IP, port, username and password** to the ones from your database. The _driver_ is always `com.mysql.cj.jdbc.Driver` for MySQL or MariaDB.
 
-   * in `jatos.conf` (JATOS version >= 3.8.3)
+**Always restart JATOS after making any changes to the configuration (e.g. with `./loader.sh restart`)**
+
+1. Via **config file** properties
+
+   The config file, named _jatos.conf_ or _production.conf_, is located in the JATOS folder, in _./conf_ folder:
+
+   * in `jatos.conf` (JATOS version >= 3.8.3) change the properties `jatos.db.url`, `jatos.db.username`, and `jatos.db.password`. The property `jatos.db.driver` is always `com.mysql.cj.jdbc.Driver`.
+
+      Example:
 
       ~~~bash
       jatos.db.url = "jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
@@ -88,40 +96,44 @@ There are three ways to set up JATOS to work with a MySQL/MariaDB database. If y
       jatos.db.driver = "com.mysql.cj.jdbc.Driver"
       ~~~
 
-   * in `production.conf` (JATOS version < 3.8.3)
+   * in `production.conf` (JATOS version < 3.8.3) change the properties `db.default.url`, `db.default.username`, and `db.default.password`. The property `db.default.driver` is always `com.mysql.cj.jdbc.Driver`.
+
+1. Via **command-line** arguments
+
+   * JATOS version >= 3.8.3) set the arguments `-Djatos.db.url`, `-Djatos.db.username`, and `-Djatos.db.password` and `-Djatos.db.driver` (always `com.mysql.cj.jdbc.Driver`).
+
+      Example:
 
       ~~~bash
-      db.default.url = "jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
-      db.default.user = "jatosuser"
-      db.default.password = "mypassword"
-      db.default.driver = "com.mysql.cj.jdbc.Driver"
+      -Djatos.db.url = "jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+      -Djatos.db.username = "jatosuser"
+      -Djatos.db.password = "mypassword"
+      -Djatos.db.driver = "com.mysql.cj.jdbc.Driver"
       ~~~
 
-   **Always restart JATOS after making any changes to the configuration (e.g. with `./loader.sh restart`)**
+      and use them together with JATOS start command `./loader start`:
 
-1. Via command-line arguments:
-   * `-DJATOS_DB_URL` - specifies the URL to the database
-   * `-DJATOS_DB_USERNAME` - set your username
-   * `-DJATOS_DB_PASSWORD` - set your password
-   * `-DJATOS_DB_DRIVER` - always `com.mysql.cj.jdbc.Driver` for MySQL/MariaDB
+      ~~~bash   
+      ./loader.sh start \
+         -Djatos.db.url = "jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC" \
+         -Djatos.db.username = "jatosuser" \
+         -Djatos.db.password = "mypassword" \
+         -Djatos.db.driver = "com.mysql.cj.jdbc.Driver"
+      ~~~ 
+
+   * JATOS version < 3.8.3) set the arguments `-Ddb.default.url`, `-Ddb.default.username`, and `-Ddb.default.password` and `-Ddb.default.driver` (always `com.mysql.cj.jdbc.Driver`).
    
-   E.g. to connect to a MySQL/MariaDB running on 127.0.0.1 and port 3306 use (but change IP, port, username and password):
-   
-   ~~~bash   
-   ./loader.sh start \
-     -DJATOS_DB_URL='jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC' \
-     -DJATOS_DB_USERNAME='jatosuser' \
-     -DJATOS_DB_PASSWORD='mypassword' \
-     -DJATOS_DB_DRIVER='com.mysql.cj.jdbc.Driver'
-   ~~~
-   
-1. Via environment variables (change IP, port, username and password)
+1. Via **environment** variables
+
+   Set the variables `JATOS_DB_URL`, `JATOS_DB_USERNAME`, `JATOS_DB_PASSWORD`, and `JATOS_DB_DRIVER` (always `com.mysql.cj.jdbc.Driver`).
+
+   Example:
 
    ~~~bash
-   export JATOS_DB_URL="jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
-   export JATOS_DB_USERNAME='jatosuser'
-   export JATOS_DB_PASSWORD='mypassword'
-   export JATOS_DB_DRIVER='com.mysql.cj.jdbc.Driver'
+   JATOS_DB_URL="jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+   JATOS_DB_USERNAME='jatosuser'
+   JATOS_DB_PASSWORD='mypassword'
+   JATOS_DB_DRIVER='com.mysql.cj.jdbc.Driver'
    ~~~
 
 You can confirm that JATOS is accessing the correct database by opening JATOS' _Administration_ page in a browser and then click on _System Info_: The field _DB URL_ should resemble the one from your config. Another way is by looking in the logs: you should see a line after JATOS started similar to this (with your database URI):
