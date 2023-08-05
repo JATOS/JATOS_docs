@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Coy, N., Bendixen, A., Grimm, S. et al. (2023) Deviants violating higher-order auditory regularities can become predictive and facilitate behaviour. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-023-02763-9)
+
 Ivanov, Y., Theeuwes, J. & Bogaerts, L. (2023) Reliability of individual differences in distractor suppression driven by statistical learning. *Behav Res*. [DOI](https://doi.org/10.3758/s13428-023-02157-7)
 
 Wang-Ly, Nathan and Newell, Ben R. (2023) Uncertain goals and savings adequacy: Contrasting economic and psychological perspectives. *SSRN* [DOI](http://dx.doi.org/10.2139/ssrn.4511291)
