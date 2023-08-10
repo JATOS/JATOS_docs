@@ -14,6 +14,6 @@ On this page is additional information in how to install JATOS on a server on AW
 1. `unzip jatos_linux_java.zip` (You probably have to install 'unzip' first with `sudo apt-get install unzip`.)
 1. If you do **not** use a reverse proxy like [Nginx](/JATOS-with-Nginx.html) or [Apache](/JATOS-with-Apache.html) you have to configure IP and port in `conf/jatos.conf` (or `conf/production.conf` in version < 3.8.3): Use the '**Private IP**' from your instance description (the one that starts with 172.x.x.x) and port 80
 1. Allow inbound HTTP/HTTPS traffic: [This is done in AWS GUI](https://aws.amazon.com/premiumsupport/knowledge-center/connect-http-https-ec2/).
-1. (Optional) [auto-start JATOS](/JATOS-on-a-server.html#9-optional-auto-start-jatos-via-systemd)
+1. (Optional) [auto-start JATOS](/JATOS-on-a-server.html#optional-auto-start-jatos-via-systemd)
 1. Change JATOS' admin password
 
