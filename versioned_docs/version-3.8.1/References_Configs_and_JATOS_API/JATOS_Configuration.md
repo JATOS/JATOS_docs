@@ -1,7 +1,7 @@
 ---
 title: JATOS Configuration
 slug: /JATOS_Configuration.html
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 JATOS' properties can be configured in three different ways:

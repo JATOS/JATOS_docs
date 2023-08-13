@@ -1,7 +1,7 @@
 ---
 title: JATOS Results Archive (JRZIP)
 slug: /JATOS-Results-Archive-JRZIP.html
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 :::info

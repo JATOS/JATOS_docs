@@ -110,7 +110,14 @@ JATOS can be configured either by _command_ parameters (the ones with the `-D` p
 
 The _jatos.conf_ file is mounted as a _volume_ in the JATOS container. This way you can comfortably edit your _jatos.conf_ outside of the container.
 
+More about [JATOS' Configuration with all possible parameters](JATOS_Configuration.html).
 
-### Updating JATOS with Docker Compose
+
+## Updating JATOS with Docker Compose
 
 The easiest way to update a JATOS instance running with this setup with external volumes is to **just change the JATOS' Docker image tag to a higher version and restart the services**. No need to use JATOS auto-updater. JATOS is only allowed to update to higher version numbers - downgrading will likely break your installation. And please do backups before updating.
+
+
+## Running JATOS on multiple nodes
+
+Have a look at [JATOS in a cluster](/JATOS-in-a-cluster.html).

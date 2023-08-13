@@ -1,7 +1,7 @@
 ---
 title: JATOS API
 slug: /JATOS-API.html
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 :::info
