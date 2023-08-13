@@ -18,14 +18,14 @@ All these points (and more) are addressed in this page.
 
 ## Multi-node installation with Docker Compose
 
-A setup of JATOS with multiple nodes through [Docker Compose](https://docs.docker.com/compose/) might not make much sense due to all JATOS instances still running on the same machine but it highlights some general concepts and caveats pretty well.
+A setup of JATOS with multiple nodes through [Docker Compose](https://docs.docker.com/compose/) might not make much sense, because all JATOS instances still run on the same machine. But it highlights some general concepts and caveats pretty well, so we describe it here.
 
 How to get started with JATOS and Docker Compose is explained in [another page](/JATOS-with-Docker-Compose.html). You might want to follow the instructions there to get a JATOS installation with a MySQL database and Nginx running. 
 
-Now, if you want to run JATOS in multiple containers in parallel you need to configure the [_compose.yaml_](https://github.com/JATOS/JATOS_with_docker_compose/blob/main/compose.yaml) additionally with (if not done so already):
+Now, if you want to run JATOS in multiple containers in parallel you need to configure the [_compose.yaml_](https://github.com/JATOS/JATOS_with_docker_compose/blob/main/compose.yaml) additionally (if you haven't already):
 
 1. Set **`-Djatos.multiNode=true`** in the _command_ section of the _jatos_ service.
-1. Set the **`JATOS_SECRET`** environment variable to a string with at least than 15 characters (otherwise the session cookie that JATOS is using for authentication won't work).
+1. Set the **`JATOS_SECRET`** environment variable to a string with at least than 15 characters (otherwise the session cookie that JATOS uses for authentication won't work).
 
 It's important to share some of JATOS folders between all JATOS nodes. In our Docker composed setup this is already achieved with the shared _volumes_ _jatos-data_, _jatos-logs_, and _jatos-db_. Nothing to do here.
 
@@ -38,7 +38,7 @@ docker compose -f compose.yaml up --scale jatos=2
 
 ## JATOS with Kubernetes
 
-[Kubernetes](https://kubernetes.io/) is a system for container orchestration and automatic deployments and offers vast possibilities to do so in many different ways that might also depend on your cloud provider. Here we used it with [DigitalOcean](https://docs.digitalocean.com/products/kubernetes/) - but with some adjustments it should work on any Kubernetes cluster. 
+[Kubernetes](https://kubernetes.io/) is a system for container orchestration and automatic deployments. It offers vast possibilities to do so in many different ways that might also depend on your cloud provider. Here we used it with [DigitalOcean](https://docs.digitalocean.com/products/kubernetes/) - but with some adjustments it should work on any Kubernetes cluster. 
 
 For the JATOS cluster we use [Kustomize](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/) to define Kubernetes objects through _kustomization_ YAML files. 
 
@@ -145,7 +145,7 @@ volumes:
 
 In [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml), to run JATOS in on multiple nodes in a cluster you have to set the parameter `-Djatos.multiNode=true`. Also the parameter `-Djatos.logs.appender=ASYNCSTDOUT` redirects the logging to _stdout_, which is what you probably want with Kubernetes.
 
-The parameter `-J-Xmx` defines the maximum memory the Java Virtual Machine (JVM) that runs JATOS is allowed to use. If you don't set this, the JVM might take to much memory for itself and strangling the operating system. Here we set it to 1500 MB but it really depends on the kind of underlying machine you are using to run your nodes.
+The parameter `-J-Xmx` defines the maximum memory the Java Virtual Machine (JVM) that runs JATOS is allowed to use. If you don't set this, the JVM might take too much memory for itself and strangle the operating system. Here we set it to 1500 MB but it really depends on the kind of underlying machine you are using to run your nodes.
 
 You might want to change the Docker image version to a different one.
 
@@ -177,7 +177,7 @@ In [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos
 
 ### Liveness probe and startup probe
 
-Applications running on the JVM can need some initial warm-up time before they are fully functional. Therefor we have, additionally to the `livenessProbe` in [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml), a `startupProbe` that accounts for this. You might have to tweak `failureThreshold` and `periodSeconds` on your system.
+Applications running on the JVM can need some initial warm-up time before they are fully functional. Therefore we have, additionally to the `livenessProbe` in [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml), a `startupProbe` that accounts for this. You might have to tweak `failureThreshold` and `periodSeconds` on your system.
 
 ```yaml
 livenessProbe:
@@ -223,7 +223,7 @@ affinity:
 
 ### Updating JATOS with Kubernetes
 
-The easiest way to update a JATOS Kubernetes cluster is to **just change the JATOS' Docker image tag to a higher version**. JATOS auto-updater cannot be used here.
+The easiest way to update a JATOS Kubernetes cluster is to **just change the JATOS' Docker image tag to a higher version**. JATOS' auto-updater cannot be used here.
 
 But there are some **constraints**:
 
