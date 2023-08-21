@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Vieth, E., von Stockhausen, L. (2023) Effects of short mindful breathing meditations on executive functioning in two randomized controlled double-blinded experiments. *Acta Psychologica* [DOI](https://doi.org/10.1016/j.actpsy.2023.104006)
+
+Sobczak, A., Bunzeck, N. (2023) Effects of positive and negative social feedback on motivation, evaluative learning, and socio-emotional processing. *npj Sci. Learn.* [DOI](https://doi.org/10.1038/s41539-023-00178-7)
+
 Coy, N., Bendixen, A., Grimm, S. et al. (2023) Deviants violating higher-order auditory regularities can become predictive and facilitate behaviour. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-023-02763-9)
 
 Ivanov, Y., Theeuwes, J. & Bogaerts, L. (2023) Reliability of individual differences in distractor suppression driven by statistical learning. *Behav Res*. [DOI](https://doi.org/10.3758/s13428-023-02157-7)
