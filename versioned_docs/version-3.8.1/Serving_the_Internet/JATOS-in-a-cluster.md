@@ -223,7 +223,7 @@ affinity:
 
 ### Updating JATOS with Kubernetes
 
-The easiest way to update a JATOS Kubernetes cluster is to **just change the JATOS' Docker image tag to a higher version**. JATOS' auto-updater cannot be used here.
+The easiest way to update a JATOS Kubernetes cluster is to **just change the JATOS' Docker image tag to a higher version**. [JATOS' auto-updater](/Update-JATOS.html#automatic-update) **cannot** be used here.
 
 But there are some **constraints**:
 

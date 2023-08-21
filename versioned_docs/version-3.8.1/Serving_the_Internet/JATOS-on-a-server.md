@@ -149,6 +149,30 @@ Additionally you can manually start/stop JATOS now with:
 You can disable the service with `systemctl disable jatos.service`. If you change the service file you need to do `systemctl daemon-reload jatos.service` again to let the system know.
 
 
+## [Optional] Specify the location of JATOS' data folders
+
+By default all data folders are located in JATOS installation folder. But sometimes it is better to change the location to better suit your needs, e.g. for easier backups or updates.  
+
+JATOS' data folders (and their path configuration):
+* [_study assets root_ folder](/JATOS_Configuration.html#study-assets-root-path)
+* [_result uploads_ folder](/JATOS_Configuration.html#result-file-uploading)
+* [_study logs_ folder](/JATOS_Configuration.html#study-logs)
+
+One might want to move all data folders in one extra 'data' folder. E.g. in JATOS' **config file** the following properties have to be set:
+
+~~~shell
+jatos.studyAssetsRootPath = "/path/to/my/jatos-data-folder/study_assets_root"
+jatos.resultUploads.path =  "/path/to/my/jatos-data-folder/result_uploads"
+jatos.studyLogs.path =      "/path/to/my/jatos-data-folder/study_logs"
+~~~
+
+Or with **command-line** arguments this would be:
+
+```shell
+-Djatos.studyAssetsRootPath="/path/to/my/jatos-data-folder/study_assets_root" -Djatos.resultUploads.path="/path/to/my/jatos-data-folder/result_uploads" -Djatos.studyLogs.path="/path/to/my/jatos-data-folder/study_logs"
+```
+
+
 ## [Optional] Backup
 
 The easiest way to backup is to let JATOS users care themselves for their own data. JATOS has an easy to use [export function for result data](Manage-results.html). So you could just tell everyone to export their data regularly.
@@ -157,40 +181,33 @@ But if you want to set up a regular backup of the data stored in JATOS here are 
 
 ### Simple
 
-If you want to keep it simple and you didn't change any of the folder paths then you can just back up the whole JATOS folder. But remember, if you use the embedded H2 database, to stop JATOS before doing the backup. And if you use MySQL you have to care for the MySQL backup extra.
+If you want to keep it simple and you didn't change any of the [data folder paths](/JATOS-on-a-server.html#optional-specify-the-location-of-jatos-data-folders) then you can just back up the whole JATOS folder. But remember, if you use the embedded H2 database, to stop JATOS before doing the backup. And if you use MySQL you have to care for the MySQL backup extra.
 
 ### Detailed
 
-#### JATOS data folders
+1. JATOS data folders
 
-Additional to the database the following _data_ folders need to be backed up:
+   JATOS has a couple of [_data_ folders](/JATOS-on-a-server.html#optional-specify-the-location-of-jatos-data-folders). For easier backups it makes sense to have them all in one extra 'data' folder. Then you can just backup this 'data' folder with whatever file backup mechanism suits you best.
 
-* _study assets root_ folder - This is the folder where all the study's assets (e.g. HTML, JS, CSS, images) are stored.
-* _result uploads_ folder - This folder contains the files, that were uploaded during study runs.
-* _study logs_ folder - Contains the [study logs](Study-Log.html).
+1. Backup MySQL/MariaDB
 
-By default all those folders are located in JATOS installation folder. But the location can be configured to better suit your needs: 
+   If you use a MySQL or MariaDB database you might want to look into the `mysqldump` shell command. E.g., with `mysqldump -u myusername -p mydbname > mysql_bkp.out` you can backup the whole data into a single file. Restore the database with `mysql -u myusername -p mydbname < mysql_bkp.out`.
 
-* [configure the location of the _study assets root_ folder](/JATOS_Configuration.html#study-assets-root-path)
-* [configure the location of the _result uploads_ folder](/JATOS_Configuration.html#study-logs)
-* [configure the location of the _study logs_ folder](/JATOS_Configuration.html#result-file-uploading)
+1. Backup H2 database
 
-One might want to move all data folders in one extra 'data' folder for easier backup. E.g. in JATOS' config file the following properties have to be set:
+   There are at least two ways to backup an embedded H2 database: one easy (but unofficial) and one official:
 
-~~~shell
-jatos.studyAssetsRootPath = "/path/to/my/jatos-data-folder/study_assets_root"
-jatos.resultUploads.path =  "/path/to/my/jatos-data-folder/result_uploads"
-jatos.studyLogs.path =      "/path/to/my/jatos-data-folder/study_logs"
-~~~
+   * Easy way: Just backup the _database_ folder in your JATOS installation folder. **But it is important to stop JATOS before doing a backup or restoring a H2 database** this way. If you do not stop JATOS your data might get corrupted.
 
-#### Backup MySQL/MariaDB
+   * Official way: Use [H2's upgrade, backup, and restore tool](http://www.h2database.com/html/tutorial.html#upgrade_backup_restore)
 
-If you use a MySQL or MariaDB database you might want to look into the `mysqldump` shell command. E.g., with `mysqldump -u myusername -p mydbname > mysql_bkp.out` you can backup the whole data into a single file. Restore the database with `mysql -u myusername -p mydbname < mysql_bkp.out`.
 
-#### Backup H2 database
+## Update JATOS
 
-There are at least two ways to backup an embedded H2 database: one easy (but unofficial) and one official:
+**Be aware**: JATOS is only allowed to update to higher version numbers - downgrading will likely break your installation. Please do backups before updating.
 
-* Easy way: Just backup the _database_ folder in your JATOS installation folder. **But it is important to stop JATOS before doing a backup or restoring a H2 database** this way. If you do not stop JATOS your data might get corrupted.
+There are two possibilities to update JATOS running on a server:
 
-* Official way: Use [H2's upgrade, backup, and restore tool](http://www.h2database.com/html/tutorial.html#upgrade_backup_restore)
+1. You can simply use the [auto-update feature](/Update-JATOS.html#automatic-update).
+
+1. If you specified an extra ['data' folder](/JATOS-on-a-server.html#optional-specify-the-location-of-jatos-data-folders) you can install a new JATOS without starting it yet, stop the current JATOS, configure the new one to use your extra 'data' folder and start it.

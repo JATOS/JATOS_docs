@@ -115,7 +115,7 @@ More about [JATOS' Configuration with all possible parameters](JATOS_Configurati
 
 ## Updating JATOS with Docker Compose
 
-The easiest way to update a JATOS instance running with this setup with external volumes is to **just change the JATOS' Docker image tag to a higher version and restart the services**. No need to use JATOS auto-updater. JATOS is only allowed to update to higher version numbers - downgrading will likely break your installation. And please do backups before updating.
+The easiest way to update a JATOS instance running with this setup **with external data volumes** is to **just change the JATOS' Docker image tag to a higher version and restart the services**. No need to use [JATOS' auto-updater](/Update-JATOS.html#automatic-update). JATOS is only allowed to update to higher version numbers - downgrading will likely break your installation. And please do backups before updating.
 
 
 ## Running JATOS on multiple nodes

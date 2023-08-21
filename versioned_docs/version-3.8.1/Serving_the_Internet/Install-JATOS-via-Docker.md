@@ -103,7 +103,7 @@ docker run -d --network="host" \
 
 ### Via configuration file
 
-You can mount a configuration file (_jatos.conf_) as a Docker volume in the container. This way you can comfortably edit the _jatos.conf_ in your local file system.
+You can mount a configuration file (_jatos.conf_) as a Docker [_volume_](https://docs.docker.com/storage/volumes/) in the container. This way you can comfortably edit the _jatos.conf_ in your local file system.
 
 E.g. with a _jatos.conf_ in the current working directory:
 
@@ -114,7 +114,7 @@ docker run -d -p 9000:9000 --volume ./jatos.conf:/opt/jatos/conf/jatos.conf:ro j
 
 ## Persist data with _volumes_
 
-_Volumes_ are the preferred way to persist data with Docker containers. This can be useful if one wants to exchange data between containers or do backups.
+[_Volumes_](https://docs.docker.com/storage/volumes/) are the preferred way to persist data with Docker containers. This can be necessary if one wants to update JATOS or do backups.
 
 Before using a _volume_ one has to create it:
 
@@ -128,3 +128,14 @@ In JATOS' Docker container all data are stored, by default, in the folder `/opt/
 ```shell
 docker run -d -p 9000:9000 --volume jatos_data:/opt/jatos_data jatos/jatos:latest
 ```
+
+
+## Updating JATOS with Docker
+
+**Be aware**: JATOS is only allowed to update to higher version numbers - downgrading will likely break your installation. Please do backups before updating.
+
+There are two possibilities to update JATOS running in a Docker container:
+
+1. Unless you run [JATOS on multiple nodes](/JATOS-in-a-cluster.html), you can simply use the [auto-update feature](/Update-JATOS.html#automatic-update) to update JATOS to newer versions.
+
+1. Another way, arguably even simpler, is to just change the Docker image tag of JATOS to a newer version. Stop the current running JATOS container and run a new one with the new version tag. **But this only works if you [persist your data with volumes](/Install-JATOS-via-Docker.html#persist-data-with-volumes) - If you don't use volumes your data stored in JATOS will be lost**.
