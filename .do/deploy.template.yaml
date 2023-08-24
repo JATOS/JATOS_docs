@@ -7,3 +7,5 @@ spec:
       repository: jatos
       tag: latest
     name: jatos-test
+    http_port: 9000
+    instance_count: 1
