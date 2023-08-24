@@ -10,3 +10,6 @@ spec:
     http_port: 9000
     routes:
     - path: /
+    envs:
+    - key: JATOS_LOGS_APPENDER
+      value: ASYNCSTDOUT
