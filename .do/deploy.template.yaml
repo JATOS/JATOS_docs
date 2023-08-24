@@ -1,12 +1,12 @@
 spec:
-  name: jatos-test
+  name: jatos
   services:
   - image:
       registry_type: DOCKER_HUB
       registry: jatos
       repository: jatos
       tag: latest
-    name: jatos-test
+    name: jatos
     http_port: 9000
     routes:
     - path: /
