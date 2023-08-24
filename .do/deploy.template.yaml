@@ -1,0 +1,9 @@
+spec:
+  name: jatos-test
+  services:
+  - image:
+      registry_type: DOCKER_HUB
+      registry: jatos
+      repository: jatos
+      tag: latest
+    name: jatos-test
