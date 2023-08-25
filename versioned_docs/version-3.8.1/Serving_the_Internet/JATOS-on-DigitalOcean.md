@@ -21,7 +21,7 @@ import ReactPlayer from 'react-player'
 
 1. Click _Deploy to DigitalOcean_ button. This will open DigitalOcean's App page and prefill some settings for you. By default the latest version of JATOS is set up to be installed.
 
-   <a href="https://cloud.digitalocean.com/apps/new?repo=https://github.com/JATOS/JATOS_docs/tree/main">
+   <a href="https://cloud.digitalocean.com/apps/new?repo=https://github.com/JATOS/JATOS_docs/tree/main&refcode=4aacf16a23c6">
      <img src="https://www.deploytodo.com/do-btn-blue-ghost.svg" alt="Deploy to DO"></img>
    </a>
 
