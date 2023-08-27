@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Rieger, T., Kugler, L., Manzey, D., & Roesler, E. (2023). The (Im)perfect Automation Schema: Who Is Trusted More, Automated or Human Decision Support? *Human Factors*. [DOI](https://doi.org/10.1177/00187208231197347)
+
+Everhardt, M.K., Sarampalis, A., Coler, M., Başkent, D., & Lowie, W. (2023). Prosodic Focus Interpretation in Spectrotemporally Degraded Speech by Non-Native Listeners. *Journal of Speech, Language, and Hearing Research. [DOI](https://doi.org/10.1044/2023_JSLHR-22-00568)
+
 Vieth, E., von Stockhausen, L. (2023) Effects of short mindful breathing meditations on executive functioning in two randomized controlled double-blinded experiments. *Acta Psychologica* [DOI](https://doi.org/10.1016/j.actpsy.2023.104006)
 
 Sobczak, A., Bunzeck, N. (2023) Effects of positive and negative social feedback on motivation, evaluative learning, and socio-emotional processing. *npj Sci. Learn.* [DOI](https://doi.org/10.1038/s41539-023-00178-7)
