@@ -4,6 +4,10 @@ slug: /JATOS-on-DigitalOcean.html
 sidebar_position: 5
 ---
 
+:::danger
+Please use this documentation page with caution while we rewrite it. DigitalOcean's Apps use an _ephemeral_ file system and all your data might get lost after a maintenance deploy. 
+:::
+
 Here we explain how to install JATOS in the cloud by using [DigitalOcean](https://www.digitalocean.com). DigitalOcean is a cloud provider (like _AWS_, _Google Cloud_, _Azure_ etc.). We provide this detailed example because DigitalOcean is comparatively easy to use and has good documentation - but we have no connection to DigitalOcean whatsoever.
 
 **Keep in mind: A server in the cloud will cost money (depending on the size $5 to $50 / month (and more)) and to open an account with DigitalOcean you will need a credit card.**
@@ -49,6 +53,6 @@ If you want to destroy your server, go to your App's page in DigitalOcean and cl
 
 ## Next steps
 
-* [Configure JATOS](http://localhost:3000/JATOS_Configuration.html)
+* [Configure JATOS](/JATOS_Configuration.html)
 * [Attach JATOS to a MySQL or MariaDB database](/JATOS-with-MySQL.html)
 * [Change the domain name](https://docs.digitalocean.com/products/app-platform/how-to/manage-domains/)
