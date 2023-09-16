@@ -12,6 +12,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 
 ### 2023 
 
+Béna, J., Rouard, M., & Corneille, O. (2023). You won't believe it! Truth judgments for clickbait headlines benefit (but less so) from prior exposure. *Applied Cognitive Psychology* [DOI](https://doi.org/10.1002/acp.4134)
+
 Constant, M., Pereira, M., Faivre, N. et al. (2023) Prior information differentially affects discrimination decisions and subjective confidence reports. *Nat Commun*. [DOI](https://doi.org/10.1038/s41467-023-41112-0)
 
 Jost, L., & Jansen, P. (2023). EXPRESS: The Influence of the Design of Mental Rotation Trials on Performance and Possible Differences Between Sexes: A Theoretical Review and Experimental Investigation. *Quarterly Journal of Experimental Psychology*. [DOI](https://doi.org/10.1177/17470218231200127)
