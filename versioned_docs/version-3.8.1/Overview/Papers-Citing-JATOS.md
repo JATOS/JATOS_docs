@@ -173,7 +173,7 @@ Yildirim, B., Kurdoglu-Ersoy P., Kapucu A., & Tekozel, M. (2022) Is there an inf
 
 Del Popolo Cristaldi, F., Granziol, U., Bariletti, I., Mento, G. (2022) Doing Experimental Psychological Research from Remote: How Alerting Differently Impacts Online vs. Lab Setting. *Brain Sci.* [DOI](https://doi.org/10.3390/brainsci12081061)
 
-Contemori, G., Saccani, MS., Bonato, M. (2022) Multitasking Effects on Perceptionand Memory in Older Adults. *Vision* [DOI](https://doi.org/10.3390/vision6030048)
+Contemori, G., Saccani, MS., Bonato, M. (2022) Multitasking Effects on Perception and Memory in Older Adults. *Vision* [DOI](https://doi.org/10.3390/vision6030048)
 
 Daoultzis, KC., & Kordoutis, P. (2022) A Pilot Study Testing A New Visual Stimuli Database for Probing Men’s Gender Role Conflict: GRASP (Gender Role Affective Stimuli Pool) *Journal of Homosexuality* [DOI](https://doi.org/10.1080/00918369.2022.2104147)
 
