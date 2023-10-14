@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Schreiner, M.R., Hütter, M. (2023) The Influence of Social Status on Memory: No Evidence for Effects of Social Status on Event Element Binding. *Social Cognition*  [DOI](https://doi.org/10.1521/soco.2023.41.5.447)
+
 Vandendaele, A., & Grainger, J. (2023). Lexical competition in the flankers task revised. *PLoS one* [DOI](https://doi.org/10.1371/journal.pone.0285292)
 
 Labaronne, M., Ferreri, L. & Plancher, G. (2023) How do intentions modulate the effect of working memory on long-term memory? *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-023-02381-4)
