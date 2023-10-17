@@ -115,6 +115,10 @@ A JRZIP file is organized by study results. Each study result folder (named _stu
                                     "type": "string",
                                     "title": "Study code"
                                 },
+                                "comment": {
+                                    "type": "string",
+                                    "title": "Comment from study link (only PersonalSingle and PersonalMultiple)"
+                                },
                                 "startDate": {
                                     "type": "integer",
                                     "title": "Epoch time of the start date"
