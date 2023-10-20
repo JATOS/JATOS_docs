@@ -27,8 +27,9 @@ JVM arguments (arguments for the Java Virtual Machine) are special since they ar
 
 One commonly used JVM argument is `-Xmx`. It limits JATOS's memory usage (JVM's maximum heap memory usage to be precise). It has to be written as `-J-Xmx`, e.g. to allow 4GB memory `-J-Xmx4G`.
 
+## HTTP config
 
-## Address and port
+### Address and port
 
 By default JATOS binds to all locally available IP addresses including 127.0.0.1 on port 9000. Usually JATOS is installed together with a reverse proxy (e.g Nginx or Apache) but if you don't want to use a proxy, you have to set up the hostname or IP address and the port in one of the ways.
 
@@ -56,8 +57,6 @@ By default JATOS binds to all locally available IP addresses including 127.0.0.1
    ~~~
 
 
-## HTTP timeouts
-
 ### Server idle timeout
 
 The idle timeout for an open connection after which it will be closed. Set to `null` or `infinite` to disable the timeout, but notice that this is not encouraged since timeouts are important mechanisms to protect your servers from malicious attacks or programming mistakes. Default is 75 seconds.
@@ -77,6 +76,7 @@ The idle timeout for an open connection after which it will be closed. Set to `n
    ~~~shell
    -Dplay.server.http.idleTimeout=100s
    ~~~
+
 
 ### Request timeout
 
@@ -99,7 +99,7 @@ How long can a request take until it times out. Set to `null` or `infinite` to d
    ~~~
 
 
-## URL base path
+### URL base path
 
 JATOS can be configured to use an base path. E.g we have the host _www\.example\.org_ and let JATOS run under _mybasepath_ so that all URLs start with _www\.example\.org/mybasepath/_.
 
@@ -129,6 +129,27 @@ JATOS can be configured to use an base path. E.g we have the host _www\.example\
 
    ~~~shell
    JATOS_URL_BASE_PATH="/mybasepath/"
+   ~~~
+
+
+### X-Frame-Options header
+
+The [X-Frame-Options header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) can be used to allow or disallow embedding a JATOS study in an [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) (or similar embedding techniques). Possible values are `DENY` (completely disallow iframes), `SAMEORIGIN` (embedding page has the same origin as the iframe), or `null` (allow iframes everywhere). By default it set to `SAMEORIGIN`.
+
+1. Via **config file** property `play.filters.headers.frameOptions`
+
+   Example:
+
+   ~~~shell
+   play.filters.headers.frameOptions = null
+   ~~~
+
+1. Via **command-line** argument `-Dplay.filters.headers.frameOptions`
+
+   Example:
+
+   ~~~shell
+   -Dplay.filters.headers.frameOptions=null
    ~~~
 
 
