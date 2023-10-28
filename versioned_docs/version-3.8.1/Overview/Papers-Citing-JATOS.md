@@ -11,8 +11,9 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
-Gemignani, M., Giannotti, M., Rigo, P., de Falco, S. (2023) Attentional bias to infant faces might be associated with previous care experiences and involvement in childcare in same-sex mothers,
-*International Journal of Clinical and Health Psychology* [DOI](https://doi.org/10.1016/j.ijchp.2023.100419)
+Peterson, L.M., Clifford, C.W.G., Palmer, C.J. (2023) Detection of Mooney faces is robust to image asymmetries produced by illumination. *Journal of Vision* [DOI](https://doi.org/10.1167/jov.23.12.9)
+
+Gemignani, M., Giannotti, M., Rigo, P., de Falco, S. (2023) Attentional bias to infant faces might be associated with previous care experiences and involvement in childcare in same-sex mothers. *International Journal of Clinical and Health Psychology* [DOI](https://doi.org/10.1016/j.ijchp.2023.100419)
 
 Schreiner, M.R., Hütter, M. (2023) The Influence of Social Status on Memory: No Evidence for Effects of Social Status on Event Element Binding. *Social Cognition*  [DOI](https://doi.org/10.1521/soco.2023.41.5.447)
 
