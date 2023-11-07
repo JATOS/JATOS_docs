@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Loaiza, V.M., Cheung, H.W. & Goldenhaus-Manning, D.T. (2023) What you don’t know can’t hurt you: Retro-cues benefit working memory regardless of prior knowledge in long-term memory. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-023-02408-w)
+
+Everhardt, M.K., Sarampalis, A., Coler, M., Başkent, D. Lowie, W. (2023) Prosodic Focus Interpretation in Spectrotemporally Degraded Speech by Non-Native Listeners. *Journal of Speech, Language, and Hearing Research* [DOI](https://doi.org/10.1044/2023_JSLHR-22-00568)
+
 Schreiner, M. R., Bröder, A., & Meiser, T. (2023). Agency effects on the binding of event elements in episodic memory. *Quarterly Journal of Experimental Psychology* [DOI](https://doi.org/10.1177/17470218231203951)
 
 Rieger, T., Manzey, D., Meussling, B., Onnasch, L., Roesler, E. (2023) Be careful what you explain: Benefits and costs of explainable AI in a simulated medical task. *Computers in Human Behavior: Artificial Humans*. [DOI](https://doi.org/10.1016/j.chbah.2023.100021)
