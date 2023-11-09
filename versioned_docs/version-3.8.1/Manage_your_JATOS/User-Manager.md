@@ -25,6 +25,7 @@ If you're an admin and need to get more information about a user's studies, clic
 
 Clicking on the _Export_ button on the top of the page, you can export user data in CSV format. This is useful to e.g. get a list of emails if you need to notify all users about a server downtime, JATOS update, etc.   
 
+
 ## Superusers
 
 By default the ability to turn a user into a Superuser is deactivated and has to be activated in `conf/jatos.conf` (or `conf/production.conf` in version < 3.8.3) by adding:
@@ -37,6 +38,7 @@ Then every user can be granted the Superuser role by checking the corresponding 
 
 Superusers can access all studies on this JATOS instance regardless if they were added as a member user. This includes changing the study properties, accessing the result data or deleting the study. This is useful for single-lab or training JATOS installations where one user needs fast access to everything to help other researchers or students. However unlike Admin users Superusers cannot access the Administration page or manage other users.
 
+
 ## Authentication via LDAP
 
 JATOS allows password authentication via LDAP (which lets an institution manage their users in a centralized way). LDAP is disabled by default. To enable it [change the JATOS config file](JATOS_Configuration.html#ldap-authentication). 
@@ -44,6 +46,7 @@ JATOS allows password authentication via LDAP (which lets an institution manage 
 Once LDAP is enabled, there will be an additional checkbox 'LDAP' on the overlay dialog when an admin creates a new user. Check this box to enforce authentication by LDAP. Normal JATOS users (locally authenticated) and LDAP users can co-exist in the same JATOS instance.
 
 At the moment it is not possible to let JATOS create LDAP users automatically - they must be created by an JATOS admin manually.
+
 
 ## Authentication via Google Sign-In
 
@@ -54,3 +57,15 @@ jatos.user.authentication.oauth.googleClientId = "1234567890-abc123abc123.apps.g
 ```
 
 If a new user authenticates the first time with Google Sign-In the user will be automatically created in JATOS. This means a 'Google' user cannot be created by a JATOS Admin.
+
+
+## Authentication via OpenId Connect (OIDC)
+
+Since version 3.8.5 JATOS users can be authenticated by [OIDC](https://openid.net/developers/how-connect-works/). OIDC is an authentication protocol that offers an easy-to-use _Sign in with ABC_ button. It needs an OIDC provider that is not part of JATOS (e.g. [Keycloak](https://www.keycloak.org/)). You can find more about [how to configure JATOS to use OIDC](/JATOS_Configuration.html#openid-connect-oidc) in the JATOS configuration page.
+
+
+## Authentication via ORCID (orcid.org)
+
+Since version 3.8.5 JATOS users can be authenticated by [ORCID sign-in](https://info.orcid.org/documentation/features/public-api/orcid-as-a-sign-in-option-to-your-system/). ORCID offers an easy way to configure and use a _Sign in with ORCID_ button.
+
+You only need to set up two arguments in JATOS configuration to make your JATOS use ORCID's authentication: your ORCID _client ID_ and _client secret_. Read [here](https://info.orcid.org/documentation/integration-guide/registering-a-public-api-client/) more about how to get these (but the short version is: Go to your ORCID user page -> expand your username top right: click _Developer Tools_). Then [configure your JATOS with the client ID and secret](/JATOS_Configuration.html#orcid-orcidorg-authentication).

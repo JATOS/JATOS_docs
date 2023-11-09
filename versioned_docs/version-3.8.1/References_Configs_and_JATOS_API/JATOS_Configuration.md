@@ -589,6 +589,164 @@ Specifies the [Google API client ID](https://developers.google.com/identity/oaut
    ~~~
 
 
+## OpenID Connect (OIDC)
+
+(Only in version >= 3.8.5)
+
+JATOS users can be authenticated by [OIDC sign-in](https://openid.net/developers/how-connect-works/).
+
+### OIDC discovery URL
+
+Specifies the OIDC provider's discovery URL. It usually ends in _.well-known/openid-configuration_.
+
+1. Via **config file** property `jatos.user.authentication.oidc.discoveryUrl`
+
+   ~~~shell
+   jatos.user.authentication.oidc.discoveryUrl = "http://myOidcProvider/.well-known/openid-configuration"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.oidc.discoveryUrl`
+
+   ~~~shell
+   -Djatos.user.authentication.oidc.discoveryUrl="http://myOidcProvider/.well-known/openid-configuration"
+   ~~~
+
+### OIDC client ID
+
+Specifies the OIDC client ID. Not set or an empty string disables authentication via OIDC Sign-In. Default is empty (`""`).
+
+1. Via **config file** property `jatos.user.authentication.oidc.clientId`
+
+   ~~~shell
+   jatos.user.authentication.oidc.clientId = "myClientId"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.oidc.clientId`
+
+   ~~~shell
+   -Djatos.user.authentication.oidc.clientId="myClientId"
+   ~~~
+
+### OIDC client secret
+
+Specifies the OIDC client secret. This is optional and can be left empty (`""`).
+
+1. Via **config file** property `jatos.user.authentication.oidc.clientSecret`
+
+   ~~~shell
+   jatos.user.authentication.oidc.clientSecret = "myClientSecret"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.oidc.clientSecret`
+
+   ~~~shell
+   -Djatos.user.authentication.oidc.clientSecret="myClientSecret"
+   ~~~
+
+### OIDC ID token signing algorithm
+
+Specifies the OIDC ID token signing algorithm. Default is `RS256`.
+
+1. Via **config file** property `jatos.user.authentication.oidc.idTokenSigningAlgorithm`
+
+   ~~~shell
+   jatos.user.authentication.oidc.idTokenSigningAlgorithm = "ES512"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.oidc.idTokenSigningAlgorithm`
+
+   ~~~shell
+   -Djatos.user.authentication.oidc.idTokenSigningAlgorithm="ES512"
+   ~~~
+
+### OIDC sign-in button text
+
+Specifies the text of the OIDC sign-in button on the login page. Default is `Sign in with OIDC`.
+
+1. Via **config file** property `jatos.user.authentication.oidc.signInButtonText`
+
+   ~~~shell
+   jatos.user.authentication.oidc.signInButtonText = "Sign in with ABC university"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.oidc.signInButtonText`
+
+   ~~~shell
+   -Djatos.user.authentication.oidc.signInButtonText="Sign in with ABC university"
+   ~~~
+
+### OIDC sign-in button logo
+
+Specifies the URL of a logo that can be used instead of the standard OIDC logo, e.g. a university logo. Default is the OIDC logo.
+
+1. Via **config file** property `jatos.user.authentication.oidc.signInButtonLogoUrl`
+
+   ~~~shell
+   jatos.user.authentication.oidc.signInButtonLogoUrl = "http://somedomain/logo.svg"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.oidc.signInButtonLogoUrl`
+
+   ~~~shell
+   -Djatos.user.authentication.oidc.signInButtonLogoUrl="http://somedomain/logo.svg"
+   ~~~
+
+### OIDC success feedback
+
+Specifies the text of a message that is shown after a successful sign-in. If left empty (`""`) no message is shown. Default is `""`.
+
+1. Via **config file** property `jatos.user.authentication.oidc.successFeedback`
+
+   ~~~shell
+   jatos.user.authentication.oidc.successFeedback = "You successfully signed in with ABC university"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.oidc.successFeedback`
+
+   ~~~shell
+   -Djatos.user.authentication.oidc.successFeedback="You successfully signed in with ABC university"
+   ~~~
+
+
+## ORCID (orcid.org) authentication
+
+(Only in version >= 3.8.5)
+
+JATOS users can be authenticated by [ORCID sign-in](https://info.orcid.org/documentation/features/public-api/orcid-as-a-sign-in-option-to-your-system/). Internally it is using OpenId Connect.
+
+### ORCID client ID
+
+Specifies your ORCID client ID.
+
+1. Via **config file** property `jatos.user.authentication.orcid.clientId`
+
+   ~~~shell
+   jatos.user.authentication.orcid.clientId = "APP-ABCDEFGHIJKLMNOP"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.orcid.clientId`
+
+   ~~~shell
+   -Djatos.user.authentication.orcid.clientId="APP-ABCDEFGHIJKLMNOP"
+   ~~~
+
+### ORCID client secret
+
+Specifies your ORCID client secret.
+
+1. Via **config file** property `jatos.user.authentication.orcid.clientSecret`
+
+   ~~~shell
+   jatos.user.authentication.orcid.clientSecret = "APP-ABCDEFGHIJKLMNOP"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.orcid.clientSecret`
+
+   ~~~shell
+   -Djatos.user.authentication.orcid.clientSecret="APP-ABCDEFGHIJKLMNOP"
+   ~~~
+
+
 ## User password restrictions
 
 By default JATOS' keeps it simple and relies on the users to choose save passwords: it just enforces a length of at least 7 characters. But this can be changed with the following two properties.
