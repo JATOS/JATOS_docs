@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Magnabosco, F., Hauk, O. (2023) An eye on semantics: a study on the influence of concreteness and predictability on early fixation durations. * Language, Cognition and Neuroscience* [DOI](www.doi.org/10.1080/23273798.2023.2274558)
+
 Oberholzer, Y., Olschewski, S., Scheibehenne, B. Complexity Aversion in Risky Choices and Valuations: Moderators and Possible Causes. *Journal of Economic Psychology*. [DOI](https://doi.org/10.1016/j.joep.2023.102681).
 
 Loaiza, V.M., Cheung, H.W. & Goldenhaus-Manning, D.T. (2023) What you don’t know can’t hurt you: Retro-cues benefit working memory regardless of prior knowledge in long-term memory. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-023-02408-w)
