@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Oberholzer, Y., Olschewski, S., Scheibehenne, B. Complexity Aversion in Risky Choices and Valuations: Moderators and Possible Causes. *Journal of Economic Psychology*. [DOI](https://doi.org/10.1016/j.joep.2023.102681).
+
 Loaiza, V.M., Cheung, H.W. & Goldenhaus-Manning, D.T. (2023) What you don’t know can’t hurt you: Retro-cues benefit working memory regardless of prior knowledge in long-term memory. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-023-02408-w)
 
 Everhardt, M.K., Sarampalis, A., Coler, M., Başkent, D. Lowie, W. (2023) Prosodic Focus Interpretation in Spectrotemporally Degraded Speech by Non-Native Listeners. *Journal of Speech, Language, and Hearing Research* [DOI](https://doi.org/10.1044/2023_JSLHR-22-00568)
