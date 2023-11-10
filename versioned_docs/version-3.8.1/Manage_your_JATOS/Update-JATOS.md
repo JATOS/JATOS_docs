@@ -43,7 +43,7 @@ The process is pretty self-explanatory, but anyway, we'll explain it here in det
 
 ### (Auto-)Update to a specific version
 
-Sometimes, for whatever reasons, JATOS doesn't autmatically detect new versions then you can still start the update by specifying the version.
+Sometimes, for whatever reasons, JATOS doesn't automatically detect new versions. Then you can still start the update by specifying the version.
 
 **It is usually destructive to update JATOS to a lower version than is currently installed. It's highly recommended to use a higher version (or the same). Use at your own risk.**
 

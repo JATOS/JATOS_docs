@@ -61,11 +61,15 @@ If a new user authenticates the first time with Google Sign-In the user will be 
 
 ## Authentication via OpenId Connect (OIDC)
 
-Since version 3.8.5 JATOS users can be authenticated by [OIDC](https://openid.net/developers/how-connect-works/). OIDC is an authentication protocol that offers an easy-to-use _Sign in with ABC_ button. It needs an OIDC provider that is not part of JATOS (e.g. [Keycloak](https://www.keycloak.org/)). You can find more about [how to configure JATOS to use OIDC](/JATOS_Configuration.html#openid-connect-oidc) in the JATOS configuration page.
+Since version 3.8.5 JATOS users can be authenticated by [OIDC](https://openid.net/developers/how-connect-works/). OIDC is an authentication protocol that offers an easy-to-use sign in button. It needs an OIDC provider that is not part of JATOS (e.g. [Keycloak](https://www.keycloak.org/)). You can find more about [how to configure JATOS to use OIDC](/JATOS_Configuration.html#openid-connect-oidc) in the JATOS configuration page.
+
+If a new user authenticates the first time with OIDC the user will be automatically created in JATOS. This means an OIDC user cannot be created by a JATOS Admin.
 
 
 ## Authentication via ORCID (orcid.org)
 
 Since version 3.8.5 JATOS users can be authenticated by [ORCID sign-in](https://info.orcid.org/documentation/features/public-api/orcid-as-a-sign-in-option-to-your-system/). ORCID offers an easy way to configure and use a _Sign in with ORCID_ button.
 
-You only need to set up two arguments in JATOS configuration to make your JATOS use ORCID's authentication: your ORCID _client ID_ and _client secret_. Read [here](https://info.orcid.org/documentation/integration-guide/registering-a-public-api-client/) more about how to get these (but the short version is: Go to your ORCID user page -> expand your username top right: click _Developer Tools_). Then [configure your JATOS with the client ID and secret](/JATOS_Configuration.html#orcid-orcidorg-authentication).
+You only need to set two parameters in JATOS' configuration to make your JATOS use ORCID's authentication: your ORCID _client ID_ and _client secret_. Read [here](https://info.orcid.org/documentation/integration-guide/registering-a-public-api-client/) more about how to get these (but the short version is: Go to your ORCID user page -> expand your username top right: click _Developer Tools_). Then [configure your JATOS with your client ID and secret](/JATOS_Configuration.html#orcid-orcidorg-authentication).
+
+If a new user authenticates the first time with ORCID the user will be automatically created in JATOS. This means an ORCID user cannot be created by a JATOS Admin.

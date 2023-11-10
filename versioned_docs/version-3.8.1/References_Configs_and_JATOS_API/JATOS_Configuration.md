@@ -712,7 +712,7 @@ Specifies the text of a message that is shown after a successful sign-in. If lef
 
 (Only in version >= 3.8.5)
 
-JATOS users can be authenticated by [ORCID sign-in](https://info.orcid.org/documentation/features/public-api/orcid-as-a-sign-in-option-to-your-system/). Internally it is using OpenId Connect.
+JATOS users can be authenticated by [ORCID sign-in](https://info.orcid.org/documentation/features/public-api/orcid-as-a-sign-in-option-to-your-system/). Internally ORCID uses OpenId Connect.
 
 ### ORCID client ID
 

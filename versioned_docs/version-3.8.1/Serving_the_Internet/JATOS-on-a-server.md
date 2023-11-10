@@ -83,7 +83,7 @@ See [JATOS with MySQL](JATOS-with-MySQL.html)
 
 ## Configuration
 
-These docs have an extra page on [JATOS Configuration](JATOS_Configuration.html).
+These docs have an extra page on [JATOS Configuration](JATOS_Configuration.html). E.g. you can add user authentication with ORCID (orcid.org), OpenID Connect (OIDC), LDAP, or Google Sign-in.
 
 
 ## [Optional] Proxy and encryption
