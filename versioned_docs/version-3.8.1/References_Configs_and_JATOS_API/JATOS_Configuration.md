@@ -589,7 +589,7 @@ Specifies the [Google API client ID](https://developers.google.com/identity/oaut
    ~~~
 
 
-## OpenID Connect (OIDC)
+## OpenID Connect (OIDC) authentication
 
 (Only in version >= 3.8.5)
 
