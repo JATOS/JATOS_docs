@@ -737,13 +737,13 @@ Specifies your ORCID client secret.
 1. Via **config file** property `jatos.user.authentication.orcid.clientSecret`
 
    ~~~shell
-   jatos.user.authentication.orcid.clientSecret = "APP-ABCDEFGHIJKLMNOP"
+   jatos.user.authentication.orcid.clientSecret = "1234abcd-12ab-12ab-12ab-123456abcdef"
    ~~~
 
 1. Via **command-line** argument `-Djatos.user.authentication.orcid.clientSecret`
 
    ~~~shell
-   -Djatos.user.authentication.orcid.clientSecret="APP-ABCDEFGHIJKLMNOP"
+   -Djatos.user.authentication.orcid.clientSecret="1234abcd-12ab-12ab-12ab-123456abcdef"
    ~~~
 
 
