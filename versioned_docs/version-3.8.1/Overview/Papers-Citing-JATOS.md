@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Marks, R.A., Eggleston, R., Kovelman, I. (2023) Brain bases of morphological awareness and longitudinal word reading outcomes. *Journal of Experimental Child Psychology*. [DOI](https://doi.org/10.1016/j.jecp.2023.105802)
+
 Magnabosco, F., Hauk, O. (2023) An eye on semantics: a study on the influence of concreteness and predictability on early fixation durations. *Language, Cognition and Neuroscience*. [DOI](www.doi.org/10.1080/23273798.2023.2274558)
 
 Oberholzer, Y., Olschewski, S., Scheibehenne, B. Complexity Aversion in Risky Choices and Valuations: Moderators and Possible Causes. *Journal of Economic Psychology*. [DOI](https://doi.org/10.1016/j.joep.2023.102681).
