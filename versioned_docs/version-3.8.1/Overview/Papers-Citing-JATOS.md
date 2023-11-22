@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+Hsieh, J.Y.J., Boyce, W.P., Goddard, E. et al. (2023) Colour information biases facial age estimation and reduces inter-observer variability. *Sci Rep*. [DOI](https://doi.org/10.1038/s41598-023-39902-z)
+
 Wang, X., Li, X., Yin, Z., Wu, Y., & Liu, J. (2023). Emotional intelligence of Large Language Models. *Journal of Pacific Rim Psychology*. [DOI](https://doi.org/10.1177/18344909231213958)
 
 Marks, R.A., Eggleston, R., Kovelman, I. (2023) Brain bases of morphological awareness and longitudinal word reading outcomes. *Journal of Experimental Child Psychology*. [DOI](https://doi.org/10.1016/j.jecp.2023.105802)
