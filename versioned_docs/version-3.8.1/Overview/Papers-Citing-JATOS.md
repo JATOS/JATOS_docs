@@ -11,6 +11,9 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2023 
+
+Palmer, C. J., Kim, P., & Clifford, C. W. G. (2023). Gaze behavior as a visual cue to animacy. *Journal of Experimental Psychology: General*. [DOI](https://doi.org/10.1037/xge0001281)
+
 Gurunandan, K., Cooper, E., Tibon, R., Henson, R.N., & Greve, A. (2023) No evidence of fast mapping in healthy adults using an implicit memory measure: failures to replicate the lexical competition results of Coutanche and Thompson-Schill (2014). *Memory*. [DOI](https://doi.org/10.1080/09658211.2023.2262188)
 
 Hsieh, J.Y.J., Boyce, W.P., Goddard, E. et al. (2023) Colour information biases facial age estimation and reduces inter-observer variability. *Sci Rep*. [DOI](https://doi.org/10.1038/s41598-023-39902-z)
