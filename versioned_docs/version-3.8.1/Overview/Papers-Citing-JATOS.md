@@ -14,6 +14,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 Shyr, M.C., Joshi, S.S. (2024) A Case Study of the Validity of Web-based Visuomotor Rotation Experiments. *J Cogn Neurosci* [DOI](https://doi.org/10.1162/jocn_a_02080)
 
 ### 2023
+Fahnenstich, H., Rieger, T., Roesler, E. (2023). Trusting under risk – comparing human to AI decision support agents. *Computers in Human Behavior* [DOI](https://doi.org/10.1016/j.chb.2023.108107)
+
 Smith, H. J., Gilbert, R. A., & Davis, M. H. (2023). Can speech perception deficits cause phonological impairments? Evidence from short-term memory for ambiguous speech. *Journal of Experimental Psychology: General* [DOI](https://doi.org/10.1037/xge0001522)
 
 Godwin, H.J., Hout, M.C. (2023) Just say ‘I don’t know’: Understanding information stagnation during a highly ambiguous visual search task. *PLoS ONE*. [DOI](https://doi.org/10.1371/journal.pone.0295669)
