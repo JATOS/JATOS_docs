@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Garre-Frutos, F., Vadillo, M.A., González, F. et al. (2024) On the reliability of value-modulated attentional capture: An online replication and multiverse analysis. *Behav Res*. [DOI](https://doi.org/10.3758/s13428-023-02329-5)
+
 Mu, Y., Schubö, A. & Tünnermann, J. (2024) Adapting attentional control settings in a shape-changing environment. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-023-02818-x)
 
 Shyr, M.C., Joshi, S.S. (2024) A Case Study of the Validity of Web-based Visuomotor Rotation Experiments. *J Cogn Neurosci* [DOI](https://doi.org/10.1162/jocn_a_02080)
