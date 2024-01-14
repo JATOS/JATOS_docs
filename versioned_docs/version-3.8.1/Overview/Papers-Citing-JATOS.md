@@ -22,6 +22,10 @@ Mu, Y., Schubö, A. & Tünnermann, J. (2024) Adapting attentional control settin
 Shyr, M.C., Joshi, S.S. (2024) A Case Study of the Validity of Web-based Visuomotor Rotation Experiments. *J Cogn Neurosci* [DOI](https://doi.org/10.1162/jocn_a_02080)
 
 ### 2023
+Barnes, L., Rangelov, D., Mattingley, J. B., & Woolgar, A. (2023). Fractionating distraction: How past- and future-relevant distractors influence integrated decisions. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001081)
+
+Modirrousta-Galian, A., Higham, P. A., & Seabrooke, T. (2023). Effects of inductive learning and gamification on news veracity discernment. *Journal of Experimental Psychology: Applied*. [DOI](https://doi.org/10.1037/xap0000458)
+
 Curzel, F., Carraturo, G., Ripollés, P., & Ferreri, L. (2023). Better off alone? When sharing music reduces pleasure responses. *Advances in Cognitive Psychology*. [DOI](https://doi.org/10.5709/acp-0400-6)
 
 Fahnenstich, H., Rieger, T., Roesler, E. (2023). Trusting under risk – comparing human to AI decision support agents. *Computers in Human Behavior* [DOI](https://doi.org/10.1016/j.chb.2023.108107)
