@@ -106,8 +106,6 @@ Xie, T., Fu, S. & Mento, G. (2023) Faces do not guide attention in an object-bas
 
 Ziereis, A., Schacht, A. (2023) Motivated attention and task relevance in the processing of cross-modally associated faces: Behavioral and electrophysiological evidence. *Cogn Affect Behav Neurosci*. [DOI](https://doi.org/10.3758/s13415-023-01112-5)
 
-Liao, MR., Grindell, J.D. & Anderson, B.A. (2023) A comparison of mental imagery and perceptual cueing across domains of attention. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-023-02747-9)
-
 Winkelmair, A., Siebertz, M., Jost, L. et al. (203) Explicit and Implicit Affective Attitudes toward Sustainability: The Role of Mindfulness, Heartfulness, Connectedness to Nature and Prosocialness. *Int J Appl Posit Psychol* [DOI](https://doi.org/10.1007/s41042-023-00107-4)
 
 Mazor, M., Maimon-Mor, R.O., Charles, L. et al.  (2023) Paradoxical evidence weighting in confidence judgments for detection and discrimination. *Atten Percept Psychophys.* [DOI](https://doi.org/10.3758/s13414-023-02710-8)
@@ -183,6 +181,8 @@ Labaronne, M., Jarjat, G., & Plancher, G. (2023). Attentional Refreshing in the 
 Jensen, A., Thériault, L., Yilmaz, E., Pon, E., Davidson, PSR. (2023) Mental rotation, episodic memory, and executive control: Possible effects of biological sex and oral contraceptive use. *Neurobiology of Learning and Memory* [DOI](https://doi.org/10.1016/j.nlm.2023.107720)
 
 ### 2022 
+Kim, A. J., Lee, D. S., Grindell, J. D., & Anderson, B. A. (2022). Selection history and the strategic control of attention. *Journal of Experimental Psychology: Learning, Memory, and Cognition* [DOI](https://doi.org/10.1037/xlm0001194)
+
 Xie, T., Fu, S. & Mento, G. (2022) Can faces affect object-based attention? Evidence from online experiments. *Atten Percept Psychophys* [DOI](https://doi.org/10.3758/s13414-022-02473-8)
 
 Gemignani, M., Giannotti, M., Schmalz, X., Rigo, P., & De Falco, S. (2022). Attentional Prioritization of Infant Faces in Parents: The Influence of Parents’ Experiences of Care. *International Journal of Environmental Research and Public Health*. [DOI](http://dx.doi.org/10.3390/ijerph20010527)
@@ -273,7 +273,6 @@ Ciston, A.B., Forster, C. Brick, TR.,Kühn, S., Verrel, J., Filevich, E. (2022) 
 Sauter, M., Stefani, M. & Mack, W. "Equal Quality for Online and Lab Data: A Direct Comparison from Two Dual-Task Paradigms" *Open Psychology* [DOI](https://doi.org/10.1515/psych-2022-0003)
 
 Lauren A. Homann, Brady R. T. Roberts, Sara Ahmed & Myra A. Fernandes (2022) Are emojis processed visuo-spatially or verbally? Evidence for dual codes *Visual Cognition* [DOI](https://doi.org/10.1080/13506285.2022.2050871)
-
 
 Marocchini E., Domaneschi F. (2022) “Can you read my mind?” Conventionalized indirect requests and Theory of Mind abilities *Journal of Pragmatics* [DOI](https://doi.org/10.1016/j.pragma.2022.03.011)
 
