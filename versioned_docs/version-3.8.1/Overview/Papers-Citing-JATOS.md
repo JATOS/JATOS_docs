@@ -22,6 +22,8 @@ Mu, Y., Schubö, A. & Tünnermann, J. (2024) Adapting attentional control settin
 Shyr, M.C., Joshi, S.S. (2024) A Case Study of the Validity of Web-based Visuomotor Rotation Experiments. *J Cogn Neurosci* [DOI](https://doi.org/10.1162/jocn_a_02080)
 
 ### 2023
+Berkovich, R., & Meiran, N. (2023). Pleasant emotional feelings follow one of the most basic psychophysical laws (weber’s law) as most sensations do. *Emotion* [DOI](https://doi.org/10.1037/emo0001161)
+
 Del Popolo Cristaldi, F., Gambarota, F., & Oosterwijk, S. (2023). Does your past define you? The role of previous visual experience in subjective reactions to new affective pictures and sounds. *Emotion* [DOI](https://doi.org/10.1037/emo0001168)
 
 Barnes, L., Rangelov, D., Mattingley, J. B., & Woolgar, A. (2023). Fractionating distraction: How past- and future-relevant distractors influence integrated decisions. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001081)
