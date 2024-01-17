@@ -22,6 +22,8 @@ Mu, Y., Schubö, A. & Tünnermann, J. (2024) Adapting attentional control settin
 Shyr, M.C., Joshi, S.S. (2024) A Case Study of the Validity of Web-based Visuomotor Rotation Experiments. *J Cogn Neurosci* [DOI](https://doi.org/10.1162/jocn_a_02080)
 
 ### 2023
+Del Popolo Cristaldi, F., Gambarota, F., & Oosterwijk, S. (2023). Does your past define you? The role of previous visual experience in subjective reactions to new affective pictures and sounds. *Emotion* [DOI](https://doi.org/10.1037/emo0001168)
+
 Barnes, L., Rangelov, D., Mattingley, J. B., & Woolgar, A. (2023). Fractionating distraction: How past- and future-relevant distractors influence integrated decisions. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001081)
 
 Modirrousta-Galian, A., Higham, P. A., & Seabrooke, T. (2023). Effects of inductive learning and gamification on news veracity discernment. *Journal of Experimental Psychology: Applied*. [DOI](https://doi.org/10.1037/xap0000458)
@@ -181,6 +183,7 @@ Labaronne, M., Jarjat, G., & Plancher, G. (2023). Attentional Refreshing in the 
 Jensen, A., Thériault, L., Yilmaz, E., Pon, E., Davidson, PSR. (2023) Mental rotation, episodic memory, and executive control: Possible effects of biological sex and oral contraceptive use. *Neurobiology of Learning and Memory* [DOI](https://doi.org/10.1016/j.nlm.2023.107720)
 
 ### 2022 
+
 Kim, A. J., Lee, D. S., Grindell, J. D., & Anderson, B. A. (2022). Selection history and the strategic control of attention. *Journal of Experimental Psychology: Learning, Memory, and Cognition* [DOI](https://doi.org/10.1037/xlm0001194)
 
 Xie, T., Fu, S. & Mento, G. (2022) Can faces affect object-based attention? Evidence from online experiments. *Atten Percept Psychophys* [DOI](https://doi.org/10.3758/s13414-022-02473-8)
