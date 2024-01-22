@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Soto, D., Salazar, A., Elosegi, P. et al. (2024) A novel image database for social concepts reveals preference biases in autistic spectrum in adults and children. *Psychon Bull Rev* [DOI](https://doi.org/10.3758/s13423-023-02443-7)
+
 Martin, C.D., Pastureau, R., Kerr, E. and de Bruin, A. (2024) Processing of Synonyms and Homographs in Bilingual and Monolingual Speakers.  *Journal of Cognition* [DOI](https://doi.org/10.5334/joc.329)
 
 Grootswagers T, Robinson AK, Shatek SM, Carlson TA (2024) Mapping the dynamics of visual feature coding: Insights into perception and integration. *PLoS Comput Biol* [DOI](https://doi.org/10.1371/journal.pcbi.1011760)
