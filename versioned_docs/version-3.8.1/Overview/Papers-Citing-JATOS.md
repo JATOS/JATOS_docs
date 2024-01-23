@@ -24,6 +24,8 @@ Mu, Y., Schubö, A. & Tünnermann, J. (2024) Adapting attentional control settin
 Shyr, M.C., Joshi, S.S. (2024) A Case Study of the Validity of Web-based Visuomotor Rotation Experiments. *J Cogn Neurosci* [DOI](https://doi.org/10.1162/jocn_a_02080)
 
 ### 2023
+Yang, W., and Rauwolf, P., Frances, C., Wei, Y., Molina-Nieto, O., Duñabeitia, J.A., Thierry, G. (2023) Evidence for Strategic Language Use in Chinese-English Bilinguals. *SSRN* [DOI](http://dx.doi.org/10.2139/ssrn.4396191)
+
 
 Berkovich, R., & Meiran, N. (2023). Pleasant emotional feelings follow one of the most basic psychophysical laws (weber’s law) as most sensations do. *Emotion* [DOI](https://doi.org/10.1037/emo0001161)
 
