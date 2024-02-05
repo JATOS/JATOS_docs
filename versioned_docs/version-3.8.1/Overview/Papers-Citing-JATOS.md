@@ -11,6 +11,12 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Lallement, C., Lemaire, P. (2024) Are There Age-Related Differences in Effects of Positive and Negative Emotions in Arithmetic? *Experimental Psychology* [DOI](https://doi.org/10.1027/1618-3169/a000595)
+
+Vandendaele, A., Prutean, N. and Declerck, M. (2024). A Blessing in Disguise: Flanking Words Can Cancel Language Switch Costs.  *Journal of Cognition* [DOI](https://doi.org/10.5334/joc.332)
+
+Moore, C.M., Zheng, Q. (2024) Limited midlevel mediation of visual crowding: Surface completion fails to support uncrowding. *Journal of Vision* [DOI](https://doi.org/10.1167/jov.24.1.11)
+
 Oppenheim, G.M., Nozari, N. (2024) Similarity-induced interference or facilitation in language production reflects representation, not selection. *Cognition* [DOI](https://doi.org/10.1016/j.cognition.2024.105720)
 
 Soto, D., Salazar, A., Elosegi, P. et al. (2024) A novel image database for social concepts reveals preference biases in autistic spectrum in adults and children. *Psychon Bull Rev* [DOI](https://doi.org/10.3758/s13423-023-02443-7)
