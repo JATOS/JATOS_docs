@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+van Moorselaar D, Theeuwes J. (2024) Spatial transfer of object-based statistical learning. *Atten Percept Psychophys* [DOI](http://doi.org/10.3758/s13414-024-02852-3)
+
 Lallement, C., Lemaire, P. (2024) Are There Age-Related Differences in Effects of Positive and Negative Emotions in Arithmetic? *Experimental Psychology* [DOI](https://doi.org/10.1027/1618-3169/a000595)
 
 Vandendaele, A., Prutean, N. and Declerck, M. (2024). A Blessing in Disguise: Flanking Words Can Cancel Language Switch Costs.  *Journal of Cognition* [DOI](https://doi.org/10.5334/joc.332)
