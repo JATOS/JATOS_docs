@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Corradi G, Aguilar P, Aguiar F, Olivera-La Rosa A (2024) Age and moral disgust: An experimental priming effects vignette study. *PLoS ONE* [DOI](https://doi.org/10.1371/journal.pone.0295039)
+
 Del Popolo Cristaldi F., Buodo G., Gambarota F., Oosterwijk S., Mento G. (2024) How previous experience shapes future affective subjective ratings: A follow-up study investigating implicit learning and cue ambiguity. *PLoS ONE* [DOI](https://doi.org/10.1371/journal.pone.0297954)
 
 Bognar, M., Szekely, Z., Varga, M.A. et al. (2024 )Cognitive control adjustments are dependent on the level of conflict. *Sci Rep* [DOI](https://doi.org/10.1038/s41598-024-53090-4)
