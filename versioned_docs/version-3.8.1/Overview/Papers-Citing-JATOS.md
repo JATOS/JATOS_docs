@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Nguyen, N., Lancia, L., Huttner, L., Schwartz, J., & Diard, J. (2024). Listeners' convergence towards an artificial agent in a joint phoneme categorization task. *Glossa Psycholinguistics*. [DOI](http://dx.doi.org/10.5070/G6011165)
+
 Theeuwes, J., Huang, C., Frings, C., & van Moorselaar, D. (2024). Statistical learning of motor preparation. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001174)
 
 Corradi G, Aguilar P, Aguiar F, Olivera-La Rosa A (2024) Age and moral disgust: An experimental priming effects vignette study. *PLoS ONE* [DOI](https://doi.org/10.1371/journal.pone.0295039)
