@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Grignolio, D., Acunzo, D. J., & Hickey, C. (2024). Object-based attention is accentuated by object reward association. *Journal of Experimental Psychology: Human Perception and Performance* [DOI](https://doi.org/10.1037/xhp0001177)
+
 Vainre M, Dalgleish T, Watson P, et al Work Engagement and Well-being Study (SWELL): a randomised controlled feasibility trial evaluating the effects of mindfulness versus light physical exercise at work. *BMJ Ment Health*. [DOI](https://doi.org/10.1136/bmjment-2023-300885)
 
 Nguyen, N., Lancia, L., Huttner, L., Schwartz, J., & Diard, J. (2024). Listeners' convergence towards an artificial agent in a joint phoneme categorization task. *Glossa Psycholinguistics*. [DOI](http://dx.doi.org/10.5070/G6011165)
