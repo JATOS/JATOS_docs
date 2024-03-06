@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Smith, A.J., Bisby, J.A., Dercon, Q. et al. (2024) Hot metacognition: poorer metacognitive efficiency following acute but not traumatic stress. *Transl Psychiatry* [DOI](https://doi.org/10.1038/s41398-024-02840-z)
+
 Grignolio, D., Acunzo, D. J., & Hickey, C. (2024). Object-based attention is accentuated by object reward association. *Journal of Experimental Psychology: Human Perception and Performance* [DOI](https://doi.org/10.1037/xhp0001177)
 
 Vainre M, Dalgleish T, Watson P, et al Work Engagement and Well-being Study (SWELL): a randomised controlled feasibility trial evaluating the effects of mindfulness versus light physical exercise at work. *BMJ Ment Health*. [DOI](https://doi.org/10.1136/bmjment-2023-300885)
