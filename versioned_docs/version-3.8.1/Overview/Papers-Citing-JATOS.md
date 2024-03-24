@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Liapi, A., Silva, S., Folia, V. (2024) Duration Perception and Reading in Typically Developing Adults and Adults with Developmental Dyslexia: Implications for Assessment and Intervention. *Eur. J. Investig. Health Psychol. Educ.* [DOI](https://doi.org/10.3390/ejihpe14030046)
+
 Sidhu, A., Uiga, L., Langley, B. et al. (2024) Reduced influence of perceptual context in mild traumatic brain injury is not an illusion. *Sci Rep* [DOI](https://doi.org/10.1038/s41598-024-56713-y)
 
 Smith, A.J., Bisby, J.A., Dercon, Q. et al. (2024) Hot metacognition: poorer metacognitive efficiency following acute but not traumatic stress. *Transl Psychiatry* [DOI](https://doi.org/10.1038/s41398-024-02840-z)
