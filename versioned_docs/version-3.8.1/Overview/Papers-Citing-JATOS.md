@@ -11,6 +11,9 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+
+Sulpizio, S., Spinelli, G. & Scaltritti, M. (2024) Semantic Stroop interference is modulated by the availability of executive resources: Insights from delta-plot analyses and cognitive load manipulation. *Mem Cogn*. [DOi](https://doi.org/10.3758/s13421-024-01552-5)
+
 Liapi, A., Silva, S., Folia, V. (2024) Duration Perception and Reading in Typically Developing Adults and Adults with Developmental Dyslexia: Implications for Assessment and Intervention. *Eur. J. Investig. Health Psychol. Educ.* [DOI](https://doi.org/10.3390/ejihpe14030046)
 
 Sidhu, A., Uiga, L., Langley, B. et al. (2024) Reduced influence of perceptual context in mild traumatic brain injury is not an illusion. *Sci Rep* [DOI](https://doi.org/10.1038/s41598-024-56713-y)
