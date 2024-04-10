@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Chan, Y. Y., Lee, J. C., Fam, J. P., Westbrook, R. F., & Holmes, N. M. (2024). The role of uncertainty in regulating associative change. *Journal of Experimental Psychology: Animal Learning and Cognition* [DOI](https://doi.org/10.1037/xan0000375)
+
 Xu, H., Armony, J.L. (2024) Arousal level and exemplar variability of emotional face and voice encoding influence expression-independent identity recognition. *Motiv Emot* [DOI](https://doi.org/10.1007/s11031-024-10066-1)
 
 Theeuwes, L., Snell, L., Koning, T., Bucker, B. (2024) Self-Explaining Roads: Effects of road design on speed choice *Transportation Research Part F: Traffic Psychology and Behaviour* [DOI](https://doi.org/10.1016/j.trf.2024.03.007)
