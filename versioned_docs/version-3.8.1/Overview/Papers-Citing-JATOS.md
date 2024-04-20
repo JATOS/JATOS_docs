@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Salava, A. Salmela, V. (2024) Diagnostic errors during perceptual learning in dermatology: a prospective cohort study of Finnish undergraduate students. *Clinical and Experimental Dermatology*. [DOI](https://doi.org/10.1093/ced/llae063)
+
 Béna, J., Lacassagne, D., & Corneille, O. (2024). EXPRESS: Do Uncontrolled Processes Contribute to Evaluative Learning? Insights From a New Two-US Process Dissociation Procedure and Ambivalence Measures. *Quarterly Journal of Experimental Psychology* [DOI](https://doi.org/10.1177/17470218241248138)
 
 Chan, Y. Y., Lee, J. C., Fam, J. P., Westbrook, R. F., & Holmes, N. M. (2024). The role of uncertainty in regulating associative change. *Journal of Experimental Psychology: Animal Learning and Cognition* [DOI](https://doi.org/10.1037/xan0000375)
