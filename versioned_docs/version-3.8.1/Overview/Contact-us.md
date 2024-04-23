@@ -35,6 +35,6 @@ If you would like to report a bug or suggest a new feature that could improve JA
 ### Email
 If for some reason you don't want to use the public group or CogSci forum you can also write us directly. (But we prefer that you use any of the other two options as your question might help others. We get notified of new posts immediately.).  
 
-elisa.filevich@gmail.com 
+elisa.filevich@jatos.org
 
-lange.kristian@gmail.com
+kristian.lange@jatos.org
