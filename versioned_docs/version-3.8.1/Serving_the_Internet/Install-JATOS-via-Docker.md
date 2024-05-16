@@ -36,6 +36,8 @@ Also have a look at [JATOS with Docker Compose](/JATOS-with-Docker-Compose.html)
    The `-d` argument specifies to run this container in detached mode (in the background) and the `-p` is responsible for the port mapping.
 
 1. You can check that the new container is running correctly:
+
+   In the following instructions, if you are on a remote host, change `localhost` to your IP/domain.
    
    * Use `docker ps` in the terminal: in the line with `jatos/jatos` the status should say `up`
    * Use curl: `curl http://localhost:9000/ping` should give you `pong` back
