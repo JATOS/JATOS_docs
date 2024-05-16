@@ -21,7 +21,7 @@ Also have a look at [JATOS with Docker Compose](/JATOS-with-Docker-Compose.html)
    docker pull jatos/jatos:latest
    ```
    
-   * or a specific [release](https://github.com/JATOS/JATOS/releases) (exchange _x.x.x_ with the version):
+   * or a specific [release](https://hub.docker.com/r/jatos/jatos/tags) (exchange _x.x.x_ with the version):
 
    ```shell
    docker pull jatos/jatos:x.x.x
@@ -30,23 +30,23 @@ Also have a look at [JATOS with Docker Compose](/JATOS-with-Docker-Compose.html)
 1. Run JATOS (change _latest_ to your version)
 
    ```shell
-   docker run -d -p 9000:9000 jatos/jatos:latest
+   docker run -d -p 80:9000 jatos/jatos:latest
    ```
    
    The `-d` argument specifies to run this container in detached mode (in the background) and the `-p` is responsible for the port mapping.
 
 1. You can check that the new container is running correctly:
 
-   In the following instructions, if you are on a remote host, change `localhost` to your IP/domain.
+   In the following instructions, if you are on a remote host, change `127.0.0.1` to your IP/domain.
    
    * Use `docker ps` in the terminal: in the line with `jatos/jatos` the status should say `up`
-   * Use curl: `curl http://localhost:9000/ping` should give you `pong` back
-   * In a browser go to [localhost:9000](http://localhost:9000) - it should show the JATOS login screen
-   * Check JATOS' admin page: [localhost:9000/jatos/admin](http://localhost:9000/jatos/admin)
+   * Use curl: `curl http://127.0.0.1/ping` should give you `pong` back
+   * In a browser go to [http://127.0.0.1](http://127.0.0.1) - it should show the JATOS login screen
+   * Check JATOS' administration page: [http://127.0.0.1/jatos/admin](http://127.0.0.1/jatos/admin)
      * Run the _Tests_: all should show an 'OK'
      * Check the _System Info_ that it is all like you configured it
 
-1. Always change the admin's password after first installation: Go to [http://localhost:9000/jatos/user/admin](http://localhost:9000/jatos/user/admin) and and press button _Change Password_.
+1. Always change the admin's password after first installation: Go to [http://127.0.0.1/jatos/user/admin](http://127.0.0.1/jatos/user/admin) and and press button _Change Password_.
 
 
 ## Debugging and Troubleshooting
