@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Oz-Cohen, E., Berkovich, R. & Meiran, N. (2024) Bumpy ride ahead: Anticipated effort as emotional evidence?. *Cogn Affect Behav Neurosci*. [DOI](https://doi.org/10.3758/s13415-024-01194-9)
+
 Morriss, J., Lee, C.E., Wood, A. et al. (2024) Attentional bias to uncertainty-based information: a conceptual replication of Fergus et al. (2013). *Curr Psychol* [DOI](https://doi.org/10.1007/s12144-024-06067-5)
 
 Berry, C. J., & Shanks, D. R. (2024). Everyday amnesia: Residual memory for high confidence misses and implications for decision models of recognition. *Journal of Experimental Psychology: General* [DOI](https://doi.org/10.1037/xge0001599)
