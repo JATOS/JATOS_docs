@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Berkovich, R., & Meiran, N. (2024). Both pleasant and unpleasant emotional feelings follow Weber’s law but it depends how you ask. *Emotion* [DOI](https://doi.org/10.1037/emo0001343)
+
 Oz-Cohen, E., Berkovich, R. & Meiran, N. (2024) Bumpy ride ahead: Anticipated effort as emotional evidence?. *Cogn Affect Behav Neurosci*. [DOI](https://doi.org/10.3758/s13415-024-01194-9)
 
 van Moorselaar, D., & Theeuwes, J. (2024). Transfer of statistical learning between tasks. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001216)
