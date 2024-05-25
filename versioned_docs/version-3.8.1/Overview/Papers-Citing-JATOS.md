@@ -11,7 +11,7 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
-Curzel, F., Osiurak, F., Trân, E., Tillmann, B. Ripollés, P., Ferreri, L. (2024) Increased pleasure positively influences prosocial behavior and memory outcomes. *iScience* [DOI](https://doi.org/10.1016/ j.isci.2024.109964)
+Curzel, F., Osiurak, F., Trân, E., Tillmann, B. Ripollés, P., Ferreri, L. (2024) Increased pleasure positively influences prosocial behavior and memory outcomes. *iScience* [DOI](https://doi.org/10.1016/j.isci.2024.109964)
 
 Berkovich, R., & Meiran, N. (2024). Both pleasant and unpleasant emotional feelings follow Weber’s law but it depends how you ask. *Emotion* [DOI](https://doi.org/10.1037/emo0001343)
 
