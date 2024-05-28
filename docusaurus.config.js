@@ -99,7 +99,7 @@ const config = {
             label: 'Contact'
           },
           {
-            to: 'https://ko-fi.com/jatos',
+            to: '/Support-us',
             label: 'Support us',
             position: 'right'
           },
