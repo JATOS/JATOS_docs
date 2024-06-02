@@ -13,7 +13,7 @@ After you [created a new study](Create-a-new-study.html) ... what comes next?
 
 If you have an empty study you want to add a component. A component corresponds to a webpage defined by an HTML file. A study can have more than one component - this is actually a strength of JATOS: e.g. one can combine different experiments into one, or easily add an survey to an existing experiment.
 
-To add a component go to your study and click on 'New Component'.
+To add a component go to your study page and click on **New Component**.
 
 ![New Component](/img/v39x/new-component.png)
 
@@ -21,12 +21,16 @@ Then in the following form you define the component's 'Title' and most important
 
 ![New Component](/img/v39x/new-component-properites.png)
 
-Click on 'Add' and you are done. You can change the component's properties by clicking on 'Properties' in the component's row. If you add more than one component you can change the order in which they run by drag-and-drop on the position button.
+Click on **Add** and you are done. You can change the component's properties by clicking on 'Properties' in the component's row. If you add more than one component you can change the order in which they run by drag-and-drop on the position button.
+
+![Position Component](/img/v39x/component-position-dragndrop.png)
 
 
 ## Study assets
 
-All your files (e.g. HTML, CSS, JavaScript and media files) go into your study assets directory. That includes all component's HTML files. You can find the study assets directory in a directory called `study_assets_root` in your JATOS installation directory. The study assets directory's name is defined in your study properties.
+All your files (e.g. HTML, CSS, JavaScript and media files) go into your study assets directory. That includes all component's HTML files. You can find the study assets directory in a directory called `study_assets_root` in your JATOS installation directory. You can change the study assets directory's name in the study properties, but it's usually not necessary.
+
+![Position Component](/img/v39x/study-assets-name.png)
 
 
 ## Mandatory lines in your components' HTML
@@ -66,7 +70,7 @@ You probably want to save the data that is collected during your experiments. Th
 In your JavaScript you will use _jatos.js_ to handle everything JATOS related and in its [reference](jatos.js-Reference.html) every function and field is described in detail.
 
 
-## Study input and component Input
+## Study input and component input
 
 Your experiment is defined by its source code, its HTML, JavaScript and CSS. There you specify all text or parameters. But sometimes you want to be able to quickly change your experiment without touching the source code.
 

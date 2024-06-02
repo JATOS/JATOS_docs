@@ -4,18 +4,18 @@ slug: /Run-your-Study-with-Study-Links.html
 sidebar_position: 2
 ---
 
-Study Links in JATOS is the name of a page where one can generate study links for your particpants to run your study. You can also organize your participants into batches and handle their results there. In earlier versions of JATOS it was called Worker and Batch Manager.
+Study Links in JATOS is the name of a page where one can generate study links for your participants (also called workers in JATOS) to run your study. You can also organize your participants into batches and handle their results there.
 
-To get to the Study Links page press on the button with the same name in your study's page:
+To get to the Study Links page press on the button **Study Links** in your study's page:
 
 ![Study Links Button screenshot](/img/v39x/study_links_1.png)
 
-This Study Links page has only one batch, the 'Default' one. A batch can have study links of different type, e.g. Personal Single, Personal Multiple etc:
+In the beginning every study has only one batch, the 'Default' one, but more can be added. A batch can have study links of different type, e.g. Personal Single, Personal Multiple etc:
 
 ![Study Links page screenshot](/img/v39x/study_links_2.png)
 
 
-## Study Links - How to let participants run your study
+## Study links - How to let participants run your study
 
 During development of your study you would usually run it with the "Run" button in the study page. But then, when you are done developing you want to let others run your study - you want participants (or workers as they are called in JATOS) do it. For this JATOS lets you create study links that you can hand out to your workers (e.g. via email or social media).
 
@@ -25,25 +25,25 @@ JATOS has different study link types and each type corresponds to a worker type 
 
 ![Study Links page screenshot](/img/v39x/study_links_3.png)
 
-Click on the "<span class="glyphicon glyphicon-chevron-right"></span>" button in the left of the batch row (red box) to expand the study link types (if it's not already expanded).
+Click on the "**▼**" button in the left of the batch row (red box) to expand the study link types (if it's not already expanded).
 
 ![Study Links page screenshot](/img/v39x/study_links_7.png)
 
-You can de-/activate a study link type by clicking in the checkboxes in the left of each row (red box). Decactived types cannot be used to run a study. Always check before you send out study links that the corresponding types are activated.
+You can de-/activate a study link type by clicking on the switch in the left of each row (red box). Deactivated types cannot be used to run a study. Always check before you send out study links that the corresponding types are activated.
 
 
 ### Personal type links: Personal Single or Personal Multiple
 
 ![Study Links page screenshot](/img/v39x/study_links_4.png)
 
-Personal type links can be either Single or Multiple. You can find more details about them in the [Worker Types](Worker-Types.html) page, but the gist is that the links are meant to be handed to individual workers (hence _Personal_). Personal Single links can be used once, whereas Personal Multiple can be used many times.
+Personal type links can be either "Single" or "Multiple". You can find more details about them in the [Worker Types](Worker-Types.html) page, but the gist is that the links are meant to be handed to individual workers (hence _Personal_). Personal Single links can be used once, whereas Personal Multiple can be used many times.
 
-After clicking the Study Links button you get a new window where you can create and manage the study links of this type.
+After clicking the **Study Links** button you get a new window where you can create and manage the study links of this type.
 
 ![Study Links page screenshot](/img/v39x/study_links_11.png)
 
-1. This button creates one study link without a comment. This button is a shortcut to the 'New Study Links' button.
-1. Lets you create several study links and lets you add a comment to them. The comment is only a hint for you that you can use to destinguish your study links. You can create Personal type study links in bulk by changing the Amount value.
+1. This button creates one study link without a comment. This button is a shortcut to the "New Study Links" button.
+1. Lets you create several study links and lets you add a comment to them. The comment is only a hint for you that you can use to distinguish your study links. You can create Personal type study links in bulk by changing the Amount value.
 1. This is the study code. [You can hand this to your workers](Run-your-Study-with-Study-Links.html#study-code--study-entry-page).
 1. This is your actual study link. Hand this to your workers. There are two links that can be toggled by a button: 1) [The 'Open Directly' link starts the study right away](Run-your-Study-with-Study-Links.html#start-directly-with-a-study-link). 2) [The 'Confirm First' lets your worker confirm first with a button press](Run-your-Study-with-Study-Links.html#study-link--study-entry-page-for-confirmation). Use the <span class="glyphicon glyphicon-duplicate"></span> button to copy the link to the clipboard or <span class="glyphicon glyphicon-qrcode"></span> to get the QR code.
 1. Use this checkbox to de-/activate a single study link. A deactivated study link can not be used to start a study run (but an already started study run can continue to run).

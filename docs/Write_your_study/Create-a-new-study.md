@@ -23,11 +23,11 @@ Experiment builders like [OpenSesame/OSWeb](OSWeb-and-JATOS.html) and [lab.js](l
 
 Writing your own study gives your the most freedom since it allows you to do whatever is possible in a modern browser. But you will have to program your own code in JavaScript, HTML and CSS.
 
-Press the **New Study** button in the header of your local JATOS. Then edit the study properties and add new components manually. All source code for your study has to got into the study assets folder you defined in the the study properties. The study assets folder is usually located in your JATOS installation folder.
+Go to the study sidebar by clicking on **Studies** in the header, top-left, then click on "**+**" and select **New Study**. Now an dialog opens where you can enter a title for the study and finally **Add** it. Next the study's page will open. Here you can edit its properties or add new components. All source code for your study has to got into the **study assets** folder. You can change the folder name in the study properties, but it is usually not necessary. The study assets folder is usually located in your JATOS installation folder.
 
 
 ### Modify an existing study
 
-Take an existing study (e.g. from [Example Studies](/Example-Studies)) as a prototype and modify it bit by bit. Press on the **Import** button in the header and select the file of the study. Then see the source code in your study assets folder, which is usually in your JATOS installation folder.
+Take an existing study (e.g. from [Example Studies](/Example-Studies)) as a prototype and modify it bit by bit. Go to the study sidebar by clicking on **Studies** in the header, top-left, then click on "**+**" and select **Import Study**. Then modify the source code in your **study assets** folder, which is usually in your JATOS installation folder.
 
 

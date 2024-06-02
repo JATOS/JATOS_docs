@@ -11,6 +11,7 @@ You might have created two parts of a study using different tools. For example, 
 
 Note that this description works for any two halves of a study, coded in whatever way. (But of course, if you were the one writing the scripts instead of using an experiment builder, you'll likely not need this explanation).
 
+
 ### Ingredients
 
 To combine two studies into one you'll need:
@@ -19,11 +20,13 @@ To combine two studies into one you'll need:
 1. The _.jzip_ for the first half of your study. 
 1. The _.jzip_ for the second half of your study.
 
-Note for 3. and 4.: You should not try to generate a _.jzip_ file by hand at this point. A [JZIP study archive](JATOS-Study-Archive-JZIP.html) file is a ZIP archive with a standarized content. They contain information that JATOS needs to understand that something is a study.  
+Note for 3. and 4.: You should not try to generate a _.jzip_ file by hand at this point (although it is possible). A [JZIP study archive](JATOS-Study-Archive-JZIP.html) file is a ZIP archive with a standardized content. They contain information that JATOS needs to understand that something is a study.
+
 
 ### Strategy
 
 The idea will be to, first, import one of these halves of a study into your local JATOS instance. Then, add the files from the second half as an additional component to the first half. 
+
 
 ### Steps
 
@@ -44,6 +47,7 @@ Imagine you have _half-study-1.jzip_ (a survey) and _half-study-2.jzip_ (a perce
 
 
 ### Troubleshooting
+
 Make sure that the study doesn't finish after the first component. In the javascript of the first component you should see something like:
 
    ~~~javascript

@@ -11,7 +11,7 @@ sidebar_position: 5
 
 </div>
 
-[lab.js](https://lab.js.org/) is an easy to use tool to create online experiments. Their [Builder](https://labjs.felixhenninger.com/) makes creating an online experiment a piece of cake - although you can also write code yourself: lab.js supports this too.
+[lab.js](https://lab.js.org/) is an easy to use tool to create online experiments. Their [builder](https://labjs.felixhenninger.com/) makes creating an online experiment a piece of cake - although you can also write code yourself: lab.js supports this too.
 
 lab.js and JATOS fit perfectly together: **lab.js directly exports JATOS studies**. So you don't need to write or modify any bits of code. You can create your experiment with lab.js. Then just import your studies into JATOS and let particpants run it. 
 
