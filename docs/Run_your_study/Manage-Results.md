@@ -8,11 +8,11 @@ sidebar_position: 8
 
 Once you collected data for a study, you can see and manage the results by clicking on one of the *Results* buttons.
 
-![Results Link](/img/ResultsLink_371.png)
+![Results Link](/img/v39x/results_link.png)
 
 The image below is an example of a study results page, but there are result pages for components, batches or groups as well. There's quite a lot of information here, so we'll go through each piece.
 
-![Results View screenshot](/img/ResultsView-Screenshot1.png)
+![Results View screenshot](/img/v39x/results_view_12.png)
 
 
 ## Interacting With The Results Table
@@ -21,21 +21,21 @@ The image below is an example of a study results page, but there are result page
 
 Each study result has an arrow on the left. If you click on it, the result data for this study run will be displayed underneath the row. Since a study can have several components and each component produces its own result data there can be several result data each in its own row (like in the screenshot below). By clicking on _show all_ one can see the whole data if it doesn't fit all in the box.
 
-![Results View screenshot](/img/ResultsView-Screenshot3.png)
+![Results View screenshot](/img/v39x/results_view_11.png)
 
 
 ### Selecting Results
 
 There is a checkbox on the left side of each row to select/deselect a specific result. You can also use the buttons on the bar above to select/deselect all results in the table. Additionally you can select only the filtered ones or only the visible ones.
 
-![Results View screenshot](/img/ResultsView-Screenshot2.png)
+![Results View screenshot](/img/v39x/results_view_13.png)
 
 
 ### Filter Results & Filter Builder
 
 The filter lets you search all all fields in the results table (the metadata). 
 
-![Results View screenshot](/img/ResultsView-Screenshot4.png)
+![Results View screenshot](/img/v39x/results_view_14.png)
 
 If you type, for example, "Personal Single" in the *Filter* field, only the results ran by a Personal Single worker will appear on the table. You can then click on *Filtered* to select them and export only those results that you're interested in. 
 
@@ -45,48 +45,62 @@ By default filtering in case insensitive but you can turn on case sensitive filt
 
 Sometimes the simple filter is not precise enough or you want to combine multiple filters: For those cases the _Filter Builder_ offers complex criteria with logical conjunctions ('and', 'or'). It's also possible to filter for certain dates.
 
-![Results View screenshot](/img/ResultsView-Screenshot10.png)
+![Results View screenshot](/img/v39x/results_view_15.png)
 
 
-## Export
+## Export Results
+
+![Results View screenshot](/img/v39x/results_view_16.png)
+
+Once you selected the results you're interested in, click *Export Results*. You can choose what you want to export: everything in a JATOS Results Archive, only the result metadata, only the result data, or only the files. If in doubt which one to choose, get the JATOS Result Archive - it contains everything.
+
+
+### Export a JATOS Results Archive (JRZIP)
+
+![Results View screenshot](/img/v39x/results_view_17.png)
+
+Since version 3.8.1 this is the standard export format. It **aggregates result data, result files and result metadata** in one ZIP archive file with a _.jrzip_ file extension ([more information about JRZIP](JATOS-Results-Archive-JRZIP.html)).
+
 
 ### Export Result Data
 
-Once you selected the results you're interested in, click *Export Results* and *Selected* and you will download a text file that contains your results. Each line in this text file represents result data from one component. Alternatively you can also select *All* to get all result data.
+![Results View screenshot](/img/v39x/results_view_18.png)
 
-![Results View screenshot](/img/ResultsView-Screenshot6.png)
+The result data are the genuine data that got submitted during study runs without any metadata or result files. You can choose between ***ZIP*** or ***Plain Text*** format. In the _ZIP_ format the result data are stored in a file system structure with folders for study results and component results, similar to the _JRZIP_ format. The _Plain Text_ format is familiar from previous JATOS version: all result data are put together in one text file with one result per line.
+
 
 ### Export Result Files
 
-Here you can download the result files that were uploaded during study runs. You can download single files by just clicking on them. Or similar to exporting result data select the lines you are interested in and download them with *Export Files* and *Selected*. Alternatively you can also select *All* to get all files.
+![Results View screenshot](/img/v39x/results_view_19.png)
 
-![Results View screenshot](/img/ResultsView-Screenshot5.png)
+The result files are the files that were uploaded during study runs. They are exported as an ZIP archive with a file system structure that represents the study results and their component results. 
 
-### Export Metadata 
 
-Sometimes one is also interested in the metadata, that is what's in the actual table fields ("Result ID", "Start Time" , "Last Seen", ...). For this click on *Export Metadata* and the metadata of the selected results will be downloaded in CSV format.
+### Export Result Metadata
 
-![Results View screenshot](/img/ResultsView-Screenshot7.png)
+![Results View screenshot](/img/v39x/results_view_20.png)
+
+The metadata are mostly the data that you see in the result table but that do not belong to the actual result data or files, e.g. worker ID or start time. You can choose between ***JSON*** and ***CSV*** format. 
 
 
 ## Delete Results
 
-You can click *Delete* to remove all or only some selected results (result data + result files + metadata). Keep in mind **there's no undo function for this**. 
+![Results View screenshot](/img/v39x/results_view_21.png)
 
-![Results View screenshot](/img/ResultsView-Screenshot8.png)
+You can click *Delete* to remove the selected results. That includes result data, result files and metadata. Keep in mind **there's no undo function for this**. 
 
 
-## Table Columns
+## Table Columns and Customization
 
 You can show and hide the columns displayed in the table with the drop-down menu under the *Customize* button.
 
-![Results View screenshot](/img/ResultsView-Screenshot9.png)
+![Results View screenshot](/img/v39x/results_view_22.png)
 
 * **Result ID** - An identifier assigned by JATOS to each study result. A study result is actually a set of component results, each of them with their own (different) *Component Result ID*. 
 * **UUID** - universally unique identifier - similar to Result ID but this ID is unique over different JATOS installations
 * **Study Code** - The study code that was used to start this study run
-* **Start Time** - Time (set at the server's time zone) at which the first component of the study was started. 
-* **End Time** - Time (set at the server's time zone) at which the last component of the study was finished. 
+* **Start Time** - Time at which the first component of the study was started. 
+* **End Time** - Time at which the last component of the study was finished. 
 * **Last Seen** - Each component running in a worker's browser sends a "heartbeat" regularly back to JATOS. Last Seen is the time of the last heartbeat received. The heartbeat stops either when the study is finished or when the browser tab is closed. The default period of the heartbeat is 2 minutes but you can change it through a [_jatos.js_ function](jatos.js-Reference.html#jatossetheartbeatperiod).
 * **Duration** - Simply the time difference between the start and end time.
 * **Batch** - Name of the batch the worker belongs to.

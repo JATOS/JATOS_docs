@@ -8,11 +8,11 @@ Study Links in JATOS is the name of a page where one can generate study links fo
 
 To get to the Study Links page press on the button with the same name in your study's page:
 
-![Study Links Button screenshot](/img/study_links_1.png)
+![Study Links Button screenshot](/img/v39x/study_links_1.png)
 
 This Study Links page has only one batch, the 'Default' one. A batch can have study links of different type, e.g. Personal Single, Personal Multiple etc:
 
-![Study Links page screenshot](/img/study_links_2.png)
+![Study Links page screenshot](/img/v39x/study_links_2.png)
 
 
 ## Study Links - How to let participants run your study
@@ -23,52 +23,53 @@ During development of your study you would usually run it with the "Run" button 
 
 JATOS has different study link types and each type corresponds to a worker type with different properties, that are well explained on a dedicated page: [Worker Types](Worker-Types.html).
 
-![Study Links page screenshot](/img/study_links_3.png)
+![Study Links page screenshot](/img/v39x/study_links_3.png)
 
 Click on the "<span class="glyphicon glyphicon-chevron-right"></span>" button in the left of the batch row (red box) to expand the study link types (if it's not already expanded).
 
-![Study Links page screenshot](/img/study_links_7.png)
+![Study Links page screenshot](/img/v39x/study_links_7.png)
 
 You can de-/activate a study link type by clicking in the checkboxes in the left of each row (red box). Decactived types cannot be used to run a study. Always check before you send out study links that the corresponding types are activated.
 
 
 ### Personal type links: Personal Single or Personal Multiple
 
-![Study Links page screenshot](/img/study_links_4.png)
+![Study Links page screenshot](/img/v39x/study_links_4.png)
 
 Personal type links can be either Single or Multiple. You can find more details about them in the [Worker Types](Worker-Types.html) page, but the gist is that the links are meant to be handed to individual workers (hence _Personal_). Personal Single links can be used once, whereas Personal Multiple can be used many times.
 
 After clicking the Study Links button you get a new window where you can create and manage the study links of this type.
 
-![Study Links page screenshot](/img/study_links_11.png)
+![Study Links page screenshot](/img/v39x/study_links_11.png)
 
 1. This button creates one study link without a comment. This button is a shortcut to the 'New Study Links' button.
 1. Lets you create several study links and lets you add a comment to them. The comment is only a hint for you that you can use to destinguish your study links. You can create Personal type study links in bulk by changing the Amount value.
 1. This is the study code. [You can hand this to your workers](Run-your-Study-with-Study-Links.html#study-code--study-entry-page).
 1. This is your actual study link. Hand this to your workers. There are two links that can be toggled by a button: 1) [The 'Open Directly' link starts the study right away](Run-your-Study-with-Study-Links.html#start-directly-with-a-study-link). 2) [The 'Confirm First' lets your worker confirm first with a button press](Run-your-Study-with-Study-Links.html#study-link--study-entry-page-for-confirmation). Use the <span class="glyphicon glyphicon-duplicate"></span> button to copy the link to the clipboard or <span class="glyphicon glyphicon-qrcode"></span> to get the QR code.
 1. Use this checkbox to de-/activate a single study link. A deactivated study link can not be used to start a study run (but an already started study run can continue to run).
+1. Use these buttons to filter the study links. You can show _All_, only the _Active_ or _Deactivated_ ones, or show only the links that were already _Used_.
 
-![Study Links page screenshot](/img/study_links_14.png)
+![Study Links page screenshot](/img/v39x/study_links_14.png)
 
 Use QR codes to make your study easier accessible with mobile phones. E.g. copy+paste the QR code image into an email or print it out and post it on a bulletin board.
 
 
 ### General type links: General Single or General Multiple
 
-![Study Links page screenshot](/img/study_links_5.png)
+![Study Links page screenshot](/img/v39x/study_links_5.png)
 
 General type links can be either Single or Multiple. You can find more details about them in the [Worker Types](Worker-Types.html) page, but the gist is that all workers (or at least many) get the same link (hence _General_). The General Single link can be used once whereas General Multiple can be used many times.
 
 Due to the nature of these types there is only one study link per type. Click on the button Study Link to get it. 
 
-![Study Links page screenshot](/img/study_links_15.png)
+![Study Links page screenshot](/img/v39x/study_links_15.png)
 
 There are two links that can be toggled by a button: 1) [The 'Open Directly' link starts the study right away](Run-your-Study-with-Study-Links.html#start-directly-with-a-study-link). 2) [The 'Confirm First' lets your worker confirm first with a button press](Run-your-Study-with-Study-Links.html#study-link--study-entry-page-for-confirmation). Use the <span class="glyphicon glyphicon-duplicate"></span> button to copy the link to the clipboard or <span class="glyphicon glyphicon-qrcode"></span> to get the QR code. Use QR code to make your study easier accessible with mobile phones. E.g. copy+paste the QR code image into an email or print it out and post it on a bulletin board.
 
 
 ### MTurk type links
 
-![Study Links page screenshot](/img/study_links_6.png)
+![Study Links page screenshot](/img/v39x/study_links_6.png)
 
 How to connect to MTurk and create study links is described in its own page: [Connect to Mechanical Turk](Connect-to-Mechanical-Turk.html).
 
@@ -100,7 +101,7 @@ The study link has the format `https://my.jatos.server/publix/run?code=study-cod
 
 The advantage of using the Study Entry page is, that participants accidentally clicking on a study link (e.g. in in an email or on Twitter) without the intention of actually running the study (just out of curiousity) will now **not** automatically start the study run but be shown the Study Entry page where they have to press the '<span class="glyphicon glyphicon-play"></span>' button for confirmation. At least single-use links (Personal Single or General Single) can be used only once. Here the study entry page acts as a kind of barrier preventing the invalidation of the link.
 
-####  Customization of the message
+#### Customization of the message
 
 By default the message on the Study Entry page is something like 'Press <span class="glyphicon glyphicon-play"></span> to start the experiment'. You might want to change the language or add some more introductory text. You can do this in the study's Study Properties
 
@@ -124,7 +125,7 @@ Batches are organized in the Study Links page. Here you can create and delete ba
 
 Each study comes with a "Default" batch (although it can be renamed in its batch properties).
 
-![Study Links page screenshot](/img/study_links_12.png)
+![Study Links page screenshot](/img/v39x/study_links_12.png)
 
 You can **deactivate** or **activate** a batch by clicking on the checkbox button in each batch row. A deactivated batch doesn't allow any study runs.
 
@@ -133,7 +134,7 @@ You can **deactivate** or **activate** a batch by clicking on the checkbox butto
 
 Each batch has properties that can be changed: click on the Batch Properties button in each batch's row.
 
-![Study Links page screenshot](/img/study_links_13.png)
+![Study Links page screenshot](/img/v39x/study_links_13.png)
 
 * For each batch, you can limit the maximum number of workers that will ever be able to run a study in this batch by setting the **Maximum total workers**.
 
@@ -148,7 +149,7 @@ Each batch has properties that can be changed: click on the Batch Properties but
 
 A batch is also the place where [JATOS groups](Write-Group-Studies-I-Setup.html) are handled. Here you can an get an overview of the Groups that belong to this batch: see what their member workers are or edit the **Group Session Data**.
 
-![Groups table](/img/groups_view.png)
+![Groups table](/img/v39x/groups_view.png)
 
 * **Fixed** this button allows you to _fix_ a group. A fixed group doesn't allow new members to join. It keeps the group as it currently is. It has the same effect as the _jatos.js_' function [`jatos.setGroupFixed`](jatos.js-Reference.html#jatossetgroupfixed) ([more info](Write-Group-Studies-II-JavaScript-and-Messaging.html#fixing-a-group)).
 * **Active Workers** are the workers that are currently members in the group

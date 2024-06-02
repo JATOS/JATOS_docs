@@ -13,15 +13,15 @@ After you [created a new study](Create-a-new-study.html) ... what comes next?
 
 If you have an empty study you want to add a component. A component corresponds to a webpage defined by an HTML file. A study can have more than one component - this is actually a strength of JATOS: e.g. one can combine different experiments into one, or easily add an survey to an existing experiment.
 
-To add a component go to your study and click on Components -> New.
+To add a component go to your study and click on 'New Component'.
 
-![New Component](/img/Screenshot_new-component_371.png)
+![New Component](/img/v39x/new-component.png)
 
-Then in the following form you define the component's properties: enter the component's title and most importantly its 'HTML file path'. This is the path to the HTML file that starts this component.
+Then in the following form you define the component's 'Title' and most importantly its 'HTML file path' (This is the path to the HTML file that starts this component).
 
-![New Component](/img/Screenshot_new-component-properites.png)
+![New Component](/img/v39x/new-component-properites.png)
 
-Click on 'Create' and you are done. If you add more than one component you can change the order in which they run by drag-and-drop on the position button.
+Click on 'Add' and you are done. You can change the component's properties by clicking on 'Properties' in the component's row. If you add more than one component you can change the order in which they run by drag-and-drop on the position button.
 
 
 ## Study assets
@@ -45,7 +45,7 @@ Here is the absolute minimum that any component HTML file must have to run with 
    </html>   
    ~~~
 
-1. The second bit is not really necessary but without defining the `jatos.onLoad` callback function you won't be able to use most of _jatos.js_' features. Of course you could start right away with any JavaScript but if you want to use _jatos.js_' variables and functions you have to wait untill _jatos.js_ is finished initializing.
+1. The second bit is not really necessary but without defining the `jatos.onLoad` callback function you won't be able to use most of _jatos.js_' features. Of course you could start right away with any JavaScript but if you want to use _jatos.js_' variables and functions you have to wait until _jatos.js_ is finished initializing.
 
    ~~~ html
    <script>
@@ -66,7 +66,7 @@ You probably want to save the data that is collected during your experiments. Th
 In your JavaScript you will use _jatos.js_ to handle everything JATOS related and in its [reference](jatos.js-Reference.html) every function and field is described in detail.
 
 
-## Study JSON Input and Component JSON Input
+## Study input and component Input
 
 Your experiment is defined by its source code, its HTML, JavaScript and CSS. There you specify all text or parameters. But sometimes you want to be able to quickly change your experiment without touching the source code.
 
@@ -75,34 +75,40 @@ E.g. you want to be able to quickly change
 * the number of trials
 * some parameter needed in the experiment
 
-This you can achieve with the Study JSON Input or Component JSON Input because both can be easily edited in the Study Properties or Component Properties.
+This you can achieve with the "Study input" or "Component input" (in older JATOS versions they are called "Study JSON Input" and "Component JSON Input") because both can be easily edited in the study properties or component properties.
 
-![Study Properties / JSON input](/img/Screenshot_studyJsonInput_371.png)
+![Study properties / study input](/img/v39x/study-input.png)
 
 Both input fields take [JSON](https://www.w3schools.com/whatis/whatis_json.asp) and the data you put in there is then available in your study's JavaScript via `jatos.studyJsonInput` and `jatos.componentJsonInput`.
 
-The difference between the Study JSON Input and Component JSON Input is that the first one is available during the whole study run, in all components, and the latter one only in the component for which it is specified.
+The difference between the study input and component input is that the first one is available during the whole study run, in all components, and the latter one only in the component for which it is specified.
 
 **Example:**
 
-If you put the following in the Study JSON Input
+If you put the following in the study input
 
-```javascript
+```json
 {
-   "introduction": "this is a text",
-   "order": [3, 1, 2]
+  "numberOfTrials": 12,
+  "retries": 5,
+  "order": [
+    4,
+    3,
+    0,
+    1
+  ]
 }
 ```
 
-you can access those fields in your JavaScript with `jatos.studyJsonInput.introduction` and `jatos.studyJsonInput.order`.
+you can access those fields in your JavaScript with `jatos.studyJsonInput.numberOfTrials`, `jatos.studyJsonInput.retries` and `jatos.studyJsonInput.order`.
 
 
-## Study / Batch / Group Session
+## Study / batch / group session
 
-The sessions are there to help you exchange data within a study, batch or group. The Study Session allows to pass on data within the same study run, from one component to the next. With the Batch Session one can transfer data between study runs that belong to the same batch. There is a whole page dedicated to those sessions: [Session Data - Three Types](/Session-Data-Three-Types.html).
+The sessions are there to help you exchange data within a study, batch or group. The study session allows to pass on data within the same study run, from one component to the next. With the batch session one can transfer data between study runs that belong to the same batch. There is a whole page dedicated to those sessions: [Session Data - Three Types](/Session-Data-Three-Types.html).
 
 
-## Group Studies
+## Group studies
 
 JATOS allows group studies in which several participants can work together on the same experiment and exchange data in real-time.
 To get an idea it's best to start with [examples](Example-Group-Studies.html), then one can go on to write them: [Write Group Studies I - Setup](Write-Group-Studies-I-Setup.html) and [Write Group Studies II - JavaScript and Messaging](Write-Group-Studies-II-JavaScript-and-Messaging.html).

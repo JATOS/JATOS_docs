@@ -123,13 +123,13 @@ Original query string parameters of the URL that starts the study. It is provide
 
 **Examples**
 
-1. One has this link to start a Personal Single Run:
+1. One has this study link:
 
-   `http://localhost:9000/publix/50/start?batchId=47&personalSingleWorkerId=506`
+   `http://localhost:9000/publix/uXU9eYJpWdg`
 
    Now one could add parameters to the URL's query string to pass on external information into the study run. E.g. the following URL would add the parameters 'foo' with the value 'bar' and 'a' with the value '123':
 
-   `http://localhost:9000/publix/50/start?batchId=47&personalSingleWorkerId=506&foo=bar&a=123`
+   `http://localhost:9000/publix/uXU9eYJpWdg?foo=bar&a=123`
 
    Then those parameter will be accessible during the study run as `jatos.urlQueryParameters.a` and `jatos.urlQueryParameters.foo`.
 
@@ -212,12 +212,12 @@ jatos.httpTimeout = 30000; // Sets HTTP timeout to 30 seconds
 
 ### `jatos.httpRetry`
 
-Some jatos functions (e.g. `jatos.sendResultData`) send an Ajax request to the JATOS server. If this request was not successful (e.g. network problems) _jatos.js_ retries it. With this variable one can change the number of retries. The default is 5.
+Some jatos functions (e.g. `jatos.sendResultData`) send a request to the JATOS server. If this request was not successful (e.g. network problems) _jatos.js_ retries it. With this variable one can change the number of retries. The default is 5.
 
 **Example**
 
 ```javascript
-jatos.httpRetry = 2; // Attempts 2 retries of failed Ajax requests
+jatos.httpRetry = 2; // Attempts 2 retries of failed requests
 ```
 
 ### `jatos.httpRetryWait`
@@ -227,7 +227,7 @@ Same as `jatos.httpRetry` but this variable defines the waiting time between the
 **Example**
 
 ```javascript
-jatos.httpRetryWait = 5000; // Sets Ajax retry waiting time to 5 seconds
+jatos.httpRetryWait = 5000; // Sets retry waiting time to 5 seconds
 ```
 
 ### `jatos.waitSendDataOverlayConfig`
@@ -296,7 +296,15 @@ Adds a button to the document that if pressed calls _jatos.abortStudy_ (which ca
 
    ```javascript
    jatos.addAbortButton({
-     style: "left:1em"
+     style: "left:1em; right:unset"
+   });
+   ```
+   
+1. Adds a cancel button and changes the position to the top-right
+
+   ```javascript
+   jatos.addAbortButton({
+     style: "top:1em; bottom:unset"
    });
    ```
 

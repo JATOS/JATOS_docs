@@ -40,7 +40,7 @@ If you think about it, MTurk simply calls a JATOS [study link](Run-your-Study-wi
 
 Each Study bar has a button that toggles between the  'Unlocked' and 'Locked' states. Locking a study prevents changes to its (or any of its components') properties, change the order of components, etc. 
 
-![](/img/study_locked.png)
+![](/img/v39x/study_locked.png)
 
 
 ### Do a General Single Run more than once in the same browser 

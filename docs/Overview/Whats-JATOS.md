@@ -19,8 +19,9 @@ JATOS (Just Another Tool for Online Studies) helps you set up and run your onlin
 * It’s GUI-based, so there's no need to use the terminal to talk to your server. 
 * Recruit participants via **MTurk**, **Prolific** etc.
 * It's **open-source and free** to use.
-* **Manage workers**, to e.g. make sure that each participant does your study only **once**.
+* **Manage participants**, to e.g. make sure that each participant does your study only **once**.
 * **Export/Import** studies to facilitate exchange with other researchers.
+* Use the **JATOS API** to integrate with your tools
 * You can **try out** [JATOS on _cortex_, our test server](JATOS-Tryout-Server.html).
 
 
@@ -31,4 +32,4 @@ Watch an introduction video:
 
 JATOS is free and open-source and released under the [Apache 2 Licence](http://www.apache.org/licenses/LICENSE-2.0.html). The source code is available on [GitHub](https://github.com/JATOS/JATOS).
 
-[Over 100 studies](Papers-Citing-JATOS.html) have sucessfully collected data using JATOS already! Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130834) if you use JATOS for your research.
+[Over 200 studies](Papers-Citing-JATOS.html) have sucessfully collected data using JATOS already! Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130834) if you use JATOS for your research.

@@ -1,29 +1,22 @@
 ---
 title: Install JATOS on a server
 slug: /JATOS-on-a-server.html
-sidebar_position: 5
+sidebar_position: 3
 ---
 
 There are [several ways to bring JATOS to the internet](Bring-your-JATOS-online.html). If you don't know much about server administration the [DigitalOcean](JATOS-on-DigitalOcean.html) page might be best for you.
 
-You can also [install JATOS via Docker](Install-JATOS-via-Docker.html).
+And there are dedicated pages for [installation with Docker](/Install-JATOS-via-Docker.html) and [Docker Compose](/JATOS-with-Docker-Compose.html).
 
-## Installation on a server
-
-The actual JATOS instance on a server isn't too different from a local one. It basically involves telling JATOS which IP address and port it should use and (optionally) replace the embedded database with a MySQL one. There are other issues however, not directly related to JATOS, that you should consider when setting up a server. These include: setting up automatic, regular backups of your data, an automatic restart of JATOS after a server reboot, encryption, additional HTTP server, etc.
+Installing JATOS as a Internet server usually involves exchanging the embedded database with a MySQL/MariaDB one and setting up a reverse proxy (mostly for HTTPS). You should also consider automatic and regular backups of the data stored in your JATOS.
 
 
-### 1. Install Java
+## Install Java
 
-We've produced multiple versions of JATOS. The simplest version is JATOS alone, but other versions are bundled with Java JRE. On a server, it's best (though not necessary) to install JATOS without a bundled Java. This will make it easier to upgrade to new Java releases. Both Java 8 and 11 are fine. 
-
-
-### 2. [Optional] Install MySQL
-
-See [JATOS with MySQL](JATOS-with-MySQL.html)
+JATOS needs Java 8 or 11 to run (17 is not yet supported). You can install your own Java or get a JATOS that is already bundled with Java. 
 
 
-### 3. Install JATOS
+## Install JATOS
 
 1. [Download JATOS](https://github.com/JATOS/JATOS/releases)
 
@@ -51,40 +44,49 @@ See [JATOS with MySQL](JATOS-with-MySQL.html)
    chmod u+x loader.sh
    ```
 
-1. Check that JATOS starts with:
+1. Run JATOS:
 
    ```shell
-   ./loader.sh start`
+   ./loader.sh start
    ```
 
    And to stop it:
 
+   Usually `Ctr+C` does the job, but if your JATOS runs in the background:
+
    ```shell
-   ./loader.sh stop`
+   ./loader.sh stop
    ```
 
+1. Check JATOS is running correctly:
 
-### 4. Configuration
+   Use curl: `curl http://localhost:9000/ping` should give you `pong` back
+   
+   If you can already access your server from the outside, open JATOS in a browser (the default port is 9000): `http://my-IP-or-domain:9000`. It should show the JATOS login screen. You can log in with username _admin_ and password _admin_.
+   
+   Check JATOS' _Administration_ page: `http://my-IP-or-domain/jatos/admin`. Click the _Tests_ button: all tests should show an 'OK'. Click on  _System Info_ and check that all is like you configured it.
 
-If JATOS runs locally it's usually not necessary to change the defaults but on a server you probably want to set up the IP and port or maybe use a different database and change the path of the study assets root folder. These docs have an extra page on how to [Configure JATOS on a Server](Configure-JATOS-on-a-Server.html).
+1. **Always change _admin_'s password**
 
+   This can be done in JATOS' GUI:
 
-### 5. Change Admin's password
-
-Every JATOS installation comes with an Admin user that has the default password 'admin'. It is highly recommended to change it before the server goes live. This can be done in JATOS' GUI:
-
-1. Start JATOS and in a browser go to JATOS login page `http://my-jatos-domain/jatos` 
-1. Login as 'admin' with password 'admin'
-1. Click on 'Admin (admin)' in top-right header
-1. Click 'Change Password'
-
-
-### 6. Check JATOS' test page
-
-JATOS comes with a handy test page: in the browser go to `http://my-jatos-domain/jatos/admin`, then click _Tests_ and check that all tests are 'OK'.
+   1. In a browser go to JATOS' login page `http://my-IP-or-domain/jatos` 
+   1. Log in as 'admin' with password 'admin'
+   1. Click on _Admin (admin)_ in top-right header
+   1. Click _Change Password_
 
 
-### 7. [Optional] Proxy and encryption
+## [Optional] Install MySQL/MariaDB
+
+See [JATOS with MySQL](JATOS-with-MySQL.html)
+
+
+## Configuration
+
+These docs have an extra page on [JATOS Configuration](JATOS_Configuration.html). E.g. you can add user authentication with ORCID (orcid.org), OpenID Connect (OIDC), LDAP, or Google Sign-in.
+
+
+## [Optional] Proxy and encryption
 
 Most admins tend to use an additional reverse proxy in front of JATOS, mostly for encryption. We provide two example configurations for Nginx and Apache. Both support encryption and WebSockets (keep in mind JATOS relies on WebSockets and it's necessary to support them).
 
@@ -92,16 +94,11 @@ Most admins tend to use an additional reverse proxy in front of JATOS, mostly fo
 * [JATOS with Apache](JATOS-with-Apache.html)
 
 
-### 8. [Optional] Turn on user session validation
-
-[More here](Configure-JATOS-on-a-Server.html#user-session-configuration).
-
-
-### 9. [Optional] Auto-start JATOS via systemd
+## [Optional] Auto-start JATOS via _systemd_
 
 It's nice to have JATOS start automatically after a start or a reboot of your machine.
 
-Create a systemd service file for JATOS. E.g. with vim:
+Create a _systemd_ service file for JATOS. E.g. with _vim_:
 
 ```shell
 vim /etc/systemd/system/jatos.service
@@ -129,7 +126,7 @@ RestartSec=5
 WantedBy=multi-user.target
 ```
 
-Secondly, notify systemd of the new service file:
+Secondly, notify _systemd_ of the new service file:
 
 ```shell
 systemctl daemon-reload
@@ -152,29 +149,65 @@ Additionally you can manually start/stop JATOS now with:
 You can disable the service with `systemctl disable jatos.service`. If you change the service file you need to do `systemctl daemon-reload jatos.service` again to let the system know.
 
 
-### 10. [Optional] Backup
+## [Optional] Specify the location of JATOS' data folders
 
-The easiest way to backup is to let JATOS users care themselves for their own data. JATOS has an easy to use [export function for result data](Manage-results.html). So you could just tell everyone to export their data regularily.
+By default all data folders are located in JATOS installation folder. But sometimes it is better to change the location to better suit your needs, e.g. for easier backups or updates.  
+
+JATOS' data folders (and their path configuration):
+* [_study assets root_ folder](/JATOS_Configuration.html#study-assets-root-path)
+* [_result uploads_ folder](/JATOS_Configuration.html#result-file-uploading)
+* [_study logs_ folder](/JATOS_Configuration.html#study-logs)
+
+One might want to move all data folders in one extra 'data' folder. E.g. in JATOS' **config file** the following properties have to be set:
+
+~~~shell
+jatos.studyAssetsRootPath = "/path/to/my/jatos-data-folder/study_assets_root"
+jatos.resultUploads.path =  "/path/to/my/jatos-data-folder/result_uploads"
+jatos.studyLogs.path =      "/path/to/my/jatos-data-folder/study_logs"
+~~~
+
+Or with **command-line** arguments this would be:
+
+```shell
+-Djatos.studyAssetsRootPath="/path/to/my/jatos-data-folder/study_assets_root" -Djatos.resultUploads.path="/path/to/my/jatos-data-folder/result_uploads" -Djatos.studyLogs.path="/path/to/my/jatos-data-folder/study_logs"
+```
+
+
+## [Optional] Backup
+
+The easiest way to backup is to let JATOS users care themselves for their own data. JATOS has an easy to use [export function for result data](Manage-results.html). So you could just tell everyone to export their data regularly.
 
 But if you want to set up a regular backup of the data stored in JATOS here are the necessary steps. Those data consists of several parts and all have to be backed up to be able to fully restore JATOS later.
 
-#### Simple
+### Simple
 
-If you want to keep it simple and you didn't change any of the folder paths then you can just back up the whole JATOS folder. But remember, if you use the embedded H2 database, to turn off JATOS before doing the backup. And if you use MySQL you have to care for the MySQL backup extra.
+If you want to keep it simple and you didn't change any of the [data folder paths](/JATOS-on-a-server.html#optional-specify-the-location-of-jatos-data-folders) then you can just back up the whole JATOS folder. But remember, if you use the embedded H2 database, to stop JATOS before doing the backup. And if you use MySQL you have to care for the MySQL backup extra.
 
-#### Detailed
+### Detailed
 
-What has to be backed up in detail:
+1. JATOS data folders
 
-1. **Database**
-    * **MySQL** - If you use a MySQL database you might want to look into the `mysqldump` shell command. E.g., with `mysqldump -u myusername -p mydbname > mysql_bkp.out` you can backup the whole data into a single file. Restore the database with `mysql -u myusername -p mydbname < mysql_bkp.out`.
-    * **H2** - There are at least two ways: one easy (but unofficial) and one official:
-      1. Copy & paste the db file - **It's important to stop JATOS before doing a backup or restoring a H2 database** this way. If you do not stop JATOS your [data might be corrupted](Troubleshooting.html#database-is-corrupted). You can just backup the folder `my-jatos-path/database`.
-      1. Via [H2's upgrade, backup, and restore tool](http://www.h2database.com/html/tutorial.html#upgrade_backup_restore)
+   JATOS has a couple of [_data_ folders](/JATOS-on-a-server.html#optional-specify-the-location-of-jatos-data-folders). For easier backups it makes sense to have them all in one extra 'data' folder. Then you can just backup this 'data' folder with whatever file backup mechanism suits you best.
 
-1. **study_assets_root folder** - This is the folder where all the study's assets (e.g. HTML, JS, CSS, images) are stored.
+1. Backup MySQL/MariaDB
 
-1. **result_uploads folder** - This folder contains the files, that were uploaded during study runs.
+   If you use a MySQL or MariaDB database you might want to look into the `mysqldump` shell command. E.g., with `mysqldump -u myusername -p mydbname > mysql_bkp.out` you can backup the whole data into a single file. Restore the database with `mysql -u myusername -p mydbname < mysql_bkp.out`.
 
-1. **study_logs folder** - Contains the [study logs](Study-Log.html).
+1. Backup H2 database
 
+   There are at least two ways to backup an embedded H2 database: one easy (but unofficial) and one official:
+
+   * Easy way: Just backup the _database_ folder in your JATOS installation folder. **But it is important to stop JATOS before doing a backup or restoring a H2 database** this way. If you do not stop JATOS your data might get corrupted.
+
+   * Official way: Use [H2's upgrade, backup, and restore tool](http://www.h2database.com/html/tutorial.html#upgrade_backup_restore)
+
+
+## Update JATOS
+
+**Be aware**: JATOS is only allowed to update to higher version numbers - downgrading will likely break your installation. Please do backups before updating.
+
+There are two possibilities to update JATOS running on a server:
+
+1. You can simply use the [auto-update feature](/Update-JATOS.html#automatic-update).
+
+1. If you specified an extra ['data' folder](/JATOS-on-a-server.html#optional-specify-the-location-of-jatos-data-folders) you can install a new JATOS without starting it yet, stop the current JATOS, configure the new one to use your extra 'data' folder and start it.

@@ -1,35 +1,28 @@
 ---
 title: JATOS with Apache
 slug: /JATOS-with-Apache.html
-sidebar_position: 10
+sidebar_position: 12
 ---
 
-This is an example of a configuration of [Apache](https://httpd.apache.org/) as a proxy in front of JATOS. While it's not necessary to run JATOS with a proxy, it's common to do so in order to allow encryption.
+This is an example of a configuration of [Apache](https://httpd.apache.org/) as a reverse proxy in front of JATOS. While it's not necessary to run JATOS with a proxy, it's common to do so in order to add encryption.
 
-Here I used Apache 2.4.18 on a Ubuntu system. It is necessary to use at least **version 2.4** since JATOS relies on WebSockets that aren't supported by earlier Apache versions. 
+It is necessary to use at least Apache **version 2.4** since JATOS relies on WebSockets that aren't supported by earlier versions. 
 
 A JATOS server that handles sensitive or private data should always use encryption (HTTPS). A nice free certificate issuer is [certbot.eff.org](https://certbot.eff.org/) from the Electronic Frontier Foundation.
 
-I had to add some modules to Apache to get it working:
+You have to add some modules to Apache to get it working:
 
-~~~ shell
-sudo a2enmod rewrite
-sudo a2enmod proxy_wstunnel
-sudo a2enmod proxy
-sudo a2enmod headers
-sudo a2enmod ssl
-sudo a2enmod lbmethod_byrequests
-sudo a2enmod proxy_balancer
-sudo a2enmod proxy_http
-sudo a2enmod remoteip
+~~~shell
+a2enmod proxy proxy_http proxy_wstunnel http2 rewrite headers ssl
 ~~~
 
-The following is an example of a proxy config with Apache. I stored it in `/etc/apache2/sites-available/example.com.conf` and added it to Apache with the command `sudo a2ensite example.com.conf`.
+The following is an example of a proxy config with Apache. It is stored it in `/etc/apache2/sites-available/example.com.conf` and added it to Apache with the command `sudo a2ensite example.com.conf`. Change it to your needs. You probably want to change your servers address (`www.example.com` in the example) and the path to the SSL certificate and its key.
 
-* It enforces access via HTTPS by redirecting all HTTP traffic.
-* As an additional security measurement you can uncomment the `<Location "/jatos">` and config your local network. This will restrict the access to JATOS' GUI (every URL starting with `/jatos`) to the local network.
+For JATOS versions 3.8.1 and older it is necessary to set the `X-Forwarded-*` headers with `RequestHeader set X-Forwarded-Proto "https"` and `RequestHeader set X-Forwarded-Ssl "on"` and `ProxyPreserveHost On` to tell JATOS the original requester's address. This is not necessary with version 3.8.2 and newer.
 
-~~~ shell
+As an additional security measurement you can uncomment the `<Location "/jatos">` and config your local network. This will restrict the access to JATOS' GUI (every URL starting with `/jatos`) to the local network.
+
+~~~shell
 <VirtualHost *:80>
   ServerName www.example.com
   
@@ -49,11 +42,6 @@ The following is an example of a proxy config with Apache. I stored it in `/etc/
   #  Allow from 192.168
   #</Location>
 
-  # Needed for JATOS to get the correct host and protocol
-  ProxyPreserveHost On
-  RequestHeader set X-Forwarded-Proto "https"
-  RequestHeader set X-Forwarded-Ssl "on"
-  
   # Your certificate for encryption
   SSLEngine On
   SSLCertificateFile /etc/ssl/certs/localhost.crt

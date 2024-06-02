@@ -19,13 +19,13 @@ A good idea is always to try it yourself first in [MTurk Sandbox](https://reques
 
 In JATOS, go to your study's page and click on the Study Links button and open the batch you want to run.
 
-![JATOS GUI screenshot](/img/study_links_mturk.png)
+![JATOS GUI screenshot](/img/v39x/study_links_mturk.png)
 
 1. Don't forget to enable the MTurk type
 
 1. Click on _Source Code_. You'll see a box with HTML code, similar to the one shown here. You will have to copy and paste the code from here to the MTurk interface.
 
-![JATOS GUI screenshot](/img/study_links_mturk_source_code.png)
+![JATOS GUI screenshot](/img/v39x/study_links_mturk_source_code.png)
 
 
 ### On MTurk's page
@@ -61,5 +61,5 @@ When an MTurk worker finishes a study they'll see a confirmation code like this 
 
 To assign payment to individual workers, just compare the confirmation codes stored in JATOS' results page to those stored in MTurk. To see the confirmation codes in your results page you might have to add the column to your table: Like in the image, go to Customize and choose MTurk Confirmation Code. 
 
-![Results of Mturk workers](/img/mturk-results.png)
+![Results of Mturk workers](/img/v39x/mturk-results.png)
 

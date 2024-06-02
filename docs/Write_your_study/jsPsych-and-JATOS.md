@@ -17,7 +17,7 @@ In [our example studies](/Example-Studies) are a couple of jsPsych ones.
 
 Here are the necessary changes if you want to adapt your jsPsych experiment so that it runs within (and sends the result data to) JATOS. Additionally you can have a look at [Adapt Pre written Code to run it in JATOS](Adapt-pre-written-code-to-run-it-in-JATOS.html).
 
-Every jsPsych version works slightly different. Here we explain the steps for jsPsych 7 (for older versions have a look [here](/3.6.1/jsPsych-and-JATOS.html)).
+Every jsPsych version works slightly different. Here we explain the steps for jsPsych 7 (for older versions have a look [here](/3.6.x/jsPsych-and-JATOS.html)).
 
 ### How to turn your jsPsych 7 experiment into a JATOS study
 
@@ -27,19 +27,19 @@ Every jsPsych version works slightly different. Here we explain the steps for js
    <script src="jatos.js"></script>
    ~~~ 
 
-1. Tell jsPsych to send your result data to JATOS
+1. Tell jsPsych to send your result data to JATOS.  If you want add a 'Cancel' button with `jatos.addAbortButton`, add the line included below (omit if you don't want the automatic abort button).
 
    ~~~ javascript
    var jsPsych = initJsPsych({
+     on_trial_start: jatos.addAbortButton,
      on_finish: () => jatos.endStudy(jsPsych.data.get().json())
    });
    ~~~
 
-1. Wrap jsPsych's run in `jatos.onLoad` and if you want add a 'Cancel' button with `jatos.addAbortButton`.
+1. Wrap jsPsych's run in `jatos.onLoad`.
 
    ~~~ javascript
    jatos.onLoad(() => {
-     jatos.addAbortButton();
      jsPsych.run(timeline);
    });
    ~~~

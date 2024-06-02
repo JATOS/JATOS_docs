@@ -8,7 +8,7 @@ sidebar_position: 2
 
 First and common to all group setups is to check the Group study checkbox in the study properties. 
 
-![Group's property](/img/study-properties-group-study.png)
+![Group's property](/img/v39x/study-properties-group-study.png)
 
 If the Group property is checked, JATOS will assign workers into groups. We'll describe some group properties that you can use to tweak according to whether you want to keep control over worker assignment, or you give JATOS full control.
 
@@ -17,7 +17,7 @@ If the Group property is checked, JATOS will assign workers into groups. We'll d
 
 You can have multiple batches in JATOS, each one with different group settings. There are three important bits of information for a group study:
 
-![Study Links screenshot](/img/batch_properties_groups.png)
+![Study Links screenshot](/img/v39x/batch_properties_groups.png)
 
 1. **Max total workers**: This isn't just a properties of group studies. It simply limits the total amount of workers who are allowed to run in this batch.
 1. **Max total members**:  This limits the number of members a single group can have. While there can be multiple groups in a batch, the _Max total members_ field applies to each separate group. 

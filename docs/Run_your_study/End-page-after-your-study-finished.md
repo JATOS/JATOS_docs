@@ -22,7 +22,7 @@ If you include a file named '_endPage.html_' in your study assets folder along w
 
 Maybe you want to redirect to a different page, e.g. a Prolific's end page or your department's webpage. This you can do by putting the URL of that page into the study properties in JATOS' GUI. 
 
-![screenshot](/img/Screenshot_end-redirect-url.png)
+![screenshot](/img/v39x/end-redirect-url.png)
 
 **Hint:** If you run the study with an **MTurk Worker** then you probably want to show the confirmation code to your worker. This is passed on as an URL query parameter *confirmationCode*.
 

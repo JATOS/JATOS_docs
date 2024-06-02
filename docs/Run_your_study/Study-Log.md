@@ -8,11 +8,11 @@ JATOS stores a log file for each study (not to be confused with [JATOS' log](Tro
 
 You can see the log by clicking on **More** in the study toolbar and then **Study Log**:
 
-![Study Log button](/img/study_log_button_371.png)
+![Study Log button](/img/v39x/study_log_button.png)
 
 Then the log looks similar to this:
 
-![Study Log pretty](/img/study_log_pretty_371.png)
+![Study Log pretty](/img/v39x/study_log_pretty.png)
 
 **A few more details:**
 * The study log won't be necessary in most cases. Just nice to have. Just in case.

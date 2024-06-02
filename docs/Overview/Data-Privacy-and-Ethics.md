@@ -66,7 +66,7 @@ This cookie contains these parameters:
 * _creationTime_: timestamp (epoch time) of this cookie's creation
 * _studyAssets_: name of the directory where the study's assets are stored on the JATOS server
 * _jatosRun_: State of a study run with a JatosWorker. If this run doesn't belong to a JatosWorker this field is null. It's mainly used to distinguish between a full study run and just a component run.
-* _urlBasePath_: [Base path under which JATOS resides](Configure-JATOS-on-a-Server.html#url-base-path-jatos--v331)
+* _urlBasePath_: [Base path under which JATOS resides](JATOS_Configuration.html#url-base-path-jatos)
 
 E.g. `batchId=1&componentId=1&componentPos=1&componentResultId=35&creationTime=1639502424728&studyAssets=jatosjs_test_study&urlBasePath=/&jatosRun=RUN_STUDY&groupResultId=null&studyId=1&studyResultId=33&studyResultUuid=7d5b3da2-b0bf-4e22-98bc-f0e5d7752c00&workerId=1&workerType=Jatos`
 
