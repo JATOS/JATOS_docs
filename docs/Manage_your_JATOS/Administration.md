@@ -8,7 +8,6 @@ On the Administration page [users with admin rights](/User-Manager.html) can get
 
 ![Administration screenshot](/img/v39x/administration.png)
 
-On the menu you will find links to two additional administration pages: 
 
 ### User Manager
 
@@ -19,7 +18,7 @@ Manage users, passwords, and rights from here. Find more details on [its documen
 
 By clicking the _Studies_ button you'll get to an overview about all studies that are on the JATOS instance. You'll also see, for each study: whom it belongs to (the study members), how much disk space it takes, and when it was active last.
 
-**For larger JATOS installation it can take up to a couple minutes to gather all data for this page**
+**In larger JATOS installations it can take up to a couple minutes to gather all data for this page**
 
 ![Studies Administration](/img/v39x/study_manager.png)
 

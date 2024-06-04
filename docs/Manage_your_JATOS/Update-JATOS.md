@@ -30,17 +30,18 @@ The process is pretty self-explanatory, but anyway, we'll explain it here in det
 
    ![Update notification Schreenshot](/img/v39x/autoupdate-notification.png)
 
-   Sometimes your JATOS is not able to receive data about new releases. If this is the case and you know there is a new release that you would like to update to, you can still [start the update by specifying the version](/Update-JATOS.html#auto-update-to-a-specific-version).
+   Sometimes your JATOS is not able to receive data about new releases. Often a restart of the JATOS application helps in this case. If this still persists and you know there is a new release that you would like to update to, you can still [start the update by specifying the version](/Update-JATOS.html#auto-update-to-a-specific-version).
 
 1. Click on _Update_, confirm that you want to continue and the latest JATOS version will be downloaded from GitHub and saved in your system's temporary folder. The download might take a while depending on your internet connection.
 
    ![Update notification Schreenshot](/img/v39x/autoupdate-confirmation.png)
 
-1. After download is complete, you will be asked again for confirmation. Optionally you can do a **backup**: JATOS will copy the content of its own installation folder into a folder with the name _backup_x.x.x_ (x.x.x is the version before the update). This will usually include your embedded H2 database, your study assets and logs - **but not your MySQL database** (should you have one). If anything goes wrong in the auto-update, you have everything in this backup folder to start the old JATOS again. **This backup will use up disk space** (that is why it is not selected by default).
+1. After download is complete, you will be asked again for confirmation.
 
    ![Update notification Schreenshot](/img/v39x/autoupdate-update-and-restart.png)
 
 1. After clicking the _Go on_ button, JATOS will stop itself, replace its program files and re-start itself again. This might take some time depending on the new version and your machine resources, but usually it's done within 2 minutes. Refresh your JATOS home page every now and then until you see your updated JATOS' login screen again.
+
 1. Check the new JATOS with the build-in tests: go to _Administration_ ⇒ _Tests_ and check that all tests are 'OK'.
 
 
@@ -52,10 +53,10 @@ Sometimes, for whatever reasons, JATOS doesn't automatically detect new versions
 
 The URL of JATOS administration page accepts the query parameter `version`. This parameter takes the JATOS version as specified in [GitHub](https://github.com/JATOS/JATOS/releases) and enforces an update to this version.
 
-E.g. if the version you want to update to is `v3.7.4` (don't forget the 'v') and your domain is `my.jatos.org`, than the URL for your browser is:
+E.g. if the version you want to update to is `v3.9.1` (don't forget the 'v') and your domain is `my.jatos.org`, than the URL for your browser is:
 
 ```
-https://my.jatos.org/jatos/admin?version=v3.7.4
+https://my.jatos.org/jatos/admin?version=v3.9.1
 ```
 
 The rest of the update procedure is the same as in the normal automatic update: you will be asked for confirmation twice.

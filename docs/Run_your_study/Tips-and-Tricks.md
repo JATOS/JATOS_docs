@@ -43,7 +43,7 @@ Each Study bar has a button that toggles between the  'Unlocked' and 'Locked' st
 ![](/img/v39x/study_locked.png)
 
 
-### Do a General Single Run more than once in the same browser 
+### Do a General Single run more than once in the same browser 
 
 The problem here is that a General Single Run is intended to work only once in the same browser. Although this is a feature to limit participants doing the same study twice, it can be a hassle for you as a study developer who just want to try out the General Single Run a second time. Luckily there is an easy way around: Since for a General Single Run all studies that the worker already participated in are stored in a browser cookie, it can be easily removed. Just **remove the cookie with the name JATOS_GENERALSINGLE_UUIDS** in your browser. You can find this cookie in every webpage hosted by a JATOS server. If it doesn't exist you probably never did a General Single run yet.
 
@@ -71,7 +71,7 @@ If the `jatos.abortStudy` function is called (usually after the worker clicks a 
    ```
 
 
-### How to let a Personal Single Worker redo his study?
+### How to let a Personal Single worker redo his study?
 
 A Personal Single Worker is only allowed to run their study once. But sometimes you want to allow them to do it a second time (maybe they accidentally clicked the 'Cancel' button). One way would be to just create another Personal Single Link and hand it to the worker. But there is another way without creating a second Link: you can simply delete the worker's result from one of the result pages. This will allow this Personal Single worker to redo this study.
 

@@ -8,7 +8,7 @@ sidebar_position: 4
 
 Let's first say what we understand under the _study flow_:
 
-**Study flow** - the intended order of a study's componenents as they are done by the participants running the study. This doesn't necessarily has to be the order of components like they are defined in the study page, meaning going forward one-by-one - instead the study flow can go backwards to a previous component, go in a loop over several components, or reload the current component. It is even possible to decide on-the-fly in your JavaScripts what the next component will be. In general and by default a component can go to any other component including itself. The _jatos.js_ functions to determine the study flow are `jatos.startNextComponent`, `jatos.startComponentByPos`, `jatos.startLastComponent` and `jatos.startComponent`.
+**Study flow** - the intended order of a study's components as they are done by the participants running the study. This doesn't necessarily has to be the order of components like they are defined in the study page, meaning going forward one-by-one - instead the study flow can go backwards to a previous component, go in a loop over several components, or reload the current component. It is even possible to decide on-the-fly in your JavaScripts what the next component will be. In general and by default a component can go to any other component including itself. The _jatos.js_ functions to determine the study flow are `jatos.startNextComponent`, `jatos.startComponentByPos`, `jatos.startLastComponent` and `jatos.startComponent`.
 
 **Common restrictions**
 - You want to prevent a participant from reloading the same component (by using the browser's reload button).
@@ -23,7 +23,7 @@ Let's first say what we understand under the _study flow_:
 
 A worker can press their browser's reload button and by default JATOS will respond with the same component again: by default, the worker can do a component multiple times. To prevent this each **component properties** has a checkbox _Allow reload_.
 
-![GUI Screenshot](/img/component-properties-reload.png)
+![GUI Screenshot](/img/v39x/component-properties-reload.png)
 
 If you want to prevent this behaviour uncheck the box. If a participant reloads the page, they will see an error message. Then the study run will be finished and put to state FAIL. Since each component properties has their own _Allow reload_ checkbox it can be defined differently for each component, e.g. reloading is allowed in the introduction but is prohibited in the actual experiment.
 
@@ -36,7 +36,7 @@ If you want to prevent this behaviour uncheck the box. If a participant reloads 
 
 A worker can press their browsers back button and by default JATOS will response with the previous component, the one that was done before by the worker. This might allow a worker to divert from the intended study flow. To prevent this each **study properties** has a checkbox _Linear study flow_.
 
-![Study Properties Screenshot](/img/study-properties-linear-flow_371.png)
+![Study Properties Screenshot](/img/v39x/study-properties-linear-flow.png)
 
 If you want to enforce a linear study flow check the box. Then, if a participant tries to go backwards in their browser, they will see an error message instead. The study run will be finished and put to state FAIL.
 
@@ -58,6 +58,6 @@ Read more on the [different worker types available in JATOS](Worker-Types.html) 
 
 Sometimes, when you hand out study links, your participants mindlessly click on the link right away and are not aware that they have already started the study. If they do not intend to run the study right away this is a problem with _single-use_ study links (**General Single** or **Personal Single**).
 
-![GUI Screenshot](/img/study-properties-allow-preview-371.png)
+![GUI Screenshot](/img/v39x/study-properties-allow-preview.png)
 
 With allowing previews in the **study properties** you can let your workers peek into a study without devaluing the study link. They can run the **first component** of your study as often as they wish and the study link gets devalued only after starting the second component. This only makes sense if you don't put your actual experiment in the first component, but some kind of description and/or consent form. Then your workers can click the study link, see the description and decide to do the study later.

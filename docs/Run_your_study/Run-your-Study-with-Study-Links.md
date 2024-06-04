@@ -86,7 +86,7 @@ A study run can be started in JATOS in slightly different ways:
 
 ### Start directly with a study link
 
-If you toogle the Study Link(s) button to 'Open Directly' the generated link will start the study run directly without any intermediate steps like the Study Entry page. The study link has the format `https://my.jatos.server/publix/study-code`, e.g. `https://cortex.jatos.org/publix/GwtCkuCY4bM`. This is fast for the participant but has the disadvantage that if they click the study link accidentally, at least if it is a single-use link (Personal Single or General Single), it will be invalidated and the participant is not allowed to run the study again (not without handing them a new study link).
+If you toggle the Study Link(s) button to 'Open Directly' the generated link will start the study run directly without any intermediate steps like the Study Entry page. The study link has the format `https://my.jatos.server/publix/study-code`, e.g. `https://cortex.jatos.org/publix/GwtCkuCY4bM`. This is fast for the participant but has the disadvantage that if they click the study link accidentally, at least if it is a single-use link (Personal Single or General Single), it will be invalidated and the participant is not allowed to run the study again (not without handing them a new study link).
 
 
 ### Study link + Study Entry page for confirmation
@@ -99,7 +99,7 @@ This is how the Study Entry page might look like (you can customize the message)
 
 The study link has the format `https://my.jatos.server/publix/run?code=study-code`, e.g. `https://cortex.jatos.org/publix/run?code=GwtCkuCY4bM`. As you can see it uses the URL query parameter 'code' to pass on the study code.
 
-The advantage of using the Study Entry page is, that participants accidentally clicking on a study link (e.g. in in an email or on Twitter) without the intention of actually running the study (just out of curiousity) will now **not** automatically start the study run but be shown the Study Entry page where they have to press the '<span class="glyphicon glyphicon-play"></span>' button for confirmation. At least single-use links (Personal Single or General Single) can be used only once. Here the study entry page acts as a kind of barrier preventing the invalidation of the link.
+The advantage of using the Study Entry page is, that participants accidentally clicking on a study link (e.g. in in an email or on Twitter) without the intention of actually running the study (just out of curiosity) will now **not** automatically start the study run but be shown the Study Entry page where they have to press the '<span class="glyphicon glyphicon-play"></span>' button for confirmation. At least single-use links (Personal Single or General Single) can be used only once. Here the study entry page acts as a kind of barrier preventing the invalidation of the link.
 
 #### Customization of the message
 
@@ -140,7 +140,7 @@ Each batch has properties that can be changed: click on the Batch Properties but
 
 * Additionally you can switch on or off study link types in the **Allowed types**. Unchecked types are not allowed to run a study. This has the same effect as de-/activating the type in the batch. Always check before you send out study links that the corresponding types are activated.
 
-* A batch can have a **JSON input** [similar to the one in the study or component properties](Write-your-own-Study-Basics-and-Beyond.html#study-json-input-and-component-json-input). The difference is that this one is only accessible from every study run in this batch.
+* A batch can have some **batch input** [similar to the one in the study or component properties](Write-your-own-Study-Basics-and-Beyond.html#study-json-input-and-component-json-input). The difference is that this one is only accessible from every study run in this batch.
 
 * The **Group Properties** relate to [group studies](Write-Group-Studies-I-Setup.html#group-settings-in-each-batchs-properties).
 
