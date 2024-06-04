@@ -28,16 +28,21 @@ const config = {
           routeBasePath: '/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
-          lastVersion: '3.8.1',
+          lastVersion: '3.9.1',
           versions: {
             current: {
               label: 'next',
               path: 'next',
               banner: 'unreleased',
             },
+            '3.9.1': {
+              label: '3.9.x',
+              path: '',
+              banner: 'none',
+            },
             '3.8.1': {
               label: '3.8.x',
-              path: '',
+              path: '3.8.x',
               banner: 'none',
             },
             '3.7.1': {
