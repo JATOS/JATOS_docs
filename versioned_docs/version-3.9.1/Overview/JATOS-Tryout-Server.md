@@ -1,5 +1,5 @@
 ---
-title: JATOS Tryout Server
+title: JATOS tryout server
 slug: /JATOS-Tryout-Server.html
 sidebar_position: 8
 ---

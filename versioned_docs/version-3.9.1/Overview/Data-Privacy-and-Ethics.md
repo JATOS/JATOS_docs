@@ -1,5 +1,5 @@
 ---
-title: Data Privacy and Ethics
+title: Data privacy and ethics
 slug: /Data-Privacy-and-Ethics.html
 sidebar_position: 7
 ---

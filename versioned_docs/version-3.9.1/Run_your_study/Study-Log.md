@@ -1,5 +1,5 @@
 ---
-title: Study Log
+title: Study log
 slug: /Study-Log.html
 sidebar_position: 10
 ---

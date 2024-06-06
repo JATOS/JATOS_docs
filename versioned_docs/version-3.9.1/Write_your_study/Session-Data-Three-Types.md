@@ -1,5 +1,5 @@
 ---
-title: Session Data - Three Types
+title: Session data - Three types
 slug: /Session-Data-Three-Types.html
 sidebar_position: 9
 ---

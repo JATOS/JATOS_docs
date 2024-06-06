@@ -1,5 +1,5 @@
 ---
-title: Write your own Study - Basics and Beyond
+title: Write your own study - Basics and beyond
 slug: /Write-your-own-Study-Basics-and-Beyond.html
 sidebar_position: 2
 ---

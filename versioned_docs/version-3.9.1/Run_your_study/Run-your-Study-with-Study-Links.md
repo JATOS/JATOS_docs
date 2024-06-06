@@ -1,10 +1,10 @@
 ---
-title: Run your Study with Study Links
+title: Run your study with study links
 slug: /Run-your-Study-with-Study-Links.html
 sidebar_position: 2
 ---
 
-Study Links in JATOS is the name of a page where one can generate study links for your participants (also called workers in JATOS) to run your study. You can also organize your participants into batches and handle their results there.
+_Study Links_ in JATOS is the name of a page where one can generate study links for your participants (also called workers in JATOS) to run your study. You can also organize your participants into batches and handle their results there.
 
 To get to the Study Links page press on the button **Study Links** in your study's page:
 
@@ -74,7 +74,7 @@ There are two links that can be toggled by a button: 1) [The 'Open Directly' lin
 How to connect to MTurk and add study links is described in its own page: [Connect to Mechanical Turk](Connect-to-Mechanical-Turk.html).
 
 
-## Study Entry Page
+## Study Entry page
 
 A study run can be started in JATOS in slightly different ways:
 
@@ -84,12 +84,13 @@ A study run can be started in JATOS in slightly different ways:
 
 **QR codes** can be used instead of study links but they are essentially just another representation of the links (using little black and white rectangles instead of characters).
 
+
 ### Start directly with a study link
 
 If you toggle the Study Link(s) button to 'Open Directly' the generated link will start the study run directly without any intermediate steps like the Study Entry page. The study link has the format `https://my.jatos.server/publix/study-code`, e.g. `https://cortex.jatos.org/publix/GwtCkuCY4bM`. This is fast for the participant but has the disadvantage that if they click the study link accidentally, at least if it is a single-use link (Personal Single or General Single), it will be invalidated and the participant is not allowed to run the study again (not without handing them a new study link).
 
 
-### Study link + Study Entry page for confirmation
+### Study link + study entry page for confirmation
 
 If you toggle the Study Link(s) button to 'Confirm First' the generated link will first show the Study Entry page and only when clicked the '<span class="glyphicon glyphicon-play"></span>' button start the actual study run.
 
