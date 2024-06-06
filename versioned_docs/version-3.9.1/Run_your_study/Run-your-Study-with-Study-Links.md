@@ -46,7 +46,7 @@ After clicking the **Study Links** button you get a new window where you can cre
 1. Lets you create several study links and lets you add a comment to them. The comment is only a hint for you that you can use to distinguish your study links. You can create Personal type study links in bulk by changing the Amount value.
 1. This is the study code. [You can hand this to your workers](Run-your-Study-with-Study-Links.html#study-code--study-entry-page).
 1. This is your actual study link. Hand this to your workers. There are two links that can be toggled by a button: 1) [The 'Open Directly' link starts the study right away](Run-your-Study-with-Study-Links.html#start-directly-with-a-study-link). 2) [The 'Confirm First' lets your worker confirm first with a button press](Run-your-Study-with-Study-Links.html#study-link--study-entry-page-for-confirmation). Use the <span class="glyphicon glyphicon-duplicate"></span> button to copy the link to the clipboard or <span class="glyphicon glyphicon-qrcode"></span> to get the QR code.
-1. Use this checkbox to de-/activate a single study link. A deactivated study link can not be used to start a study run (but an already started study run can continue to run).
+1. Use this switch to de-/activate a single study link. A deactivated study link can not be used to start a study run (but an already started study run can continue to run).
 1. Use these buttons to filter the study links. You can show _All_, only the _Active_ or _Deactivated_ ones, or show only the links that were already _Used_.
 
 ![Study Links page screenshot](/img/v39x/study_links_14.png)
@@ -127,7 +127,7 @@ Each study comes with a "Default" batch (although it can be renamed in its batch
 
 ![Study Links page screenshot](/img/v39x/study_links_12.png)
 
-You can **deactivate** or **activate** a batch by clicking on the checkbox button in each batch row. A deactivated batch doesn't allow any study runs.
+You can **deactivate** or **activate** a batch by clicking on the switch in each batch row. A deactivated batch doesn't allow any study runs.
 
 
 ### Batch Properties

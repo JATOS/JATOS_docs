@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Set up group studies
 
-First and common to all group setups is to check the Group study checkbox in the study properties. 
+First and common to all group setups is to check the Group study switch in the study properties. 
 
 ![Group's property](/img/v39x/study-properties-group-study.png)
 

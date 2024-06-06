@@ -489,7 +489,7 @@ If set to `true` an user with the Admin role can grant the role Superuser to any
 
 ## LDAP authentication
 
-At the moment LDAP users still have to be created manually in JATOS' _User manager_ (with the checkbox LDAP turned on). Only the authentication is done via LDAP.
+At the moment LDAP users still have to be created manually in JATOS' _User manager_ (with the switch LDAP turned on). Only the authentication is done via LDAP.
 
 If your LDAP server uses encryption, you have to add your certificate to JATOS' trusted certificates defined with `play.ws.ssl.trustManager.stores` (only possible in a config file). E.g., if your certificate's location is in `/jatos/conf/certs/ca.pem`, then use the following to add it:
 

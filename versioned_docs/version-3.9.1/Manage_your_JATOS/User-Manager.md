@@ -17,7 +17,7 @@ Every user can be granted Admin rights, by checking the corresponding box in the
 
 ![User manager screenshot](/img/v39x/user_manager_3.png)
 
-A user can be **deactivated** (and activated again) by clicking the checkbox in the 'Active' column. A deactivated user cannot log in anymore but their studies can still be run by participants (to prevent a study from running, deactivate it in the study _Administration_ page).
+A user can be **deactivated** (and activated again) by clicking the switch in the 'Active' column. A deactivated user cannot log in anymore but their studies can still be run by participants (to prevent a study from running, deactivate it in the study _Administration_ page).
 
 If you're an admin and need to get more information about a user's studies, click on the _Studies_ column. You'll see _Result Data Size_ and _Result File size_, which can give you an idea of how many of the server's resources this user needs.
 
@@ -43,7 +43,7 @@ Superusers can access all studies on this JATOS instance regardless if they were
 
 JATOS allows password authentication via LDAP (which lets an institution manage their users in a centralized way). LDAP is disabled by default. To enable it [change the JATOS config file](JATOS_Configuration.html#ldap-authentication). 
 
-Once LDAP is enabled, there will be an additional checkbox 'LDAP' on the overlay dialog when an admin creates a new user. Check this box to enforce authentication by LDAP. Normal JATOS users (locally authenticated) and LDAP users can co-exist in the same JATOS instance.
+Once LDAP is enabled, there will be an additional switch 'LDAP' on the overlay dialog when an admin creates a new user. Check this box to enforce authentication by LDAP. Normal JATOS users (locally authenticated) and LDAP users can co-exist in the same JATOS instance.
 
 At the moment it is not possible to let JATOS create LDAP users automatically - they must be created by an JATOS admin manually.
 

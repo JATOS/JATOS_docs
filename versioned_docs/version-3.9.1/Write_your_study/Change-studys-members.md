@@ -14,7 +14,7 @@ Each study has a **Change users** button in its study toolbar.
 
 In this menu you can add single users by their username. Of course this works only if this is already a JATOS user. For privacy reasons JATOS never shows the username (which is often an email address) in the member list.
 
-A single user is removed by unchecking the checkbox in front of its name.
+A single user is removed by clicking the **Remove** button in the user's row.
 
 Additionally it is possible, if your admins allow it, to add all JATOS users at once or remove all members at once. Then you will see the **Add All** and **Remove All** buttons.
 

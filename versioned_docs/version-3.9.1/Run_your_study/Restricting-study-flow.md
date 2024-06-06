@@ -21,11 +21,11 @@ Let's first say what we understand under the _study flow_:
 
 ## Allow reload or prevent a reload of the same component
 
-A worker can press their browser's reload button and by default JATOS will respond with the same component again: by default, the worker can do a component multiple times. To prevent this each **component properties** has a checkbox _Allow reload_.
+A worker can press their browser's reload button and by default JATOS will respond with the same component again: by default, the worker can do a component multiple times. To prevent this each **component properties** has a switch _Allow reload_.
 
 ![GUI Screenshot](/img/v39x/component-properties-reload.png)
 
-If you want to prevent this behaviour uncheck the box. If a participant reloads the page, they will see an error message. Then the study run will be finished and put to state FAIL. Since each component properties has their own _Allow reload_ checkbox it can be defined differently for each component, e.g. reloading is allowed in the introduction but is prohibited in the actual experiment.
+If you want to prevent this behaviour uncheck the box. If a participant reloads the page, they will see an error message. Then the study run will be finished and put to state FAIL. Since each component properties has their own _Allow reload_ switch it can be defined differently for each component, e.g. reloading is allowed in the introduction but is prohibited in the actual experiment.
 
 **Hint**: You should tell your workers in your study description if you disable reloads, in order to prevent them from accidentally pressing the reload button and failing your study. Consider also adding a warning (e.g. a pop-up) informing participants that they will not be able to continue with the study.  
 
@@ -34,7 +34,7 @@ If you want to prevent this behaviour uncheck the box. If a participant reloads 
 
 ## Ensure a linear study flow
 
-A worker can press their browsers back button and by default JATOS will response with the previous component, the one that was done before by the worker. This might allow a worker to divert from the intended study flow. To prevent this each **study properties** has a checkbox _Linear study flow_.
+A worker can press their browsers back button and by default JATOS will response with the previous component, the one that was done before by the worker. This might allow a worker to divert from the intended study flow. To prevent this each **study properties** has a switch _Linear study flow_.
 
 ![Study Properties Screenshot](/img/v39x/study-properties-linear-flow.png)
 
