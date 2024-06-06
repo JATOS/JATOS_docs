@@ -32,7 +32,7 @@ You can either tell JATOS to assign workers to different groups, or you can keep
 
 ### Scenario 1: One group, assign workers manually
 
-If in a batch you set the _Max total worker_ to 2 and leave the other two Max parameters empty, JATOS has no other choice than to allow only 2 workers and sort them into the same group. If you then [create two Personal Single study links](Run-your-Study-with-Study-Links.html) (but other study link types are fine too) and send the links to your two participants, you can be sure that they will interact with each other. If you need more groups, just create a second batch with two other workers.
+If in a batch you set the _Max total worker_ to 2 and leave the other two Max parameters empty, JATOS has no other choice than to allow only 2 workers and sort them into the same group. If you then [add two Personal Single study links](Run-your-Study-with-Study-Links.html) (but other study link types are fine too) and send the links to your two participants, you can be sure that they will interact with each other. If you need more groups, just add a second batch with two other workers.
 
 ![Prisoners example](/img/prisoners_example.png)
 
@@ -40,11 +40,11 @@ The first two scenarios may apply to the [Prisoner's Dilemma Example Study](/Exa
 
 ### Scenario 2: Several groups, let JATOS assign workers
 
-Say you want to have 3 groups with 2 workers each. You want to leave it to JATOS which workers are paired together. Then, set _Max total workers_ to 6 and both _Max active members_ and _Max total members_ to 2 (remember that these numbers apply to each group separately). Then [create 6 Personal Single study links](Run-your-Study-with-Study-Links.html) (but other study link types are fine too) and send them to your 6 participants.
+Say you want to have 3 groups with 2 workers each. You want to leave it to JATOS which workers are paired together. Then, set _Max total workers_ to 6 and both _Max active members_ and _Max total members_ to 2 (remember that these numbers apply to each group separately). Then [add 6 Personal Single study links](Run-your-Study-with-Study-Links.html) (but other study link types are fine too) and send them to your 6 participants.
 
 ### Scenario 3: One open world
 
-This scenario is basically the opposite of the first one. By limiting neither the _Max total worker_ nor the _Max total members_, nor the _Max active members_ JATOS will sort all workers into one single group that is potentially of unlimited size. Now --to keep it completely open-- just [create one study link type General Single](Run-your-Study-with-Study-Links.html) (but other study link types are fine too) and publish it (e.g. via a mailing list or on a website).
+This scenario is basically the opposite of the first one. By limiting neither the _Max total worker_ nor the _Max total members_, nor the _Max active members_ JATOS will sort all workers into one single group that is potentially of unlimited size. Now --to keep it completely open-- just [add one study link type General Single](Run-your-Study-with-Study-Links.html) (but other study link types are fine too) and publish it (e.g. via a mailing list or on a website).
 
 ![Snake example](/img/snake_example.png)
 

@@ -73,11 +73,11 @@ If the `jatos.abortStudy` function is called (usually after the worker clicks a 
 
 ### How to let a Personal Single worker redo his study?
 
-A Personal Single Worker is only allowed to run their study once. But sometimes you want to allow them to do it a second time (maybe they accidentally clicked the 'Cancel' button). One way would be to just create another Personal Single Link and hand it to the worker. But there is another way without creating a second Link: you can simply delete the worker's result from one of the result pages. This will allow this Personal Single worker to redo this study.
+A Personal Single Worker is only allowed to run their study once. But sometimes you want to allow them to do it a second time (maybe they accidentally clicked the 'Cancel' button). One way would be to just add another Personal Single Link and hand it to the worker. But there is another way without adding a second Link: you can simply delete the worker's result from one of the result pages. This will allow this Personal Single worker to redo this study.
 
 ### Simulate slow network
 
-Usually one develops a study on a local JATOS or a remote JATOS with a good internet - but your participants might live at a place where internet connections are slower or run your study via mobile network. All studies should take this into account, but especially those with big files like images, audio or video. There is a way to artifically throttle the network speed in [Firefox's](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor) and [Chrome's](https://developers.google.com/web/tools/chrome-devtools/network#throttle) Developer Tools. Choose a slower connection, e.g. '3G', and try out your study again. This works on every JATOS, local or a remote.
+Usually one develops a study on a local JATOS or a remote JATOS with a good internet - but your participants might live at a place where internet connections are slower or run your study via mobile network. All studies should take this into account, but especially those with big files like images, audio or video. There is a way to artificially throttle the network speed in [Firefox's](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor) and [Chrome's](https://developers.google.com/web/tools/chrome-devtools/network#throttle) Developer Tools. Choose a slower connection, e.g. '3G', and try out your study again. This works on every JATOS, local or a remote.
 
 ### Personal/General Single links seem not to work when distributed via social networks
 

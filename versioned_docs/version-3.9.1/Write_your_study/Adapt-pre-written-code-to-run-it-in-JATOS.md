@@ -11,11 +11,11 @@ You might have a task, experiment, survey, or study running in a browser. You mi
 
 **Development of a JATOS study usually happens on your local JATOS: [Run an experiment with JATOS - Workflow](Run-an-experiment-with-JATOS-Workflow.html)**
 
-### Create the study in your local JATOS
+### Add the study in your local JATOS
 
-1. Create a new study: click **Studies** in JATOS header -> click "**+**" -> click **New Study**. Choose a study title and click **Add**. JATOS will have created a new folder within your assets root folder (default is the study's UUID and the location in `/path_to_your_JATOS/study_assets_root/`).
+1. Add a new study: click **Studies** in JATOS header -> click "**+**" -> click **New Study**. Choose a study title and click **Add**. JATOS will have created a new folder within your assets root folder (default is the study's UUID and the location in `/path_to_your_JATOS/study_assets_root/`).
 1. Copy all your files (HTML, JavaScripts, images, audio, ...) into your new study folder. 
-1. Back in the JATOS GUI, and within the newly created study, create a new component by clicking **New Component**. Choose a title and set the HTML file name, to the name of the HTML file you just copied into the study folder.
+1. Back in the JATOS GUI, and within the newly added study, add a new component by clicking **New Component**. Choose a title and set the HTML file name, to the name of the HTML file you just copied into the study folder.
 1. In your HTML, CSS and JavaScripts, for your paths you can choose between 1) relative paths or 2) absolute paths. **Relative paths are recommended** since they are shorter and do not change after an export-import of a study.
 
    1. **Relative paths)** Just use the relative path within your study's folder.

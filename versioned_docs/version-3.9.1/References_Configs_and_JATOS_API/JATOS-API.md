@@ -130,7 +130,7 @@ The JATOS API uses personal access tokens (PATs or API tokens).
 
 From [wikipedia](https://en.wikipedia.org/wiki/Personal_access_token):
 
-> a personal access token (or PAT) is a string of characters that can be used to authenticate a user when accessing a computer system instead of the usual password. Though associated with a single account, multiple PATs may be created, and can be manipulated independently of the password associated with that account, including creation and revocation of PATs without altering the password.
+> a personal access token (or PAT) is a string of characters that can be used to authenticate a user when accessing a computer system instead of the usual password. Though associated with a single account, multiple PATs may be added, and can be manipulated independently of the password associated with that account, including creation and revocation of PATs without altering the password.
 
 Unlike other systems (e.g. GitHub) JATOS' tokens have no roles or scopes. A token has the same access as the user they are associated with. Therefore, naturally, a token can only be used to access studies or their result data if the associated user is a member of this study. Only _admin tokens_ (tokens associated with an admin user) can access the administration endpoints.
 

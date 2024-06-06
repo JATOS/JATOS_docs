@@ -17,7 +17,7 @@ In the beginning every study has only one batch, the 'Default' one, but more can
 
 ## Study links - How to let participants run your study
 
-During development of your study you would usually run it with the "Run" button in the study page. But then, when you are done developing you want to let others run your study - you want participants (or workers as they are called in JATOS) do it. For this JATOS lets you create study links that you can hand out to your workers (e.g. via email or social media).
+During development of your study you would usually run it with the "Run" button in the study page. But then, when you are done developing you want to let others run your study - you want participants (or workers as they are called in JATOS) do it. For this JATOS lets you add study links that you can hand out to your workers (e.g. via email or social media).
 
 **Generate study links and hand them to your workers**
 
@@ -38,12 +38,12 @@ You can de-/activate a study link type by clicking on the switch in the left of 
 
 Personal type links can be either "Single" or "Multiple". You can find more details about them in the [Worker Types](Worker-Types.html) page, but the gist is that the links are meant to be handed to individual workers (hence _Personal_). Personal Single links can be used once, whereas Personal Multiple can be used many times.
 
-After clicking the **Study Links** button you get a new window where you can create and manage the study links of this type.
+After clicking the **Study Links** button you get a new window where you can add and manage the study links of this type.
 
 ![Study Links page screenshot](/img/v39x/study_links_11.png)
 
-1. This button creates one study link without a comment. This button is a shortcut to the "New Study Links" button.
-1. Lets you create several study links and lets you add a comment to them. The comment is only a hint for you that you can use to distinguish your study links. You can create Personal type study links in bulk by changing the Amount value.
+1. This button adds one study link without a comment. This button is a shortcut to the "New Study Links" button.
+1. Lets you add several study links and lets you add a comment to them. The comment is only a hint for you that you can use to distinguish your study links. You can add Personal type study links in bulk by changing the Amount value.
 1. This is the study code. [You can hand this to your workers](Run-your-Study-with-Study-Links.html#study-code--study-entry-page).
 1. This is your actual study link. Hand this to your workers. There are two links that can be toggled by a button: 1) [The 'Open Directly' link starts the study right away](Run-your-Study-with-Study-Links.html#start-directly-with-a-study-link). 2) [The 'Confirm First' lets your worker confirm first with a button press](Run-your-Study-with-Study-Links.html#study-link--study-entry-page-for-confirmation). Use the <span class="glyphicon glyphicon-duplicate"></span> button to copy the link to the clipboard or <span class="glyphicon glyphicon-qrcode"></span> to get the QR code.
 1. Use this switch to de-/activate a single study link. A deactivated study link can not be used to start a study run (but an already started study run can continue to run).
@@ -71,7 +71,7 @@ There are two links that can be toggled by a button: 1) [The 'Open Directly' lin
 
 ![Study Links page screenshot](/img/v39x/study_links_6.png)
 
-How to connect to MTurk and create study links is described in its own page: [Connect to Mechanical Turk](Connect-to-Mechanical-Turk.html).
+How to connect to MTurk and add study links is described in its own page: [Connect to Mechanical Turk](Connect-to-Mechanical-Turk.html).
 
 
 ## Study Entry Page
@@ -121,7 +121,7 @@ The advantage of using the Study Entry page with the study codes is similar to a
 
 A batch is a collection of study links and their assoziated workers. Using different batches is useful to organize your study runs, separate their results and vary their setup. E.g. you could separate a pilot run from the "proper" experiment, or you could use different batches for different worker types.
 
-Batches are organized in the Study Links page. Here you can create and delete batches, access each batch's properties and edit its **Batch Session Data** or look through their results.
+Batches are organized in the Study Links page. Here you can add and delete batches, access each batch's properties and edit its **Batch Session Data** or look through their results.
 
 Each study comes with a "Default" batch (although it can be renamed in its batch properties).
 

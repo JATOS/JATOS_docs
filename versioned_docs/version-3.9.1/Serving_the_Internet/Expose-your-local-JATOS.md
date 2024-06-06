@@ -34,7 +34,7 @@ But first some general advice:
    
 1. Copy & Paste the URL with _https_ to your browser and check that JATOS is running properly with JATOS' build-in [tests](/Troubleshooting.html#jatos-test-page).
 
-1. That's all. Now you can [create study links](Run-your-Study-with-Study-Links.html) and send them to your participents. Remember to use JATOS under the _ngrog.io_ address when you create study links (and not your localhost one).
+1. That's all. Now you can [add study links](Run-your-Study-with-Study-Links.html) and send them to your participants. Remember to use JATOS under the _ngrog.io_ address when you add study links (and not your localhost one).
 
 More information on [https://ngrok.com](https://ngrok.com/).
 
@@ -58,6 +58,6 @@ More information on [https://ngrok.com](https://ngrok.com/).
 
 1. Copy & Paste the URL with _https_ to your browser and check that JATOS is running properly with JATOS' build-in [tests](/Troubleshooting.html#jatos-test-page).
 
-1. That's all. Now you can [create study links](Run-your-Study-with-Study-Links.html) and send them to your participents. Remember to use JATOS under the _localhost.run_ address when you create study links (and not your localhost one).
+1. That's all. Now you can [add study links](Run-your-Study-with-Study-Links.html) and send them to your participants. Remember to use JATOS under the _localhost.run_ address when you add study links (and not your localhost one).
 
 More information on [http://localhost.run/](http://localhost.run/).

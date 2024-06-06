@@ -4,7 +4,7 @@ slug: /Write-your-own-Study-Basics-and-Beyond.html
 sidebar_position: 2
 ---
 
-After you [created a new study](Create-a-new-study.html) ... what comes next?
+After you [added a new study](Create-a-new-study.html) ... what comes next?
 
 **Developement of a JATOS study usually happens on your local JATOS: [Run an experiment with JATOS - Workflow](Run-an-experiment-with-JATOS-Workflow.html)**
 
