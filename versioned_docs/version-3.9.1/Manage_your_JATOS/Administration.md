@@ -14,13 +14,13 @@ On the Administration page [users with admin rights](/User-Manager.html) can get
 Manage users, passwords, and rights from here. Find more details on [its documentation page](/User-Manager.html)
 
 
-### Study Administration
+### Study Manager
 
-By clicking the _Studies_ button you'll get to an overview about all studies that are on the JATOS instance. You'll also see, for each study: whom it belongs to (the study members), how much disk space it takes, and when it was active last.
+By clicking the **Study Manager** button you'll get to an overview about all studies that are on the JATOS instance. You'll also see, for each study: whom it belongs to (the study members), how much disk space it takes, and when it was active last.
 
 **In larger JATOS installations it can take up to a couple minutes to gather all data for this page**
 
-![Studies Administration](/img/v39x/study_manager.png)
+![Study Manager](/img/v39x/study_manager.png)
 
 The information is displayed in a table with the columns:
 

@@ -1013,9 +1013,9 @@ Specifies a URL link to the 'terms of use' that will be shown in an info box on 
    ~~~
 
 
-## Study administration page 
+## Study manager page 
 
-Enable/disable some columns in the study administration table. Sometimes the calculation of those columns takes too much time
+Enable/disable some columns in the study manager table. Sometimes the calculation of those columns takes too much time
 due to a slow database or file system.
 
 1. Via **config file** properties `jatos.studyAdmin.showStudyAssetsSize`, `jatos.studyAdmin.showResultDataSize`, and `jatos.studyAdmin.showResultFileSize`
