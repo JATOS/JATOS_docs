@@ -70,7 +70,7 @@ You probably want to save the data that is collected during your experiments. Th
 In your JavaScript you will use _jatos.js_ to handle everything JATOS related and in its [reference](jatos.js-Reference.html) every function and field is described in detail.
 
 
-## Study input and component input
+## Study/component/batch input
 
 Your experiment is defined by its source code, its HTML, JavaScript and CSS. There you specify all text or parameters. But sometimes you want to be able to quickly change your experiment without touching the source code.
 
@@ -79,17 +79,23 @@ E.g. you want to be able to quickly change
 * the number of trials
 * some parameter needed in the experiment
 
-This you can achieve with the "Study input" or "Component input" (in older JATOS versions they are called "Study JSON Input" and "Component JSON Input") because both can be easily edited in the study properties or component properties.
+This you can achieve with the "study input", "component input", or "batch input" (in older JATOS versions they are called "Study JSON Input", "Component JSON Input", or "Batch JSON Input") because both can be easily edited in the study/component/batch properties.
 
 ![Study properties / study input](/img/v39x/study-input.png)
 
-Both input fields take [JSON](https://www.w3schools.com/whatis/whatis_json.asp) and the data you put in there is then available in your study's JavaScript via `jatos.studyJsonInput` and `jatos.componentJsonInput`.
+The input fields take [JSON](https://www.w3schools.com/whatis/whatis_json.asp) and the data you put in there is then available in your study's JavaScript via `jatos.studyJsonInput`, `jatos.componentJsonInput`, and `jatos.batchJsonInput`.
 
-The difference between the study input and component input is that the first one is available during the whole study run, in all components, and the latter one only in the component for which it is specified.
+The difference between study input, component input and batch input is where they are available in the code of your study. The study input data are available everywhere in your study code, the component input only in the code of this component, and the batch input in all study runs that belong to this batch. There is also a difference in what gets exported with the study: only the study and component input data get exported - not the batch input data.
+
+|              | Study input | Component input | Batch input |
+| ------------ | ----------- | --------------- | ----------- |
+| Availability | in the whole study (all components, all batches) | only in the component where it was defined (but in all batches) | only in the batch that belongs to the study run (but there in all components) |
+| Exported with the study   | yes | yes | no |
+
 
 **Example:**
 
-If you put the following in the study input
+If you put the following in the study input of your study properties
 
 ```json
 {

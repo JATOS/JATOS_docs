@@ -68,7 +68,7 @@ see [Group Variables](#group-variables)
 
 ### `jatos.studyProperties`
 
-All the properties (except the JSON input data) you entered for this study
+All the properties (except the study input data) you entered for this study
 
 * `jatos.studyProperties.title` - Study's title
 * `jatos.studyProperties.uuid` - Study's UUID
@@ -80,7 +80,7 @@ All the properties (except the JSON input data) you entered for this study
 
 ### `jatos.studyJsonInput`
 
-The JSON input you entered in the study's properties. This is `{}` if the field was left empty.
+The study input data you entered in the study properties. This is `{}` if the field was left empty.
 
 ### `jatos.studyLength`
 
@@ -91,7 +91,7 @@ Number of component this study has
 
 ### `jatos.componentProperties`
 
-All the properties (except the JSON input data) you entered for this component
+All the properties (except the component input data) you entered for this component
 
 * `jatos.componentProperties.title` - Component's title
 * `jatos.componentProperties.uuid` - Component's UUID
@@ -100,7 +100,7 @@ All the properties (except the JSON input data) you entered for this component
 
 ### `jatos.componentJsonInput`
 
-The JSON input you entered in the component's properties. This is `{}` if the field was left empty.
+The component input data you entered in the component properties. This is `{}` if the field was left empty.
 
 ### `jatos.componentList`
 
@@ -119,7 +119,7 @@ Current version of the _jatos.js_ library
 
 ### `jatos.urlQueryParameters`
 
-Original query string parameters of the URL that starts the study. It is provided as a JavaScript object; the value is `{}` if no query string parameters are present. This might be useful to pass on information from outside of JATOS into a study run, e.g. if you want to pass on information like gender and age. However if you know the information beforehand it's easier to put them in the Study's or Component's JSON input. Another example is MTurk which passes on it's worker's ID via a URL query parameter.
+Original query string parameters of the URL that starts the study. It is provided as a JavaScript object; the value is `{}` if no query string parameters are present. This might be useful to pass on information from outside of JATOS into a study run, e.g. if you want to pass on information like gender and age. However if you know the information beforehand it's easier to put them in the study/component input (in the study/component properties). Another example is MTurk which passes on it's worker's ID via a URL query parameter.
 
 **Examples**
 
@@ -1097,7 +1097,7 @@ All the properties you entered for this batch.
 
 ### `jatos.batchJsonInput`
 
-The JSON input you entered in the batch's properties. This is `{}` if the field was left empty.
+The batch input data you entered in the batch properties. This is `{}` if the field was left empty.
 
 
 
