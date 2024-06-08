@@ -100,7 +100,8 @@ This is how the Study Entry page might look like (you can customize the message)
 
 The study link has the format `https://my.jatos.server/publix/run?code=study-code`, e.g. `https://cortex.jatos.org/publix/run?code=GwtCkuCY4bM`. As you can see it uses the URL query parameter 'code' to pass on the study code.
 
-The advantage of using the Study Entry page is, that participants accidentally clicking on a study link (e.g. in in an email or on Twitter) without the intention of actually running the study (just out of curiosity) will now **not** automatically start the study run but be shown the Study Entry page where they have to press the '<span class="glyphicon glyphicon-play"></span>' button for confirmation. At least single-use links (Personal Single or General Single) can be used only once. Here the study entry page acts as a kind of barrier preventing the invalidation of the link.
+The advantage of using the Study Entry page is, that participants accidentally clicking on a study link (e.g. in in an email or on X/Twitter) without the intention of actually running the study (just out of curiosity) will now **not** automatically start the study run but be shown the Study Entry page where they have to press the '<span class="glyphicon glyphicon-play"></span>' button for confirmation. At least single-use links (Personal Single or General Single) can be used only once. Here the study entry page acts as a kind of barrier preventing the invalidation of the link.
+
 
 #### Customization of the message
 
@@ -153,7 +154,7 @@ A batch is also the place where [JATOS groups](Write-Group-Studies-I-Setup.html)
 ![Groups table](/img/v39x/groups_view.png)
 
 * **Fixed** this button allows you to _fix_ a group. A fixed group doesn't allow new members to join. It keeps the group as it currently is. It has the same effect as the _jatos.js_' function [`jatos.setGroupFixed`](jatos.js-Reference.html#jatossetgroupfixed) ([more info](Write-Group-Studies-II-JavaScript-and-Messaging.html#fixing-a-group)).
-* **Active Workers** are the workers that are currently members in the group
-* **Past Workers** the ones that were members at one point in the past
+* **Active workers** are the workers that are currently members in the group
+* **Past workers** the ones that were members at one point in the past
 * **Results** shows only the study results that belong to this group
-* **Group State** can be START, FINISHED, or FIXED
+* **Group state** can be START, FINISHED, or FIXED

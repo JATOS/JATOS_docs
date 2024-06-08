@@ -24,9 +24,12 @@ By clicking the **Study Manager** button you'll get to an overview about all stu
 
 The information is displayed in a table with the columns:
 
-* **Active** - In cases where e.g. a study uses to many server resources, an admin can **deactivate** (or activate again) it by clicking the switch in the 'Active' column. A deactivated study cannot be started by participants (workers) anymore, but an already started study run can be continued. That means, an admin will not interrupt a participant if they already started doing a study, but no new participants will be able to start it. The study members can still see and edit the study, as well as export its result data. 
-* **Study Assets Size** - The disk size of all asset files associated to this study (HTML, JS, CSS, images, videos, etc.).
-* **Result Count** - The number of study results collected so far on this JATOS instance.
-* **Result Data Size** - The size of all result data that are stored in the database. In brackets is the average size per result count.
-* **Result File Size** - The size of all result files that are stored in the server's file system. In brackets is the average size per result count.
-* **Last Started** - When was this study last started by a participant.
+* **Active** - In cases where e.g. a study uses to many server resources, an admin can **deactivate** (or activate again) it by clicking the switch in the 'Active' column. A deactivated study cannot be started by participants (workers) anymore, but an already started study run can be continued. That means, an admin will not interrupt a participant if they already started doing a study, but no new participants will be able to start it. The study members can still see and edit the study, as well as export its result data.
+* **ID** - The study ID
+* **Title** - The study title
+* **Members** - The users who are members of this study
+* **Study assets size** - The disk size of all asset files associated to this study (HTML, JS, CSS, images, videos, etc.).
+* **Result count** - The number of study results collected so far on this JATOS instance.
+* **Result data size** - The size of all result data that are stored in the database. In brackets is the average size per result count.
+* **Result file size** - The size of all result files that are stored in the server's file system. In brackets is the average size per result count.
+* **Last started** - When was this study last started by a participant.

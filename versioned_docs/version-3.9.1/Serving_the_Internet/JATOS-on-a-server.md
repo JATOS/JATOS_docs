@@ -13,7 +13,7 @@ Installing JATOS as a Internet server usually involves exchanging the embedded d
 
 ## Install Java
 
-JATOS needs Java 8 or 11 to run (17 is not yet supported). You can install your own Java or get a JATOS that is already bundled with Java. 
+JATOS needs Java 11 to run (higher versions are not yet supported). You can install your own Java or get a JATOS that is already bundled with Java. 
 
 
 ## Install JATOS

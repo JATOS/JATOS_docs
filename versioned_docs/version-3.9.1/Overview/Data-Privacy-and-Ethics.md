@@ -72,7 +72,7 @@ E.g. `batchId=1&componentId=1&componentPos=1&componentResultId=35&creationTime=1
 
 #### 2. Cookie JATOS_GENERALSINGLE_UUIDS
 
-This cookie is used by JATOS to store which study runs with a [General Single worker](Worker-Types.html#general-single-worker) already happened in this browser. It only stores a list of IDs that universally identifies a study (UUID).
+This cookie is used by JATOS to store which study runs with a [General Single worker](Worker-Types.html#general-single-worker-and-study-link) already happened in this browser. It only stores a list of IDs that universally identifies a study (UUID).
 
 #### 3. Play Framework session cookie named PLAY_SESSION
 

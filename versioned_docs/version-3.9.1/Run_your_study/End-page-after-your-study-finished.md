@@ -18,7 +18,7 @@ If you include a file named '_endPage.html_' in your study assets folder along w
 **Hint 3:** If you run your study with the **JATOS GUI (Run button)** it won't show you the _endPage.html_ but redirect you back to JATOS' GUI instead.
 
 
-### 2. Study Properties' End Redirect URL
+### 2. Study properties' End Redirect URL
 
 Maybe you want to redirect to a different page, e.g. a Prolific's end page or your department's webpage. This you can do by putting the URL of that page into the study properties in JATOS' GUI. 
 
