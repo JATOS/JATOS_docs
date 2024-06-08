@@ -14,7 +14,7 @@ As an example of this, let's go through the Snake Game group study in detail:
 
 1. Download and import the [Snake game](/Example-Studies)
 1. Open the [Study Links](Run-your-Study-with-Study-Links.html) page
-1. Now get a study link to start the first Snake game: Click on the Study Links button in line Personal Multiple (other study link types are fine too). In the opened pop-up window click on the top-left button <span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-link"></span> to get a new link and then on <span class="glyphicon glyphicon-duplicate"></span> in the link's row to copy it to the clipboard.
+1. Now get a study link to start the first Snake game: Click on the Study Links button in line Personal Multiple (other study link types are fine too). In the opened pop-up window click on the top-left button <span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-link"></span> to get a new link and then on <FAIcon icon="fa-regular fa-clipboard" /> in the link's row to copy it to the clipboard.
 1. Open a new tab in your browser and paste the study link into the address field. Press 'Enter' and the study should start.
 1. Repeat the last step to start a second Snake game.
 1. Now, in both tabs: click through the introduction until you arrive in the waiting room. Click **Join** and then **Ready**.
