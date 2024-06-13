@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Contemori G., Saccani M.S., Bonato M. (2024) Cognitive-Cognitive Dual-task in aging: A cross-sectional online study. PLoS ONE. [DOI](https://doi.org/10.1371/journal.pone.0302152)
+
 Gemignani, M., Giannotti, M., Rigo, P. et al. (2024) Neither Parents’ Sex Nor the Type of Family Modulates Attentional Bias Toward Infant Faces: A Preliminary Study in Different-Sex and Same-Sex Parents. *Arch Sex Behav*. [DOI](https://doi.org/10.1007/s10508-024-02875-9)
 
 Curzel, F., Osiurak, F., Trân, E., Tillmann, B. Ripollés, P., Ferreri, L. (2024) Increased pleasure positively influences prosocial behavior and memory outcomes. *iScience* [DOI](https://doi.org/10.1016/j.isci.2024.109964)
