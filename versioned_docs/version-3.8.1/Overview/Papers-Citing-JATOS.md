@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Loaiza, V.M., Souza, A.S. (2024) Active maintenance in working memory reinforces bindings for future retrieval from episodic long-term memory. *Mem Cogn.* [DOI](https://doi.org/10.3758/s13421-024-01596-7)
+
 Winkelmair, A., Jansen, P. (2024) Can a mindfulness-based training influence explicit and implicit attitudes, as well as sustainable nutrition behaviors, particularly in relation to vegetarianism?. *Appetite* [DOI](https://doi.org/10.1016/j.appet.2024.107554)
 
 Contemori G., Saccani M.S., Bonato M. (2024) Cognitive-Cognitive Dual-task in aging: A cross-sectional online study. PLoS ONE. [DOI](https://doi.org/10.1371/journal.pone.0302152)
