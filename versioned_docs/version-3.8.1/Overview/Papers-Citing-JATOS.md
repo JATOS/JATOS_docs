@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Niedernhuber M, Streicher J, Leggenhager B, Bekinschtein TA. (2024) Attention and Interoception Alter Perceptual and Neural Pain Signatures-A Case Study. *J Pain Res*. [DOI](https://doi.org/10.2147/JPR.S449173)
+
 Schmerwitz, C., Kopp, B. (2024) The future of neuropsychology is digital, theory-driven, and Bayesian: a paradigmatic study of cognitive flexibility. *Frontiers in Psychology* [DOI](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1437192)
 
 Loaiza, V.M., Souza, A.S. (2024) Active maintenance in working memory reinforces bindings for future retrieval from episodic long-term memory. *Mem Cogn.* [DOI](https://doi.org/10.3758/s13421-024-01596-7)
