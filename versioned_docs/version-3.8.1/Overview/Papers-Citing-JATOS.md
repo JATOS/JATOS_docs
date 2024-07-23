@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Xue, S., Gao, X., Wu, Y., Sun, J., Yang, W., Li, X., Ke, S., Yang, L., Jin, H., & Chen, S. (2024). Effects of Theme, Form, and Language on Poetry Reading: Evidence From Chinese ESL Learners. *Empirical Studies of the Arts*. [DOI](https://doi.org/10.1177/02762374241265866)
+
 Niedernhuber M, Streicher J, Leggenhager B, Bekinschtein TA. (2024) Attention and Interoception Alter Perceptual and Neural Pain Signatures-A Case Study. *J Pain Res*. [DOI](https://doi.org/10.2147/JPR.S449173)
 
 Schmerwitz, C., Kopp, B. (2024) The future of neuropsychology is digital, theory-driven, and Bayesian: a paradigmatic study of cognitive flexibility. *Frontiers in Psychology* [DOI](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1437192)
