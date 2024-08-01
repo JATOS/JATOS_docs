@@ -333,7 +333,7 @@ Reichardt, R., Polner, B. & Simor, P. (2022) The graded novelty encoding task: N
 
 Lovibond, P. F., Chow, J. Y. L., Tobler, C., & Lee, J. C. (2022). Reversal of inhibition by no-modulation training but not by extinction in human causal learning. *Journal of Experimental Psychology: Animal Learning and Cognition* Advance online publication. [DOI](https://doi.org/10.1037/xan0000328)
 
-Donato R, Pavan A, Cavallin G, Ballan L, Betteto L, Nucci M, Campana G. (2022) Mechanisms Underlying Directional Motion Processing and Form-Motion Integration Assessed with Visual Perceptual Learning. *Vision* [DOI](https://doi.org/10.3390/vision6020029)
+Donato, R., Pavan, A., Cavallin, G., Ballan, L., Betteto, L., Nucci, M., Campana, G. (2022) Mechanisms Underlying Directional Motion Processing and Form-Motion Integration Assessed with Visual Perceptual Learning. *Vision* [DOI](https://doi.org/10.3390/vision6020029)
 
 Appelganc K, Rieger T, Roesler E, Manzey D. (2022) How Much Reliability Is Enough? A Context-Specific View on Human Interaction With (Artificial) Agents From Different Perspectives. *Journal of Cognitive Engineering and Decision Making* [DOI](https://doi.org/doi:10.1177/15553434221104615)
 
