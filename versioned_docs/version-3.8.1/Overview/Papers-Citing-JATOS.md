@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Frugarello, P., Rusconi, E., Job, R. (2024) The label-feedback effect is influenced by target category in visual search. *PLoS ONE*. [DOI](https://doi.org/10.1371/journal.pone.0306736)
+
 Bauer, R., Jansen, P. (2024) A short mindfulness induction might increase women’s mental rotation performance. *Consciousness and Cognition* [DOI](https://doi.org/10.1016/j.concog.2024.103721)
 
 Xue, S., Gao, X., Wu, Y., Sun, J., Yang, W., Li, X., Ke, S., Yang, L., Jin, H., & Chen, S. (2024). Effects of Theme, Form, and Language on Poetry Reading: Evidence From Chinese ESL Learners. *Empirical Studies of the Arts*. [DOI](https://doi.org/10.1177/02762374241265866)
