@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Brouwer, J., van den Berg, F., Knooihuizen, R., Loerts, H., & Keijzer, M. (2024). The effects of language learning on cognitive functioning and psychosocial well-being in cognitively healthy older adults: A semi-blind randomized controlled trial. *Aging, Neuropsychology, and Cognition*. [DOI](https://doi.org/10.1080/13825585.2024.2384107)
+
 Frugarello, P., Rusconi, E., Job, R. (2024) The label-feedback effect is influenced by target category in visual search. *PLoS ONE*. [DOI](https://doi.org/10.1371/journal.pone.0306736)
 
 Bauer, R., Jansen, P. (2024) A short mindfulness induction might increase women’s mental rotation performance. *Consciousness and Cognition* [DOI](https://doi.org/10.1016/j.concog.2024.103721)
