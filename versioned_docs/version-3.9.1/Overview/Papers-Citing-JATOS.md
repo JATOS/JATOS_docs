@@ -13,6 +13,26 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 ### 2024
 zu Putlitz, J., & Roesler, E. (2024). Let’s Get Physical: The Influence of Embodiment on Industrial Human-Robot Interaction. *Proceedings of the Human Factors and Ergonomics Society Annual Meeting* [DOI](https://doi.org/10.1177/10711813241264206)
 
+Brouwer, J., van den Berg, F., Knooihuizen, R., Loerts, H., & Keijzer, M. (2024). The effects of language learning on cognitive functioning and psychosocial well-being in cognitively healthy older adults: A semi-blind randomized controlled trial. *Aging, Neuropsychology, and Cognition*. [DOI](https://doi.org/10.1080/13825585.2024.2384107)
+
+Frugarello, P., Rusconi, E., Job, R. (2024) The label-feedback effect is influenced by target category in visual search. *PLoS ONE*. [DOI](https://doi.org/10.1371/journal.pone.0306736)
+
+Bauer, R., Jansen, P. (2024) A short mindfulness induction might increase women’s mental rotation performance. *Consciousness and Cognition* [DOI](https://doi.org/10.1016/j.concog.2024.103721)
+
+Xue, S., Gao, X., Wu, Y., Sun, J., Yang, W., Li, X., Ke, S., Yang, L., Jin, H., & Chen, S. (2024). Effects of Theme, Form, and Language on Poetry Reading: Evidence From Chinese ESL Learners. *Empirical Studies of the Arts*. [DOI](https://doi.org/10.1177/02762374241265866)
+
+Niedernhuber M, Streicher J, Leggenhager B, Bekinschtein TA. (2024) Attention and Interoception Alter Perceptual and Neural Pain Signatures-A Case Study. *J Pain Res*. [DOI](https://doi.org/10.2147/JPR.S449173)
+
+Schmerwitz, C., Kopp, B. (2024) The future of neuropsychology is digital, theory-driven, and Bayesian: a paradigmatic study of cognitive flexibility. *Frontiers in Psychology* [DOI](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1437192)
+
+Loaiza, V.M., Souza, A.S. (2024) Active maintenance in working memory reinforces bindings for future retrieval from episodic long-term memory. *Mem Cogn.* [DOI](https://doi.org/10.3758/s13421-024-01596-7)
+
+Winkelmair, A., Jansen, P. (2024) Can a mindfulness-based training influence explicit and implicit attitudes, as well as sustainable nutrition behaviors, particularly in relation to vegetarianism?. *Appetite* [DOI](https://doi.org/10.1016/j.appet.2024.107554)
+
+Contemori G., Saccani M.S., Bonato M. (2024) Cognitive-Cognitive Dual-task in aging: A cross-sectional online study. PLoS ONE. [DOI](https://doi.org/10.1371/journal.pone.0302152)
+
+Gemignani, M., Giannotti, M., Rigo, P. et al. (2024) Neither Parents’ Sex Nor the Type of Family Modulates Attentional Bias Toward Infant Faces: A Preliminary Study in Different-Sex and Same-Sex Parents. *Arch Sex Behav*. [DOI](https://doi.org/10.1007/s10508-024-02875-9)
+
 Curzel, F., Osiurak, F., Trân, E., Tillmann, B. Ripollés, P., Ferreri, L. (2024) Increased pleasure positively influences prosocial behavior and memory outcomes. *iScience* [DOI](https://doi.org/10.1016/j.isci.2024.109964)
 
 Berkovich, R., & Meiran, N. (2024). Both pleasant and unpleasant emotional feelings follow Weber’s law but it depends how you ask. *Emotion* [DOI](https://doi.org/10.1037/emo0001343)
