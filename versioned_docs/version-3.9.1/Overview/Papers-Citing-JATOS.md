@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Pithayarungsarit, P., Rieger, T., Onnasch, L., & Roesler, E. (2024). The Pop-Out Effect of Rarer Occurring Stimuli Shapes the Effectiveness of AI Explainability. *Proceedings of the Human Factors and Ergonomics Society Annual Meeting*. [DOI](https://doi.org/10.1177/10711813241261284)
+
 zu Putlitz, J., & Roesler, E. (2024). Let’s Get Physical: The Influence of Embodiment on Industrial Human-Robot Interaction. *Proceedings of the Human Factors and Ergonomics Society Annual Meeting* [DOI](https://doi.org/10.1177/10711813241264206)
 
 Brouwer, J., van den Berg, F., Knooihuizen, R., Loerts, H., & Keijzer, M. (2024). The effects of language learning on cognitive functioning and psychosocial well-being in cognitively healthy older adults: A semi-blind randomized controlled trial. *Aging, Neuropsychology, and Cognition*. [DOI](https://doi.org/10.1080/13825585.2024.2384107)
