@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Kim, M., Kim, K.I. & Kim, H. (2024) Self-interest overrides rank-reversal aversion in resource distribution. *Sci Rep*. [DOI](https://doi.org/10.1038/s41598-024-70225-9)
+
 Bonny, J.W., Hussain, Z., Russell, M.D., Trouvé A., Milke J.A. (2024) Simulated fire video collection for advancing understanding of human behavior in building fires. *Frontiers in Psychology*. [DOI](https://doi.org/10.3389/fpsyg.2024.1438020)
 
 Duncan, D. H., & Theeuwes, J. (2024). Secondary capture: Salience information persistently drives attentional selection. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001223)
