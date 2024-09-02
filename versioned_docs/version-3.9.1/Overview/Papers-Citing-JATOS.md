@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Duncan, D. H., & Theeuwes, J. (2024). Secondary capture: Salience information persistently drives attentional selection. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001223)
+
+Li, AS., van Moorselaar, D. & Theeuwes, J. (2024) Attending is not enough: Responding to targets is needed for across-trial statistical learning. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-024-02952-0)
+
 Pithayarungsarit, P., Rieger, T., Onnasch, L., & Roesler, E. (2024). The Pop-Out Effect of Rarer Occurring Stimuli Shapes the Effectiveness of AI Explainability. *Proceedings of the Human Factors and Ergonomics Society Annual Meeting*. [DOI](https://doi.org/10.1177/10711813241261284)
 
 zu Putlitz, J., & Roesler, E. (2024). Let’s Get Physical: The Influence of Embodiment on Industrial Human-Robot Interaction. *Proceedings of the Human Factors and Ergonomics Society Annual Meeting* [DOI](https://doi.org/10.1177/10711813241264206)
