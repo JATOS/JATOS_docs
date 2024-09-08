@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Caudrelier, T., Ménard, L. Beausoleil, M.M., Martin, C.D., Samuel, A.G. When Jack isn’t Jacques: Simultaneous opposite language-specific speech perceptual learning in French–English bilinguals. *PNAS Nexus* [DOI](https://doi.org/10.1093/pnasnexus/pgae354)
+
+Shum, Y.H., Galang, C.M.,Brass, M. (2024) Using a Veto paradigm to investigate the decision models in explaining Libet-style experiments. *Consciousness and Cognition* [DOI](https://doi.org/10.1016/j.concog.2024.103732)
+
 Kim, M., Kim, K.I. & Kim, H. (2024) Self-interest overrides rank-reversal aversion in resource distribution. *Sci Rep*. [DOI](https://doi.org/10.1038/s41598-024-70225-9)
 
 Bonny, J.W., Hussain, Z., Russell, M.D., Trouvé A., Milke J.A. (2024) Simulated fire video collection for advancing understanding of human behavior in building fires. *Frontiers in Psychology*. [DOI](https://doi.org/10.3389/fpsyg.2024.1438020)
