@@ -11,7 +11,7 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
-Caudrelier, T., Ménard, L. Beausoleil, M.M., Martin, C.D., Samuel, A.G. When Jack isn’t Jacques: Simultaneous opposite language-specific speech perceptual learning in French–English bilinguals. *PNAS Nexus* [DOI](https://doi.org/10.1093/pnasnexus/pgae354)
+Caudrelier, T., Ménard, L. Beausoleil, M.M., Martin, C.D., Samuel, A.G. (2024) When Jack isn’t Jacques: Simultaneous opposite language-specific speech perceptual learning in French–English bilinguals. *PNAS Nexus* [DOI](https://doi.org/10.1093/pnasnexus/pgae354)
 
 Shum, Y.H., Galang, C.M.,Brass, M. (2024) Using a Veto paradigm to investigate the decision models in explaining Libet-style experiments. *Consciousness and Cognition* [DOI](https://doi.org/10.1016/j.concog.2024.103732)
 
