@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Wainio-Theberge, S., & Armony, J. L. (2024). Differences in natural standing posture are associated with antisocial and manipulative personality traits. *Journal of Personality and Social Psychology*. [DOI](https://doi.org/10.1037/pspp0000515)
+
 Embon, I., Gerbaudo, M.A., Usaj, A.R. et al. (2024) Exploring the relationship between dysfunctional personality traits with metacognition and confidence. *Curr Psychol*. [DOI](https://doi.org/10.1007/s12144-024-06669-z)
 
 Di Ponzio, M., Battaglini, L., Bertamini, M. et al. (2024) Behavioural stochastic resonance across the lifespan. *Cogn Affect Behav Neurosci* [DOI](https://doi.org/10.3758/s13415-024-01220-w)
