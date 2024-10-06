@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+de Valério de Arruda, M., Reyes, M. B., das Neves, S. F., Herrmann, F., Verzili, B., & Galduróz, R. F. (2024). Temporal bisection task as a predictor of cognitive deficits. *European Journal of Neuroscience*. [DOI](https://doi.org/10.1111/ejn.16554)
+
 Xu, X., Zhu, Z., Zheng, X. et al. (2024) Temporal asymmetries in inferring unobserved past and future events. *Nat Commun*. [DOI](https://doi.org/10.1038/s41467-024-52627-5)
 
 Wainio-Theberge, S., & Armony, J. L. (2024). Differences in natural standing posture are associated with antisocial and manipulative personality traits. *Journal of Personality and Social Psychology*. [DOI](https://doi.org/10.1037/pspp0000515)
