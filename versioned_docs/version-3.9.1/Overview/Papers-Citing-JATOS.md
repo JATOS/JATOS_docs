@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Godwin, H. J., Liversedge, S. P., Mestry, N., Dewis, H., & Donnelly, N. (2024). Time on task effects during interactive visual search. *Journal of Experimental Psychology: Applied*. [DOI](https://doi.org/10.1037/xap0000521)
+
+Schreiner, M.R., Feustel, S. & Kunde, W. (2024) Linking actions and memories: Probing the interplay of action-effect congruency, agency experience, and recognition memory. *Mem Cogn*. [DOI](https://doi.org/10.3758/s13421-024-01644-2)
+
 de Valério de Arruda, M., Reyes, M. B., das Neves, S. F., Herrmann, F., Verzili, B., & Galduróz, R. F. (2024). Temporal bisection task as a predictor of cognitive deficits. *European Journal of Neuroscience*. [DOI](https://doi.org/10.1111/ejn.16554)
 
 Xu, X., Zhu, Z., Zheng, X. et al. (2024) Temporal asymmetries in inferring unobserved past and future events. *Nat Commun*. [DOI](https://doi.org/10.1038/s41467-024-52627-5)
