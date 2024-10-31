@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Hasenäcker, J., & Domahs, F. (2024). EXPRESS: Same same but different – The graded influence of vowel quality and prosodic prominence on letter detection. *Quarterly Journal of Experimental Psychology*. [DOI](https://doi.org/10.1177/17470218241293742)
+
 Godwin, H. J., Liversedge, S. P., Mestry, N., Dewis, H., & Donnelly, N. (2024). Time on task effects during interactive visual search. *Journal of Experimental Psychology: Applied*. [DOI](https://doi.org/10.1037/xap0000521)
 
 Schreiner, M.R., Feustel, S. & Kunde, W. (2024) Linking actions and memories: Probing the interplay of action-effect congruency, agency experience, and recognition memory. *Mem Cogn*. [DOI](https://doi.org/10.3758/s13421-024-01644-2)
