@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Duncan, D.H., van Moorselaar, D. & Theeuwes, J. (2024) Visual statistical learning requires attention. *Psychon Bull Rev* [DOI](https://doi.org/10.3758/s13423-024-02605-1)
+
 Hasenäcker, J., & Domahs, F. (2024). EXPRESS: Same same but different – The graded influence of vowel quality and prosodic prominence on letter detection. *Quarterly Journal of Experimental Psychology*. [DOI](https://doi.org/10.1177/17470218241293742)
 
 Godwin, H. J., Liversedge, S. P., Mestry, N., Dewis, H., & Donnelly, N. (2024). Time on task effects during interactive visual search. *Journal of Experimental Psychology: Applied*. [DOI](https://doi.org/10.1037/xap0000521)
