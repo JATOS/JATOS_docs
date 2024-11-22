@@ -11,6 +11,14 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Pucci, V., Contemori, G., Saccani, M.S. et al. (2024) Auto-Global Examination of Mental State (Auto-GEMS): a web-based self-administered cognitive screening. *Aging Clin Exp Res*. [DOI](https://doi.org/10.1007/s40520-024-02862-z)
+
+Wiradhany, W., Pócs, A., Baumgartner, S.E. (2024) Are Social Media Notifications Distracting? *Experimental Psychology* [DOI](https://doi.org/10.1027/1618-3169/a000625)
+
+Russell, M.D., Bonny, J.W., Reed, R. (2024) Impact of Virtual Reality on Decision-Making and Risk Assessment During Simulated Residential Fire Scenarios. *Fire* [DOI](https://doi.org/10.3390/fire7120427)
+
+Nakamura, S., Kobayashi, M. (2024) Examining psychological detachment from work, work engagement, and thought control in Japanese work at home environments. *Discov Psychol* [DOi](https://doi.org/10.1007/s44202-024-00291-7)
+
 Duncan, D.H., van Moorselaar, D. & Theeuwes, J. (2024) Visual statistical learning requires attention. *Psychon Bull Rev* [DOI](https://doi.org/10.3758/s13423-024-02605-1)
 
 Hasenäcker, J., & Domahs, F. (2024). EXPRESS: Same same but different – The graded influence of vowel quality and prosodic prominence on letter detection. *Quarterly Journal of Experimental Psychology*. [DOI](https://doi.org/10.1177/17470218241293742)
