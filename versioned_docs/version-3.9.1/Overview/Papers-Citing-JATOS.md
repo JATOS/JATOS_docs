@@ -11,7 +11,6 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
-Norden, M., Saakyan, W., Vietmeier, N., Kirst, S., Dziobek, I., Asbrand, J., Drimalla, H. (2024). Introducing the "Simulated Interaction Task for Children" (Kids-SIT): Recording and Analyzing Social Interaction Behavior. *Association for Computing Machinery* [DOI](https://doi.org/10.1145/3701571.3703368)
 
 Conson, M., Zappullo, I., Cordasco, G., Trojano, L., Raimo, G., Cecere, R., Baiano, C., Lauro, A., & Esposito, A. (2024). Altercentrism in perspective-taking: The role of humanisation in embodying the agent’s point of view. *Quarterly Journal of Experimental Psychology*. [DOI](https://doi.org/10.1177/17470218241300252)
 
