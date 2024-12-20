@@ -11,6 +11,9 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2024
+Roesler, E., Rieger, T. Langer, M. (2024) Numeric vs. verbal information: The influence of information quantifiability in Human-AI vs. Human-Human decision support, *Computers in Human Behavior: Artificial Humans* [DOI](https://doi.org/10.1016/j.chbah.2024.100116)
+
+Banh N.C., Tünnermann J., Rohlfing K.J., Scharlau, I. (2024) Benefiting from binary negations? Verbal negations decrease visual attention and balance its distribution. *Front. Psychol.* [DOI](http://10.3389/fpsyg.2024.1451309)
 
 Conson, M., Zappullo, I., Cordasco, G., Trojano, L., Raimo, G., Cecere, R., Baiano, C., Lauro, A., & Esposito, A. (2024). Altercentrism in perspective-taking: The role of humanisation in embodying the agent’s point of view. *Quarterly Journal of Experimental Psychology*. [DOI](https://doi.org/10.1177/17470218241300252)
 
