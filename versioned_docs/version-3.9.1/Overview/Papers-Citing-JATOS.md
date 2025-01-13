@@ -10,6 +10,17 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
+### 2025
+Büsel, C., Dahm, S.F., Sachse, P. et al. (2025) The role of inhibition in the processing of peripheral cues. *Psychological Research*. [DOI](https://doi.org/10.1007/s00426-024-02073-1)
+
+Winkelmair, A., Schroter, F.A., Jansen, P. Vegetarian and sustainable food consumption behavior: Exploring the relation to explicit and implicit attitudes toward vegetarian foods and dispositional mindfulness. *Appetite*. [DOI](https://doi.org/10.1016/j.appet.2024.107847)
+
+Wainio-Theberge, S., Khoury, B. & Armony, J.L. (2025) Mindfulness Skills and Experience Are Associated With Enhanced Emotional Body Sensations. *Mindfulness*. [DOI](https://doi.org/10.1007/s12671-024-02506-3)
+
+Sousa de Gois, T., Oliveira Freitas, F., Tejada, J., Freitag, R. (2025). NLP and education Using semantic similarity to evaluate filled gaps in a large-scale Cloze test in the classroom. *The Mental Lexicon*. [DOI](https://doi.org/10.1075/ml.24027.deg)
+
+Xu, Z., Theeuwes, J. & Los, S.A. (2025) Statistical learning of spatiotemporal target regularities in the absence of saliency. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-024-02992-6)
+
 ### 2024
 Roesler, E., Rieger, T. Langer, M. (2024) Numeric vs. verbal information: The influence of information quantifiability in Human-AI vs. Human-Human decision support, *Computers in Human Behavior: Artificial Humans* [DOI](https://doi.org/10.1016/j.chbah.2024.100116)
 
