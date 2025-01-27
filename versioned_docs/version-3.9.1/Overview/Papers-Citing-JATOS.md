@@ -11,6 +11,13 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+
+Mera, Y., Modirrousta-Galian, A., Thomas, G., Higham, P. A., & Seabrooke, T. (2025). Erring on the side of caution: Two failures to replicate the derring effect. *Journal of Experimental Psychology: General*. [DOI](https://doi.org/10.1037/xge0001707)
+
+Belo, J., Clerc, M. & Schon, D. (2025) Attentional Inhibition Ability Predicts Neural Representation During Challenging Auditory Streaming. *Cogn Affect Behav Neurosci*. [DOI](https://doi.org/10.3758/s13415-024-01260-2)
+
+de Waard, J., Theeuwes, J. & Bogaerts, L. (2025) Taking time: Auditory statistical learning benefits from distributed exposure. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-024-02634-w)
+
 Büsel, C., Dahm, S.F., Sachse, P. et al. (2025) The role of inhibition in the processing of peripheral cues. *Psychological Research*. [DOI](https://doi.org/10.1007/s00426-024-02073-1)
 
 Winkelmair, A., Schroter, F.A., Jansen, P. Vegetarian and sustainable food consumption behavior: Exploring the relation to explicit and implicit attitudes toward vegetarian foods and dispositional mindfulness. *Appetite*. [DOI](https://doi.org/10.1016/j.appet.2024.107847)
