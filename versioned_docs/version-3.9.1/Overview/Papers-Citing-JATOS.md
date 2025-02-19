@@ -12,6 +12,12 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 
 ### 2025
 
+Bading, K. C., Barth, M., & Rothermund, K. (2025). Evidence for an evaluative effect of stimulus co-occurrence may be inflated by evaluative differences between assimilative and contrastive relations. *Cognition and Emotion*. [DOI](https://doi.org/10.1080/02699931.2025.2460099)
+
+Michalareas, G., Lehr, C., Grabenhorst, M. et al. (2025) Social processing distorts physical distance perception. *Sci Rep*. [DOI](https://doi.org/10.1038/s41598-025-89935-9)
+
+Brand J, Preininger M, Kříž A, Ceháková M. Feminine fox, not so feminine box: constraints on linguistic relativity effects for grammatical and conceptual gender. Language and Cognition. [DOI](https://doi.org/10.1017/langcog.2025.3)
+
 Mera, Y., Modirrousta-Galian, A., Thomas, G., Higham, P. A., & Seabrooke, T. (2025). Erring on the side of caution: Two failures to replicate the derring effect. *Journal of Experimental Psychology: General*. [DOI](https://doi.org/10.1037/xge0001707)
 
 Belo, J., Clerc, M. & Schon, D. (2025) Attentional Inhibition Ability Predicts Neural Representation During Challenging Auditory Streaming. *Cogn Affect Behav Neurosci*. [DOI](https://doi.org/10.3758/s13415-024-01260-2)
