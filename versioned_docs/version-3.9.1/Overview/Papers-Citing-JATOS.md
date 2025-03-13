@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Zapata, J.M., Comay, M.A., Taricco, G., Barttfeld, P., Solovey, G., Saal, A., Ahumada, J.V. (2025) Metacognitive Sensitivity on the Iowa Gambling Task Reveals Awareness as a Necessary Condition for Advantageous Performance. *Experimental Psychology* [DOI](https://doi.org/10.1027/1618-3169/a000636)
+
+Trier, H.A., O’Reilly, J.X., Spiering, L. et al. (2025) Emotions and individual differences shape human foraging under threat. *Nat. Mental Health*. [DOI](https://doi.org/10.1038/s44220-025-00393-8)
+
 Purkart, R., Delem, M., Ranson, V., Andrey, C., Versace, R., Cavalli, E., Plancher, G. (2025) Are there unconscious visual images in aphantasia? Development of an implicit priming paradigm. *Cognition* [DOI](https://doi.org/10.1016/j.cognition.2024.106059)
 
 Bruckner, R., Nassar, M. R., Li, S.-C., & Eppinger, B. (2025). Differences in learning across the lifespan emerge via resource-rational computations. *Psychological Review*. [DOI](https://doi.org/10.1037/rev0000526)
