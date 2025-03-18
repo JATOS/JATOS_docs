@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Jansen, P., Haugg, J. & Schroter, F.A. (2025) Explicit and implicit affective attitudes of female athletes towards different body sizes. *BMC Psychol*. [DOI](https://doi.org/10.1186/s40359-025-02567-6)
+
+Bading, K. C., Barth, M., & Rothermund, K. (2025). Evidence for an evaluative effect of stimulus co-occurrence may be inflated by evaluative differences between assimilative and contrastive relations. *Cognition and Emotion*. [DOI](https://doi.org/10.1080/02699931.2025.2460099)
+
 Zapata, J.M., Comay, M.A., Taricco, G., Barttfeld, P., Solovey, G., Saal, A., Ahumada, J.V. (2025) Metacognitive Sensitivity on the Iowa Gambling Task Reveals Awareness as a Necessary Condition for Advantageous Performance. *Experimental Psychology* [DOI](https://doi.org/10.1027/1618-3169/a000636)
 
 Trier, H.A., O’Reilly, J.X., Spiering, L. et al. (2025) Emotions and individual differences shape human foraging under threat. *Nat. Mental Health*. [DOI](https://doi.org/10.1038/s44220-025-00393-8)
