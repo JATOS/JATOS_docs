@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Laycock, K. and McGowan, K.B. (2025), Removing the Disguise: The Matched Guise Technique, Incongruity, and Listener Awareness. *Journal of Sociolinguistics*. [DOI](https://doi.org/10.1111/josl.12700)
+
 Jansen, P., Haugg, J. & Schroter, F.A. (2025) Explicit and implicit affective attitudes of female athletes towards different body sizes. *BMC Psychol*. [DOI](https://doi.org/10.1186/s40359-025-02567-6)
 
 Bading, K. C., Barth, M., & Rothermund, K. (2025). Evidence for an evaluative effect of stimulus co-occurrence may be inflated by evaluative differences between assimilative and contrastive relations. *Cognition and Emotion*. [DOI](https://doi.org/10.1080/02699931.2025.2460099)
