@@ -134,27 +134,7 @@ JATOS can be configured to use an base path. E.g we have the host _www\.example\
 
 ### Embedding in frames or iframes
 
-The [CSP directive 'frame-ancestors'](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/frame-ancestors) can be used to allow certain domains that are allowed to embed a JATOS study in an [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) (or similar embedding techniques).
-
-1. Via **config file** property `play.filters.csp.directives`
-
-    Example:
-
-    ~~~shell
-    play.filters.csp.directives {
-        frame-ancestors = "'self' allowed-domain1.com allowed-domain2.com"
-    }
-    ~~~
-
-1. Via **command-line** argument `-Dplay.filters.csp.directives`
-
-   Example:
-
-   ~~~shell
-   -Dplay.filters.csp.directives.frame-ancestors="'self' allowed-domain1.com allowed-domain2.com"
-   ~~~
-
-Older browsers might only support the [X-Frame-Options header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options), which can also be used to allow or disallow embedding a JATOS study in an iframe/frame. Possible values are `DENY` (completely disallow iframes), `SAMEORIGIN` (embedding page has the same origin as the iframe), or `null` (allow iframes everywhere). By default it set to `SAMEORIGIN`. It's not possible to specify a certain domain.
+The [X-Frame-Options header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) can be used to allow or disallow embedding a JATOS study in an iframe/frame. Possible values are `DENY` (completely disallow iframes), `SAMEORIGIN` (embedding page has the same origin as the iframe), or `null` (allow iframes everywhere). By default it set to `SAMEORIGIN`. It's not possible to specify a certain domain. The [CSP directive 'frame-ancestors'](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/frame-ancestors) is currently not supported by JATOS.
 
 1. Via **config file** property `play.filters.headers.frameOptions`
 
