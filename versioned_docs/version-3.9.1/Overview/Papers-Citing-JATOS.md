@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Dome, L., & Wills, A. J. (2025). g-Distance: On the comparison of model and human heterogeneity. *Psychological Review*. [DOI](https://doi.org/10.1037/rev0000550)
+
 Li, C., Frischkorn, G.T., Dames, H., Oberauer, K. (2025) The benefit of removing information from working memory: Increasing available cognitive resources or reducing interference? *Cognition* [DOI](https://doi.org/10.1016/j.cognition.2025.106134)
 
 Galang, C.M., Akan, A., Pfister, R., Brass, M. (2025) Temporal binding during deliberate rule breaking. *Consciousness and Cognition*. [DOI](https://doi.org/10.1016/j.concog.2025.103851)
