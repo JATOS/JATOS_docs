@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Batista, A. R., Folia, V., & Silva, S. (2025). More than a Bundle? Developing Adaptive Guidance for Task Selection in an Online, Semantic-Based Cognitive Stimulation Program. *Brain Sciences*. [DOI](https://doi.org/10.3390/brainsci15040419)
+
 Dome, L., & Wills, A. J. (2025). g-Distance: On the comparison of model and human heterogeneity. *Psychological Review*. [DOI](https://doi.org/10.1037/rev0000550)
 
 Li, C., Frischkorn, G.T., Dames, H., Oberauer, K. (2025) The benefit of removing information from working memory: Increasing available cognitive resources or reducing interference? *Cognition* [DOI](https://doi.org/10.1016/j.cognition.2025.106134)
