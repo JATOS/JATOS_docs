@@ -27,7 +27,7 @@ Now, if you want to run JATOS in multiple containers in parallel you need to con
 1. Set **`-Djatos.multiNode=true`** in the _command_ section of the _jatos_ service.
 1. Set the **`JATOS_SECRET`** environment variable to a string with at least than 15 characters (otherwise the session cookie that JATOS uses for authentication won't work).
 
-It's important to share some of JATOS folders between all JATOS nodes. In our Docker composed setup this is already achieved with the shared _volumes_ _jatos-data_, _jatos-logs_, and _jatos-db_. Nothing to do here.
+It's important to share some of JATOS folders between all JATOS nodes. In our Docker Compose setup this is already achieved with the shared _volumes_ _jatos-data_, _jatos-logs_, and _jatos-db_. Nothing to do here.
 
 Finally, to scale up and run multiple JATOS instances use the `--scale` parameter, e.g. to run two JATOS instances:
 
