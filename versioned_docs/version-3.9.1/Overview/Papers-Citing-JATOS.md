@@ -13,6 +13,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 ### 2025
 Wessel, I., Krans, J., et al. (2025) Evidence That Tetris Reduces Immediate but Not Subsequent Daily Intrusions of a Trauma Film: A Multilab Replication Study. *Collabra: Psychology* [DOI](https://doi.org/10.1525/collabra.130791)
 
+Cooper, P., Lim, A., Irons, J., McGrath, M., Jarvis, H., Duenser, A. (2025) Trust in AI is dynamically updated based on users' expectations. *Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA '25)*. [DOI](https://doi.org/10.1145/3706599.3719870)
+
 Batista, A. R., Folia, V., & Silva, S. (2025). More than a Bundle? Developing Adaptive Guidance for Task Selection in an Online, Semantic-Based Cognitive Stimulation Program. *Brain Sciences*. [DOI](https://doi.org/10.3390/brainsci15040419)
 
 Dome, L., & Wills, A. J. (2025). g-Distance: On the comparison of model and human heterogeneity. *Psychological Review*. [DOI](https://doi.org/10.1037/rev0000550)
