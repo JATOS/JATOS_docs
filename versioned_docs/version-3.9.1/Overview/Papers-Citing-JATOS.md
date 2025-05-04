@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Ward, M. Z., Bouguettaya, A., & van Zoest, W. (2025). A British understanding of racialised gaze-cueing in the context of implicit racial bias, explicit racial identity and self-esteem. *Quarterly Journal of Experimental Psychology* [DOI](https://doi.org/10.1177/17470218251335304)
+
 Wessel, I., Krans, J., et al. (2025) Evidence That Tetris Reduces Immediate but Not Subsequent Daily Intrusions of a Trauma Film: A Multilab Replication Study. *Collabra: Psychology* [DOI](https://doi.org/10.1525/collabra.130791)
 
 Cooper, P., Lim, A., Irons, J., McGrath, M., Jarvis, H., Duenser, A. (2025) Trust in AI is dynamically updated based on users' expectations. *Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA '25)*. [DOI](https://doi.org/10.1145/3706599.3719870)
