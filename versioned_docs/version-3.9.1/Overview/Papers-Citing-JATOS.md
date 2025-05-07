@@ -62,6 +62,8 @@ Sousa de Gois, T., Oliveira Freitas, F., Tejada, J., Freitag, R. (2025). NLP and
 Xu, Z., Theeuwes, J. & Los, S.A. (2025) Statistical learning of spatiotemporal target regularities in the absence of saliency. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-024-02992-6)
 
 ### 2024
+Borges, P.B., Mueller, J.L. (2024) Interindividual Differences in Higher and Lower-Order Object-Related Cognition: The Role of Inner Speech. *Collabra: Psychology* [DOI](https://doi.org/10.1525/collabra.125128)
+
 Roesler, E., Rieger, T. Langer, M. (2024) Numeric vs. verbal information: The influence of information quantifiability in Human-AI vs. Human-Human decision support, *Computers in Human Behavior: Artificial Humans* [DOI](https://doi.org/10.1016/j.chbah.2024.100116)
 
 Banh N.C., Tünnermann J., Rohlfing K.J., Scharlau, I. (2024) Benefiting from binary negations? Verbal negations decrease visual attention and balance its distribution. *Front. Psychol.* [DOI](http://10.3389/fpsyg.2024.1451309)
