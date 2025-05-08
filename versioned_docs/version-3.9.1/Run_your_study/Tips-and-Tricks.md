@@ -8,9 +8,27 @@ sidebar_position: 11
 
 The Batch and Group Session rely on WebSockets. Sometimes (rarely) a virus scanner prohibits unencryped WebSockets. This is only a problem on Windows, but not on Mac OS or Linux and only with certain virus scanner programs. If this happens you will see an error message in your brower's console: _Batch channel closed unexpectedly_. To solve this you can either turn on HTTPS on your JATOS server (recommended) or turn off the virus scranner on (all) your participants computers.
 
+
 ### Run up to 10 studies in the same browser at the same time
 
-When a participant runs a study they usually run only one at any given time. For them it's not necessary to run more than one study in parallel in the same browser. But during development of a study it can be an immensely useful feature especially if you are using the Batch Session or develop a group study. You can run the study in up to 10 tabs in the same browser with any worker that pleases you and all these 10 "different" workers can interact with each other. If more than 10 studies run in the same browser in parallel the oldest study is finished automatically. If you want to even more worker in parallel you can always use a different browsers: each other browser adds 10 new possible parallel-running workers.
+When a participant runs a study they usually run only one at any given time. For them it's not necessary to run more than one study in parallel in the same browser. But during development of a study it can be an immensely useful feature especially if you are using the Batch Session or develop a group study. You can run the study in up to 10 tabs in the same browser with any worker that pleases you and all these 10 "different" workers can interact with each other. If more than 10 studies run in the same browser in parallel the oldest study is finished automatically. If you want to use even more workers in parallel you can adjust the jatos.conf field `jatos.idCookies.limit` (only from v3.9.6).
+
+
+### Do a simple load or stress test of your study
+
+Before going 'live' and hand out the study codes to your participants it might be a good idea to test your experiment and your JATOS server under load, that means how it will work if there are several participants run it in parallel at the same time. First get a General Multiple study link that can be used to run a study multiple times. Then use the following command for either Linux or Mac OS, but change the URL to your study link. This will open 10 browser tabs with a pause of 0.5 seconds in between and each tab will run your study.
+
+For Linux:
+
+```shell
+seq 10 | xargs -I{} -- sh -c 'xdg-open https://www.example.com/publix/q9umWwAIUZ6; sleep .5'
+```
+
+For Mac OS:
+
+```shell
+seq 10 | xargs -I{} -- sh -c 'open https://www.example.com/publix/q9umWwAIUZ6; sleep .5'
+```
 
 
 ### Imitate a run from Mechanical Turk
