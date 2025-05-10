@@ -502,7 +502,6 @@ play.ws.ssl.trustManager.stores = [
 
 The first line adds your certificate (_type_ can be `PKCS12`, `JKS` or `PEM`). The second line adds Java's default key store. Its default password is "changeit" ([don't change it](https://stackoverflow.com/a/32371148/1278769)).
 
-
 ### LDAP URL
 
 Specifies URL of the LDAP server. Not set or an empty string disables authentication via LDAP. Default is empty (`""`).
@@ -519,6 +518,24 @@ Specifies URL of the LDAP server. Not set or an empty string disables authentica
    -Djatos.user.authentication.ldap.url="ldap://my.ldap.org:389"
    ~~~
 
+### LDAP user attribute origin
+
+(Only in version >= 3.9.6)
+
+Defines the LDAP user attribute name, e.g. 'uid' or 'cn'. Default is 'uid'.
+
+1. Via **config file** property `jatos.user.authentication.ldap.userAttribute`
+
+   ~~~shell
+   jatos.user.authentication.ldap.userAttribute = "cn"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.ldap.userAttribute`
+
+   ~~~shell
+   -Djatos.user.authentication.ldap.userAttribute="cn"
+   ~~~
+
 ### LDAP base DN
 
 Specifies the base DN (distinguished name). It can be one DN with a single string (e.g. `"ou=students,dc=example,dc=com"`) or a list of DNs in squared brackets (e.g. `["ou=students,dc=example,dc=com", "ou=scientists,dc=example,dc=com"]`). Not set or an empty string disables authentication via LDAP. Default is empty (`""`).
@@ -529,10 +546,23 @@ Specifies the base DN (distinguished name). It can be one DN with a single strin
    jatos.user.authentication.ldap.basedn = "dc=example,dc=com"
    ~~~
 
+   or as an array
+
+   ~~~shell
+   jatos.user.authentication.ldap.basedn = ["ou=students,dc=example,dc=com", "ou=scientists,dc=example,dc=com"]
+   ~~~
+
 1. Via **command-line** argument `-Djatos.user.authentication.ldap.basedn`
 
    ~~~shell
    -Djatos.user.authentication.ldap.basedn="dc=example,dc=com"
+   ~~~
+
+   or as an array
+
+   ~~~shell
+   -Djatos.user.authentication.ldap.basedn.0=ou=students,dc=example,dc=com
+   -Djatos.user.authentication.ldap.basedn.1=ou=scientists,dc=example,dc=com
    ~~~
 
 ### LDAP admin DN and password
@@ -593,7 +623,7 @@ Specifies the [Google API client ID](https://developers.google.com/identity/oaut
 
 (Only in version >= 3.8.5)
 
-JATOS users can be authenticated by [OIDC sign-in](https://openid.net/developers/how-connect-works/).
+JATOS users can be authenticated by [OIDC sign-in](https://openid.net/developers/how-connect-works/). This can be used e.g. together with [Keycloak](https://www.keycloak.org/).
 
 ### OIDC discovery URL
 
@@ -641,7 +671,43 @@ Specifies the OIDC client secret. This is optional and can be left empty (`""`).
 
    ~~~shell
    -Djatos.user.authentication.oidc.clientSecret="myClientSecret"
+
+### OIDC scope
+
+(Only in version >= 3.9.6)
+
+Specifies your OIDC scope. Default is `["openid"]`.
+
+1. Via **config file** property `jatos.user.authentication.oidc.scope`
+
+   ~~~shell
+   jatos.user.authentication.oidc.scope = ["your", "scopes"]
    ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.oidc.scope`
+
+   ~~~shell
+   -Djatos.user.authentication.oidc.scope.0=your
+   -Djatos.user.authentication.oidc.scope.1=scopes
+   ~~~
+
+### OIDC username origin
+
+(Only in version >= 3.9.6)
+
+Specifies where the username for the user in JATOS should be taken from. Can be `"subject"` or `"email"`. Default is `"subject"`.
+
+1. Via **config file** property `jatos.user.authentication.oidc.usernameFrom`
+
+   ~~~shell
+   jatos.user.authentication.oidc.usernameFrom = "email"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.oidc.usernameFrom`
+
+   ~~~shell
+   -Djatos.user.authentication.oidc.usernameFrom="email"
+   ~~~ 
 
 ### OIDC ID token signing algorithm
 
@@ -744,7 +810,203 @@ Specifies your ORCID client secret.
 
    ~~~shell
    -Djatos.user.authentication.orcid.clientSecret="1234abcd-12ab-12ab-12ab-123456abcdef"
+
+### ORCID OIDC scope
+
+(Only in version >= 3.9.6)
+
+Specifies your ORCID OIDC scope. Default is `["openid"]`.
+
+1. Via **config file** property `jatos.user.authentication.orcid.scope`
+
+   ~~~shell
+   jatos.user.authentication.orcid.scope = ["your", "scopes"]
    ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.orcid.scope`
+
+   ~~~shell
+   -Djatos.user.authentication.orcid.scope.0=your
+   -Djatos.user.authentication.orcid.scope.1=scopes
+   ~~~
+
+### ORCID username origin
+
+(Only in version >= 3.9.6)
+
+Specifies where the username for the user in JATOS should be taken from. Can be `"subject"` or `"email"`. Default is `"subject"`.
+
+1. Via **config file** property `jatos.user.authentication.orcid.usernameFrom`
+
+   ~~~shell
+   jatos.user.authentication.orcid.usernameFrom = "email"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.orcid.usernameFrom`
+
+   ~~~shell
+   -Djatos.user.authentication.orcid.usernameFrom="email"
+   ~~~ 
+
+
+## SURF SRAM (sram.surf.nl) authentication
+
+(Only in version >= 3.9.6)
+
+JATOS users can be authenticated by [SURF SRAM sign-in](https://sram.surf.nl). Internally SURF SRAM uses OpenId Connect.
+
+### SURF SRAM client ID
+
+Specifies your SURF SRAM client ID.
+
+1. Via **config file** property `jatos.user.authentication.sram.clientId`
+
+   ~~~shell
+   jatos.user.authentication.sram.clientId = "APP-ABCDEFGHIJKLMNOP"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.sram.clientId`
+
+   ~~~shell
+   -Djatos.user.authentication.sram.clientId="APP-ABCDEFGHIJKLMNOP"
+   ~~~
+
+### SURF SRAM client secret
+
+Specifies your SURF SRAM client secret.
+
+1. Via **config file** property `jatos.user.authentication.sram.clientSecret`
+
+   ~~~shell
+   jatos.user.authentication.sram.clientSecret = "1234abcd1234abcd1234abcd1234abcd"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.sram.clientSecret`
+
+   ~~~shell
+   -Djatos.user.authentication.sram.clientSecret="1234abcd1234abcd1234abcd1234abcd"
+   ~~~
+
+### SURF SRAM OIDC scope
+
+Specifies your SURF SRAM OIDC scope. Default is `["openid", "profile", "email", "voperson_external_id"]`.
+
+1. Via **config file** property `jatos.user.authentication.sram.scope`
+
+   ~~~shell
+   jatos.user.authentication.sram.scope = ["your", "scopes"]
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.sram.scope`
+
+   ~~~shell
+   -Djatos.user.authentication.sram.scope.0=your
+   -Djatos.user.authentication.sram.scope.1=scopes
+   ~~~ 
+
+### SURF SRAM username origin
+
+Specifies where the username for the user in JATOS should be taken from. The username is defined by either SRAM's "subject", "email", or "eduperson_principal_name". Default is `"eduperson_principal_name"`.
+
+1. Via **config file** property `jatos.user.authentication.sram.usernameFrom`
+
+   ~~~shell
+   jatos.user.authentication.sram.usernameFrom = "subject"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.sram.usernameFrom`
+
+   ~~~shell
+   -Djatos.user.authentication.sram.usernameFrom="subject"
+   ~~~ 
+
+
+## SURFconext (surfconext.nl) authentication
+
+(Only in version >= 3.9.6)
+
+JATOS users can be authenticated by [SURFconext sign-in](https://surfconext.nl). Internally SURFconext uses OpenId Connect.
+
+### SURFconext discovery URL
+
+Specifies the SURFconext OIDC provider's discovery URL. It usually ends in _.well-known/openid-configuration_.
+
+1. Via **config file** property `jatos.user.authentication.conext.discoveryUrl`
+
+   ~~~shell
+   jatos.user.authentication.conext.discoveryUrl = "http://myOidcProvider/.well-known/openid-configuration"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.conext.discoveryUrl`
+
+   ~~~shell
+   -Djatos.user.authentication.conext.discoveryUrl="http://myOidcProvider/.well-known/openid-configuration"
+   ~~~
+
+### SURFconext client ID
+
+Specifies your SURFconext client ID.
+
+1. Via **config file** property `jatos.user.authentication.conext.clientId`
+
+   ~~~shell
+   jatos.user.authentication.conext.clientId = "APP-ABCDEFGHIJKLMNOP"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.conext.clientId`
+
+   ~~~shell
+   -Djatos.user.authentication.conext.clientId="APP-ABCDEFGHIJKLMNOP"
+   ~~~
+
+### SURFconext client secret
+
+Specifies your SURFconext client secret.
+
+1. Via **config file** property `jatos.user.authentication.conext.clientSecret`
+
+   ~~~shell
+   jatos.user.authentication.conext.clientSecret = "1234abcd-12ab-12ab-12ab-123456abcdef"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.conext.clientSecret`
+
+   ~~~shell
+   -Djatos.user.authentication.conext.clientSecret="1234abcd-12ab-12ab-12ab-123456abcdef"
+   ~~~
+
+### SURFconext OIDC scope
+
+Specifies your SURFconext OIDC scope. Default is `["openid"]`.
+
+1. Via **config file** property `jatos.user.authentication.conext.scope`
+
+   ~~~shell
+   jatos.user.authentication.conext.scope = ["your", "scopes"]
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.conext.scope`
+
+   ~~~shell
+   -Djatos.user.authentication.conext.scope.0=your
+   -Djatos.user.authentication.conext.scope.1=scopes
+   ~~~ 
+
+### SURFconext username origin
+
+Specifies where the username for the user in JATOS should be taken from. The username is defined by either SURFconext's "subject", "email", or "eduperson_principal_name". Default is `"eduperson_principal_name"`.
+
+1. Via **config file** property `jatos.user.authentication.conext.usernameFrom`
+
+   ~~~shell
+   jatos.user.authentication.conext.usernameFrom = "subject"
+   ~~~
+
+1. Via **command-line** argument `-Djatos.user.authentication.conext.usernameFrom`
+
+   ~~~shell
+   -Djatos.user.authentication.conext.usernameFrom="subject"
+   ~~~ 
 
 
 ## User password restrictions
@@ -825,7 +1087,7 @@ Old style database properties beginning with _db.default_ are deprecated and the
 1. Via **command-line** argument `-Djatos.db.username` and `-Djatos.db.password`
 
    ~~~shell
-   -Djatos.db.username = "myusername" -Djatos.db.password = "mypassword"
+   -Djatos.db.username="myusername" -Djatos.db.password="mypassword"
    ~~~
 
 1. Via **environment** variable `JATOS_DB_USERNAME` and `JATOS_DB_PASSWORD`
@@ -871,7 +1133,7 @@ If you intend to run JATOS on multiple machines in parallel in a cluster you hav
 1. Via **command-line** argument `-Djatos.multiNode`
 
    ~~~shell
-   -Djatos.multiNode = true
+   -Djatos.multiNode=true
    ~~~
 
 
@@ -890,7 +1152,7 @@ User session timeout in minutes. Default is 1440 minutes (1 day).
 1. Via **command-line** argument `-Djatos.userSession.timeout`
 
    ~~~shell
-   -Djatos.userSession.timeout = 180
+   -Djatos.userSession.timeout=180
    ~~~
 
 ### Inactivity timeout
@@ -926,7 +1188,7 @@ This property can be used to restrict user access to HTTPS. Default is `false`.
    ~~~
 
 
-## ID cookies
+## JATOS ID cookies
 
 ### Secure ID cookies
 
@@ -957,7 +1219,24 @@ Defines the IDCookies' _SameSite_ attribute. Possible values are `None`, `Lax`, 
 1. Via **command-line** argument `-Djatos.idCookies.sameSite`
 
    ~~~shell
-   -Djatos.idCookies.sameSite = "Lax"
+   -Djatos.idCookies.sameSite="Lax"
+   ~~~
+
+### ID cookie limit
+
+Defines the maximum number of ID cookies per browser. This limits the number of parallel study runs in the same browser at the same time.
+Default is 10. It must be at least 1. More than 20 likely leads to a 'HTTP header too large' error.
+
+1. Via **config file** property `jatos.idCookies.limit`
+
+   ~~~shell
+   jatos.idCookies.limit = 20
+   ~~~
+
+1. Via **command-line** argument `-Djatos.idCookies.limit`
+
+   ~~~shell
+   -Djatos.idCookies.limit=20
    ~~~
 
 
@@ -974,7 +1253,7 @@ Defines the location of the PID file in the file system.
 1. Via **command-line** argument `-Dplay.pidfile.path`
 
    ~~~shell
-   -Dplay.pidfile.path = "/var/run/jatos.pid"
+   -Dplay.pidfile.path="/var/run/jatos.pid"
    ~~~
 
 
@@ -993,7 +1272,7 @@ Specifies a URL that can be used by JATOS to fetch some static HTML. This HTML w
 1. Via **command-line** argument `-Djatos.brandingUrl`
 
    ~~~shell
-   -Djatos.brandingUrl = "https://mydomain.com/foobar-university-welcome-page.html"
+   -Djatos.brandingUrl="https://mydomain.com/foobar-university-welcome-page.html"
    ~~~
 
 ### 'Terms of use' info box
@@ -1009,7 +1288,7 @@ Specifies a URL link to the 'terms of use' that will be shown in an info box on 
 1. Via **command-line** argument `-Djatos.termsOfUseUrl`
 
    ~~~shell
-   -Djatos.termsOfUseUrl = "https://mydomain.com/my-terms-of-use.html"
+   -Djatos.termsOfUseUrl="https://mydomain.com/my-terms-of-use.html"
    ~~~
 
 
@@ -1029,9 +1308,9 @@ due to a slow database or file system.
 1. Via **command-line** arguments `-Djatos.studyAdmin.showStudyAssetsSize`, `-Djatos.studyAdmin.showResultDataSize`, and `-Djatos.studyAdmin.showResultFileSize`
 
    ~~~shell
-   -Djatos.studyAdmin.showStudyAssetsSize = false # Default is true
-   -Djatos.studyAdmin.showResultDataSize = true # Default is false
-   -Djatos.studyAdmin.showResultFileSize = true # Default is false
+   -Djatos.studyAdmin.showStudyAssetsSize=false # Default is true
+   -Djatos.studyAdmin.showResultDataSize=true # Default is false
+   -Djatos.studyAdmin.showResultFileSize=true # Default is false
    ~~~
 
 
@@ -1048,5 +1327,5 @@ Enable/disable the JATOS API. By default it is enabled (`true`).
 1. Via **command-line** argument `-Djatos.api.allowed`
 
    ~~~shell
-   -Djatos.api.allowed = false
+   -Djatos.api.allowed=false
    ~~~
