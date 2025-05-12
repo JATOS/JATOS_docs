@@ -979,6 +979,8 @@ Specifies your SURFconext client secret.
 
 Specifies your SURFconext OIDC scope. Default is `["openid"]`.
 
+Note that SURFconext does not use scopes to request claims (also see the [documentation](https://servicedesk.surf.nl/wiki/spaces/IAM/pages/128909987/OpenID+Connect+features#OpenIDConnectfeatures-Scopes)). Rather, the claims to be returned are configured per service entity in the [Service Provider Dashboard](https://sp.surfconext.nl).
+
 1. Via **config file** property `jatos.user.authentication.conext.scope`
 
    ~~~shell
@@ -995,6 +997,8 @@ Specifies your SURFconext OIDC scope. Default is `["openid"]`.
 ### SURFconext username origin
 
 Specifies where the username for the user in JATOS should be taken from. The username is defined by either SURFconext's "subject", "email", or "eduperson_principal_name". Default is `"eduperson_principal_name"`.
+
+Note that SURFconext's subject can be of two types: transient or persistent (also see the [documentation](https://servicedesk.surf.nl/wiki/spaces/IAM/pages/128909938/Claims#Claims-Useridentifiers)). If the SURFconext username origin is set to `"subject"`, then the service entity's subject type must be set to **persistent** in the [Service Provider Dashboard](https://sp.surfconext.nl).
 
 1. Via **config file** property `jatos.user.authentication.conext.usernameFrom`
 
