@@ -13,8 +13,6 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 ### 2025
 Livoti V, Del Popolo Cristaldi F, Contemori G,Saccani MS and Bonato M (2025) Web-based assessment of dual-task costs at differentages: an analysis across cognitive domains. *Front. Psychol.* [DOI](https://doi.org/10.3389/fpsyg.2025.1561417) 
 
-(PDF) Web-based assessment of dual-task costs at different ages: an analysis across cognitive domains. Available from: https://www.researchgate.net/publication/391760436_Web-based_assessment_of_dual-task_costs_at_different_ages_an_analysis_across_cognitive_domains [accessed May 16 2025].
-
 Pisu, V., Mehraeen, S., Graf, E. W., Ernst, M. O., & Adams, W. J. (2025). Biases in the perceived area of different shapes: A comprehensive account and model. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001322)
 
 Mento, G., Bariletti, I., Toffoli, L., Granziol, U., Borella, E., & Del Popolo Cristaldi, F. (2025). Adapting cognitive control to local–global implicit temporal predictability: A lifespan investigation from 5 to 88 years old. *Psychology and Aging*. [DOI](https://doi.org/10.1037/pag0000905)
