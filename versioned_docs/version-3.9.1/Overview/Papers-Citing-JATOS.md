@@ -11,7 +11,9 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
-Livoti V, Del Popolo Cristaldi F, Contemori G,Saccani MS and Bonato M (2025) Web-based assessment of dual-task costs at differentages: an analysis across cognitive domains. *Front. Psychol.* [DOI](https://doi.org/10.3389/fpsyg.2025.1561417) 
+González, F., Garre-Frutos, F., Hinojosa-Aguayo, I. et al. (2025) Extinction of outcome-specific Pavlovian-to-instrumental transfer (PIT), instrumental outcome devaluation, and reward-related attentional capture are predicted by affect-driven impulsivity. *Learn Behav*. [DOI](https://doi.org/10.3758/s13420-025-00676-1)
+
+Livoti V., Del Popolo Cristaldi F., Contemori G., Saccani M.S. and Bonato, M. (2025) Web-based assessment of dual-task costs at differentages: an analysis across cognitive domains. *Front. Psychol.* [DOI](https://doi.org/10.3389/fpsyg.2025.1561417) 
 
 Pisu, V., Mehraeen, S., Graf, E. W., Ernst, M. O., & Adams, W. J. (2025). Biases in the perceived area of different shapes: A comprehensive account and model. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001322)
 
