@@ -52,7 +52,7 @@ NOTE: Depending on which OSX version you're running, you might see slightly diff
 
 ![Step2](/img/OSX_acceptJava_step2.png)
 
-3. CLick on 'Open Anyway' when prompted again
+3. Click on 'Open Anyway' when prompted again
 
 ![Step3](/img/OSX_acceptJava_step3.png)
 
