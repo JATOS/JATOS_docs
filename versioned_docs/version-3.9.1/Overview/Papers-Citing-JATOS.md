@@ -11,6 +11,16 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+González, F., Garre-Frutos, F., Hinojosa-Aguayo, I. et al. (2025) Extinction of outcome-specific Pavlovian-to-instrumental transfer (PIT), instrumental outcome devaluation, and reward-related attentional capture are predicted by affect-driven impulsivity. *Learn Behav*. [DOI](https://doi.org/10.3758/s13420-025-00676-1)
+
+Livoti V., Del Popolo Cristaldi F., Contemori G., Saccani M.S. and Bonato, M. (2025) Web-based assessment of dual-task costs at differentages: an analysis across cognitive domains. *Front. Psychol.* [DOI](https://doi.org/10.3389/fpsyg.2025.1561417) 
+
+Pisu, V., Mehraeen, S., Graf, E. W., Ernst, M. O., & Adams, W. J. (2025). Biases in the perceived area of different shapes: A comprehensive account and model. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001322)
+
+Mento, G., Bariletti, I., Toffoli, L., Granziol, U., Borella, E., & Del Popolo Cristaldi, F. (2025). Adapting cognitive control to local–global implicit temporal predictability: A lifespan investigation from 5 to 88 years old. *Psychology and Aging*. [DOI](https://doi.org/10.1037/pag0000905)
+
+Saccani, M.S., Contemori, G., Del Popolo Cristaldi, F. et al. (2025) Attentional load impacts multisensory integration, without leading to spatial processing asymmetries. *Sci Rep*. [DOI](https://doi.org/10.1038/s41598-025-95717-0)
+
 Ward, M. Z., Bouguettaya, A., & van Zoest, W. (2025). A British understanding of racialised gaze-cueing in the context of implicit racial bias, explicit racial identity and self-esteem. *Quarterly Journal of Experimental Psychology* [DOI](https://doi.org/10.1177/17470218251335304)
 
 Wessel, I., Krans, J., et al. (2025) Evidence That Tetris Reduces Immediate but Not Subsequent Daily Intrusions of a Trauma Film: A Multilab Replication Study. *Collabra: Psychology* [DOI](https://doi.org/10.1525/collabra.130791)
