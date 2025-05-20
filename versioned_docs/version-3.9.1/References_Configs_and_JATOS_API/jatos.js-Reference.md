@@ -467,6 +467,45 @@ jatos.setStudySessionData(studySessionData);
 ```
 
 
+### `jatos.onConnected`
+
+Defines a callback function that jatos.js will call when it established a connection to the JATOS server. 
+
+* @param {function} callback - function to be called after jatos.js' established a connection to the JATOS server
+
+**Example**
+
+```javascript
+jatos.onConnected(function() {
+  // Your code
+});
+```
+
+
+### `jatos.onDisconnected`
+
+Defines a callback function that jatos.js will call when it lost the connection to the JATOS server. 
+
+* @param {function} callback - function to be called after jatos.js' lost the connection to the JATOS server
+
+**Example**
+
+```javascript
+jatos.onDisconnected(function() {
+  // Your code
+});
+```
+
+
+### `jatos.isConnected`
+
+Returns true if jatos.js has currently a connection to the JATOS server. False otherwise.
+
+```javascript
+jatos.isConnected();
+```
+
+
 ## Functions to control study flow
 
 ### `jatos.startComponent`
