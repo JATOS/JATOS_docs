@@ -48,7 +48,7 @@ NOTE: Depending on which OSX version you're running, you might see slightly diff
 
 ![Step1](/img/OSX_acceptJava_step1.png)
 
-2. Go to _System Preferences_ >  _Privacy and Security_ >  _Allow Anylway_
+2. Go to _System Preferences_ >  _Privacy and Security_ >  _Allow Anyway_
 
 ![Step2](/img/OSX_acceptJava_step2.png)
 
