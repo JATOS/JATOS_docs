@@ -38,10 +38,20 @@ If you don't have Java installed, you can either download and install it (e.g. f
 1. Unzip the downloaded file. You can place the unzipped folder pretty much anywhere, **except** in a folder that synchs across devices, like Dropbox or Google Drive. [Find out](Troubleshooting.html#database-is-corrupted.html) more about why not.
 1. In your terminal window, `cd` into the unzipped JATOS folder
 1. Run the loader shell script with the command `./loader.sh start` (You might have to change the file's permissions with the command `chmod u+x loader.sh` to make it executable). Ignore pop-ups like '_To use the java command-line tool you need to install a JDK_' - just press 'OK'.
-2. (On MacOS, you might see a pop-up saying that you can't open the application from an unknown developer - in that case click _Open Anyway_ within the _Privacy and Security_ tab in your _System Preferences_.)
+2. **(On MacOS, you might see a pop-up saying that you can't open the application from an unknown developer - in that case click _Open Anyway_ within the _Privacy and Security_ tab in your _System Preferences_. More on this below)**
 1. All set! Now go to the browser of your choice and open [localhost:9000](http://localhost:9000). You should see the login screen (wait a moment and reload the page if you don't). Login with username 'admin' and password 'admin'.
 
 Your local JATOS installation will run in the background. If you want to stop it, just type `./loader.sh stop` in your terminal window.
+
+NOTE: Depending on which OSX version you're running, you might see slightly different requests to confirm that the Java you downloaded really is allowed to run on your computer. On Sequoia, for example, there are three extra steps required:
+1. Click 'Done' on the first pop-up telling you that Java wasn'T opened
+[Step1](img/OSX_acceptJava_step1.png)
+2. Go to _System Preferences_ >  _Privacy and Security_ >  _Allow Anylway_ 
+[Step1](img/OSX_acceptJava_step2.png)
+3. CLick on 'Open Anyway' when prompted again
+[Step1](img/OSX_acceptJava_step3.png)
+
+
 
 ### How to go on from here
 
