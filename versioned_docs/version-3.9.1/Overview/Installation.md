@@ -44,17 +44,18 @@ If you don't have Java installed, you can either download and install it (e.g. f
 Your local JATOS installation will run in the background. If you want to stop it, just type `./loader.sh stop` in your terminal window.
 
 NOTE: Depending on which OSX version you're running, you might see slightly different requests to confirm that the Java you downloaded really is allowed to run on your computer. On Sequoia, for example, there are three extra steps required:
+
 1. Click 'Done' on the first pop-up telling you that Java wasn't opened
 
-![Step1](/img/OSX_acceptJava_step1.png)
+    ![Step1](/img/OSX_acceptJava_step1.png)
 
-2. Go to _System Preferences_ >  _Privacy and Security_ >  _Allow Anyway_
+1. Go to _System Preferences_ >  _Privacy and Security_ >  _Allow Anyway_
 
-![Step2](/img/OSX_acceptJava_step2.png)
+    ![Step2](/img/OSX_acceptJava_step2.png)
 
-3. Click on 'Open Anyway' when prompted again
+1. Click on 'Open Anyway' when prompted again
 
-![Step3](/img/OSX_acceptJava_step3.png)
+    ![Step3](/img/OSX_acceptJava_step3.png)
 
 
 
