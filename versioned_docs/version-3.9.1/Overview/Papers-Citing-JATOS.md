@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Baroncini, I., Michelotti, A., and Engemann, H. (2025) Priming motion events in Italian heritage language speakers. Agents and mechanisms of language change. *Linguistic Approaches to Bilingualism*. [DOI](https://doi.org/10.1075/lab.24048.bar)
+
+Colombatto, C., Birch, J. & Fleming, S.M. (2025) The influence of mental state attributions on trust in large language models. *Commun Psychol*. [DOI](https://doi.org/10.1038/s44271-025-00262-1)
+
 Fenn, J., Gouret, F., Gorki, M. et al. (2025) Cognitive-affective maps extended logic: Proposing tools to collect and analyze attitudes and belief systems. *Behav Res*. [DOI](https://doi.org/10.3758/s13428-025-02699-y)
 
 González, F., Garre-Frutos, F., Hinojosa-Aguayo, I. et al. (2025) Extinction of outcome-specific Pavlovian-to-instrumental transfer (PIT), instrumental outcome devaluation, and reward-related attentional capture are predicted by affect-driven impulsivity. *Learn Behav*. [DOI](https://doi.org/10.3758/s13420-025-00676-1)
