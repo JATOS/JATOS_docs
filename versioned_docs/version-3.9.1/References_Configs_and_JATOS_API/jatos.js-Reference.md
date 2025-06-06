@@ -455,8 +455,8 @@ jatos.setHeartbeatPeriod(60000); // Sets to a heartbeat every minute
 Posts Study Session data to the JATOS server. This function sets the study session data and **sends it to the JATOS server for safe storage**. This is done automatically whenever a component finishes. But sometimes it is necessary to trigger this manually, e.g. in a very long-running component one might want to store the session intermediately. It offers callbacks, either as parameters or via a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), to signal success or failure in the transfer.
 
 * _@param {object} sessionData_ - object to be submitted
-* _@param {optional function} onSuccess_ - Function to be called after this function is finished
-* _@param {optional function} onFail_ - Function to be called after if this this functions fails
+* _@param {optional function} onSuccess_ - Function to be called after this function finished successfully
+* _@param {optional function} onFail_ - Function to be called after if this functions fails
 * _@return {Promise}_
 
 **Example**
@@ -722,10 +722,10 @@ There are two versions: with or without message
 
 **Hint**: There is a convenience function `jatos.addAbortButton` that already adds a button to your document including showing an confirmation box and options to change it to your needs.
 
-Aborts study. All previously submitted result data will be deleted. Afterwards the worker is redirected to the study end page. Data stored in the Batch Session or Group Session are unaffected by this.
+Aborts study. All previously submitted result data will be deleted. Optionally it redirects afterwards to the end page. Data stored in the Batch Session or Group Session are unaffected by this.
 
 * _@param {optional string} message_ - Message that will be stored together with the study results and is accessible via JATOS' GUI result pages. The message can be max 255 characters long.
-* _@param {optional boolean} showEndPage_ - If 'true' an end page is shown - if 'false' it	behaves like `jatos.endStudyAjax`, which means no showing of JATOS' end page
+* _@param {optional boolean} showEndPage_ - If 'true' it will redirect to an end page after the study is finished. If 'false' it stays on the current page. Alternatively `jatos.abortStudyAndRedirect` can be used to redirect to another page. Default is true.
 
 **Examples**
 
@@ -744,12 +744,17 @@ Aborts study. All previously submitted result data will be deleted. Afterwards t
 
 ### `jatos.abortStudyAjax`
 
+Since 3.9.7, it was renamed to `jatos.abortStudyWithoutRedirect`, but the old one is kept for backward compatibility. Use `jatos.abortStudyWithoutRedirect` instead.
+
+
+### `jatos.abortStudyWithoutRedirect`
+
 **Hint**: There is a convenience function `jatos.addAbortButton` that already adds a button to your document including showing an confirmation box and options to change it to your needs.
 
 Aborts study with an Ajax call. All previously submitted result data will be deleted. Data stored in the Batch Session or Group Session are unaffected by this. It offers callbacks, either as parameter or via a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), to signal success or failure in the ending.
 
 * _@param {optional string} message_ - Message that should be logged
-* _@param {optional function} onSuccess_ - Function to be called in case of successful submit
+* _@param {optional function} onSuccess_ - Function to be called after this function finished successfully
 * _@param {optional function} onError_ - Function to be called in case of error
 * _@return {Promise}_
 
@@ -758,32 +763,55 @@ Aborts study with an Ajax call. All previously submitted result data will be del
 1. Just abort study
 
    ```javascript
-   jatos.abortStudyAjax();
+   jatos.abortStudyWithoutRedirect();
    ```
 
 1. Abort study with a message that will be sent back to JATOS and shown in the result page and put in the log
 
    ```javascript
-   jatos.abortStudyAjax("Worker clicked Abort button");
+   jatos.abortStudyWithoutRedirect("Worker clicked Cancel button");
+   ```
+
+
+### `jatos.abortStudyAndRedirect`
+
+Since version 3.9.7 - Aborts study and redirects to the given URL. This is useful if you have your own abort page. All previously submitted data will be deleted. Data stored in the Batch Session or Group Session are unaffected by this. It offers callbacks to signal success or failure in the ending.
+
+* _@param {string} url_ - URL of the page to be redirected to after the study run was aborted
+* _@param {optional string} message_ - Message that should be logged
+* _@param {optional function} onSuccess_ - Function to be called after this function finished successfully
+* _@param {optional function} onError_ - Function to be called in case of error
+* _@return {Promise}_
+
+1. Abort study and redirect afterwards
+
+   ```javascript
+   jatos.abortStudyAndRedirect("https://app.prolific.co/submissions/complete?cc=1234ABCD");
+   ```
+
+1. Abort study, send a message back that will be visible in JATOS result pages and log, and redirect afterwards
+
+   ```javascript
+   jatos.abortStudyAndRedirect("https://app.prolific.co/submissions/complete?cc=1234ABCD", "Participant decided to cancel");
    ```
 
 
 ### `jatos.endStudy`
 
-Ends study. Redirects the worker to study's end page afterwards.
+Ends study and optionally redirects the participant to the study's end page afterwards.
 
 There are two versions: with and without result data
 
 1. With result data
-	  * _@param {optional string or object} resultData_ - Result data to be sent back to the JATOS server
-	  * _@param {optional boolean} successful_ - 'true' if study should finish successfully, 'false' otherwise. Default is true
-	  * _@param {optional string} message_ - Message that will be stored together with the study results and is accessible via JATOS' GUI result pages. The message can be max 255 characters long
-	  * _@param {optional boolean} showEndPage_ - If 'true' an end page is shown - if 'false' it	behaves like `jatos.endStudyAjax`, which means no showing of JATOS' end page
+	  * _@param {optional string or object} resultData_ - Result data to be sent back to the JATOS server.
+	  * _@param {optional boolean} successful_ - 'true' if study should finish successfully, 'false' otherwise. Default is true.
+	  * _@param {optional string} message_ - Message that will be stored together with the study results and is accessible via JATOS' GUI result pages. The message can be max 255 characters long.
+	  * _@param {optional boolean} showEndPage_ - If 'true' it will redirect to an end page (either the JATOS default one or the one that is configured in the study properties) after the study is finished. If 'false' it stays on current page. Alternatively `jatos.endStudyAndRedirect` can be used. Default is 'true'.
 
 1. Without result data
-	  * _@param {optional boolean} successful_ - 'true' if study should finish successfully, 'false' otherwise. Default is true
-	  * _@param {optional string} message_ - Message that will be stored together with the study results and is accessible via JATOS' GUI result pages. The message can be max 255 characters long
-	  * _@param {optional boolean} showEndPage_ - If 'true' an end page is shown - if 'false' it	behaves like `jatos.endStudyAjax`, which means no showing of JATOS' end page
+	  * _@param {optional boolean} successful_ - 'true' if study should finish successfully, 'false' otherwise. Default is true.
+	  * _@param {optional string} message_ - Message that will be stored together with the study results and is accessible via JATOS' GUI result pages. The message can be max 255 characters long.
+	  * _@param {optional boolean} showEndPage_ - If 'true' it will redirect to an end page (either the JATOS default one or the one that is configured in the study properties) after the study is finished. If 'false' it stays on current page. Alternatively `jatos.endStudyAndRedirect` can be used. Default is 'true'.
 
 **Examples**
 
@@ -822,14 +850,14 @@ There are two versions: with and without result data
 
 ### `jatos.endStudyAndRedirect`
 
-Ends study and redirects the given URL. This is useful if you want to let the worker return to a recruitment platform (e.g. Prolific) or have your own end page. The same effect can be achieved with the Study Properties' _End Redirect URL_ field. It offers callbacks, either as parameter or via a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), to signal success or failure in the ending.
+Ends study and redirects the given URL. This is useful if you want to let the worker return to a recruitment platform (e.g. Prolific) or have your own end page. The same effect can be achieved with the Study Properties' _End Redirect URL_ field. It offers callbacks to signal success or failure in the ending.
 
 **Hint**: There is a '**End Redirect URL**'  field in the Study Properties that also specifies the redirect URL. It's easier to use, but not as flexible.
 
 * _@param {string} url_ - URL of the page to be redirected to after the study run was successfully finished
-* _@param {optional boolean} successful_ - 'true' if study should finish successful - 'false' otherwise.
+* _@param {optional boolean} successful_ - 'true' if study should finish successful - 'false' otherwise. Default is 'true'.
 * _@param {optional string} message_ - Message that will be stored together with the study results and is accessible via JATOS' GUI result pages. The message can be max 255 characters long.
-* _@param {optional function} onSuccess_ - Function to be called in case of successful submit
+* _@param {optional function} onSuccess_ - Function to be called after this function finished successfully
 * _@param {optional function} onError_ - Function to be called in case of error
 * _@return {Promise}_
 
@@ -863,11 +891,16 @@ Ends study and redirects the given URL. This is useful if you want to let the wo
 
 ### `jatos.endStudyAjax`
 
+Since version 3.9.7, it was renamed to `jatos.endStudyWithoutRedirect`, but the old one is kept for backward compatibility. Use `jatos.endStudyWithoutRedirect` instead.
+
+
+### `jatos.endStudyWithoutRedirect`
+
 Ends study with an Ajax call - afterwards the study is not redirected to the JATOS' end page. If the study was run by an MTurk worker the confirmation code will be in the response. It offers callbacks, either as parameter or via a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), to signal success or failure in the ending.
 
 * _@param {optional boolean} successful_ - 'true' if study should finish successful - 'false' otherwise.
 * _@param {optional string} message_ - Message that will be stored together with the study results and is accessible via JATOS' GUI result pages. The message can be max 255 characters long.
-* _@param {optional function} onSuccess_ - Function to be called in case of successful submit
+* _@param {optional function} onSuccess_ - Function to be called after this function finished successfully
 * _@param {optional function} onError_ - Function to be called in case of error
 * _@return {Promise}_
 
@@ -876,25 +909,25 @@ Ends study with an Ajax call - afterwards the study is not redirected to the JAT
 1. Just end study
 
    ```javascript
-   jatos.endStudyAjax();
+   jatos.endStudyWithoutRedirect();
    ```
 
 1. End study with a message that will be sent back to JATOS and shown in the result page and put in the log
 
    ```javascript
-   jatos.endStudyAjax(true, "everything worked fine");
+   jatos.endStudyWithoutRedirect(true, "everything worked fine");
    ```
 
 1. Indicate a failure and send a message
 
    ```javascript
-   jatos.endStudyAjax(false, "some error description");
+   jatos.endStudyWithoutRedirect(false, "some error description");
    ```
 
 1. End study and show the confirmation code to the MTurk worker
 
    ```javascript
-   jatos.endStudyAjax().then((confirmationCode) => {
+   jatos.endStudyWithoutRedirect().then((confirmationCode) => {
      // Show the confirmation code to the worker
    });
    ```
@@ -904,7 +937,7 @@ Ends study with an Ajax call - afterwards the study is not redirected to the JAT
    ```javascript
    var resultData = {id: 123, data: "my important result data"};
    jatos.submitResultData(resultData)
-     .then(jatos.endStudyAjax)
+     .then(jatos.endStudyWithoutRedirect)
      .then(() => { window.location.href = 'http://example.com/index.html' })
      .catch(() => console.log("Something went wrong"));
    ```
@@ -913,7 +946,7 @@ Ends study with an Ajax call - afterwards the study is not redirected to the JAT
 
    ```javascript
    var resultData = {id: 123, data: "my important result data"};
-   jatos.endStudyAjax(resultData);
+   jatos.endStudyWithoutRedirect(resultData);
    ```
 
 
@@ -924,7 +957,7 @@ Ends study with an Ajax call - afterwards the study is not redirected to the JAT
 Posts result data for the currently running component back to the JATOS server. Already stored result data for this component will be **overwritten**. If you want to append result data use `jatos.appendResultData` instead. Alternatively you can send result data with functions that jump to another component (e.g. `jatos.startComponent`) or end the study (`jatos.endStudy`). It offers callbacks, either as parameter or via a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), to signal success or failure in the transfer.
 
 * _@param {object} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON.
-* _@param {optional function} onSuccess_ - Function to be called in case of successful submit
+* _@param {optional function} onSuccess_ - Function to be called after this function finished successfully
 * _@param {optional function} onError_ - Function to be called in case of error
 * _@return {Promise}_
 
@@ -967,7 +1000,7 @@ Posts result data for the currently running component back to the JATOS server. 
 Appends result data to the already posted result data. Contrary to `jatos.submitResultData` it does not overwrite the result data. Alternatively you can send result data with functions that jump to another component (e.g. `jatos.startComponent`) or end the study (`jatos.endStudy`). It offers callbacks, either as parameter or via a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), to signal success or failure in the transfer. This function can be used several times during an component run to incrementally save result data.
 
 * _@param {string} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify).
-* _@param {optional function} onSuccess_ - Function to be called in case of successful submit
+* _@param {optional function} onSuccess_ - Function to be called after this function finished successfully
 * _@param {optional function} onError_ - Function to be called in case of error
 * _@return {Promise}_
 
@@ -1021,7 +1054,7 @@ Uploads a file to the JATOS server where they are stored in the server's file sy
 
 * _@param {Blob, string or object} obj_ - Data to be uploaded as a file. Can be [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob), a string, or a object. A Blob	will be uploaded right away. A string is turned into a Blob. An object is	first turned into a JSON string	and	then into a Blob.
 * _@param {string} filename_ - Name of the uploaded file
-* _@param {optional function} onSuccess_ - Function to be called in case of success
+* _@param {optional function} onSuccess_ - Function to be called after this function finished successfully
 * _@param {optional function} onError_ - Function to be called in case of error
 * _@return {Promise}_
 
@@ -1072,7 +1105,7 @@ Uploads a file to the JATOS server where they are stored in the server's file sy
 Downloads a file from the JATOS server. One can only download a file that was previously uploaded with `jatos.uploadResultFile` in the same study run. If the file contains text it returns the content as a string. If the file contains JSON, it returns the JSON already parsed as an object. All other [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) are returned as a Blob. It offers callbacks, either as parameter or via a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), to signal success or failure in the transfer.
 
 * _@param {string} filename_ - Name of the uploaded file
-* _@param {optional function} onSuccess_ - Function to be called in case of success
+* _@param {optional function} onSuccess_ - Function to be called after this function finished successfully
 * _@param {optional function} onError_ - Function to be called in case of error
 * _@return {Promise}_
 
@@ -1080,7 +1113,7 @@ Additionally you can specify the component position from where the file was uplo
 
 * _@param {number} componentPos_ - Position of the component where the file was uploaded
 * _@param {string} filename_ - Name of the uploaded file
-* _@param {optional function} onSuccess_ - Function to be called in case of success
+* _@param {optional function} onSuccess_ - Function to be called after this function finished successfully
 * _@param {optional function} onError_ - Function to be called in case of error
 * _@return {Promise}_
 
