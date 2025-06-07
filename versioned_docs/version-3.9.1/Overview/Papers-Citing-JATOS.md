@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Mlinarič, M., Los, S.A. & Snell, J. (2025) On the spatial limits of parallel word processing in reading. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-025-03101-x)
+
 Zacharski, L., Kruppa, A., & Ferstl, E. C. (2025). The Readability of the Non-Binary Gender Star in German: Evidence From a Lexical Decision Task. *Social Psychological Bulletin*. [DOI](https://doi.org/10.32872/spb.13719)
 
 Baroncini, I., Michelotti, A., and Engemann, H. (2025) Priming motion events in Italian heritage language speakers. Agents and mechanisms of language change. *Linguistic Approaches to Bilingualism*. [DOI](https://doi.org/10.1075/lab.24048.bar)
