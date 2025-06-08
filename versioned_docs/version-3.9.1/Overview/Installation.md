@@ -21,7 +21,7 @@ If Java isn't installed, you have two options:
 1.  Download and install Java (e.g., from [adoptium.net](https://adoptium.net/)).
 2.  Download and install a JATOS bundle that includes Java for your operating system.
 
-### Installation Windows
+### Install JATOS on Windows
 
 1.  Download the [latest JATOS release](https://github.com/JATOS/JATOS/releases/latest).
       * **Without Java:** `jatos.zip`
@@ -30,7 +30,7 @@ If Java isn't installed, you have two options:
 3.  In File Explorer, navigate to the unzipped JATOS folder and double-click on `loader.bat` (or `loader` if file extensions are hidden). A command window will open and run your local JATOS installation. To stop JATOS, simply close this window.
 4.  Once JATOS is running, open your preferred browser and go to [http://localhost:9000/](http://localhost:9000/). You should see the login screen. If not, wait a moment and then reload the page. Log in with the username `admin` and password `admin`.
 
-### Installation macOS and Linux
+### Installation JATOS on macOS or Linux
 
 1.  Download the [latest JATOS release](https://github.com/JATOS/JATOS/releases/latest).
       * **Without Java:** `jatos.zip`
@@ -40,7 +40,7 @@ If Java isn't installed, you have two options:
 3.  Open your terminal and `cd` into the unzipped JATOS folder.
 4.  Run the loader shell script with the command `./loader.sh start`. You might need to change the file's permissions to make it executable using `chmod u+x loader.sh`. You can ignore pop-ups such as "To use the java command-line tool you need to install a JDK" — simply press "OK."
 5.  **On macOS, you might see a pop-up indicating that the application cannot be opened from an unknown developer. In this case, click *Open Anyway* within the *Privacy & Security* tab in your *System Settings*. More details on this are provided below.**
-6.  Once JATOS is running, open your preferred browser and go to [http://localhost:9000/](http://localhost:9000/). You should see the login screen. If not, wait a moment and then reload the page. Log in with the username `admin` and password `admin`.
+6.  Once JATOS is running, open your preferred browser and go to [http://localhost:9000/](http://localhost:9000/). You should see the login screen. If not, wait a moment and then reload the page. Log in with the **username `admin` and password `admin`**.
 
 -----
 
