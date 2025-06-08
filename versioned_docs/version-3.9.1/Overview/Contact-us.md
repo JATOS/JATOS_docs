@@ -28,4 +28,4 @@ If you encounter a bug or have a suggestion for a new feature to improve JATOS, 
 
 ### Email
 
-If you prefer not to use the public forum or Slack for any reason, you can also email us directly at **support@jatos.org**. However, we encourage you to use the forum or Slack when possible, as your question might help others in the community. We receive immediate notifications for new posts on those platforms.
+You can also email us directly at **support@jatos.org**. However, please use the forum or Slack when possible, as your question might help others in the community. We receive immediate notifications for new posts on those platforms.
