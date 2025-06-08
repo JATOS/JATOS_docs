@@ -37,9 +37,9 @@ Here's a screenshot of a study's results view:
 
 -----
 
-## Further Exploration
+## Beyond the Basics
 
-Once you're familiar with the basics, you can delve deeper into JATOS' capabilities:
+Once you're familiar with the basics, explore what else you can change about your study from the JATOS GUI:
 
 * **Rearrange Components:** Easily reorder components within your study by clicking and dragging any component's position button in the GUI to a new location.
 * **Component and Study Properties:**
