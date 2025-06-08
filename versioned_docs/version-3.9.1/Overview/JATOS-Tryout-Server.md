@@ -6,7 +6,7 @@ sidebar_position: 8
 
 ### JATOS Tryout Server: Cortex
 
-Cortex is a live JATOS server available for you to experience JATOS online, offering an alternative to a local installation.
+Cortex is a live JATOS server available for you to try a JATOS server. If you just want to see what JATOS is about, this is quicker than a local installation. 
 
 Access it at: [https://cortex.jatos.org](https://cortex.jatos.org)
 
