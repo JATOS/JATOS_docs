@@ -4,91 +4,98 @@ slug: /Data-Privacy-and-Ethics.html
 sidebar_position: 7
 ---
 
-### What does JATOS store?
+## Data Privacy and Ethics
 
-Data privacy is a critical issue in online studies. You should be careful when collecting, storing and handling data, regardless of which platform you use to run your studies. 
+Data privacy is a critical consideration for any online study. You should always exercise caution when collecting, storing, and handling data, regardless of the platform you use.
 
-We developed JATOS with data privacy in mind, preventing any breaches of the standard ethical principles in research. However, ultimately you are responsible for the data you collect and what you do with it. 
+JATOS was developed with data privacy in mind, aiming to support standard ethical research principles. However, you are ultimately responsible for the data you collect and how you use it.
 
 ![GUI Screenshot](/img/IMG_1376.JPG)
 
-(copyright 2006 John klossner, www.jklossner.com)
+*(Copyright 2006 John Klossner, www.jklossner.com)*
 
-Here are a few advantages and limitations of JATOS with regards to data privacy. Please read them carefully before you run any study, and please [contact us](Contact-us.html) if you find that these are not sufficient, or have suggestions for improvement.  
+Below are some key advantages and limitations of JATOS concerning data privacy. Please review them carefully before running any study, and [contact us](Contact-us.html) if you have concerns or suggestions for improvement.
 
-* JATOS' main advantage is that you can store your participants' data in your own server (e.g. at your university). This means that you have full control over the data stored in your database, and no commercial company has access to it. JATOS does not share any data (except of course during a study run with the participant's browsers). Each JATOS installation is completely independent of any other JATOS installation.
+  * **Control over Your Data:** JATOS' primary advantage is that you can store participant data on your own server (e.g., at your university). This gives you full control over the data in your database, ensuring no commercial company has access to it. JATOS does not share any data, except with participants' browsers during a study run. Each JATOS installation operates completely independently.
 
-* By default, JATOS stores the following data: 
-  * time (of the server running JATOS) at which the study -and each of its components- was started and finished
-  * the [worker type](Worker-Types.html) (MTurk, General single, Personal multiple, etc) 
-  * in cases of MTurk workers, the confirmation code AND the MTurk worker ID. In these cases, if an MTurk worker participated in two of your studies, running in the same JATOS instance, **you will be able to associate the data across these two studies**. This is an important issue: MTurk workers might not be aware that you are the same researcher, and will not know that you have the chance to associate data from different studies. The best way to avoid this is to export all your study's data and delete it from the JATOS database once you are done with it. In this way, JATOS won't know that a worker already participated in another study and will create a new worker ID for them.   
+  * **Default Stored Data:** By default, JATOS stores the following information:
 
-* JATOS will **not** store information like IP address or browser type (User-Agent or any other HTTP header field).
+      * **Timestamps:** The server's time when the study and each of its components started and finished.
+      * **Worker Type:** The [worker type](Worker-Types.html) used (e.g., MTurk, General Single, Personal Multiple).
+      * **MTurk Specifics:** For MTurk workers, JATOS stores both the **confirmation code** and the **MTurk worker ID**. If an MTurk worker participates in multiple studies on the same JATOS instance, you could potentially associate data across those studies. MTurk workers may not be aware that you are the same researcher and can link data from different studies. To avoid this, consider exporting all study data and then deleting it from the JATOS database once your data collection is complete for a study. This ensures JATOS will treat a returning worker as new, assigning them a new worker ID.
 
-### Things you should consider in your studies 
+  * **Excluded Stored Data:** JATOS **does not** store information such as IP addresses or browser types (User-Agent or other HTTP header fields) by default.
 
-* You should consider to add some button in your study pages to abort the study. Some ethics demand that any participant should have the **right to withdraw** at any time, without explanation. In this case all data of the participant gathered during the study should be deleted. Conveniently _jatos.js_ offers the functions [`jatos.abortStudy`](jatos.js-Reference.html#jatosabortstudy) and [`jatos.addAbortButton`](jatos.js-Reference.html#jatosaddabortbutton) that do exactly that.
+-----
 
-* Use **encryption** with your [server instance](JATOS-on-a-server.html). Only with encryption no one else in the internet can read the private data from your study's participants.
+### Things You Should Consider in Your Studies
 
-* JATOS will **not** store information like IP address or browser type (nor any other HTTP header field). However, you could access and store this information through your JavaScripts. You could also record whether workers are actively on the browser tab running your study, or whether they have left it to go to another tab, window or program. If you collect any of these data, you should let your workers know. 
+  * **Right to Withdraw:** Ethical guidelines often require participants to have the right to withdraw from a study at any time without explanation, with all collected data being deleted. You should consider adding an abort button to your study pages. The `jatos.js` library conveniently offers the `jatos.abortStudy` and `jatos.addAbortButton` functions for this purpose.
 
-* Bear in mind: Every file within your study assets folders is public to the Internet. Anybody can in principle read any file in this folder, regardless of how secure your server is. **Thus, you should never store any private data, such as participants' details in the study assets folders.**
+  * **Server Encryption:** Use **HTTPS** for your [server instance](JATOS-on-a-server.html). Encryption prevents unauthorized parties on the internet from reading private participant data from your study.
 
-* **Do not store private information in the Batch Session or Group Session.** Both sessions are shared between all members of a batch or group respectively. If you store private data any other member of this batch or group could potentially access it. Since the Study Session is only shared within the same study run it is not a problem to store private information there.
+  * **JavaScript-Accessed Data:** Although JATOS doesn't store IP addresses or browser types by default, your JavaScript code could potentially access and store this information. Your scripts could also record if participants are actively on the browser tab running your study or if they have switched to another tab, window, or program. If you collect any of these data points, you should inform your participants.
 
-### Cookies used by JATOS
+  * **Study Assets:** Be aware that anyone with a [study link](Run-your-Study-with-Study-Links.html) can access all files in your study assets folders, including those not actively used by your study. **Therefore, you must never store any private information, such as participant details, within the study assets folders.**
 
-Sometimes it is neccessary to specify which cookies are stored in a participants browser. JATOS knows three types of cookies and only two of them are stored in a participants browser.
+  * **Session Data Privacy:**
+      * **Do not store private information in the Batch Session or Group Session.** These sessions are shared among all members of a batch or group, respectively. Storing private data there could allow other members of that batch or group to access it.
+      * Since the **Study Session** is shared only within the same individual study run, it is generally safe to store private information there.
 
-#### 1. Up to ten JATOS ID cookies with cookie name JATOS_IDS_* (* can be a number from 0 to 9)
+-----
 
-These cookies store values about each study run. JATOS allows up to 10 study runs in parallel per browser - therefore there are up to 10 JATOS ID cookies.
+### Cookies Used by JATOS
 
-All IDs are used only by JATOS internally and do not allow the identification of the worker.
+It is sometimes necessary to specify which cookies are stored in a participant's browser. JATOS uses three types of cookies, with only two of them stored in participants' browsers during a study run.
 
-The cookie virtually never expires (actually far in the future, around the year 2086).
+#### 1. JATOS ID Cookies (`JATOS_IDS_*`)
 
-[HttpOnly](https://www.owasp.org/index.php/HttpOnly) is set to false (this means, it can be read by JavaScript in the browser).
+JATOS uses multiple `JATOS_IDS_*` cookies (where `*` is a number). These cookies store values related to individual study runs.
 
-This cookie contains these parameters:
+All IDs are for internal JATOS use only and do not allow for the direct identification of a worker.
 
-* _studyId_: identifier of the study
-* _batchId_: identifier of the batch
-* _componentId_: identifier of the component
-* _componentPos_: position of the component within the study
-* _workerId_: identifier of the worker used internally to identify the worker anonymously
-* _workerType_: there are [5 worker types with different use cases in JATOS](Worker-Types.html)
-* _componentResultId_: identifier of the component result (a component result is used to store data of the component run)
-* _studyResultId_: identifier of the study result (a study result is used to store data of this study run)
-* _studyResultUuid_: universial identifier of the study result (a study result is used to store data of this study run)
-* _groupResultId_: identifier of the group this worker belongs to (null if it isn't a group study)
-* _creationTime_: timestamp (epoch time) of this cookie's creation
-* _studyAssets_: name of the directory where the study's assets are stored on the JATOS server
-* _jatosRun_: State of a study run with a JatosWorker. If this run doesn't belong to a JatosWorker this field is null. It's mainly used to distinguish between a full study run and just a component run.
-* _urlBasePath_: [Base path under which JATOS resides](JATOS_Configuration.html#url-base-path-jatos)
+These cookies are set to expire after one year.
 
-E.g. `batchId=1&componentId=1&componentPos=1&componentResultId=35&creationTime=1639502424728&studyAssets=jatosjs_test_study&urlBasePath=/&jatosRun=RUN_STUDY&groupResultId=null&studyId=1&studyResultId=33&studyResultUuid=7d5b3da2-b0bf-4e22-98bc-f0e5d7752c00&workerId=1&workerType=Jatos`
+[`HttpOnly`](https://www.owasp.org/index.php/HttpOnly) is set to `false`, meaning these cookies can be read by JavaScript in the browser.
 
-#### 2. Cookie JATOS_GENERALSINGLE_UUIDS
+Each cookie contains the following parameters:
 
-This cookie is used by JATOS to store which study runs with a [General Single worker](Worker-Types.html#general-single-worker-and-study-link) already happened in this browser. It only stores a list of IDs that universally identifies a study (UUID).
+  * `studyId`: Identifier of the study.
+  * `batchId`: Identifier of the batch.
+  * `componentId`: Identifier of the component.
+  * `componentPos`: Position of the component within the study.
+  * `workerId`: Internal identifier for the worker, used anonymously.
+  * `workerType`: One of [five worker types with different use cases in JATOS](Worker-Types.html).
+  * `componentResultId`: Identifier for the data collected in a specific component run.
+  * `studyResultId`: Identifier for the data collected in this overall study run.
+  * `studyResultUuid`: Universal identifier for the study result.
+  * `groupResultId`: Identifier of the group the worker belongs to (null if not a group study).
+  * `creationTime`: Timestamp (epoch time) of the cookie's creation.
+  * `studyAssets`: Name of the directory where the study's assets are stored on the JATOS server.
+  * `jatosRun`: State of a study run with a JatosWorker. This field is null if the run doesn't belong to a JatosWorker. It primarily distinguishes between a full study run and a component-only run.
+  * `urlBasePath`: [Base path under which JATOS resides](JATOS_Configuration.html#url-base-path-jatos).
 
-#### 3. Play Framework session cookie named PLAY_SESSION
+**Example:** `batchId=1&componentId=1&componentPos=1&componentResultId=35&creationTime=1639502424728&studyAssets=jatosjs_test_study&urlBasePath=/&jatosRun=RUN_STUDY&groupResultId=null&studyId=1&studyResultId=33&studyResultUuid=7d5b3da2-b0bf-4e22-98bc-f0e5d7752c00&workerId=1&workerType=Jatos`
 
-This cookie is used only by JATOS' GUI and provides session and user info. It is **not** set during a study run and therefore does **not** store any worker related information.
+#### 2. `JATOS_GENERALSINGLE_UUIDS` Cookie
 
-The cookie's expires header field is set to Session, which mean that after the browser is closed the cookie will be deleted.
+This cookie is used by JATOS to track which study runs, involving a [General Single worker](Worker-Types.html#general-single-worker-and-study-link), have already occurred in the browser. It stores only a list of UUIDs that uniquely identify a study.
 
-[HttpOnly](https://www.owasp.org/index.php/HttpOnly) is set to true (this means, it can't be read by JavaScript within the browser).
+#### 3. Play Framework Session Cookie (`PLAY_SESSION`)
 
-This cookie contains the parameters:
+This cookie is used exclusively by JATOS' GUI to manage session and user information. It is **not** set during a study run and therefore does **not** store any worker-related data.
 
-* _username_: username of the logged-in user (often an email)
-* _sessionID_: Play's session ID
-* _loginTime_: user's login time in the GUI as a timestamp
-* _lastActivityTime_: user's last activity time in the GUI as a timestamp
+The cookie's `expires` header field is set to "Session," meaning it will be deleted when the browser is closed.
 
-Additionally Play stores a hash of the whole cookie's data to check integrity of the cookie's data.
+[`HttpOnly`](https://www.owasp.org/index.php/HttpOnly) is set to `true`, which means it cannot be read by JavaScript within the browser.
 
-E.g. `PLAY_SESSION:"b6c01f2fa796603491aaed94168651b54b154ca1-username=admin&sessionID=4k1atg9ugeavmegk88n41stfr4&loginTime=1524935558364&lastActivityTime=1524947602543"`
+This cookie contains the following parameters:
+
+  * `username`: Username of the logged-in user (often an email).
+  * `sessionID`: Play's session ID.
+  * `loginTime`: Timestamp of the user's login time in the GUI.
+  * `lastActivityTime`: Timestamp of the user's last activity time in the GUI.
+
+Additionally, [Play](https://www.playframework.com/documentation/2.9.x/SettingsSession#Session-Configuration) stores a hash of the entire cookie's data to verify its integrity.
+
+**Example:** `PLAY_SESSION:"b6c01f2fa796603491aaed94168651b54b154ca1-username=admin&sessionID=4k1atg9ugeavmegk88n41stfr4&loginTime=1524935558364&lastActivityTime=1524947602543"`

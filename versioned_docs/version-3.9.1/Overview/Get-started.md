@@ -4,38 +4,45 @@ slug: /Get-started.html
 sidebar_position: 5
 ---
 
-### Get started in 4 steps
+## Get Started in 4 Steps
 
-1. **Download JATOS and [install a local instance](Installation.html)**
+### 1. Download and Install JATOS
 
-1. **Open JATOS' GUI by going to [localhost:9000](http://localhost:9000) in your browser window**
+Start by downloading JATOS and [installing a local instance](Installation.html) on your computer.
 
-1. **Download and import an example study**
+### 2. Access the JATOS GUI
 
-   1. Download one of the [Example Studies](/Example-Studies), e.g. the 'Go- / No-Go Task' with jsPsych. Do not unzip the downloaded file. 
+Once installed, open JATOS' graphical user interface (GUI) by navigating to [http://localhost:9000/](http://localhost:9000/) in your web browser.
 
-   1. Import the study into JATOS: Go to JATOS' GUI in your browser and click on **Import Study** in the header. Choose the [_.jzip_](JATOS-Study-Archive-JZIP.html) file you just downloaded. The imported study should appear in the sidebar on the left.
+### 3. Download and Import an Example Study
 
-1. **Explore the GUI**
+To quickly see JATOS in action:
 
-   In the sidebar click the study to get into the study's page. 
+1.  Download one of the [Example Studies](/Example-Studies), for instance, the 'Go- / No-Go Task' with jsPsych. **Do not unzip the downloaded file.**
+2.  Import the study into JATOS: In the JATOS GUI, open the study sidebar by clicking on **Studies** in the header and then on **+** and finally **Import Study**. Select the [_.jzip_](JATOS-Study-Archive-JZIP.html) you just downloaded. The imported study should now appear in the sidebar on the left.
 
-   To do a test run of the entire study, click on **Run** in the toolbar on top of the page.
+### 4. Explore the GUI
 
-   If you finished running through the study, you can check the results.
-   
-   * To see whole-study results, click on the **Results** button on the top of the page.
-   * To see results from individual components, click on the **Results** buttons on each component's row.
+Now that you have a study imported, it's time to explore:
 
-   For example, you can see each result's details by clicking on the little arrow to the left of its row ([more information on how to mangage results](Manage-results.html)).
+  * In the sidebar, click on the study's name to open its dedicated page.
+  * To perform a test run of the entire study, click on **Run** in the toolbar at the top of the page.
+  * After running the study, you can review the results:
+      * For **whole-study results**, click the **Results** button at the top of the page.
+      * For **results from individual components**, click the **Results** buttons located in each component's row.
+      * You can view detailed information for each result by clicking the **▼** to the left of its row ([find more information on managing results here](Manage-results.html)).
 
-   _Here's a screenshot of a study's results view:_
-   ![Results View screenshot](/img/v39x/results_view_12.png)
+Here's a screenshot of a study's results view:
+![Results View screenshot](/img/v39x/results_view_12.png)
 
-### Explore
+-----
 
-Now it's time to explore a little bit more.
+## Further Exploration
 
-* You can click on any component's position button and drag it to a new position within the study. 
-* Each component has a **Properties** button. The component's HTML file may read the data in the field 'JSON data'. This is a way to make changes in the details of the code (wording of instructions, stimuli, timing, number of trials, etc) without having to hard-code them into JavaScript. 
-* Where are the actual HTML, JavaScript, and CSS files? They are the files that actually run your study, so make sure you can locate them. All these files, together with any images, sound files, etc. you might have, are called "Study assets". They will be in `/path_to_my_JATOS/study_assets_root/name_of_my_study/`.
+Once you're familiar with the basics, you can delve deeper into JATOS' capabilities:
+
+* **Rearrange Components:** Easily reorder components within your study by clicking and dragging any component's position button in the GUI to a new location.
+* **Component and Study Properties:**
+    * Each component has a **Properties** button. The component's code can read data from the **Component input** field within these properties. This offers a convenient way to modify details like instructions, stimuli, timing, or the number of trials without directly altering the JavaScript code.
+    * Similarly, the **Study Properties** include a **Study input** field, which can be accessed by all components within that study.
+* **Locate Study Assets:** Understand where your study's essential HTML, JavaScript, and CSS files are stored. These files, along with any images, sound files, and other resources, are referred to as "study assets". The path to your study assets directory is displayed on the JATOS home page (for local installations only). By default, it's located within your JATOS installation directory at `/study_assets_root/name_of_my_study/`.

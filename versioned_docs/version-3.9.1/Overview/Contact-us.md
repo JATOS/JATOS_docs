@@ -4,37 +4,28 @@ slug: /Contact-us.html
 sidebar_position :  3
 ---
 
-JATOS is under active development, so please do get in touch to ask questions, suggest enhancements and report bugs. We really appreciate any contributions.
+JATOS is under active development. Feel free to get in touch if you have questions, suggestions for enhancements, or bug reports. We appreciate all contributions.
 
-We also conduct workshops: If you want us to give a lecture or workshop about JATOS and/or online studies in general contact us via email.
+We also offer workshops. If you'd like us to give a lecture or workshop about JATOS or online studies in general, please contact us via email.
 
+---
 
-**If you have a question about JATOS or need help with your experiments, write to either:**
+## Need help or have a question about JATOS?
 
+If you have questions about JATOS or need assistance with your experiments, please use one of the following channels:
 
-### CogSci forum
+### CogSci Forum
 
-JATOS has a subforum in the very nice [CogSci.nl](https://forum.cogsci.nl/categories/jatos) forum. It nucleates several cognitive science -and beyond!- tools, so we hope that this simplifies communication. 
-
+JATOS has a dedicated subforum within the [CogSci.nl forum](https://forum.cogsci.nl/categories/jatos). This platform centralizes various cognitive science tools and aims to streamline communication.
 
 ### Slack
 
-Get an invite to [JATOS Slack workspace](https://communityinviter.com/apps/jatosworkspace/jatos-slack).
+Join our community by getting an invite to the [JATOS Slack workspace](https://communityinviter.com/apps/jatosworkspace/jatos-slack).
 
+### GitHub Issues
 
-### GitHub issues
-
-If you would like to report a bug or suggest a new feature that could improve JATOS, you could write a [GitHub issue](https://github.com/JATOS/JATOS/issues).
-
-
-### Google Groups
-
-[Google Groups](https://groups.google.com/forum/#!forum/jatos)
-
+If you encounter a bug or have a suggestion for a new feature to improve JATOS, please consider opening a [GitHub issue](https://github.com/JATOS/JATOS/issues).
 
 ### Email
-If for some reason you don't want to use the public group or CogSci forum you can also write us directly. (But we prefer that you use any of the other two options as your question might help others. We get notified of new posts immediately.).  
 
-elisa.filevich@jatos.org
-
-kristian.lange@jatos.org
+If you prefer not to use the public forum or Slack for any reason, you can also email us directly at **support@jatos.org**. However, we encourage you to use the forum or Slack when possible, as your question might help others in the community. We receive immediate notifications for new posts on those platforms.

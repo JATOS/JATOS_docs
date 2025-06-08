@@ -4,61 +4,58 @@ slug: /Installation.html
 sidebar_position: 3
 ---
 
-### Easy installation on your local computer
+## Easy Installation on Your Local Computer
 
-**JATOS runs on MacOS, Windows and Linux**
+**JATOS runs on macOS, Windows, and Linux.**
 
-A local installation is straightforward.
+A local installation of JATOS is straightforward. Typically, you'll develop your study with JATOS on a local computer first. In a second step, you can then move it to a server installation of JATOS.
 
-Usually you first develop your study with JATOS on a local computer. Then in a second step you bring it to a server installation of JATOS.
+A local installation grants only you access to JATOS. With a [server installation](Bring-your-JATOS-online.html), others can run your study via the internet.
 
-With a local installation only you have access to JATOS - with a [server installation](Bring-your-JATOS-online.html) others can run your study via the internet too. This is especially true if you want to publish your study on Mechanical Turk.
+### Java Requirement
 
-**For convenience JATOS is available as a bundle with Java.**
+To run JATOS, you need **Java 11** installed on your computer (specifically, a Java Runtime Environment, or JRE). You might already have Java installed. To check, open your terminal (macOS / Linux) or command window (Windows) and type `java -version`.
 
-To run JATOS, you need Java 11 installed on your computer (to be precise, you need a Java Runtime Environment, aka JRE). Chances are, you already have Java installed. To check whether Java is installed on your system, type `java -version` in your terminal (MacOS / Linux) or command window (Windows). 
-If you don't have Java installed, you can either download and install it (e.g. from [adoptium.net](https://adoptium.net/)) or download and install JATOS bundled with Java for your operating system. 
+If Java isn't installed, you have two options:
 
+1.  Download and install Java (e.g., from [adoptium.net](https://adoptium.net/)).
+2.  Download and install a JATOS bundle that includes Java for your operating system.
 
-### Installation Windows 
+### Installation Windows
 
-1. Download the [latest JATOS release](https://github.com/JATOS/JATOS/releases/latest)
-   * Without Java: *jatos.zip*
-   * Bundled with Java: *jatos_win_java.zip*
-1. Unzip the downloaded file. You can place the unzipped folder pretty much anywhere, **except** in a folder that synchs across devices, like Dropbox or Google Drive. [Find out](Troubleshooting.html#database-is-corrupted.html) more about why not.
-1. In the File Explorer move to the unzipped JATOS folder and double-click on `loader.bat`. (Or `loader` alone, if your filename extensions are hidden). A command window will open and run your local JATOS installation. Simply close this window if you want to stop JATOS.
-1. All set! Now go to the browser of your choice and open [localhost:9000](http://localhost:9000). You should see the login screen (wait a moment and reload the page if you don't). Login with username 'admin' and password 'admin'.
+1.  Download the [latest JATOS release](https://github.com/JATOS/JATOS/releases/latest).
+      * **Without Java:** `jatos.zip`
+      * **Bundled with Java:** `jatos_win_java.zip`
+2.  Unzip the downloaded file. You can place the unzipped folder almost anywhere, **except** in a folder that syncs across devices, such as Dropbox or Google Drive. [Learn more](Troubleshooting.html#database-is-corrupted.html) about why this restriction exists.
+3.  In File Explorer, navigate to the unzipped JATOS folder and double-click on `loader.bat` (or `loader` if file extensions are hidden). A command window will open and run your local JATOS installation. To stop JATOS, simply close this window.
+4.  Once JATOS is running, open your preferred browser and go to [http://localhost:9000/](http://localhost:9000/). You should see the login screen. If not, wait a moment and then reload the page. Log in with the username `admin` and password `admin`.
 
-### Installation MacOS and Linux
+### Installation macOS and Linux
 
-1. Download the [latest JATOS release](https://github.com/JATOS/JATOS/releases/latest)
-   * Without Java: *jatos.zip*
-   * For MacOS bundled with Java: *jatos_mac_java.zip*
-   * For Linux bundled with Java: *jatos_linux_java.zip*
-1. Unzip the downloaded file. You can place the unzipped folder pretty much anywhere, **except** in a folder that synchs across devices, like Dropbox or Google Drive. [Find out](Troubleshooting.html#database-is-corrupted.html) more about why not.
-1. In your terminal window, `cd` into the unzipped JATOS folder
-1. Run the loader shell script with the command `./loader.sh start` (You might have to change the file's permissions with the command `chmod u+x loader.sh` to make it executable). Ignore pop-ups like '_To use the java command-line tool you need to install a JDK_' - just press 'OK'.
-2. **(On MacOS, you might see a pop-up saying that you can't open the application from an unknown developer - in that case click _Open Anyway_ within the _Privacy and Security_ tab in your _System Preferences_. More on this below)**
-1. All set! Now go to the browser of your choice and open [localhost:9000](http://localhost:9000). You should see the login screen (wait a moment and reload the page if you don't). Login with username 'admin' and password 'admin'.
+1.  Download the [latest JATOS release](https://github.com/JATOS/JATOS/releases/latest).
+      * **Without Java:** `jatos.zip`
+      * **For macOS bundled with Java:** `jatos_mac_java.zip`
+      * **For Linux bundled with Java:** `jatos_linux_java.zip`
+2.  Unzip the downloaded file. You can place the unzipped folder almost anywhere, **except** in a folder that syncs across devices, such as Dropbox or Google Drive. [Learn more](Troubleshooting.html#database-is-corrupted.html) about why this restriction exists.
+3.  Open your terminal and `cd` into the unzipped JATOS folder.
+4.  Run the loader shell script with the command `./loader.sh start`. You might need to change the file's permissions to make it executable using `chmod u+x loader.sh`. You can ignore pop-ups such as "To use the java command-line tool you need to install a JDK" — simply press "OK."
+5.  **On macOS, you might see a pop-up indicating that the application cannot be opened from an unknown developer. In this case, click *Open Anyway* within the *Privacy & Security* tab in your *System Settings*. More details on this are provided below.**
+6.  Once JATOS is running, open your preferred browser and go to [http://localhost:9000/](http://localhost:9000/). You should see the login screen. If not, wait a moment and then reload the page. Log in with the username `admin` and password `admin`.
 
-Your local JATOS installation will run in the background. If you want to stop it, just type `./loader.sh stop` in your terminal window.
+-----
 
-NOTE: Depending on which OSX version you're running, you might see slightly different requests to confirm that the Java you downloaded really is allowed to run on your computer. On Sequoia, for example, there are three extra steps required:
+### Handling macOS Security Prompts
 
-1. Click 'Done' on the first pop-up telling you that Java wasn't opened
+Depending on your macOS version, you might encounter prompts asking for confirmation to run the downloaded Java. For example, on macOS Sequoia, there are three additional steps:
 
-    ![Step1](/img/OSX_acceptJava_step1.png)
+1.  Click "Done" on the initial pop-up stating that Java wasn't opened.
 
-1. Go to _System Preferences_ >  _Privacy and Security_ >  _Allow Anyway_
+2.  Go to **System Settings** \> **Privacy & Security** \> then click **Allow Anyway**.
 
-    ![Step2](/img/OSX_acceptJava_step2.png)
+3.  Click "Open Anyway" when prompted again.
 
-1. Click on 'Open Anyway' when prompted again
+-----
 
-    ![Step3](/img/OSX_acceptJava_step3.png)
+### Next Steps
 
-
-
-### How to go on from here
-
-The easiest way to start with JATOS is to download and import one of the [example studies](/Example-Studies) and [play around with it](Get-started.html).
+The easiest way to begin with JATOS is to download and import one of the [example studies](/Example-Studies) and [experiment with it](Get-started.html).
