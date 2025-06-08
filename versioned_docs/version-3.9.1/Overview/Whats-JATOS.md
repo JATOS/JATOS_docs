@@ -15,7 +15,7 @@ If you don't really need your *own* server, you can use **[MindProbe](https://mi
 
 -----
 
-### Let us know how you JATOS!
+### Let us know how you use JATOS!
 
 Please take a moment to complete our short, 3-minute **[survey](https://forms.gle/Jtjw4LxpyWVFEtG17)** about how you use the software. 
 
