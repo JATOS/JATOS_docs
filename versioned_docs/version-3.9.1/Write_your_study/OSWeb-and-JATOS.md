@@ -1,5 +1,5 @@
 ---
-title: OSWeb/OpenSesame and JATOS
+title: OpenSesame/OSWeb and JATOS
 slug: /OSWeb-and-JATOS.html
 hide_table_of_contents: true
 sidebar_position: 6
@@ -11,12 +11,13 @@ sidebar_position: 6
 
 </div>
 
-OSWeb lets you run an [OpenSesame](https://osdoc.cogsci.nl) experiment on a browser. OpenSesame is a pretty neat program to create experiments for psychology, neuroscience, and experimental economics. You can get very far with drag-and-drop, and there's the chance to add code snippets if you need more flexibility. 
+OSWeb allows you to run an [OpenSesame](https://osdoc.cogsci.nl) experiment directly in a browser. OpenSesame is a powerful tool for creating experiments in psychology, neuroscience, and experimental economics. You can achieve a great deal using its drag-and-drop interface, and you also have the option to add code snippets for more advanced flexibility.
 
-[OSWeb's documentation](https://osdoc.cogsci.nl/manual/osweb/workflow/) is far better than ours could ever be. So, here, we just point out that combining OSWeb with JATOS is pretty easy and straightforward: just export the experiment in OSWeb and import it in JATOS.
+[OSWeb's documentation](https://osdoc.cogsci.nl/manual/osweb/workflow/) is comprehensive. Therefore, we'll simply highlight the straightforward process of combining OSWeb with JATOS: just export your experiment from OSWeb and import it into JATOS.
 
-If you want to use [Prolific](https://www.prolific.co/) to recruit participants for your OSWeb experiment running in JATOS then you can put the return link in the 'End Redirect URL' field of your Study Properties (in JATOS GUI).
+If you plan to use [Prolific](https://www.prolific.co/) to recruit participants for your OpenSesame experiment running in JATOS, you can paste the return link into the 'End Redirect URL' field of your Study Properties within the JATOS GUI.
 
-If you'd like to know more
+For more information, consider these resources:
+
 * Sebastiaan Mathot's [tutorial](https://www.youtube.com/watch?v=0448NeoUaqU)
 * [Workshop about OpenSesame, Python, and JATOS](https://www.youtube.com/playlist?list=PLSadj_kFpja_IOBQZrKf56RpjzUl3W6SP) (12 lessons)

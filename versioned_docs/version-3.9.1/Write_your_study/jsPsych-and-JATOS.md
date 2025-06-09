@@ -11,37 +11,39 @@ sidebar_position: 4
 
 </div>
 
-JATOS basically cares for the server side: it stores result data, does worker management etc. JATOS doesn't care so much for what happens in the browser itself - your HTML, JavaScript and CSS. Of course you can write this all yourself, but you could also use a framework for this. A very good one is [jsPsych](http://www.jspsych.org/).
+JATOS primarily handles the server-side aspects of your study, such as storing result data and managing workers. It doesn't dictate what happens within the browser itself — that's where your HTML, JavaScript, and CSS come in. While you can write all of this yourself, using a framework can be very helpful; [jsPsych](http://www.jspsych.org/) is an excellent option.
 
-In [our example studies](/Example-Studies) are a couple of jsPsych ones.
+You'll find several jsPsych examples among [our example studies](/Example-Studies).
 
-Here are the necessary changes if you want to adapt your jsPsych experiment so that it runs within (and sends the result data to) JATOS. Additionally you can have a look at [Adapt Pre written Code to run it in JATOS](Adapt-pre-written-code-to-run-it-in-JATOS.html).
+Below are the necessary modifications to adapt your jsPsych experiment to run within JATOS and send data to it. For more general guidance, you can also refer to [Adapt Pre-written Code to run it in JATOS](Adapt-pre-written-code-to-run-it-in-JATOS.html).
 
-Every jsPsych version works slightly different. Here we explain the steps for jsPsych 7 (for older versions have a look [here](/3.6.x/jsPsych-and-JATOS.html)).
+Please note that each jsPsych version has slight differences. These steps are for **jsPsych 7** (for older versions, please see [here](/3.6.x/jsPsych-and-JATOS.html)).
 
-### How to turn your jsPsych 7 experiment into a JATOS study
+-----
 
-1. Include the _jatos.js_ library in the `<head>` of your HTML
+### How to Turn Your jsPsych 7 Experiment into a JATOS Study
 
-   ~~~ html
-   <script src="jatos.js"></script>
-   ~~~ 
+1.  **Include the `jatos.js` library** in the `<head>` section of your HTML file:
 
-1. Tell jsPsych to send your result data to JATOS.  If you want add a 'Cancel' button with `jatos.addAbortButton`, add the line included below (omit if you don't want the automatic abort button).
+    ```html
+    <script src="jatos.js"></script>
+    ```
 
-   ~~~ javascript
-   var jsPsych = initJsPsych({
-     on_trial_start: jatos.addAbortButton,
-     on_finish: () => jatos.endStudy(jsPsych.data.get().json())
-   });
-   ~~~
+2.  **Configure jsPsych to send results to JATOS.** If you wish to include an automatic "Cancel" button using `jatos.addAbortButton`, include that line as well (otherwise, omit it):
 
-1. Wrap jsPsych's run in `jatos.onLoad`.
+    ```javascript
+    var jsPsych = initJsPsych({
+      on_trial_start: jatos.addAbortButton,
+      on_finish: () => jatos.endStudy(jsPsych.data.get().json())
+    });
+    ```
 
-   ~~~ javascript
-   jatos.onLoad(() => {
-     jsPsych.run(timeline);
-   });
-   ~~~
+3.  **Wrap jsPsych's `run` command within `jatos.onLoad`**:
 
-That's all. Have a look at the 'Simple Reaction Time Task' in our [example studies](/Example-Studies) to see a full example with jsPsych 7.
+    ```javascript
+    jatos.onLoad(() => {
+      jsPsych.run(timeline);
+    });
+    ```
+
+That's all there is to it! For a complete example using jsPsych 7, check out the 'Simple Reaction Time Task' in our [example studies](Example-Studies).

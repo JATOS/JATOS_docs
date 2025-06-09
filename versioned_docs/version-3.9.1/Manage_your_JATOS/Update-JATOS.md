@@ -86,7 +86,7 @@ If you don't care about result data stored in JATOS:
 
 **What will be transferred:**
 
-1. Files and subfolders in study's assets folder
+1. Files and subfolders in the study assets root folder
 1. All your studies' and components' properties
 1. The **properties** of the first (Default) batch
  

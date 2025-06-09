@@ -43,7 +43,7 @@ To gather data, you'll use [Study Links](Run-your-Study-with-Study-Links.html), 
 
 ## Step 4: Download and Analyze Data
 
-JATOS allows you to manage results stored in its database directly through the **GUI**, which means no need for SQL commands. You can access these features [using the GUI](https://www.google.com/search?q=Manage-Results.html).
+JATOS allows you to manage results stored in its database directly through the **GUI**, which means no need for SQL commands. You can access these features [using the GUI](Manage-Results.html).
 
 While JATOS' result data format isn't fixed, you'll typically use either **CSV** or **JSON** (or JSON Lines). We generally recommend the **JSON format** because it offers greater flexibility and robustness. For example, you can use the [rjson](https://cran.r-project.org/web/packages/rjson/index.html) package for R.
 

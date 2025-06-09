@@ -4,58 +4,60 @@ slug: /Combine-two-pre-written-studies-into-one.html
 sidebar_position: 3
 ---
 
-
 **Take two separate studies and combine them into a single one** 
 
-You might have created two parts of a study using different tools. For example, you coded a survey with [labjs](/labjs-and-JATOS.html) and a perceptual experiment with [OSWeb](OSWeb-and-JATOS.html). You have two _.jzip_ files from each of these tools, but now you want to combine them into one. Here's how. 
+You might have created different parts of a study using various tools — for example, a survey coded with [lab.js](labjs-and-JATOS.html) and a perceptual experiment with [OSWeb](OSWeb-and-JATOS.html). If you have separate `.jzip` files from each tool and now wish to combine them into one study, here's how to do it.
 
-Note that this description works for any two halves of a study, coded in whatever way. (But of course, if you were the one writing the scripts instead of using an experiment builder, you'll likely not need this explanation).
+This process applies to combining any two study halves, regardless of how they were coded. (However, if you directly wrote the scripts instead of using an experiment builder, you likely won't need these specific instructions.)
 
+-----
 
 ### Ingredients
 
-To combine two studies into one you'll need:
-1. A [**local instance**](Installation.html#easy-installation-on-your-local-computer) of JATOS. Make sure this is not the one on the server, but the one you run on your own computer. This will give you easy access to move and rename your files. 
-1. Information about where your study assets are: Go to [http://localhost:9000/jatos](http://localhost:9000/jatos). On the homepage, find the section "Where are my files". (It's big, you can't miss it). Find that folder on your computer. 
-1. The _.jzip_ for the first half of your study. 
-1. The _.jzip_ for the second half of your study.
+To combine two studies into one, you will need the following:
 
-Note for 3. and 4.: You should not try to generate a _.jzip_ file by hand at this point (although it is possible). A [JZIP study archive](JATOS-Study-Archive-JZIP.html) file is a ZIP archive with a standardized content. They contain information that JATOS needs to understand that something is a study.
+1.  A [**local JATOS**](Installation.html#easy-installation-on-your-local-computer). This will give you easy access to move and rename your files. 
+2.  Information on your study assets' location: Go to [http://localhost:9000/jatos](http://localhost:9000/jatos). On the homepage, locate the section titled "Where are my files" (it's prominently displayed). Find this corresponding folder on your computer.
+3.  The `.jzip` file for the first half of your study.
+4.  The `.jzip` file for the second half of your study.
 
+**Note for items 3 and 4:** You should not attempt to generate a `.jzip` file manually at this stage (though it is technically possible). A [JZIP study archive](JATOS-Study-Archive-JZIP.html) file is a ZIP archive with a standardized content structure, containing essential information that JATOS needs to recognize it as a study.
+
+-----
 
 ### Strategy
 
-The idea will be to, first, import one of these halves of a study into your local JATOS instance. Then, add the files from the second half as an additional component to the first half. 
+The approach involves two main steps: first, import one half of the study into your local JATOS instance. Then, integrate the files from the second half as an additional component within the first study.
 
+-----
 
 ### Steps
 
-These steps sound complicated, but it's all really simple clicking around and copy-pasting. Basically a JATOS-study-collage. 
+These steps may sound intricate, but they primarily involve straightforward clicking, copying, and pasting—essentially, creating a JATOS study collage.
 
-Imagine you have _half-study-1.jzip_ (a survey) and _half-study-2.jzip_ (a perceptual task).  
+Let's assume you have `half-study-1.jzip` (a survey) and `half-study-2.jzip` (a perceptual task).
 
-1. Import the _half-study-1.jzip_ into JATOS. You should get one study with a single component. 
-2. Identify the folder in your local computer where these study assets are. (Ingredient 2, described above.)
-3. Import the _half-study-2.jzip_ into JATOS. You should get one study with a single component.
-4. Look into the folder you found in Step 2. Navigate to the subfolder that corresponds to _half-study-2_. You should find a single _.html_ file (this is what actually displays your study) and probably a lot of other assets, including libraries and CSS stylesheets. 
-5. In your local JATOS: Go to the component properties of each of your study halves. Find the field with the path to the HTML file that runs your study. If the name of the HTML files is the same for both halves (it often is _index.html_), change the names. Now they are called _index-half-1.html_ and _index-half-2.html_. You can change the names in the component properties. JATOS will change the actual file name on your filesystem for you. (Confirm that you want this when prompted).   
-6. In your local filesystem: Copy all of the contents of this subfolder for _half-study-2_ into the subfolder for _half-study-1_. You now combined the information from both studies into a single folder and made sure that the HTML files are uniquely named.  
-7. In your local JATOS: Go to the your _half-study-1_. Click on "New component". In the properties of this new component, indicate the path to the HTML file from _half-study-2_. Copy any other properties that might exist (e.g. _study input_ or _component input_) from the single component in _half-study-2_ to this new component in _half-study-1_. 
-8. Now you have a complete, combined study. 
-9. Export this study from your local instance.
-10. Import the _.jzip_ you created in step 9 into your online JATOS server.  
+1.  Import `half-study-1.jzip` into JATOS. This should result in one study with a single component.
+2.  Identify the folder on your local computer where these study assets are located (as described in Ingredient 2).
+3.  Import `half-study-2.jzip` into JATOS. This should also result in one study with a single component.
+4.  Navigate into the subfolder corresponding to `half-study-2` within the directory you identified in Step 2. You should find a single `.html` file (which displays your study) and likely many other assets, including libraries and CSS stylesheets.
+5.  In your local JATOS GUI: Go to the **component properties** of each of your study halves. Locate the field containing the path to the HTML file that runs your study. If both halves use the same HTML file name (e.g., `index.html`), change one of the names. For instance, rename them to `index-half-1.html` and `index-half-2.html`. JATOS will update the actual file name on your file system for you (confirm when prompted).
+6.  In your local file system: Copy all the contents from the `half-study-2` subfolder into the `half-study-1` subfolder. You have now combined the assets from both studies into a single folder and ensured that the HTML files have unique names.
+7.  In your local JATOS GUI: Go to your `half-study-1`. Click on "**New component**". In the properties of this new component, specify the path to the HTML file from `half-study-2` (e.g., `index-half-2.html`). Copy any other relevant properties (e.g., *study input* or *component input*) from the single component in `half-study-2` to this new component in `half-study-1`.
+8.  You now have a complete, combined study.
 
+-----
 
 ### Troubleshooting
 
-Make sure that the study doesn't finish after the first component. In the javascript of the first component you should see something like:
+Ensure that your study does not finish after the first component. In the JavaScript of the first component, you should see something similar to:
 
-   ~~~javascript
-   jatos.startNextComponent(myResultDataObject);
-   ~~~
+```javascript
+jatos.startNextComponent(myResultDataObject);
+```
 
-and not 
+And **not** something like:
 
-   ~~~javascript
-   jatos.endStudy(myResultDataObject);
-   ~~~
+```javascript
+jatos.endStudy(myResultDataObject);
+```

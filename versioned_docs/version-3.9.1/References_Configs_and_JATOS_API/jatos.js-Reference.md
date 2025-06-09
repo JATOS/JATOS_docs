@@ -28,55 +28,37 @@ All those IDs are generated and stored by JATOS. ***jatos.js*** automatically se
 
 There's a convenient function that adds most of these IDs to a given object. See function `jatos.addJatosIds(obj)` below.
 
------
-
 ### `jatos.studyId`
 
 ID of the study which is currently running. All the study properties are associated with this ID.
-
------
 
 ### `jatos.componentId`
 
 ID of the component which is currently running. All the component properties are associated with this ID.
 
------
-
 ### `jatos.batchId`
 
 ID of the batch this study run belongs to. All batch properties are associated with this ID.
-
------
 
 ### `jatos.workerId`
 
 Each worker who is running a study has an ID.
 
------
-
 ### `jatos.studyCode`
 
 The study code that was used to start this study run.
-
------
 
 ### `jatos.studyResultId`
 
 This ID is individual for every study run. A study result contains data belonging to the run in general (e.g. Study Session).
 
------
-
 ### `jatos.componentResultId`
 
 This ID is individual for every component in a study run. A component result contains data of the run belonging to the specific component (e.g., result data).
 
------
-
 ### `jatos.groupMemberId`
 
 see [Group Variables](#group-variables)
-
------
 
 ### `jatos.groupResultId`
 
@@ -98,13 +80,9 @@ All the properties (except the study input data) you entered for this study
   * `jatos.studyProperties.dirName` - Study's dir name in the file system of your JATOS installation
   * `jatos.studyProperties.groupStudy` - Whether this is a group study or not
 
------
-
 ### `jatos.studyJsonInput`
 
 The study input data you entered in the study properties. This is `{}` if the field was left empty.
-
------
 
 ### `jatos.studyLength`
 
@@ -123,21 +101,13 @@ All the properties (except the component input data) you entered for this compon
   * `jatos.componentProperties.htmlFilePath` - Path to Component's HTML file in your JATOS installation
   * `jatos.componentProperties.reloadable` - Whether it's reloadable
 
------
-
 ### `jatos.componentJsonInput`
 
------
-
 The component input data you entered in the component properties. This is `{}` if the field was left empty.
-
------
 
 ### `jatos.componentList`
 
 An array of all components of this study with basic information about each component. For each component it has the `title`, `id`, whether it is `active`, and whether it is `reloadable`.
-
------
 
 ### `jatos.componentPos`
 

@@ -21,7 +21,7 @@ If Java isn't installed, you have two options:
 1.  Download and install Java (e.g., from [adoptium.net](https://adoptium.net/)).
 2.  Download and install a JATOS bundle that includes Java for your operating system.
 
-### Install JATOS on Windows
+### Installation Windows
 
 1.  Download the [latest JATOS release](https://github.com/JATOS/JATOS/releases/latest).
       * **Without Java:** `jatos.zip`
@@ -30,7 +30,7 @@ If Java isn't installed, you have two options:
 3.  In File Explorer, navigate to the unzipped JATOS folder and double-click on `loader.bat` (or `loader` if file extensions are hidden). A command window will open and run your local JATOS installation. To stop JATOS, simply close this window.
 4.  Once JATOS is running, open your preferred browser and go to [http://localhost:9000/](http://localhost:9000/). You should see the login screen. If not, wait a moment and then reload the page. Log in with the username `admin` and password `admin`.
 
-### Installation JATOS on macOS or Linux
+### Installation macOS and Linux
 
 1.  Download the [latest JATOS release](https://github.com/JATOS/JATOS/releases/latest).
       * **Without Java:** `jatos.zip`
