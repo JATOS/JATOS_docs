@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Atilgan, N., & Nozari, N. (2025). Statistical learning of orthotactic constraints: Evidence from typing. *Journal of Experimental Psychology: Learning, Memory, and Cognition*. [DOI](https://doi.org/10.1037/xlm0001502)
+
 Velnić, M., Slabakova, R., & Dahl, A. (2025). Acquisition of genericity in L2 English: the effect of multilingualism. *International Journal of Multilingualism*. [DOI](https://doi.org/10.1080/14790718.2025.2508854)
 
 Mlinarič, M., Los, S.A. & Snell, J. (2025) On the spatial limits of parallel word processing in reading. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-025-03101-x)
