@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Bonny, J. W., & Russell, M. D. (2025). The Role of Suppression Performance Information in Judging When to Use a Fire Extinguisher. *Safety*. [DOI](https://doi.org/10.3390/safety11020058)
+
+Coates, Z., Brown, S., & Kelly, M. (2025). Exploring Impacts of Environmentally Focused Imagery on Pro-Environment Behaviours and Climate Anxiety. *Climate*. [DOI](https://doi.org/10.3390/cli13060128)
+
 Atilgan, N., & Nozari, N. (2025). Statistical learning of orthotactic constraints: Evidence from typing. *Journal of Experimental Psychology: Learning, Memory, and Cognition*. [DOI](https://doi.org/10.1037/xlm0001502)
 
 Velnić, M., Slabakova, R., & Dahl, A. (2025). Acquisition of genericity in L2 English: the effect of multilingualism. *International Journal of Multilingualism*. [DOI](https://doi.org/10.1080/14790718.2025.2508854)
