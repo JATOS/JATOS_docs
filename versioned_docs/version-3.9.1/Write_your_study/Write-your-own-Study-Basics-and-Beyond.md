@@ -40,7 +40,7 @@ A study can have one or multiple components, and each component is associated wi
 
 Here is the absolute minimum an HTML file for any component must contain to run with JATOS:
 
-1.  A link to the `jatos.js` library in the `<head>` section:
+1.  A link to the _jatos.js_ library in the `<head>` section:
 
     ```html
     <html>
@@ -50,7 +50,7 @@ Here is the absolute minimum an HTML file for any component must contain to run 
     </html>
     ```
 
-2.  While not strictly mandatory, defining the `jatos.onLoad` callback function is essential to utilize most of `jatos.js`'s features. Although you could start with any JavaScript immediately, if you intend to use `jatos.js`'s variables and functions, you must wait for `jatos.js` to complete its initialization.
+2.  While not strictly mandatory, defining the `jatos.onLoad` callback function is essential to utilize most of _jatos.js_'s features. Although you could start with any JavaScript immediately, if you intend to use _jatos.js_'s variables and functions, you must wait for _jatos.js_ to complete its initialization.
 
     ```html
     <script>
@@ -68,9 +68,9 @@ You'll likely want to save the data collected during your experiments. Generally
 
 -----
 
-## `jatos.js` Reference
+## _jatos.js_ Reference
 
-In your JavaScript, you'll use `jatos.js` to handle all JATOS-related functionalities. Every function and field is described in detail in its [reference](jatos.js-Reference.html).
+In your JavaScript, you'll use _jatos.js_ to handle all JATOS-related functionalities. Every function and field is described in detail in its [reference](jatos.js-Reference.html).
 
 -----
 

@@ -6,7 +6,7 @@ sidebar_position: 3
 
 **Take two separate studies and combine them into a single one** 
 
-You might have created different parts of a study using various tools — for example, a survey coded with [lab.js](labjs-and-JATOS.html) and a perceptual experiment with [OSWeb](OSWeb-and-JATOS.html). If you have separate `.jzip` files from each tool and now wish to combine them into one study, here's how to do it.
+You might have created different parts of a study using various tools—for example, a survey coded with [lab.js](labjs-and-JATOS.html) and a perceptual experiment with [OSWeb](OSWeb-and-JATOS.html). If you have separate `.jzip` files from each tool and now wish to combine them into one study, here's how to do it.
 
 This process applies to combining any two study halves, regardless of how they were coded. (However, if you directly wrote the scripts instead of using an experiment builder, you likely won't need these specific instructions.)
 

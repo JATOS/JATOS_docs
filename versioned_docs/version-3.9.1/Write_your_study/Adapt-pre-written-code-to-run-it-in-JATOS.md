@@ -49,7 +49,7 @@ sidebar_position: 3
 
 Up to this point, JATOS has simply served your files. Now, we'll use a key JATOS feature: storing your result data in JATOS' database.
 
-1.  **Include `jatos.js`:** Add the `_jatos.js_` library to your HTML file. Place the following line within your `<head>` section:
+1.  **Include _jatos.js_:** Add the `_jatos.js_` library to your HTML file. Place the following line within your `<head>` section:
 
     ```html
     <script src="jatos.js"></script>

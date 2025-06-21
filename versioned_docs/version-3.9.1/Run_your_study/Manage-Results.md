@@ -4,130 +4,125 @@ slug: /Manage-Results.html
 sidebar_position: 8
 ---
 
-## Results pages
+## Results Pages
 
-Once you collected data for a study, you can see and manage the results by clicking on one of the *Results* buttons.
+Once you've collected data for a study, you can view and manage the results by clicking on one of the **Results** buttons.
 
 ![Results Link](/img/v39x/results_link.png)
 
-The image below is an example of a study results page, but there are result pages for components, batches or groups as well. There's quite a lot of information here, so we'll go through each piece.
+The image below shows an example of a study results page. Keep in mind there are also dedicated results pages for components, batches, and groups. There's a lot of information here, so let's walk through each section.
 
 ![Results View screenshot](/img/v39x/results_view_12.png)
 
+-----
 
-## Interacting with the results table
+## Interacting with the Results Table
 
-### View result data
+### View Result Data
 
-Each study result has an arrow on the left. If you click on it, the result data for this study run will be displayed underneath the row. Since a study can have several components and each component produces its own result data there can be several result data each in its own row (like in the screenshot below). By clicking on _show all_ one can see the whole data if it doesn't fit all in the box.
+Each study result has an arrow icon (`▼`) on its left. Clicking this arrow displays the **result data** for that specific study run directly underneath the row. Since a study can have multiple components, and each component produces its own result data, there might be several result data entries, each in its own row (as shown in the screenshot below). If the entire data doesn't fit in the displayed box, you can click **show all** to view it completely.
 
 ![Results View screenshot](/img/v39x/results_view_11.png)
 
+### Selecting Results
 
-### Selecting results
-
-There is a checkbox on the left side of each row to select/deselect a specific result. You can also use the buttons on the bar above to select/deselect all results in the table. Additionally you can select only the filtered ones or only the visible ones.
+A checkbox on the left side of each row allows you to select or deselect a specific result. You can also use the buttons in the bar above the table to select or deselect all results. Additionally, you have options to select only the filtered results or only the currently visible ones.
 
 ![Results View screenshot](/img/v39x/results_view_13.png)
 
+### Filter Results & Filter Builder
 
-### Filter results & filter builder
-
-The filter lets you search all all fields in the results table (the metadata). 
+The **filter** feature lets you search across all fields in the results table (the metadata).
 
 ![Results View screenshot](/img/v39x/results_view_14.png)
 
-If you type, for example, "Personal Single" in the *Filter* field, only the results ran by a Personal Single worker will appear on the table. You can then click on *Filtered* to select them and export only those results that you're interested in. 
+For instance, if you type "Personal Single" into the *Filter* field, only results from studies run by a Personal Single worker will appear in the table. You can then click *Filtered* to select these results and export only the ones you're interested in.
 
-For more elaborate filtering you can use Regular Expressions. Click on *RegEx* to activate this.
+For more advanced filtering, you can use **Regular Expressions**. Click *RegEx* to activate this mode.
 
-By default filtering in case insensitive but you can turn on case sensitive filtering by clicking on *Aa*.
+By default, filtering is case-insensitive, but you can enable case-sensitive filtering by clicking _Aa_.
 
-Sometimes the simple filter is not precise enough or you want to combine multiple filters: For those cases the _Filter Builder_ offers complex criteria with logical conjunctions ('and', 'or'). It's also possible to filter for certain dates.
+Sometimes, the simple filter isn't precise enough, or you might want to combine multiple filters. For these scenarios, the **Filter Builder** offers complex criteria with logical conjunctions ('and', 'or'). It also allows you to filter for specific dates.
 
 ![Results View screenshot](/img/v39x/results_view_15.png)
 
+-----
 
-## Export results
+## Export Results
 
 ![Results View screenshot](/img/v39x/results_view_16.png)
 
-Once you selected the results you're interested in, click *Export Results*. You can choose what you want to export: everything in a JATOS Results Archive, only the result metadata, only the result data, or only the files. If in doubt which one to choose, get the JATOS Result Archive - it contains everything.
-
+Once you've selected the results you want, click **Export Results**. You can choose what to export: everything in a JATOS Results Archive, only the result metadata, only the result data, or only the files. If you're unsure which to choose, opting for the **JATOS Result Archive** is best, as it contains everything.
 
 ### Export a JATOS Results Archive (JRZIP)
 
 ![Results View screenshot](/img/v39x/results_view_17.png)
 
-Since version 3.8.1 this is the standard export format. It **aggregates result data, result files and result metadata** in one ZIP archive file with a _.jrzip_ file extension ([more information about JRZIP](JATOS-Results-Archive-JRZIP.html)).
+Since version 3.8.1, this is the standard export format. It **aggregates result data, result files, and result metadata** into a single ZIP archive file with a `.jrzip` extension ([more information about JRZIP](JATOS-Results-Archive-JRZIP.html)).
 
-
-### Export result data
+### Export Result Data
 
 ![Results View screenshot](/img/v39x/results_view_18.png)
 
-The result data are the genuine data that got submitted during study runs without any metadata or result files. You can choose between ***ZIP*** or ***Plain Text*** format. In the _ZIP_ format the result data are stored in a file system structure with folders for study results and component results, similar to the _JRZIP_ format. The _Plain Text_ format is familiar from previous JATOS version: all result data are put together in one text file with one result per line.
+The **result data** are the genuine data submitted during study runs, without any metadata or associated files. You can choose between **ZIP** or **Plain Text** format. In the *ZIP* format, the result data is organized in a file system structure with folders for study results and component results, similar to the `.jrzip` format. The *Plain Text* format, familiar from previous JATOS versions, consolidates all result data into one text file, with one result per line.
 
-
-### Export result files
+### Export Result Files
 
 ![Results View screenshot](/img/v39x/results_view_19.png)
 
-The result files are the files that were uploaded during study runs. They are exported as an ZIP archive with a file system structure that represents the study results and their component results. 
+**Result files** are those uploaded during study runs. They are exported as a ZIP archive with a file system structure that mirrors the study results and their component results.
 
-
-### Export result metadata
+### Export Result Metadata
 
 ![Results View screenshot](/img/v39x/results_view_20.png)
 
-The metadata are mostly the data that you see in the result table but that do not belong to the actual result data or files, e.g. worker ID or start time. You can choose between ***JSON*** and ***CSV*** format. 
+The **metadata** primarily consists of the information displayed in the result table that doesn't belong to the actual result data or files (e.g., worker ID, start time). You can choose between **JSON** and **CSV** format.
 
+-----
 
-## Delete results
+## Delete Results
 
 ![Results View screenshot](/img/v39x/results_view_21.png)
 
-You can click *Delete* to remove the selected results. That includes result data, result files and metadata. Keep in mind **there's no undo function for this**. 
+You can click **Delete** to remove the selected results. This action includes deleting result data, result files, and metadata. Keep in mind **there's no undo function for this**.
 
+-----
 
-## Table columns and customization
+## Table Columns and Customization
 
-You can show and hide the columns displayed in the table with the drop-down menu under the *Customize* button.
+You can show and hide the columns displayed in the table using the drop-down menu under the **Customize** button.
 
 ![Results View screenshot](/img/v39x/results_view_22.png)
 
-* **Result ID** - An identifier assigned by JATOS to each study result. A study result is actually a set of component results, each of them with their own (different) *Component Result ID*. 
-* **UUID** - universally unique identifier - similar to Result ID but this ID is unique over different JATOS installations
-* **Study code** - The study code that was used to start this study run
-* **Start time** - Time at which the first component of the study was started. 
-* **End time** - Time at which the last component of the study was finished. 
-* **Last seen** - Each component running in a worker's browser sends a "heartbeat" regularly back to JATOS. Last Seen is the time of the last heartbeat received. The heartbeat stops either when the study is finished or when the browser tab is closed. The default period of the heartbeat is 2 minutes but you can change it through a [_jatos.js_ function](jatos.js-Reference.html#jatossetheartbeatperiod).
-* **Duration** - Simply the time difference between the start and end time.
-* **Batch** - Name of the batch the worker belongs to.
-* **Worker ID** - Assigned by JATOS. Each worker has its own Worker ID. JATOS' admin user will always have Worker ID 1. You can click on a Worker ID to see all the worker's results. 
-* **Worker type** - Displays the [Worker type](Worker-Types.html) that ran the study. 
-* **MTurk worker ID** - Only applies to studies run by MTurk workers. An identifier given by Amazon Mechanical Turk's, not by JATOS.
-* **MTurk confirmation code** - Only applies to studies run by MTurk workers. The Confirmation Code is generated by JATOS and given to the worker as proof of his work.
-* **Group ID** - Only available for group studies. It identifies the group.
-* **Files** - Indicates result file upload
-* **Data size** - (Component Results only) - Size of the result data as it is stored in the database
-* **Files (size)** - (Component Results only) - List of the uploaded result files with their size in brackets
-* **State**
-    
-  Possible states for _study results_ are: 
-  * PRE - [Preview of study](Restricting-study-flow.html#preview-links) (exists only in PersonalSingleWorker and GeneralSingleWorker)
-  * STARTED - Study started
-  * DATA_RETRIEVED - The very beginning of the study. It means the first component of the study was loaded in the worker's browser and started running. (It literally means the browser asked for the initialization data.)
-  * FINISHED - Study finished. All result data and files that were sent by the study in the browser were safely stored in JATOS.
-  * ABORTED - Study aborted by worker and all result data and files were deleted.
-  * FAIL - Something went wrong, study stopped and cannot continue
-
-  Possible states for _component results_ are:
-  * STARTED - Component started
-  * DATA_RETRIEVED -  The very beginning of the component. It means the component was loaded in the worker's browser and started running. (It literally means the browser asked for the initialization data.)
-  * FINISHED - Component finished. All result data and files that were sent by the study in the browser were safely stored in JATOS.
-  * RELOADED - Component was reloaded (usually by clicking the browser's reload button)
-  * ABORTED - This component's study was aborted by worker and all result data and files were deleted.
-  * FAIL - Something went wrong, the study stopped and cannot continue
-
-* **Messages** - A message that can be set together with [`jatos.endStudy`](jatos.js-Reference.html#jatosendstudy) or [`jatos.abortStudy`](jatos.js-Reference.html#jatosabortstudy).
+  * **Result ID** - An identifier assigned by JATOS to each study result. A study result is actually a set of component results, each with its own (different) *Component Result ID*.
+  * **UUID** - A universally unique identifier. Similar to Result ID, but this ID is unique across different JATOS installations.
+  * **Study code** - The study code used to start this particular study run.
+  * **Start time** - The time at which the first component of the study began.
+  * **End time** - The time at which the last component of the study finished.
+  * **Last seen** - Each component running in a worker's browser regularly sends a "heartbeat" back to JATOS. Last Seen is the time of the last heartbeat received. The heartbeat stops either when the study is finished or when the browser tab is closed. The default heartbeat period is 2 minutes, but you can change it via a [_jatos.js_ function](jatos.js-Reference.html#jatossetheartbeatperiod).
+  * **Duration** - Simply the time difference between the start and end time.
+  * **Batch** - The name of the batch the worker belongs to.
+  * **Worker ID** - Assigned by JATOS. Each worker has a unique Worker ID. The JATOS admin user will always have Worker ID 1. You can click on a Worker ID to view all results associated with that worker.
+  * **Worker type** - Displays the [Worker type](Worker-Types.html) that ran the study.
+  * **MTurk worker ID** - Applies only to studies run by MTurk workers. This is an identifier provided by Amazon Mechanical Turk, not by JATOS.
+  * **MTurk confirmation code** - Applies only to studies run by MTurk workers. This Confirmation Code is generated by JATOS and given to the worker as proof of their work.
+  * **Group ID** - Available only for group studies; it identifies the specific group.
+  * **Files** - Indicates whether result files were uploaded.
+  * **Data size** - (Component Results only) - The size of the result data as stored in the database.
+  * **Files (size)** - (Component Results only) - A list of the uploaded result files with their sizes in brackets.
+  * **State**
+      * Possible states for *study results* are:
+          * **PRE** - [Preview of study](Restricting-study-flow.html#preview-links) (exists only for PersonalSingleWorker and GeneralSingleWorker).
+          * **STARTED** - Study started.
+          * **DATA_RETRIEVED** - The very beginning of the study. This means the first component of the study was loaded in the worker's browser and began running (it literally means the browser requested the initialization data).
+          * **FINISHED** - Study finished. All result data and files sent by the study in the browser were safely stored in JATOS.
+          * **ABORTED** - Study aborted by worker, and all result data and files were deleted.
+          * **FAIL** - Something went wrong; the study stopped and cannot continue.
+      * Possible states for *component results* are:
+          * **STARTED** - Component started.
+          * **DATA_RETRIEVED** - The very beginning of the component. This means the component was loaded in the worker's browser and began running (it literally means the browser requested the initialization data).
+          * **FINISHED** - Component finished. All result data and files sent by the study in the browser were safely stored in JATOS.
+          * **RELOADED** - Component was reloaded (usually by clicking the browser's reload button).
+          * **ABORTED** - This component's study was aborted by the worker, and all result data and files were deleted.
+          * **FAIL** - Something went wrong; the study stopped and cannot continue.
+  * **Messages** - A message that can be set in conjunction with [`jatos.endStudy`](jatos.js-Reference.html#jatosendstudy) or [`jatos.abortStudy`](jatos.js-Reference.html#jatosabortstudy).

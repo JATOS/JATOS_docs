@@ -8,7 +8,7 @@ If you've written your study using HTML/JavaScript/CSS, you'll need to know how 
 
 ### Submit Result Data
 
-Several `jatos.js` functions allow you to send data to the JATOS server. Result data can be anything convertible to text, such as JSON or CSV formats. Images, audio, or video data can only be sent via file upload (explained below).
+Several _jatos.js_ functions allow you to send data to the JATOS server. Result data can be anything convertible to text, such as JSON or CSV formats. Images, audio, or video data can only be sent via file upload (explained below).
 
 The two functions [`jatos.submitResultData`](jatos.js-Reference.html#jatossubmitresultdata) and [`jatos.appendResultData`](jatos.js-Reference.html#jatosappendresultdata) enable you to submit text data to the server. They are similar, with the key difference being that `jatos.submitResultData` overwrites existing data, while `jatos.appendResultData` adds new data to existing records.
 

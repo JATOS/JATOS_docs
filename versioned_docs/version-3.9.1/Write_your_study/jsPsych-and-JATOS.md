@@ -11,7 +11,7 @@ sidebar_position: 4
 
 </div>
 
-JATOS primarily handles the server-side aspects of your study, such as storing result data and managing workers. It doesn't dictate what happens within the browser itself — that's where your HTML, JavaScript, and CSS come in. While you can write all of this yourself, using a framework can be very helpful; [jsPsych](http://www.jspsych.org/) is an excellent option.
+JATOS primarily handles the server-side aspects of your study, such as storing result data and managing workers. It doesn't dictate what happens within the browser itself—that's where your HTML, JavaScript, and CSS come in. While you can write all of this yourself, using a framework can be very helpful; [jsPsych](http://www.jspsych.org/) is an excellent option.
 
 You'll find several jsPsych examples among [our example studies](/Example-Studies).
 
@@ -23,7 +23,7 @@ Please note that each jsPsych version has slight differences. These steps are fo
 
 ### How to Turn Your jsPsych 7 Experiment into a JATOS Study
 
-1.  **Include the `jatos.js` library** in the `<head>` section of your HTML file:
+1.  **Include the _jatos.js_ library** in the `<head>` section of your HTML file:
 
     ```html
     <script src="jatos.js"></script>

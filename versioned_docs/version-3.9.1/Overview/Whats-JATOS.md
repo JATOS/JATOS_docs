@@ -27,7 +27,7 @@ Please take a moment to complete our short, 3-minute **[survey](https://forms.gl
   * **Free & Open-Source:** JATOS is **completely open-source and free** to use, released under the [Apache 2 Licence](http://www.apache.org/licenses/LICENSE-2.0.html). You can find the source code on [GitHub](https://github.com/JATOS/JATOS).
   * **User-Friendly Interface:** JATOS features a **GUI (Graphical User Interface)**, meaning you will not need to know terminal commands to manage your server.
   * **Flexible Study Creation:** JATOS is compatible with popular tools like **OpenSesame**, **jsPsych**, **lab.js**, **PsyToolkit**, or **PsychoPy**. Standard **HTML, JavaScript, and CSS** code is of course also possible.
-  * **Device Agnostic:** Code your studies to run on **mobile phones, tablets, desktops, and lab computers** — any device with a browser.
+  * **Device Agnostic:** Code your studies to run on **mobile phones, tablets, desktops, and lab computers**—any device with a browser.
   * **Effortless Collaboration:** **Export and import** studies with ease, facilitating exchange with other researchers.
   * **Real-time Group Studies:** Conduct dynamic **group studies** where multiple participants can interact with each other in real time.
   * **Compatible with Participant Recruitment platforms:** JATOS is easy to integrate with platforms like **Prolific**, **SONA**, or **MTurk**.

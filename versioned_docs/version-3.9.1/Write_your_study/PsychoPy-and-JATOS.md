@@ -33,7 +33,7 @@ Now, let's configure PsychoPy/PsychoJS to save your experiment's result data dir
     jQuery.getScript("jatos.js");
     ```
 
-    This line loads the `jatos.js` library.
+    This line loads the _jatos.js_ library.
 
 7.  **Open 'Begin experiment'** and add the following line:
 
@@ -76,7 +76,7 @@ Now, let's configure PsychoPy/PsychoJS to save your experiment's result data dir
 13. Generate the browser version of your experiment by selecting **Run** then **Run JS for local debug** from the top menu. This action will add your experiment's JavaScript file and a new 'lib' folder (containing PsychoJS JavaScript and CSS files) to your experiment folder. It will also open a browser tab, which you can close as you'll be running the experiment within JATOS.
 14. Navigate to your study page in JATOS (the one you created earlier) and click **Run**.
 15. If everything is set up correctly, your experiment should now be displayed.
-16. Check that, after your study has finished, the result data are available in JATOS: go to your study page, then click **Results**, and finally expand the first result by clicking **▼** in the first column.
+16. Check that, after your study has finished, the result data are available in JATOS: go to your study page, then click **Results**, and finally expand the first result by clicking `▼` in the first column.
 17. At this point, you can export or import your study to another JATOS instance.
 
 **Note:** In some PsychoPy experiments, you need to add a keyboard response component with the **'Force end of routine'** checkbox activated at the end of the last routine of the experiment to ensure that JATOS properly finishes the study.

@@ -13,7 +13,7 @@ sidebar_position: 9
 
 </div>
 
-In JATOS, you often need to store and share information during a study run, either with other components of the same study or among workers within a group or batch. The three distinct session types (illustrated by the curved arrows in the image to the right) enable this data transfer. Workers can write data into these sessions using `jatos.js`.
+In JATOS, you often need to store and share information during a study run, either with other components of the same study or among workers within a group or batch. The three distinct session types (illustrated by the curved arrows in the image to the right) enable this data transfer. Workers can write data into these sessions using _jatos.js_.
 
 The data stored in sessions are **volatile**; they are not meant for permanent storage. Instead, any information critical for data analysis should be stored in the **result data** or **result files**. Unlike session data, result data are permanently saved on the JATOS server and are never automatically deleted.
 

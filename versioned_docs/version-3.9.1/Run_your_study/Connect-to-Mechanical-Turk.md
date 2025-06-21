@@ -4,62 +4,66 @@ slug: /Connect-to-Mechanical-Turk.html
 sidebar_position: 5
 ---
 
-Use your JATOS study with Mturk is easy, although a fair amount of clicking is required.
+Integrating your JATOS study with MTurk is straightforward, though it requires a bit of clicking.
 
-A good idea is always to try it yourself first in [MTurk Sandbox](https://requester.mturk.com/developer/sandbox) before you let real workers do it.
+It's always a good practice to test your setup in the [MTurk Sandbox](https://requester.mturk.com/developer/sandbox) before launching your study to real workers.
 
-### You will need
+-----
 
-* A requester Mturk account
-* Your study running on a [JATOS server](Bring-your-JATOS-online.html)
-* A description of the study (this can be the same as the one you included in the study description within JATOS)
+### What You'll Need
 
+  * A requester MTurk account.
+  * Your study running on a [JATOS server](Bring-your-JATOS-online.html).
+  * A description of the study (this can be the same as the one you used within JATOS).
 
-### On JATOS' side
+-----
 
-In JATOS, go to your study's page and click on the Study Links button and open the batch you want to run.
+### On JATOS' Side
+
+In JATOS, navigate to your study's page and click on the **Study Links** button. Then, open the batch you intend to run.
 
 ![JATOS GUI screenshot](/img/v39x/study_links_mturk.png)
 
-1. Don't forget to enable the MTurk type
-
-1. Click on _Source Code_. You'll see a box with HTML code, similar to the one shown here. You will have to copy and paste the code from here to the MTurk interface.
+1.  Remember to **enable the MTurk type**.
+2.  Click on **Source Code**. A box will appear displaying HTML code, similar to the one shown here. You will need to copy and paste this code into the MTurk interface.
 
 ![JATOS GUI screenshot](/img/v39x/study_links_mturk_source_code.png)
 
+-----
 
-### On MTurk's page
+### On MTurk's Page
 
-You first have to create a project in the MTurk interface:
+You'll first need to create a project within the MTurk interface:
 
-1. Sign into your [MTurk requester account](https://requester.mturk.com/signin_options) (or [requester sandbox account](https://requestersandbox.mturk.com/signin_options))
+1.  Sign into your [MTurk requester account](https://requester.mturk.com/signin_options) (or [requester sandbox account](https://requestersandbox.mturk.com/signin_options)).
 
-1. Create ⟶ New Project ⟶ Survey Link ⟶ Create Project - or just click this [link for requester](https://requester.mturk.com/create/projects/new) (or this [link for requester sandbox](https://requestersandbox.mturk.com/create/projects/new))
+2.  Navigate to **Create** ⟶ **New Project** ⟶ **Survey Link** ⟶ **Create Project**. Alternatively, you can directly click this [link for requester](https://requester.mturk.com/create/projects/new) (or this [link for requester sandbox](https://requestersandbox.mturk.com/create/projects/new)).
 
-1. Complete the *Enter Properties* tab
+3.  Complete the **Enter Properties** tab.
 
-1. Click on the *Design layout* button in the bottom of the page. 
+4.  Click on the **Design layout** button at the bottom of the page.
 
-1. Click on the *Source* button. You'll see some text in an editable window, corresponding to an HTML file. Delete the entire text in this field.
+5.  Click on the **Source** button. You'll see some text in an editable window, which corresponds to an HTML file. **Delete the entire text** in this field.
 
-   ![MTurk Schreenshot](/img/MTurk-source-editor.png)   
+    ![MTurk Schreenshot](/img/MTurk-source-editor.png)
+6.  Now, **paste the source code you obtained from JATOS** into this text field. This HTML code is ready to use out-of-the-box, so no changes are necessary (though you can modify it if you wish).
 
-1. Now paste the source code that you got from JATOS into this text field. This HTML code works out-of-the-box and you don't have to change anything (but you can if you want).
- 
-1. To exit the editing mode, click on the ‘Source’ button again and continue setting up your study in MTurk.
- 
-   ![MTurk Schreenshot](/img/MTurk-source-editor-done.png)
+7.  To exit the editing mode, click the **Source** button again and continue setting up your study in MTurk.
 
+    ![MTurk Schreenshot](/img/MTurk-source-editor-done.png)
 
-### What should happen
+-----
 
-When an MTurk worker finishes a study they'll see a confirmation code like this one.
+### What Should Happen
+
+When an MTurk worker finishs a study, they will see a **confirmation code** like the one shown here.
 
 ![Confirmation code](/img/MTurk-confirmation-code_371.png)
 
-### How to check the confirmation codes
+-----
 
-To assign payment to individual workers, just compare the confirmation codes stored in JATOS' results page to those stored in MTurk. To see the confirmation codes in your results page you might have to add the column to your table: Like in the image, go to Customize and choose MTurk Confirmation Code. 
+### How to Check Confirmation Codes
+
+To assign payment to individual workers, simply compare the confirmation codes stored in JATOS' results page with those recorded in MTurk. To view the confirmation codes in your JATOS results page, you might need to add the column to your table: as shown in the image, go to **Customize** and select **MTurk Confirmation Code**.
 
 ![Results of Mturk workers](/img/v39x/mturk-results.png)
-

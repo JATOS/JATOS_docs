@@ -38,7 +38,7 @@ If Java isn't installed, you have two options:
       * **For Linux bundled with Java:** `jatos_linux_java.zip`
 2.  Unzip the downloaded file. You can place the unzipped folder almost anywhere, **except** in a folder that syncs across devices, such as Dropbox or Google Drive. [Learn more](Troubleshooting.html#database-is-corrupted.html) about why this restriction exists.
 3.  Open your terminal and `cd` into the unzipped JATOS folder.
-4.  Run the loader shell script with the command `./loader.sh start`. You might need to change the file's permissions to make it executable using `chmod u+x loader.sh`. You can ignore pop-ups such as "To use the java command-line tool you need to install a JDK" — simply press "OK."
+4.  Run the loader shell script with the command `./loader.sh start`. You might need to change the file's permissions to make it executable using `chmod u+x loader.sh`. You can ignore pop-ups such as "To use the java command-line tool you need to install a JDK"—simply press "OK."
 5.  **On macOS, you might see a pop-up indicating that the application cannot be opened from an unknown developer. In this case, click *Open Anyway* within the *Privacy & Security* tab in your *System Settings*. More details on this are provided below.**
 6.  Once JATOS is running, open your preferred browser and go to [http://localhost:9000/](http://localhost:9000/). You should see the login screen. If not, wait a moment and then reload the page. Log in with the **username `admin` and password `admin`**.
 
