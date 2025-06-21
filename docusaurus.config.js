@@ -129,10 +129,6 @@ const config = {
                 to: 'https://communityinviter.com/apps/jatosworkspace/jatos-slack',
               },
               {
-                label: 'Google Group',
-                to: 'https://groups.google.com/g/jatos',
-              },
-              {
                 label: 'GitHub Issues',
                 to: 'https://github.com/JATOS/JATOS/issues',
               },
