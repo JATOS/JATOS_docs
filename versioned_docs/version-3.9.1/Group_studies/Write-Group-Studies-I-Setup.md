@@ -4,52 +4,50 @@ slug: /Write-Group-Studies-I-Setup.html
 sidebar_position: 2
 ---
 
-## Set up group studies
+## Set Up Group Studies
 
-First and common to all group setups is to check the Group study switch in the study properties. 
+To enable group studies, first check the **Group study** switch in your study properties.
 
 ![Group's property](/img/v39x/study-properties-group-study.png)
 
-If the Group property is checked, JATOS will assign workers into groups. We'll describe some group properties that you can use to tweak according to whether you want to keep control over worker assignment, or you give JATOS full control.
+When the Group property is enabled, JATOS will assign workers into groups. You can adjust several group properties to control how workers are assigned—either keeping full control yourself or letting JATOS handle it automatically.
 
+### Group Settings in Each Batch's Properties
 
-### Group settings in each batch's properties
-
-You can have multiple batches in JATOS, each one with different group settings. There are three important bits of information for a group study:
+You can have multiple batches in JATOS, each with its own group settings. There are three key properties for group studies:
 
 ![Study Links screenshot](/img/v39x/batch_properties_groups.png)
 
-1. **Max total workers**: This isn't just a properties of group studies. It simply limits the total amount of workers who are allowed to run in this batch.
-1. **Max total members**:  This limits the number of members a single group can have. While there can be multiple groups in a batch, the _Max total members_ field applies to each separate group. 
-1. **Max active members**: This limits the number of active members a single group can have. An active member is in the group at this time - in opposite to a past member who already left the group. This number applies to each group separately. Example: In the Prisoner's Dilemma study, you would limit the active members to 2.
+1. **Max total workers**: Limits the total number of workers allowed to participate in this batch. (This is not exclusive to group studies.)
+2. **Max total members**: Limits the number of members in a single group. Multiple groups can exist in a batch, and this value applies to each group individually.
+3. **Max active members**: Limits the number of active members in a group at any one time. An active member is currently in the group, as opposed to a past member who has already left. For example, in the Prisoner's Dilemma study, you would set this to 2.
 
-By default, all properties have no upper limit.
+By default, all these properties are unlimited.
 
+## Group Assignment
 
-## Group assignment
+You can let JATOS assign workers to groups automatically, assign them yourself, or use a combination of both. The following scenarios illustrate how group assignment works:
 
-You can either tell JATOS to assign workers to different groups, or you can keep full control and do it yourself (or something in between). We'll use some example scenarios to explain how this assignment works.
+### Scenario 1: One Group, Manual Assignment
 
-### Scenario 1: One group, assign workers manually
-
-If in a batch you set the _Max total worker_ to 2 and leave the other two Max parameters empty, JATOS has no other choice than to allow only 2 workers and sort them into the same group. If you then [add two Personal Single study links](Run-your-Study-with-Study-Links.html) (but other study link types are fine too) and send the links to your two participants, you can be sure that they will interact with each other. If you need more groups, just add a second batch with two other workers.
+If you set _Max total workers_ to 2 and leave the other two fields empty, only 2 workers can join, and both will be placed in the same group. If you [add two Personal Single study links](Run-your-Study-with-Study-Links.html) (other link types also work) and send them to your two participants, you can be sure they will interact with each other. To create more groups, simply add another batch with two more workers.
 
 ![Prisoners example](/img/prisoners_example.png)
 
-The first two scenarios may apply to the [Prisoner's Dilemma Example Study](/Example-Studies).
+The first two scenarios are relevant for the [Prisoner's Dilemma Example Study](/Example-Studies).
 
-### Scenario 2: Several groups, let JATOS assign workers
+### Scenario 2: Several Groups, Automatic Assignment
 
-Say you want to have 3 groups with 2 workers each. You want to leave it to JATOS which workers are paired together. Then, set _Max total workers_ to 6 and both _Max active members_ and _Max total members_ to 2 (remember that these numbers apply to each group separately). Then [add 6 Personal Single study links](Run-your-Study-with-Study-Links.html) (but other study link types are fine too) and send them to your 6 participants.
+Suppose you want 3 groups with 2 workers each and want JATOS to pair workers automatically. Set _Max total workers_ to 6, and both _Max total members_ and _Max active members_ to 2 (these limits apply per group). Then [add 6 Personal Single study links](Run-your-Study-with-Study-Links.html) (other link types also work) and distribute them to your 6 participants.
 
-### Scenario 3: One open world
+### Scenario 3: One Open World
 
-This scenario is basically the opposite of the first one. By limiting neither the _Max total worker_ nor the _Max total members_, nor the _Max active members_ JATOS will sort all workers into one single group that is potentially of unlimited size. Now --to keep it completely open-- just [add one study link type General Single](Run-your-Study-with-Study-Links.html) (but other study link types are fine too) and publish it (e.g. via a mailing list or on a website).
+This is the opposite of Scenario 1. If you leave _Max total workers_, _Max total members_, and _Max active members_ unlimited, JATOS will place all workers into a single, potentially unlimited group. To keep it fully open, [add a General Single study link](Run-your-Study-with-Study-Links.html) (other link types also work) and share it (e.g., via a mailing list or website).
 
 ![Snake example](/img/snake_example.png)
 
-The third and fourth scenario may apply to the [Snake Example Study](/Example-Studies).
+Scenarios 3 and 4 are relevant for the [Snake Example Study](/Example-Studies).
 
-### Scenario 4: Multiple open worlds with limited active members
+### Scenario 4: Multiple Open Worlds with Limited Active Members
 
-Say you want to have groups with up to 3 members, interacting _at the same time_. But you don't want to actually limit the total number of members per group: you want to allow new workers to join a group if one of its members left. This way each group can have a flow of workers joining and leaving - the only constraint is the maximum members per group at any given time. You also want to let JATOS set the number of groups depending on the available workers. To set up this just use one batch, set the _Max active members_ to 3, and leave _Max total worker_ and _Max total members_ unlimited.  
+Suppose you want groups with up to 3 members interacting at the same time, but you don’t want to limit the total number of members per group. New workers can join a group if someone leaves, allowing a flow of participants. The only constraint is the maximum number of active members per group at any time. JATOS will determine the number of groups based on available workers. To set this up, use one batch, set _Max active members_ to 3, and leave _Max total workers_ and _Max total members_ unlimited.

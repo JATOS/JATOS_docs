@@ -1743,19 +1743,13 @@ The group variables are only filled with values if the current study run is a gr
 
 The group member ID is unique for this member (it is actually identical to the study result ID).
 
------
-
 ### `jatos.groupResultId`
 
 ID of this group result (it's called group result to be consistent with the study result and the component result, though it's often just called "group").
 
------
-
 ### `jatos.groupMembers`
 
 List of member IDs of the current members of the group.
-
------
 
 ### `jatos.groupChannels`
 

@@ -65,7 +65,7 @@ If a new user authenticates for the first time using Google Sign-In, their user 
 
 ### Authentication via OpenID Connect (OIDC)
 
-Since version 3.8.5, JATOS users can be authenticated using [OIDC](https://openid.net/developers/how-connect-works/). OIDC is an authentication protocol that provides an easy-to-use sign-in button. It requires an external OIDC provider (e.g., [Keycloak](https://www.keycloak.org/)) that is not part of JATOS itself. You can find more details on [how to configure JATOS to use OIDC](JATOS_Configuration.html#openid-connect-oidc) on the JATOS configuration page.
+Since version 3.8.5, JATOS users can be authenticated using [OIDC](https://openid.net/developers/how-connect-works/). OIDC is an authentication protocol that provides an easy-to-use sign-in button. It requires an external OIDC provider (e.g., [Keycloak](https://www.keycloak.org/)) that is not part of JATOS itself. You can find more details on [how to configure JATOS to use OIDC](JATOS_Configuration.html#openid-connect-oidc-authentication) on the JATOS configuration page.
 
 If a new user authenticates for the first time using OIDC, their user account will be automatically created in JATOS. This means an OIDC user account cannot be added manually by a JATOS Admin.
 
