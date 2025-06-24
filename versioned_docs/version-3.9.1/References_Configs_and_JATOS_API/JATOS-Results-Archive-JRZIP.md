@@ -5,17 +5,16 @@ sidebar_position: 5
 ---
 
 :::info
-This is **advanced knowledge** about JATOS. If you just want to use JATOS to run a study it is not necessary to read this.
+This is **advanced knowledge** about JATOS. If you just want to use JATOS to run a study, it is not necessary to read this.
 :::
 
 ## Introduction
 
-A JRZIP ("JATOS study results archive") is a file package format used to export results from JATOS instances. A JRZIP aggregates the results data, result files and associated metadata into one file for distribution. They are built on the ZIP format and have a _.jrzip_ file extension. Hence every ZIP unpacker can be used to get to the files.
+A JRZIP ("JATOS study results archive") is a file package format used to export results from JATOS instances. A JRZIP aggregates result data, result files, and associated metadata into a single file for distribution. JRZIP files are based on the ZIP format and have a `.jrzip` file extension. Any ZIP unpacker can be used to extract the files.
 
+## JRZIP File System Structure
 
-## JRZIP File system structure
-
-A JRZIP file is organized by study results. Each study result folder (named _study_result_x_,  _x_ being the study result ID) contains the folders for the component results (named _comp_result_y_, _y_ being the component result ID) that belong to the components of the study. Each component result folder contains the uploaded result files in the _files_ folder and the result data in the _data.txt_ file.
+A JRZIP file is organized by study results. Each study result folder (named _study_result_x_, where _x_ is the study result ID) contains folders for the component results (named _comp_result_y_, where _y_ is the component result ID) that belong to the components of the study. Each component result folder contains uploaded result files in the _files_ folder and the result data in the _data.txt_ file.
 
 ```
 /
@@ -24,7 +23,6 @@ A JRZIP file is organized by study results. Each study result folder (named _stu
 │   │   ├── files
 │   │   └── data.txt
 │   ├── comp_result_2
-│   ├── comp_result_2
 │   └── ...
 ├── study_result_2
 ├── study_result_3
@@ -32,8 +30,9 @@ A JRZIP file is organized by study results. Each study result folder (named _stu
 └── metadata.json
 ```
 
-
 ## Metadata JSON Schema
+
+Below is the JSON schema for the `metadata.json` file included in each JRZIP archive. This schema describes the structure and properties of the metadata.
 
 ```json
 {
@@ -75,7 +74,7 @@ A JRZIP file is organized by study results. Each study result folder (named _stu
                     },
                     "studyTitle": {
                         "type": "string",
-                        "title": "Study's title"
+                        "title": "Study title"
                     },
                     "studyResults": {
                         "type": "array",
@@ -138,7 +137,7 @@ A JRZIP file is organized by study results. Each study result folder (named _stu
                                 "studyState": {
                                     "type": "string",
                                     "title": "Study result state",
-                                    "description": "One of: PRE (Preview of study - exists only in PersonalSingle GeneralSingle worker), STARTED (Study was started), DATA_RETRIEVED (Study's jsonData were retrieved), FINISHED (Study successfully finished), ABORTED (Study aborted by worker), FAIL (Something went wrong)"
+                                    "description": "One of: PRE (Preview of study - exists only in PersonalSingle/GeneralSingle worker), STARTED (Study was started), DATA_RETRIEVED (Study's jsonData were retrieved), FINISHED (Study successfully finished), ABORTED (Study aborted by worker), FAIL (Something went wrong)"
                                 },
                                 "message": {
                                     "type": "string",
@@ -151,7 +150,7 @@ A JRZIP file is organized by study results. Each study result folder (named _stu
                                 "workerType": {
                                     "type": "string",
                                     "title": "Worker type",
-                                    "description": "On of: GeneralMultiple, GeneralSingle, Jatos, MTSandbox, MT, PersonalMultiple, PersonalSingle"
+                                    "description": "One of: GeneralMultiple, GeneralSingle, Jatos, MTSandbox, MT, PersonalMultiple, PersonalSingle"
                                 },
                                 "batchId": {
                                     "type": "integer",
@@ -174,7 +173,7 @@ A JRZIP file is organized by study results. Each study result folder (named _stu
                                     "title": "List of component results",
                                     "items": {
                                         "type": "object",
-                                        "title": "component result",
+                                        "title": "Component result",
                                         "required": [
                                             "id",
                                             "componentId",
@@ -233,11 +232,11 @@ A JRZIP file is organized by study results. Each study result folder (named _stu
                                                 "properties": {
                                                     "size": {
                                                         "type": "integer",
-                                                        "title": "Data size in byte"
+                                                        "title": "Data size in bytes"
                                                     },
                                                     "sizeHumanReadable": {
                                                         "type": "string",
-                                                        "title": "Human readable data size"
+                                                        "title": "Human-readable data size"
                                                     }
                                                 }
                                             },
@@ -259,11 +258,11 @@ A JRZIP file is organized by study results. Each study result folder (named _stu
                                                         },
                                                         "size": {
                                                             "type": "integer",
-                                                            "title": "File size in byte"
+                                                            "title": "File size in bytes"
                                                         },
                                                         "sizeHumanReadable": {
                                                             "type": "string",
-                                                            "title": "Human readable file size"
+                                                            "title": "Human-readable file size"
                                                         }
                                                     }
                                                 }

@@ -5,15 +5,14 @@ sidebar_position: 4
 ---
 
 :::info
-This is **advanced knowledge** about JATOS. If you just want to use JATOS to run a study it is not necessary to read this.
+This is **advanced knowledge** about JATOS. If you just want to use JATOS to run a study, it is not necessary to read this.
 :::
-
 
 ## Introduction
 
-A JZIP ("JATOS study archive") is a file package format used to exchange JATOS studies between different JATOS instances. A JZIP aggregates the study assets and associated metadata (study properties) into one file for distribution. They are built on the ZIP format and have a _.jzip_ file extension.
+A JZIP ("JATOS study archive") is a file package format used to exchange JATOS studies between different JATOS instances. A JZIP aggregates the study assets and associated metadata (study properties) into a single file for distribution. JZIP files are based on the ZIP format and have a `.jzip` file extension.
 
-### JZIP File system structure
+### JZIP File System Structure
 
 ```
 /
@@ -21,19 +20,18 @@ A JZIP ("JATOS study archive") is a file package format used to exchange JATOS s
 │   ├── some asset file
 │   ├── some asset file
 │   └── ...
-└── JAS file (containing the study properties in JSON format with a .jas file extension)
+└── JAS file (contains the study properties in JSON format with a .jas file extension)
 ```
 
-### Study assets directory
+### Study Assets Directory
 
-This is a copy of the study assets directory.
+This is a copy of the study assets directory as used in the study.
 
-### JAS file schema
+### JAS File Schema
 
 The JAS file contains the study properties in JSON format.
 
-#### Example of a JAS file
-
+#### Example of a JAS File
 
 ```json
 {
@@ -41,7 +39,7 @@ The JAS file contains the study properties in JSON format.
     "data": {
         "uuid": "537cfff1-de92-1d80-264c-6b589e82f6de",
         "title": "Simple Reaction Time Task",
-        "description": "Here we descibe the study.",
+        "description": "Here we describe the study.",
         "groupStudy": false,
         "linearStudy": false,
         "allowPreview": false,
@@ -89,9 +87,9 @@ The JAS file contains the study properties in JSON format.
         ]
     }
 }
-``` 
+```
 
-#### JSON Schema of a JAS file
+#### JSON Schema of a JAS File
 
 ```json
 {
@@ -127,7 +125,7 @@ The JAS file contains the study properties in JSON format.
                     "title": "Title"
                 },
                 "description": {
-                    "type": "string",
+                    "type": ["string", "null"],
                     "title": "Description"
                 },
                 "groupStudy": {
@@ -150,19 +148,19 @@ The JAS file contains the study properties in JSON format.
                     "title": "Study assets directory name"
                 },
                 "comments": {
-                    "type": "string",
+                    "type": ["string", "null"],
                     "title": "Comments"
                 },
                 "jsonData": {
-                    "type": "string",
+                    "type": ["string", "null"],
                     "title": "JSON data"
                 },
                 "endRedirectUrl": {
-                    "type": "string",
+                    "type": ["string", "null"],
                     "title": "End redirect URL"
                 },
                 "studyEntryMsg": {
-                    "type": "string",
+                    "type": ["string", "null"],
                     "title": "Study entry message"
                 },
                 "componentList": {
@@ -200,11 +198,11 @@ The JAS file contains the study properties in JSON format.
                                 "title": "Component active flag"
                             },
                             "comments": {
-                                "type": "string",
+                                "type": ["string", "null"],
                                 "title": "Comments"
                             },
                             "jsonData": {
-                                "type": "null",
+                                "type": ["string", "null"],
                                 "title": "JSON data"
                             }
                         }
@@ -236,35 +234,32 @@ The JAS file contains the study properties in JSON format.
                                 "title": "Batch active flag"
                             },
                             "maxActiveMembers": {
-                                "type": "integer",
-                                "default": "null",
+                                "type": ["integer", "null"],
                                 "title": "Max active members"
                             },
                             "maxTotalMembers": {
-                                "type": "integer",
-                                "default": "null",
+                                "type": ["integer", "null"],
                                 "title": "Max total members"
                             },
                             "maxTotalWorkers": {
-                                "type": "integer",
-                                "default": "null",
+                                "type": ["integer", "null"],
                                 "title": "Max total workers"
                             },
                             "allowedWorkerTypes": {
                                 "type": "array",
                                 "title": "Allowed worker types",
-                                "description": "Possible items are: GeneralMultiple, GeneralSingle, Jatos, MTSandbox, MT, PersonalMultiple, PersonalSingle"
+                                "description": "Possible items are: GeneralMultiple, GeneralSingle, Jatos, MTSandbox, MT, PersonalMultiple, PersonalSingle",
                                 "items": {
                                     "type": "string",
                                     "title": "Worker type"
                                 }
                             },
                             "comments": {
-                                "type": "string",
+                                "type": ["string", "null"],
                                 "title": "Comments"
                             },
                             "jsonData": {
-                                "type": "string",
+                                "type": ["string", "null"],
                                 "title": "JSON data"
                             }
                         }
