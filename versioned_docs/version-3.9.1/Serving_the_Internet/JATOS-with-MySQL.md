@@ -4,176 +4,128 @@ slug: /JATOS-with-MySQL.html
 sidebar_position: 7
 ---
 
-By default JATOS uses an embedded H2 database and no further setup is necessary but it can be easily configured to work with a MySQL or MariaDB database.
+By default, JATOS uses an embedded H2 database and requires no further setup. However, it can easily be configured to work with a MySQL or MariaDB database.
 
-Possible scenarios why one would use an external database are
-* your JATOS will be used by more than a few users (e.g. several research groups or an institute-wide installation)
-* your JATOS will run studies with many participants
-* the expected traffic is rather high (the studies produce a lot of result data)
-* you want to be able to do a regular database backup (with the embedded H2 database this would involve stopping JATOS)
-* higher trust in the reliability of MySQL/MariaDB
-
+**Why use an external database?**
+- Your JATOS will be used by more than a few users (e.g., several research groups or an institute-wide installation)
+- Your JATOS will run studies with many participants
+- You expect high traffic or large amounts of result data
+- You want to perform regular database backups (with the embedded H2 database, this requires stopping JATOS)
+- You trust the reliability of MySQL/MariaDB more
 
 ## Installation
 
-One could install the external database on the same machine as JATOS is running or on an extra machine depending on ones need.
+You can install the external database on the same machine as JATOS or on a separate machine, depending on your needs.
 
 **JATOS requires MySQL >= 5.7 (8.x is fine). JATOS was tested with MariaDB 10.9.7 (other versions likely work too).**
 
-There are many manuals out there, e.g. [this one](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-22-04). One way to set up MySQL:
-   
-1. Install MySQL
+1. **Create a database for JATOS:**
 
-   E.g. on Ubuntu
+   In MySQL's command line execute:
 
-   ```bash
-   sudo apt install mysql-server
-   ```
-
-1. Log in to MySQL's command line terminal:
-
-   ```bash
-   mysql -u root -p
-   ```
-
-1. Create a database for JATOS:
-
-   **Character set and collation are important - otherwise you won't have full UTF-8 support**
-
-   ```bash
+   ```sql
    CREATE DATABASE jatos CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
    ```
 
-1. Create a user for JATOS: 
+   _Character set and collation are important for full UTF-8 support._
 
-   ```bash
+2. **Create a user for JATOS:**
+   ```sql
    CREATE USER 'jatosuser'@'localhost' IDENTIFIED BY 'myPassword';
    ```
-   
-   Remember your username and password. You need them when configuring JATOS later on.
+   - Change the password.
+   - Leave out `@'localhost'` if the database is not on the same host as your JATOS instance.
 
-   Leave out the `@'localhost'` part if the database is not on the same host.
-
-1. Grant privileges to the new user:
-
-   ```bash
+3. **Grant privileges to the new user:**
+   ```sql
    GRANT ALL PRIVILEGES ON jatos.* TO 'jatosuser'@'localhost';
    ```
 
-1. You can test the new user: log out of MySQL with `exit` and back in with the newly created user:
-
-   ```bash
+4. **Test the new user:**  
+   Log out of MySQL's command line with `exit` and log back in with the new user:
+   ```shell
    mysql -u jatosuser -p
    ```
 
-**Appart from giving JATOS access to the database it is not necessary to create any tables - JATOS is doing this automatically.**
+**You do not need to create any tables—JATOS will do this automatically.**
 
-Now you have to configure JATOS to use your MySQL/MariaDB.
-
+Now configure JATOS to use your MySQL/MariaDB database.
 
 ## Configure JATOS
 
-There are three ways to set up JATOS to work with a MySQL/MariaDB database.
+There are three ways to set up JATOS to work with MySQL/MariaDB.
 
-The properties starting with `db.default` are **deprecated** and shouldn't be used anymore. Use `jatos.db.*` instead.
+> The properties starting with `db.default` are **deprecated** and should not be used. Use `jatos.db.*` instead.
 
-**Change IP, port, username and password** to the ones from your database. The _driver_ is always `com.mysql.cj.jdbc.Driver` for MySQL or MariaDB.
+**Change IP, port, username, and password** to match your database. The _driver_ is always `com.mysql.cj.jdbc.Driver` for both MySQL and MariaDB.
 
-**Always restart JATOS after making any changes to the configuration (e.g. with `./loader.sh restart`)**
+**Always restart JATOS after making configuration changes.**
 
-1. Via **config file** properties
+### 1. Via config file
 
-   The config file, named _jatos.conf_ or _production.conf_, is located in the JATOS folder, in _./conf_ folder:
+The config file (`jatos.conf` or `production.conf`) is located in the `conf` folder of your JATOS installation.
 
-   * in `jatos.conf` (JATOS version >= 3.8.3) change the properties `jatos.db.url`, `jatos.db.username`, and `jatos.db.password`. The property `jatos.db.driver` is always `com.mysql.cj.jdbc.Driver`.
+- For JATOS version >= 3.8.3, set these in `jatos.conf`:
+    ```properties
+    jatos.db.url = "jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+    jatos.db.username = "jatosuser"
+    jatos.db.password = "mypassword"
+    jatos.db.driver = "com.mysql.cj.jdbc.Driver"
+    ```
+- For JATOS version < 3.8.3, use `production.conf` and the properties `db.default.url`, `db.default.username`, `db.default.password`, and `db.default.driver`.
 
-      Example:
+### 2. Via command-line arguments
 
-      ~~~bash
-      jatos.db.url = "jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
-      jatos.db.username = "jatosuser"
-      jatos.db.password = "mypassword"
-      jatos.db.driver = "com.mysql.cj.jdbc.Driver"
-      ~~~
+- For JATOS version >= 3.8.3, use:
+    ```shell
+    ./loader.sh start \
+      -Djatos.db.url="jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC" \
+      -Djatos.db.username="jatosuser" \
+      -Djatos.db.password="mypassword" \
+      -Djatos.db.driver="com.mysql.cj.jdbc.Driver"
+    ```
+- For JATOS version < 3.8.3, use `-Ddb.default.url`, etc.
 
-   * in `production.conf` (JATOS version < 3.8.3) change the properties `db.default.url`, `db.default.username`, and `db.default.password`. The property `db.default.driver` is always `com.mysql.cj.jdbc.Driver`.
+### 3. Via environment variables
 
-1. Via **command-line** arguments
+Set the following variables:
+```shell
+JATOS_DB_URL="jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+JATOS_DB_USERNAME='jatosuser'
+JATOS_DB_PASSWORD='mypassword'
+JATOS_DB_DRIVER='com.mysql.cj.jdbc.Driver'
+```
 
-   * JATOS version >= 3.8.3) set the arguments `-Djatos.db.url`, `-Djatos.db.username`, and `-Djatos.db.password` and `-Djatos.db.driver` (always `com.mysql.cj.jdbc.Driver`).
+You can confirm that JATOS is using the correct database by opening the _Administration_ page in your browser and checking _System Info_ (the _DB URL_ should match your config). Alternatively, check the logs for a line like:
 
-      Example:
+```text
+Database [default] initialized at jdbc:mysql://localhost/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+```
 
-      ~~~bash
-      -Djatos.db.url = "jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
-      -Djatos.db.username = "jatosuser"
-      -Djatos.db.password = "mypassword"
-      -Djatos.db.driver = "com.mysql.cj.jdbc.Driver"
-      ~~~
+Done! JATOS now uses your MySQL/MariaDB database.
 
-      and use them together with JATOS start command `./loader start`:
+---
 
-      ~~~bash   
-      ./loader.sh start \
-         -Djatos.db.url = "jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC" \
-         -Djatos.db.username = "jatosuser" \
-         -Djatos.db.password = "mypassword" \
-         -Djatos.db.driver = "com.mysql.cj.jdbc.Driver"
-      ~~~ 
+## Optional - Deactivate the Binary Log of Your MySQL/MariaDB
 
-   * JATOS version < 3.8.3) set the arguments `-Ddb.default.url`, `-Ddb.default.username`, and `-Ddb.default.password` and `-Ddb.default.driver` (always `com.mysql.cj.jdbc.Driver`).
-   
-1. Via **environment** variables
+The binary log (binlog) is used for replication and data recovery. However, it can consume significant disk space, especially with large experiments. If you do not use replication and have another backup mechanism, it is safe to deactivate the binary log.
 
-   Set the variables `JATOS_DB_URL`, `JATOS_DB_USERNAME`, `JATOS_DB_PASSWORD`, and `JATOS_DB_DRIVER` (always `com.mysql.cj.jdbc.Driver`).
+Add `skip-log-bin` to your MySQL/MariaDB config (often `/etc/mysql/mysql.conf.d/mysqld.cnf`):
 
-   Example:
-
-   ~~~bash
-   JATOS_DB_URL="jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
-   JATOS_DB_USERNAME='jatosuser'
-   JATOS_DB_PASSWORD='mypassword'
-   JATOS_DB_DRIVER='com.mysql.cj.jdbc.Driver'
-   ~~~
-
-You can confirm that JATOS is accessing the correct database by opening JATOS' _Administration_ page in a browser and then click on _System Info_: The field _DB URL_ should resemble the one from your config. Another way is by looking in the logs: you should see a line after JATOS started similar to this (with your database URI):
-
-~~~ bash
-14:06:01.760 [info] - p.a.d.DefaultDBApi - Database [default] initialized at jdbc:mysql://localhost/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-~~~
-
-Done. Your JATOS uses your MySQL/MariaDB now.
-
-
-## Optional - Deactivate the binary log of your MySQL/MariaDB
-
-The binary log (also called binlog) serves two purposes: replication and data recovery. More can be found in [MariaDB's documentation](https://mariadb.com/kb/en/binary-log/).
-
-The problem with binary logs is that they can take up quite some disk space depending on the experiments you run on your JATOS. The location of those log files is specified in MySQL/MariaDB's config but on many systems they are under `/var/lib/mysql`. If you have a single database instance (and therefore do not use replication) and you do not need data recovery (e.g. have a different backup mechanism) than it is safe to deactivate the binary logs. 
-
-Add `skip-log-bin` to the end of your MySQL/MariaDB config ([details](https://dev.mysql.com/doc/refman/8.0/en/replication-options-binary-log.html#option_mysqld_log-bin)). On many Linux systems the config is in `/etc/mysql/mysql.conf.d/mysqld.cnf`.
-
-The part of your _mysqld.cnf_ that configures the binary logs could then look similar to this:
-
-```bash
-# The following can be used as easy to replay backup logs or for replication.
-# note: if you are setting up a replication slave, see README.Debian about
-#       other settings you may need to change.
-# server-id             = 1
-# log_bin                       = /var/log/mysql/mysql-bin.log
-# binlog_expire_logs_seconds    = 2592000
-# max_binlog_size   = 100M
-# binlog_do_db          = include_database_name
-# binlog_ignore_db      = include_database_name
+```ini
+# Example mysqld.cnf
 skip-log-bin
 ```
 
-You have to restart MySQL/MariaDB for the changes to take effect.
+Restart MySQL/MariaDB for the changes to take effect.
 
+More info: [MariaDB documentation](https://mariadb.com/kb/en/binary-log/)
 
-## Optional - Increase _max_allowed_packet_ size in older MySQL/MariaDB databases
+---
 
-If you have an older MySQL (< 8.x.x) and your experiments will have large result data you might want to increase the _[max_allowed_packet](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_max_allowed_packet)_ size. If your result data is larger than the _max_allowed_packet_ JATOS will just return an 'internal server error'. In JATOS' log in will look similar to this:
+## Optional: Increase _max_allowed_packet_ Size in Older MySQL/MariaDB
+
+If you use an older MySQL (< 8.x.x) and expect large result data, you may need to increase the [_max_allowed_packet_](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_max_allowed_packet) size. If your result data exceeds this limit, JATOS will return an 'internal server error' and the logs will show an error like:
 
 ```
 [ERROR] - g.ErrorHandler - Internal JATOS error
@@ -181,12 +133,14 @@ If you have an older MySQL (< 8.x.x) and your experiments will have large result
 [WARN] - o.h.e.j.s.SqlExceptionHelper - SQL Error: 0, SQLState: S1000
 ```
 
-In MySQL, from 8.x.x on, the _max_allowed_packet_ is by default 64MB and this is usually more than enough. But in MySQL versions before 8 it is just 4MB by default and before 5.6.6 it's just 1MB.  
+- MySQL 8.x.x and newer: default is 64MB (usually sufficient)
+- MySQL before 8: default is 4MB
+- MySQL before 5.6.6: default is 1MB
 
-To increase the _max_allowed_packet_ size just add it to the end of your MySQL/MariaDB config. On many Linux systems the config is in `/etc/mysql/mysql.conf.d/mysqld.cnf`. E.g. to set it to 64MB:
+To increase the size, add to your MySQL/MariaDB config (e.g., `/etc/mysql/mysql.conf.d/mysqld.cnf`):
 
-```bash
+```ini
 max_allowed_packet=64M
 ```
 
-You have to restart the database for the changes to take effect.
+Restart the database for the changes to take effect.

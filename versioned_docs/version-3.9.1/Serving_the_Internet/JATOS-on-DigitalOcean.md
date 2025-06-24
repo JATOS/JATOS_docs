@@ -4,79 +4,76 @@ slug: /JATOS-on-DigitalOcean.html
 sidebar_position: 5
 ---
 
-Here we explain how to install JATOS in the cloud by using [DigitalOcean](https://www.digitalocean.com). DigitalOcean is a cloud provider (like _AWS_, _Google Cloud_, _Azure_ etc.). We provide this example because DigitalOcean is comparatively easy to use and has good documentation - but we have no connection to DigitalOcean whatsoever.
+This guide explains how to install JATOS in the cloud using [DigitalOcean](https://www.digitalocean.com). DigitalOcean is a cloud provider (like AWS, Google Cloud, Azure, etc.). We use DigitalOcean as an example because it is easy to use and has good documentation, but we have no affiliation with them.
 
-**Keep in mind: A server in the cloud will cost money (depending on the size $5 to $50 / month (and more)) and to open an account with DigitalOcean you will need a credit card.**
+**Note:** A cloud server costs money (typically $5–$50/month or more), and you’ll need a credit card to open a DigitalOcean account.
 
+## Set up a Simple JATOS Server on DigitalOcean
 
-## Set up a simple JATOS server on DigitalOcean
+First, we’ll set up a basic JATOS server without encryption (HTTPS) or a custom domain name.
 
-First we want to set up a simple JATOS server without encryption (HTTPS) or a domain name. 
-
-DigitalOcean offers something called _Droplet_, that is basically a virtual machine, and we want to use it as a server for JATOS. If everything runs smoothly you don't have to use the terminal at all. You can watch the video here or follow the instructions further down.
+DigitalOcean offers _Droplets_, which are virtual machines you can use as servers. If everything goes smoothly, you won’t need to use the terminal at all. You can watch the video below or follow the instructions further down.
 
 import ReactPlayer from 'react-player'
 
 <ReactPlayer controls width='100%' height='100%' url='/deploy_to_digitalocean_wo_domain_and_encryption.mp4' />
 
-1. Set up an account with [DigitalOcean](https://www.digitalocean.com/) - you'll have to provide billing information.
-
-1. Create a _Droplet_ (this is what DigitalOcean calls a virtual machine that we want to use as a server).
-
-1. Choose the _Region_ that is nearest to your users. 
-
-1. Choose an image from _Marketplace_: select one with _Docker_ on _Ubuntu_ pre-installed.
-
-1. Choose a _Size_: For _Droplet type_ often _Basic_ is enough and for _CPU options_: _Regular_. Choose memory 1 to 4 GB according to your expected server load. Don't spend to much time on this, choose the smaller one - you can increase the size later on. If you just want to try it out: a _Regular_ with 1GB for will do it.
-
-1. Choose an _authentication method_
-
-1. Click on _Advanced Options_ and activate _Add Initialization scripts_. Then copy+paste the following script in the text field:
+1. Set up an account with [DigitalOcean](https://www.digitalocean.com/) (billing information required).
+2. Create a _Droplet_ (DigitalOcean's term for a virtual machine).
+3. Choose the _Region_ nearest to your users.
+4. Choose an image from _Marketplace_: select one with _Docker_ on _Ubuntu_ pre-installed.
+5. Choose a _Size_: For most cases, _Basic_ with _Regular_ CPU and 1–4 GB memory is sufficient. If you're just trying it out, 1 GB is enough. You can resize later if needed.
+6. Choose an _authentication method_.
+7. Click on _Advanced Options_ and enable _Add Initialization scripts_. Then copy and paste the following script into the text field:
 
    ```shell
    #!/bin/bash
    docker run -d --restart=always -p 80:9000 jatos/jatos:latest
    ```
 
-   You can change 'latest' to the [specific version](https://hub.docker.com/r/jatos/jatos/tags) you need.
+   You can change `latest` to a [specific version](https://hub.docker.com/r/jatos/jatos/tags) if needed.
 
-1. Finally click the _Create Droplet_ button
+8. Click the _Create Droplet_ button.
 
-1. Try out your JATOS: Now the server is being created which can take a couple minutes. Copy the server's (aka Droplet) IP address into your browser's address bar and if everything went well, you will see a JATOS login screen.
+9. Wait a few minutes while your server is created. Copy the Droplet's IP address into your browser's address bar. If everything went well, you should see the JATOS login screen.
 
-1. Log in with the default credentials 'admin' and 'admin'.
+10. Log in with the default credentials 'admin' and 'admin'.
 
-Done! Now you have a basic JATOS server accessible from the Internet.
+**Done!** You now have a basic JATOS server accessible from the Internet.
 
-**Don't forget to change your admin user's password.** Go to the admin user page (top-right corner) and and press button _Change Password_.
+**Important:** Change your admin user's password immediately. Go to the admin user page (top-right corner) and click _My Password_.
 
-DigitalOcean charges you by the second. So if you want to create a new JATOS server because something went wrong, just destroy the current one and start over again.
+DigitalOcean charges by the second. If you want to create a new JATOS server (e.g., if something went wrong), simply destroy the current one and start over.
 
+---
 
 ## Destroy your JATOS server
 
-If you want to destroy your server, go to your Droplet's page in DigitalOcean and click on _More_ -> _Destroy_. This will completely remove your JATOS server and delete all data that was collected with it. It will also delete any studies you uploaded. 
+To destroy your server, go to your Droplet's page in DigitalOcean and click _More_ → _Destroy_. This will completely remove your JATOS server and delete all collected data and uploaded studies.
 
+---
 
-## Set up JATOS with HTTPS and a domain
+## Set up JATOS with HTTPS and a Domain
 
-This part is **optional** and is only necessary if you want to have your own domain name instead of an IP and use encryption (HTTPS).
+This part is **optional** and only necessary if you want your own domain name and encrypted (HTTPS) access.
 
-We will use [Traefik](https://github.com/traefik/traefik) as a proxy. Traefik adds encryption out-of-the-box (by using [Let’s Encrypt](https://letsencrypt.org/)) and is [open source](https://github.com/traefik/traefik) and free to use. 
+We will use [Traefik](https://github.com/traefik/traefik) as a proxy. Traefik provides encryption out-of-the-box (using [Let’s Encrypt](https://letsencrypt.org/)), is [open source](https://github.com/traefik/traefik), and free to use.
 
-**Get your own domain name**: Sorry, we can't give you a domain name - you have to get your own. But there are plenty domain name registrars that help you with this business (just search for "domain registrars"). Another option is to talk to your IT department and convince them to give you a subdomain for free.
+**Get your own domain name:**  
+You need to obtain a domain name from a registrar or ask your IT department for a subdomain.
 
-Now with a domain name you can encrypt your server's communication with HTTPS.
+With a domain name, you can encrypt your server's communication with HTTPS.
 
-But first a **summary of the work flow**: 
-1. Create droplet
-1. Set up your DNS
-1. Restart droplet
-1. Wait until you can reach the webpage
+### Summary of the workflow
+
+1. Create Droplet
+2. Set up your DNS
+3. Restart Droplet
+4. Wait until you can reach the webpage
 
 ### Create Droplet
 
-To create a JATOS server with Traefik follow the instructions of the first section ([Set up a simple JATOS server on DigitalOcean](/JATOS-on-DigitalOcean.html#set-up-a-simple-jatos-server-on-digitalocean)) but in the field for the _Add Initialization scripts_ put the following script:
+Follow the instructions above to create a JATOS server, but in the _Add Initialization scripts_ field, use the following script:
 
 ```shell
 #!/bin/bash
@@ -136,35 +133,35 @@ EOL
 docker compose -f /root/compose.yaml up -d
 ```
 
-This script will use [Docker Compose](/JATOS-with-Docker-Compose.html) to set up Traefik and JATOS. It creates a Docker Compose config file under _/root/compose.yaml_ and then runs it with `docker compose up`. 
+This script uses [Docker Compose](/JATOS-with-Docker-Compose.html) to set up Traefik and JATOS. It creates a Docker Compose config file at `/root/compose.yaml` and runs it with `docker compose up`.
 
-**Before you can click the _Create Droplet_ button**, change `my.domain.org` and `myemail@example.org` (in the top of the script) with your own domain name and email address. Your email is needed to get a certificate from [Let's Encrypt](https://letsencrypt.org/) for encryption. Also, you might want to set JATOS version to a [specific release](https://hub.docker.com/r/jatos/jatos/tags): change `latest` in the line `image: "jatos/jatos:latest"`.
+**Before clicking _Create Droplet_,** change `my.domain.org` and `myemail@example.org` at the top of the script.
 
 ### Set up your DNS
 
-After you've created your Droplet, you still have to **point your domain name to your server's IP address**. This is what a DNS (Domain Name Service) does and it involves dealing with things like _DNS records_, especially _A records_ or _AAAA records_, and simply can be quite annoying. You can [manage your DNS settings with Digital Ocean](https://www.digitalocean.com/docs/networking/dns/how-to/manage-records/) or the registrar where you got your domain name (they will have some online help). The important thing is to put the _IPv4_ address of your server into the _A record_ of your DNS settings (or if you have an _IPv6_ address the _AAAA record_). And remember, DNS changes can take from some minutes to a day to propagate throughout the Internet - So your domain name might take some time to work (you can use [nslookup](http://www.kloth.net/services/nslookup.php) to check).
+After you've created your Droplet, you need to **point your domain name to your server's IP address**. This is done via DNS (Domain Name Service) and involves setting up _DNS records_, especially _A records_ (for IPv4) or _AAAA records_ (for IPv6). You can [manage your DNS settings with DigitalOcean](https://www.digitalocean.com/docs/networking/dns/how-to/manage-records/) or through your domain registrar. The important part is to enter your server's IPv4 address in the _A record_ (or IPv6 in the _AAAA record_). DNS changes can take from a few minutes up to a day to propagate. You can use [nslookup](http://www.kloth.net/services/nslookup.php) to check if your DNS is set up correctly.
 
 ### Restart
 
-Then as a last step, after your domain name points to your server's IP, you have to **restart your server** (switch off the Droplet and back on). Now Traefik requests a certificate for your domain and uses HTTPS from now on. Sometimes it's necessary to restart a second time.
+Once your domain name points to your server's IP, **restart your server** (power off the Droplet and turn it back on). Traefik will then request a certificate for your domain and enable HTTPS. Sometimes a second restart is necessary.
 
-**Done**. You have a JATOS server with encryption and your domain name.
+**Done!** You now have a JATOS server with encryption and your own domain name.
 
 ### Misc
 
-* Let's Encrypt has a [rate limit](https://letsencrypt.org/docs/rate-limits/) for the number of certificates. If you are not sure and just want to try it out, uncomment the following line in the _Initialization script_:
+* Let's Encrypt has a [rate limit](https://letsencrypt.org/docs/rate-limits/) for the number of certificates. If you just want to try things out, uncomment the following line in the initialization script:
 
   ```shell
   - "--certificatesresolvers.jatosresolver.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory"
   ```
 
-  This will let you use their staging server that does not have such rate limit - but you won't get a proper certificate either. 
+  This uses the staging server, which has no rate limit, but you won't get a valid certificate.
 
-* The Docker Compose config file that is created during the Droplet initialization has the path `/root/compose.yaml` and the certificate is stored under `/root/letsencrypt/`.
+* The Docker Compose config file created during Droplet initialization is at `/root/compose.yaml`, and the certificate is stored under `/root/letsencrypt/`.
 
-* You can configure JATOS by changing the `/root/compose.yaml`. You can add all [command-line arguments of JATOS](/JATOS_Configuration.html) in the _command_ section of the _jatos_ service_.
+* You can configure JATOS by editing `/root/compose.yaml`. You can add all [JATOS command-line arguments](/JATOS_Configuration.html) in the _command_ section of the _jatos_ service.
 
-  E.g. to add a [welcome message on the home page](/JATOS_Configuration.html#welcome-message) use `-Djatos.brandingUrl`:
+  For example, to add a [welcome message on the home page](/JATOS_Configuration.html#welcome-message), use `-Djatos.brandingUrl`:
 
   ```shell
     jatos:
@@ -175,7 +172,7 @@ Then as a last step, after your domain name points to your server's IP, you have
       ...
   ```
 
-  E.g. to let JATOS use an [external MySQL database](/JATOS_Configuration.html#database) use `-Djatos.db.url`, `-Djatos.db.username`, `-Djatos.db.password`, and `-Djatos.db.driver` (change IP, port, username and password to the ones of your database)
+  Or, to let JATOS use an [external MySQL database](JATOS-with-MySQL.html), use `-Djatos.db.url`, `-Djatos.db.username`, `-Djatos.db.password`, and `-Djatos.db.driver` (change IP, port, username, and password to match your database):
 
   ```shell
     jatos:

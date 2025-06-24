@@ -6,60 +6,63 @@ sidebar_position: 10
 
 JATOS can run on multiple nodes in a cluster to achieve high availability and scalability.
 
-## Things to know before running JATOS in a multi-node setup
+## Things to Know Before Running JATOS in a Multi-Node Setup
 
-* JATOS, in a multi-node setup, needs a **MySQL** or **MariaDB** database (and cannot be used with the embedded H2 database).
-* All JATOS nodes need to **share some folders**: _study assets_, _study uploads_, _study logs_, and JATOS' _tmp_ folder.
-* All JATOS nodes need the **same secret**, otherwise the session cookie used for authentication won't work.
-* **Updating** is arguably easier by just changing the tag of JATOS docker image to a higher version (but JATOS' auto-updater can't be used).
+* In a multi-node setup, JATOS requires a **MySQL** or **MariaDB** database (the embedded H2 database cannot be used).
+* All JATOS nodes must **share certain folders**: _study assets_, _study uploads_, _study logs_, and JATOS' _tmp_ folder.
+* All JATOS nodes must use the **same secret**; otherwise, the session cookie used for authentication will not work.
+* **Updating** is easiest by changing the tag of the JATOS Docker image to a higher version (the auto-updater cannot be used in a cluster).
 
-All these points (and more) are addressed in this page.
+All these points (and more) are addressed on this page.
 
+---
 
-## Multi-node installation with Docker Compose
+## Multi-Node Installation with Docker Compose
 
-A setup of JATOS with multiple nodes through [Docker Compose](https://docs.docker.com/compose/) might not make much sense, because all JATOS instances still run on the same machine. But it highlights some general concepts and caveats pretty well, so we describe it here.
+Setting up JATOS with multiple nodes using [Docker Compose](https://docs.docker.com/compose/) might not make much sense for production, since all instances run on the same machine. However, it demonstrates the general concepts and caveats well.
 
-How to get started with JATOS and Docker Compose is explained in [another page](/JATOS-with-Docker-Compose.html). You might want to follow the instructions there to get a JATOS installation with a MySQL database and Nginx running. 
+Instructions for getting started with JATOS and Docker Compose are on [another page](/JATOS-with-Docker-Compose.html). You may want to follow those steps to set up JATOS with a MySQL database and Nginx.
 
-Now, if you want to run JATOS in multiple containers in parallel you need to configure the [_compose.yaml_](https://github.com/JATOS/JATOS_with_docker_compose/blob/main/compose.yaml) additionally (if you haven't already):
+To run JATOS in multiple containers in parallel, you need to additionally configure the [_compose.yaml_](https://github.com/JATOS/JATOS_with_docker_compose/blob/main/compose.yaml):
 
 1. Set **`-Djatos.multiNode=true`** in the _command_ section of the _jatos_ service.
-1. Set the **`JATOS_SECRET`** environment variable to a string with at least than 15 characters (otherwise the session cookie that JATOS uses for authentication won't work).
+2. Set the **`JATOS_SECRET`** environment variable to a string with at least 15 characters (required for session cookies to work).
 
-It's important to share some of JATOS folders between all JATOS nodes. In our Docker Compose setup this is already achieved with the shared _volumes_ _jatos-data_, _jatos-logs_, and _jatos-db_. Nothing to do here.
+It's important to share some JATOS folders between all nodes. In our Docker Compose setup, this is already handled with the shared volumes: _jatos-data_, _jatos-logs_, and _jatos-db_.
 
-Finally, to scale up and run multiple JATOS instances use the `--scale` parameter, e.g. to run two JATOS instances:
+To scale up and run multiple JATOS instances, use the `--scale` parameter. For example, to run two JATOS instances:
 
 ```shell
 docker compose -f compose.yaml up --scale jatos=2
 ```
 
+---
 
 ## JATOS with Kubernetes
 
-[Kubernetes](https://kubernetes.io/) is a system for container orchestration and automatic deployments. It offers vast possibilities to do so in many different ways that might also depend on your cloud provider. Here we used it with [DigitalOcean](https://docs.digitalocean.com/products/kubernetes/) - but with some adjustments it should work on any Kubernetes cluster. 
+[Kubernetes](https://kubernetes.io/) is a system for container orchestration and automatic deployments. It offers many possibilities, depending on your cloud provider. Here, we use [DigitalOcean](https://docs.digitalocean.com/products/kubernetes/) as an example, but with some adjustments, it should work on any Kubernetes cluster.
 
-For the JATOS cluster we use [Kustomize](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/) to define Kubernetes objects through _kustomization_ YAML files. 
+For the JATOS cluster, we use [Kustomize](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/) to define Kubernetes objects via _kustomization_ YAML files.
 
-We assembled all necessary files in a [git repository](https://github.com/JATOS/JATOS_with_kubernetes).
+All necessary files are available in this [git repository](https://github.com/JATOS/JATOS_with_kubernetes):
 
 ```shell
 git clone https://github.com/JATOS/JATOS_with_kubernetes.git
 ```
 
-The file [_kustomization.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/kustomization.yaml) defines our secrets and specifies the resource file, [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml), that describes the JATOS cluster.
+The file [_kustomization.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/kustomization.yaml) defines secrets and specifies the resource file [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml), which describes the JATOS cluster.
 
-Then, after you set up everything, you can start the cluster with:
+After setup, start the cluster with:
 
 ```shell
 kubectl apply -k <my_JATOS_kustomize_directory>
 ```
 
+---
 
-### Load-balancing and scaling
+### Load Balancing and Scaling
 
-In our [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml), for _auto-balancing_ in our JATOS cluster, we use the one [integrated in DigitalOcean](https://docs.digitalocean.com/products/kubernetes/how-to/add-load-balancers/). This is specified in the _Service_ object, with the _annotation_ `kubernetes.digitalocean.com/load-balancer-id: "jatos-load-balancer"`.
+In [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml), for load balancing, we use the [DigitalOcean integrated load balancer](https://docs.digitalocean.com/products/kubernetes/how-to/add-load-balancers/), specified in the _Service_ object with the annotation `kubernetes.digitalocean.com/load-balancer-id: "jatos-load-balancer"`.
 
 ```yaml
 apiVersion: v1
@@ -79,7 +82,7 @@ spec:
   type: LoadBalancer
 ```
 
-And our cluster does _automatic horizontal scaling_ with an `HorizontalPodAutoscaler`. Here we set up a minimum of 2 and maximum of 10 JATOS pods and as scaling metric a average CPU utilization of 100%. 
+For automatic horizontal scaling, we use a `HorizontalPodAutoscaler`. Here, we set a minimum of 2 and a maximum of 10 JATOS pods, with an average CPU utilization of 100%.
 
 ```yaml
 apiVersion: autoscaling/v2
@@ -102,19 +105,19 @@ spec:
         averageUtilization: 100
 ```
 
+---
 
-### Shared volumes
+### Shared Volumes
 
-As said [before](/JATOS-in-a-cluster.html#things-to-know-before-running-jatos-in-a-multi-node-setup), JATOS, if running on multiple nodes, needs to share some folders. Translated to Kubernetes this means the _PersistentVolumeClaim_ needs the `accessMode`: `ReadWriteMany`.
+As mentioned [earlier](/JATOS-in-a-cluster.html#things-to-know-before-running-jatos-in-a-multi-node-setup), JATOS requires certain folders to be shared when running on multiple nodes. In Kubernetes, this means the _PersistentVolumeClaim_ must have `accessMode`: `ReadWriteMany`.
 
-Although many cloud provider have their own storage system to achieve this, we use a common _NFS_ storage. E.g. there is an easy-to-use [helm chart](https://helm.sh/) for this purpose: [nfs-server-provisioner](https://artifacthub.io/packages/helm/kvaps/nfs-server-provisioner). And since we want to run on _DigitalOcean_ we need the parameter `persistence.storageClass` set to `do-block-storage`.
+While many cloud providers have their own solutions for this, we will use a common _NFS_ storage in this example. For instance, there is an easy-to-use [helm chart](https://helm.sh/) for this purpose: [nfs-server-provisioner](https://artifacthub.io/packages/helm/kvaps/nfs-server-provisioner). If you are using _DigitalOcean_, set the parameter `persistence.storageClass` to `do-block-storage`.
 
 ```shell
 helm install nfs-server stable/nfs-server-provisioner --set persistence.enabled=true,persistence.storageClass=do-block-storage,persistence.size=11Gi
 ```
 
-Then in our [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml) the NFS storage is used in a `PersistentVolumeClaim`:
-
+In our [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml), the NFS storage is used in a `PersistentVolumeClaim`:
 
 ```yaml
 apiVersion: v1
@@ -132,7 +135,7 @@ spec:
   storageClassName: nfs
 ```
 
-And the _volume_ is mounted in every JATOS _pod_:
+The _volume_ is then mounted in every JATOS _pod_:
 
 ```yaml
 volumes:
@@ -141,18 +144,20 @@ volumes:
       claimName: jatos-data-pv-claim
 ```
 
-### Configure JATOS' deployment
+---
 
-In [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml), to run JATOS in on multiple nodes in a cluster you have to set the parameter `-Djatos.multiNode=true`. Also the parameter `-Djatos.logs.appender=ASYNCSTDOUT` redirects the logging to _stdout_, which is what you probably want with Kubernetes.
+### Configure JATOS' Deployment
 
-The parameter `-J-Xmx` defines the maximum memory the Java Virtual Machine (JVM) that runs JATOS is allowed to use. If you don't set this, the JVM might take too much memory for itself and strangle the operating system. Here we set it to 1500 MB but it really depends on the kind of underlying machine you are using to run your nodes.
+In [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml), to run JATOS on multiple nodes in a cluster, set the parameter `-Djatos.multiNode=true`. The parameter `-Djatos.logs.appender=ASYNCSTDOUT` redirects logging to _stdout_, which is generally desired in Kubernetes.
 
-You might want to change the Docker image version to a different one.
+The parameter `-J-Xmx` defines the maximum memory allocated to the Java Virtual Machine (JVM) running JATOS. If not set, the JVM may consume excessive memory, affecting the operating system. Here we set it to 1500 MB, but this depends on your underlying hardware.
+
+You may also want to change the Docker image version to a different one.
 
 ```yaml
 containers:
   # Maybe use a newer image version
-  - image: jatos/jatos:3.8.4
+  - image: jatos/jatos:3.8.6
     name: jatos
     args:
       # Necessary to run JATOS on multiple nodes
@@ -163,21 +168,25 @@ containers:
       - -J-Xmx=1500M
 ```
 
+---
+
 ### Secrets
 
-The password for the MySQL database and the secret for JATOS session cookie are set in the [`kustomization.yaml`](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/kustomization.yaml) file and then just referenced in [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml) in JATOS _deployment_ object.
+The password for the MySQL database and the secret for the JATOS session cookie are set in the [`kustomization.yaml`](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/kustomization.yaml) file and then referenced in [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml) in the JATOS _deployment_ object.
 
+---
 
-### MySQL setup
+### MySQL Setup
 
-We assume here that you have your MySQL database set up and ready already. Have a look at [JATOS with MySQL](/JATOS-with-MySQL.html) to get started.
+We assume that you have your MySQL database set up and ready. Please refer to [JATOS with MySQL](/JATOS-with-MySQL.html) for initial setup instructions.
 
-In [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml) you have to change the environmental variable `JATOS_DB_URL`. The IP and port need to be the ones from your MySQL IP and port.
+In [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml), change the environmental variable `JATOS_DB_URL` to match your MySQL IP and port.
 
+---
 
-### Liveness probe and startup probe
+### Liveness Probe and Startup Probe
 
-Applications running on the JVM can need some initial warm-up time before they are fully functional. Therefore we have, additionally to the `livenessProbe` in [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml), a `startupProbe` that accounts for this. You might have to tweak `failureThreshold` and `periodSeconds` on your system.
+Applications running on the JVM may require some initial warm-up time before they are fully functional. Therefore, in addition to the `livenessProbe` in [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml), we have a `startupProbe` to account for this. You may need to adjust `failureThreshold` and `periodSeconds` based on your system's performance.
 
 ```yaml
 livenessProbe:
@@ -194,12 +203,13 @@ startupProbe:
   periodSeconds: 10
 ```
 
+---
 
-### _securityContext_ and _affinity_
+### _SecurityContext_ and _Affinity_
 
-The [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml) also has a _securityContext_ and a _affinity_ section. You probably don't have to change anything there. We just want to explain them here shortly.
+The [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml) file also contains a _securityContext_ and an _affinity_ section. Generally, you should not need to change anything here. We explain them briefly below.
 
-The _securityContext_ sets the _UID_ and _GID_ of the user defined in JATOS' Docker image. 
+The _securityContext_ sets the _UID_ and _GID_ for the user defined in JATOS' Docker image.
 
 ```yaml
 securityContext:
@@ -208,7 +218,7 @@ securityContext:
   fsGroup: 1000
 ```
 
-In the _affinity_ section we define a `podAntiAffinity` to ensure that each Kubernetes _pod_ runs only one JATOS.
+The _affinity_ section defines a `podAntiAffinity` rule to ensure that each Kubernetes _pod_ runs only one instance of JATOS.
 
 ```yaml
 affinity:
@@ -220,13 +230,14 @@ affinity:
           app: jatos
 ```
 
+---
 
 ### Updating JATOS with Kubernetes
 
 The easiest way to update a JATOS Kubernetes cluster is to **just change the JATOS' Docker image tag to a higher version**. [JATOS' auto-updater](/Update-JATOS.html#automatic-update) **cannot** be used here.
 
-But there are some **constraints**:
+However, there are some **constraints**:
 
-1. Kubernetes' _rolling updates_ are not possible with JATOS. You have to turn off all JATOS pods, do the update (change the Docker image tag) and turn them back on.
-1. JATOS is only allowed to update to higher version numbers - downgrading will likely break your installation.
-1. And please do backups before updating.
+1. Kubernetes' _rolling updates_ are not possible with JATOS. You must turn off all JATOS pods, perform the update (change the Docker image tag), and then turn the pods back on.
+2. JATOS can only be updated to higher version numbers; downgrading will likely break your installation.
+3. Please ensure you have backups before performing an update.

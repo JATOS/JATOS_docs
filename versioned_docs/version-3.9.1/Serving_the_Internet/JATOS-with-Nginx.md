@@ -4,17 +4,15 @@ slug: /JATOS-with-Nginx.html
 sidebar_position: 11
 ---
 
-Here is an example for a configuration of [Nginx](https://www.nginx.com/) as a reverse proxy in front of JATOS. It is not necessary to run JATOS with a proxy but it's common.
+This page provides an example configuration for using [Nginx](https://www.nginx.com/) as a reverse proxy in front of JATOS. While it is not strictly necessary to run JATOS behind a proxy, it is common practice—especially for enabling HTTPS.
 
-A JATOS server that handles sensitive or private data should always use encryption (HTTPS). A nice free certificate issuer is [certbot.eff.org](https://certbot.eff.org/) from the Electronic Frontier Foundation.
+A JATOS server that handles sensitive or private data should always use encryption (HTTPS). A good, free certificate provider is [certbot.eff.org](https://certbot.eff.org/) from the Electronic Frontier Foundation.
 
-The following config is the content of `/etc/nginx/nginx.conf`. Change it to your needs. You probably want to change your servers address (`www.example.com` in the example) and the path to the SSL certificate and its key.
+The following configuration is for `/etc/nginx/nginx.conf`. Adjust it to your needs—especially your server address (`www.example.com` in the example) and the paths to your SSL certificate and key.
 
-For JATOS versions 3.8.1 and older it is necessary to set the `X-Forwarded-*` headers with `proxy_set_header` to tell JATOS the original requester's IP address. This is not necessary from 3.8.2 and newer.
+As an additional security measure, you can uncomment the `location /jatos` block and configure your local network. This will restrict access to JATOS' GUI (all URLs starting with `/jatos`) to the local network.
 
-As an additional security measurement you can uncomment the `location /jatos` and config your local network. This will restrict the access to JATOS' GUI (every URL starting with `/jatos`) to the local network.
-
-~~~ shell
+~~~shell
 user                    www-data;
 pid                     /run/nginx.pid;
 worker_processes        auto;
@@ -24,8 +22,8 @@ worker_rlimit_nofile    65535;
 include                 /etc/nginx/modules-enabled/*.conf;
 
 events {
-    multi_accept       on;
-    worker_connections 65535;
+    multi_accept        on;
+    worker_connections  65535;
 }
 
 http {
@@ -45,7 +43,7 @@ http {
     proxy_set_header        Host $http_host;
     proxy_http_version      1.1;
 
-    # Needed for websockets
+    # Needed for WebSockets
     map $http_upgrade $connection_upgrade {
         default upgrade;
         ''      close;
@@ -58,27 +56,24 @@ http {
         server 127.0.0.1:9000;
     }
 
-    # Redirect http to https
+    # Redirect HTTP to HTTPS
     server {
         listen              80;
-        # --> Change to your domain <--
-        server_name         www.example.com;
+        server_name         www.example.com; # <-- Change to your domain
         rewrite             ^ https://www.example.com$request_uri? permanent;
     }
 
     server {
         listen               443 ssl http2;
-        # --> Change to your domain <--
-        server_name          www.example.com;
+        server_name          www.example.com; # <-- Change to your domain
         keepalive_timeout    70;
 
         # Encryption
-        # --> Change to your certificate <--
-        ssl_certificate      /etc/ssl/certs/localhost.crt;
-        ssl_certificate_key  /etc/ssl/private/localhost.key;
+        ssl_certificate      /etc/ssl/certs/localhost.crt;   # <-- Change to your certificate
+        ssl_certificate_key  /etc/ssl/private/localhost.key; # <-- Change to your key
         ssl_protocols        TLSv1.2 TLSv1.3;
 
-        # WebSocket location (JATOS' group and batch channel and the test page)
+        # WebSocket location (JATOS' group and batch channels and the test page)
         location ~ "/(jatos/testWebSocket|publix/[a-z0-9-]+/(group/join|batch/open))" {
             proxy_pass              http://jatos-backend;
             proxy_http_version      1.1;
