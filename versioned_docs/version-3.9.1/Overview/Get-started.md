@@ -39,10 +39,14 @@ Here's a screenshot of a study's results view:
 
 ## Beyond the Basics
 
-Once you're familiar with the basics, explore what else you can change about your study from the JATOS GUI:
+Once you’re comfortable with the basics, explore what else you can change about your study from the JATOS GUI:
 
 * **Rearrange Components:** Easily reorder components within your study by clicking and dragging any component's position button in the GUI to a new location.
-* **Component and Study Properties:**
-    * Each component has a **Properties** button. The component's code can read data from the **Component input** field within these properties. This offers a convenient way to modify details like instructions, stimuli, timing, or the number of trials without directly altering the JavaScript code.
-    * Similarly, the **Study Properties** include a **Study input** field, which can be accessed by all components within that study.
-* **Locate Study Assets:** Understand where your study's essential HTML, JavaScript, and CSS files are stored. These files, along with any images, sound files, and other resources, are referred to as "study assets". The path to your study assets directory is displayed on the JATOS home page (for local installations only). By default, it's located within your JATOS installation directory at `/study_assets_root/name_of_my_study/`.
+- **Component and Study Properties:**
+    - Each component has a **Properties** button. The component’s code can access data from the **Component input** field, allowing you to modify instructions, stimuli, timing, or trial numbers without editing JavaScript code.
+    - Similarly, the **Study Properties** include a **Study input** field, which can be accessed by all components within that study.
+- **Locate Study Assets:** Your study’s HTML, JavaScript, CSS files, and other resources (images, audio, etc.) are called "study assets." The path to your study assets directory is shown on the JATOS home page (for local installations). By default, it’s located at `/study_assets_root/name_of_my_study/` inside your JATOS installation directory.
+
+-----
+
+Continue exploring the documentation to learn more about managing studies, results, and advanced features in JATOS.
