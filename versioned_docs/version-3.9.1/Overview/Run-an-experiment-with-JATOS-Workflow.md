@@ -37,7 +37,7 @@ For more important details, refer to [deploying your study to a server installat
 
 ## Step 3: Collect Data
 
-To gather data, you'll use [Study Links](Run-your-Study-with-Study-Links.html), which you can distribute to participants. JATOS supports various methods for this, allowing you to choose the appropriate [worker types](Worker-Types.html) for your needs. You have the option to use platforms like [MTurk](Connect-to-Mechanical-Turk.html) or [Prolific](Use-Prolific.html) for participant recruitment.
+To gather data, you'll use [Study Links](Run-your-Study-with-Study-Links.html), which you can hand out to participants. JATOS supports various methods for this, allowing you to choose the appropriate [worker types](Worker-Types.html) for your needs. You have the option to use platforms like [MTurk](Connect-to-Mechanical-Turk.html) or [Prolific](Use-Prolific.html) for participant recruitment.
 
 -----
 

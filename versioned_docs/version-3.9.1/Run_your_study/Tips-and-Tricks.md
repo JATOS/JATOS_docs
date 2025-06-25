@@ -102,7 +102,7 @@ You can artificially throttle network speed using the Developer Tools in [Firefo
 
 ### Personal/General Single Links: Issues with Social Networks
 
-**Problem:** Your study runs correctly when tested directly, but when Personal Single or General Single links are distributed via social networks like X/Twitter, Facebook, and Reddit, or chat tools like Slack and Google Hangouts, they stop working. Participants receive the message "A problem occurred: Study can be done only once," and in the JATOS results, the study run appears as 'STARTED' or 'DATA_RETRIEVED' but never 'FINISHED'.
+**Problem:** Your study runs correctly when tested directly, but when Personal Single or General Single links are handed out via social networks like X/Twitter, Facebook, and Reddit, or chat tools like Slack and Google Hangouts, they stop working. Participants receive the message "A problem occurred: Study can be done only once," and in the JATOS results, the study run appears as 'STARTED' or 'DATA_RETRIEVED' but never 'FINISHED'.
 
 **Reason:** Some social media and chat platforms automatically open links posted within them before your participant can click on them. They do this to generate previews (e.g., displaying a title and image for the link). While usually harmless, this becomes an issue for Personal/General Single links because these links are designed to work exactly once (if preview is not allowed). The platform's automated request "uses up" the link, causing a second request from the actual participant to receive the aforementioned error message.
 

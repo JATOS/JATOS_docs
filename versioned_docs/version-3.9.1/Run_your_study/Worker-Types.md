@@ -47,7 +47,7 @@ You might send Personal Multiple study links to your pilot workers, for instance
 
 This study link type can be used **many times by different participants to run a study, but only once per browser** (but see: [Allow Preview](Restricting-study-flow.html#allow-preview)). Each time the link is used, a new General Single worker is created on-the-fly.
 
-You could distribute a General Single study link via social media (like X/Twitter), mailing lists, or by posting it on a public website. This type is especially useful for collecting data from a large number of workers.
+You could hand out a General Single study link via social media (like X/Twitter), mailing lists, or by posting it on a public website. This type is especially useful for collecting data from a large number of workers.
 
 Keep in mind, however, that JATOS uses browser cookies to determine if the study link has already been used. If someone uses a different computer, a new browser, or simply deletes their browser's cookies, JATOS will assume the link is unused. Thus, the same person could (with some effort) use a General Single link multiple times.
 
