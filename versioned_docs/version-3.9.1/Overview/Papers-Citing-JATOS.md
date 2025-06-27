@@ -11,7 +11,9 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
-Ilksoy, Y. A., van Moorselaar, D., Los, S. A., & Theeuwes, J. (2025). Object-centered spatial learning in dynamic contexts: History-driven distractor suppression and target enhancement. _Journal of Experimental Psychology: Human Perception and Performance_. [DOI](https://doi.org/10.1037/xhp0001353)
+Raza, S., Schomaker, J., Quent, J. A., Anderson, M. C., & Henson, R. N. (2025). Proactive and retroactive effects of novelty and rest on memory. *Quarterly Journal of Experimental Psychology*. [DOI](https://doi.org/10.1177/17470218251346156)
+
+Ilksoy, Y. A., van Moorselaar, D., Los, S. A., & Theeuwes, J. (2025). Object-centered spatial learning in dynamic contexts: History-driven distractor suppression and target enhancement. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001353)
 
 Bonny, J. W., & Russell, M. D. (2025). The Role of Suppression Performance Information in Judging When to Use a Fire Extinguisher. *Safety*. [DOI](https://doi.org/10.3390/safety11020058)
 
