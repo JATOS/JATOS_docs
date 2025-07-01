@@ -88,7 +88,7 @@ You can achieve this using the "study input," "component input," or "batch input
 
 ![Study properties / study input](/img/v39x/study-input.png)
 
-These input fields accept JSON. The data you enter there becomes available in your study's JavaScript via `jatos.studyJsonInput`, `jatos.componentJsonInput`, and `jatos.batchJsonInput`.
+These input fields accept JSON. The data you enter there becomes available in your study's JavaScript via `jatos.studyJsonInput`, `jatos.componentJsonInput`, and `jatos.batchJsonInput`. From version 3.9.7 onwards, you can also access this data via `jatos.studyInput`, `jatos.componentInput`, and `jatos.batchInput`.
 
 The difference among study, component, and batch input lies in their availability within your study's code. Study input data is available everywhere in your study's code (all components, all batches). Component input is only available in the code of that specific component (but across all batches). Batch input is available in all study runs belonging to that particular batch (and across all components within that run). There's also a difference in what gets exported with the study: only the study and component input data are exported, not the batch input data.
 
@@ -114,7 +114,7 @@ If you put the following JSON into the study input of your study properties:
 }
 ```
 
-you can access these fields in your JavaScript with `jatos.studyJsonInput.numberOfTrials`, `jatos.studyJsonInput.retries`, and `jatos.studyJsonInput.order`.
+you can access these fields in your JavaScript with `jatos.studyJsonInput.numberOfTrials`, `jatos.studyJsonInput.retries`, and `jatos.studyJsonInput.order`. From version 3.9.7 onwards, you can also use `jatos.studyInput.numberOfTrials`, `jatos.studyInput.retries`, and `jatos.studyInput.order`.
 
 -----
 

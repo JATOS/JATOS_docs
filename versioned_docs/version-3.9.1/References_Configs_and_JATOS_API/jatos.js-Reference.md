@@ -80,9 +80,9 @@ All the properties (except the study input data) you entered for this study
   * `jatos.studyProperties.dirName` - Study's dir name in the file system of your JATOS installation
   * `jatos.studyProperties.groupStudy` - Whether this is a group study or not
 
-### `jatos.studyJsonInput`
+### `jatos.studyInput` and `jatos.studyJsonInput`
 
-The study input data you entered in the study properties. This is `{}` if the field was left empty.
+Since version 3.9.7, `jatos.studyInput` is the prefered way to get the study input and `jatos.studyJsonInput` is deprecated. Apart from that both contain the study input data you entered in the study properties. They are `{}` if the field was left empty.
 
 ### `jatos.studyLength`
 
@@ -101,7 +101,9 @@ All the properties (except the component input data) you entered for this compon
   * `jatos.componentProperties.htmlFilePath` - Path to Component's HTML file in your JATOS installation
   * `jatos.componentProperties.reloadable` - Whether it's reloadable
 
-### `jatos.componentJsonInput`
+### `jatos.componentInput` and `jatos.componentJsonInput`
+
+Since version 3.9.7, `jatos.componentInput` is the prefered way to get the component input and `jatos.componentJsonInput` is deprecated. Apart from that both contain the component input data you entered in the component properties. They are `{}` if the field was left empty.
 
 The component input data you entered in the component properties. This is `{}` if the field was left empty.
 
@@ -1232,9 +1234,9 @@ All the properties you entered for this batch.
 * `jatos.batchProperties.maxTotalWorkers` - Total amount of workers a group is allowed to have altogether in this batch.
 * `jatos.batchProperties.title` - Title of this batch.
 
-### `jatos.batchJsonInput`
+### `jatos.batchInput` and `jatos.batchJsonInput`
 
-The batch input data you entered in the batch properties. This is `{}` if the field was left empty.
+Since version 3.9.7, `jatos.batchInput` is the prefered way to get the batch input and `jatos.batchJsonInput` is deprecated. Apart from that both contain the batch input data you entered in the batch properties. They are `{}` if the field was left empty.
 
 -----
 
