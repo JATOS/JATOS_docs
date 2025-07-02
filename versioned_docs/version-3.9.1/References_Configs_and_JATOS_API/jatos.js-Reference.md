@@ -105,8 +105,6 @@ All the properties (except the component input data) you entered for this compon
 
 Since version 3.9.7, `jatos.componentInput` is the prefered way to get the component input and `jatos.componentJsonInput` is deprecated. Apart from that both contain the component input data you entered in the component properties. They are `{}` if the field was left empty.
 
-The component input data you entered in the component properties. This is `{}` if the field was left empty.
-
 ### `jatos.componentList`
 
 An array of all components of this study with basic information about each component. For each component it has the `title`, `id`, whether it is `active`, and whether it is `reloadable`.
