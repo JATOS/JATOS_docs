@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Vandendaele, A., & Grainger, J. (2025). On the impact of syntactic and semantic information when processing words in sentences. *Quarterly Journal of Experimental Psychology*. [DOI]( https://doi.org/10.1177/17470218251350584)
+
+Bysouth-Young, D., Guérit, F., Shahidi, L., Carlyon, R.P. (2025) Measurement of Spectro-Temporal Processing by Cochlear Implant Users: Effects of Stimulus Level and Validation of an Online Implementation. *Ear & Hearing* [DOI](http://doi.org/10.1097/AUD.0000000000001676)
+
 Maier, M., Harris, A.J.L., Kellen, D., Singmann, H. (2025) Decision making under extinction risk. *Cognitive Psychology*. [DOI](https://doi.org/10.1016/j.cogpsych.2025.101735).
 
 Raza, S., Schomaker, J., Quent, J. A., Anderson, M. C., & Henson, R. N. (2025). Proactive and retroactive effects of novelty and rest on memory. *Quarterly Journal of Experimental Psychology*. [DOI](https://doi.org/10.1177/17470218251346156)
