@@ -89,19 +89,11 @@ http {
         #     allow                   192.168.1.0/24;
         #     deny                    all;
         #     proxy_pass              http://jatos-backend;
-        #     proxy_connect_timeout   300;
-        #     proxy_send_timeout      300;
-        #     proxy_read_timeout      300;
-        #     send_timeout            300;
         # }
 
         # All other traffic
         location / {
             proxy_pass              http://jatos-backend;
-            proxy_connect_timeout   300;
-            proxy_send_timeout      300;
-            proxy_read_timeout      300;
-            send_timeout            300;
         }
     }
 }
