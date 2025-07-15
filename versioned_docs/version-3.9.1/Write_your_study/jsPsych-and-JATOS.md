@@ -17,11 +17,11 @@ You'll find several jsPsych examples among [our example studies](/Example-Studie
 
 Below are the necessary modifications to adapt your jsPsych experiment to run within JATOS and send data to it. For more general guidance, you can also refer to [Adapt Pre-written Code to run it in JATOS](Adapt-pre-written-code-to-run-it-in-JATOS.html).
 
-Please note that each jsPsych version has slight differences. These steps are for **jsPsych 7** (for older versions, please see [here](/3.6.x/jsPsych-and-JATOS.html)).
+Please note that sometimes jsPsych versions have slight differences. These steps are for **jsPsych 7 or 8** (for older versions, please see [here](/3.6.x/jsPsych-and-JATOS.html)).
 
 -----
 
-### How to Turn Your jsPsych 7 Experiment into a JATOS Study
+### How to Turn Your jsPsych 7 or 8 Experiment into a JATOS Study
 
 1.  **Include the _jatos.js_ library** in the `<head>` section of your HTML file:
 
@@ -34,9 +34,11 @@ Please note that each jsPsych version has slight differences. These steps are fo
     ```javascript
     var jsPsych = initJsPsych({
       on_trial_start: jatos.addAbortButton,
-      on_finish: () => jatos.endStudy(jsPsych.data.get().json())
+      on_finish: () => jatos.startNextComponent(jsPsych.data.get().json())
     });
     ```
+
+    The `jatos.startNextComponent` ends the current component in JATOS and either starts the next one (if you have multiple components) or finishes the study.
 
 3.  **Wrap jsPsych's `run` command within `jatos.onLoad`**:
 
@@ -46,4 +48,4 @@ Please note that each jsPsych version has slight differences. These steps are fo
     });
     ```
 
-That's all there is to it! For a complete example using jsPsych 7, check out the 'Simple Reaction Time Task' in our [example studies](Example-Studies).
+That's all there is to it! For a complete example using jsPsych, check out the '_Simple Reaction Time Task_' in our [example studies](Example-Studies). Additionally, the '_jsPsych 8 Examples_' study offers 79 different jsPsych demos and examples.
