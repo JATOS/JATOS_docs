@@ -291,6 +291,42 @@ JATOS_STUDY_LOGS_PATH="/path/to/my/jatos_study_logs"
 
 ---
 
+## File Extensions
+
+### Study Archive
+
+(Only in version >= 3.9.7)
+
+Specifies the file suffix of JATOS study archives. The default is `jzip`.
+
+**Config file:**
+~~~shell
+jatos.studyArchive.suffix = "zip"
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.studyArchive.suffix="zip"
+~~~
+
+### Results Archive
+
+(Only in version >= 3.9.7)
+
+Specifies the file suffix of JATOS results archives. The default suffix was `jrzip` in JATOS version older than 3.9.7, and is `zip` in newer versions.
+
+**Config file:**
+~~~shell
+jatos.resultsArchive.suffix = "jrzip"
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.resultsArchive.suffix="jrzip"
+~~~
+
+---
+
 ## Study Members
 
 Allow all users on a JATOS instance to be added at once as members of a study. Useful in small setups (e.g., lab installations). Default is `false`.
@@ -994,6 +1030,50 @@ jatos.db.driver = "com.mysql.cj.jdbc.Driver"
 **Environment variable:**
 ~~~shell
 JATOS_DB_DRIVER="com.mysql.cj.jdbc.Driver"
+~~~
+
+### Database Connection Pool Size
+
+(Only in version >= 3.9.7)
+
+Specifies the number of database connections. This setting should be configured in conjunction with `jatos.threadPool.size`. The default is 100.
+
+**Config file:**
+~~~shell
+jatos.db.connectionPool.size = 140
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.db.connectionPool.size=140
+~~~
+
+**Environment variable:**
+~~~shell
+JATOS_DB_CONNECTIONPOOL_SIZE=140
+~~~
+
+---
+
+## JATOS Thread Pool Size
+
+(Only in version >= 3.9.7)
+
+The size of the thread pool used by JATOS. The default is 150. This setting should be configured in conjunction with `jatos.db.connectionPool.size`. As a rule of thumb, `jatos.threadPool.size` can be set to `1.5 * jatos.db.connectionPool.size`.
+
+**Config file:**
+~~~shell
+jatos.threadPool.size = 210
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.threadPool.size=210
+~~~
+
+**Environment variable:**
+~~~shell
+JATOS_THREADPOOL_SIZE=210
 ~~~
 
 ---
