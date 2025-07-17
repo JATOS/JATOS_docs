@@ -54,17 +54,17 @@ Sometimes, the simple filter isn't precise enough, or you might want to combine 
 
 Once you've selected the results you want, click **Export Results**. You can choose what to export: everything in a JATOS Results Archive, only the result metadata, only the result data, or only the files. If you're unsure which to choose, opting for the **JATOS Result Archive** is best, as it contains everything.
 
-### Export a JATOS Results Archive (JRZIP)
+### Export a JATOS Results Archive
 
 ![Results View screenshot](/img/v39x/results_view_17.png)
 
-Since version 3.8.1, this is the standard export format. It **aggregates result data, result files, and result metadata** into a single ZIP archive file with a `.jrzip` extension ([more information about JRZIP](JATOS-Results-Archive-JRZIP.html)).
+Since version 3.8.1, this is the standard export format. It **aggregates result data, result files, and result metadata** into a single ZIP archive file with a `.zip` file suffix in version 3.9.7 and newer, and `.jrzip` in older versions ([more information about the archive format](JATOS-Results-Archive.html)).
 
 ### Export Result Data
 
 ![Results View screenshot](/img/v39x/results_view_18.png)
 
-The **result data** are the genuine data submitted during study runs, without any metadata or associated files. You can choose between **ZIP** or **Plain Text** format. In the *ZIP* format, the result data is organized in a file system structure with folders for study results and component results, similar to the `.jrzip` format. The *Plain Text* format, familiar from previous JATOS versions, consolidates all result data into one text file, with one result per line.
+The **result data** are the genuine data submitted during study runs, without any metadata or associated files. You can choose between **ZIP** or **Plain Text** format. In the *ZIP* format, the result data is organized in a file system structure with folders for study results and component results, similar to the JATOS results archive format. The *Plain Text* format, familiar from previous JATOS versions, consolidates all result data into one text file, with one result per line.
 
 ### Export Result Files
 
