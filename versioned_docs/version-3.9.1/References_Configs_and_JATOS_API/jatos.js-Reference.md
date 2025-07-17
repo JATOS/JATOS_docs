@@ -798,7 +798,7 @@ Aborts the study. All previously submitted result data will be deleted. Optional
 
 ### `jatos.abortStudyAjax`
 
-Since 3.9.7, it was renamed to `jatos.abortStudyWithoutRedirect`, but the old one is kept for backward compatibility. Use `jatos.abortStudyWithoutRedirect` instead.
+As of version 3.9.7, this function has been renamed to `jatos.abortStudyWithoutRedirect`. While the old name is retained for backward compatibility, please use the new name for future development.
 
 -----
 
@@ -952,7 +952,7 @@ Ends the study and redirects to the given URL. This is useful if you want to let
 
 ### `jatos.endStudyAjax`
 
-Since version 3.9.7, it was renamed to `jatos.endStudyWithoutRedirect`, but the old one is kept for backward compatibility. Use `jatos.endStudyWithoutRedirect` instead.
+As of version 3.9.7, this function has been renamed to `jatos.endStudyWithoutRedirect`. While the old name is retained for backward compatibility, please use the new name for future development.
 
 -----
 
