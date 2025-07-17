@@ -1,7 +1,7 @@
 ---
 title: JATOS on DigitalOcean
 slug: /JATOS-on-DigitalOcean.html
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 This guide explains how to install JATOS in the cloud using [DigitalOcean](https://www.digitalocean.com). DigitalOcean is a cloud provider (like AWS, Google Cloud, Azure, etc.). We use DigitalOcean as an example because it is easy to use and has good documentation, but we have no affiliation with them.

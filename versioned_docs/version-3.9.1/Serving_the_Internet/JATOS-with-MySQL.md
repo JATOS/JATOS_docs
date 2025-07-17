@@ -1,7 +1,7 @@
 ---
 title: JATOS with MySQL
 slug: /JATOS-with-MySQL.html
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 By default, JATOS uses an embedded H2 database and requires no further setup. However, it can easily be configured to work with a MySQL or MariaDB database.
@@ -113,7 +113,7 @@ The binary log (binlog) is used for replication and data recovery. However, it c
 Add `skip-log-bin` to your MySQL/MariaDB config (often `/etc/mysql/mysql.conf.d/mysqld.cnf`):
 
 ```ini
-# Example mysqld.cnf
+[mysqld]
 skip-log-bin
 ```
 
@@ -140,6 +140,7 @@ If you use an older MySQL (< 8.x.x) and expect large result data, you may need t
 To increase the size, add to your MySQL/MariaDB config (e.g., `/etc/mysql/mysql.conf.d/mysqld.cnf`):
 
 ```ini
+[mysqld]
 max_allowed_packet=64M
 ```
 

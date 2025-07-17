@@ -1,7 +1,7 @@
 ---
 title: JATOS on AWS
 slug: /JATOS-in-Amazons-Cloud-without-Docker.html
-sidebar_position: 6
+sidebar_position: 5
 ---
 
 This page provides additional information on how to install JATOS on an AWS server. General installation advice can be found in [JATOS on a server](JATOS-on-a-server.html) and applies here as well. We recommend using JATOS together with a reverse proxy. See our instructions for [Apache](/JATOS-with-Apache.html) or [Nginx](/JATOS-with-Nginx.html). If you are looking for an easier way to install JATOS in the cloud, check out the tutorial [JATOS on DigitalOcean](JATOS-on-DigitalOcean.html).
