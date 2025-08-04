@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+De Cesarei, A., Tronelli, V., Mastria, S., Ferrari, V., & Codispoti, M. (2025). Behavioral Interference by Emotional Stimuli: Sequential Modulation by Perceptual Conditions but Not by Emotional Primes. *Vision*. [DOI](https://doi.org/10.3390/vision9030066)
+
 Gastmann, F., Schimke, S., Poarch, G.J. (2025) Conducting psycholinguistic research online: Comparable evidence of second language lexical and sentence-level processing in web-based versus lab-based studies. *Bilingualism: Language and Cognition*. [DOI](https://doi.org/10.1017/S136672892510028X)
 
 Garre-Frutos, F., Lupiáñez, J. & Vadillo, M.A. (2025) Value-modulated attentional capture depends on awareness. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-025-02734-1)
