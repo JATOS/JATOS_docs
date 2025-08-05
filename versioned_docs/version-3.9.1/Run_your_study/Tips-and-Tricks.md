@@ -110,3 +110,11 @@ You can artificially throttle network speed using the Developer Tools in [Firefo
 
 1.  **Use [study links with confirmation](Run-your-Study-with-Study-Links.html#study-link--study-entry-page-for-confirmation):** Choose the 'Confirm First' version of the study link. This link displays a "study entry" page before the actual study begins, and this entry page can be opened multiple times without invalidating the underlying single-use link.
 2.  **[Allow preview](Restricting-study-flow.html#allow-preview):** You can continue using Personal/General Single links and enable a [preview link](Restricting-study-flow.html#preview-links). This allows participants to open the *first component* of your study as many times as they wish. The single-use restriction then applies only to subsequent components.
+
+### HTTP 431: Request Header Fields Too Large
+
+If you encounter an [HTTP 431 (Request Header Fields Too Large)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/431) error while using JATOS in your browser, it may be due to the size of the JATOS_ID cookies. To resolve this, you can do one of the following:
+
+* Delete the `JATOS_ID` cookies from your browser.
+* Set the property `play.server.akka.max-header-value-length = 32k` in your `jatos.conf` file.
+* Update to JATOS version 3.9.8 or newer.
