@@ -11,6 +11,14 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Conson M, Zappullo I, Cecere R, Thiebaut de Schotten M, Lauro A, Senese VP, et al. (2025) Altercentrism and a change in perspective on the self: The relationships of visuospatial perspective-taking with rumination and mindfulness. *PLoS One*. [DOI](https://doi.org/10.1371/journal.pone.0316060)
+
+Xiao, B., & Wolpe, N. (2025). The value of progress feedback in physical effort-based decision making. *Motivation Science*. [DOI](https://doi.org/10.1037/mot0000411)
+
+Melo, J.C.N., Tejada, J., Silva, E.C.M. et al. (2025) Effects of physically active lessons and active breaks on cognitive performance and health indicators in elementary school children: a cluster randomized trial. *Int J Behav Nutr Phys Act*. [DOI](https://doi.org/10.1186/s12966-025-01789-6)
+
+Yao, J., Snell, J., & Theeuwes, J. (2025). Age-related preservation of statistical learning in distractor suppression. *Psychology and Aging*. [DOI](https://doi.org/10.1037/pag0000922)
+
 De Cesarei, A., Tronelli, V., Mastria, S., Ferrari, V., & Codispoti, M. (2025). Behavioral Interference by Emotional Stimuli: Sequential Modulation by Perceptual Conditions but Not by Emotional Primes. *Vision*. [DOI](https://doi.org/10.3390/vision9030066)
 
 Gastmann, F., Schimke, S., Poarch, G.J. (2025) Conducting psycholinguistic research online: Comparable evidence of second language lexical and sentence-level processing in web-based versus lab-based studies. *Bilingualism: Language and Cognition*. [DOI](https://doi.org/10.1017/S136672892510028X)
