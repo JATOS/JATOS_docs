@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Aktepe, S.C., Heck, D.W. Revisiting the effect of discrepant perceptual fluency on truth judgments. *Journal of Experimental Social Psychology*. [DOI](https://doi.org/10.1016/j.jesp.2025.104774)
+
 Thorp, S. O., Slupphaug, K. S., Rimol, L. M., Lervik, S., Hoel, S. K. B., & Grassini, S. (2025). Conformity towards humans versus AI in different task domains: the type of task matters. *Journal of Psychology and AI*. [DOI](https://doi.org/10.1080/29974100.2025.2540762)
 
 Conson M, Zappullo I, Cecere R, Thiebaut de Schotten M, Lauro A, Senese VP, et al. (2025) Altercentrism and a change in perspective on the self: The relationships of visuospatial perspective-taking with rumination and mindfulness. *PLoS One*. [DOI](https://doi.org/10.1371/journal.pone.0316060)
