@@ -11,6 +11,9 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+
+Vos M, Minor S, Ramchand G. (2025) The simple past versus perfect in English: evidence from Visual World eye tracking. *English Language and Linguistics*. [DOI](https://doi.org/10.1017/S1360674325100452)
+
 Ford, D., & Nadarevic, L. (2025). Revisiting the Plausibility Effect in Remembering Truth and Falsity: An Analysis of Underlying Memory and Guessing Processes. *Journal of Cognition* [DOI](https://doi.org/10.5334/joc.459)
 
 Aktepe, S.C., Heck, D.W. Revisiting the effect of discrepant perceptual fluency on truth judgments. *Journal of Experimental Social Psychology*. [DOI](https://doi.org/10.1016/j.jesp.2025.104774)
