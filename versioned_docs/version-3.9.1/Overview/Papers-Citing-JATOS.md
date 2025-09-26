@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Delem, M., Turkben, S., Cavalli, E., Cousineau, D., Plancher, G. (2025) Unsupervised clustering reveals spatial and verbal cognitive profiles in aphantasia and typical imagery. *Neuropsychologia* [DOI](https://doi.org/10.1016/j.neuropsychologia.2025.109279)
+
 Galang, C. M., Cracco, E., Chirkov, V., Obhi, S. S., & Brass, M. (2025). Sense of agency during group control. *Journal of Experimental Psychology: General*. [DOI](https://doi.org/10.1037/xge0001829)
 
 Vos M, Minor S, Ramchand G. (2025) The simple past versus perfect in English: evidence from Visual World eye tracking. *English Language and Linguistics*. [DOI](https://doi.org/10.1017/S1360674325100452)
