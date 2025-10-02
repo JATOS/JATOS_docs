@@ -11,6 +11,12 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Beucler, J., Voudouri, A., & De Neys, W. (2025). Moses illusions, fast and slow. *Journal of Experimental Psychology: Learning, Memory, and Cognition*. [DOI](https://doi.org/10.1037/xlm0001530)
+
+Ilksoy, Y. A., van Moorselaar, D., Wang, B., Los, S. A., & Theeuwes, J. (2025). Distractor suppression operates exclusively in retinotopic coordinates. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001375)
+
+Vogt, A., Ganter, I., Kaup, B., Abdel Rahman, R. (2025) Expressing experiences: Sensorimotor activations and interoceptive sensibility influence which words we choose when speaking. *Acta Psychologica*. [DOI](https://doi.org/10.1016/j.actpsy.2025.105498)
+
 Comay, N. A., Solovey, G., & Barttfeld, P. (2025). Decisions are based on less information than metacognitive judgments in multialternative contexts. *Journal of Experimental Psychology: Learning, Memory, and Cognition*. [DOI](https://doi.org/10.1037/xlm0001532)
 
 Delem, M., Turkben, S., Cavalli, E., Cousineau, D., Plancher, G. (2025) Unsupervised clustering reveals spatial and verbal cognitive profiles in aphantasia and typical imagery. *Neuropsychologia* [DOI](https://doi.org/10.1016/j.neuropsychologia.2025.109279)
