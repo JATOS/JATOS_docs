@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Comay, N. A., Solovey, G., & Barttfeld, P. (2025). Decisions are based on less information than metacognitive judgments in multialternative contexts. *Journal of Experimental Psychology: Learning, Memory, and Cognition*. [DOI](https://doi.org/10.1037/xlm0001532)
+
 Delem, M., Turkben, S., Cavalli, E., Cousineau, D., Plancher, G. (2025) Unsupervised clustering reveals spatial and verbal cognitive profiles in aphantasia and typical imagery. *Neuropsychologia* [DOI](https://doi.org/10.1016/j.neuropsychologia.2025.109279)
 
 Galang, C. M., Cracco, E., Chirkov, V., Obhi, S. S., & Brass, M. (2025). Sense of agency during group control. *Journal of Experimental Psychology: General*. [DOI](https://doi.org/10.1037/xge0001829)
