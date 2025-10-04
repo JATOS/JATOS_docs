@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Pohl, J., Nikolovska K., Maurelli F., Kappas A., Hommel B. (2025) Selfhood-attribution in a social context: further evidence for a Pars-Pro-Toto account. *Frontiers in Psychology*. [DOI](https://www.doi.org/10.3389/fpsyg.2025.1528172)
+
 Beucler, J., Voudouri, A., & De Neys, W. (2025). Moses illusions, fast and slow. *Journal of Experimental Psychology: Learning, Memory, and Cognition*. [DOI](https://doi.org/10.1037/xlm0001530)
 
 Ilksoy, Y. A., van Moorselaar, D., Wang, B., Los, S. A., & Theeuwes, J. (2025). Distractor suppression operates exclusively in retinotopic coordinates. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001375)
