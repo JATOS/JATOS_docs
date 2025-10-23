@@ -11,7 +11,7 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
-Saccani, M.S., Contemori, G.,Bonato, M. (2025) Unveiling contralesional omissions six years after stroke. Effects of top-down and bottom-up manipulations. *Cortex* [DOI](https://doi.org/10.1016/j.cortex.2025.09.002)
+Saccani, M.S., Contemori, G.,Bonato, M. (2025) Unveiling contralesional omissions six years after stroke. Effects of top-down and bottom-up manipulations. *Cortex*. [DOI](https://doi.org/10.1016/j.cortex.2025.09.002)
 
 Bonny, J. W. (2025). Seeing Flames, Perceiving Quantity: Approximations of Fire Intensity Across Development. *Behavioral Sciences*. [DOI](https://doi.org/10.3390/bs15101397)
 
