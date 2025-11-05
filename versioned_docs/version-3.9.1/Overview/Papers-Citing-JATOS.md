@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Percival, M., Yeung, H., Bird, S., J. Quaysultunaat (Randeana). (2025) Hul'q'umi'num' listening quizzes. Speech perception in a language revitalization classroom context. *Journal of Second Language Pronunciation*. [DOI](https://doi.org/10.1075/jslp.25001.per)
+
 Dutli, J., Oberauer, K., & Bartsch, L. M. (2025). Is repetition learning preserved in old age? Insights from the Hebb paradigm. *Psychology and Aging*.[DOI](https://doi.org/10.1037/pag0000947)
 
 Schreiner, M. R., & Kunde, W. (2025). Integrating action-effect episodes into long-term memory as a function of control. *Journal of Experimental Psychology: Learning, Memory, and Cognition*. [DOI](https://doi.org/10.1037/xlm0001544)
