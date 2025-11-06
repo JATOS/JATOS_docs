@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Vencato, M., Zorzi, M. & Bonato, M. (2025) Temporal momentum: an online replication and beyond. *Psychological Research*. [DOI](https://doi.org/10.1007/s00426-025-02167-4)
+
+Daiss, F., Jansen, P. (2025) Affective and reflective attitudes toward vegetarian food consumption: the effect of goal priming. *Frontiers in Nutrition*. [DOI](https://www.doi.org/10.3389/fnut.2025.1653935)
+
 Percival, M., Yeung, H., Bird, S., J. Quaysultunaat (Randeana). (2025) Hul'q'umi'num' listening quizzes. Speech perception in a language revitalization classroom context. *Journal of Second Language Pronunciation*. [DOI](https://doi.org/10.1075/jslp.25001.per)
 
 Dutli, J., Oberauer, K., & Bartsch, L. M. (2025). Is repetition learning preserved in old age? Insights from the Hebb paradigm. *Psychology and Aging*.[DOI](https://doi.org/10.1037/pag0000947)
