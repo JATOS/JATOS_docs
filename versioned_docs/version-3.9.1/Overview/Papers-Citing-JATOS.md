@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Chromý, J., Ceháková, M. & Brand, J. (2025) The HeCz corpus: A large, richly annotated reading corpus of newspaper headlines in Czech. *Behav Res*. [DOI](https://doi.org/10.3758/s13428-025-02863-4)
+
 Chiu, S. L., Toscano, C. M., Toscano, J. C., & McMurray, B. (2025). Listeners rapidly adapt to current conditions: “Good-enough” adaptation in multitalker speech perception. *Journal of Experimental Psychology: General*. [DOI](https://doi.org/10.1037/xge0001797)
 
 Wolpe N, Aymerich C, Jin Y, et al. (2025) Characterising negative symptoms in schizophrenia: CHANSS study protocol. *BJPsych Open*. [DOI](https://doi.org/10.1192/bjo.2025.10880)
