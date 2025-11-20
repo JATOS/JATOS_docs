@@ -99,6 +99,7 @@ Below is the JSON schema for the `metadata.json` file included in each archive. 
                                 "batchUuid",
                                 "batchTitle",
                                 "groupId",
+                                "isQuotaReached",
                                 "componentResults"
                             ],
                             "properties": {
@@ -168,6 +169,10 @@ Below is the JSON schema for the `metadata.json` file included in each archive. 
                                     "type": "string",
                                     "title": "Group ID"
                                 },
+                                "isQuotaReached": {
+                                    "type": "boolean",
+                                    "title": "Quota reached"
+                                },
                                 "componentResults": {
                                     "type": "array",
                                     "title": "List of component results",
@@ -184,7 +189,8 @@ Below is the JSON schema for the `metadata.json` file included in each archive. 
                                             "componentState",
                                             "path",
                                             "data",
-                                            "files"
+                                            "files",
+                                            "isQuotaReached"
                                         ],
                                         "properties": {
                                             "id": {
@@ -266,7 +272,11 @@ Below is the JSON schema for the `metadata.json` file included in each archive. 
                                                         }
                                                     }
                                                 }
-                                            }
+                                            },
+                                            "isQuotaReached": {
+                                                "type": "boolean",
+                                                "title": "Quota reached"
+                                            },
                                         }
                                     }
                                 }
