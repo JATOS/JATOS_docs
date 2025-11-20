@@ -463,16 +463,24 @@ jatos.catchAndLogErrors();
 
 ### `jatos.addJatosIds`
 
-Convenience function that adds some [IDs](jatos.js-Reference.html#ids) (study code, study ID, study title, batch ID, batch title, component ID, component position, component title, worker ID, study result ID, component result ID, group result ID, group member ID) to the given object.
+Convenience function that adds some [IDs](jatos.js-Reference.html#ids) (study code, study ID, study title, batch ID, batch title, component ID, component position, component title, worker ID, study result ID, component result ID, group result ID, group member ID) to an object.
 
-  * `@param {object} obj` - Object to which the IDs will be added.
+  * `@param {object} [obj]` - Object to which the IDs will be added.
 
-**Example**
+**Examples**
 
-```javascript
-var resultData = {};
-jatos.addJatosIds(resultData);
-```
+1. Add the IDs to an existing object:
+
+    ```javascript
+    var resultData = {};
+    jatos.addJatosIds(resultData);
+    ```
+
+2. Use the returned object:
+
+    ```javascript
+    const ids = jatos.addJatosIds();
+    ```
 
 -----
 
