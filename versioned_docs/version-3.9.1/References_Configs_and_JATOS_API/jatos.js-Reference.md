@@ -407,7 +407,15 @@ Convenience function that shows text and an image in the center of the screen. B
 
 ### `jatos.removeOverlay`
 
-Removes an overlay that was added by `jatos.showOverlay`.
+**DEPRECATED** - Use `jatos.removeOverlays`.
+
+-----
+
+### `jatos.removeOverlays`
+
+Removes all overlays that was added by `jatos.showOverlay` except the ones that have the 'keep' flag not set (see `jatos.showOverlay`).
+
+* `@param {boolean} [force]` - If true, even the overlays that have the 'keep' flag set will be removed.
 
 **Example**
 
