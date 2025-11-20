@@ -146,7 +146,174 @@ Unlike other systems (e.g., GitHub), JATOS tokens have no roles or scopes. A tok
 ![API token 3](/img/v39x/api_tokens_3.png)
 ![API token 4](/img/v39x/api_tokens_4.png)
 
-## How to Import a Study
+## Examples
+
+### Fetch Results
+
+The endpoint to import a study, `/jatos/api/v1/results`, uses a POST request to get results (combined result data, files, and metadata) in a ZIP file (JATOS Study Archive).
+
+Here are examples in different tools/languages for this`:
+
+<Tabs>
+<TabItem value="curl" label="curl">
+
+```shell
+curl -X 'POST' 'https://example.com/jatos/api/v1/results?componentId=1' \
+  -H 'accept: application/zip' \
+  -H 'Authorization: Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f' \
+  -O -J
+```
+
+</TabItem>
+<TabItem value="py" label="Python">
+
+```py
+import requests
+
+url = "https://example.com/jatos/api/v1/results"
+params = {
+    "componentId": 1
+}
+
+headers = {
+    "accept": "application/zip",
+    "Authorization": "Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f"
+}
+
+# Stream response so we can download large files
+response = requests.post(url, headers=headers, params=params, stream=True)
+
+# Check for errors
+response.raise_for_status()
+
+# Determine filename from Content-Disposition header
+cd = response.headers.get("Content-Disposition", "")
+filename = cd.split("filename=")[1].strip('"')
+
+# Write file
+with open(filename, "wb") as f:
+    for chunk in response.iter_content(chunk_size=8192):
+        if chunk:
+            f.write(chunk)
+```
+    
+</TabItem>
+<TabItem value="r" label="R">
+
+```r
+library(httr)
+
+url <- "https://example.com/jatos/api/v1/results"
+
+# Query parameters
+params <- list(
+  componentId = 1
+)
+
+# Headers
+headers <- add_headers(
+  "accept" = "application/zip",
+  "Authorization" = "Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f"
+)
+
+# Send POST request
+res <- POST(url, headers, query = params)
+
+# Check for HTTP errors
+stop_for_status(res)
+
+# Extract filename from Content-Disposition header
+cd <- headers(res)$`content-disposition`
+filename <- sub(".*filename=\"?([^\"]+)\"?.*", "\\1", cd)
+
+# Write the file
+writeBin(content(res, "raw"), filename)
+```
+    
+</TabItem>
+<TabItem value="js" label="JavaScript">
+
+```javascript
+import https from "https";
+import fs from "fs";
+
+const url = "https://example.com/jatos/api/v1/results?componentId=1";
+
+const req = https.request(url, {
+  method: "POST",
+  headers: {
+    "accept": "application/zip",
+    "Authorization": "Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f"
+  }
+}, res => {
+  const cd = res.headers["content-disposition"];
+  const match = cd.match(/filename="?([^"]+)"?/);
+  let filename = match[1];
+  
+  const file = fs.createWriteStream(filename);
+  res.pipe(file);
+
+  file.on("finish", () => file.close());
+});
+
+req.on("error", console.error);
+req.end();
+```
+
+</TabItem>
+<TabItem value="matlab" label="MATLAB">
+
+```matlab
+url = 'https://example.com/jatos/api/v1/results?componentId=1';
+
+options = weboptions( ...
+    'RequestMethod', 'post', ...
+    'HeaderFields', { ...
+        'accept' 'application/zip'; ...
+        'Authorization' 'Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f' ...
+    }, ...
+    'ContentType', 'binary' ...   % Important for ZIP files
+);
+
+% Perform POST request
+data = webread(url, options);
+
+% Save to file
+filename = 'results.zip';
+fid = fopen(filename, 'w');
+fwrite(fid, data);
+fclose(fid);
+```
+    
+</TabItem>
+<TabItem value="powershell" label="PowerShell">
+
+```powershell
+$Url = "https://example.com/jatos/api/v1/results?componentId=1"
+
+$Headers = @{
+    "accept"        = "application/zip"
+    "Authorization" = "Bearer jap_OeYwru727YeLzxcHSvIFlTQ52Ud03wo7cd41f"
+}
+
+# Perform the POST request and save the file to a temporary name
+$response = Invoke-WebRequest -Uri $Url -Method POST -Headers $Headers -OutFile "temp.bin" -PassThru
+
+# Extract filename from Content-Disposition header
+$cd = $response.Headers["Content-Disposition"]
+$cd -match 'filename="?([^\";]+)' | Out-Null
+$filename = $matches[1]
+
+# Rename the downloaded file
+Rename-Item -Path "temp.bin" -NewName $filename -Force
+```
+    
+</TabItem>
+</Tabs>
+
+
+
+### Import a Study
 
 The endpoint to import a study, `/jatos/api/v1/study`, uses a POST request with the header `Content-Type: multipart/form-data` to upload a study archive file (JZIP) in binary format.
 
