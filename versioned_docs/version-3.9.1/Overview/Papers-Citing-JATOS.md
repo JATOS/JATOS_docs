@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Baroncini, I., Michelotti, A., Engemann, H. (2025). Priming motion events in Italian heritage language speakers: Agents and mechanisms of language change. *Linguistic Approaches to Bilingualism*. [DOI](https://www.doi.org/10.1075/lab.24048.bar)
+
 Capkan, E.N., Ozilgen, S., Yildirim, F. (2025) Designing visual menus for a sustainable future: The role of non-meat decoys. *International Journal of Gastronomy and Food Science*. [DOI](https://doi.org/10.1016/j.ijgfs.2025.101343)
 
 Chromý, J., Ceháková, M. & Brand, J. (2025) The HeCz corpus: A large, richly annotated reading corpus of newspaper headlines in Czech. *Behav Res*. [DOI](https://doi.org/10.3758/s13428-025-02863-4)
