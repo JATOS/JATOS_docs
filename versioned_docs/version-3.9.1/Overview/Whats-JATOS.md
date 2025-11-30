@@ -46,4 +46,4 @@ Please take a moment to complete our short, 3-minute **[survey](https://forms.gl
 
 ### JATOS in Action: Trusted by Researchers Worldwide
 
-**[Almost 300 studies](Papers-Citing-JATOS.html)** have already successfully collected data using JATOS! If you use JATOS for your research, please consider **[citing us](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130834)**.
+**[Over 300 studies](Papers-Citing-JATOS.html)** have already successfully collected data using JATOS! If you use JATOS for your research, please consider **[citing us](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130834)**.
