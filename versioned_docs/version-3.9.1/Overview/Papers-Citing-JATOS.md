@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2025
+Azer, L., Vanderlip, C.R., Mayer, L.L., Ehlert, L., Sultzer, D., Shin, H-W., Stark, C.E.L. (2025) MST in the Wild: Optimizing the Mnemonic Similarity Task for Use in Diverse Environments. *Neuropsychologia. [DOI](https://doi.org/10.1016/j.neuropsychologia.2025.109341)
+
 Blomberg, M., Oberender, L., Koster, E., Brockmeyer, T. (2025) Transdiagnostic Cognitive Control Training for Patients Waiting for Outpatient Psychotherapy: Randomized Clinical Trial. *JMIR Mhealth Uhealth* [DOI](https://doi.org/10.2196/65867)
 
 Kusztor, A., Mulay, N., Yamada, M., Hohwy, J., Tsuchiya, N. (2025) Lifting the veil: probing altered visual perception in derealization. *Neuroscience of Consciousness* [DOI](https://doi.org/10.1093/nc/niaf045)
