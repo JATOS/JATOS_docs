@@ -10,7 +10,12 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
+### 2026
+Pettini, L., Bogler, C., Doeller, C. et al. (2026) Synthesis and perceptual scaling of high-resolution naturalistic images using Stable Diffusion. *Behav Res*. [DOI](https://doi.org/10.3758/s13428-025-02889-8)
+
+
 ### 2025
+
 Kreis, B.K., Hermann, A., Pachur, T., Groß, J. (2025) Hindsight Bias Through Knowledge Updating: A Conceptual Replication of Groß et al. (2023). *Collabra: Psychology* [DOI](https://doi.org/10.1525/collabra.147499)
 
 Lee, J.C., Dang, T., Collins, J.H. (2025) Trait anxiety and fear generalization: Overgeneralization of fear or undergeneralization of safety learning? *Behaviour Research and Therapy* [DOI](https://doi.org/10.1016/j.brat.2025.104939)
