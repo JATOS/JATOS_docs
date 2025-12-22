@@ -14,6 +14,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 Pettini, L., Bogler, C., Doeller, C. et al. (2026) Synthesis and perceptual scaling of high-resolution naturalistic images using Stable Diffusion. *Behav Res*. [DOI](https://doi.org/10.3758/s13428-025-02889-8)
 
 ### 2025
+Banovac, I., Bruton, O.J., Mercado-Díaz, L. et al. (2025) VENturing into machine learning for the morphological analysis of von Economo neurons. *Sci Rep*. [DOI](https://doi.org/10.1038/s41598-025-30470-y)
+
 Loaiza, V. M., Senziani, K., Bartsch, L. M., & Mizrak, E. (2025). What makes a birdbrain tick: Long-term memory drives expertise effects on working memory binding. *Psychology and Aging*. [DOI](https://doi.org/10.1037/pag0000952)
 
 Sarli, L., Cadoux, A., & Justel, N. (2025). L1-L2 valence-specific effects in recall and recognition bias in sequential bilinguals. *Journal of Cognitive Psychology*. [DOI](https://doi.org/10.1080/20445911.2025.2599243)
