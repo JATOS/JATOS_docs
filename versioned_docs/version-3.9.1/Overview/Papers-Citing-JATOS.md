@@ -14,6 +14,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 Pettini, L., Bogler, C., Doeller, C. et al. (2026) Synthesis and perceptual scaling of high-resolution naturalistic images using Stable Diffusion. *Behav Res*. [DOI](https://doi.org/10.3758/s13428-025-02889-8)
 
 ### 2025
+Spiering, L., Trier, H.A., O’Reilly, J.X. et al. (2025) Active disambiguation guides inferring controllability and cause in social interactions. *Nat Commun*. [DOI](https://doi.org/10.1038/s41467-025-67853-8)
+
 Banovac, I., Bruton, O.J., Mercado-Díaz, L. et al. (2025) VENturing into machine learning for the morphological analysis of von Economo neurons. *Sci Rep*. [DOI](https://doi.org/10.1038/s41598-025-30470-y)
 
 Loaiza, V. M., Senziani, K., Bartsch, L. M., & Mizrak, E. (2025). What makes a birdbrain tick: Long-term memory drives expertise effects on working memory binding. *Psychology and Aging*. [DOI](https://doi.org/10.1037/pag0000952)
