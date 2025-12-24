@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Zhao, F., Wen, F., Ye, H. et al.  (2026) Dual-identity reminders convey acceptance and trust: dual-identity reminders from opponents and third parties can both promote intergroup reconciliation. *Curr Psychol*. [DOI](https://doi.org/10.1007/s12144-025-08722-x)
+
 Pettini, L., Bogler, C., Doeller, C. et al. (2026) Synthesis and perceptual scaling of high-resolution naturalistic images using Stable Diffusion. *Behav Res*. [DOI](https://doi.org/10.3758/s13428-025-02889-8)
 
 ### 2025
