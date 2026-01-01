@@ -16,6 +16,8 @@ Zhao, F., Wen, F., Ye, H. et al.  (2026) Dual-identity reminders convey acceptan
 Pettini, L., Bogler, C., Doeller, C. et al. (2026) Synthesis and perceptual scaling of high-resolution naturalistic images using Stable Diffusion. *Behav Res*. [DOI](https://doi.org/10.3758/s13428-025-02889-8)
 
 ### 2025
+Kurdoglu, P., Schwartz, B. L., & Kapucu, A. (2025). Both emotional and neutral contexts increase feeling of knowing judgments despite poorer memory. *Memory*. [DOI](https://doi.org/10.1080/09658211.2025.2610298)
+
 Von Holzen K, Newman RS. (2025) _Ab initio_ word recognition in infant- and adult-directed continuous speech. *Applied Psycholinguistics*. [DOI](https://doi.org/10.1017/S0142716425100350)
 
 Spiering, L., Trier, H.A., O’Reilly, J.X. et al. (2025) Active disambiguation guides inferring controllability and cause in social interactions. *Nat Commun*. [DOI](https://doi.org/10.1038/s41467-025-67853-8)
