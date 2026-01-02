@@ -11,11 +11,14 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Oletto, C.M., Contemori, G., Cessa, R., Battaglini, L., Bertamini, M. (2026) Foveal masking impairs orientation discrimination of peripheral low-level stimuli. *Heliyon*. [DOI](https://doi.org/10.1016/j.heliyon.2025.e44279)
+
 Zhao, F., Wen, F., Ye, H. et al.  (2026) Dual-identity reminders convey acceptance and trust: dual-identity reminders from opponents and third parties can both promote intergroup reconciliation. *Curr Psychol*. [DOI](https://doi.org/10.1007/s12144-025-08722-x)
 
 Pettini, L., Bogler, C., Doeller, C. et al. (2026) Synthesis and perceptual scaling of high-resolution naturalistic images using Stable Diffusion. *Behav Res*. [DOI](https://doi.org/10.3758/s13428-025-02889-8)
 
 ### 2025
+
 Kurdoglu, P., Schwartz, B. L., & Kapucu, A. (2025). Both emotional and neutral contexts increase feeling of knowing judgments despite poorer memory. *Memory*. [DOI](https://doi.org/10.1080/09658211.2025.2610298)
 
 Von Holzen K, Newman RS. (2025) _Ab initio_ word recognition in infant- and adult-directed continuous speech. *Applied Psycholinguistics*. [DOI](https://doi.org/10.1017/S0142716425100350)
