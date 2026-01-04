@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Wilson, C.J. (2026) Neurological and behavioural correlates of construal in economic decision-making under cognitive load. *Behavioural Brain Research* [DOI](https://doi.org/10.1016/j.bbr.2025.115829)
+
 de Waard, J., Theeuwes, J. (2026) Beyond top-down: Feature search as a serial clump-wise process. *Cognition* [DOI](https://doi.org/10.1016/j.cognition.2025.106334)
 
 Oletto, C.M., Contemori, G., Cessa, R., Battaglini, L., Bertamini, M. (2026) Foveal masking impairs orientation discrimination of peripheral low-level stimuli. *Heliyon*. [DOI](https://doi.org/10.1016/j.heliyon.2025.e44279)
