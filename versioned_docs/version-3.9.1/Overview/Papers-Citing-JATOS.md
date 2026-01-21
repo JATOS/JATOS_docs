@@ -11,6 +11,9 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+
+Can, M., Türüdü, S., Aydoğan, Z., Özgürsoy, O.B. (2026) Functional overload and adaptive failure during dual-tasking in Ménière’s disease. *Journal of Vestibular Research*. [DOI](https://doi.org/10.1177/09574271261418549)
+  
 Schreiner, M.R., Kunde, W. (2026) The representational nature of action–effect relations: A memory process dissociation approach. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-025-02794-3)
 
 Kul, G., & Wills, A. J. (2026). The Comparison of Human and Machine Performance in Object Recognition. *Behavioral Sciences*. [DOI](https://doi.org/10.3390/bs16010109)
