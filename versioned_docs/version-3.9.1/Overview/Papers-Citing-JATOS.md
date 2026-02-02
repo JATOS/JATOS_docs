@@ -11,6 +11,7 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Muylle, M., Hartsuiker, R.J. Nozari, N. (2026) On idle idols and ugly icons: Investigating lexical selection in typing through homophones. *Journal of Memory and Language*. [DOI](https://doi.org/10.1016/j.jml.2025.104703)
 
 Can, M., Türüdü, S., Aydoğan, Z., Özgürsoy, O.B. (2026) Functional overload and adaptive failure during dual-tasking in Ménière’s disease. *Journal of Vestibular Research*. [DOI](https://doi.org/10.1177/09574271261418549)
   
