@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Yang, W., Wei, Y., Rauwolf, P., et al. (2026) Verbal feedback modulates language choice and risk-taking in Chinese-English bilinguals. *Bilingualism: Language and Cognition*. [DOI](www.doi.org/10.1017/S136672892500029X)
+
 Le Clézio, D., Delem, M., Monzel, M., Plancher, G. (2026) The Impact of Mental Images on Reasoning: A Study on Aphantasia. *Neuropsychologia*. [DOI](https://doi.org/10.1016/j.neuropsychologia.2026.109376)
 
 Muylle, M., Hartsuiker, R.J. Nozari, N. (2026) On idle idols and ugly icons: Investigating lexical selection in typing through homophones. *Journal of Memory and Language*. [DOI](https://doi.org/10.1016/j.jml.2025.104703)
