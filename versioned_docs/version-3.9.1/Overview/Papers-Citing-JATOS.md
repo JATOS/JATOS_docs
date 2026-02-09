@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+van Zoest, W., Higgins, A. (2026) Pointing over gaze: how saliency, proximity, and context shape spatial attention to embodied cues. *Psychological Research*. [DOI](https://doi.org/10.1007/s00426-026-02250-4)
+
 Yang, W., Wei, Y., Rauwolf, P., Frances, C., Molina-Nieto, O., Duñabeitia, J. A., & Thierry, G. (2026). Verbal feedback modulates language choice and risk-taking in Chinese-English bilinguals. *Bilingualism: Language and Cognition*. [DOI](https://doi.org/10.1017/S136672892500029X)
 
 Le Clézio, D., Delem, M., Monzel, M., Plancher, G. (2026) The Impact of Mental Images on Reasoning: A Study on Aphantasia. *Neuropsychologia*. [DOI](https://doi.org/10.1016/j.neuropsychologia.2026.109376)
