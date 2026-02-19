@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Duncan, D.H., van Moorselaar, D. & Theeuwes, J. (2026) Learning alters salience and proactive attentional priority. *Commun Psychol*. [DOI](https://doi.org/10.1038/s44271-026-00411-0)
+
+Buschmeyer, E., Sander, L. B., Kiesel, A., Monno, I., Fenn, J., & Spanhel, K. (2026). Cultural differences in healthcare: An investigation using cognitive-affective mapping. *Cambridge Prisms: Global Mental Health*. [DOI](http://doi.org/10.1017/gmh.2025.10126)
+
 Bröder, A., & Krauß, S. (2026). Nailing Down the Perceptual Explanation of the Date/Delay Effect in Temporal Discounting. *Experimental Psychology*. [DOI](https://doi.org/10.1027/1618-3169/a000657)
 
 Myles, D., Bennett, D. B., & Newall, P. (2026). Cue the sad trombone: UK gambling regulations have not prevented the misuse of celebratory sound effects in online slots. *Behavioural Public Policy*. [DOI](https://doi.org/10.1017/bpp.2026.10035)
