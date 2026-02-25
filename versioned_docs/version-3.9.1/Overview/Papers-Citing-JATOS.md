@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Marilena, A., Massimiliano, U.A., Giovanni, O. et al. (2026) Food perception in Orthorexia nervosa: Craving or avoidance? *Eat Weight Disord* [DOI](https://doi.org/10.1007/s40519-026-01826-8)
+
 Bröder, A., & Krauß, S. (2026). Nailing Down the Perceptual Explanation of the Date/Delay Effect in Temporal Discounting. *Experimental Psychology*. [DOI](https://doi.org/10.1027/1618-3169/a000657)
 
 Duncan, D.H., van Moorselaar, D. & Theeuwes, J. (2026) Learning alters salience and proactive attentional priority. *Commun Psychol*. [DOI](https://doi.org/10.1038/s44271-026-00411-0)
