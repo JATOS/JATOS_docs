@@ -28,7 +28,7 @@ If Java isn't installed, you have two options:
       * **Bundled with Java:** `jatos_win_java.zip`
 2.  Unzip the downloaded file. You can place the unzipped folder almost anywhere, **except** in a folder that syncs across devices, such as Dropbox or Google Drive. [Learn more](Troubleshooting.html#database-is-corrupted.html) about why this restriction exists.
 3.  In File Explorer, navigate to the unzipped JATOS folder and double-click on `loader.bat` (or `loader` if file extensions are hidden). A command window will open and run your local JATOS installation. To stop JATOS, simply close this window.
-4.  Once JATOS is running, open your preferred browser and go to [http://localhost:9000/](http://localhost:9000/). You should see the login screen. If not, wait a moment and then reload the page. Log in with the username `admin` and password `admin`.
+4.  Once JATOS is running, open your preferred browser and go to [http://localhost:9000/](http://localhost:9000/). You should see the login screen. If not, wait a moment and then reload the page. **Log in with the username `admin` and password `admin`**.
 
 ### Installation macOS and Linux
 
