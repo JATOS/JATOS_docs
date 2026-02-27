@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Shivakumar, V., Ostojić, L., Legg, E. (2026) Gaze cues and arrow cues modulate accuracy of recall of verbal items in a working memory task. *Open Res Europe* [DO](https://doi.org/10.12688/openreseurope.21720.2)
+
+Castle, C. M., Velnić, M., & Jensberg, H. R. (2026). CLI, proficiency and L1-like choices: L3 Norwegian learners in later stages of acquisition. *Bilingualism: Language and Cognition*. [DOI](https://doi.org/10.1017/S136672892610100X)
+
 Marilena, A., Massimiliano, U.A., Giovanni, O. et al. (2026) Food perception in Orthorexia nervosa: Craving or avoidance? *Eat Weight Disord* [DOI](https://doi.org/10.1007/s40519-026-01826-8)
 
 Bröder, A., & Krauß, S. (2026). Nailing Down the Perceptual Explanation of the Date/Delay Effect in Temporal Discounting. *Experimental Psychology*. [DOI](https://doi.org/10.1027/1618-3169/a000657)
