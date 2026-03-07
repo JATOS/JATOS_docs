@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Aray, Y., Béna, J., Rouard, M., andCorneille, O. (2026) Repetition Increases Belief in Food and Nutrition (Mis)Information, But Nonprobative Images May Not. *Social Psychology*. [DOI](https://doi.org/10.1027/1864-9335/a000589)
+
 Shivakumar V, Ostojić L and Legg E. (2026) Gaze cues and arrow cues modulate accuracy of recall of verbal items in a working memory task. *Open Res Europe*. [DOI](https://doi.org/10.12688/openreseurope.21720.2)
 
 Shivakumar, V., Ostojić, L., Legg, E. (2026) Gaze cues and arrow cues modulate accuracy of recall of verbal items in a working memory task. *Open Res Europe* [DO](https://doi.org/10.12688/openreseurope.21720.2)
