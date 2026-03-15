@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Vinichenko, A., Vangsnes, Ø.A., Røyneland, U. (2026) Spotting the lect: Asymmetric literacy competencies in multilectal contexts. *Ampersand*. [DOI](https://doi.org/10.1016/j.amper.2026.100262)
+
 Oparina, E., Antonio, D. S., Russo, G., Vieira, E. R., & Bigliassi, M. (2026). Unveiling the Intricacies of Implicit Motor Learning in Adults Recovered from COVID-19. *Journal of Motor Behavior*. [DOI](https://doi.org/10.1080/00222895.2026.2637940)
 
 Roberts, B.R.T. & Bainbridge, W.A. (2026) Reverse engineering what makes a symbol memorable, Proc. Natl. Acad. Sci. U.S.A. [DOI](https://doi.org/10.1073/pnas.2530745123)
