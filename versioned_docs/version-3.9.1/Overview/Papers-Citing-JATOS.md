@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Fenn, J., Estadieu, L., Gorki, M., Monno, I., Tauber, F., Teichmann, J., Levy-Tzedek, S., Speck, T., Müller, O. and Kiesel, A. (2026) Informing robot design through early public engagement: lay perceptions of soft versus rigid socially assistive and rescue robots. *Front. Robot. AI* [DOI](https://www.doi.org/10.3389/frobt.2026.1741946)
+
 Yang, W., Rauwolf, P., Frances, C., Molina-Nieto, O., Duñabeitia, J.A., Thierry, G. (2024) Chinese-English bilinguals prefer being truthful in the native language. *Front. Lang. Sci.* [DOI](https://doi.org/10.3389/flang.2023.1293673)
 
 Vinichenko, A., Vangsnes, Ø.A., Røyneland, U. (2026) Spotting the lect: Asymmetric literacy competencies in multilectal contexts. *Ampersand*. [DOI](https://doi.org/10.1016/j.amper.2026.100262)
