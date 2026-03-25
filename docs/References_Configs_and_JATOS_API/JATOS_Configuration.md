@@ -4,1049 +4,1244 @@ slug: /JATOS_Configuration.html
 sidebar_position: 2
 ---
 
-JATOS' properties can be configured in three different ways:
+JATOS properties can be configured in three different ways:
 
-1. via a **config file** (named _jatos.conf_ or _production.conf_)
-1. via **command-line** arguments 
-1. via **environment** variables (possible for only a few of the properties)
+1. **Config file** (`jatos.conf` or `production.conf`)
+2. **Command-line arguments**
+3. **Environment variables** (only for some properties)
 
-The config file is located in the JATOS folder under _./conf_ and is named _jatos.conf_ for versions >= 3.8.3 and _production.conf_ for versions < 3.8.3. It uses the [HOCON format](https://github.com/lightbend/config/blob/main/HOCON.md). **Remember to always restart JATOS after making any changes to a config file.**
+The config file is located in the JATOS folder under `./conf` and is named `jatos.conf` for versions >= 3.8.3 and `production.conf` for versions < 3.8.3. It uses the [HOCON format](https://github.com/lightbend/config/blob/main/HOCON.md).  
+**Remember to always restart JATOS after making any changes to a config file.**
 
-Command-line argument names are usually the same as the names in the config file except that they are prefixed with `-D` (except JVM arguments that have a `-J`), e.g. `jatos.urlBasePath` and `-Djatos.urlBasePath`.
+Command-line argument names are usually the same as in the config file, but prefixed with `-D` (except JVM arguments, which use `-J`). For example: `jatos.urlBasePath` and `-Djatos.urlBasePath`.
 
-Command-line arguments can be appended to JATOS' `loader.sh start` command. E.g., here is the command with the two arguments `-Djatos.urlBasePath` and `-Djatos.tmpPath`:
+Command-line arguments can be appended to JATOS' `loader.sh start` command. For example, to set `jatos.urlBasePath` and `jatos.tmpPath`:
 
-   ~~~shell
-   ./loader.sh start -Djatos.urlBasePath="/mybasepath/" -Djatos.tmpPath="/my/tmp/dir"
-   ~~~
+~~~shell
+./loader.sh start -Djatos.urlBasePath="/mybasepath/" -Djatos.tmpPath="/my/tmp/dir"
+~~~
 
+---
 
-## JVM arguments
+## JVM Arguments
 
-JVM arguments (arguments for the Java Virtual Machine) are special since they are not directly intended for JATOS but for the JVM running JATOS. They can **only be specified via command line arguments** and have to be prefixed with `-J`.
+JVM arguments (for the Java Virtual Machine) are special since they are not directly intended for JATOS but for the JVM running JATOS.  
+They can **only be specified via command-line arguments** and must be prefixed with `-J`.
 
-One commonly used JVM argument is `-Xmx`. It limits JATOS's memory usage (JVM's maximum heap memory usage to be precise). It has to be written as `-J-Xmx`, e.g. to allow 4GB memory `-J-Xmx4G`.
+A commonly used JVM argument is `-Xmx`, which limits JATOS's memory usage (specifically, the JVM's maximum heap memory).  
+It must be written as `-J-Xmx`, e.g., to allow 4GB memory: `-J-Xmx4G`.
 
-## HTTP config
+---
 
-### Address and port
+## HTTP Config
 
-By default JATOS binds to all locally available IP addresses including 127.0.0.1 on port 9000. Usually JATOS is installed together with a reverse proxy (e.g Nginx or Apache) but if you don't want to use a proxy, you have to set up the hostname or IP address and the port in one of the ways.
+### Address and Port
 
-1. Via **config file** properties
+By default, JATOS binds to all locally available IP addresses (including 127.0.0.1) on port 9000.  
+Usually, JATOS is installed together with a reverse proxy (e.g., Nginx or Apache), but if you don't want to use a proxy, you must set up the hostname or IP address and port.
 
-   * **For v3.8.1 and lower)** `play.server.http.address` and `play.server.http.port`
-   * **For v3.8.2 and higher)** `jatos.http.address` and `jatos.http.port`
+- **For v3.8.1 and lower:** `play.server.http.address` and `play.server.http.port`
+- **For v3.8.2 and higher:** `jatos.http.address` and `jatos.http.port`
 
-   Example:
+**Config file example:**
+~~~shell
+jatos.http.address = 1.2.3.4
+jatos.http.port = 80
+~~~
 
-   ~~~shell
-   jatos.http.address = 1.2.3.4
-   jatos.http.port = 80
-   ~~~
+**Command-line example:**
+~~~shell
+-Djatos.http.address=1.2.3.4 -Djatos.http.port=80
+~~~
 
-1. Via **command-line** arguments
+### Server Idle Timeout
 
-   * **For v3.8.1 and lower)** `-Dplay.server.http.address` and `-Dplay.server.http.port`
-   * **For v3.8.2 and higher)** `-Djatos.http.address` and `-Djatos.http.port`
+The idle timeout for an open connection, after which it will be closed.  
+Set to `null` or `infinite` to disable the timeout (not recommended for security reasons). Default is 75 seconds.
 
-   Example:
+**Config file:**
+~~~shell
+play.server.http.idleTimeout = 100s
+~~~
 
-   ~~~shell
-   -Djatos.http.address=1.2.3.4 -Djatos.http.port=80
-   ~~~
+**Command-line:**
+~~~shell
+-Dplay.server.http.idleTimeout=100s
+~~~
 
+### Request Timeout
 
-### Server idle timeout
+How long a request can take before timing out. Set to `null` or `infinite` to disable. Default is `infinite`.
 
-The idle timeout for an open connection after which it will be closed. Set to `null` or `infinite` to disable the timeout, but notice that this is not encouraged since timeouts are important mechanisms to protect your servers from malicious attacks or programming mistakes. Default is 75 seconds.
+**Config file:**
+~~~shell
+play.server.akka.requestTimeout = 100s
+~~~
 
-1. Via **config file** property `play.server.http.idleTimeout`
+**Command-line:**
+~~~shell
+-Dplay.server.akka.requestTimeout=100s
+~~~
 
-   Example:
+### URL Base Path
 
-   ~~~shell
-   play.server.http.idleTimeout = 100s
-   ~~~
+JATOS can be configured to use a base path. For example, if your host is _www.example.org_ and JATOS runs under _mybasepath_, all URLs start with _www.example.org/mybasepath/_.
 
-1. Via **command-line** argument `-Dplay.server.http.idleTimeout`
+**The path must always start and end with a "/".**  
+If you add a base path, adjust all absolute paths to study assets in your HTML and JavaScript files, or use [relative paths](Adapt-pre-written-code-to-run-it-in-JATOS.html#create-the-study-in-jatos) (recommended).
 
-   Example:
+- **For v3.8.1 and lower:** `play.http.context`
+- **For v3.8.2 and higher:** `jatos.urlBasePath`
 
-   ~~~shell
-   -Dplay.server.http.idleTimeout=100s
-   ~~~
+**Config file:**
+~~~shell
+jatos.urlBasePath = "/mybasepath/"
+~~~
 
+**Command-line:**
+~~~shell
+-Djatos.urlBasePath="/mybasepath/"
+~~~
 
-### Request timeout
+**Environment variable:**
+~~~shell
+JATOS_URL_BASE_PATH="/mybasepath/"
+~~~
 
-How long can a request take until it times out. Set to `null` or `infinite` to disable the timeout. Default is `infinite`.
+---
 
-1. Via **config file** property `play.server.akka.requestTimeout`
+## Embedding in frames or iframes
 
-   Example:
+The [X-Frame-Options header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) controls whether a JATOS study can be embedded in an iframe/frame.  
+Possible values are `DENY`, `SAMEORIGIN`, or `null` (allow everywhere). Default is `SAMEORIGIN`. The [CSP directive 'frame-ancestors'](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/frame-ancestors) is not currently supported by JATOS.
 
-   ~~~shell
-   play.server.akka.requestTimeout = 100s
-   ~~~
+**Config file:**
+~~~shell
+play.filters.headers.frameOptions = null
+~~~
 
-1. Via **command-line** argument `-Dplay.server.akka.requestTimeout`
+**Command-line:**
+~~~shell
+-Dplay.filters.headers.frameOptions=null
+~~~
 
-   Example:
+---
 
-   ~~~shell
-   -Dplay.server.akka.requestTimeout=100s
-   ~~~
+## Trusted Certificates
 
+You can add multiple certificates, e.g., for encrypted LDAP. _type_ can be `PKCS12`, `JKS`, or `PEM`.
 
-### URL base path
+**Config file:**
+~~~shell
+play.ws.ssl.trustManager.stores = [ { type = "PEM", path = "conf/certs/ca.pem" } ]
+~~~
 
-JATOS can be configured to use an base path. E.g we have the host _www\.example\.org_ and let JATOS run under _mybasepath_ so that all URLs start with _www\.example\.org/mybasepath/_.
+---
 
-**The path always has to start and end with a "/".** And keep in mind that if you add a base path to JATOS' URL you have to adjust all absolute paths to the study assets (in HTML and JavaScript files) too - [or use relative paths](Adapt-pre-written-code-to-run-it-in-JATOS.html#create-the-study-in-jatos) (which is recommended anyway).
+## Study Assets Root Path
 
-1. Via **config file** properties
+The study assets root folder is where all study HTML, JavaScript files, etc., are stored.  
+By default, it is in the JATOS folder and named _study_assets_root_, except in Docker, where it is under _/opt/jatos_data/study_assets_root_.
 
-   * **For v3.8.1 and lower)** `play.http.context`
-   * **For v3.8.2 and higher)** `jatos.urlBasePath`
+**Config file:**
+~~~shell
+jatos.studyAssetsRootPath = "/path/to/my/assets/root/folder"
+~~~
 
-   Example:
+**Command-line:**
+~~~shell
+-Djatos.studyAssetsRootPath="/path/to/my/assets/root/folder"
+~~~
 
-   ~~~shell
-   jatos.urlBasePath = "/mybasepath/"
-   ~~~
+**Environment variable:**
+~~~shell
+JATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
+~~~
 
-1. Via **command-line** arguments
+---
 
-   * **For v3.8.1 and lower)** `-Dplay.http.context`
-   * **For v3.8.2 and higher)** `-Djatos.urlBasePath`
-
-   ~~~shell
-   -Djatos.urlBasePath="/mybasepath/"
-   ~~~
-   
-1. Via **environment** variable `JATOS_URL_BASE_PATH`
-
-   ~~~shell
-   JATOS_URL_BASE_PATH="/mybasepath/"
-   ~~~
-
-
-### X-Frame-Options header
-
-The [X-Frame-Options header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) can be used to allow or disallow embedding a JATOS study in an [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) (or similar embedding techniques). Possible values are `DENY` (completely disallow iframes), `SAMEORIGIN` (embedding page has the same origin as the iframe), or `null` (allow iframes everywhere). By default it set to `SAMEORIGIN`.
-
-1. Via **config file** property `play.filters.headers.frameOptions`
-
-   Example:
-
-   ~~~shell
-   play.filters.headers.frameOptions = null
-   ~~~
-
-1. Via **command-line** argument `-Dplay.filters.headers.frameOptions`
-
-   Example:
-
-   ~~~shell
-   -Dplay.filters.headers.frameOptions=null
-   ~~~
-
-
-## Trusted certificates
-
-It's possible to add multiple certificates, e.g. for for encrypted LDAP. _type_ can be `PKCS12`, `JKS` or `PEM`.
-
-1. Only via **config file** property `play.ws.ssl.trustManager.stores`
-
-   ~~~shell
-   play.ws.ssl.trustManager.stores = [ { type = "PEM", path = "conf/certs/ca.pem" } ]
-   ~~~
-
-
-## Study assets root path
-
-The study assets root folder is the location where all study's HTML, JavaScript files etc. are stored. By default it is located in the JATOS folder and has the default name _study_assets_root_, except when JATOS runs in a Docker container, where it is under _/opt/jatos_data/study_assets_root"_ 
-
-1. Via **config file** property `jatos.studyAssetsRootPath`
-
-   ~~~shell
-   jatos.studyAssetsRootPath = "/path/to/my/assets/root/folder"
-   ~~~
-
-1. Via **command-line** argument `-Djatos.studyAssetsRootPath`
-
-   ~~~shell
-   -Djatos.studyAssetsRootPath="/path/to/my/assets/root/folder"
-   ~~~
-
-1. Via **environment** variable `JATOS_STUDY_ASSETS_ROOT_PATH`
-
-   ~~~shell
-   JATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
-   ~~~
-
-
-## Temporary directory path
+## Temporary Directory Path
 
 (Only in version >= 3.8.3)
 
-JATOS uses a directory to temporarily store files, e.g. during study import. By default the system's temporary directory is used (on Linux/Unix _/tmp_ or on Windows _c:\temp_), except when JATOS runs in a Docker container, when it is under _/opt/jatos_data/tmp_.
+JATOS uses a directory to temporarily store files (e.g., during study import).  
+By default, the system's temp directory is used (on Linux/Unix: _/tmp_, on Windows: _c:\temp_). In Docker, it's _/opt/jatos_data/tmp_.
 
-1. Via **config file** property `jatos.tmpPath`
+**Config file:**
+~~~shell
+jatos.tmpPath = "/my/tmp/dir"
+~~~
 
-   ~~~shell
-   jatos.tmpPath = "/my/tmp/dir"
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.tmpPath="/my/tmp/dir"
+~~~
 
-1. Via **command-line** argument `-Djatos.tmpPath`
+**Environment variable:**
+~~~shell
+JATOS_TMP_PATH="/my/tmp/dir"
+~~~
 
-   ~~~shell
-   -Djatos.tmpPath="/my/tmp/dir"
-   ~~~   
+---
 
-1. Via **environment** variable `JATOS_TMP_PATH`
+## Application Logs
 
-   ~~~shell
-   JATOS_TMP_PATH="/my/tmp/dir"
-   ~~~
+The application log records messages from the JATOS application. Logs are rotated daily, with a history of up to 30 days.
 
+_Do not confuse application logs with [study logs](#study-logs)._
 
-## Application logs
+### Application Logs Path
 
-The application log records messages from the JATOS application. The application logs use a daily log rotation with a history of maximal 30 days.
+By default, logs are in the JATOS folder under _./logs_.
 
-Don't confuse the application logs with the [study logs](#study-logs). 
+**Config file:**
+~~~shell
+jatos.logs.path = "/my/dir/logs"
+~~~
 
-### Application logs path
+**Command-line:**
+~~~shell
+-Djatos.logs.path="/my/dir/logs"
+~~~
 
-The application logs are by default in the JATOS folder under _./logs_.
+**Environment variable:**
+~~~shell
+JATOS_LOGS_PATH="/my/dir/logs"
+~~~
 
-1. Via **config file** property `jatos.logs.path`
+### Application Logs Filename
 
-   ~~~shell
-   jatos.logs.path = "/my/dir/logs"
-   ~~~
+Default filename is _application_ (without suffix).
 
-1. Via **command-line** argument `-Djatos.logs.path`
+**Config file:**
+~~~shell
+jatos.logs.filename = "myFilename"
+~~~
 
-   ~~~shell
-   -Djatos.logs.path="/my/dir/logs"
-   ~~~   
+**Command-line:**
+~~~shell
+-Djatos.logs.filename="myFilename"
+~~~
 
-1. Via **environment** variable `JATOS_LOGS_PATH`
+**Environment variable:**
+~~~shell
+JATOS_LOGS_FILENAME="myFilename"
+~~~
 
-   ~~~shell
-   JATOS_LOGS_PATH="/my/dir/logs"
-   ~~~
+### Application Logs Appender
 
-### Application logs filename
+Can be `ASYNCSTDOUT` or `ASYNCFILE` (default). Use `ASYNCSTDOUT` to log to stdout instead of a file.
 
-By default the logs filename is _application_ (without suffix).
+**Config file:**
+~~~shell
+jatos.logs.appender = ASYNCSTDOUT
+~~~
 
-1. Via **config file** property `jatos.logs.filename`
+**Command-line:**
+~~~shell
+-Djatos.logs.appender=ASYNCSTDOUT
+~~~
 
-   ~~~shell
-   jatos.logs.filename = "myFilename"
-   ~~~
+**Environment variable:**
+~~~shell
+JATOS_LOGS_APPENDER=ASYNCSTDOUT
+~~~
 
-1. Via **command-line** argument `-Djatos.logs.filename`
+---
 
-   ~~~shell
-   -Djatos.logs.filename="myFilename"
-   ~~~   
+## Study Logs
 
-1. Via **environment** variable `JATOS_LOGS_FILENAME`
+Each study in JATOS has its own study log ([more info](/Study-Log.html)).  
+Among other things, it calculates hashes of result data, which can be CPU-intensive. On smaller machines, it may be better to disable it.
 
-   ~~~shell
-   JATOS_LOGS_FILENAME="myFilename"
-   ~~~
+_Do not confuse study logs with [application logs](#application-logs)._
 
-### Application logs appender
+### Enable/Disable Study Logging
 
-The logs appender can be either `ASYNCSTDOUT` or `ASYNCFILE`. Default is `ASYNCFILE`. If you don't want to record the logs to a file but to _stdout_, change the value to `ASYNCSTDOUT`.
+Enabled by default.
 
-1. Via **config file** property `jatos.logs.appender`
+**Config file:**
+~~~shell
+jatos.studyLogs.enabled = false
+~~~
 
-   ~~~shell
-   jatos.logs.appender = ASYNCSTDOUT
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.studyLogs.enabled=false
+~~~
 
-1. Via **command-line** argument `-Djatos.logs.appender`
+### Path to Study Logs
 
-   ~~~shell
-   -Djatos.logs.appender=ASYNCSTDOUT
-   ~~~   
+By default, study logs are stored in the JATOS folder under _./study_logs_.
 
-1. Via **environment** variable `JATOS_LOGS_APPENDER`
+**Config file:**
+~~~shell
+jatos.studyLogs.path = "/path/to/my/jatos_study_logs"
+~~~
 
-   ~~~shell
-   JATOS_LOGS_APPENDER=ASYNCSTDOUT
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.studyLogs.path="/path/to/my/jatos_study_logs"
+~~~
 
+**Environment variable:**
+~~~shell
+JATOS_STUDY_LOGS_PATH="/path/to/my/jatos_study_logs"
+~~~
 
-## Study logs
+---
 
-Every study stored in JATOS has its own study log ([more info](/Study-Log.html)). Among other things, it calculates hashes of result data, which can be CPU-intensive, and on smaller machines it can be better to disable it.
+## File Extensions
 
-Don't confuse the study logs with the [application logs](#application-logs). .
+### Study Archive
 
-### Enable/disable study logging
+Specifies the file suffix of JATOS study archives. The default is `jzip`.
 
-By default study logging is enabled.
+**Config file:**
+~~~shell
+jatos.studyArchive.suffix = "zip"
+~~~
 
-1. Via **config file** property `jatos.studyLogs.enabled`
+**Command-line:**
+~~~shell
+-Djatos.studyArchive.suffix="zip"
+~~~
 
-   ~~~shell
-   jatos.studyLogs.enabled = false
-   ~~~
+### Results Archive
 
-1. Via **command-line** argument `-Djatos.studyLogs.enabled`
+Specifies the file suffix of JATOS results archives. The default suffix is `zip` (was `jrzip` older JATOS versions).
 
-   ~~~shell
-   -Djatos.studyLogs.enabled=false
-   ~~~   
+**Config file:**
+~~~shell
+jatos.resultsArchive.suffix = "xyz"
+~~~
 
-### Path to study logs
+**Command-line:**
+~~~shell
+-Djatos.resultsArchive.suffix="xyz"
+~~~
 
-By default the study logs are stored in the JATOS folder under _./study_logs_. 
+---
 
-1. Via **config file** property `jatos.studyLogs.path`
+## Study Members
 
-   ~~~shell
-   jatos.studyLogs.path = "/path/to/my/jatos_study_logs"
-   ~~~
+Allow all users on a JATOS instance to be added at once as members of a study. Useful in small setups (e.g., lab installations). Default is `false`.
 
-1. Via **command-line** argument `-Djatos.studyLogs.path`
+**Config file:**
+~~~shell
+jatos.studyMembers.allowAddAllUsers = true
+~~~
 
-   ~~~shell
-   -Djatos.studyLogs.path="/path/to/my/jatos_study_logs"
-   ~~~   
+**Command-line:**
+~~~shell
+-Djatos.studyMembers.allowAddAllUsers=true
+~~~
 
-1. Via **environment** variable `JATOS_STUDY_LOGS_PATH`
+---
 
-   ~~~shell
-   JATOS_STUDY_LOGS_PATH="/path/to/my/jatos_study_logs"
-   ~~~
+## Results Pagination
 
+Maximum number of results fetched from the DB at once. Default is 10.
 
-## Study members
+**Config file:**
+~~~shell
+jatos.maxResultsDbQuerySize = 5
+~~~
 
-Allow all users that exist on a JATOS to be added at once as members of a study. Can be useful in small setups, e.g. for a lab installation. Default is `false`.
+**Command-line:**
+~~~shell
+-Djatos.maxResultsDbQuerySize=5
+~~~
 
-1. Via **config file** property `jatos.studyMembers.allowAddAllUsers`
+---
 
-   ~~~shell
-   jatos.studyMembers.allowAddAllUsers = true
-   ~~~
+## Result Data
 
-1. Via **command-line** argument `-Djatos.studyMembers.allowAddAllUsers`
+Maximum size of the result data for one component run. Default is 5 MB. If the maximum size is reached in a study run the "quota reached" flag is set in the study and/or component result. 
 
-   ~~~shell
-   -Djatos.studyMembers.allowAddAllUsers=true
-   ~~~   
+**Config file:**
+~~~shell
+jatos.resultData.maxSize = 10MB
+~~~
 
+**Command-line:**
+~~~shell
+-Djatos.resultData.maxSize=10MB
+~~~
 
-## Results pagination
+---
 
-Maximal number of results to be fetched from the DB at once. Default is 10.
+## Result File Uploading
 
-1. Via **config file** property `jatos.maxResultsDbQuerySize`
+During study runs, it is possible to upload files to JATOS (usually with results). This is an alternative to result data stored in the database. You can also download previously uploaded files during a study run.
 
-   ~~~shell
-   jatos.maxResultsDbQuerySize = 5
-   ~~~
-
-1. Via **command-line** argument `-Djatos.maxResultsDbQuerySize`
-
-   ~~~shell
-   -Djatos.maxResultsDbQuerySize=5
-   ~~~   
-
-
-## Result data
-
-Maximum size of the result data of one component run. Default is 5MB.
-
-1. Via **config file** property `jatos.resultData.maxSize`
-
-   ~~~shell
-   jatos.resultData.maxSize = 10MB
-   ~~~
-
-1. Via **command-line** argument `-Djatos.resultData.maxSize`
-
-   ~~~shell
-   -Djatos.resultData.maxSize=10MB
-   ~~~   
-
-
-## Result file uploading
-
-During study runs it is possible to upload files to JATOS usually with results. This is an alternative to result data that are stored in the database. It is also possible to download previously uploaded files during a study run.
-
-### Enable/disable result file uploading
+### Enable/Disable Result File Uploading
 
 Default is `true` (enabled).
 
-1. Via **config file** property `jatos.resultUploads.enabled`
+**Config file:**
+~~~shell
+jatos.resultUploads.enabled = false
+~~~
 
-   ~~~shell
-   jatos.resultUploads.enabled = false
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.resultUploads.enabled=false
+~~~
 
-1. Via **command-line** argument `-Djatos.resultUploads.enabled`
+### Path to Result Files
 
-   ~~~shell
-   -Djatos.resultUploads.enabled=false
-   ~~~   
+By default, uploaded result files are stored in the JATOS folder under _./result_uploads_.
 
-### Path to result files
+**Config file:**
+~~~shell
+jatos.resultUploads.path = "/path/to/my/jatos_result_uploads"
+~~~
 
-The path where JATOS stores the uploaded result files from study runs. By default they are stored in the JATOS folder under _./result_uploads_.
+**Command-line:**
+~~~shell
+-Djatos.resultUploads.path="/path/to/my/jatos_result_uploads"
+~~~
 
-1. Via **config file** property `jatos.resultUploads.path`
+**Environment variable:**
+~~~shell
+JATOS_RESULT_UPLOADS_PATH="/path/to/my/jatos_result_uploads"
+~~~
 
-   ~~~shell
-   jatos.resultUploads.path = "/path/to/my/jatos_result_uploads"
-   ~~~
+### Max File Size
 
-1. Via **command-line** argument `-Djatos.resultUploads.path`
+Maximum file size per uploaded file. Default is 30MB.
 
-   ~~~shell
-   -Djatos.resultUploads.path="/path/to/my/jatos_result_uploads"
-   ~~~   
+**Config file:**
+~~~shell
+jatos.resultUploads.maxFileSize = 100MB
+~~~
 
-1. Via **environment** variable `JATOS_RESULT_UPLOADS_PATH`
+**Command-line:**
+~~~shell
+-Djatos.resultUploads.maxFileSize=100MB
+~~~
 
-   ~~~shell
-   JATOS_RESULT_UPLOADS_PATH="/path/to/my/jatos_result_uploads"
-   ~~~
+**Environment variable:**
+~~~shell
+JATOS_RESULT_UPLOADS_MAX_FILE_SIZE=100MB
+~~~
 
-### Max file size
+### All Files Size Limit per Study Run
 
-Specifies the maximum file size per uploaded file. Default is 30MB.
+Maximum total size of all files uploaded during one study run. Default is 50MB. If the maximum size is reached in a study run the "quota reached" flag is set in the study result. 
 
-1. Via **config file** property `jatos.resultUploads.maxFileSize`
+**Config file:**
+~~~shell
+jatos.resultUploads.limitPerStudyRun = 100MB
+~~~
 
-   ~~~shell
-   jatos.resultUploads.maxFileSize = 100MB
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.resultUploads.limitPerStudyRun=100MB
+~~~
 
-1. Via **command-line** argument `-Djatos.resultUploads.maxFileSize`
+**Environment variable:**
+~~~shell
+JATOS_RESULT_UPLOADS_LIMIT_PER_STUDY_RUN=100MB
+~~~
 
-   ~~~shell
-   -Djatos.resultUploads.maxFileSize=100MB
-   ~~~
-
-1. Via **environment** variable `JATOS_RESULT_UPLOADS_MAX_FILE_SIZE`
-
-   ~~~shell
-   JATOS_RESULT_UPLOADS_MAX_FILE_SIZE=100MB
-   ~~~
-
-### All files size limit per study run
-
-Specifies the maximum file size of all files together that are uploaded during one study run. Default is 50MB.
-
-1. Via **config file** property `jatos.resultUploads.limitPerStudyRun`
-
-   ~~~shell
-   jatos.resultUploads.limitPerStudyRun = 100MB
-   ~~~
-
-1. Via **command-line** argument `-Djatos.resultUploads.limitPerStudyRun`
-
-   ~~~shell
-   -Djatos.resultUploads.limitPerStudyRun=100MB
-   ~~~
-
-1. Via **environment** variable `JATOS_RESULT_UPLOADS_LIMIT_PER_STUDY_RUN`
-
-   ~~~shell
-   JATOS_RESULT_UPLOADS_LIMIT_PER_STUDY_RUN=100MB
-   ~~~
-
+---
 
 ## Superuser
 
-The _Superuser_ role can be granted to a user and it allows this user to **access ANY study** on this JATOS as if they were a member of this study. This **includes accessing the result data and even deleting the study itself**. This can be useful in small setups, e.g. for a lab installation or if there is a dedicated person responsible for running online studies. Default is `false`.
+The _Superuser_ role allows a user to **access ANY study** on this JATOS as if they were a member, including accessing result data and deleting the study. Useful in small setups or when a dedicated person manages studies. Default is `false`.
 
-If set to `true` an user with the Admin role can grant the role Superuser to any user.
+If set to `true`, an Admin can grant the Superuser role to any user.
 
-1. Via **config file** property `jatos.user.role.allowSuperuser`
+**Config file:**
+~~~shell
+jatos.user.role.allowSuperuser = true
+~~~
 
-   ~~~shell
-   jatos.user.role.allowSuperuser = true
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.user.role.allowSuperuser=true
+~~~
 
-1. Via **command-line** argument `-Djatos.user.role.allowSuperuser`
+---
 
-   ~~~shell
-   -Djatos.user.role.allowSuperuser=true
-   ~~~
+## LDAP Authentication
 
+Currently, LDAP users must be added manually in JATOS' _User manager_ (with the LDAP switch enabled). Only authentication is done via LDAP.
 
-## LDAP authentication
+If your LDAP server uses encryption, add your certificate to JATOS' trusted certificates using `play.ws.ssl.trustManager.stores` (only possible in a config file).  
+For example, if your certificate is at `/jatos/conf/certs/ca.pem`:
 
-At the moment LDAP users still have to be created manually in JATOS' _User manager_ (with the checkbox LDAP turned on). Only the authentication is done via LDAP.
-
-If your LDAP server uses encryption, you have to add your certificate to JATOS' trusted certificates defined with `play.ws.ssl.trustManager.stores` (only possible in a config file). E.g., if your certificate's location is in `/jatos/conf/certs/ca.pem`, then use the following to add it:
-
-```
+~~~shell
 play.ws.ssl.trustManager.stores = [
     { type = "PEM", path = "/jatos/conf/certs/ca.pem" }
     { path: ${java.home}/lib/security/cacerts, password = "changeit" }
 ]
-```
+~~~
 
-The first line adds your certificate (_type_ can be `PKCS12`, `JKS` or `PEM`). The second line adds Java's default key store. Its default password is "changeit" ([don't change it](https://stackoverflow.com/a/32371148/1278769)).
-
+The first line adds your certificate (_type_ can be `PKCS12`, `JKS`, or `PEM`). The second line adds Java's default keystore. Its default password is "changeit" ([do not change it](https://stackoverflow.com/a/32371148/1278769)).
 
 ### LDAP URL
 
-Specifies URL of the LDAP server. Not set or an empty string disables authentication via LDAP. Default is empty (`""`).
+Specifies the LDAP server URL. Not set or empty disables LDAP authentication. Default is empty (`""`).
 
-1. Via **config file** property `jatos.user.authentication.ldap.url`
+**Config file:**
+~~~shell
+jatos.user.authentication.ldap.url = "ldap://my.ldap.org:389"
+~~~
 
-   ~~~shell
-   jatos.user.authentication.ldap.url = "ldap://my.ldap.org:389"
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.ldap.url="ldap://my.ldap.org:389"
+~~~
 
-1. Via **command-line** argument `-Djatos.user.authentication.ldap.url`
+### LDAP User Attribute Origin
 
-   ~~~shell
-   -Djatos.user.authentication.ldap.url="ldap://my.ldap.org:389"
-   ~~~
+Defines the LDAP user attribute name, e.g., 'uid' or 'cn'. Default is 'uid'.
 
-### LDAP base DN
+**Config file:**
+~~~shell
+jatos.user.authentication.ldap.userAttribute = "cn"
+~~~
 
-Specifies the base DN (distinguished name). It can be one DN with a single string (e.g. `"ou=students,dc=example,dc=com"`) or a list of DNs in squared brackets (e.g. `["ou=students,dc=example,dc=com", "ou=scientists,dc=example,dc=com"]`). Not set or an empty string disables authentication via LDAP. Default is empty (`""`).
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.ldap.userAttribute="cn"
+~~~
 
-1. Via **config file** property `jatos.user.authentication.ldap.basedn`
+### LDAP Base DN
 
-   ~~~shell
-   jatos.user.authentication.ldap.basedn = "dc=example,dc=com"
-   ~~~
+Specifies the base DN (distinguished name). Can be a single DN string or a list of DNs in brackets. Not set or empty disables LDAP authentication. Default is empty (`""`).
 
-1. Via **command-line** argument `-Djatos.user.authentication.ldap.basedn`
+**Config file:**
+~~~shell
+jatos.user.authentication.ldap.basedn = "dc=example,dc=com"
+~~~
 
-   ~~~shell
-   -Djatos.user.authentication.ldap.basedn="dc=example,dc=com"
-   ~~~
+or as a list:
 
-### LDAP admin DN and password
+~~~shell
+jatos.user.authentication.ldap.basedn = ["ou=students,dc=example,dc=com", "ou=scientists,dc=example,dc=com"]
+~~~
 
-Specifies an DN (distinguished name) and password of an (optional) admin user that has the right to search for other users. Some LDAP servers need this, if it is impossible to bind directly to an _uid_. Not set or an empty string means no admin user is needed. Default is empty (`""`).
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.ldap.basedn="dc=example,dc=com"
+~~~
 
-1. Via **config file** properties `jatos.user.authentication.ldap.admin.dn` and `jatos.user.authentication.ldap.admin.password`
+or as a list:
 
-   ~~~shell
-   jatos.user.authentication.ldap.admin.dn = "cn=read-only-admin,dc=example,dc=com"
-   jatos.user.authentication.ldap.admin.password = "mypassword"
-   ~~~
+~~~shell
+-Djatos.user.authentication.ldap.basedn.0=ou=students,dc=example,dc=com
+-Djatos.user.authentication.ldap.basedn.1=ou=scientists,dc=example,dc=com
+~~~
 
-1. Via **command-line** arguments `-Djatos.user.authentication.ldap.admin.dn` and `-Djatos.user.authentication.ldap.admin.password`
+### LDAP Admin DN and Password
 
-   ~~~shell
-   -Djatos.user.authentication.ldap.admin.dn="cn=read-only-admin,dc=example,dc=com"
-   -Djatos.user.authentication.ldap.admin.password="mypassword"
-   ~~~
+Specifies a DN and password for an (optional) admin user with rights to search for other users. Some LDAP servers require this if binding directly to a _uid_ is not possible. Not set or empty means no admin user is needed. Default is empty (`""`).
 
-### LDAP timeout
+**Config file:**
+~~~shell
+jatos.user.authentication.ldap.admin.dn = "cn=read-only-admin,dc=example,dc=com"
+jatos.user.authentication.ldap.admin.password = "mypassword"
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.ldap.admin.dn="cn=read-only-admin,dc=example,dc=com"
+-Djatos.user.authentication.ldap.admin.password="mypassword"
+~~~
+
+### LDAP Timeout
 
 Time in milliseconds JATOS waits for a response from your LDAP server. Default is 5000 ms.
 
-1. Via **config file** property `jatos.user.authentication.ldap.timeout`
+**Config file:**
+~~~shell
+jatos.user.authentication.ldap.timeout = 10000
+~~~
 
-   ~~~shell
-   jatos.user.authentication.ldap.timeout = 10000
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.ldap.timeout=10000
+~~~
 
-1. Via **command-line** argument `-Djatos.user.authentication.ldap.timeout`
-
-   ~~~shell
-   -Djatos.user.authentication.ldap.timeout=10000
-   ~~~
-
+---
 
 ## Google Sign-In
 
-JATOS users can be authenticated by Google Sign-in. Not set or an empty string disables authentication via Google Sign-In. Default is empty (`""`).
+JATOS users can be authenticated by Google Sign-In. Not set or empty disables Google authentication. Default is empty (`""`).
 
 Specifies the [Google API client ID](https://developers.google.com/identity/oauth2/web/guides/get-google-api-clientid).
 
-1. Via **config file** property `jatos.user.authentication.oauth.googleClientId`
+**Config file:**
+~~~shell
+jatos.user.authentication.oauth.googleClientId = "1234567890-abc123abc123.apps.googleusercontent.com"
+~~~
 
-   ~~~shell
-   jatos.user.authentication.oauth.googleClientId = "1234567890-abc123abc123.apps.googleusercontent.com"
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.oauth.googleClientId="1234567890-abc123abc123.apps.googleusercontent.com"
+~~~
 
-1. Via **command-line** argument `-Djatos.user.authentication.oauth.googleClientId`
+---
 
-   ~~~shell
-   -Djatos.user.authentication.oauth.googleClientId="1234567890-abc123abc123.apps.googleusercontent.com"
-   ~~~
-
-
-## OpenID Connect (OIDC) authentication
+## OpenID Connect (OIDC) Authentication
 
 (Only in version >= 3.8.5)
 
-JATOS users can be authenticated by [OIDC sign-in](https://openid.net/developers/how-connect-works/).
+JATOS users can be authenticated by [OIDC sign-in](https://openid.net/developers/how-connect-works/), e.g., with [Keycloak](https://www.keycloak.org/).
 
-### OIDC discovery URL
+### OIDC Discovery URL
 
-Specifies the OIDC provider's discovery URL. It usually ends in _.well-known/openid-configuration_.
+Specifies the OIDC provider's discovery URL (usually ends in `.well-known/openid-configuration`).
 
-1. Via **config file** property `jatos.user.authentication.oidc.discoveryUrl`
+**Config file:**
+~~~shell
+jatos.user.authentication.oidc.discoveryUrl = "http://myOidcProvider/.well-known/openid-configuration"
+~~~
 
-   ~~~shell
-   jatos.user.authentication.oidc.discoveryUrl = "http://myOidcProvider/.well-known/openid-configuration"
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.oidc.discoveryUrl="http://myOidcProvider/.well-known/openid-configuration"
+~~~
 
-1. Via **command-line** argument `-Djatos.user.authentication.oidc.discoveryUrl`
+### OIDC Client ID
 
-   ~~~shell
-   -Djatos.user.authentication.oidc.discoveryUrl="http://myOidcProvider/.well-known/openid-configuration"
-   ~~~
+Specifies the OIDC client ID. Not set or empty disables OIDC authentication. Default is empty (`""`).
 
-### OIDC client ID
+**Config file:**
+~~~shell
+jatos.user.authentication.oidc.clientId = "myClientId"
+~~~
 
-Specifies the OIDC client ID. Not set or an empty string disables authentication via OIDC Sign-In. Default is empty (`""`).
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.oidc.clientId="myClientId"
+~~~
 
-1. Via **config file** property `jatos.user.authentication.oidc.clientId`
+### OIDC Client Secret
 
-   ~~~shell
-   jatos.user.authentication.oidc.clientId = "myClientId"
-   ~~~
+Specifies the OIDC client secret. Optional; can be left empty (`""`).
 
-1. Via **command-line** argument `-Djatos.user.authentication.oidc.clientId`
+**Config file:**
+~~~shell
+jatos.user.authentication.oidc.clientSecret = "myClientSecret"
+~~~
 
-   ~~~shell
-   -Djatos.user.authentication.oidc.clientId="myClientId"
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.oidc.clientSecret="myClientSecret"
+~~~
 
-### OIDC client secret
+### OIDC Scope
 
-Specifies the OIDC client secret. This is optional and can be left empty (`""`).
+Specifies your OIDC scope. Default is `["openid"]`.
 
-1. Via **config file** property `jatos.user.authentication.oidc.clientSecret`
+**Config file:**
+~~~shell
+jatos.user.authentication.oidc.scope = ["your", "scopes"]
+~~~
 
-   ~~~shell
-   jatos.user.authentication.oidc.clientSecret = "myClientSecret"
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.oidc.scope.0=your
+-Djatos.user.authentication.oidc.scope.1=scopes
+~~~
 
-1. Via **command-line** argument `-Djatos.user.authentication.oidc.clientSecret`
+### OIDC Username Origin
 
-   ~~~shell
-   -Djatos.user.authentication.oidc.clientSecret="myClientSecret"
-   ~~~
+Specifies where the username for the user in JATOS should be taken from. Can be `"subject"` or `"email"`. Default is `"subject"`.
 
-### OIDC ID token signing algorithm
+**Config file:**
+~~~shell
+jatos.user.authentication.oidc.usernameFrom = "email"
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.oidc.usernameFrom="email"
+~~~
+
+### OIDC ID Token Signing Algorithm
 
 Specifies the OIDC ID token signing algorithm. Default is `RS256`.
 
-1. Via **config file** property `jatos.user.authentication.oidc.idTokenSigningAlgorithm`
+**Config file:**
+~~~shell
+jatos.user.authentication.oidc.idTokenSigningAlgorithm = "ES512"
+~~~
 
-   ~~~shell
-   jatos.user.authentication.oidc.idTokenSigningAlgorithm = "ES512"
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.oidc.idTokenSigningAlgorithm="ES512"
+~~~
 
-1. Via **command-line** argument `-Djatos.user.authentication.oidc.idTokenSigningAlgorithm`
-
-   ~~~shell
-   -Djatos.user.authentication.oidc.idTokenSigningAlgorithm="ES512"
-   ~~~
-
-### OIDC sign-in button text
+### OIDC Sign-In Button Text
 
 Specifies the text of the OIDC sign-in button on the login page. Default is `Sign in with OIDC`.
 
-1. Via **config file** property `jatos.user.authentication.oidc.signInButtonText`
+**Config file:**
+~~~shell
+jatos.user.authentication.oidc.signInButtonText = "Sign in with ABC university"
+~~~
 
-   ~~~shell
-   jatos.user.authentication.oidc.signInButtonText = "Sign in with ABC university"
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.oidc.signInButtonText="Sign in with ABC university"
+~~~
 
-1. Via **command-line** argument `-Djatos.user.authentication.oidc.signInButtonText`
+### OIDC Sign-In Button Logo
 
-   ~~~shell
-   -Djatos.user.authentication.oidc.signInButtonText="Sign in with ABC university"
-   ~~~
+Specifies the URL of a logo to use instead of the standard OIDC logo. Default is the OIDC logo.
 
-### OIDC sign-in button logo
+**Config file:**
+~~~shell
+jatos.user.authentication.oidc.signInButtonLogoUrl = "http://somedomain/logo.svg"
+~~~
 
-Specifies the URL of a logo that can be used instead of the standard OIDC logo, e.g. a university logo. Default is the OIDC logo.
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.oidc.signInButtonLogoUrl="http://somedomain/logo.svg"
+~~~
 
-1. Via **config file** property `jatos.user.authentication.oidc.signInButtonLogoUrl`
+### OIDC Success Feedback
 
-   ~~~shell
-   jatos.user.authentication.oidc.signInButtonLogoUrl = "http://somedomain/logo.svg"
-   ~~~
+Specifies the text of a message shown after a successful sign-in. If left empty (`""`), no message is shown. Default is `""`.
 
-1. Via **command-line** argument `-Djatos.user.authentication.oidc.signInButtonLogoUrl`
+**Config file:**
+~~~shell
+jatos.user.authentication.oidc.successFeedback = "You successfully signed in with ABC university"
+~~~
 
-   ~~~shell
-   -Djatos.user.authentication.oidc.signInButtonLogoUrl="http://somedomain/logo.svg"
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.oidc.successFeedback="You successfully signed in with ABC university"
+~~~
 
-### OIDC success feedback
+---
 
-Specifies the text of a message that is shown after a successful sign-in. If left empty (`""`) no message is shown. Default is `""`.
-
-1. Via **config file** property `jatos.user.authentication.oidc.successFeedback`
-
-   ~~~shell
-   jatos.user.authentication.oidc.successFeedback = "You successfully signed in with ABC university"
-   ~~~
-
-1. Via **command-line** argument `-Djatos.user.authentication.oidc.successFeedback`
-
-   ~~~shell
-   -Djatos.user.authentication.oidc.successFeedback="You successfully signed in with ABC university"
-   ~~~
-
-
-## ORCID (orcid.org) authentication
+## ORCID Authentication
 
 (Only in version >= 3.8.5)
 
-JATOS users can be authenticated by [ORCID sign-in](https://info.orcid.org/documentation/features/public-api/orcid-as-a-sign-in-option-to-your-system/). Internally ORCID uses OpenId Connect.
+JATOS users can be authenticated by [ORCID sign-in](https://info.orcid.org/documentation/features/public-api/orcid-as-a-sign-in-option-to-your-system/). Internally, ORCID uses OpenID Connect.
 
-### ORCID client ID
+### ORCID Client ID
 
-Specifies your ORCID client ID.
+**Config file:**
+~~~shell
+jatos.user.authentication.orcid.clientId = "APP-ABCDEFGHIJKLMNOP"
+~~~
 
-1. Via **config file** property `jatos.user.authentication.orcid.clientId`
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.orcid.clientId="APP-ABCDEFGHIJKLMNOP"
+~~~
 
-   ~~~shell
-   jatos.user.authentication.orcid.clientId = "APP-ABCDEFGHIJKLMNOP"
-   ~~~
+### ORCID Client Secret
 
-1. Via **command-line** argument `-Djatos.user.authentication.orcid.clientId`
+**Config file:**
+~~~shell
+jatos.user.authentication.orcid.clientSecret = "1234abcd-12ab-12ab-12ab-123456abcdef"
+~~~
 
-   ~~~shell
-   -Djatos.user.authentication.orcid.clientId="APP-ABCDEFGHIJKLMNOP"
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.orcid.clientSecret="1234abcd-12ab-12ab-12ab-123456abcdef"
+~~~
 
-### ORCID client secret
+### ORCID OIDC Scope
 
-Specifies your ORCID client secret.
+Default is `["openid"]`.
 
-1. Via **config file** property `jatos.user.authentication.orcid.clientSecret`
+**Config file:**
+~~~shell
+jatos.user.authentication.orcid.scope = ["your", "scopes"]
+~~~
 
-   ~~~shell
-   jatos.user.authentication.orcid.clientSecret = "1234abcd-12ab-12ab-12ab-123456abcdef"
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.orcid.scope.0=your
+-Djatos.user.authentication.orcid.scope.1=scopes
+~~~
 
-1. Via **command-line** argument `-Djatos.user.authentication.orcid.clientSecret`
+### ORCID Username Origin
 
-   ~~~shell
-   -Djatos.user.authentication.orcid.clientSecret="1234abcd-12ab-12ab-12ab-123456abcdef"
-   ~~~
+Specifies where the username for the user in JATOS should be taken from. Can be `"subject"` or `"email"`. Default is `"subject"`.
 
+**Config file:**
+~~~shell
+jatos.user.authentication.orcid.usernameFrom = "email"
+~~~
 
-## User password restrictions
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.orcid.usernameFrom="email"
+~~~
 
-By default JATOS' keeps it simple and relies on the users to choose save passwords: it just enforces a length of at least 7 characters. But this can be changed with the following two properties.
+---
 
-### Password length
+## SURF SRAM (sram.surf.nl) Authentication
 
-1. Via **config file** property `jatos.user.password.length`
+JATOS users can be authenticated by [SURF SRAM sign-in](https://sram.surf.nl). Internally, SURF SRAM uses OpenID Connect.
 
-   ~~~shell
-   jatos.user.password.length = 8
-   ~~~
+### SURF SRAM Client ID
 
-1. Via **command-line** argument `-Djatos.user.password.length`
+**Config file:**
+~~~shell
+jatos.user.authentication.sram.clientId = "APP-ABCDEFGHIJKLMNOP"
+~~~
 
-   ~~~shell
-   -Djatos.user.password.length=8
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.sram.clientId="APP-ABCDEFGHIJKLMNOP"
+~~~
 
-### Password strength
+### SURF SRAM Client Secret
 
-Can be one of the following. Default is 0.
+**Config file:**
+~~~shell
+jatos.user.authentication.sram.clientSecret = "1234abcd1234abcd1234abcd1234abcd"
+~~~
 
-* 0 - No restrictions on characters
-* 1 - At least one Latin letter and one number
-* 2 - At least one Latin letter, one number and one special character (out of `#?!@$%^&*-`)
-* 3 - At least one uppercase Latin letter, one lowercase Latin letter, one number and one special character (out of `#?!@$%^&*-`)
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.sram.clientSecret="1234abcd1234abcd1234abcd1234abcd"
+~~~
 
-1. Via **config file** property `jatos.user.password.strength`
+### SURF SRAM OIDC Scope
 
-   ~~~shell
-   jatos.user.password.strength = 3
-   ~~~
+Default is `["openid", "profile", "email", "voperson_external_id"]`.
 
-1. Via **command-line** argument `-Djatos.user.password.strength`
+**Config file:**
+~~~shell
+jatos.user.authentication.sram.scope = ["your", "scopes"]
+~~~
 
-   ~~~shell
-   -Djatos.user.password.strength=3
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.sram.scope.0=your
+-Djatos.user.authentication.sram.scope.1=scopes
+~~~
 
+### SURF SRAM Username Origin
+
+Specifies where the username for the user in JATOS should be taken from. The username is defined by either SRAM's "subject", "email", or "eduperson_principal_name". Default is `"eduperson_principal_name"`.
+
+**Config file:**
+~~~shell
+jatos.user.authentication.sram.usernameFrom = "subject"
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.sram.usernameFrom="subject"
+~~~
+
+---
+
+## SURFconext (surfconext.nl) Authentication
+
+JATOS users can be authenticated by [SURFconext sign-in](https://surfconext.nl). Internally, SURFconext uses OpenID Connect.
+
+### SURFconext Discovery URL
+
+**Config file:**
+~~~shell
+jatos.user.authentication.conext.discoveryUrl = "http://myOidcProvider/.well-known/openid-configuration"
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.conext.discoveryUrl="http://myOidcProvider/.well-known/openid-configuration"
+~~~
+
+### SURFconext Client ID
+
+**Config file:**
+~~~shell
+jatos.user.authentication.conext.clientId = "APP-ABCDEFGHIJKLMNOP"
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.conext.clientId="APP-ABCDEFGHIJKLMNOP"
+~~~
+
+### SURFconext Client Secret
+
+**Config file:**
+~~~shell
+jatos.user.authentication.conext.clientSecret = "1234abcd-12ab-12ab-12ab-123456abcdef"
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.conext.clientSecret="1234abcd-12ab-12ab-12ab-123456abcdef"
+~~~
+
+### SURFconext OIDC Scope
+
+Default is `["openid"]`.
+
+Note: SURFconext does not use scopes to request claims (also see the [documentation](https://servicedesk.surf.nl/wiki/spaces/IAM/pages/128909987/OpenID+Connect+features#OpenIDConnectfeatures-Scopes)). Claims are configured per service entity in the [Service Provider Dashboard](https://sp.surfconext.nl). For JATOS to function, enable the claims "name", "email", and "eduperson_principal_name". If the SURFconext username origin is set to a value other than the default of `"eduperson_principal_name"`, then the "eduperson_principal_name" claim may be disabled.
+
+**Config file:**
+~~~shell
+jatos.user.authentication.conext.scope = ["your", "scopes"]
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.conext.scope.0=your
+-Djatos.user.authentication.conext.scope.1=scopes
+~~~
+
+### SURFconext Username Origin
+
+Specifies where the username for the user in JATOS should be taken from. The username is defined by either SURFconext's "subject", "email", or "eduperson_principal_name". Default is `"eduperson_principal_name"`.
+
+Note that SURFconext's subject can be of two types: transient or persistent (also see the [documentation](https://servicedesk.surf.nl/wiki/spaces/IAM/pages/128909938/Claims#Claims-Useridentifiers)). If the SURFconext username origin is set to `"subject"`, then the service entity's subject type must be set to **persistent** in the [Service Provider Dashboard](https://sp.surfconext.nl).
+
+**Config file:**
+~~~shell
+jatos.user.authentication.conext.usernameFrom = "subject"
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.user.authentication.conext.usernameFrom="subject"
+~~~
+
+---
+
+## User Password Restrictions
+
+By default, JATOS enforces only a minimum length of 7 characters. You can increase restrictions as needed.
+
+### Password Length
+
+**Config file:**
+~~~shell
+jatos.user.password.length = 8
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.user.password.length=8
+~~~
+
+### Password Strength
+
+Possible values:
+- 0: No restrictions (default)
+- 1: At least one Latin letter and one number
+- 2: At least one Latin letter, one number, and one special character (out of `#?!@$%^&*-`)
+- 3: At least one uppercase Latin letter, one lowercase Latin letter, one number, and one special character (out of `#?!@$%^&*-`)
+
+**Config file:**
+~~~shell
+jatos.user.password.strength = 3
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.user.password.strength=3
+~~~
+
+---
 
 ## Database
 
 See [JATOS with MySQL](JATOS-with-MySQL.html).
 
-Old style database properties beginning with _db.default_ are deprecated and the new properties beginning with _jatos.db_ should be used instead.
+Old-style properties beginning with _db.default_ are deprecated; use _jatos.db_* properties instead.
 
 ### Database URL
 
-1. Via **config file** property `jatos.db.url`
+**Config file:**
+~~~shell
+jatos.db.url = "jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+~~~
 
-   ~~~shell
-   jatos.db.url = "jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.db.url="jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+~~~
 
-1. Via **command-line** argument `-Djatos.db.url`
+**Environment variable:**
+~~~shell
+JATOS_DB_URL="jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+~~~
 
-   ~~~shell
-   -Djatos.db.url="jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
-   ~~~
+### Username and Password
 
-1. Via **environment** variable `JATOS_DB_URL`
+**Config file:**
+~~~shell
+jatos.db.username = "myusername"
+jatos.db.password = "mypassword"
+~~~
 
-   ~~~shell
-   JATOS_DB_URL="jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.db.username="myusername" -Djatos.db.password="mypassword"
+~~~
 
-### Username and password
+**Environment variable:**
+~~~shell
+JATOS_DB_USERNAME="myusername"
+JATOS_DB_PASSWORD="mypassword"
+~~~
 
-1. Via **config file** properties `jatos.db.username` and `jatos.db.password`
+### Database Driver
 
-   ~~~shell
-   jatos.db.username = "myusername"
-   jatos.db.password = "mypassword"
-   ~~~
+For modern MySQL or MariaDB, use `com.mysql.cj.jdbc.Driver`.
 
-1. Via **command-line** argument `-Djatos.db.username` and `-Djatos.db.password`
+**Config file:**
+~~~shell
+jatos.db.driver = "com.mysql.cj.jdbc.Driver"
+~~~
 
-   ~~~shell
-   -Djatos.db.username = "myusername" -Djatos.db.password = "mypassword"
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.db.driver="com.mysql.cj.jdbc.Driver"
+~~~
 
-1. Via **environment** variable `JATOS_DB_USERNAME` and `JATOS_DB_PASSWORD`
+**Environment variable:**
+~~~shell
+JATOS_DB_DRIVER="com.mysql.cj.jdbc.Driver"
+~~~
 
-   ~~~shell
-   JATOS_DB_USERNAME="myusername"
-   JATOS_DB_PASSWORD="mypassword"
-   ~~~
+### Database Connection Pool Size
 
-### Database driver
+Specifies the number of database connections. This setting should be configured in conjunction with `jatos.threadPool.size`. The default is 100.
 
-For modern MySQL or MariaDB databases this property needs to be set to `com.mysql.cj.jdbc.Driver`.
+**Config file:**
+~~~shell
+jatos.db.connectionPool.size = 140
+~~~
 
-1. Via **config file** property `jatos.db.driver`
+**Command-line:**
+~~~shell
+-Djatos.db.connectionPool.size=140
+~~~
 
-   ~~~shell
-   jatos.db.driver = "com.mysql.cj.jdbc.Driver"
-   ~~~
+**Environment variable:**
+~~~shell
+JATOS_DB_CONNECTIONPOOL_SIZE=140
+~~~
 
-1. Via **command-line** argument `-Djatos.db.driver`
+---
 
-   ~~~shell
-   -Djatos.db.driver="com.mysql.cj.jdbc.Driver"
-   ~~~
+## JATOS Thread Pool Size
 
-1. Via **environment** variable `JATOS_DB_DRIVER`
+The size of the thread pool used by JATOS. The default is 150. This setting should be configured in conjunction with `jatos.db.connectionPool.size`. As a rule of thumb, `jatos.threadPool.size` can be set to `1.5 * jatos.db.connectionPool.size`.
 
-   ~~~shell
-   JATOS_DB_DRIVER="com.mysql.cj.jdbc.Driver"
-   ~~~
+**Config file:**
+~~~shell
+jatos.threadPool.size = 210
+~~~
 
+**Command-line:**
+~~~shell
+-Djatos.threadPool.size=210
+~~~
 
-## Multi-node mode
+**Environment variable:**
+~~~shell
+JATOS_THREADPOOL_SIZE=210
+~~~
 
-If you intend to run JATOS on multiple machines in parallel in a cluster you have to set this property to `true`. Default is `false`.
+---
 
-1. Via **config file** property `jatos.multiNode`
+## Multi-Node Mode
 
-   ~~~shell
-   jatos.multiNode = true
-   ~~~
+If you intend to run JATOS on multiple machines in parallel (a cluster), set this property to `true`. Default is `false`.
 
-1. Via **command-line** argument `-Djatos.multiNode`
+**Config file:**
+~~~shell
+jatos.multiNode = true
+~~~
 
-   ~~~shell
-   -Djatos.multiNode = true
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.multiNode=true
+~~~
 
+---
 
-## User session configuration
+## User Session Configuration
 
 ### Timeout
 
 User session timeout in minutes. Default is 1440 minutes (1 day).
 
-1. Via **config file** property `jatos.userSession.timeout`
+**Config file:**
+~~~shell
+jatos.userSession.timeout = 180
+~~~
 
-   ~~~shell
-   jatos.userSession.timeout = 180
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.userSession.timeout=180
+~~~
 
-1. Via **command-line** argument `-Djatos.userSession.timeout`
+### Inactivity Timeout
 
-   ~~~shell
-   -Djatos.userSession.timeout = 180
-   ~~~
+User session timeout after inactivity, in minutes. Default is 60 minutes.
 
-### Inactivity timeout
+**Config file:**
+~~~shell
+jatos.userSession.inactivity = 120
+~~~
 
-User session timeout after inactivity in minutes. Default is 60 minutes.
+**Command-line:**
+~~~shell
+-Djatos.userSession.inactivity=120
+~~~
 
-1. Via **config file** property `jatos.userSession.inactivity`
+### Secure Session
 
-   ~~~shell
-   jatos.userSession.inactivity = 120
-   ~~~
+Restrict user access to HTTPS. Default is `false`.
 
-1. Via **command-line** argument `-Djatos.userSession.inactivity`
+**Config file:**
+~~~shell
+play.http.session.secure = true
+~~~
 
-   ~~~shell
-   -Djatos.userSession.inactivity=120
-   ~~~
+**Command-line:**
+~~~shell
+-Dplay.http.session.secure=true
+~~~
 
-### Secure session
+---
 
-This property can be used to restrict user access to HTTPS. Default is `false`.
+## JATOS ID Cookies
 
-1. Via **config file** property `play.http.session.secure`
+### Secure ID Cookies
 
-   ~~~shell
-   play.http.session.secure = true
-   ~~~
+Restrict participant access to HTTPS by setting the ID cookie's _secure_ attribute. Default is `false`.
 
-1. Via **command-line** argument `-Dplay.http.session.secure`
+**Config file:**
+~~~shell
+jatos.idCookies.secure = true
+~~~
 
-   ~~~shell
-   -Dplay.http.session.secure=true
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.idCookies.secure=true
+~~~
 
+### _SameSite_ Attribute
 
-## ID cookies
+Defines the ID cookie's [_SameSite_ attribute](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie). Possible values: `Lax`, `Strict`, `null` (not set), and `None`. Setting to `Strict` makes the use of external recruiting tools (like Prolific) impossible. Default is `None`.
 
-### Secure ID cookies
+**Config file:**
+~~~shell
+jatos.idCookies.sameSite = "Lax"
+~~~
 
-This property can be used to restrict participant access to HTTPS. Sets the ID cookie's _secure_ attribute. Default is `false`.
+**Command-line:**
+~~~shell
+-Djatos.idCookies.sameSite="Lax"
+~~~
 
-1. Via **config file** property `jatos.idCookies.secure`
+### ID Cookie Limit
 
-   ~~~shell
-   jatos.idCookies.secure = true
-   ~~~
+Maximum number of ID cookies per browser (limits parallel study runs in the same browser). Default is 10. Must be at least 1. More than 20 may cause a 'HTTP header too large' error.
 
-1. Via **command-line** argument `-Djatos.idCookies.secure`
+**Config file:**
+~~~shell
+jatos.idCookies.limit = 20
+~~~
 
-   ~~~shell
-   -Djatos.idCookies.secure=true
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.idCookies.limit=20
+~~~
 
-### _SameSite_ attribute
+---
 
-Defines the IDCookies' _SameSite_ attribute. Possible values are `None`, `Lax`, or `Strict`. Setting to `Strict` makes the usage of external recruiting tools, like MTurk, impossible. Default is `None`.
+## PID File Location
 
-1. Via **config file** property `jatos.idCookies.sameSite`
+Defines the location of the PID file.
 
-   ~~~shell
-   jatos.idCookies.sameSite = "Lax"
-   ~~~
+**Config file:**
+~~~shell
+play.pidfile.path = "/var/run/jatos.pid"
+~~~
 
-1. Via **command-line** argument `-Djatos.idCookies.sameSite`
+**Command-line:**
+~~~shell
+-Dplay.pidfile.path="/var/run/jatos.pid"
+~~~
 
-   ~~~shell
-   -Djatos.idCookies.sameSite = "Lax"
-   ~~~
+---
 
+## Home Page
 
-## PID file location
+### Welcome Message
 
-Defines the location of the PID file in the file system.
+Specifies a URL for JATOS to fetch static HTML, which will be shown on the home page instead of the default welcome message ([more info](/Customize-JATOS-Home-Page.html)). If left empty, the default message is shown.
 
-1. Via **config file** property `play.pidfile.path`
+**Config file:**
+~~~shell
+jatos.brandingUrl = "https://mydomain.com/foobar-university-welcome-page.html"
+~~~
 
-   ~~~shell
-   play.pidfile.path = "/var/run/jatos.pid"
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.brandingUrl="https://mydomain.com/foobar-university-welcome-page.html"
+~~~
 
-1. Via **command-line** argument `-Dplay.pidfile.path`
+### 'Terms of Use' Info Box
 
-   ~~~shell
-   -Dplay.pidfile.path = "/var/run/jatos.pid"
-   ~~~
+Specifies a URL link to the 'terms of use' to be shown in an info box on the home page. If left empty, the info box is not shown.
 
+**Config file:**
+~~~shell
+jatos.termsOfUseUrl = "https://mydomain.com/my-terms-of-use.html"
+~~~
 
-## Home page
+**Command-line:**
+~~~shell
+-Djatos.termsOfUseUrl="https://mydomain.com/my-terms-of-use.html"
+~~~
 
-### Welcome message
+---
 
-Specifies a URL that can be used by JATOS to fetch some static HTML. This HTML will then be shown on the home page instead of the default welcome message ([more info](/Customize-JATOS-Home-Page.html)). If left empty (`""`) the default welcome message is shown. Default is empty.
+## Study Manager Page
 
-1. Via **config file** property `jatos.brandingUrl`
+Enable/disable columns in the study manager table. Sometimes calculating these columns takes too long due to a slow database or file system.
 
-   ~~~shell
-   jatos.brandingUrl = "https://mydomain.com/foobar-university-welcome-page.html"
-   ~~~
+**Config file:**
+~~~shell
+jatos.studyAdmin.showStudyAssetsSize = false # Default is true
+jatos.studyAdmin.showResultDataSize = true   # Default is false
+jatos.studyAdmin.showResultFileSize = true   # Default is false
+~~~
 
-1. Via **command-line** argument `-Djatos.brandingUrl`
+**Command-line:**
+~~~shell
+-Djatos.studyAdmin.showStudyAssetsSize=false # Default is true
+-Djatos.studyAdmin.showResultDataSize=true   # Default is false
+-Djatos.studyAdmin.showResultFileSize=true   # Default is false
+~~~
 
-   ~~~shell
-   -Djatos.brandingUrl = "https://mydomain.com/foobar-university-welcome-page.html"
-   ~~~
-
-### 'Terms of use' info box
-
-Specifies a URL link to the 'terms of use' that will be shown in an info box on the home page. If left empty (`""`) the info box is not shown. Default is empty.
-
-1. Via **config file** property `jatos.termsOfUseUrl`
-
-   ~~~shell
-   jatos.termsOfUseUrl = "https://mydomain.com/my-terms-of-use.html"
-   ~~~
-
-1. Via **command-line** argument `-Djatos.termsOfUseUrl`
-
-   ~~~shell
-   -Djatos.termsOfUseUrl = "https://mydomain.com/my-terms-of-use.html"
-   ~~~
-
-
-## Study administration page 
-
-Enable/disable some columns in the study administration table. Sometimes the calculation of those columns takes too much time
-due to a slow database or file system.
-
-1. Via **config file** properties `jatos.studyAdmin.showStudyAssetsSize`, `jatos.studyAdmin.showResultDataSize`, and `jatos.studyAdmin.showResultFileSize`
-
-   ~~~shell
-   jatos.studyAdmin.showStudyAssetsSize = false # Default is true
-   jatos.studyAdmin.showResultDataSize = true # Default is false
-   jatos.studyAdmin.showResultFileSize = true # Default is false
-   ~~~
-
-1. Via **command-line** arguments `-Djatos.studyAdmin.showStudyAssetsSize`, `-Djatos.studyAdmin.showResultDataSize`, and `-Djatos.studyAdmin.showResultFileSize`
-
-   ~~~shell
-   -Djatos.studyAdmin.showStudyAssetsSize = false # Default is true
-   -Djatos.studyAdmin.showResultDataSize = true # Default is false
-   -Djatos.studyAdmin.showResultFileSize = true # Default is false
-   ~~~
-
+---
 
 ## JATOS API
 
-Enable/disable the JATOS API. By default it is enabled (`true`).
+Enable or disable the JATOS API. Default is enabled (`true`).
 
-1. Via **config file** property `jatos.api.allowed`
+**Config file:**
+~~~shell
+jatos.api.allowed = false
+~~~
 
-   ~~~shell
-   jatos.api.allowed = false
-   ~~~
-
-1. Via **command-line** argument `-Djatos.api.allowed`
-
-   ~~~shell
-   -Djatos.api.allowed = false
-   ~~~
+**Command-line:**
+~~~shell
+-Djatos.api.allowed=false
+~~~

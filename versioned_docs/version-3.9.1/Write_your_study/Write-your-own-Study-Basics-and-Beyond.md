@@ -124,6 +124,19 @@ Sessions are designed to help you exchange data within a study, batch, or group.
 
 -----
 
+## Run your study multiple times in parallel
+
+For development and stress testing, you may need to observe how a study behaves when multiple instances run simultaneously.
+
+Instead of clicking the Run button directly, click the dropdown arrow (▼) immediately to its right. This opens a layout selector where you can choose your grid dimensions:
+
+* Layout Logic: The dimensions represent Columns x Rows.
+* Example: Selecting 3x2 will launch 6 study runs in parallel arranged in a grid.
+
+![Study properties / study input](/img/v39x/study_page_run_multiple_button.png)
+
+-----
+
 ## Group Studies
 
 JATOS supports group studies, enabling multiple participants to work together on the same experiment and exchange data in real-time. It's best to start by exploring [examples](Example-Group-Studies.html) to get an idea of how they work. Then, you can proceed to learn how to write them: [Write Group Studies I - Setup](Write-Group-Studies-I-Setup.html) and [Write Group Studies II - JavaScript and Messaging](Write-Group-Studies-II-JavaScript-and-Messaging.html).

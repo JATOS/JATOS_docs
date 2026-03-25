@@ -317,12 +317,12 @@ Specifies the file suffix of JATOS results archives. The default suffix was `jrz
 
 **Config file:**
 ~~~shell
-jatos.resultsArchive.suffix = "jrzip"
+jatos.resultsArchive.suffix = "foo"
 ~~~
 
 **Command-line:**
 ~~~shell
--Djatos.resultsArchive.suffix="jrzip"
+-Djatos.resultsArchive.suffix="foo"
 ~~~
 
 ---
@@ -361,7 +361,7 @@ jatos.maxResultsDbQuerySize = 5
 
 ## Result Data
 
-Maximum size of the result data for one component run. Default is 5MB.
+Maximum size of the result data for one component run. Default is 5 MB. If the maximum size is reached in a study run the "quota reached" flag is set in the study and/or component result. 
 
 **Config file:**
 ~~~shell
@@ -433,7 +433,7 @@ JATOS_RESULT_UPLOADS_MAX_FILE_SIZE=100MB
 
 ### All Files Size Limit per Study Run
 
-Maximum total size of all files uploaded during one study run. Default is 50MB.
+Maximum total size of all files uploaded during one study run. Default is 50MB. If the maximum size is reached in a study run the "quota reached" flag is set in the study result. 
 
 **Config file:**
 ~~~shell

@@ -10,7 +10,317 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
+### 2026
+
+Kuper, C., Rolfs, M. (2026) Rapid Motor Inhibition as a Mechanism to Prevent Outdated Movements. *Journal of Neuroscience* [DOI](https://www.doi.org/10.1523/JNEUROSCI.1319-25.2026)
+
+Fenn, J., Estadieu, L., Gorki, M., Monno, I., Tauber, F., Teichmann, J., Levy-Tzedek, S., Speck, T., Müller, O. and Kiesel, A. (2026) Informing robot design through early public engagement: lay perceptions of soft versus rigid socially assistive and rescue robots. *Front. Robot. AI* [DOI](https://www.doi.org/10.3389/frobt.2026.1741946)
+
+Yang, W., Rauwolf, P., Frances, C., Molina-Nieto, O., Duñabeitia, J.A., Thierry, G. (2024) Chinese-English bilinguals prefer being truthful in the native language. *Front. Lang. Sci.* [DOI](https://doi.org/10.3389/flang.2023.1293673)
+
+Vinichenko, A., Vangsnes, Ø.A., Røyneland, U. (2026) Spotting the lect: Asymmetric literacy competencies in multilectal contexts. *Ampersand*. [DOI](https://doi.org/10.1016/j.amper.2026.100262)
+
+Oparina, E., Antonio, D. S., Russo, G., Vieira, E. R., & Bigliassi, M. (2026). Unveiling the Intricacies of Implicit Motor Learning in Adults Recovered from COVID-19. *Journal of Motor Behavior*. [DOI](https://doi.org/10.1080/00222895.2026.2637940)
+
+Roberts, B.R.T. & Bainbridge, W.A. (2026) Reverse engineering what makes a symbol memorable, Proc. Natl. Acad. Sci. U.S.A. [DOI](https://doi.org/10.1073/pnas.2530745123)
+
+Aray, Y., Béna, J., Rouard, M., andCorneille, O. (2026) Repetition Increases Belief in Food and Nutrition (Mis)Information, But Nonprobative Images May Not. *Social Psychology*. [DOI](https://doi.org/10.1027/1864-9335/a000589)
+
+Shivakumar V, Ostojić L and Legg E. (2026) Gaze cues and arrow cues modulate accuracy of recall of verbal items in a working memory task. *Open Res Europe*. [DOI](https://doi.org/10.12688/openreseurope.21720.2)
+
+Shivakumar, V., Ostojić, L., Legg, E. (2026) Gaze cues and arrow cues modulate accuracy of recall of verbal items in a working memory task. *Open Res Europe* [DO](https://doi.org/10.12688/openreseurope.21720.2)
+
+Castle, C. M., Velnić, M., & Jensberg, H. R. (2026). CLI, proficiency and L1-like choices: L3 Norwegian learners in later stages of acquisition. *Bilingualism: Language and Cognition*. [DOI](https://doi.org/10.1017/S136672892610100X)
+
+Marilena, A., Massimiliano, U.A., Giovanni, O. et al. (2026) Food perception in Orthorexia nervosa: Craving or avoidance? *Eat Weight Disord* [DOI](https://doi.org/10.1007/s40519-026-01826-8)
+
+Bröder, A., & Krauß, S. (2026). Nailing Down the Perceptual Explanation of the Date/Delay Effect in Temporal Discounting. *Experimental Psychology*. [DOI](https://doi.org/10.1027/1618-3169/a000657)
+
+Duncan, D.H., van Moorselaar, D. & Theeuwes, J. (2026) Learning alters salience and proactive attentional priority. *Commun Psychol*. [DOI](https://doi.org/10.1038/s44271-026-00411-0)
+
+Buschmeyer, E., Sander, L. B., Kiesel, A., Monno, I., Fenn, J., & Spanhel, K. (2026). Cultural differences in healthcare: An investigation using cognitive-affective mapping. *Cambridge Prisms: Global Mental Health*. [DOI](http://doi.org/10.1017/gmh.2025.10126)
+
+Bröder, A., & Krauß, S. (2026). Nailing Down the Perceptual Explanation of the Date/Delay Effect in Temporal Discounting. *Experimental Psychology*. [DOI](https://doi.org/10.1027/1618-3169/a000657)
+
+Myles, D., Bennett, D. B., & Newall, P. (2026). Cue the sad trombone: UK gambling regulations have not prevented the misuse of celebratory sound effects in online slots. *Behavioural Public Policy*. [DOI](https://doi.org/10.1017/bpp.2026.10035)
+
+Li, C., Frischkorn, G. T., & Oberauer, K. (2026). Can we process information without encoding it into working memory? *Journal of Experimental Psychology: Learning, Memory, and Cognition*. [DOI](https://doi.org/10.1037/xlm0001585)
+
+van Zoest, W., Higgins, A. (2026) Pointing over gaze: how saliency, proximity, and context shape spatial attention to embodied cues. *Psychological Research*. [DOI](https://doi.org/10.1007/s00426-026-02250-4)
+
+Yang, W., Wei, Y., Rauwolf, P., Frances, C., Molina-Nieto, O., Duñabeitia, J. A., & Thierry, G. (2026). Verbal feedback modulates language choice and risk-taking in Chinese-English bilinguals. *Bilingualism: Language and Cognition*. [DOI](https://doi.org/10.1017/S136672892500029X)
+
+Le Clézio, D., Delem, M., Monzel, M., Plancher, G. (2026) The Impact of Mental Images on Reasoning: A Study on Aphantasia. *Neuropsychologia*. [DOI](https://doi.org/10.1016/j.neuropsychologia.2026.109376)
+
+Muylle, M., Hartsuiker, R.J. Nozari, N. (2026) On idle idols and ugly icons: Investigating lexical selection in typing through homophones. *Journal of Memory and Language*. [DOI](https://doi.org/10.1016/j.jml.2025.104703)
+
+Can, M., Türüdü, S., Aydoğan, Z., Özgürsoy, O.B. (2026) Functional overload and adaptive failure during dual-tasking in Ménière’s disease. *Journal of Vestibular Research*. [DOI](https://doi.org/10.1177/09574271261418549)
+  
+Schreiner, M.R., Kunde, W. (2026) The representational nature of action–effect relations: A memory process dissociation approach. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-025-02794-3)
+
+Kul, G., & Wills, A. J. (2026). The Comparison of Human and Machine Performance in Object Recognition. *Behavioral Sciences*. [DOI](https://doi.org/10.3390/bs16010109)
+
+Ng, D.W., Lee, J.C., Lovibond, P.F. (2026) The role of prior beliefs in causal illusions. *Cognition* [DOI](https://doi.org/10.1016/j.cognition.2025.106290)
+
+Wilson, C.J. (2026) Neurological and behavioural correlates of construal in economic decision-making under cognitive load. *Behavioural Brain Research* [DOI](https://doi.org/10.1016/j.bbr.2025.115829)
+
+de Waard, J., Theeuwes, J. (2026) Beyond top-down: Feature search as a serial clump-wise process. *Cognition* [DOI](https://doi.org/10.1016/j.cognition.2025.106334)
+
+Oletto, C.M., Contemori, G., Cessa, R., Battaglini, L., Bertamini, M. (2026) Foveal masking impairs orientation discrimination of peripheral low-level stimuli. *Heliyon*. [DOI](https://doi.org/10.1016/j.heliyon.2025.e44279)
+
+Zhao, F., Wen, F., Ye, H. et al.  (2026) Dual-identity reminders convey acceptance and trust: dual-identity reminders from opponents and third parties can both promote intergroup reconciliation. *Curr Psychol*. [DOI](https://doi.org/10.1007/s12144-025-08722-x)
+
+Pettini, L., Bogler, C., Doeller, C. et al. (2026) Synthesis and perceptual scaling of high-resolution naturalistic images using Stable Diffusion. *Behav Res*. [DOI](https://doi.org/10.3758/s13428-025-02889-8)
+
+### 2025
+
+Kurdoglu, P., Schwartz, B. L., & Kapucu, A. (2025). Both emotional and neutral contexts increase feeling of knowing judgments despite poorer memory. *Memory*. [DOI](https://doi.org/10.1080/09658211.2025.2610298)
+
+Von Holzen K, Newman RS. (2025) _Ab initio_ word recognition in infant- and adult-directed continuous speech. *Applied Psycholinguistics*. [DOI](https://doi.org/10.1017/S0142716425100350)
+
+Spiering, L., Trier, H.A., O’Reilly, J.X. et al. (2025) Active disambiguation guides inferring controllability and cause in social interactions. *Nat Commun*. [DOI](https://doi.org/10.1038/s41467-025-67853-8)
+
+Banovac, I., Bruton, O.J., Mercado-Díaz, L. et al. (2025) VENturing into machine learning for the morphological analysis of von Economo neurons. *Sci Rep*. [DOI](https://doi.org/10.1038/s41598-025-30470-y)
+
+Loaiza, V. M., Senziani, K., Bartsch, L. M., & Mizrak, E. (2025). What makes a birdbrain tick: Long-term memory drives expertise effects on working memory binding. *Psychology and Aging*. [DOI](https://doi.org/10.1037/pag0000952)
+
+Sarli, L., Cadoux, A., & Justel, N. (2025). L1-L2 valence-specific effects in recall and recognition bias in sequential bilinguals. *Journal of Cognitive Psychology*. [DOI](https://doi.org/10.1080/20445911.2025.2599243)
+
+Kreis, B.K., Hermann, A., Pachur, T., Groß, J. (2025) Hindsight Bias Through Knowledge Updating: A Conceptual Replication of Groß et al. (2023). *Collabra: Psychology* [DOI](https://doi.org/10.1525/collabra.147499)
+
+Lee, J.C., Dang, T., Collins, J.H. (2025) Trait anxiety and fear generalization: Overgeneralization of fear or undergeneralization of safety learning? *Behaviour Research and Therapy* [DOI](https://doi.org/10.1016/j.brat.2025.104939)
+
+Antzaka, A., Li, T., Jevtović, M., & Martin, C. D. (2025). Cross-Linguistic Influences of Orthographic Depth on Written Word Learning in the First and Second Language. *Scientific Studies of Reading*. [DOI](https://doi.org/10.1080/10888438.2025.2595984)
+
+Azer, L., Vanderlip, C.R., Mayer, L.L., Ehlert, L., Sultzer, D., Shin, H-W., Stark, C.E.L. (2025) MST in the Wild: Optimizing the Mnemonic Similarity Task for Use in Diverse Environments. *Neuropsychologia. [DOI](https://doi.org/10.1016/j.neuropsychologia.2025.109341)
+
+Blomberg, M., Oberender, L., Koster, E., Brockmeyer, T. (2025) Transdiagnostic Cognitive Control Training for Patients Waiting for Outpatient Psychotherapy: Randomized Clinical Trial. *JMIR Mhealth Uhealth* [DOI](https://doi.org/10.2196/65867)
+
+Kusztor, A., Mulay, N., Yamada, M., Hohwy, J., Tsuchiya, N. (2025) Lifting the veil: probing altered visual perception in derealization. *Neuroscience of Consciousness* [DOI](https://doi.org/10.1093/nc/niaf045)
+
+Baroncini, I., Michelotti, A., Engemann, H. (2025). Priming motion events in Italian heritage language speakers: Agents and mechanisms of language change. *Linguistic Approaches to Bilingualism*. [DOI](https://www.doi.org/10.1075/lab.24048.bar)
+
+Capkan, E.N., Ozilgen, S., Yildirim, F. (2025) Designing visual menus for a sustainable future: The role of non-meat decoys. *International Journal of Gastronomy and Food Science*. [DOI](https://doi.org/10.1016/j.ijgfs.2025.101343)
+
+Chromý, J., Ceháková, M. & Brand, J. (2025) The HeCz corpus: A large, richly annotated reading corpus of newspaper headlines in Czech. *Behav Res*. [DOI](https://doi.org/10.3758/s13428-025-02863-4)
+
+Chiu, S. L., Toscano, C. M., Toscano, J. C., & McMurray, B. (2025). Listeners rapidly adapt to current conditions: “Good-enough” adaptation in multitalker speech perception. *Journal of Experimental Psychology: General*. [DOI](https://doi.org/10.1037/xge0001797)
+
+Wolpe N, Aymerich C, Jin Y, et al. (2025) Characterising negative symptoms in schizophrenia: CHANSS study protocol. *BJPsych Open*. [DOI](https://doi.org/10.1192/bjo.2025.10880)
+
+Vencato, M., Zorzi, M. & Bonato, M. (2025) Temporal momentum: an online replication and beyond. *Psychological Research*. [DOI](https://doi.org/10.1007/s00426-025-02167-4)
+
+Daiss, F., Jansen, P. (2025) Affective and reflective attitudes toward vegetarian food consumption: the effect of goal priming. *Frontiers in Nutrition*. [DOI](https://www.doi.org/10.3389/fnut.2025.1653935)
+
+Percival, M., Yeung, H., Bird, S., J. Quaysultunaat (Randeana). (2025) Hul'q'umi'num' listening quizzes. Speech perception in a language revitalization classroom context. *Journal of Second Language Pronunciation*. [DOI](https://doi.org/10.1075/jslp.25001.per)
+
+Dutli, J., Oberauer, K., & Bartsch, L. M. (2025). Is repetition learning preserved in old age? Insights from the Hebb paradigm. *Psychology and Aging*.[DOI](https://doi.org/10.1037/pag0000947)
+
+Schreiner, M. R., & Kunde, W. (2025). Integrating action-effect episodes into long-term memory as a function of control. *Journal of Experimental Psychology: Learning, Memory, and Cognition*. [DOI](https://doi.org/10.1037/xlm0001544)
+
+van Moorselaar, D., Theeuwes, J., Van der Stigchel, S. Alpha-Band Activity Tracks Reflexive Changes in the Breadth of the Zoom Lens of Attention. *Journal of Neuroscience*.[DOI](www.doi.org/10.1523/JNEUROSCI.0706-25.2025)
+
+Saccani, M.S., Contemori, G.,Bonato, M. (2025) Unveiling contralesional omissions six years after stroke. Effects of top-down and bottom-up manipulations. *Cortex*. [DOI](https://doi.org/10.1016/j.cortex.2025.09.002)
+
+Bonny, J. W. (2025). Seeing Flames, Perceiving Quantity: Approximations of Fire Intensity Across Development. *Behavioral Sciences*. [DOI](https://doi.org/10.3390/bs15101397)
+
+Muylle, M., & Jarema, G. (2025). The transmission of semantic, lexical, and orthographic information in young and older bilinguals’ typed word production. *Journal of Experimental Psychology: Learning, Memory, and Cognition*. [DOI](https://doi.org/10.1037/xlm0001536)
+
+Pohl, J., Nikolovska K., Maurelli F., Kappas A., Hommel B. (2025) Selfhood-attribution in a social context: further evidence for a Pars-Pro-Toto account. *Frontiers in Psychology*. [DOI](https://www.doi.org/10.3389/fpsyg.2025.1528172)
+
+Beucler, J., Voudouri, A., & De Neys, W. (2025). Moses illusions, fast and slow. *Journal of Experimental Psychology: Learning, Memory, and Cognition*. [DOI](https://doi.org/10.1037/xlm0001530)
+
+Ilksoy, Y. A., van Moorselaar, D., Wang, B., Los, S. A., & Theeuwes, J. (2025). Distractor suppression operates exclusively in retinotopic coordinates. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001375)
+
+Vogt, A., Ganter, I., Kaup, B., Abdel Rahman, R. (2025) Expressing experiences: Sensorimotor activations and interoceptive sensibility influence which words we choose when speaking. *Acta Psychologica*. [DOI](https://doi.org/10.1016/j.actpsy.2025.105498)
+
+Comay, N. A., Solovey, G., & Barttfeld, P. (2025). Decisions are based on less information than metacognitive judgments in multialternative contexts. *Journal of Experimental Psychology: Learning, Memory, and Cognition*. [DOI](https://doi.org/10.1037/xlm0001532)
+
+Delem, M., Turkben, S., Cavalli, E., Cousineau, D., Plancher, G. (2025) Unsupervised clustering reveals spatial and verbal cognitive profiles in aphantasia and typical imagery. *Neuropsychologia* [DOI](https://doi.org/10.1016/j.neuropsychologia.2025.109279)
+
+Galang, C. M., Cracco, E., Chirkov, V., Obhi, S. S., & Brass, M. (2025). Sense of agency during group control. *Journal of Experimental Psychology: General*. [DOI](https://doi.org/10.1037/xge0001829)
+
+Vos M, Minor S, Ramchand G. (2025) The simple past versus perfect in English: evidence from Visual World eye tracking. *English Language and Linguistics*. [DOI](https://doi.org/10.1017/S1360674325100452)
+
+Ford, D., & Nadarevic, L. (2025). Revisiting the Plausibility Effect in Remembering Truth and Falsity: An Analysis of Underlying Memory and Guessing Processes. *Journal of Cognition* [DOI](https://doi.org/10.5334/joc.459)
+
+Aktepe, S.C., Heck, D.W. Revisiting the effect of discrepant perceptual fluency on truth judgments. *Journal of Experimental Social Psychology*. [DOI](https://doi.org/10.1016/j.jesp.2025.104774)
+
+Thorp, S. O., Slupphaug, K. S., Rimol, L. M., Lervik, S., Hoel, S. K. B., & Grassini, S. (2025). Conformity towards humans versus AI in different task domains: the type of task matters. *Journal of Psychology and AI*. [DOI](https://doi.org/10.1080/29974100.2025.2540762)
+
+Conson M, Zappullo I, Cecere R, Thiebaut de Schotten M, Lauro A, Senese VP, et al. (2025) Altercentrism and a change in perspective on the self: The relationships of visuospatial perspective-taking with rumination and mindfulness. *PLoS One*. [DOI](https://doi.org/10.1371/journal.pone.0316060)
+
+Xiao, B., & Wolpe, N. (2025). The value of progress feedback in physical effort-based decision making. *Motivation Science*. [DOI](https://doi.org/10.1037/mot0000411)
+
+Melo, J.C.N., Tejada, J., Silva, E.C.M. et al. (2025) Effects of physically active lessons and active breaks on cognitive performance and health indicators in elementary school children: a cluster randomized trial. *Int J Behav Nutr Phys Act*. [DOI](https://doi.org/10.1186/s12966-025-01789-6)
+
+Yao, J., Snell, J., & Theeuwes, J. (2025). Age-related preservation of statistical learning in distractor suppression. *Psychology and Aging*. [DOI](https://doi.org/10.1037/pag0000922)
+
+De Cesarei, A., Tronelli, V., Mastria, S., Ferrari, V., & Codispoti, M. (2025). Behavioral Interference by Emotional Stimuli: Sequential Modulation by Perceptual Conditions but Not by Emotional Primes. *Vision*. [DOI](https://doi.org/10.3390/vision9030066)
+
+Gastmann, F., Schimke, S., Poarch, G.J. (2025) Conducting psycholinguistic research online: Comparable evidence of second language lexical and sentence-level processing in web-based versus lab-based studies. *Bilingualism: Language and Cognition*. [DOI](https://doi.org/10.1017/S136672892510028X)
+
+Garre-Frutos, F., Lupiáñez, J. & Vadillo, M.A. (2025) Value-modulated attentional capture depends on awareness. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-025-02734-1)
+
+Vandendaele, A., & Grainger, J. (2025). On the impact of syntactic and semantic information when processing words in sentences. *Quarterly Journal of Experimental Psychology*. [DOI]( https://doi.org/10.1177/17470218251350584)
+
+Bysouth-Young, D., Guérit, F., Shahidi, L., Carlyon, R.P. (2025) Measurement of Spectro-Temporal Processing by Cochlear Implant Users: Effects of Stimulus Level and Validation of an Online Implementation. *Ear & Hearing* [DOI](http://doi.org/10.1097/AUD.0000000000001676)
+
+Maier, M., Harris, A.J.L., Kellen, D., Singmann, H. (2025) Decision making under extinction risk. *Cognitive Psychology*. [DOI](https://doi.org/10.1016/j.cogpsych.2025.101735).
+
+Raza, S., Schomaker, J., Quent, J. A., Anderson, M. C., & Henson, R. N. (2025). Proactive and retroactive effects of novelty and rest on memory. *Quarterly Journal of Experimental Psychology*. [DOI](https://doi.org/10.1177/17470218251346156)
+
+Ilksoy, Y. A., van Moorselaar, D., Los, S. A., & Theeuwes, J. (2025). Object-centered spatial learning in dynamic contexts: History-driven distractor suppression and target enhancement. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001353)
+
+Bonny, J. W., & Russell, M. D. (2025). The Role of Suppression Performance Information in Judging When to Use a Fire Extinguisher. *Safety*. [DOI](https://doi.org/10.3390/safety11020058)
+
+Coates, Z., Brown, S., & Kelly, M. (2025). Exploring Impacts of Environmentally Focused Imagery on Pro-Environment Behaviours and Climate Anxiety. *Climate*. [DOI](https://doi.org/10.3390/cli13060128)
+
+Atilgan, N., & Nozari, N. (2025). Statistical learning of orthotactic constraints: Evidence from typing. *Journal of Experimental Psychology: Learning, Memory, and Cognition*. [DOI](https://doi.org/10.1037/xlm0001502)
+
+Velnić, M., Slabakova, R., & Dahl, A. (2025). Acquisition of genericity in L2 English: the effect of multilingualism. *International Journal of Multilingualism*. [DOI](https://doi.org/10.1080/14790718.2025.2508854)
+
+Mlinarič, M., Los, S.A. & Snell, J. (2025) On the spatial limits of parallel word processing in reading. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-025-03101-x)
+
+Zacharski, L., Kruppa, A., & Ferstl, E. C. (2025). The Readability of the Non-Binary Gender Star in German: Evidence From a Lexical Decision Task. *Social Psychological Bulletin*. [DOI](https://doi.org/10.32872/spb.13719)
+
+Baroncini, I., Michelotti, A., and Engemann, H. (2025) Priming motion events in Italian heritage language speakers. Agents and mechanisms of language change. *Linguistic Approaches to Bilingualism*. [DOI](https://doi.org/10.1075/lab.24048.bar)
+
+Colombatto, C., Birch, J. & Fleming, S.M. (2025) The influence of mental state attributions on trust in large language models. *Commun Psychol*. [DOI](https://doi.org/10.1038/s44271-025-00262-1)
+
+Fenn, J., Gouret, F., Gorki, M. et al. (2025) Cognitive-affective maps extended logic: Proposing tools to collect and analyze attitudes and belief systems. *Behav Res*. [DOI](https://doi.org/10.3758/s13428-025-02699-y)
+
+González, F., Garre-Frutos, F., Hinojosa-Aguayo, I. et al. (2025) Extinction of outcome-specific Pavlovian-to-instrumental transfer (PIT), instrumental outcome devaluation, and reward-related attentional capture are predicted by affect-driven impulsivity. *Learn Behav*. [DOI](https://doi.org/10.3758/s13420-025-00676-1)
+
+Livoti V., Del Popolo Cristaldi F., Contemori G., Saccani M.S. and Bonato, M. (2025) Web-based assessment of dual-task costs at differentages: an analysis across cognitive domains. *Front. Psychol.* [DOI](https://doi.org/10.3389/fpsyg.2025.1561417) 
+
+Pisu, V., Mehraeen, S., Graf, E. W., Ernst, M. O., & Adams, W. J. (2025). Biases in the perceived area of different shapes: A comprehensive account and model. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001322)
+
+Mento, G., Bariletti, I., Toffoli, L., Granziol, U., Borella, E., & Del Popolo Cristaldi, F. (2025). Adapting cognitive control to local–global implicit temporal predictability: A lifespan investigation from 5 to 88 years old. *Psychology and Aging*. [DOI](https://doi.org/10.1037/pag0000905)
+
+Saccani, M.S., Contemori, G., Del Popolo Cristaldi, F. et al. (2025) Attentional load impacts multisensory integration, without leading to spatial processing asymmetries. *Sci Rep*. [DOI](https://doi.org/10.1038/s41598-025-95717-0)
+
+Ward, M. Z., Bouguettaya, A., & van Zoest, W. (2025). A British understanding of racialised gaze-cueing in the context of implicit racial bias, explicit racial identity and self-esteem. *Quarterly Journal of Experimental Psychology* [DOI](https://doi.org/10.1177/17470218251335304)
+
+Wessel, I., Krans, J., et al. (2025) Evidence That Tetris Reduces Immediate but Not Subsequent Daily Intrusions of a Trauma Film: A Multilab Replication Study. *Collabra: Psychology* [DOI](https://doi.org/10.1525/collabra.130791)
+
+Cooper, P., Lim, A., Irons, J., McGrath, M., Jarvis, H., Duenser, A. (2025) Trust in AI is dynamically updated based on users' expectations. *Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA '25)*. [DOI](https://doi.org/10.1145/3706599.3719870)
+
+Batista, A. R., Folia, V., & Silva, S. (2025). More than a Bundle? Developing Adaptive Guidance for Task Selection in an Online, Semantic-Based Cognitive Stimulation Program. *Brain Sciences*. [DOI](https://doi.org/10.3390/brainsci15040419)
+
+Dome, L., & Wills, A. J. (2025). g-Distance: On the comparison of model and human heterogeneity. *Psychological Review*. [DOI](https://doi.org/10.1037/rev0000550)
+
+Li, C., Frischkorn, G.T., Dames, H., Oberauer, K. (2025) The benefit of removing information from working memory: Increasing available cognitive resources or reducing interference? *Cognition* [DOI](https://doi.org/10.1016/j.cognition.2025.106134)
+
+Galang, C.M., Akan, A., Pfister, R., Brass, M. (2025) Temporal binding during deliberate rule breaking. *Consciousness and Cognition*. [DOI](https://doi.org/10.1016/j.concog.2025.103851)
+
+Laycock, K. and McGowan, K.B. (2025), Removing the Disguise: The Matched Guise Technique, Incongruity, and Listener Awareness. *Journal of Sociolinguistics*. [DOI](https://doi.org/10.1111/josl.12700)
+
+Jansen, P., Haugg, J. & Schroter, F.A. (2025) Explicit and implicit affective attitudes of female athletes towards different body sizes. *BMC Psychol*. [DOI](https://doi.org/10.1186/s40359-025-02567-6)
+
+Bading, K. C., Barth, M., & Rothermund, K. (2025). Evidence for an evaluative effect of stimulus co-occurrence may be inflated by evaluative differences between assimilative and contrastive relations. *Cognition and Emotion*. [DOI](https://doi.org/10.1080/02699931.2025.2460099)
+
+Zapata, J.M., Comay, M.A., Taricco, G., Barttfeld, P., Solovey, G., Saal, A., Ahumada, J.V. (2025) Metacognitive Sensitivity on the Iowa Gambling Task Reveals Awareness as a Necessary Condition for Advantageous Performance. *Experimental Psychology* [DOI](https://doi.org/10.1027/1618-3169/a000636)
+
+Trier, H.A., O’Reilly, J.X., Spiering, L. et al. (2025) Emotions and individual differences shape human foraging under threat. *Nat. Mental Health*. [DOI](https://doi.org/10.1038/s44220-025-00393-8)
+
+Purkart, R., Delem, M., Ranson, V., Andrey, C., Versace, R., Cavalli, E., Plancher, G. (2025) Are there unconscious visual images in aphantasia? Development of an implicit priming paradigm. *Cognition* [DOI](https://doi.org/10.1016/j.cognition.2024.106059)
+
+Bruckner, R., Nassar, M. R., Li, S.-C., & Eppinger, B. (2025). Differences in learning across the lifespan emerge via resource-rational computations. *Psychological Review*. [DOI](https://doi.org/10.1037/rev0000526)
+
+Bading, K. C., Barth, M., & Rothermund, K. (2025). Evidence for an evaluative effect of stimulus co-occurrence may be inflated by evaluative differences between assimilative and contrastive relations. *Cognition and Emotion*. [DOI](https://doi.org/10.1080/02699931.2025.2460099)
+
+Michalareas, G., Lehr, C., Grabenhorst, M. et al. (2025) Social processing distorts physical distance perception. *Sci Rep*. [DOI](https://doi.org/10.1038/s41598-025-89935-9)
+
+Brand J, Preininger M, Kříž A, Ceháková M. Feminine fox, not so feminine box: constraints on linguistic relativity effects for grammatical and conceptual gender. *Language and Cognition*. [DOI](https://doi.org/10.1017/langcog.2025.3)
+
+Mera, Y., Modirrousta-Galian, A., Thomas, G., Higham, P. A., & Seabrooke, T. (2025). Erring on the side of caution: Two failures to replicate the derring effect. *Journal of Experimental Psychology: General*. [DOI](https://doi.org/10.1037/xge0001707)
+
+Belo, J., Clerc, M. & Schon, D. (2025) Attentional Inhibition Ability Predicts Neural Representation During Challenging Auditory Streaming. *Cogn Affect Behav Neurosci*. [DOI](https://doi.org/10.3758/s13415-024-01260-2)
+
+de Waard, J., Theeuwes, J. & Bogaerts, L. (2025) Taking time: Auditory statistical learning benefits from distributed exposure. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-024-02634-w)
+
+Büsel, C., Dahm, S.F., Sachse, P. et al. (2025) The role of inhibition in the processing of peripheral cues. *Psychological Research*. [DOI](https://doi.org/10.1007/s00426-024-02073-1)
+
+Winkelmair, A., Schroter, F.A., Jansen, P. Vegetarian and sustainable food consumption behavior: Exploring the relation to explicit and implicit attitudes toward vegetarian foods and dispositional mindfulness. *Appetite*. [DOI](https://doi.org/10.1016/j.appet.2024.107847)
+
+Wainio-Theberge, S., Khoury, B. & Armony, J.L. (2025) Mindfulness Skills and Experience Are Associated With Enhanced Emotional Body Sensations. *Mindfulness*. [DOI](https://doi.org/10.1007/s12671-024-02506-3)
+
+Sousa de Gois, T., Oliveira Freitas, F., Tejada, J., Freitag, R. (2025). NLP and education Using semantic similarity to evaluate filled gaps in a large-scale Cloze test in the classroom. *The Mental Lexicon*. [DOI](https://doi.org/10.1075/ml.24027.deg)
+
+Xu, Z., Theeuwes, J. & Los, S.A. (2025) Statistical learning of spatiotemporal target regularities in the absence of saliency. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-024-02992-6)
+
 ### 2024
+Borges, P.B., Mueller, J.L. (2024) Interindividual Differences in Higher and Lower-Order Object-Related Cognition: The Role of Inner Speech. *Collabra: Psychology* [DOI](https://doi.org/10.1525/collabra.125128)
+
+Roesler, E., Rieger, T. Langer, M. (2024) Numeric vs. verbal information: The influence of information quantifiability in Human-AI vs. Human-Human decision support, *Computers in Human Behavior: Artificial Humans* [DOI](https://doi.org/10.1016/j.chbah.2024.100116)
+
+Banh N.C., Tünnermann J., Rohlfing K.J., Scharlau, I. (2024) Benefiting from binary negations? Verbal negations decrease visual attention and balance its distribution. *Front. Psychol.* [DOI](http://10.3389/fpsyg.2024.1451309)
+
+Conson, M., Zappullo, I., Cordasco, G., Trojano, L., Raimo, G., Cecere, R., Baiano, C., Lauro, A., & Esposito, A. (2024). Altercentrism in perspective-taking: The role of humanisation in embodying the agent’s point of view. *Quarterly Journal of Experimental Psychology*. [DOI](https://doi.org/10.1177/17470218241300252)
+
+Pucci, V., Contemori, G., Saccani, M.S. et al. (2024) Auto-Global Examination of Mental State (Auto-GEMS): a web-based self-administered cognitive screening. *Aging Clin Exp Res*. [DOI](https://doi.org/10.1007/s40520-024-02862-z)
+
+Wiradhany, W., Pócs, A., Baumgartner, S.E. (2024) Are Social Media Notifications Distracting? *Experimental Psychology* [DOI](https://doi.org/10.1027/1618-3169/a000625)
+
+Russell, M.D., Bonny, J.W., Reed, R. (2024) Impact of Virtual Reality on Decision-Making and Risk Assessment During Simulated Residential Fire Scenarios. *Fire* [DOI](https://doi.org/10.3390/fire7120427)
+
+Nakamura, S., Kobayashi, M. (2024) Examining psychological detachment from work, work engagement, and thought control in Japanese work at home environments. *Discov Psychol* [DOi](https://doi.org/10.1007/s44202-024-00291-7)
+
+Duncan, D.H., van Moorselaar, D. & Theeuwes, J. (2024) Visual statistical learning requires attention. *Psychon Bull Rev* [DOI](https://doi.org/10.3758/s13423-024-02605-1)
+
+Hasenäcker, J., & Domahs, F. (2024). EXPRESS: Same same but different – The graded influence of vowel quality and prosodic prominence on letter detection. *Quarterly Journal of Experimental Psychology*. [DOI](https://doi.org/10.1177/17470218241293742)
+
+Godwin, H. J., Liversedge, S. P., Mestry, N., Dewis, H., & Donnelly, N. (2024). Time on task effects during interactive visual search. *Journal of Experimental Psychology: Applied*. [DOI](https://doi.org/10.1037/xap0000521)
+
+Schreiner, M.R., Feustel, S. & Kunde, W. (2024) Linking actions and memories: Probing the interplay of action-effect congruency, agency experience, and recognition memory. *Mem Cogn*. [DOI](https://doi.org/10.3758/s13421-024-01644-2)
+
+de Valério de Arruda, M., Reyes, M. B., das Neves, S. F., Herrmann, F., Verzili, B., & Galduróz, R. F. (2024). Temporal bisection task as a predictor of cognitive deficits. *European Journal of Neuroscience*. [DOI](https://doi.org/10.1111/ejn.16554)
+
+Xu, X., Zhu, Z., Zheng, X. et al. (2024) Temporal asymmetries in inferring unobserved past and future events. *Nat Commun*. [DOI](https://doi.org/10.1038/s41467-024-52627-5)
+
+Wainio-Theberge, S., & Armony, J. L. (2024). Differences in natural standing posture are associated with antisocial and manipulative personality traits. *Journal of Personality and Social Psychology*. [DOI](https://doi.org/10.1037/pspp0000515)
+
+Embon, I., Gerbaudo, M.A., Usaj, A.R. et al. (2024) Exploring the relationship between dysfunctional personality traits with metacognition and confidence. *Curr Psychol*. [DOI](https://doi.org/10.1007/s12144-024-06669-z)
+
+Di Ponzio, M., Battaglini, L., Bertamini, M. et al. (2024) Behavioural stochastic resonance across the lifespan. *Cogn Affect Behav Neurosci* [DOI](https://doi.org/10.3758/s13415-024-01220-w)
+
+Caudrelier, T., Ménard, L. Beausoleil, M.M., Martin, C.D., Samuel, A.G. (2024) When Jack isn’t Jacques: Simultaneous opposite language-specific speech perceptual learning in French–English bilinguals. *PNAS Nexus* [DOI](https://doi.org/10.1093/pnasnexus/pgae354)
+
+Shum, Y.H., Galang, C.M.,Brass, M. (2024) Using a Veto paradigm to investigate the decision models in explaining Libet-style experiments. *Consciousness and Cognition* [DOI](https://doi.org/10.1016/j.concog.2024.103732)
+
+Kim, M., Kim, K.I. & Kim, H. (2024) Self-interest overrides rank-reversal aversion in resource distribution. *Sci Rep*. [DOI](https://doi.org/10.1038/s41598-024-70225-9)
+
+Bonny, J.W., Hussain, Z., Russell, M.D., Trouvé A., Milke J.A. (2024) Simulated fire video collection for advancing understanding of human behavior in building fires. *Frontiers in Psychology*. [DOI](https://doi.org/10.3389/fpsyg.2024.1438020)
+
+Duncan, D. H., & Theeuwes, J. (2024). Secondary capture: Salience information persistently drives attentional selection. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001223)
+
+Li, AS., van Moorselaar, D. & Theeuwes, J. (2024) Attending is not enough: Responding to targets is needed for across-trial statistical learning. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-024-02952-0)
+
+Pithayarungsarit, P., Rieger, T., Onnasch, L., & Roesler, E. (2024). The Pop-Out Effect of Rarer Occurring Stimuli Shapes the Effectiveness of AI Explainability. *Proceedings of the Human Factors and Ergonomics Society Annual Meeting*. [DOI](https://doi.org/10.1177/10711813241261284)
+
+zu Putlitz, J., & Roesler, E. (2024). Let’s Get Physical: The Influence of Embodiment on Industrial Human-Robot Interaction. *Proceedings of the Human Factors and Ergonomics Society Annual Meeting* [DOI](https://doi.org/10.1177/10711813241264206)
+
+Brouwer, J., van den Berg, F., Knooihuizen, R., Loerts, H., & Keijzer, M. (2024). The effects of language learning on cognitive functioning and psychosocial well-being in cognitively healthy older adults: A semi-blind randomized controlled trial. *Aging, Neuropsychology, and Cognition*. [DOI](https://doi.org/10.1080/13825585.2024.2384107)
+
+Frugarello, P., Rusconi, E., Job, R. (2024) The label-feedback effect is influenced by target category in visual search. *PLoS ONE*. [DOI](https://doi.org/10.1371/journal.pone.0306736)
+
+Bauer, R., Jansen, P. (2024) A short mindfulness induction might increase women’s mental rotation performance. *Consciousness and Cognition* [DOI](https://doi.org/10.1016/j.concog.2024.103721)
+
+Xue, S., Gao, X., Wu, Y., Sun, J., Yang, W., Li, X., Ke, S., Yang, L., Jin, H., & Chen, S. (2024). Effects of Theme, Form, and Language on Poetry Reading: Evidence From Chinese ESL Learners. *Empirical Studies of the Arts*. [DOI](https://doi.org/10.1177/02762374241265866)
+
+Niedernhuber M, Streicher J, Leggenhager B, Bekinschtein TA. (2024) Attention and Interoception Alter Perceptual and Neural Pain Signatures-A Case Study. *J Pain Res*. [DOI](https://doi.org/10.2147/JPR.S449173)
+
+Schmerwitz, C., Kopp, B. (2024) The future of neuropsychology is digital, theory-driven, and Bayesian: a paradigmatic study of cognitive flexibility. *Frontiers in Psychology* [DOI](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1437192)
+
+Loaiza, V.M., Souza, A.S. (2024) Active maintenance in working memory reinforces bindings for future retrieval from episodic long-term memory. *Mem Cogn.* [DOI](https://doi.org/10.3758/s13421-024-01596-7)
+
+Winkelmair, A., Jansen, P. (2024) Can a mindfulness-based training influence explicit and implicit attitudes, as well as sustainable nutrition behaviors, particularly in relation to vegetarianism?. *Appetite* [DOI](https://doi.org/10.1016/j.appet.2024.107554)
+
+Contemori G., Saccani M.S., Bonato M. (2024) Cognitive-Cognitive Dual-task in aging: A cross-sectional online study. PLoS ONE. [DOI](https://doi.org/10.1371/journal.pone.0302152)
+
+Gemignani, M., Giannotti, M., Rigo, P. et al. (2024) Neither Parents’ Sex Nor the Type of Family Modulates Attentional Bias Toward Infant Faces: A Preliminary Study in Different-Sex and Same-Sex Parents. *Arch Sex Behav*. [DOI](https://doi.org/10.1007/s10508-024-02875-9)
+
 Curzel, F., Osiurak, F., Trân, E., Tillmann, B. Ripollés, P., Ferreri, L. (2024) Increased pleasure positively influences prosocial behavior and memory outcomes. *iScience* [DOI](https://doi.org/10.1016/j.isci.2024.109964)
 
 Berkovich, R., & Meiran, N. (2024). Both pleasant and unpleasant emotional feelings follow Weber’s law but it depends how you ask. *Emotion* [DOI](https://doi.org/10.1037/emo0001343)

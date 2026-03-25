@@ -4,58 +4,107 @@ slug: /JATOS-with-Apache.html
 sidebar_position: 12
 ---
 
-This is an example of a configuration of [Apache](https://httpd.apache.org/) as a reverse proxy in front of JATOS. While it's not necessary to run JATOS with a proxy, it's common to do so in order to add encryption.
+This page provides an example configuration for using [Apache](https://httpd.apache.org/) as a reverse proxy in front of JATOS. While it's not strictly necessary to run JATOS behind a proxy, it is common practice to add encryption (HTTPS).
 
-It is necessary to use at least Apache **version 2.4** since JATOS relies on WebSockets that aren't supported by earlier versions. 
+**Note:** You must use at least Apache **version 2.4**, as JATOS relies on WebSockets, which are not supported in earlier versions.
 
-A JATOS server that handles sensitive or private data should always use encryption (HTTPS). A nice free certificate issuer is [certbot.eff.org](https://certbot.eff.org/) from the Electronic Frontier Foundation.
+A JATOS server that handles sensitive or private data should always use encryption (HTTPS). A good, free certificate provider is [certbot.eff.org](https://certbot.eff.org/) from the Electronic Frontier Foundation.
 
-You have to add some modules to Apache to get it working:
+Enable the required Apache modules:
 
-~~~shell
+```shell
 a2enmod proxy proxy_http proxy_wstunnel http2 rewrite headers ssl
-~~~
+```
 
-The following is an example of a proxy config with Apache. It is stored it in `/etc/apache2/sites-available/example.com.conf` and added it to Apache with the command `sudo a2ensite example.com.conf`. Change it to your needs. You probably want to change your servers address (`www.example.com` in the example) and the path to the SSL certificate and its key.
+## Example Config with HTTPS Encryption
 
-For JATOS versions 3.8.1 and older it is necessary to set the `X-Forwarded-*` headers with `RequestHeader set X-Forwarded-Proto "https"` and `RequestHeader set X-Forwarded-Ssl "on"` and `ProxyPreserveHost On` to tell JATOS the original requester's address. This is not necessary with version 3.8.2 and newer.
+Below is an example Apache proxy configuration. Save it as `/etc/apache2/sites-available/example.com.conf` and enable it with `sudo a2ensite example.com.conf`. Adjust the server address (`www.example.com`) and the paths to your SSL certificate and key as needed.
 
-As an additional security measurement you can uncomment the `<Location "/jatos">` and config your local network. This will restrict the access to JATOS' GUI (every URL starting with `/jatos`) to the local network.
+```
+ServerName www.example.com
 
-~~~shell
 <VirtualHost *:80>
-  ServerName www.example.com
-  
-  # Redirect all unencrypted traffic to the respective HTTPS page
+  # Redirect all unencrypted traffic to HTTPS
   Redirect "/" "https://www.example.com/"
 </VirtualHost>
 
 <VirtualHost *:443>
-  ServerName www.example.com
-
-  # Restrict access to JATOS GUI to local network
-  #<Location "/jatos">
-  #  Order deny,allow
-  #  Deny from all
-  #  Allow from 127.0.0.1 ::1
-  #  Allow from localhost
-  #  Allow from 192.168
-  #</Location>
-
-  # Your certificate for encryption
+  # SSL certificate for encryption
   SSLEngine On
   SSLCertificateFile /etc/ssl/certs/localhost.crt
   SSLCertificateKeyFile /etc/ssl/private/localhost.key
 
-  # JATOS uses WebSockets for its batch and group channels
+  # JATOS uses WebSockets for batch and group channels
   RewriteEngine On
   RewriteCond %{HTTP:Upgrade} =websocket [NC]
   RewriteRule /(.*)           ws://localhost:9000/$1 [P,L]
   RewriteCond %{HTTP:Upgrade} !=websocket [NC]
   RewriteRule /(.*)           http://localhost:9000/$1 [P,L]
-
-  # Proxy everything to the JATOS running on localhost on port 9000
-  ProxyPass / http://localhost:9000/
-  ProxyPassReverse / http://localhost:9000/
 </VirtualHost>
-~~~
+```
+
+## Restrict Access to the JATOS GUI to a Local Network (Optional)
+
+All JATOS GUI pages start with `/jatos`. As an additional security measure, you can restrict access to the GUI to certain networks. For example:
+
+```
+ServerName www.example.com
+
+<VirtualHost *:80>
+  Redirect "/" "https://www.example.com/"
+</VirtualHost>
+
+<VirtualHost *:443>
+  # Restrict access to JATOS' GUI to the local network
+  <Location "/jatos">
+    Order deny,allow
+    Deny from all
+    Allow from 127.0.0.1 ::1
+    Allow from localhost
+    Allow from 192.168
+  </Location>
+
+  SSLEngine On
+  SSLCertificateFile /etc/ssl/certs/localhost.crt
+  SSLCertificateKeyFile /etc/ssl/private/localhost.key
+
+  RewriteEngine On
+  RewriteCond %{HTTP:Upgrade} =websocket [NC]
+  RewriteRule /(.*)           ws://localhost:9000/$1 [P,L]
+  RewriteCond %{HTTP:Upgrade} !=websocket [NC]
+  RewriteRule /(.*)           http://localhost:9000/$1 [P,L]
+</VirtualHost>
+```
+
+## Serving Additional Static Files
+
+The recommended way to store files needed in JATOS studies is the [study assets folder](Write-your-own-Study-Basics-and-Beyond.html#study-assets). This ensures that only participants with a valid study code can access those files.
+
+However, there are scenarios where you may want to store files outside the study assets folder—for example, if you need to serve a large number of files, very large files, or want to enable caching. In such cases, it makes sense to serve them directly with Apache.
+
+The following config assumes your static files are in `/var/www/html/static`:
+
+```
+ServerName www.example.com
+
+<VirtualHost *:80>
+  Redirect "/" "https://www.example.com/"
+</VirtualHost>
+
+<VirtualHost *:443>
+  SSLEngine On
+  SSLCertificateFile /etc/ssl/certs/localhost.crt
+  SSLCertificateKeyFile /etc/ssl/private/localhost.key
+
+  RewriteEngine On
+
+  # WebSockets for JATOS batch and group channels
+  RewriteCond %{HTTP:Upgrade} =websocket [NC]
+  RewriteRule /(.*)           ws://localhost:9000/$1 [P,L]
+
+  # Serve static files directly
+  RewriteCond %{REQUEST_URI}  !^/static.*
+  RewriteCond %{HTTP:Upgrade} !=websocket [NC]
+  RewriteRule /(.*)           http://localhost:9000/$1 [P,L]
+</VirtualHost>
+```
