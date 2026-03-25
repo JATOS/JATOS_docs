@@ -63,28 +63,24 @@ There are three ways to set up JATOS to work with MySQL/MariaDB.
 
 ### 1. Via config file
 
-The config file (`jatos.conf` or `production.conf`) is located in the `conf` folder of your JATOS installation.
+The config file `jatos.conf` is located in the `conf` folder of your JATOS installation.
 
-- For JATOS version >= 3.8.3, set these in `jatos.conf`:
-    ```properties
-    jatos.db.url = "jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
-    jatos.db.username = "jatosuser"
-    jatos.db.password = "mypassword"
-    jatos.db.driver = "com.mysql.cj.jdbc.Driver"
-    ```
-- For JATOS version < 3.8.3, use `production.conf` and the properties `db.default.url`, `db.default.username`, `db.default.password`, and `db.default.driver`.
+```properties
+jatos.db.url = "jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+jatos.db.username = "jatosuser"
+jatos.db.password = "mypassword"
+jatos.db.driver = "com.mysql.cj.jdbc.Driver"
+```
 
 ### 2. Via command-line arguments
 
-- For JATOS version >= 3.8.3, use:
-    ```shell
-    ./loader.sh start \
-      -Djatos.db.url="jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC" \
-      -Djatos.db.username="jatosuser" \
-      -Djatos.db.password="mypassword" \
-      -Djatos.db.driver="com.mysql.cj.jdbc.Driver"
-    ```
-- For JATOS version < 3.8.3, use `-Ddb.default.url`, etc.
+```shell
+./loader.sh start \
+-Djatos.db.url="jdbc:mysql://127.0.0.1:3306/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC" \
+-Djatos.db.username="jatosuser" \
+-Djatos.db.password="mypassword" \
+-Djatos.db.driver="com.mysql.cj.jdbc.Driver"
+```
 
 ### 3. Via environment variables
 

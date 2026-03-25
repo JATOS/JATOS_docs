@@ -157,7 +157,7 @@ You may also want to change the Docker image version to a different one.
 ```yaml
 containers:
   # Maybe use a newer image version
-  - image: jatos/jatos:3.8.6
+  - image: jatos/jatos:3.10.1
     name: jatos
     args:
       # Necessary to run JATOS on multiple nodes

@@ -8,7 +8,7 @@ sidebar_position: 5
 
 You can configure JATOS to show a link to your 'Terms of Use' in an info box on the home page.
 
-In your JATOS installation folder, edit `conf/jatos.conf` (or `conf/production.conf` in versions < 3.8.3) and add the URL under `jatos.termsOfUseUrl`. If left empty, the info box is not shown.
+In your JATOS installation folder, edit `conf/jatos.conf` and add the URL under `jatos.termsOfUseUrl`. If left empty, the info box is not shown.
 
 ## Welcome Block
 
@@ -33,7 +33,7 @@ This welcome block can be fetched from **any HTTP server** that is able to serve
 2. Click the 'Use this template' button to create a copy of this repository.
 3. Change the content of `foobar-university-welcome.html` to your needs.
 4. Add necessary files (e.g., logo images) to your repository.
-5. Configure JATOS: In your JATOS installation folder, edit `conf/jatos.conf` (or `conf/production.conf` in versions < 3.8.3) and add `jatos.brandingUrl`:
+5. Configure JATOS: In your JATOS installation folder, edit `conf/jatos.conf` and add `jatos.brandingUrl`:
 
    1. Easy but with rate limit (from GitHub):
 

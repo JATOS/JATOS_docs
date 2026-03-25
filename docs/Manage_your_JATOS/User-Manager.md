@@ -37,7 +37,7 @@ Clicking the **Export** button at the top of the page allows you to export user 
 
 ## Superusers
 
-By default, granting Superuser status is disabled. To enable it, add the following line to your `conf/jatos.conf` file (or `conf/production.conf` for versions < 3.8.3):
+By default, granting Superuser status is disabled. To enable it, add the following line to your `conf/jatos.conf` file:
 
 ```
 jatos.user.role.allowSuperuser = true
@@ -57,7 +57,7 @@ With LDAP enabled, an 'LDAP' switch appears when adding a new user. Checking thi
 
 ### Google Sign-In
 
-Google Sign-In is disabled by default. To enable, add your Google Client ID to `conf/jatos.conf` (or `conf/production.conf` for versions < 3.8.3):
+Google Sign-In is disabled by default. To enable, add your Google Client ID to `conf/jatos.conf`:
 
 ```
 jatos.user.authentication.oauth.googleClientId = "1234567890-abc123abc123.apps.googleusercontent.com"
@@ -67,13 +67,13 @@ When a new user signs in with Google, their account is created automatically. Go
 
 ### OpenID Connect (OIDC)
 
-Since version 3.8.5, JATOS supports [OIDC](https://openid.net/developers/how-connect-works/) authentication. OIDC requires an external provider (e.g., [Keycloak](https://www.keycloak.org/)). See [JATOS configuration](JATOS_Configuration.html#openid-connect-oidc-authentication) for setup details.
+JATOS supports [OIDC](https://openid.net/developers/how-connect-works/) authentication. OIDC requires an external provider (e.g., [Keycloak](https://www.keycloak.org/)). See [JATOS configuration](JATOS_Configuration.html#openid-connect-oidc-authentication) for setup details.
 
 New users authenticating via OIDC are created automatically. OIDC user accounts cannot be added manually by an Admin.
 
 ### ORCID
 
-Since version 3.8.5, JATOS supports [ORCID Sign-In](https://info.orcid.org/documentation/features/public-api/orcid-as-a-sign-in-option-to-your-system/). To enable, set your ORCID *client ID* and *client secret* in the configuration. See [how to obtain these](https://info.orcid.org/documentation/integration-guide/registering-a-public-api-client/) and [how to configure JATOS](JATOS_Configuration.html#orcid-orcidorg-authentication).
+JATOS supports [ORCID Sign-In](https://info.orcid.org/documentation/features/public-api/orcid-as-a-sign-in-option-to-your-system/). To enable, set your ORCID *client ID* and *client secret* in the configuration. See [how to obtain these](https://info.orcid.org/documentation/integration-guide/registering-a-public-api-client/) and [how to configure JATOS](JATOS_Configuration.html#orcid-orcidorg-authentication).
 
 New users authenticating via ORCID are created automatically. ORCID user accounts cannot be added manually by an Admin.
 

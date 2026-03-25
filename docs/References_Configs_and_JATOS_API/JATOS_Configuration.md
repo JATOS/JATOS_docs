@@ -6,11 +6,11 @@ sidebar_position: 2
 
 JATOS properties can be configured in three different ways:
 
-1. **Config file** (`jatos.conf` or `production.conf`)
+1. **Config file** (`jatos.conf`)
 2. **Command-line arguments**
 3. **Environment variables** (only for some properties)
 
-The config file is located in the JATOS folder under `./conf` and is named `jatos.conf` for versions >= 3.8.3 and `production.conf` for versions < 3.8.3. It uses the [HOCON format](https://github.com/lightbend/config/blob/main/HOCON.md).  
+The config file is located in the JATOS folder under `./conf` and is named `jatos.conf`. It uses the [HOCON format](https://github.com/lightbend/config/blob/main/HOCON.md).  
 **Remember to always restart JATOS after making any changes to a config file.**
 
 Command-line argument names are usually the same as in the config file, but prefixed with `-D` (except JVM arguments, which use `-J`). For example: `jatos.urlBasePath` and `-Djatos.urlBasePath`.
@@ -38,10 +38,7 @@ It must be written as `-J-Xmx`, e.g., to allow 4GB memory: `-J-Xmx4G`.
 ### Address and Port
 
 By default, JATOS binds to all locally available IP addresses (including 127.0.0.1) on port 9000.  
-Usually, JATOS is installed together with a reverse proxy (e.g., Nginx or Apache), but if you don't want to use a proxy, you must set up the hostname or IP address and port.
-
-- **For v3.8.1 and lower:** `play.server.http.address` and `play.server.http.port`
-- **For v3.8.2 and higher:** `jatos.http.address` and `jatos.http.port`
+Usually, JATOS is installed together with a reverse proxy (e.g., Nginx or Apache), but if you don't want to use a proxy, you must set up the hostname or IP address and port: `jatos.http.address` and `jatos.http.port`.
 
 **Config file example:**
 ~~~shell
@@ -85,13 +82,10 @@ play.server.akka.requestTimeout = 100s
 
 ### URL Base Path
 
-JATOS can be configured to use a base path. For example, if your host is _www.example.org_ and JATOS runs under _mybasepath_, all URLs start with _www.example.org/mybasepath/_.
+JATOS can be configured to use a base path with `jatos.urlBasePath`. For example, if your host is _www.example.org_ and JATOS runs under _mybasepath_, all URLs start with _www.example.org/mybasepath/_.
 
 **The path must always start and end with a "/".**  
 If you add a base path, adjust all absolute paths to study assets in your HTML and JavaScript files, or use [relative paths](Adapt-pre-written-code-to-run-it-in-JATOS.html#create-the-study-in-jatos) (recommended).
-
-- **For v3.8.1 and lower:** `play.http.context`
-- **For v3.8.2 and higher:** `jatos.urlBasePath`
 
 **Config file:**
 ~~~shell
@@ -161,8 +155,6 @@ JATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
 ---
 
 ## Temporary Directory Path
-
-(Only in version >= 3.8.3)
 
 JATOS uses a directory to temporarily store files (e.g., during study import).  
 By default, the system's temp directory is used (on Linux/Unix: _/tmp_, on Windows: _c:\temp_). In Docker, it's _/opt/jatos_data/tmp_.
@@ -589,8 +581,6 @@ jatos.user.authentication.oauth.googleClientId = "1234567890-abc123abc123.apps.g
 
 ## OpenID Connect (OIDC) Authentication
 
-(Only in version >= 3.8.5)
-
 JATOS users can be authenticated by [OIDC sign-in](https://openid.net/developers/how-connect-works/), e.g., with [Keycloak](https://www.keycloak.org/).
 
 ### OIDC Discovery URL
@@ -723,8 +713,6 @@ jatos.user.authentication.oidc.successFeedback = "You successfully signed in wit
 ---
 
 ## ORCID Authentication
-
-(Only in version >= 3.8.5)
 
 JATOS users can be authenticated by [ORCID sign-in](https://info.orcid.org/documentation/features/public-api/orcid-as-a-sign-in-option-to-your-system/). Internally, ORCID uses OpenID Connect.
 

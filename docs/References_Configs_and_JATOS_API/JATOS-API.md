@@ -10,7 +10,7 @@ Using the JATOS API requires some **advanced knowledge** of HTTP and how to call
 
 ## Introduction
 
-Since version 3.8.1, JATOS offers an HTTP API to make integrating JATOS into other tools easier. A common use case is calling JATOS directly from Python, R, Matlab, or any other programming language in an automated and programmatic fashion.
+JATOS offers an HTTP API to make integrating JATOS into other tools easier. A common use case is calling JATOS directly from Python, R, Matlab, or any other programming language in an automated and programmatic fashion.
 
 With the API, you can:
 
@@ -33,7 +33,11 @@ You can try out the API with your local JATOS. Here's how:
 
 ## OpenAPI Specification
 
-The JATOS API uses [OpenAPI 3 for specification](https://github.com/JATOS/JATOS/blob/main/jatos-api.yaml). You can use [petstore.swagger.io](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/JATOS/JATOS/main/jatos-api.yaml) for an easy-to-navigate page.
+The JATOS API uses [OpenAPI 3 for specification](https://github.com/JATOS/JATOS/blob/main/jatos-api.yaml).
+
+A running JATOS serves the OpenAPI specification under `/openapi.yaml`, e.g. `http://localhost:9000/openapi.yaml`.
+
+You can use [petstore.swagger.io](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/JATOS/JATOS/main/jatos-api.yaml) for an easy-to-navigate page.
 
 The API is a work in progress. To request additional endpoints, please open a [GitHub issue](https://github.com/JATOS/JATOS/issues).
 
@@ -419,7 +423,7 @@ $response = Invoke-WebRequest -Uri 'https://example.com/jatos/api/v1/study' -Met
 
 ## Deactivate the JATOS API
 
-By default, the API is activated and ready to use. If you want to turn it off, edit `conf/jatos.conf` (or `conf/production.conf` in versions < 3.8.3) in the JATOS installation folder. Search for `jatos.api.allowed` and set it to `false`:
+By default, the API is activated and ready to use. If you want to turn it off, edit `conf/jatos.conf` in the JATOS installation folder. Search for `jatos.api.allowed` and set it to `false`:
 
 ```
 jatos.api.allowed = false
