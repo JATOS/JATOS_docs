@@ -1222,6 +1222,8 @@ jatos.studyAdmin.showResultFileSize = true   # Default is false
 
 ## JATOS API
 
+### Enable
+
 Enable or disable the JATOS API. Default is enabled (`true`).
 
 **Config file:**
@@ -1232,4 +1234,120 @@ jatos.api.allowed = false
 **Command-line:**
 ~~~shell
 -Djatos.api.allowed=false
+~~~
+
+### Enable API Token Generation via API
+
+Is it allowed to generate new tokens via the API. This setting does not apply to tokens created via the GUI. Default is enabled (`true`).
+
+**Config file:**
+~~~shell
+jatos.api.tokens.apiGeneration.allowed = false
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.api.tokens.apiGeneration.allowed=false
+~~~
+
+### Token Expiration
+
+The duration for which a token generated via the API remains valid after its creation. This setting does not apply to tokens created via the GUI. Default is 3600 seconds.
+
+**Config file:**
+~~~shell
+jatos.api.tokens.apiGeneration.expiresAfter = 86400 # One day
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.api.tokens.apiGeneration.expiresAfter=86400
+~~~
+
+---
+
+## Last seen date threshold
+
+Last seen date is updated only if its current value is older than this threshold (in seconds). This helps reduce unnecessary database writes during frequent study result updates. Default is 30 seconds.
+
+**Config file:**
+~~~shell
+jatos.studyResult.lastSeenDate.updateThreshold = 60
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.studyResult.lastSeenDate.updateThreshold=60
+~~~
+
+---
+
+## OpenAI API
+
+### Enable
+
+Is it allowed to use the OpenAI proxy during study runs. Default is disabled (`false`).
+
+**Config file:**
+~~~shell
+jatos.openai.allowed = true
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.openai.allowed=true
+~~~
+
+### OpenAI API key
+
+**Config file:**
+~~~shell
+jatos.openai.apiKey = "my-openai-key"
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.openai.apiKey="my-openai-key"
+~~~
+
+### Base path
+
+Base path for OpenAI API requests. Use this to restrict which API endpoints are accessible, helping to prevent unauthorized usage. For example, setting this to `/v1/chat/completions` limits usage strictly to the Chat API. Default is `/v1/` (allows all endpoints).
+
+**Config file:**
+~~~shell
+jatos.openai.urlBasePath = "/v1/responses"
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.openai.urlBasePath="/v1/responses"
+~~~
+
+### Quota per study run
+
+The maximum number of OpenAI API calls allowed per study run. Set to -1 for unlimited calls. Default is 10.
+
+**Config file:**
+~~~shell
+jatos.openai.callLimit = 100
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.openai.callLimit=100
+~~~
+
+### Timeout
+
+Timeout waiting for an OpenAI response. How long in seconds should the proxy wait for a response from OpenAI API. Default is 180.
+
+**Config file:**
+~~~shell
+jatos.openai.timeout = 90
+~~~
+
+**Command-line:**
+~~~shell
+-Djatos.openai.timeout=90
 ~~~
