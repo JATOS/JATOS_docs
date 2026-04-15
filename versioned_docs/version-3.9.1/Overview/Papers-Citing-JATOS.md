@@ -11,6 +11,9 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Domínguez-Arriola, M. E., & Pell, M. D. (2026). Not worth my time! Understanding factors that make speech socially engaging. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001410)
+
+Nemati, F., Westbury, C., Rostami, H. et al. (2026) Extrapolated Persian Lexical Affect Norms (E-PLAN) from best–worst judgments of valence, arousal, dominance, and concreteness. *Behav Res* [DOI](https://doi.org/10.3758/s13428-026-02963-9)
 
 Kuper, C., Rolfs, M. (2026) Rapid Motor Inhibition as a Mechanism to Prevent Outdated Movements. *Journal of Neuroscience* [DOI](https://www.doi.org/10.1523/JNEUROSCI.1319-25.2026)
 
