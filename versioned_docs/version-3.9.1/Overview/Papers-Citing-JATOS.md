@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Senaldi, M. S. G., Palma, P., Iniesta, A., & Titone, D. (2026). Putting new words to sleep: Novel word learning depends on individual differences in bilingual experience. *Bilingualism: Language and Cognition*. [DOI](https://doi.org/10.1017/S1366728926101059)
+
 Domínguez-Arriola, M. E., & Pell, M. D. (2026). Not worth my time! Understanding factors that make speech socially engaging. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001410)
 
 Nemati, F., Westbury, C., Rostami, H. et al. (2026) Extrapolated Persian Lexical Affect Norms (E-PLAN) from best–worst judgments of valence, arousal, dominance, and concreteness. *Behav Res* [DOI](https://doi.org/10.3758/s13428-026-02963-9)
