@@ -11,8 +11,11 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Fletcher, P., Batkovskyte, I., Subramaniam, N., & Davis, M. (2026). Hallucination proneness is linked to over-reliance on internal priors for noisy speech. *Schizophrenia Bulletin* [DOI](https://doi.org/10.17863/CAM.128484)
 
-Colombatto, C., Fleming, S.M. (2026) Beliefs about accuracy shape confidence attributions to humans and artificial agents. *Commun Psychol.* [DOI](https://doi.org/10.1038/s44271-026-00445-4)
+Kamenetski, A., Mitrofanova, N., Ermolina, J., & Minor, S. (2026) Cross-linguistic influence in the processing of aspect in L2 English: Slavic, but not Norwegian L1 speakers associate past simple with completion. *Front. Lang. Sci.*  [DOI](https://doi.org/10.3389/flang.2026.1756472)
+
+Colombatto, C., Fleming, S.M. (2026) Beliefs about accuracy shape confidence attributions to humans and artificial agents. *Commun Psychol.* [DOI(https://doi.org/10.1038/s44271-026-00445-4)
 
 Senaldi, M. S. G., Palma, P., Iniesta, A., & Titone, D. (2026). Putting new words to sleep: Novel word learning depends on individual differences in bilingual experience. *Bilingualism: Language and Cognition*. [DOI](https://doi.org/10.1017/S1366728926101059)
 
