@@ -11,6 +11,9 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+
+Liang, Y., van Heuven, V.J., & van Hout, R. (2026) Recognizing vocal emotions in two unfamiliar languages: universal patterns versus cultural and prosodic proximity. *Phonetica*. [DOI](https://doi.org/10.1515/phon-2025-0046)
+                    
 Fletcher, P., Batkovskyte, I., Subramaniam, N., & Davis, M. (2026). Hallucination proneness is linked to over-reliance on internal priors for noisy speech. *Schizophrenia Bulletin* [DOI](https://doi.org/10.17863/CAM.128484)
 
 Kamenetski, A., Mitrofanova, N., Ermolina, J., & Minor, S. (2026) Cross-linguistic influence in the processing of aspect in L2 English: Slavic, but not Norwegian L1 speakers associate past simple with completion. *Front. Lang. Sci.*  [DOI](https://doi.org/10.3389/flang.2026.1756472)
