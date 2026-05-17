@@ -11,6 +11,12 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Guerra, S., Roccato, M., Oletto, C.M., Ghiani, A., Bertamini, M., Battaglini, L. (2026) At the roots of Plant Awareness Disparity (PAD): Semantic processing and numerosity perception. *PLoS One*. [DOI](https://doi.org/10.1371/journal.pone.0343890)
+
+Glick, A.R., Vezina, E.L., Onishi, K.H., Nadig, A.S. (2026) Does engagement predict preschoolers' learning from on-screen interactions? A comparison of behavioral and holistic engagement measures. *Front. Dev. Psychol.* [DOI](https://doi.org/10.3389/fdpys.2026.1812543)
+
+Lõo, K., Tomaschek, F., Lippus, P. et al. (2026) Morphological effects in Estonian spontaneous speech: evidence from an online typing study. *Morphology*. [DOI](https://doi.org/10.1007/s11525-026-09459-4)
+
 Fraticelli, M., Klaus, M., Lorenzi, C. (2026) Auditory detection of flowing water by humans in a natural habitat: Psychophysical and modelling data. *J. Acoust. Soc.*. [DOI](https://doi.org/10.1121/10.0043729)
 
 Domínguez-Arriola, M. E., & Pell, M. D. (2026). Not worth my time! Understanding factors that make speech socially engaging. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001410)
