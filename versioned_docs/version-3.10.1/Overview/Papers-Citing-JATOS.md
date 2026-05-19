@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Conte, A., Sbriglia, P. & Stimolo, M. (2026) Does Organised-Crime Violence Breed Dishonesty? Evidence from a Coin-Flip Experiment. *Ital Econ J*. [DOI](https://doi.org/10.1007/s40797-026-00390-5)
+
 Guerra, S., Roccato, M., Oletto, C.M., Ghiani, A., Bertamini, M., Battaglini, L. (2026) At the roots of Plant Awareness Disparity (PAD): Semantic processing and numerosity perception. *PLoS One*. [DOI](https://doi.org/10.1371/journal.pone.0343890)
 
 Glick, A.R., Vezina, E.L., Onishi, K.H., Nadig, A.S. (2026) Does engagement predict preschoolers' learning from on-screen interactions? A comparison of behavioral and holistic engagement measures. *Front. Dev. Psychol.* [DOI](https://doi.org/10.3389/fdpys.2026.1812543)
