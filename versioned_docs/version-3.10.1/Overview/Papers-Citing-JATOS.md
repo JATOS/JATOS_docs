@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Rieger, T., Schindler, H., Koch, K., Onnasch, L. (2026). AI Error Difficulty Modulates the Effectiveness of Explainability in Decision Support Systems. ACM Trans. Comput.-Hum. Interact. [DOI](https://doi.org/10.1145/3817603)
+
+Vives, E., Thébault Guiochon, A., Trémolière, B. et al. (2026) Moral anger, disgust, but also sadness: examining the victim vs. perpetrator focus in the moral evaluation of transgressions. *Motiv Emot*.[DOI](https://doi.org/10.1007/s11031-026-10249-y)
+
 Conte, A., Sbriglia, P. & Stimolo, M. (2026) Does Organised-Crime Violence Breed Dishonesty? Evidence from a Coin-Flip Experiment. *Ital Econ J*. [DOI](https://doi.org/10.1007/s40797-026-00390-5)
 
 Guerra, S., Roccato, M., Oletto, C.M., Ghiani, A., Bertamini, M., Battaglini, L. (2026) At the roots of Plant Awareness Disparity (PAD): Semantic processing and numerosity perception. *PLoS One*. [DOI](https://doi.org/10.1371/journal.pone.0343890)
