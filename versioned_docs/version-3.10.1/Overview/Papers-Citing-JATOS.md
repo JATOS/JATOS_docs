@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Wainio-Theberge, S., & Armony, J. (2026). Manipulating posture implicitly through environmental constraints influences mood and risk-taking behaviour. *British Journal of Psychology*. [DOI](https://doi.org/10.1111/bjop.70083)
+
 Rieger, T., Schindler, H., Koch, K., Onnasch, L. (2026). AI Error Difficulty Modulates the Effectiveness of Explainability in Decision Support Systems. ACM Trans. Comput.-Hum. Interact. [DOI](https://doi.org/10.1145/3817603)
 
 Vives, E., Thébault Guiochon, A., Trémolière, B. et al. (2026) Moral anger, disgust, but also sadness: examining the victim vs. perpetrator focus in the moral evaluation of transgressions. *Motiv Emot*.[DOI](https://doi.org/10.1007/s11031-026-10249-y)
