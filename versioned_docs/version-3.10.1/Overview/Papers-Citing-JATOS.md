@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Türüdü, S., Aktaş, E.B., Can, M., Ercan, M.L. (2026) Platform, modality, and gamification effects on digit span task performance. *iScience* [DOI](https://doi.org/10.1016/j.isci.2026.116018)
+
 Wainio-Theberge, S., & Armony, J. (2026). Manipulating posture implicitly through environmental constraints influences mood and risk-taking behaviour. *British Journal of Psychology*. [DOI](https://doi.org/10.1111/bjop.70083)
 
 Rieger, T., Schindler, H., Koch, K., Onnasch, L. (2026). AI Error Difficulty Modulates the Effectiveness of Explainability in Decision Support Systems. ACM Trans. Comput.-Hum. Interact. [DOI](https://doi.org/10.1145/3817603)
