@@ -10,15 +10,15 @@ By default, JATOS simply displays the text "**This study is finished. Thank you 
 
 ### 1. `endPage.html`
 
-If you include a file named `_endPage.html_` in your study assets folder alongside your other study files, JATOS will automatically redirect participants to this page after the study has finished.
+If you include a file named `endPage.html` in your study assets folder alongside your other study files, JATOS will automatically redirect participants to this page after the study has finished.
 
-**Hint 1:** Be aware that within `_endPage.html_`, you **cannot** load or use any other files from the study assets folder. Due to security reasons, once the study is finished, JATOS prevents access to other files from this folder, as well as from any of the JATOS sessions (study, batch, and group). However, this does not prevent you from loading images or libraries (or any other resources) directly from the internet.
+**Hint 1:** Be aware that within `endPage.html`, you **cannot** load or use any other files from the study assets folder. Due to security reasons, once the study is finished, JATOS prevents access to other files from this folder, as well as from any of the JATOS sessions (study, batch, and group). However, this does not prevent you from loading images or libraries (or any other resources) directly from the internet.
 
-**Hint 2:** If you run the study with an **MTurk Worker**, you will likely want to display the confirmation code to your worker. This code is passed to `_endPage.html_` in a cookie with the name `JATOS_CONFIRMATION_CODE`.
+**Hint 2:** If you run the study with an **MTurk Worker**, you will likely want to display the confirmation code to your worker. This code is passed to `endPage.html` in a cookie with the name `JATOS_CONFIRMATION_CODE`.
 
-**Hint 3:** If you run your study using the **JATOS GUI (Run button)**, it will not display `_endPage.html_` but will instead redirect you back to JATOS' GUI.
+**Hint 3:** If you run your study using the **JATOS GUI (Run button)**, it will not display `endPage.html` but will instead redirect you back to JATOS' GUI.
 
-**Hint 4:** The **End redirect URL** defined in the study properties has higher priority then `_endPage.html_` and will be used if both are set.
+**Hint 4:** The **End redirect URL** defined in the study properties has higher priority then `endPage.html` and will be used if both are set.
 
 -----
 
