@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Ponce, R., Marotta, A., Román-Caballero, R., Tanaka, Y., Akçeşme, S., Chacón-Candia, J.A., Milliken, B., Casagrande, M., Lupiáñez, J. (2026) When arrows behave like eyes: Reversal of spatial stroop interference by visual masking. *Cognition*. [DOI](https://doi.org/10.1016/j.cognition.2026.106623)
+
 Nadarevic, L. (2026). Effects of statement type and study context on memory for truth and falsity. *Journal of Experimental Psychology: Learning, Memory, and Cognition.* [DOI](https://doi.org/10.1037/xlm0001631)
 
 Golden, M.J., Hutcheon, T.G., Gomez-Rivas, C., Kahan, T.A. (2026) Trial history shapes the alerting-congruency interaction in selective attention. *Front. Psychol.* [DOI](https://doi.org/10.3389/fpsyg.2026.1768354)
