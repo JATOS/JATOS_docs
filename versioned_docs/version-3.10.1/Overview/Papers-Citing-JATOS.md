@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Ijanc Neto, C., Aggio, N. (2026) Assessing the Explicit and Implicit Attitudes of Brazilians Toward Venezuelan Immigrants. *Behav. Soc. Iss.* [DOI](https://doi.org/10.1007/s42822-026-00262-8)
+
 Harasimczuk, J., O’Donnell, R. E., Obidziński, M., & Nieznański, M. (2026). Conceptual and perceptual chunking of real-world objects in visual working memory. *Memory*. [DOI](https://doi.org/10.1080/09658211.2026.2685598)
 
 Ponce, R., Marotta, A., Román-Caballero, R., Tanaka, Y., Akçeşme, S., Chacón-Candia, J.A., Milliken, B., Casagrande, M., Lupiáñez, J. (2026) When arrows behave like eyes: Reversal of spatial stroop interference by visual masking. *Cognition*. [DOI](https://doi.org/10.1016/j.cognition.2026.106623)
