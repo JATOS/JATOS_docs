@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Stuchlý, E., Bavard, S., Gluth, S. (2026) Deciding to simulate: Cognitive mechanisms of predicting the decisions of others. *iScience*. [DOI](https://doi.org/10.1016/j.isci.2026.116047)
+
 Pohl, J., Nikolovska. K., Maurelli, F., Kappas, A. and Hommel, B. (2026) When less is more: single selfhood-related cues elicit higher selfhood ratings than multiple cues. *Front. Cognit.* [DOI](https://doi.org/10.3389/fcogn.2026.1815906)
 
 Ijanc Neto, C., Aggio, N. (2026) Assessing the Explicit and Implicit Attitudes of Brazilians Toward Venezuelan Immigrants. *Behav. Soc. Iss.* [DOI](https://doi.org/10.1007/s42822-026-00262-8)
