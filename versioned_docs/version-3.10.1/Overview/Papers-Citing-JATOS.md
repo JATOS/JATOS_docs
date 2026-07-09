@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Marschner, M., Galang, C.M., Brass, M. (2026) Us and them: Anticipated imitation between groups. *Acta Psychologica*. [DOI](https://doi.org/10.1016/j.actpsy.2026.107058)
+
 Ward, E., Simpson, N., Press, C. (2026) Violating statistical structure impairs detection of deviant and incidental events. *iScience*. [DOI](https://doi.org/10.1016/j.isci.2026.116383)
 
 Stuchlý, E., Bavard, S., Gluth, S. (2026) Deciding to simulate: Cognitive mechanisms of predicting the decisions of others. *iScience*. [DOI](https://doi.org/10.1016/j.isci.2026.116047)
