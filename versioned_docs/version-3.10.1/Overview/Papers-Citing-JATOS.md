@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Czilczer, C., Sachse, P. & Dahm, S.F. (2026) One size Fitts’ all? Reconsidering the use of deviations from real-time action imagery in mental chronometry tasks. *Behav Res.* [DOI](https://doi.org/10.3758/s13428-026-03124-8)
+
 Biehl, S., Dugan, S., Li, S.R., Seward, R., Riley, M.A., Boyce, S., Mast, T.S. (2026) Optimized Classification of Accurate and Misarticulated American English Rhotic Speech Sounds for Use in Gamified Real-Time Ultrasound Biofeedback Therapy. *Speech Communication*. [DOI](https://doi.org/10.1016/j.specom.2026.103451)
 
 Jevtović, M., Martin, C.D. & Kapnoula, E.C. (2026) Immediate creation of spelling expectations during explicit versus implicit auditory word learning. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-026-02953-0)
