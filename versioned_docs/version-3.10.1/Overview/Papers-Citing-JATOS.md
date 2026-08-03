@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Chromý, J., Ceháková, M., Preininger, M. et al. (2026) Morphologically Annotated Lexical Decision Data for 12,242 Czech Word Forms. *Sci Data*. [DOI](https://doi.org/10.1038/s41597-026-07196-1)
+
 Duncan, D.H., Theeuwes, J. (2026) Parallel or clump-wise serial? A reinterpretation of feature-search mode. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-026-03315-7)
 
 Czilczer, C., Sachse, P. & Dahm, S.F. (2026) One size Fitts’ all? Reconsidering the use of deviations from real-time action imagery in mental chronometry tasks. *Behav Res.* [DOI](https://doi.org/10.3758/s13428-026-03124-8)
