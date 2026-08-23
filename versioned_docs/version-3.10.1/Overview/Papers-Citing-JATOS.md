@@ -15,6 +15,8 @@ Azer, L., Vanderlip, C.R., Ehlert, L., Stark, C.E.L. (2026) A systematic evaluat
 
 Fernandes, A. I., Haro, J., Dijkstra, T., & Comesaña, M. (2026). On the Nature of the Inhibitory Neighborhood Effect: A Masked Priming Study With European Portuguese–English Bilinguals. *International Journal of Bilingualism*. [DOI](https://doi.org/10.1177/13670069261471799)
 
+Sarli, L., Barttfeld, P., & Justel, N. (2026). Differential Responses for Emotional Visual and Auditory Word Recognition in First vs. Second Language. *International Journal of Bilingualism*. [DOI](https://doi.org/10.1177/13670069261464296)
+
 Mauersberger, H., Hareli, S. & Hess, U. (2026) The effects of physical emotion intensity and perceived emotions on trait and ability judgments are non-linear. *Sci Rep*. [DOI](https://doi.org/10.1038/s41598-026-65262-5)
 
 Chromý, J., Ceháková, M., Preininger, M. et al. (2026) Morphologically Annotated Lexical Decision Data for 12,242 Czech Word Forms. *Sci Data*. [DOI](https://doi.org/10.1038/s41597-026-07196-1)
