@@ -19,6 +19,8 @@ Sarli, L., Barttfeld, P., & Justel, N. (2026). Differential Responses for Emotio
 
 Giraud, M., Leonardi, V., Vignoli, A. et al. (2026) Emotion understanding through face and body in children with self-limited epilepsy with centrotemporal spikes. *Sci Rep*. [DOI](https://doi.org/10.1038/s41598-026-65242-9)
 
+Hutchinson, B.T., Kuczynska, J., Uddén, J. et al. (2026) Does Mindfulness Reduce Automatic Preference Development?. *Mindfulness*. [DOI](https://doi.org/10.1007/s12671-026-02956-x)
+
 Mauersberger, H., Hareli, S. & Hess, U. (2026) The effects of physical emotion intensity and perceived emotions on trait and ability judgments are non-linear. *Sci Rep*. [DOI](https://doi.org/10.1038/s41598-026-65262-5)
 
 Chromý, J., Ceháková, M., Preininger, M. et al. (2026) Morphologically Annotated Lexical Decision Data for 12,242 Czech Word Forms. *Sci Data*. [DOI](https://doi.org/10.1038/s41597-026-07196-1)
