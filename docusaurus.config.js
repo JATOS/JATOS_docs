@@ -28,16 +28,21 @@ const config = {
           routeBasePath: '/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
-          lastVersion: '3.10.1',
+          lastVersion: '3.11.1',
           versions: {
             current: {
               label: 'next',
               path: 'next',
               banner: 'unreleased',
             },
+            '3.11.1': {
+              label: '3.11.x',
+              path: '',
+              banner: 'none',
+            },
             '3.10.1': {
               label: '3.10.x',
-              path: '',
+              path: '3.10.x',
               banner: 'none',
             },
             '3.9.1': {
@@ -134,25 +139,8 @@ const config = {
                 to: 'https://communityinviter.com/apps/jatosworkspace/jatos-slack',
               },
               {
-                label: 'GitHub Issues',
-                to: 'https://github.com/JATOS/JATOS/issues',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: 'http://blog.jatos.org/',
-              },
-              {
                 label: 'GitHub',
                 to: 'https://github.com/JATOS/JATOS',
-              },
-              {
-                label: 'Source Code Docs',
-                to: 'https://docs.jatos.org',
               },
             ],
           },
@@ -164,6 +152,23 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        fromExtensions: ['html', 'htm'],
+        redirects: [
+          {
+            from: [
+              '/Example-Group-Studies',
+              '/Example-Group-Studies.html',
+            ],
+            to: '/Group-Studies-Overview',
+          },
+        ],
+      },
+    ],
+  ],
 };
 
 module.exports = config;
