@@ -1,6 +1,6 @@
 ---
 title: Performance Tweaking
-slug: /Performance-Tweaking.html
+slug: /Performance-Tweaking
 sidebar_position: 7
 ---
 

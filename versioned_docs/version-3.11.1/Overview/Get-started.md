@@ -8,7 +8,7 @@ sidebar_position: 5
 
 ### 1. Download and Install JATOS
 
-Start by downloading JATOS and [installing a local instance](Installation.html) on your computer.
+Start by downloading JATOS and [installing a local instance](Installation) on your computer.
 
 ### 2. Access the JATOS GUI
 
@@ -19,7 +19,7 @@ Once installed, open JATOS' graphical user interface (GUI) by navigating to [htt
 To quickly see JATOS in action:
 
 1.  Download one of the [Example Studies](/Example-Studies), for instance, the 'Go- / No-Go Task' with jsPsych. **Do not unzip the downloaded file.**
-2.  Import the study into JATOS: In the JATOS GUI, open the study sidebar by clicking on **Studies** in the header and then on **+** and finally **Import Study**. Select the [_.jzip_](JATOS-Study-Archive-JZIP.html) you just downloaded. The imported study should now appear in the sidebar on the left.
+2.  Import the study into JATOS: In the JATOS GUI, open the study sidebar by clicking on **Studies** in the header and then on **+** and finally **Import Study**. Select the [_.jzip_](JATOS-Study-Archive-JZIP) you just downloaded. The imported study should now appear in the sidebar on the left.
 
 ### 4. Explore the GUI
 
@@ -30,7 +30,7 @@ Now that you have a study imported, it's time to explore:
   * After running the study, you can review the results:
       * For **whole-study results**, click the **Results** button at the top of the page.
       * For **results from individual components**, click the **Results** buttons located in each component's row.
-      * You can view detailed information for each result by clicking the **▼** to the left of its row ([find more information on managing results here](Manage-results.html)).
+      * You can view detailed information for each result by clicking the **▼** to the left of its row ([find more information on managing results here](Manage-results)).
 
 Here's a screenshot of a study's results view:
 ![Results View screenshot](/img/v39x/results_view_12.png)

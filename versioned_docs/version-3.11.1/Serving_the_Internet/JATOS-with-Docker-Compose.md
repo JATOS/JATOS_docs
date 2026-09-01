@@ -71,7 +71,7 @@ docker compose -f compose.yaml down -v
 
 ## Nginx Configuration
 
-See [JATOS with Nginx](/JATOS-with-Nginx.html) for more details. The `nginx.conf` file in the repo is mounted into the Nginx container and will be used by Nginx.
+See [JATOS with Nginx](/JATOS-with-Nginx) for more details. The `nginx.conf` file in the repo is mounted into the Nginx container and will be used by Nginx.
 
 ### Use Your Own Certificate (for HTTPS)
 
@@ -89,13 +89,13 @@ Make the following changes in `compose.yaml`:
 
 - Set `JATOS_DB_PASSWORD` and `MYSQL_PASSWORD` to the **same** password of your choice.
 - Set `MYSQL_ROOT_PASSWORD` to a password you choose for MySQL's root user.
-- Consider [turning off MySQL's binary log](/JATOS-with-MySQL.html#optional---deactivate-the-binary-log-of-your-mysqlmariadb) with `--skip-log-bin` in the `db` service's `command` section.
+- Consider [turning off MySQL's binary log](/JATOS-with-MySQL#optional---deactivate-the-binary-log-of-your-mysqlmariadb) with `--skip-log-bin` in the `db` service's `command` section.
 
-See [JATOS with MySQL](/JATOS-with-MySQL.html) for more information.
+See [JATOS with MySQL](/JATOS-with-MySQL) for more information.
 
 ## JATOS Configuration
 
-See [JATOS Configuration](/JATOS_Configuration.html) for all options.
+See [JATOS Configuration](/JATOS_Configuration) for all options.
 
 - Change the image version in `compose.yaml` to the one you need (e.g., the latest).
 - **Always change the admin password after first installation:** In your browser, click on **Admin** in the top-right header, then select **My password** to change your password.
@@ -110,12 +110,12 @@ JATOS can be configured either by command-line parameters (with the `-D` prefix)
 
 The `jatos.conf` file is mounted as a volume in the JATOS container, so you can edit it outside the container.
 
-See [JATOS Configuration](/JATOS_Configuration.html) for all possible parameters.
+See [JATOS Configuration](/JATOS_Configuration) for all possible parameters.
 
 ## Updating JATOS with Docker Compose
 
-The easiest way to update a JATOS instance running with this setup (with external data volumes) is to **change the JATOS Docker image tag to a higher version and restart the services**. There is no need to use [JATOS' auto-updater](/Update-JATOS.html#automatic-update). JATOS only allows updates to higher version numbers—downgrading will likely break your installation. **Always back up your data before updating.**
+The easiest way to update a JATOS instance running with this setup (with external data volumes) is to **change the JATOS Docker image tag to a higher version and restart the services**. There is no need to use [JATOS' auto-updater](/Update-JATOS#automatic-update). JATOS only allows updates to higher version numbers—downgrading will likely break your installation. **Always back up your data before updating.**
 
 ## Running JATOS on Multiple Nodes
 
-See [JATOS in a cluster](/JATOS-in-a-cluster.html) for more information.
+See [JATOS in a cluster](/JATOS-in-a-cluster) for more information.

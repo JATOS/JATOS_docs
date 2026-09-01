@@ -1,6 +1,6 @@
 ---
 title: Write your own study - Basics and beyond
-slug: /Write-your-own-Study-Basics-and-Beyond.html
+slug: /Write-your-own-Study-Basics-and-Beyond
 sidebar_position: 2
 ---
 

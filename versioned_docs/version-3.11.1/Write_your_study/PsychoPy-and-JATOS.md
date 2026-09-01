@@ -12,7 +12,7 @@ import ReactPlayer from 'react-player'
 
 ### Create a Study in JATOS
 
-1.  Open JATOS in your browser. (Need to install JATOS locally? [Find out how here](https://www.jatos.org/Installation.html)).
+1.  Open JATOS in your browser. (Need to install JATOS locally? [Find out how here](https://www.jatos.org/Installation)).
 2.  **Create a new study**: Click on **Studies** to open the sidebar, then select **+**, and finally **New Study**.
 3.  JATOS will create a new study and display its study page. **Make a note of the study assets folder name**; you'll need it later. You can find it at the top of your study page. By default, it will look similar to `0413af8c-8512-4105-b89b-08a7f557cb57`.
 4.  **Add a new component**: Click the **New Component** button. In the window that appears, enter a title (this is up to you) and type `index.html` into the 'HTML file path' field. Then, press **Add**.

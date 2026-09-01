@@ -12,10 +12,10 @@ We periodically update JATOS with new features and bug fixes. We recommend you s
 
 There are more details about updating in their respective pages:
 
-* [Update JATOS running on a server](/JATOS-on-a-server.html#update-jatos)
-* [Update JATOS running in a Docker container](/Install-JATOS-via-Docker.html#updating-jatos-with-docker)
-* [Update JATOS running with Docker Compose](/JATOS-with-Docker-Compose.html#updating-jatos-with-docker-compose)
-* [Update JATOS running with Kubernetes](/JATOS-in-a-cluster.html#updating-jatos-with-kubernetes)
+* [Update JATOS running on a server](/JATOS-on-a-server#update-jatos)
+* [Update JATOS running in a Docker container](/Install-JATOS-via-Docker#updating-jatos-with-docker)
+* [Update JATOS running with Docker Compose](/JATOS-with-Docker-Compose#updating-jatos-with-docker-compose)
+* [Update JATOS running with Kubernetes](/JATOS-in-a-cluster#updating-jatos-with-kubernetes)
 
 ## Automatic Update
 
@@ -29,7 +29,7 @@ The process is pretty self-explanatory, but we'll explain it here in detail:
 
    ![Update notification Screenshot](/img/v39x/autoupdate-notification.png)
 
-   Sometimes your JATOS is not able to receive data about new releases. Often, a restart of the JATOS application helps in this case. If this still persists and you know there is a new release that you would like to update to, you can still [start the update by specifying the version](/Update-JATOS.html#auto-update-to-a-specific-version).
+   Sometimes your JATOS is not able to receive data about new releases. Often, a restart of the JATOS application helps in this case. If this still persists and you know there is a new release that you would like to update to, you can still [start the update by specifying the version](/Update-JATOS#auto-update-to-a-specific-version).
 
 2. Click on _Update_, confirm that you want to continue, and the latest JATOS version will be downloaded from GitHub and saved in your system's temporary folder. The download might take a while depending on your internet connection.
 

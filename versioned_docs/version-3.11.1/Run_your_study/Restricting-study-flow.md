@@ -55,7 +55,7 @@ If you want to enforce a linear study flow, check this box. Then, if a participa
 
 Often, you want to prevent a participant from completing the same study twice. To achieve this, use the **single-use** study link types: **Personal Single** and **General Single**.
 
-Read more about the [different worker types available in JATOS](Worker-Types.html) and [about study links](Run-your-Study-with-Study-Links.html).
+Read more about the [different worker types available in JATOS](Worker-Types) and [about study links](Run-your-Study-with-Study-Links).
 
 -----
 

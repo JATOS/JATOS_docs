@@ -21,7 +21,7 @@ All these points (and more) are addressed on this page.
 
 Setting up JATOS with multiple nodes using [Docker Compose](https://docs.docker.com/compose/) might not make much sense for production, since all instances run on the same machine. However, it demonstrates the general concepts and caveats well.
 
-Instructions for getting started with JATOS and Docker Compose are on [another page](/JATOS-with-Docker-Compose.html). You may want to follow those steps to set up JATOS with a MySQL database and Nginx.
+Instructions for getting started with JATOS and Docker Compose are on [another page](/JATOS-with-Docker-Compose). You may want to follow those steps to set up JATOS with a MySQL database and Nginx.
 
 To run JATOS in multiple containers in parallel, you need to additionally configure the [_compose.yaml_](https://github.com/JATOS/JATOS_with_docker_compose/blob/main/compose.yaml):
 
@@ -109,7 +109,7 @@ spec:
 
 ### Shared Volumes
 
-As mentioned [earlier](/JATOS-in-a-cluster.html#things-to-know-before-running-jatos-in-a-multi-node-setup), JATOS requires certain folders to be shared when running on multiple nodes. In Kubernetes, this means the _PersistentVolumeClaim_ must have `accessMode`: `ReadWriteMany`.
+As mentioned [earlier](/JATOS-in-a-cluster#things-to-know-before-running-jatos-in-a-multi-node-setup), JATOS requires certain folders to be shared when running on multiple nodes. In Kubernetes, this means the _PersistentVolumeClaim_ must have `accessMode`: `ReadWriteMany`.
 
 While many cloud providers have their own solutions for this, we will use a common _NFS_ storage in this example. For instance, there is an easy-to-use [helm chart](https://helm.sh/) for this purpose: [nfs-server-provisioner](https://artifacthub.io/packages/helm/kvaps/nfs-server-provisioner). If you are using _DigitalOcean_, set the parameter `persistence.storageClass` to `do-block-storage`.
 
@@ -178,7 +178,7 @@ The password for the MySQL database and the secret for the JATOS session cookie 
 
 ### MySQL Setup
 
-We assume that you have your MySQL database set up and ready. Please refer to [JATOS with MySQL](/JATOS-with-MySQL.html) for initial setup instructions.
+We assume that you have your MySQL database set up and ready. Please refer to [JATOS with MySQL](/JATOS-with-MySQL) for initial setup instructions.
 
 In [_jatos.yaml_](https://github.com/JATOS/JATOS_with_kubernetes/blob/main/jatos.yaml), change the environmental variable `JATOS_DB_URL` to match your MySQL IP and port.
 
@@ -234,7 +234,7 @@ affinity:
 
 ### Updating JATOS with Kubernetes
 
-The easiest way to update a JATOS Kubernetes cluster is to **just change the JATOS' Docker image tag to a higher version**. [JATOS' auto-updater](/Update-JATOS.html#automatic-update) **cannot** be used here.
+The easiest way to update a JATOS Kubernetes cluster is to **just change the JATOS' Docker image tag to a higher version**. [JATOS' auto-updater](/Update-JATOS#automatic-update) **cannot** be used here.
 
 However, there are some **constraints**:
 

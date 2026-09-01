@@ -8,7 +8,7 @@ sidebar_position: 8
 
 Docker is a great technology, but if you’ve never heard of it, you can safely ignore this page (it’s not necessary for installing JATOS locally or on a server).
 
-For advanced Docker setups, see [JATOS with Docker Compose](/JATOS-with-Docker-Compose.html).
+For advanced Docker setups, see [JATOS with Docker Compose](/JATOS-with-Docker-Compose).
 
 ---
 
@@ -66,7 +66,7 @@ docker run -p 9000:9000 jatos/jatos:latest -Djatos.logs.appender=ASYNCSTDOUT
 
 ## Configuration with Docker
 
-JATOS in Docker can be configured just like a normal installation: via configuration file, environment variables, or command line arguments. See [JATOS Configuration](/JATOS_Configuration.html) for details.
+JATOS in Docker can be configured just like a normal installation: via configuration file, environment variables, or command line arguments. See [JATOS Configuration](/JATOS_Configuration) for details.
 
 ### Via arguments
 
@@ -83,7 +83,7 @@ docker run -d -p 9000:9000 jatos/jatos:latest \
 
 ### Via environment variables
 
-All environment variables for [configuring a normal JATOS installation](JATOS_Configuration.html) can be used in Docker. Use Docker’s `-e` argument to set them.
+All environment variables for [configuring a normal JATOS installation](JATOS_Configuration) can be used in Docker. Use Docker’s `-e` argument to set them.
 
 ```shell
 docker run -d -p 9000:9000 \
@@ -130,6 +130,6 @@ docker run -d --volume ./jatos.conf:/opt/jatos/conf/jatos.conf:ro -p 9000:9000 j
 
 There are two ways to update JATOS in Docker:
 
-1. If you are not running [JATOS on multiple nodes](/JATOS-in-a-cluster.html), you can use the [auto-update feature](/Update-JATOS.html#automatic-update).
+1. If you are not running [JATOS on multiple nodes](/JATOS-in-a-cluster), you can use the [auto-update feature](/Update-JATOS#automatic-update).
 2. Alternatively, simply change the Docker image tag to a newer version. Stop the current JATOS container and run a new one with the updated tag.  
-   **Note:** This only works if you [persist your data with volumes](/Install-JATOS-via-Docker.html#persist-data-with-volumes). If you don't use volumes, your JATOS data will be lost.
+   **Note:** This only works if you [persist your data with volumes](/Install-JATOS-via-Docker#persist-data-with-volumes). If you don't use volumes, your JATOS data will be lost.

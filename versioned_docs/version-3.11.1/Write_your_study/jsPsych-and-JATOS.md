@@ -15,9 +15,9 @@ JATOS primarily handles the server-side aspects of your study, such as storing r
 
 You'll find several jsPsych examples among [our example studies](/Example-Studies).
 
-Below are the necessary modifications to adapt your jsPsych experiment to run within JATOS and send data to it. For more general guidance, you can also refer to [Adapt Pre-written Code to run it in JATOS](Adapt-pre-written-code-to-run-it-in-JATOS.html).
+Below are the necessary modifications to adapt your jsPsych experiment to run within JATOS and send data to it. For more general guidance, you can also refer to [Adapt Pre-written Code to run it in JATOS](Adapt-pre-written-code-to-run-it-in-JATOS).
 
-Please note that sometimes jsPsych versions have slight differences. These steps are for **jsPsych 7 or 8** (for older versions, please see [here](/3.6.x/jsPsych-and-JATOS.html)).
+Please note that sometimes jsPsych versions have slight differences. These steps are for **jsPsych 7 or 8** (for older versions, please see [here](/3.6.x/jsPsych-and-JATOS)).
 
 -----
 

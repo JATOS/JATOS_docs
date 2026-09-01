@@ -1,6 +1,6 @@
 ---
 title: JATOS Configuration
-slug: /JATOS_Configuration.html
+slug: /JATOS_Configuration
 sidebar_position: 2
 ---
 

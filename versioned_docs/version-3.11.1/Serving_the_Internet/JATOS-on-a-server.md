@@ -4,9 +4,9 @@ slug: /JATOS-on-a-server
 sidebar_position: 3
 ---
 
-There are [several ways to bring JATOS online](Bring-your-JATOS-online.html). If you don't have much experience with server administration, the [DigitalOcean](JATOS-on-DigitalOcean.html) page might be best for you.
+There are [several ways to bring JATOS online](Bring-your-JATOS-online). If you don't have much experience with server administration, the [DigitalOcean](JATOS-on-DigitalOcean) page might be best for you.
 
-There are also dedicated pages for [installation with Docker](/Install-JATOS-via-Docker.html) and [Docker Compose](/JATOS-with-Docker-Compose.html).
+There are also dedicated pages for [installation with Docker](/Install-JATOS-via-Docker) and [Docker Compose](/JATOS-with-Docker-Compose).
 
 Installing JATOS as an Internet server usually involves replacing the embedded database with MySQL/MariaDB and setting up a reverse proxy (mainly for HTTPS). You should also consider automatic and regular backups of the data stored in your JATOS.
 
@@ -61,18 +61,18 @@ JATOS requires Java 11 to run (higher versions are not yet supported). You can i
 
 ## [Optional] Install MySQL/MariaDB
 
-See [JATOS with MySQL](JATOS-with-MySQL.html).
+See [JATOS with MySQL](JATOS-with-MySQL).
 
 ## Configuration
 
-See the [JATOS Configuration](JATOS_Configuration.html) page for more options, such as enabling user authentication with ORCID, OpenID Connect (OIDC), LDAP, or Google Sign-in.
+See the [JATOS Configuration](JATOS_Configuration) page for more options, such as enabling user authentication with ORCID, OpenID Connect (OIDC), LDAP, or Google Sign-in.
 
 ## [Optional] Proxy and Encryption
 
 Most admins use a reverse proxy in front of JATOS, mainly for encryption. We provide example configurations for both Nginx and Apache. Both support encryption and WebSockets (JATOS relies on WebSockets, so support is necessary).
 
-* [JATOS with Nginx](JATOS-with-Nginx.html)
-* [JATOS with Apache](JATOS-with-Apache.html)
+* [JATOS with Nginx](JATOS-with-Nginx)
+* [JATOS with Apache](JATOS-with-Apache)
 
 ## [Optional] Auto-start JATOS via _systemd_
 
@@ -124,9 +124,9 @@ Disable the service with `systemctl disable jatos.service`. If you change the se
 By default, all data folders are in the JATOS installation folder. You may want to change their location for easier backups or updates.
 
 JATOS' data folders (and their path configuration):
-* [_study assets root_ folder](/JATOS_Configuration.html#study-assets-root-path)
-* [_result uploads_ folder](/JATOS_Configuration.html#result-file-uploading)
-* [_study logs_ folder](/JATOS_Configuration.html#study-logs)
+* [_study assets root_ folder](/JATOS_Configuration#study-assets-root-path)
+* [_result uploads_ folder](/JATOS_Configuration#result-file-uploading)
+* [_study logs_ folder](/JATOS_Configuration#study-logs)
 
 To move all data folders to a single 'data' directory, set these properties in your config file:
 
@@ -144,18 +144,18 @@ Or with command-line arguments:
 
 ## [Optional] Backup
 
-The easiest way to back up is to have JATOS users export their own data using the [export function for result data](Manage-results.html). Encourage everyone to export their data regularly.
+The easiest way to back up is to have JATOS users export their own data using the [export function for result data](Manage-results). Encourage everyone to export their data regularly.
 
 If you want to set up regular backups for all JATOS data, you need to back up several parts to fully restore JATOS later.
 
 ### Simple
 
-If you haven't changed any [data folder paths](/JATOS-on-a-server.html#optional-specify-the-location-of-jatos-data-folders), you can simply back up the whole JATOS folder. If you use the embedded H2 database, **stop JATOS before backing up**. If you use MySQL, back up the MySQL database separately.
+If you haven't changed any [data folder paths](/JATOS-on-a-server#optional-specify-the-location-of-jatos-data-folders), you can simply back up the whole JATOS folder. If you use the embedded H2 database, **stop JATOS before backing up**. If you use MySQL, back up the MySQL database separately.
 
 ### Detailed
 
 1. **JATOS data folders:**  
-   It's easiest to have all [_data_ folders](/JATOS-on-a-server.html#optional-specify-the-location-of-jatos-data-folders) in one directory. Then you can back up this directory with your preferred file backup tool.
+   It's easiest to have all [_data_ folders](/JATOS-on-a-server#optional-specify-the-location-of-jatos-data-folders) in one directory. Then you can back up this directory with your preferred file backup tool.
 
 2. **Backup MySQL/MariaDB:**  
    Use the `mysqldump` command. For example:
@@ -170,7 +170,7 @@ If you haven't changed any [data folder paths](/JATOS-on-a-server.html#optional-
 3. **Backup H2 database:**  
    There are two ways:
    - **Easy (but unofficial):** Back up the _database_ folder in your JATOS installation. **Stop JATOS before backing up or restoring the H2 database** this way, or your data may be corrupted.
-   - **Official:** Use [H2's upgrade, backup, and restore tool](http://www.h2database.com/html/tutorial.html#upgrade_backup_restore).
+   - **Official:** Use [H2's upgrade, backup, and restore tool](http://www.h2database.com/html/tutorial#upgrade_backup_restore).
 
 ## Update JATOS
 
@@ -178,5 +178,5 @@ If you haven't changed any [data folder paths](/JATOS-on-a-server.html#optional-
 
 There are two ways to update JATOS running on a server:
 
-1. Use the [auto-update feature](/Update-JATOS.html#automatic-update).
-2. If you specified a separate ['data' folder](/JATOS-on-a-server.html#optional-specify-the-location-of-jatos-data-folders), you can install a new JATOS (without starting it yet), stop the current JATOS, configure the new one to use your data folder, and then start it.
+1. Use the [auto-update feature](/Update-JATOS#automatic-update).
+2. If you specified a separate ['data' folder](/JATOS-on-a-server#optional-specify-the-location-of-jatos-data-folders), you can install a new JATOS (without starting it yet), stop the current JATOS, configure the new one to use your data folder, and then start it.

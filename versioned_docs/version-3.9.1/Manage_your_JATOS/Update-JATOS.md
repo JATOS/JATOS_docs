@@ -1,6 +1,6 @@
 ---
 title: Update JATOS
-slug: /Update-JATOS.html
+slug: /Update-JATOS
 sidebar_position: 3
 ---
 

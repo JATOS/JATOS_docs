@@ -1,6 +1,6 @@
 ---
 title: Use Prolific
-slug: /Use-Prolific.html
+slug: /Use-Prolific
 sidebar_position: 7
 ---
 

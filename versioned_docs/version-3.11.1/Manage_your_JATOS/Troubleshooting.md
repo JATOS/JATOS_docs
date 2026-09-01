@@ -14,7 +14,7 @@ By default, Safari (and some other browsers) automatically unzips every archive 
 
 ### Reading Log Files in the Browser
 
-In a perfect world, JATOS always works smoothly and, when it doesn't, it describes the problem in an error message. Unfortunately, we aren't in a perfect world: every now and then something will go wrong and you might not get any clear error messages, or no message at all. In these (rare) cases, you can look into JATOS' log files (not to be confused with the [study log](Study-Log.html)) to try to find what the problem might be. You can view and download all log files in the _Administration_ page ⇒ _Logs_ (for security reasons, you must be logged in as a user with admin rights).
+In a perfect world, JATOS always works smoothly and, when it doesn't, it describes the problem in an error message. Unfortunately, we aren't in a perfect world: every now and then something will go wrong and you might not get any clear error messages, or no message at all. In these (rare) cases, you can look into JATOS' log files (not to be confused with the [study log](Study-Log)) to try to find what the problem might be. You can view and download all log files in the _Administration_ page ⇒ _Logs_ (for security reasons, you must be logged in as a user with admin rights).
 
 * _application.log_ – All JATOS logging
 * _loader.log_ – Logging during startup with loader
@@ -35,6 +35,6 @@ your database might be corrupted. By default, JATOS comes with an H2 database, a
 There are two common reasons for this: you moved your JATOS folder while it was running, or you installed JATOS in a synced folder. To prevent this, always be careful with the following:
 
 1. **Don't copy or move while JATOS is running** – Always **stop JATOS** before moving it.
-2. **Don't sync while JATOS is running** – As mentioned in the [Installation page](Installation.html), you can run JATOS from pretty much anywhere **except** from a folder that syncs across devices, like Dropbox or Google Drive. Doing so might lead to database corruption, because while the files might be synced between computers, the running processes aren't. This can lead to havoc and destruction and, in extreme cases, to the implosion of the known Universe. You can find in our [blog post](http://blog.jatos.org/Database_Recovery/) a description of an attempt to recover a corrupted database. (It didn't work.)
+2. **Don't sync while JATOS is running** – As mentioned in the [Installation page](Installation), you can run JATOS from pretty much anywhere **except** from a folder that syncs across devices, like Dropbox or Google Drive. Doing so might lead to database corruption, because while the files might be synced between computers, the running processes aren't. This can lead to havoc and destruction and, in extreme cases, to the implosion of the known Universe. You can find in our [blog post](http://blog.jatos.org/Database_Recovery/) a description of an attempt to recover a corrupted database. (It didn't work.)
 
 **Of course, this brings us to an important point: back up your result data (i.e., simply download and save your text files) regularly if you're running a study!**

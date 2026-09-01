@@ -1,6 +1,6 @@
 ---
 title: JATOS Study Archive (JZIP)
-slug: /JATOS-Study-Archive-JZIP.html
+slug: /JATOS-Study-Archive-JZIP
 sidebar_position: 4
 ---
 

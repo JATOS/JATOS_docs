@@ -51,4 +51,4 @@ You can pass arguments from the original study link URL to the redirect URL. Squ
 
 ### 3. In JavaScript with `jatos.endStudyAndRedirect` or `jatos.endStudyWithoutRedirect`
 
-If you need to dynamically determine (i.e., in JavaScript) the address of the webpage participants see after finishing a study, you can use one of two _jatos.js_ functions: [`jatos.endStudyAndRedirect`](jatos.js-Reference.html#jatosendstudyandredirect) or [`jatos.endStudyWithoutRedirect`](jatos.js-Reference.html#jatosendstudywithoutredirect). These functions should be called in the JavaScript of your study's **last component** and offer the most versatile control.
+If you need to dynamically determine (i.e., in JavaScript) the address of the webpage participants see after finishing a study, you can use one of two _jatos.js_ functions: [`jatos.endStudyAndRedirect`](jatos.js-Reference#jatosendstudyandredirect) or [`jatos.endStudyWithoutRedirect`](jatos.js-Reference#jatosendstudywithoutredirect). These functions should be called in the JavaScript of your study's **last component** and offer the most versatile control.

@@ -4,19 +4,19 @@ slug: /Create-a-new-study
 sidebar_position: 1
 ---
 
-There are different ways to add a new study in JATOS: you can use a builder, integrate with jsPsych, write one from scratch, or modify an existing study. Afterward, you can either continue with [Write your own Study - Basics and Beyond](Write-your-own-Study-Basics-and-Beyond.html) or [Adapt Pre-written Code to run it in JATOS](Adapt-pre-written-code-to-run-it-in-JATOS.html).
+There are different ways to add a new study in JATOS: you can use a builder, integrate with jsPsych, write one from scratch, or modify an existing study. Afterward, you can either continue with [Write your own Study - Basics and Beyond](Write-your-own-Study-Basics-and-Beyond) or [Adapt Pre-written Code to run it in JATOS](Adapt-pre-written-code-to-run-it-in-JATOS).
 
-**JATOS study development usually happens on your local JATOS installation. For a detailed workflow, see: [Run an experiment with JATOS - Workflow](Run-an-experiment-with-JATOS-Workflow.html).**
+**JATOS study development usually happens on your local JATOS installation. For a detailed workflow, see: [Run an experiment with JATOS - Workflow](Run-an-experiment-with-JATOS-Workflow).**
 
 -----
 
 ### Use a Builder like OpenSesame/OSWeb, lab.js and PsychoPy
 
-Experiment builders like [OpenSesame/OSWeb](OSWeb-and-JATOS.html), [lab.js](labjs-and-JATOS.html), or [PsychoPy](PsychoPy-and-JATOS.html) offer a point-and-click user interface. They are easy to use and don't require programming knowledge. However, they are limited to what's possible within their UI. If you need more flexibility, consider using jsPsych or writing your own study.
+Experiment builders like [OpenSesame/OSWeb](OSWeb-and-JATOS), [lab.js](labjs-and-JATOS), or [PsychoPy](PsychoPy-and-JATOS) offer a point-and-click user interface. They are easy to use and don't require programming knowledge. However, they are limited to what's possible within their UI. If you need more flexibility, consider using jsPsych or writing your own study.
 
 ### Use jsPsych
 
-[jsPsych](http://www.jspsych.org/) is a popular library for running behavioral experiments in a web browser. We have a dedicated page describing how to use [jsPsych with JATOS](jsPsych-and-JATOS.html).
+[jsPsych](http://www.jspsych.org/) is a popular library for running behavioral experiments in a web browser. We have a dedicated page describing how to use [jsPsych with JATOS](jsPsych-and-JATOS).
 
 ### Write Your Own Study from Scratch
 

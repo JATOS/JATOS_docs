@@ -1,6 +1,6 @@
 ---
 title: jsPsych and JATOS
-slug: /jsPsych-and-JATOS.html
+slug: /jsPsych-and-JATOS
 hide_table_of_contents: true
 sidebar_position: 4
 ---

@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Each experimenter with access to the JATOS server (via the GUI) is considered a JATOS user. Users can add, modify, and delete studies they are members of, as well as export and delete results. Users may also be assigned special roles: **Admin** or **Superuser**.
 
-- **Admin users** have access to the [*Administration* page](Administration.html) and can manage other users' access to JATOS.
+- **Admin users** have access to the [*Administration* page](Administration) and can manage other users' access to JATOS.
 - **Superusers** (since JATOS 3.7.4) can access all studies and their result data on the JATOS instance, regardless of membership.
 
 ---
@@ -51,7 +51,7 @@ Once enabled, any user can be granted the Superuser role by checking the corresp
 
 ### LDAP
 
-JATOS supports LDAP (Lightweight Directory Access Protocol) for password authentication, allowing centralized user management. LDAP is disabled by default. To enable it, [modify the JATOS configuration file](JATOS_Configuration.html#ldap-authentication).
+JATOS supports LDAP (Lightweight Directory Access Protocol) for password authentication, allowing centralized user management. LDAP is disabled by default. To enable it, [modify the JATOS configuration file](JATOS_Configuration#ldap-authentication).
 
 With LDAP enabled, an 'LDAP' switch appears when adding a new user. Checking this enforces LDAP authentication for that user. Both local and LDAP users can coexist, but LDAP users must be added manually by an Admin.
 
@@ -67,13 +67,13 @@ When a new user signs in with Google, their account is created automatically. Go
 
 ### OpenID Connect (OIDC)
 
-JATOS supports [OIDC](https://openid.net/developers/how-connect-works/) authentication. OIDC requires an external provider (e.g., [Keycloak](https://www.keycloak.org/)). See [JATOS configuration](JATOS_Configuration.html#openid-connect-oidc-authentication) for setup details.
+JATOS supports [OIDC](https://openid.net/developers/how-connect-works/) authentication. OIDC requires an external provider (e.g., [Keycloak](https://www.keycloak.org/)). See [JATOS configuration](JATOS_Configuration#openid-connect-oidc-authentication) for setup details.
 
 New users authenticating via OIDC are created automatically. OIDC user accounts cannot be added manually by an Admin.
 
 ### ORCID
 
-JATOS supports [ORCID Sign-In](https://info.orcid.org/documentation/features/public-api/orcid-as-a-sign-in-option-to-your-system/). To enable, set your ORCID *client ID* and *client secret* in the configuration. See [how to obtain these](https://info.orcid.org/documentation/integration-guide/registering-a-public-api-client/) and [how to configure JATOS](JATOS_Configuration.html#orcid-orcidorg-authentication).
+JATOS supports [ORCID Sign-In](https://info.orcid.org/documentation/features/public-api/orcid-as-a-sign-in-option-to-your-system/). To enable, set your ORCID *client ID* and *client secret* in the configuration. See [how to obtain these](https://info.orcid.org/documentation/integration-guide/registering-a-public-api-client/) and [how to configure JATOS](JATOS_Configuration#orcid-orcidorg-authentication).
 
 New users authenticating via ORCID are created automatically. ORCID user accounts cannot be added manually by an Admin.
 
@@ -85,7 +85,7 @@ JATOS supports authentication via [SURF SRAM](https://sram.surf.nl) and [SURFcon
 - **SURFconext** enables single sign-on (SSO) for users from Dutch educational and research organizations, streamlining authentication and user provisioning.
 
 To enable either authentication method, configure the relevant settings in your JATOS configuration file. For detailed setup instructions, see:
-- [SURF SRAM configuration](JATOS_Configuration.html#surf-sram-sramsurfnl-authentication)
-- [SURFconext configuration](JATOS_Configuration.html#surfconext-surfconextnl-authentication)
+- [SURF SRAM configuration](JATOS_Configuration#surf-sram-sramsurfnl-authentication)
+- [SURFconext configuration](JATOS_Configuration#surfconext-surfconextnl-authentication)
 
 New users authenticating via SURF SRAM or SURFconext are created automatically. These user accounts cannot be added manually by an Admin.

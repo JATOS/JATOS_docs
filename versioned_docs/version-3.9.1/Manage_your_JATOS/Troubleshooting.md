@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-slug: /Troubleshooting.html
+slug: /Troubleshooting
 sidebar_position: 4
 ---
 

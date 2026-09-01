@@ -1,6 +1,6 @@
 ---
 title: Manage Results
-slug: /Manage-Results.html
+slug: /Manage-Results
 sidebar_position: 8
 ---
 

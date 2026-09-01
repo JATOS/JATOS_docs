@@ -1,6 +1,6 @@
 ---
 title: Create a new study
-slug: /Create-a-new-study.html
+slug: /Create-a-new-study
 sidebar_position: 1
 ---
 

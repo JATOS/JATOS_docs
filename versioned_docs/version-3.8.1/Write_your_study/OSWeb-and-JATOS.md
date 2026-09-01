@@ -1,6 +1,6 @@
 ---
 title: OSWeb/OpenSesame and JATOS
-slug: /OSWeb-and-JATOS.html
+slug: /OSWeb-and-JATOS
 hide_table_of_contents: true
 sidebar_position: 6
 ---

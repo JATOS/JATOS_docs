@@ -18,7 +18,7 @@ All ***jatos.js*** variables and functions start with `jatos.`. For example, to 
 
 Most ***jatos.js*** variables and functions only work after ***jatos.js*** is initialized (i.e., after `jatos.onLoad()` is used).
 
-And, please, if you find a mistake or have a question, don't hesitate to [contact us](Contact-us.html).
+And, please, if you find a mistake or have a question, don't hesitate to [contact us](Contact-us).
 
 -----
 
@@ -149,7 +149,7 @@ Original query string parameters of the URL that starts the study. It is provide
 
 ### `jatos.studySessionData`
 
-The session data variable can be accessed and modified by every component of a study. It's a very convenient way to share data between different components. Whatever is written in this variable will be available in the subsequent components. However, remember that the session data will be deleted after the study is finished (see also [Session Data - Three Types](Session-Data-Three-Types.html)).
+The session data variable can be accessed and modified by every component of a study. It's a very convenient way to share data between different components. Whatever is written in this variable will be available in the subsequent components. However, remember that the session data will be deleted after the study is finished (see also [Session Data - Three Types](Session-Data-Three-Types)).
 
 -----
 
@@ -459,7 +459,7 @@ jatos.log("Log this message in JATOS' log file");
 
 ### `jatos.catchAndLogErrors`
 
-Convenience function that sends all 'error' and 'unhandledrejection' events and `console.error` and `console.warn` calls to [JATOS' server log](Troubleshooting.html#read-log-file-in-the-browser). This is useful for debugging.
+Convenience function that sends all 'error' and 'unhandledrejection' events and `console.error` and `console.warn` calls to [JATOS' server log](Troubleshooting#read-log-file-in-the-browser). This is useful for debugging.
 
 **Example**
 
@@ -471,7 +471,7 @@ jatos.catchAndLogErrors();
 
 ### `jatos.addJatosIds`
 
-Convenience function that adds some [IDs](jatos.js-Reference.html#ids) (study code, study ID, study title, batch ID, batch title, component ID, component position, component title, worker ID, study result ID, component result ID, group result ID, group member ID) to an object.
+Convenience function that adds some [IDs](jatos.js-Reference#ids) (study code, study ID, study title, batch ID, batch title, component ID, component position, component title, worker ID, study result ID, component result ID, group result ID, group member ID) to an object.
 
   * `@param {object} [obj]` - Object to which the IDs will be added.
 
@@ -508,7 +508,7 @@ jatos.setHeartbeatPeriod(30000); // Sets to a heartbeat every 30 seconds
 
 ### `jatos.setStudySessionData`
 
-**If you want to just write into the study session, this function is not what you need.** If you want to write something into the study session, just write into the [`jatos.studySessionData`](jatos.js-Reference.html#studys-session-data) object.
+**If you want to just write into the study session, this function is not what you need.** If you want to write something into the study session, just write into the [`jatos.studySessionData`](jatos.js-Reference#studys-session-data) object.
 
 Posts Study Session data to the JATOS server. This function sets the study session data and **sends it to the JATOS server for safe storage**. This is done automatically whenever a component finishes. But sometimes it is necessary to trigger this manually, e.g., in a very long-running component, one might want to store the session data intermediately. It offers callbacks, either as parameters or via a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), to signal success or failure in the transfer.
 
@@ -1010,7 +1010,7 @@ Ends the study and afterwards, the study is not redirected to the JATOS' end pag
     });
     ```
 
-5.  Use Promise to submit result data and afterwards, end the study and move to another URL ([see also](jatos.js-Reference.html#jatosendstudyandredirect)).
+5.  Use Promise to submit result data and afterwards, end the study and move to another URL ([see also](jatos.js-Reference#jatosendstudyandredirect)).
 
     ```javascript
     var resultData = {id: 123, data: "my important result data"};
@@ -1256,7 +1256,7 @@ All the properties you entered for this batch.
 
 ## Batch Session Functions
 
-The Batch Session is stored in JATOS' database on the server side (see also [Session Data - Three Types](Session-Data-Three-Types.html)). This means that all changes in the Batch Session have to be synchronized between the client and the server. This is done via the batch channel. Therefore, all writing functions (`add`, `remove`, `clear`, `replace`, `copy`, `move`, `set`, `setAll`) can be paired with callback functions that will signal success or failure in the client-server sync. These callback functions can either be passed as parameters to `jatos.batchSession.[function_name]` or via a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
+The Batch Session is stored in JATOS' database on the server side (see also [Session Data - Three Types](Session-Data-Three-Types)). This means that all changes in the Batch Session have to be synchronized between the client and the server. This is done via the batch channel. Therefore, all writing functions (`add`, `remove`, `clear`, `replace`, `copy`, `move`, `set`, `setAll`) can be paired with callback functions that will signal success or failure in the client-server sync. These callback functions can either be passed as parameters to `jatos.batchSession.[function_name]` or via a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 
 On the other hand, for all reading functions (`get`, `find`, `getAll`, `test`), there is no need to sync data between the client and server, because ***jatos.js*** keeps a copy of the Batch Session locally. Therefore, all reading functions do not offer callbacks, as there is no risk of synchronization failure.
 
@@ -2013,13 +2013,13 @@ if(jatos.isGroupOpen()) {
 
 ## Group Session Functions
 
-The Group Session is one of three ways to communicate between members of a group. The others are direct messaging (with [jatos.sendGroupMsgTo](#jatossendgroupmsgtorecipient-msg)) and broadcast messaging ([jatos.sendGroupMsg](#jatossendgroupmsgmsg)) (or: [more general information about the different session types](/Session-Data-Three-Types.html)).
+The Group Session is one of three ways to communicate between members of a group. The others are direct messaging (with [jatos.sendGroupMsgTo](#jatossendgroupmsgtorecipient-msg)) and broadcast messaging ([jatos.sendGroupMsg](#jatossendgroupmsgmsg)) (or: [more general information about the different session types](/Session-Data-Three-Types)).
 
 In contrast to the [Batch Session](#functions-to-access-the-batch-session), the Group Session doesn't work from the start of a component. To use the Group Session, you have to join a group ([with jatos.joinGroup](#jatosjoingroupcallbacks)). There, you can also define an `onGroupSession` callback that gets called each time the Group Session changes, regardless of the origin of the change.
 
 The Group Session is stored in JATOS' database on the server side. This means that all changes in the Group Session have to be synchronized between the client and the server. This is done via the group channel. Therefore, all writing functions (`add`, `remove`, `clear`, `replace`, `copy`, `move`, `set`, `setAll`) can be paired with callback functions that will signal success or failure in the client-server sync. These callback functions can either be passed as parameters to `jatos.groupSession.[function_name]` or via a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 
-The [group session write scope](Write-Group-Studies-I-Setup.html#group-session-write-scope) can be used to prevent accidental overwriting of session data that does not belong to the group member. When enabled, a member's group session patch may only write to its own `/<group-member-id>` (equal to study result ID) subtree or the common `/shared/` subtree; an out-of-scope patch is rejected with `SESSION_FAIL`. The scope affects writing, but not reading.
+The [group session write scope](Write-Group-Studies-I-Setup#group-session-write-scope) can be used to prevent accidental overwriting of session data that does not belong to the group member. When enabled, a member's group session patch may only write to its own `/<group-member-id>` (equal to study result ID) subtree or the common `/shared/` subtree; an out-of-scope patch is rejected with `SESSION_FAIL`. The scope affects writing, but not reading.
 
 On the other hand, for all reading functions (`get`, `find`, `getAll`, `test`), there is no need to sync data between the client and server, because ***jatos.js*** keeps a copy of the Group Session locally. Therefore, all reading functions do not offer callbacks, as there is no risk of synchronization failure.
 

@@ -1,6 +1,6 @@
 ---
 title: Manage JATOS users
-slug: /User-Manager.html
+slug: /User-Manager
 sidebar_position: 2
 ---
 

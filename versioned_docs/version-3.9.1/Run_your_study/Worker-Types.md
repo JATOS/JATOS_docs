@@ -1,6 +1,6 @@
 ---
 title: Worker and study link types
-slug: /Worker-Types.html
+slug: /Worker-Types
 sidebar_position: 3
 ---
 

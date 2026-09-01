@@ -1,6 +1,6 @@
 ---
 title: JATOS on DigitalOcean
-slug: /JATOS-on-DigitalOcean.html
+slug: /JATOS-on-DigitalOcean
 sidebar_position: 3
 ---
 

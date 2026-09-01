@@ -6,7 +6,7 @@ sidebar_position: 3
 
 **Take two separate studies and combine them into a single one** 
 
-You might have created different parts of a study using various tools—for example, a survey coded with [lab.js](labjs-and-JATOS.html) and a perceptual experiment with [OSWeb](OSWeb-and-JATOS.html). If you have separate `.jzip` files from each tool and now wish to combine them into one study, here's how to do it.
+You might have created different parts of a study using various tools—for example, a survey coded with [lab.js](labjs-and-JATOS) and a perceptual experiment with [OSWeb](OSWeb-and-JATOS). If you have separate `.jzip` files from each tool and now wish to combine them into one study, here's how to do it.
 
 This process applies to combining any two study halves, regardless of how they were coded. (However, if you directly wrote the scripts instead of using an experiment builder, you likely won't need these specific instructions.)
 
@@ -16,12 +16,12 @@ This process applies to combining any two study halves, regardless of how they w
 
 To combine two studies into one, you will need the following:
 
-1.  A [**local JATOS**](Installation.html#easy-installation-on-your-local-computer). This will give you easy access to move and rename your files. 
+1.  A [**local JATOS**](Installation#easy-installation-on-your-local-computer). This will give you easy access to move and rename your files. 
 2.  Information on your study assets' location: Go to [http://localhost:9000/jatos](http://localhost:9000/jatos). On the homepage, locate the section titled "Where are my files" (it's prominently displayed). Find this corresponding folder on your computer.
 3.  The `.jzip` file for the first half of your study.
 4.  The `.jzip` file for the second half of your study.
 
-**Note for items 3 and 4:** You should not attempt to generate a `.jzip` file manually at this stage (though it is technically possible). A [JZIP study archive](JATOS-Study-Archive-JZIP.html) file is a ZIP archive with a standardized content structure, containing essential information that JATOS needs to recognize it as a study.
+**Note for items 3 and 4:** You should not attempt to generate a `.jzip` file manually at this stage (though it is technically possible). A [JZIP study archive](JATOS-Study-Archive-JZIP) file is a ZIP archive with a standardized content structure, containing essential information that JATOS needs to recognize it as a study.
 
 -----
 

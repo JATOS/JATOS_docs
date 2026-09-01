@@ -1,6 +1,6 @@
 ---
 title: Combine two pre-written studies into one
-slug: /Combine-two-pre-written-studies-into-one.html
+slug: /Combine-two-pre-written-studies-into-one
 sidebar_position: 3
 ---
 

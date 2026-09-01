@@ -133,7 +133,7 @@ EOL
 docker compose -f /root/compose.yaml up -d
 ```
 
-This script uses [Docker Compose](/JATOS-with-Docker-Compose.html) to set up Traefik and JATOS. It creates a Docker Compose config file at `/root/compose.yaml` and runs it with `docker compose up`.
+This script uses [Docker Compose](/JATOS-with-Docker-Compose) to set up Traefik and JATOS. It creates a Docker Compose config file at `/root/compose.yaml` and runs it with `docker compose up`.
 
 **Before clicking _Create Droplet_,** change `my.domain.org` and `myemail@example.org` at the top of the script.
 
@@ -159,9 +159,9 @@ Once your domain name points to your server's IP, **restart your server** (power
 
 * The Docker Compose config file created during Droplet initialization is at `/root/compose.yaml`, and the certificate is stored under `/root/letsencrypt/`.
 
-* You can configure JATOS by editing `/root/compose.yaml`. You can add all [JATOS command-line arguments](/JATOS_Configuration.html) in the _command_ section of the _jatos_ service.
+* You can configure JATOS by editing `/root/compose.yaml`. You can add all [JATOS command-line arguments](/JATOS_Configuration) in the _command_ section of the _jatos_ service.
 
-  For example, to add a [welcome message on the home page](/JATOS_Configuration.html#welcome-message), use `-Djatos.brandingUrl`:
+  For example, to add a [welcome message on the home page](/JATOS_Configuration#welcome-message), use `-Djatos.brandingUrl`:
 
   ```shell
     jatos:
@@ -172,7 +172,7 @@ Once your domain name points to your server's IP, **restart your server** (power
       ...
   ```
 
-  Or, to let JATOS use an [external MySQL database](JATOS-with-MySQL.html), use `-Djatos.db.url`, `-Djatos.db.username`, `-Djatos.db.password`, and `-Djatos.db.driver` (change IP, port, username, and password to match your database):
+  Or, to let JATOS use an [external MySQL database](JATOS-with-MySQL), use `-Djatos.db.url`, `-Djatos.db.username`, `-Djatos.db.password`, and `-Djatos.db.driver` (change IP, port, username, and password to match your database):
 
   ```shell
     jatos:

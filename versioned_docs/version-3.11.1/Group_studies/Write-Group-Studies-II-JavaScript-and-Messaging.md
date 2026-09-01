@@ -10,9 +10,9 @@ Group studies differ from single-worker studies in that the JavaScript must hand
 
 If you want to dive right into the _jatos.js_ reference:
 
-* [_jatos.js_ functions for group studies](jatos.js-Reference.html#group-functions)
-* [_jatos.js_ group variables](jatos.js-Reference.html#group-variables)
-* [_jatos.js_ Group Session functions](jatos.js-Reference.html#functions-to-access-the-group-session)
+* [_jatos.js_ functions for group studies](jatos.js-Reference#group-functions)
+* [_jatos.js_ group variables](jatos.js-Reference#group-variables)
+* [_jatos.js_ Group Session functions](jatos.js-Reference#functions-to-access-the-group-session)
 
 ---
 
@@ -35,21 +35,21 @@ A typical JATOS group study might have three components:
 - `jatos.joinGroup` → opens group channel in the **same group**
 - `jatos.endStudy` → closes group channel, leaves group, ends component, and ends study
 
-Notice that calling [`jatos.joinGroup`](jatos.js-Reference.html#jatosjoingroup) in the second and third components does not let workers join a new group, but simply opens a group channel in the already joined group. To make a worker leave a group, use [`jatos.leaveGroup`](jatos.js-Reference.html#jatosleavegroup).
+Notice that calling [`jatos.joinGroup`](jatos.js-Reference#jatosjoingroup) in the second and third components does not let workers join a new group, but simply opens a group channel in the already joined group. To make a worker leave a group, use [`jatos.leaveGroup`](jatos.js-Reference#jatosleavegroup).
 
-If you want to see who the members of your groups are, or get other stats, click your batch's [Groups button in the Study Links page](Run-your-Study-with-Study-Links.html#groups).
+If you want to see who the members of your groups are, or get other stats, click your batch's [Groups button in the Study Links page](Run-your-Study-with-Study-Links#groups).
 
 ---
 
 ### Reassigning to a Different Group
 
-To move a worker from one group to another, use [`jatos.reassignGroup`](jatos.js-Reference.html#jatosreassigngroup). This function will make a worker leave their current group and join a different one. JATOS can only reassign to another group if one is available; if not, the worker will remain in their original group.
+To move a worker from one group to another, use [`jatos.reassignGroup`](jatos.js-Reference#jatosreassigngroup). This function will make a worker leave their current group and join a different one. JATOS can only reassign to another group if one is available; if not, the worker will remain in their original group.
 
 ---
 
 ### Fixing a Group
 
-Sometimes you want to "lock" a group so no new members can join, even if the group properties would allow it. For example, in the [Prisoner's Dilemma Example Study](/Example-Studies), after the group is assembled in the waiting room, you want to keep the two members fixed—even if one leaves during the game, JATOS should not assign a new member. To do this, call [`jatos.setGroupFixed`](jatos.js-Reference.html#jatossetgroupfixed). Alternatively, you can fix a group in the JATOS GUI, in the [Groups table on the Study Links page](Run-your-Study-with-Study-Links.html#groups).
+Sometimes you want to "lock" a group so no new members can join, even if the group properties would allow it. For example, in the [Prisoner's Dilemma Example Study](/Example-Studies), after the group is assembled in the waiting room, you want to keep the two members fixed—even if one leaves during the game, JATOS should not assign a new member. To do this, call [`jatos.setGroupFixed`](jatos.js-Reference#jatossetgroupfixed). Alternatively, you can fix a group in the JATOS GUI, in the [Groups table on the Study Links page](Run-your-Study-with-Study-Links#groups).
 
 ---
 
@@ -59,12 +59,12 @@ JATOS provides three ways for group members to communicate: direct messaging, br
 
 ### Direct Messaging
 
-Members can send direct messages to a single other member of the same group using [`jatos.sendGroupMsgTo`](jatos.js-Reference.html#jatossendgroupmsgto). Like broadcast messaging, this method is fast but can be unreliable if the network connection is unstable. For example, in the [Snake Example](/Example-Studies), direct messaging is used to send the coordinates of the snakes at every step. Here, speed is more important than reliability, since a few dropped frames will likely go unnoticed.
+Members can send direct messages to a single other member of the same group using [`jatos.sendGroupMsgTo`](jatos.js-Reference#jatossendgroupmsgto). Like broadcast messaging, this method is fast but can be unreliable if the network connection is unstable. For example, in the [Snake Example](/Example-Studies), direct messaging is used to send the coordinates of the snakes at every step. Here, speed is more important than reliability, since a few dropped frames will likely go unnoticed.
 
 ### Broadcast Messaging
 
-Members can send messages to all other members of the same group using [`jatos.sendGroupMsg`](jatos.js-Reference.html#jatossendgroupmsg). Like direct messaging, this method is fast but can be unreliable on unstable networks.
+Members can send messages to all other members of the same group using [`jatos.sendGroupMsg`](jatos.js-Reference#jatossendgroupmsg). Like direct messaging, this method is fast but can be unreliable on unstable networks.
 
 ### Group Session
 
-The Group Session is one of the [three types of session that JATOS provides](Session-Data-Three-Types.html). Members can access Group Session data with the [Group Session functions](jatos.js-Reference.html#functions-to-access-the-group-session). Group Session data is stored in JATOS' database **only while the group is active** and is deleted when the group finishes. Communication via Group Session is slower but more reliable than group messaging. If a member has an unstable internet connection or reloads the page, the Group Session will be automatically restored when the group channel is reopened. In the [Prisoner's Dilemma Example Study](/Example-Studies), workers communicate via Group Session data, since a dropped message (direct or broadcast messaging) could result in important information loss.
+The Group Session is one of the [three types of session that JATOS provides](Session-Data-Three-Types). Members can access Group Session data with the [Group Session functions](jatos.js-Reference#functions-to-access-the-group-session). Group Session data is stored in JATOS' database **only while the group is active** and is deleted when the group finishes. Communication via Group Session is slower but more reliable than group messaging. If a member has an unstable internet connection or reloads the page, the Group Session will be automatically restored when the group channel is reopened. In the [Prisoner's Dilemma Example Study](/Example-Studies), workers communicate via Group Session data, since a dropped message (direct or broadcast messaging) could result in important information loss.

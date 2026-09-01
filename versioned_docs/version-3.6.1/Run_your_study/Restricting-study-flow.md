@@ -1,6 +1,6 @@
 ---
 title: Restricting study flow - reloading, linear studies, single-use workers and previews
-slug: /Restricting-study-flow.html
+slug: /Restricting-study-flow
 sidebar_position: 3
 ---
 

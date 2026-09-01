@@ -1,6 +1,6 @@
 ---
 title: Run your study with study links
-slug: /Run-your-Study-with-Study-Links.html
+slug: /Run-your-Study-with-Study-Links
 sidebar_position: 2
 ---
 

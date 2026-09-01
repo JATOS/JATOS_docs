@@ -1,6 +1,6 @@
 ---
 title: JATOS with Nginx
-slug: /JATOS-with-Nginx.html
+slug: /JATOS-with-Nginx
 sidebar_position: 9
 ---
 

@@ -25,15 +25,15 @@ JATOS uses fixed-size pools for threads and database connections since it mostly
 there is no one-size-fits-all setting. If pool sizes are too low, CPU resources may be underutilized and if too high, pools may consume excessive resources.
 
 **Configuration details:**  
-- [JATOS thread pool size](JATOS_Configuration.html#jatos-thread-pool-size)
-- [Database connection pool size](JATOS_Configuration.html#database-connection-pool-size)
+- [JATOS thread pool size](JATOS_Configuration#jatos-thread-pool-size)
+- [Database connection pool size](JATOS_Configuration#database-connection-pool-size)
 
 Set both in conjunction. For example, with 8 CPUs and 8 GB RAM, values like 140 (threads) and 210 (connections) may work well.
 
 ### Study Logs
 
 Generating study logs requires JATOS to calculate hashes of result data and files, which is CPU-intensive, especially for large datasets.  
-If you do not need this feature, you can [disable study logging](JATOS_Configuration.html#study-logs).
+If you do not need this feature, you can [disable study logging](JATOS_Configuration#study-logs).
 
 ---
 
@@ -43,7 +43,7 @@ There are many ways to tune database performance; here we highlight a few of the
 
 ### Deactivate the Binary Log
 
-Disabling the binary log can improve performance if you do not need replication or point-in-time recovery. See [JATOS with MySQL](JATOS-with-MySQL.html#optional---deactivate-the-binary-log-of-your-mysqlmariadb) for instructions.
+Disabling the binary log can improve performance if you do not need replication or point-in-time recovery. See [JATOS with MySQL](JATOS-with-MySQL#optional---deactivate-the-binary-log-of-your-mysqlmariadb) for instructions.
 
 ### Increase InnoDB Buffer Pool Size
 
@@ -65,7 +65,7 @@ SET GLOBAL innodb_buffer_pool_size=2G;
 
 ### Maximum Connections
 
-Increase the maximum permitted number of simultaneous client connections, especially if you have increased [JATOS's database connection pool size](JATOS_Configuration.html#database-connection-pool-size).
+Increase the maximum permitted number of simultaneous client connections, especially if you have increased [JATOS's database connection pool size](JATOS_Configuration#database-connection-pool-size).
 
 **Via config file:**
 ```
@@ -86,4 +86,4 @@ By default, JATOS serves static files (e.g., images, audio/video files, scripts)
 
 However, serving many static files via JATOS can slow down the system or even cause crashes.
 
-A solution is to serve static files from an external source (e.g., a separate web server). This reduces load on the JATOS host and allows for better caching. There are many ways to host static files. See [JATOS with Apache](JATOS-with-Apache.html#serving-additional-static-files) for an example setup.
+A solution is to serve static files from an external source (e.g., a separate web server). This reduces load on the JATOS host and allows for better caching. There are many ways to host static files. See [JATOS with Apache](JATOS-with-Apache#serving-additional-static-files) for an example setup.

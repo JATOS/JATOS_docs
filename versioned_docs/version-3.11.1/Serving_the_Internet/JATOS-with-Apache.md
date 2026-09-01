@@ -78,7 +78,7 @@ ServerName www.example.com
 
 ## Serving Additional Static Files
 
-The recommended way to store files needed in JATOS studies is the [study assets folder](Write-your-own-Study-Basics-and-Beyond.html#study-assets). This ensures that only participants with a valid study code can access those files.
+The recommended way to store files needed in JATOS studies is the [study assets folder](Write-your-own-Study-Basics-and-Beyond#study-assets). This ensures that only participants with a valid study code can access those files.
 
 However, there are scenarios where you may want to store files outside the study assets folder—for example, if you need to serve a large number of files, very large files, or want to enable caching. In such cases, it makes sense to serve them directly with Apache.
 

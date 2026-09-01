@@ -1,6 +1,6 @@
 ---
 title: lab.js and JATOS
-slug: /labjs-and-JATOS.html
+slug: /labjs-and-JATOS
 sidebar_position: 5
 ---
 

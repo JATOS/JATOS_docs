@@ -23,7 +23,7 @@ Here's a screenshot of how this looks in Prolific:
 
 -----
 
-In the field labeled "*What is the URL of your study?*" (as shown in the screenshot above), enter the link to your JATOS study. You will most likely want a study link of either the **General Single** or **General Multiple** type (refer to [Run your Study with Study Links](Run-your-Study-with-Study-Links.html) for more details).
+In the field labeled "*What is the URL of your study?*" (as shown in the screenshot above), enter the link to your JATOS study. You will most likely want a study link of either the **General Single** or **General Multiple** type (refer to [Run your Study with Study Links](Run-your-Study-with-Study-Links) for more details).
 
 We also recommend that you click the option indicating you'll use **URL parameters**. This action will modify the JATOS study link you entered, which is expected and fine.
 
@@ -43,7 +43,7 @@ Now there are **two ways how to tell JATOS the URL**:
 
     ![screenshot](/img/v39x/end-redirect-url.png)
 
-2. In some cases, you might want to handle the redirection from within your JavaScript, **programmatically**, with the [`jatos.endStudyWithoutRedirect`](jatos.js-Reference.html#jatosendstudyandredirect) function. 
+2. In some cases, you might want to handle the redirection from within your JavaScript, **programmatically**, with the [`jatos.endStudyWithoutRedirect`](jatos.js-Reference#jatosendstudyandredirect) function. 
 
     For example (remember to change this URL to the one you see in Prolific):
 
@@ -66,4 +66,4 @@ You can also connect JATOS and Prolific programmatically through query parameter
 
 Prolific allows you to pass specific parameters, `PROLIFIC_PID`, `STUDY_ID`, and `SESSION_ID`, as URL parameters. To enable this, simply ensure you've selected the "I'll use URL parameters on Prolific" radio button (as shown in the screenshot from section 1).
 
-You will then be able to access these URL parameters within your study's JavaScript via [`jatos.urlQueryParameters`](jatos.js-Reference.html#jatosurlqueryparameters).
+You will then be able to access these URL parameters within your study's JavaScript via [`jatos.urlQueryParameters`](jatos.js-Reference#jatosurlqueryparameters).

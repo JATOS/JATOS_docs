@@ -4,7 +4,7 @@ slug: /Study-Log
 sidebar_position: 10
 ---
 
-JATOS maintains a dedicated **log file for each study** (not to be confused with [JATOS' application-wide log](Troubleshooting.html#read-log-file-in-the-browser)). This file records every relevant event that occurs within a study, most importantly when a component result was saved, exported, or deleted.
+JATOS maintains a dedicated **log file for each study** (not to be confused with [JATOS' application-wide log](Troubleshooting#read-log-file-in-the-browser)). This file records every relevant event that occurs within a study, most importantly when a component result was saved, exported, or deleted.
 
 Crucially, the log also contains a **hash** – a unique string generated from the content of the result data itself. In principle, this hash allows any JATOS user to verify that the data has not been modified and that no result was deleted between data collection and publication, thus ensuring **data integrity**.
 

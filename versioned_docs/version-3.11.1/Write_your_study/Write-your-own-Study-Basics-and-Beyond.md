@@ -4,9 +4,9 @@ slug: /Write-your-own-Study-Basics-and-Beyond
 sidebar_position: 2
 ---
 
-After you've [added a new study](Create-a-new-study.html), what comes next?
+After you've [added a new study](Create-a-new-study), what comes next?
 
-**JATOS study development typically happens on your local JATOS installation. For a detailed workflow, see: [Run an experiment with JATOS - Workflow](Run-an-experiment-with-JATOS-Workflow.html).**
+**JATOS study development typically happens on your local JATOS installation. For a detailed workflow, see: [Run an experiment with JATOS - Workflow](Run-an-experiment-with-JATOS-Workflow).**
 
 -----
 
@@ -64,13 +64,13 @@ Here is the absolute minimum an HTML file for any component must contain to run 
 
 ## Save Your Result Data
 
-You'll likely want to save the data collected during your experiments. Generally, there are two ways to do this: 1) **result data** or 2) **result files**. There's a dedicated [documentation page about it](Submit-and-upload-data-to-the-server.html).
+You'll likely want to save the data collected during your experiments. Generally, there are two ways to do this: 1) **result data** or 2) **result files**. There's a dedicated [documentation page about it](Submit-and-upload-data-to-the-server).
 
 -----
 
 ## _jatos.js_ Reference
 
-In your JavaScript, you'll use _jatos.js_ to handle all JATOS-related functionalities. Every function and field is described in detail in its [reference](jatos.js-Reference.html).
+In your JavaScript, you'll use _jatos.js_ to handle all JATOS-related functionalities. Every function and field is described in detail in its [reference](jatos.js-Reference).
 
 -----
 
@@ -120,7 +120,7 @@ You can access these fields in your JavaScript with `jatos.studyInput.numberOfTr
 
 ## Study / Batch / Group Session
 
-Sessions are designed to help you exchange data within a study, batch, or group. The study session allows data to be passed within the same study run, from one component to the next. The batch session facilitates data transfer between study runs belonging to the same batch. A comprehensive page dedicated to these sessions can be found here: [Session Data - Three Types](/Session-Data-Three-Types.html).
+Sessions are designed to help you exchange data within a study, batch, or group. The study session allows data to be passed within the same study run, from one component to the next. The batch session facilitates data transfer between study runs belonging to the same batch. A comprehensive page dedicated to these sessions can be found here: [Session Data - Three Types](/Session-Data-Three-Types).
 
 -----
 
@@ -139,4 +139,4 @@ Instead of clicking the Run button directly, click the dropdown arrow (▼) imme
 
 ## Group Studies
 
-JATOS supports group studies, enabling multiple participants to work together on the same experiment and exchange data in real-time. It's best to start with the [Overview](Group-Studies-Overview.html) to get an idea of how they work. Then, you can proceed to learn how to write them: [Write Group Studies I - Setup](Write-Group-Studies-I-Setup.html) and [Write Group Studies II - JavaScript and Messaging](Write-Group-Studies-II-JavaScript-and-Messaging.html).
+JATOS supports group studies, enabling multiple participants to work together on the same experiment and exchange data in real-time. It's best to start with the [Overview](Group-Studies-Overview) to get an idea of how they work. Then, you can proceed to learn how to write them: [Write Group Studies I - Setup](Write-Group-Studies-I-Setup) and [Write Group Studies II - JavaScript and Messaging](Write-Group-Studies-II-JavaScript-and-Messaging).

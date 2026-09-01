@@ -24,7 +24,7 @@ With the API, you can:
 
 You can try out the API with your local JATOS. Here's how:
 
-1. [Generate a token](JATOS-API.html#how-to-generate-a-token) in your local JATOS. (The JATOS API uses _personal access tokens_ with _bearer authentication_.)
+1. [Generate a token](JATOS-API#how-to-generate-a-token) in your local JATOS. (The JATOS API uses _personal access tokens_ with _bearer authentication_.)
 2. Copy your token.
 3. Go to [petstore.swagger.io](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/JATOS/JATOS/main/jatos-api.yaml). You'll see all API endpoints and their descriptions.
 4. At the top of the Swagger page, click the green 'Authorize' button. Paste your JATOS token into _Authorize_ → _Bearer Auth_. Don't forget to click _Authorize_.

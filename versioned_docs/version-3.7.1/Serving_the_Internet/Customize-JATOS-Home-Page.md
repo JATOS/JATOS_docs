@@ -1,6 +1,6 @@
 ---
 title: Customize JATOS' Home Page
-slug: /Customize-JATOS-Home-Page.html
+slug: /Customize-JATOS-Home-Page
 sidebar_position: 12
 ---
 

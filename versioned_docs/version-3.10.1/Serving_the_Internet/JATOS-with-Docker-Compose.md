@@ -1,6 +1,6 @@
 ---
 title: JATOS with Docker Compose
-slug: /JATOS-with-Docker-Compose.html
+slug: /JATOS-with-Docker-Compose
 sidebar_position: 9
 ---
 

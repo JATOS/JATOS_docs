@@ -1,6 +1,6 @@
 ---
 title: JATOS with Apache
-slug: /JATOS-with-Apache.html
+slug: /JATOS-with-Apache
 sidebar_position: 10
 ---
 

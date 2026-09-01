@@ -1,6 +1,6 @@
 ---
 title: PsychoPy and JATOS
-slug: /PsychoPy-and-JATOS.html
+slug: /PsychoPy-and-JATOS
 sidebar_position: 6
 ---
 

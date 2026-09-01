@@ -24,7 +24,7 @@ The group overview looks similar to this:
 
 ![Group overview](/img/v311x/groups_overview.png)
 
-* **Fixed:** Fixes the group, preventing new members from joining and preserving its current composition. This has the same effect as the jatos.js function [`jatos.setGroupFixed`](jatos.js-Reference.html#jatossetgroupfixed). See [Fixing a Group](Write-Group-Studies-II-JavaScript-and-Messaging.html#fixing-a-group) for more information.
+* **Fixed:** Fixes the group, preventing new members from joining and preserving its current composition. This has the same effect as the jatos.js function [`jatos.setGroupFixed`](jatos.js-Reference#jatossetgroupfixed). See [Fixing a Group](Write-Group-Studies-II-JavaScript-and-Messaging#fixing-a-group) for more information.
 * **Active workers:** Workers who are currently members of the group.
 * **Past workers:** Workers who were previously members of the group.
 * **Results:** Study results belonging to this particular group.
@@ -34,4 +34,4 @@ From this page, you can also view and modify the **Group Session Data** of each 
 
 Behind the scenes, group studies provide real-time communication between group members. Members can send messages directly to individual members or broadcast them to the entire group.
 
-Next step: [Write Your Own Group Studies](Write-Group-Studies-I-Setup.html).
+Next step: [Write Your Own Group Studies](Write-Group-Studies-I-Setup).

@@ -31,7 +31,7 @@ Furthermore, session data are not included when a study is exported or imported.
 | **Usage** | Exchange and store data relevant for all members of a batch | Exchange and temporarily store data relevant for all members of a group | Exchange and temporarily store data between components of a single study run |
 | **Example Use** | (Pseudo-)randomly assign conditions to different workers; Combine results from different groups working in the same batch | Store choices of the two members of a Prisoner's Dilemma game | Pass on correct answers between components; Keep track of the number of iterations for a repeated component |
 | **Lifetime** | Survives after all workers finish their studies | Automatically deleted once the group is finished | Deleted once the worker finishes the study – hence temporary |
-| **Updated When and Via** | Any time you call one of the [`jatos.batchSession` functions](/jatos.js-Reference.html#batch-session-functions) | Any time you call one of the [`jatos.groupSession` functions](/jatos.js-Reference.html#group-session-functions) | At the end of each component or if you call [`jatos.setStudySessionData`](/jatos.js-Reference.html#jatossetstudysessiondata) |
+| **Updated When and Via** | Any time you call one of the [`jatos.batchSession` functions](/jatos.js-Reference#batch-session-functions) | Any time you call one of the [`jatos.groupSession` functions](/jatos.js-Reference#group-session-functions) | At the end of each component or if you call [`jatos.setStudySessionData`](/jatos.js-Reference#jatossetstudysessiondata) |
 | **Visible and editable from JATOS' GUI** | ![yes](/img/ok-24.ico) | ![yes](/img/ok-24.ico) | ![no](/img/x-24.ico) |
 | **Requires WebSockets** | ![yes](/img/ok-24.ico) | ![yes](/img/ok-24.ico) | ![no](/img/x-24.ico) |
 | **Included in exported studies** | ![no](/img/x-24.ico) | ![no](/img/x-24.ico) | ![no](/img/x-24.ico) |
@@ -54,7 +54,7 @@ We provide an [example study](/Example-Studies) that demonstrates the three diff
 
     ![Second component screenshot](/img/ChatExample_2.png)
 
-5.  You now have three simultaneous study runs. While writing into the group chat, you'll notice that two of your workers are in the same group, while the third is in their own group. Why two per group? Because we [set the groups to a maximum of two members each](Write-Group-Studies-I-Setup.html#group-settings-in-each-batchs-properties). The group chat uses the **Group Session** to enable communication between the two members of each group. Members of other groups will not have access to these specific group chats. However, anything written into the **Batch Session** will be accessible by all workers who are part of that batch, regardless of the group they are in.
+5.  You now have three simultaneous study runs. While writing into the group chat, you'll notice that two of your workers are in the same group, while the third is in their own group. Why two per group? Because we [set the groups to a maximum of two members each](Write-Group-Studies-I-Setup#group-settings-in-each-batchs-properties). The group chat uses the **Group Session** to enable communication between the two members of each group. Members of other groups will not have access to these specific group chats. However, anything written into the **Batch Session** will be accessible by all workers who are part of that batch, regardless of the group they are in.
 
    ![Second component screenshot](/img/ChatExample_3.png)
    ![Second component screenshot](/img/ChatExample_4.png)

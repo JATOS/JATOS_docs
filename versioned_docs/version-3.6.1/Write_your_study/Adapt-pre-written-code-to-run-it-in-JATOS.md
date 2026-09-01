@@ -1,6 +1,6 @@
 ---
 title: Adapt pre written code to run it in JATOS
-slug: /Adapt-pre-written-code-to-run-it-in-JATOS.html
+slug: /Adapt-pre-written-code-to-run-it-in-JATOS
 sidebar_position: 3
 ---
 

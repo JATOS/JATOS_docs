@@ -22,7 +22,7 @@ Initially, every study has a single default batch, which can be renamed and more
 
 While you typically run your study with the "Run" button during development, you'll use Study Links to distribute your study to participants (or "workers", as they're called in JATOS).
 
-JATOS offers various **study link types**, each corresponding to a worker type with distinct properties. You can find detailed explanations on the [Worker Types](Worker-Types.html) page.
+JATOS offers various **study link types**, each corresponding to a worker type with distinct properties. You can find detailed explanations on the [Worker Types](Worker-Types) page.
 
 ![Study Links page screenshot](/img/v39x/study_links_3.png)
 
@@ -36,7 +36,7 @@ You can activate or deactivate a study link type using the switch on the left of
 
 ![Study Links page screenshot](/img/v39x/study_links_4.png)
 
-Personal type links are either "Single" (can be used once) or "Multiple" (can be used many times). While more details are available on the [Worker Types](Worker-Types.html) page, the main idea is that these links are intended for individual workers (hence, *Personal*).
+Personal type links are either "Single" (can be used once) or "Multiple" (can be used many times). While more details are available on the [Worker Types](Worker-Types) page, the main idea is that these links are intended for individual workers (hence, *Personal*).
 
 After clicking the **Study Links** button, a new window will appear where you can add and manage study links of this type.
 
@@ -44,10 +44,10 @@ After clicking the **Study Links** button, a new window will appear where you ca
 
 1.  This button quickly adds a single study link without a comment, acting as a shortcut.
 2.  This allows you to add multiple study links at once and include a comment for each. The comment is purely for your own reference to help distinguish your study links. Use the Amount value to add Personal type study links in bulk.
-3.  This is the **study code**. You can [provide this to your workers](Run-your-Study-with-Study-Links.html#study-code--study-entry-page).
+3.  This is the **study code**. You can [provide this to your workers](Run-your-Study-with-Study-Links#study-code--study-entry-page).
 4.  This is your actual **study link**. A toggle button allows you to choose between two options:
-    * '**Open Directly**': [Starts the study immediately](Run-your-Study-with-Study-Links.html#start-directly-with-a-study-link).
-    * '**Confirm First**': [Requires the worker to confirm with a button press before starting](Run-your-Study-with-Study-Links.html#study-link--study-entry-page-for-confirmation).
+    * '**Open Directly**': [Starts the study immediately](Run-your-Study-with-Study-Links#start-directly-with-a-study-link).
+    * '**Confirm First**': [Requires the worker to confirm with a button press before starting](Run-your-Study-with-Study-Links#study-link--study-entry-page-for-confirmation).
     
     Use the <FAIcon icon="fa-regular fa-clipboard" /> button to copy the link to the clipboard, or the <span class="glyphicon glyphicon-qrcode"></span> button to get the QR code.
 5.  Use this switch to activate or deactivate a single study link. A deactivated link cannot be used to start a new study run (but an already started study run can continue).
@@ -61,15 +61,15 @@ Tip: Use QR codes to make your study easier to access with mobile phones. You ca
 
 ![Study Links page screenshot](/img/v39x/study_links_5.png)
 
-General type links can be either "Single" (used once) or "Multiple" (used many times). They are intended for situations where many workers receive the same link (hence, General). More details are available on the [Worker Types](Worker-Types.html) page, but the main concept is that all workers (or at least many) receive the same link (hence, *General*). A General Single link can be used once, while a General Multiple link can be used many times.
+General type links can be either "Single" (used once) or "Multiple" (used many times). They are intended for situations where many workers receive the same link (hence, General). More details are available on the [Worker Types](Worker-Types) page, but the main concept is that all workers (or at least many) receive the same link (hence, *General*). A General Single link can be used once, while a General Multiple link can be used many times.
 
 Due to the nature of these types, there is only one study link per type. Click the **Study Link** button to retrieve it.
 
 ![Study Links page screenshot](/img/v39x/study_links_15.png)
 
 As with Personal links, you can toggle between two link types
-* '**Open Directly**': [Starts the study immediately](Run-your-Study-with-Study-Links.html#start-directly-with-a-study-link).
-* '**Confirm First**': [Requires the worker to confirm with a button press before starting](Run-your-Study-with-Study-Links.html#study-link--study-entry-page-for-confirmation).
+* '**Open Directly**': [Starts the study immediately](Run-your-Study-with-Study-Links#start-directly-with-a-study-link).
+* '**Confirm First**': [Requires the worker to confirm with a button press before starting](Run-your-Study-with-Study-Links#study-link--study-entry-page-for-confirmation).
     
 Use the <FAIcon icon="fa-regular fa-clipboard" /> button to copy the link to the clipboard, or the <span class="glyphicon glyphicon-qrcode"></span> button to get the QR code.
 
@@ -77,7 +77,7 @@ Use the <FAIcon icon="fa-regular fa-clipboard" /> button to copy the link to the
 
 ![Study Links page screenshot](/img/v39x/study_links_6.png)
 
-Information on how to connect to MTurk and add study links is described on its own page: [Connect to Mechanical Turk](Connect-to-Mechanical-Turk.html).
+Information on how to connect to MTurk and add study links is described on its own page: [Connect to Mechanical Turk](Connect-to-Mechanical-Turk).
 
 -----
 
@@ -85,9 +85,9 @@ Information on how to connect to MTurk and add study links is described on its o
 
 A study run in JATOS can be initiated in a few different ways:
 
-1.  [Start directly with a study link](Run-your-Study-with-Study-Links.html#start-directly-with-a-study-link)
-2.  [Study link + Study Entry page for confirmation](Run-your-Study-with-Study-Links.html#study-link--study-entry-page-for-confirmation)
-3.  [Study code + Study Entry page](Run-your-Study-with-Study-Links.html#study-code--study-entry-page)
+1.  [Start directly with a study link](Run-your-Study-with-Study-Links#start-directly-with-a-study-link)
+2.  [Study link + Study Entry page for confirmation](Run-your-Study-with-Study-Links#study-link--study-entry-page-for-confirmation)
+3.  [Study code + Study Entry page](Run-your-Study-with-Study-Links#study-code--study-entry-page)
 
 QR codes are just another visual representation of these links, using black and white patterns instead of characters.
 
@@ -111,7 +111,7 @@ The advantage of using the Study Entry page for confirmation is that participant
 
 #### Customization of the Message
 
-By default, the Study Entry page displays a message like 'Press <span class="glyphicon glyphicon-play"></span> to start the experiment.'. You can change the language or add more introductory text by customizing the message in your study's **Study Properties**. However, please note that this field is intended for a short message only (up to 1000 characters, depending on your language). If you want to display more elaborate introductory text, you can [add a introduction component](Write-your-own-Study-Basics-and-Beyond.html#add-a-component) before your actual experiment component.
+By default, the Study Entry page displays a message like 'Press <span class="glyphicon glyphicon-play"></span> to start the experiment.'. You can change the language or add more introductory text by customizing the message in your study's **Study Properties**. However, please note that this field is intended for a short message only (up to 1000 characters, depending on your language). If you want to display more elaborate introductory text, you can [add a introduction component](Write-your-own-Study-Basics-and-Beyond#add-a-component) before your actual experiment component.
 
 ### Study Code + Study Entry Page
 
@@ -121,7 +121,7 @@ This will display a field where the study code can be entered. After pressing th
 
 ![Study Entry page screenshot](/img/study_entry_page_3.png)
 
-Using the Study Entry page with study codes offers similar benefits as a [Study link + Study Entry page for confirmation](Run-your-Study-with-Study-Links.html#study-link--study-entry-page-for-confirmation): the participant cannot accidentally start a study run. Additionally, a study code is easier to communicate orally than a full study link (e.g., over the phone, as it's just 11 characters).
+Using the Study Entry page with study codes offers similar benefits as a [Study link + Study Entry page for confirmation](Run-your-Study-with-Study-Links#study-link--study-entry-page-for-confirmation): the participant cannot accidentally start a study run. Additionally, a study code is easier to communicate orally than a full study link (e.g., over the phone, as it's just 11 characters).
 
 -----
 
@@ -147,14 +147,14 @@ Each batch has properties that can be modified. Click the **Batch Properties** b
 
   * Additionally, you can enable or disable study link types in the **Allowed types** section. Unchecked types are not permitted to start a study. This has the same effect as activating/deactivating the type within the batch. Always ensure your intended link types are active before sending out links.
 
-  * A batch can have **batch input**, [similar to the input found in study or component properties](Write-your-own-Study-Basics-and-Beyond.html#studycomponentbatch-input). The key difference is that batch input is only accessible from study runs belonging to this specific batch.
+  * A batch can have **batch input**, [similar to the input found in study or component properties](Write-your-own-Study-Basics-and-Beyond#studycomponentbatch-input). The key difference is that batch input is only accessible from study runs belonging to this specific batch.
 
-  * The **Group Properties** relate to [group studies](Write-Group-Studies-I-Setup.html#group-settings-in-each-batchs-properties).
+  * The **Group Properties** relate to [group studies](Write-Group-Studies-I-Setup#group-settings-in-each-batchs-properties).
 
 ### Groups
 
-A batch is also where [JATOS groups](Write-Group-Studies-I-Setup.html) are managed. Here, you can get an overview of the groups belonging to this batch: view their member workers or edit the **Group Session Data**.
+A batch is also where [JATOS groups](Write-Group-Studies-I-Setup) are managed. Here, you can get an overview of the groups belonging to this batch: view their member workers or edit the **Group Session Data**.
 
 ![Groups table](/img/v39x/groups_view.png)
 
-More information about group studies you can get in the [Overview](Group-Study-Overview.html).
+More information about group studies you can get in the [Overview](Group-Study-Overview).

@@ -1,6 +1,6 @@
 ---
 title: Install JATOS on a server
-slug: /JATOS-on-a-server.html
+slug: /JATOS-on-a-server
 sidebar_position: 5
 ---
 

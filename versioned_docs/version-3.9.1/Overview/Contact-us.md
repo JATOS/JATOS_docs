@@ -1,6 +1,6 @@
 ---
 title: Contact us
-slug: /Contact-us.html
+slug: /Contact-us
 sidebar_position :  3
 ---
 

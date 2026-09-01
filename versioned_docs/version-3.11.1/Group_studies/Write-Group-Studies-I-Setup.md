@@ -37,7 +37,7 @@ You can let JATOS assign workers to groups automatically, assign them yourself, 
 
 ### Scenario 1: One Group, Manual Assignment
 
-If you set _Max total workers_ to 2 and leave the other two fields empty, only 2 workers can join, and both will be placed in the same group. If you [add two Personal Single study links](Run-your-Study-with-Study-Links.html) (other link types also work) and send them to your two participants, you can be sure they will interact with each other. To create more groups, simply add another batch with two more workers.
+If you set _Max total workers_ to 2 and leave the other two fields empty, only 2 workers can join, and both will be placed in the same group. If you [add two Personal Single study links](Run-your-Study-with-Study-Links) (other link types also work) and send them to your two participants, you can be sure they will interact with each other. To create more groups, simply add another batch with two more workers.
 
 ![Prisoners example](/img/prisoners_example.png)
 
@@ -45,11 +45,11 @@ The first two scenarios are relevant for the [Prisoner's Dilemma Example Study](
 
 ### Scenario 2: Several Groups, Automatic Assignment
 
-Suppose you want 3 groups with 2 workers each and want JATOS to pair workers automatically. Set _Max total workers_ to 6, and both _Max total members_ and _Max active members_ to 2 (these limits apply per group). Then [add 6 Personal Single study links](Run-your-Study-with-Study-Links.html) (other link types also work) and distribute them to your 6 participants.
+Suppose you want 3 groups with 2 workers each and want JATOS to pair workers automatically. Set _Max total workers_ to 6, and both _Max total members_ and _Max active members_ to 2 (these limits apply per group). Then [add 6 Personal Single study links](Run-your-Study-with-Study-Links) (other link types also work) and distribute them to your 6 participants.
 
 ### Scenario 3: One Open World
 
-This is the opposite of Scenario 1. If you leave _Max total workers_, _Max total members_, and _Max active members_ unlimited, JATOS will place all workers into a single, potentially unlimited group. To keep it fully open, [add a General Single study link](Run-your-Study-with-Study-Links.html) (other link types also work) and share it (e.g., via a mailing list or website).
+This is the opposite of Scenario 1. If you leave _Max total workers_, _Max total members_, and _Max active members_ unlimited, JATOS will place all workers into a single, potentially unlimited group. To keep it fully open, [add a General Single study link](Run-your-Study-with-Study-Links) (other link types also work) and share it (e.g., via a mailing list or website).
 
 ![Snake example](/img/snake_example.png)
 

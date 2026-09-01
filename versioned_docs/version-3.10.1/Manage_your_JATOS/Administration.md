@@ -1,6 +1,6 @@
 ---
 title: Administration
-slug: /Administration.html
+slug: /Administration
 sidebar_position: 1
 ---
 

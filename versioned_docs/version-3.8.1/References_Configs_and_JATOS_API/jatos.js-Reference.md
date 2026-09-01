@@ -1,6 +1,6 @@
 ---
 title: jatos.js Reference
-slug: /jatos.js-Reference.html
+slug: /jatos.js-Reference
 sidebar_position: 1
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Study Log
-slug: /Study-Log.html
+slug: /Study-Log
 sidebar_position: 11
 ---
 

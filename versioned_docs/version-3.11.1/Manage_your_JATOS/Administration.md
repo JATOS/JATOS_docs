@@ -4,13 +4,13 @@ slug: /Administration
 sidebar_position: 1
 ---
 
-On the Administration page, [users with admin rights](/User-Manager.html) can get an overview of the studies and users in a JATOS installation. You can view the **logs**, **system info**, or go to the **test page** to check if JATOS is running correctly. This is also where **update notifications** appear when a new JATOS version is available, and where [admins can trigger an update](/Update-JATOS.html#automatic-updates).
+On the Administration page, [users with admin rights](/User-Manager) can get an overview of the studies and users in a JATOS installation. You can view the **logs**, **system info**, or go to the **test page** to check if JATOS is running correctly. This is also where **update notifications** appear when a new JATOS version is available, and where [admins can trigger an update](/Update-JATOS#automatic-updates).
 
 ![Administration screenshot](/img/v39x/administration.png)
 
 ### User Manager
 
-Manage users, passwords, and rights from here. Find more details on [the documentation page](/User-Manager.html).
+Manage users, passwords, and rights from here. Find more details on [the documentation page](/User-Manager).
 
 ### Study Manager
 

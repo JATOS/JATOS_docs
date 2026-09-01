@@ -1,6 +1,6 @@
 ---
 title: Worker Types
-slug: /Worker-Types.html
+slug: /Worker-Types
 sidebar_position: 3
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: JATOS Results Archive
-slug: /JATOS-Results-Archive.html
+slug: /JATOS-Results-Archive
 sidebar_position: 5
 ---
 

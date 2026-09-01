@@ -21,7 +21,7 @@ If you want participants to be able to run your studies, you need to bring JATOS
 
 This is the easiest, but also the least reliable option. If you just want to run an experiment online for a couple of hours or days, and it's not critical if things break, this method is for you.
 
-More information: [Expose your local JATOS](Expose-your-local-JATOS.html)
+More information: [Expose your local JATOS](Expose-your-local-JATOS)
 
 ---
 
@@ -29,7 +29,7 @@ More information: [Expose your local JATOS](Expose-your-local-JATOS.html)
 
 This option can still be fast and easy (depending on your cloud vendor and your skills), but it might not align with your privacy requirements. It is reliable and can run for a long time (as long as you pay), and it can serve many JATOS users.
 
-Learn more: [JATOS on DigitalOcean](JATOS-on-DigitalOcean.html) or [JATOS on AWS](JATOS-in-Amazons-Cloud-without-Docker.html) (or any other cloud vendor).
+Learn more: [JATOS on DigitalOcean](JATOS-on-DigitalOcean) or [JATOS on AWS](JATOS-in-Amazons-Cloud-without-Docker) (or any other cloud vendor).
 
 ---
 
@@ -37,4 +37,4 @@ Learn more: [JATOS on DigitalOcean](JATOS-on-DigitalOcean.html) or [JATOS on AWS
 
 Installing JATOS on a dedicated server at your institute is probably the safest and most reliable way, but it usually takes the most time and requires the most admin skills to set up.
 
-More information: [Install JATOS on a server](JATOS-on-a-server.html)
+More information: [Install JATOS on a server](JATOS-on-a-server)

@@ -1,6 +1,6 @@
 ---
 title: Run an experiment with JATOS - Workflow
-slug: /Run-an-experiment-with-JATOS-Workflow.html
+slug: /Run-an-experiment-with-JATOS-Workflow
 sidebar_position: 6
 ---
 

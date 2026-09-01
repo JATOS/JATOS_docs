@@ -1,6 +1,6 @@
 ---
 title: Example Group Studies
-slug: /Example-Group-Studies.html
+slug: /Example-Group-Studies
 sidebar_position: 1
 ---
 

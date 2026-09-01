@@ -1,6 +1,6 @@
 ---
 title: Use MTurk
-slug: /Connect-to-Mechanical-Turk.html
+slug: /Connect-to-Mechanical-Turk
 sidebar_position: 6
 ---
 

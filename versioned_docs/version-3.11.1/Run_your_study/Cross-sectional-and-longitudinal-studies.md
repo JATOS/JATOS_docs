@@ -10,7 +10,7 @@ There are several situations where you might need to store parts of your study's
 2.  Run a **between-participants** study.
 3.  Conduct a **longitudinal** study.
 
-When a participant clicks on a study link, JATOS initiates a study run. Once data from the last component is submitted, the study run concludes, and that data is no longer available to the client side. Therefore, to conduct cross-sectional or longitudinal studies, you need a method to store data that persists beyond a single study run and is accessible to future runs. The [Batch Session data](Session-Data-Three-Types.html) is designed specifically for this purpose.
+When a participant clicks on a study link, JATOS initiates a study run. Once data from the last component is submitted, the study run concludes, and that data is no longer available to the client side. Therefore, to conduct cross-sectional or longitudinal studies, you need a method to store data that persists beyond a single study run and is accessible to future runs. The [Batch Session data](Session-Data-Three-Types) is designed specifically for this purpose.
 
 -----
 
@@ -34,11 +34,11 @@ In longitudinal studies, you aim to collect data from the same participant multi
 
 ### Using Personal Multiple Study Links
 
-If your sample size is relatively small and logistically feasible, you could send individualized [Personal Multiple study links](Run-your-Study-with-Study-Links.html) to each participant. When a participant runs a study using such a link, JATOS assigns them a unique ID. You can access this worker ID in your JavaScript via [`jatos.workerId`](jatos.js-Reference.html#jatosworkerid) from the _jatos.js_ library.
+If your sample size is relatively small and logistically feasible, you could send individualized [Personal Multiple study links](Run-your-Study-with-Study-Links) to each participant. When a participant runs a study using such a link, JATOS assigns them a unique ID. You can access this worker ID in your JavaScript via [`jatos.workerId`](jatos.js-Reference#jatosworkerid) from the _jatos.js_ library.
 
 ### Using MTurk
 
-If you are recruiting participants through MTurk, it's straightforward: You can access the MTurk worker ID in your JavaScript through `jatos.urlQueryParameters.workerId`. Alternatively, you can also use JATOS' [`jatos.workerId`](jatos.js-Reference.html#jatosworkerid).
+If you are recruiting participants through MTurk, it's straightforward: You can access the MTurk worker ID in your JavaScript through `jatos.urlQueryParameters.workerId`. Alternatively, you can also use JATOS' [`jatos.workerId`](jatos.js-Reference#jatosworkerid).
 
 ### Using Prolific
 
@@ -52,7 +52,7 @@ var prolificPid = jatos.urlQueryParameters.PROLIFIC_PID;
 
 ### Using a General Multiple Link with IDs Assigned to Individual Workers
 
-For large samples recruited outside of a marketplace (i.e., using a [General Multiple link](Worker-Types.html#general-multiple-worker-and-study-link)), you could generate a unique ID for each new participant and instruct them to manually store and provide this ID in subsequent sessions. Note that when a participant runs a study with a General Single link, JATOS stores minimal cookies in their browser to prevent them from taking part twice in the same study. However, these cookies are not intended for identifying participants or linking a browser to specific result data.
+For large samples recruited outside of a marketplace (i.e., using a [General Multiple link](Worker-Types#general-multiple-worker-and-study-link)), you could generate a unique ID for each new participant and instruct them to manually store and provide this ID in subsequent sessions. Note that when a participant runs a study with a General Single link, JATOS stores minimal cookies in their browser to prevent them from taking part twice in the same study. However, these cookies are not intended for identifying participants or linking a browser to specific result data.
 
 -----
 

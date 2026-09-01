@@ -1,6 +1,6 @@
 ---
 title: End page - After your study finished
-slug: /End-page-after-your-study-finished.html
+slug: /End-page-after-your-study-finished
 sidebar_position: 10
 ---
 

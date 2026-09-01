@@ -13,7 +13,7 @@ It's always a good practice to test your setup in the [MTurk Sandbox](https://re
 ### What You'll Need
 
   * A requester MTurk account.
-  * Your study running on a [JATOS server](Bring-your-JATOS-online.html).
+  * Your study running on a [JATOS server](Bring-your-JATOS-online).
   * A description of the study (this can be the same as the one you used within JATOS).
 
 -----

@@ -85,7 +85,7 @@ play.server.akka.requestTimeout = 100s
 JATOS can be configured to use a base path with `jatos.urlBasePath`. For example, if your host is _www.example.org_ and JATOS runs under _mybasepath_, all URLs start with _www.example.org/mybasepath/_.
 
 **The path must always start and end with a "/".**  
-If you add a base path, adjust all absolute paths to study assets in your HTML and JavaScript files, or use [relative paths](Adapt-pre-written-code-to-run-it-in-JATOS.html#create-the-study-in-jatos) (recommended).
+If you add a base path, adjust all absolute paths to study assets in your HTML and JavaScript files, or use [relative paths](Adapt-pre-written-code-to-run-it-in-JATOS#create-the-study-in-jatos) (recommended).
 
 **Config file:**
 ~~~shell
@@ -243,7 +243,7 @@ JATOS_LOGS_APPENDER=ASYNCSTDOUT
 
 ## Study Logs
 
-Each study in JATOS has its own study log ([more info](/Study-Log.html)).  
+Each study in JATOS has its own study log ([more info](/Study-Log)).  
 Among other things, it calculates hashes of result data, which can be CPU-intensive. On smaller machines, it may be better to disable it.
 
 _Do not confuse study logs with [application logs](#application-logs)._
@@ -943,7 +943,7 @@ jatos.user.password.strength = 3
 
 ## Database
 
-See [JATOS with MySQL](JATOS-with-MySQL.html).
+See [JATOS with MySQL](JATOS-with-MySQL).
 
 Old-style properties beginning with _db.default_ are deprecated; use _jatos.db_* properties instead.
 
@@ -1172,7 +1172,7 @@ play.pidfile.path = "/var/run/jatos.pid"
 
 ### Welcome Message
 
-Specifies a URL for JATOS to fetch static HTML, which will be shown on the home page instead of the default welcome message ([more info](/Customize-JATOS-Home-Page.html)). If left empty, the default message is shown.
+Specifies a URL for JATOS to fetch static HTML, which will be shown on the home page instead of the default welcome message ([more info](/Customize-JATOS-Home-Page)). If left empty, the default message is shown.
 
 **Config file:**
 ~~~shell

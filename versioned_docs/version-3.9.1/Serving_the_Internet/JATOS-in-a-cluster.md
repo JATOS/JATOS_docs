@@ -1,6 +1,6 @@
 ---
 title: JATOS in a cluster
-slug: /JATOS-in-a-cluster.html
+slug: /JATOS-in-a-cluster
 sidebar_position: 10
 ---
 

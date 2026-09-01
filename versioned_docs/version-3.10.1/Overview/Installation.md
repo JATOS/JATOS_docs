@@ -1,6 +1,6 @@
 ---
 title: Installation
-slug: /Installation.html
+slug: /Installation
 sidebar_position: 3
 ---
 
