@@ -18,10 +18,6 @@ If you have questions about JATOS or need assistance with your experiments, plea
 
 JATOS has a dedicated subforum within the [CogSci.nl forum](https://forum.cogsci.nl/categories/jatos). This platform centralizes various cognitive science tools and aims to streamline communication.
 
-### Slack
-
-Join our community by getting an invite to the [JATOS Slack workspace](https://communityinviter.com/apps/jatosworkspace/jatos-slack).
-
 ### GitHub Issues
 
 If you encounter a bug or have a suggestion for a new feature to improve JATOS, please consider opening a [GitHub issue](https://github.com/JATOS/JATOS/issues).
@@ -29,3 +25,10 @@ If you encounter a bug or have a suggestion for a new feature to improve JATOS, 
 ### Email
 
 You can also email us directly at **support@jatos.org**. However, please use the forum or Slack when possible, as your question might help others in the community. We receive immediate notifications for new posts on those platforms.
+
+---
+
+## Suggestions for new features in JATOS
+
+You can suggest and discus new features in JATOS' [GitHub discussions](https://github.com/JATOS/JATOS/discussions/343).
+
