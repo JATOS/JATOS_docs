@@ -126,25 +126,6 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'JATOS Forum',
-                to: 'https://forum.cogsci.nl/categories/jatos',
-              },
-              {
-                label: 'Slack',
-                to: 'https://communityinviter.com/apps/jatosworkspace/jatos-slack',
-              },
-              {
-                label: 'GitHub',
-                to: 'https://github.com/JATOS/JATOS',
-              },
-            ],
-          },
-        ],
         copyright: `JATOS is free and <a href="https://github.com/JATOS/JATOS" class="footer__link-item">open source</a> and published under <a href="https://www.apache.org/licenses/LICENSE-2.0" class="footer__link-item">Apache License, version 2.0</a>`,
       },
       prism: {
