@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Golden, M.J., Hutcheon, T.G., Mathis, K.M. et al. (2026) Distractor preview moderates the alerting-congruency interaction in Stroop and flanker tasks. *Atten Percept Psychophys*. [DOI](https://doi.org/10.3758/s13414-026-03328-2)
+
 Izydorczyk, D., Kreis, B.K., Kilb, M., Bröder, A. (2026) # Knowledge: Using Social Media for Improving Food-Related Knowledge: A Seeding Intervention. *Collabra: Psychology*. [DOI](https://doi.org/10.1525/collabra.168382)
 
 Lanfranchi, J., Dervy, A., Angeard, N. (2026) The development of cognitive and affective empathy from ages 3 to 20: a new experimental task. *Front. Psychol.*  [DOI](http://www.doi.org/10.3389/fpsyg.2026.1885949)
