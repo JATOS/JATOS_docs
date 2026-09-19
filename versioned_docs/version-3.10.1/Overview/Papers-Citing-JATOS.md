@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Garre-Frutos, F., Vadillo, M.A., Theeuwes, J. et al. (2026) The role of selective attention in value-modulated attentional capture. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-026-02964-x)
+
 Gandarela, L., Melo, J.C.N., Oliveira, D.N. et al. (2026) Effects of physically active lessons and physically active breaks on cognitive development and academic performance of schoolchildren: protocol for a cluster randomized clinical trial. *BMC Pediatr*. [DOI](https://doi.org/10.1186/s12887-026-07638-0)
 
 Schreiner, M. R., & Kunde, W. (2026). Associative memory constraints on the storage and retrieval of action-effect relations. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001441)
