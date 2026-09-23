@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Sroka, M., Obidziński, M., Cipora, K., & Hohol, M. (2026). EXPRESS: Spatial Biases in Arithmetic: The Effect of Operation Order and Visual Spacing on Calculations. *Quarterly Journal of Experimental Psychology*. [DOI](https://doi.org/10.1177/17470218261490417)
+
 Heidinger, J., Wagner, L., Spölmink, C., Franke, T. (2026) VideoSimLab: Developing a Video-Based Toolchain for Vehicle Display Evaluation Studies. *Proceedings of the 18th International Conference on Automotive User Interfaces and Interactive Vehicular Applications (AutomotiveUI '26). Association for Computing Machinery*. [DOI](https://doi.org/10.1145/3828157.3828768)
 
 Garre-Frutos, F., Vadillo, M.A., Theeuwes, J. et al. (2026) The role of selective attention in value-modulated attentional capture. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-026-02964-x)
