@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Solstad, T., Kaspersen, E., Romijn, E.I., Hodgen, J. (2026) Decision-level processes in rapid numerosity estimation. *Cognition*. [DOI](https://doi.org/10.1016/j.cognition.2026.106511)
+
 Hareli, S., David, S.  (2026) Creating and validating photorealistic AI-generated facial expression stimuli for emotion research. *Behav Res*. [DOI](https://doi.org/10.3758/s13428-026-03156-0)
 
 Sroka, M., Obidziński, M., Cipora, K., & Hohol, M. (2026). EXPRESS: Spatial Biases in Arithmetic: The Effect of Operation Order and Visual Spacing on Calculations. *Quarterly Journal of Experimental Psychology*. [DOI](https://doi.org/10.1177/17470218261490417)
