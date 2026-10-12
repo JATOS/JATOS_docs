@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Frugarello, P., Rusconi, E.  (2026) Evocation of Geographical Indications: an eye-tracking study. *Sci Rep*. [DOI](https://doi.org/10.1038/s41598-026-74964-9)
+
+Wen, J., Shi, G., Xu, X., Eberle, D., Wang, J., Maercker, A. (2026) The Effects of Induced Yearning on Attentional Breadth of Bereaved Individuals: A Cross-Cultural Study Between China and Switzerland. *Behaviour Research and Therapy*. [DOI](https://doi.org/10.1016/j.brat.2026.105172)
+
 Ngan, V.S.H., Mo, J., Wong, O.K.P., Ng, M.C.Y., Ho, J.C.S, Inoue, T., McBride, C. and Maurer, U. (2026) Creating online cognitive assessment platform for children’s literacy and math skills: a case study illustrated with the ACE kids platform. *Front. Hum. Neurosci.*  [DOI](https://doi.org/10.3389/fnhum.2026.1882555)
 
 Ramgopal, V., Fastrich, G. M., Higham, P. A., Modirrousta-Galian, A., Pattni, M., Potts, R., & Seabrooke, T. (2026). Examining the benefits of spaced retrieval practice on transfer and the student experience in the classroom. *Memory*. [DOI](https://doi.org/10.1080/09658211.2026.2733327)
