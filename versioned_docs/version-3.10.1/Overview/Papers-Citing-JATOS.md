@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Şenşekerci, B., & Przepiórkowski, A. (2026). Gradient Grammaticality in Model-Theoretic Dependency Grammar. *Languages*. [DOI](https://doi.org/10.3390/languages11110215)
+
 Mlinarič, M., Grainger, J., Beyersmann, E. et al. (2026) Does the reading brain possess top-down connections from morphemes to letters?. *Psychon Bull Rev*. [DOI](https://doi.org/10.3758/s13423-026-03037-9)
 
 Frugarello, P., Rusconi, E.  (2026) Evocation of Geographical Indications: an eye-tracking study. *Sci Rep*. [DOI](https://doi.org/10.1038/s41598-026-74964-9)
