@@ -58,7 +58,7 @@ Now, let's configure PsychoPy/PsychoJS to save your experiment's result data dir
     ```javascript
     const data = psychoJS._experiment._trialsData;
 
-    const dataCsv = data.map(it => Object.values(it).join(',')).join('\n')
+    const dataCsv = jatos.convertToCSV(data);
     jatos.submitResultData(dataCsv);
     ```
 
