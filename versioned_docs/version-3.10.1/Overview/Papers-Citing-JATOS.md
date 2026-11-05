@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Libersat, S., & Meiran, N. (2026). Executive Functions and Self-Regulation Strategies in a Sustained Behavioral Self-Regulation Task. *Journal of Intelligence*. [DOI](https://doi.org/10.3390/jintelligence14110283)
+
 Gao, W., Kvamme, T., Nagai, Y., Silvanto, J. (2026) Coupling of action–intention binding is reduced in aphantasia. *Consciousness and Cognition* [DOI](https://doi.org/10.1016/j.concog.2026.104142)
 
 Şenşekerci, B., & Przepiórkowski, A. (2026). Gradient Grammaticality in Model-Theoretic Dependency Grammar. *Languages*. [DOI](https://doi.org/10.3390/languages11110215)
