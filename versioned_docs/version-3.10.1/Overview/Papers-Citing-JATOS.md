@@ -11,6 +11,10 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+
+Santirocchi, A., Spataro, P., Mulligan, N.W., Naser, A., Atzeni, R., Esposito, A., Cestari, V., Rossi-Arnaud, C. (2026) Remembering the Unreal: The memory cost of deepfake faces. *
+Computers in Human Behavior*. [DOI](https://doi.org/10.1016/j.chb.2026.109256)
+
 Brand, J., Smolík, F., Chromý, J. et al. (2026) CzeLex: A megastudy dataset of concreteness, imageability, age of acquisition, valence, and gender ratings for 9601 Czech words. *Behav Res.* [DOI](https://doi.org/10.3758/s13428-026-03217-4)
 
 Libersat, S., & Meiran, N. (2026). Executive Functions and Self-Regulation Strategies in a Sustained Behavioral Self-Regulation Task. *Journal of Intelligence*. [DOI](https://doi.org/10.3390/jintelligence14110283)
