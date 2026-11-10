@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Velnić, M., Slabakova, R., Dahl, A., & Listhaug, K. F. (2026). Singular NPs and the expression of genericity in Norwegian. *Nordic Journal of Linguistics*. [DOI](https://doi.org/10.1017/S0332586524000258)
+
 Mingardi, P., Finocchiaro, C., Vespignani, F. (2026) The interaction of pragmatics and predictability in sentence negation. *Acta Psychologica* [DOI](https://doi.org/10.1016/j.actpsy.2026.108097)
 
 Santirocchi, A., Spataro, P., Mulligan, N.W., Naser, A., Atzeni, R., Esposito, A., Cestari, V., Rossi-Arnaud, C. (2026) Remembering the Unreal: The memory cost of deepfake faces. *Computers in Human Behavior*. [DOI](https://doi.org/10.1016/j.chb.2026.109256)
