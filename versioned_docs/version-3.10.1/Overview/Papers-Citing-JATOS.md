@@ -11,6 +11,8 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
 ### 2026
+Reichardt, R., Polner, B., Simor, P. (2026) The graded novelty encoding task: Limitations and potential. *Brain and Cognition*. [DOI](https://doi.org/10.1016/j.bandc.2023.106029)
+
 Gruner, M., Schumacher, T., Grauerholz, A., Hannig, J. E., Schönicke, C., & Calero Valdez, A. (2026). AI-Assisted Visual Search: Effects of Cueing Method and Display Type on Detection, Compliance, and Skill Retention. *International Journal of Human–Computer Interaction*. [DOI](https://doi.org/10.1080/10447318.2026.2759214)
 
 Duncan, D. H., & Theeuwes, J. (2026). Switching between singleton-detection and feature-search mode in visual search. *Journal of Experimental Psychology: Human Perception and Performance*. [DOI](https://doi.org/10.1037/xhp0001471)
